@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-13 11:53:08</sys_created_on>
+        <sys_id>eee0ab3cdb9df11040eae46b13961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_telco_rates.x_g_sonc_ns_pro.telco_rates_user</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_security_acl display_value="x_g_sonc_ns_pro_telco_rates">aae0ab3cdb9df11040eae46b13961946</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_eee0ab3cdb9df11040eae46b13961968</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-13 11:53:08</sys_updated_on>
+        <sys_user_role display_value="x_g_sonc_ns_pro.telco_rates_user" name="x_g_sonc_ns_pro.telco_rates_user">e6e0ebf8db9df11040eae46b13961993</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_security_acl_role_eee0ab3cdb9df11040eae46b13961968</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-13 11:53:08</sys_created_on><sys_id>eee0ab3cdb9df11040eae46b13961968</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_telco_rates.x_g_sonc_ns_pro.telco_rates_user</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_security_acl display_value="x_g_sonc_ns_pro_telco_rates">aae0ab3cdb9df11040eae46b13961946</sys_security_acl><sys_update_name>sys_security_acl_role_eee0ab3cdb9df11040eae46b13961968</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-09-13 11:53:08</sys_updated_on><sys_user_role display_value="x_g_sonc_ns_pro.telco_rates_user" name="x_g_sonc_ns_pro.telco_rates_user">e6e0ebf8db9df11040eae46b13961993</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>2080310132</payload_hash>
+        <record_name>x_g_sonc_ns_pro_telco_rates.x_g_sonc_ns_pro.telco_rates_user</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-13 11:53:08</sys_created_on>
+        <sys_id>6ee0ab3cdb9df11040eae46b1396196e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a8e6351b40000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-13 11:53:08</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>62e0ab3c519df110b29fb6165343556e</update_guid>
+        <update_guid_history>62e0ab3c519df110b29fb6165343556e:2080310132</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 09/13/2023 08:05:13">f3a363f0dbddf11040eae46b13961925</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-13 12:05:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>843303e9fe91493e9477f38ca6722c31</sys_id>
+        <sys_metadata>eee0ab3cdb9df11040eae46b13961968</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_telco_rates.x_g_sonc_ns_pro.telco_rates_user</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="x_g_sonc_ns_pro_telco_rates">aae0ab3cdb9df11040eae46b13961946</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_eee0ab3cdb9df11040eae46b13961968</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_eee0ab3cdb9df11040eae46b13961968">6ee0ab3cdb9df11040eae46b1396196e</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-13 12:05:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

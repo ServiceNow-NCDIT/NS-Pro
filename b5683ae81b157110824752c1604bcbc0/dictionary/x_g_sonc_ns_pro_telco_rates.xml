@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="91b0273cdb9df11040eae46b13961938" label="Telco Rates" max_length="40" name="x_g_sonc_ns_pro_telco_rates" type="collection">
+        <element label="Contract" max_length="32" name="contract" reference="ast_contract" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Cost" mandatory="true" max_length="20" name="cost" type="currency"/>
+        <element label="Service Definition" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
+        <element label="Speed" max_length="20" name="speed" type="decimal"/>
+        <element label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <index name="index">
+            <element name="contract"/>
+        </index>
+        <index name="index2">
+            <element name="service_definition"/>
+        </index>
+        <index name="index3">
+            <element name="telco_provider"/>
+        </index>
+    </element>
+</database>

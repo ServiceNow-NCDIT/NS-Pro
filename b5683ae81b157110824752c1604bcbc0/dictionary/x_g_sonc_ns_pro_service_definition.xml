@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1fd6a778dbddf11040eae46b139619d8" label="Service Definition" max_length="40" name="x_g_sonc_ns_pro_service_definition" type="collection">
+        <element label="CPE_level" max_length="40" name="cpe_level" type="string"/>
+        <element label="CPE_model_1" max_length="40" name="cpe_model_1" type="string"/>
+        <element label="CPE_model_2" max_length="40" name="cpe_model_2" type="string"/>
+        <element label="CPE_model_3" max_length="40" name="cpe_model_3" type="string"/>
+        <element label="CPE_model_4" max_length="40" name="cpe_model_4" type="string"/>
+        <element label="CPE_port_range_high" max_length="40" name="cpe_port_range_high" type="integer"/>
+    </element>
+</database>
