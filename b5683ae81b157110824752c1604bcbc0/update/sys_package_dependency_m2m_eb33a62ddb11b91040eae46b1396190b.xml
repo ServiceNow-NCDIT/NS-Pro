@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="CMDB CI Class Models" source="sn_cmdb_ci_class">ae99d84b2320330006c0110d96bf65b3</dependency>
+        <min_version>1.45.1</min_version>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-15 15:19:07</sys_created_on>
+        <sys_id>eb33a62ddb11b91040eae46b1396190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-15 15:19:07</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

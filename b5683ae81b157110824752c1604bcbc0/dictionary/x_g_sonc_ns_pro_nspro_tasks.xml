@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0a5d8bc2db1dbd1040eae46b139619f0" extends="task" label="NSPro Tasks" max_length="40" name="x_g_sonc_ns_pro_nspro_tasks" type="collection">
+        <element label="Billing Code" max_length="32" name="billing_code" reference="u_billing_code" type="reference"/>
+        <element choice="1" label="Change Type" max_length="40" name="change_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Add Service" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Remove Service" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="WAN Service Change" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="WAN Routing Change (IP, Subnet, VRF)" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Other" sequence="50" value="5"/>
+            </choice>
+        </element>
+        <element label="CIR Egress Speed" max_length="40" name="cir_egress_speed" type="integer"/>
+        <element label="CIR Ingress Speed" max_length="40" name="cir_ingress_speed" type="integer"/>
+        <element label="Current Location" max_length="32" name="current_location" reference="cmn_location" type="reference"/>
+        <element choice="1" label="Move Type" max_length="40" name="move_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Swing CPE to New Service" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="New CPE, New Service" sequence="20" value="2"/>
+            </choice>
+        </element>
+        <element label="New Location" max_length="32" name="new_location" reference="cmn_location" type="reference"/>
+        <element label="PoP" max_length="32" name="pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="PoP Alternate" max_length="32" name="pop_alternate" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="PoP Primary" max_length="32" name="pop_primary" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="Provisioning State" max_length="32" name="provisioning_state" reference="x_g_sonc_ns_pro_provisioning_state" type="reference"/>
+        <element label="Request Type" max_length="32" name="request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
+        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element choice="1" label="Task Type" max_length="40" name="task_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Provisioning" sequence="10" value="provisioning"/>
+                <element inactive_on_update="false" label="Field Services" sequence="20" value="field_services"/>
+            </choice>
+        </element>
+        <element label="Telco Order" max_length="32" name="telco_order" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
+        <index name="index">
+            <element name="billing_code"/>
+        </index>
+        <index name="index2">
+            <element name="current_location"/>
+        </index>
+        <index name="index3">
+            <element name="new_location"/>
+        </index>
+        <index name="index4">
+            <element name="pop"/>
+        </index>
+        <index name="index5">
+            <element name="pop_alternate"/>
+        </index>
+        <index name="index6">
+            <element name="pop_primary"/>
+        </index>
+        <index name="index7">
+            <element name="provisioning_state"/>
+        </index>
+        <index name="index8">
+            <element name="request_type"/>
+        </index>
+        <index name="index9">
+            <element name="site"/>
+        </index>
+        <index name="index10">
+            <element name="telco_order"/>
+        </index>
+    </element>
+</database>

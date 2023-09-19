@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8b5561621b72211090990f6fe54bcb12" extends="cmdb_ci" label="Sitio" max_length="40" name="cmdb_ci_site" type="collection">
+        <element default="true" label="Active" max_length="40" name="x_g_sonc_ns_pro_active" type="boolean"/>
+        <element label="Agency" max_length="32" name="x_g_sonc_ns_pro_agency" reference="u_org_agency" type="reference"/>
+        <element label="Alternate POC" max_length="32" name="x_g_sonc_ns_pro_alternate_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Decommission Date" max_length="40" name="x_g_sonc_ns_pro_decommission_date" type="glide_date_time"/>
+        <element label="Primary POC" max_length="32" name="x_g_sonc_ns_pro_primary_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Site Type" max_length="32" name="x_g_sonc_ns_pro_site_type" reference="x_g_sonc_ns_pro_site_type" type="reference"/>
+        <element label="Telco Provider" max_length="32" name="x_g_sonc_ns_pro_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element label="Telco Room" max_length="100" name="x_g_sonc_ns_pro_telco_room" type="string"/>
+    </element>
+</database>

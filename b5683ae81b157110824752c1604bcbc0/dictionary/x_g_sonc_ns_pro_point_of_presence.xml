@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="62d73046db597d1040eae46b1396195d" extends="cmdb_ci" label="Elemento de configuración" max_length="40" name="x_g_sonc_ns_pro_point_of_presence" type="collection">
+        <element label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+    </element>
+</database>

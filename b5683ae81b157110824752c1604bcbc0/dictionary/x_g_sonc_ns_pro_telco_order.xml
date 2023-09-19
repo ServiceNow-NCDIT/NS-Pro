@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e2b42525db19791040eae46b13961947" label="Telco Order" max_length="40" name="x_g_sonc_ns_pro_telco_order" type="collection">
+        <element label="Circuit Jack Type" max_length="32" name="circuit_jack_type" reference="x_g_sonc_ns_pro_circuit_jack_type" type="reference"/>
+        <element label="Construction Cost" max_length="20" name="construction_cost" type="currency"/>
+        <element label="CPE Model" max_length="32" name="cpe_model" reference="x_g_sonc_ns_pro_cpe_model" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="DEMARC Location" max_length="200" name="demarc_location" type="string"/>
+        <element label="Detailed CPE Needs" max_length="1000" name="detailed_cpe_needs" type="string"/>
+        <element label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element label="Monthly Cost" max_length="20" name="monthly_cost" type="currency"/>
+        <element label="Network Service Category" max_length="32" name="network_service_category" reference="x_g_sonc_ns_pro_network_service_category" type="reference"/>
+        <element label="Other Cost" max_length="20" name="other_cost" type="currency"/>
+        <element label="Ready Date" max_length="40" name="ready_date" type="glide_date"/>
+        <element label="Redundant" max_length="40" name="redundant" type="boolean"/>
+        <element label="Requested Speed" max_length="40" name="requested_speed" type="integer"/>
+        <element label="Request Type" max_length="32" name="request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
+        <element label="Special Instructions" max_length="2000" name="special_instructions" type="string"/>
+        <element label="WAN CPE Ports" max_length="200" name="wan_cpe_ports" type="string"/>
+        <index name="index">
+            <element name="circuit_jack_type"/>
+        </index>
+        <index name="index2">
+            <element name="cpe_model"/>
+        </index>
+        <index name="index3">
+            <element name="network_service_category"/>
+        </index>
+        <index name="index4">
+            <element name="request_type"/>
+        </index>
+    </element>
+</database>

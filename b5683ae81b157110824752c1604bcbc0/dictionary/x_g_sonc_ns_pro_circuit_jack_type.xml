@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d81ced65db59791040eae46b1396194c" label="Circuit Jack Type" max_length="40" name="x_g_sonc_ns_pro_circuit_jack_type" type="collection">
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+    </element>
+</database>

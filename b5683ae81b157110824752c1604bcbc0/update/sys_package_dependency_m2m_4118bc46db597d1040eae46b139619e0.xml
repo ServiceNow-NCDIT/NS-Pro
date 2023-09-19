@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Configuration Management (CMDB)" source="com.snc.cmdb">6807f5f5db221300a27757c5ca9619b3</dependency>
+        <min_version>1.1</min_version>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-16 20:47:52</sys_created_on>
+        <sys_id>4118bc46db597d1040eae46b139619e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-16 20:47:52</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

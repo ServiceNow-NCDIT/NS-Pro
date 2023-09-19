@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>CPE Model</name>
+        <order>100</order>
+        <roles>x_g_sonc_ns_pro.cpe_model_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-15 11:02:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c388e96ddb19791040eae46b1396192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPE Model</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_application_c388e96ddb19791040eae46b1396192a</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-15 11:02:40</sys_updated_on>
+        <title>CPE Model</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>
