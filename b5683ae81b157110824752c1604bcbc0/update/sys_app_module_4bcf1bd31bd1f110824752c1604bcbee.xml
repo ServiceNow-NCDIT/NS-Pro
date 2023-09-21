@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="cmdb_ci_site">x_g_sonc_ns_pro_active=true^EQ<item endquery="false" field="x_g_sonc_ns_pro_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Sites</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>cmdb_ci_site</name>
+        <order>10</order>
+        <override_menu_roles>true</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_g_sonc_ns_pro.admin,x_g_sonc_ns_pro.user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-21 06:14:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4bcf1bd31bd1f110824752c1604bcbee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Sites</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_4bcf1bd31bd1f110824752c1604bcbee</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-21 06:34:01</sys_updated_on>
+        <timeline_page/>
+        <title>Sites</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

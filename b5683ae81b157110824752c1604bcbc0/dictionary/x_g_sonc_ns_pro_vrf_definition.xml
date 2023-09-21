@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ae1750dfdbd1711040eae46b139619c2" extends="dscy_net_base" label="VRF Definition" max_length="40" name="x_g_sonc_ns_pro_vrf_definition" type="collection"/>
+</database>

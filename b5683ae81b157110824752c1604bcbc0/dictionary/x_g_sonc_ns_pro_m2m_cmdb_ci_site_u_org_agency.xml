@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="99816ca7db91f11040eae46b139619c9" label="x_g_sonc_ns_pro_m2m_Sites_Agencies" max_length="40" name="x_g_sonc_ns_pro_m2m_cmdb_ci_site_u_org_agency" type="collection">
+        <element attributes="encode_utf8=false" label="Sites" max_length="32" name="cmdb_ci_site" reference="cmdb_ci_site" type="reference"/>
+        <element attributes="encode_utf8=false" label="Agencies" max_length="32" name="u_org_agency" reference="u_org_agency" type="reference"/>
+        <index name="index">
+            <element name="cmdb_ci_site"/>
+        </index>
+        <index name="index2">
+            <element name="u_org_agency"/>
+        </index>
+    </element>
+</database>
