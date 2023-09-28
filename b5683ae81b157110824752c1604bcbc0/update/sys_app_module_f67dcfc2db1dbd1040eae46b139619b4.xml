@@ -14,18 +14,18 @@
         <mobile_title>NSPro Tasks</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_g_sonc_ns_pro_nspro_tasks</name>
-        <order/>
+        <order>20</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_g_sonc_ns_pro.nspro_tasks_user</roles>
+        <roles>x_g_sonc_ns_pro.user,x_g_sonc_ns_pro.admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-09-17 07:40:37</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f67dcfc2db1dbd1040eae46b139619b4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>NSPro Tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_app_module_f67dcfc2db1dbd1040eae46b139619b4</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-09-17 07:40:37</sys_updated_on>
+        <sys_updated_on>2023-09-26 05:26:35</sys_updated_on>
         <timeline_page/>
         <title>NSPro Tasks</title>
         <uncancelable>false</uncancelable>

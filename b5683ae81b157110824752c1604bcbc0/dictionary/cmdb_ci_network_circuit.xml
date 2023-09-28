@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="20efb8a81b013010c0a9db1ee54bcbe6" extends="cmdb_ci" label="Network Circuit" max_length="40" name="cmdb_ci_network_circuit" type="collection">
+        <element label="CE CIR Total" max_length="20" name="x_g_sonc_ns_pro_ce_cir_total" type="decimal"/>
+        <element label="CE Count" max_length="40" name="x_g_sonc_ns_pro_ce_count" type="integer"/>
+        <element choice="1" label="Circuit Type" max_length="40" name="x_g_sonc_ns_pro_circuit_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="CE" sequence="10" value="ce"/>
+                <element inactive_on_update="false" label="PE" sequence="20" value="pe"/>
+            </choice>
+        </element>
+        <element label="CIR Subscription Rate" max_length="20" name="x_g_sonc_ns_pro_cir_subscription_rate" type="decimal"/>
+        <element label="Interface IP Range" max_length="40" name="x_g_sonc_ns_pro_interface_ip_range" type="string"/>
+        <element label="Interface VLAN range" max_length="40" name="x_g_sonc_ns_pro_interface_vlan_range" type="string"/>
+        <element label="Name" max_length="255" name="x_g_sonc_ns_pro_name" type="string"/>
+        <element label="PE Circuit CIR" max_length="20" name="x_g_sonc_ns_pro_pe_circuit_cir" type="decimal"/>
+        <element label="PE Circuit Id" max_length="100" name="x_g_sonc_ns_pro_pe_circuit_id" type="string"/>
+        <element choice="1" label="PE Circuit Type" max_length="40" name="x_g_sonc_ns_pro_pe_circuit_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Metro Ethernet (ME)" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Metro Ethernet (Dedicated)" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="ASE" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="ASE (Dedicated)" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="ATM" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Frame Relay" sequence="60" value="6"/>
+            </choice>
+        </element>
+        <element label="PE Interface" max_length="255" name="x_g_sonc_ns_pro_pe_interface" type="string"/>
+        <element label="PE Router" max_length="32" name="x_g_sonc_ns_pro_pe_router" reference="cmdb_ci_netgear" type="reference"/>
+        <element label="Point of Presence" max_length="32" name="x_g_sonc_ns_pro_point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="Service Definition" max_length="32" name="x_g_sonc_ns_pro_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
+        <element label="Service For" max_length="32" name="x_g_sonc_ns_pro_service_for" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element choice="1" label="Status" max_length="40" name="x_g_sonc_ns_pro_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Pending Delete" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Not Active For Use" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Deleted" sequence="40" value="4"/>
+            </choice>
+        </element>
+        <element label="Telco Order" max_length="32" name="x_g_sonc_ns_pro_telco_order" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
+        <element label="Telco Provider" max_length="32" name="x_g_sonc_ns_pro_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element label="Utilization 95th %" max_length="20" name="x_g_sonc_ns_pro_utilization_95th" type="decimal"/>
+        <element label="Utilization Average" max_length="20" name="x_g_sonc_ns_pro_utilization_average" type="decimal"/>
+        <element label="Utilization In 95th %" max_length="20" name="x_g_sonc_ns_pro_utilization_in_95th" type="decimal"/>
+        <element label="Utilization Out 95th %" max_length="20" name="x_g_sonc_ns_pro_utilization_out_95th" type="decimal"/>
+        <element label="Utilization %" max_length="20" name="x_g_sonc_ns_pro_utilization_pct" type="decimal"/>
+        <element label="Utilization Peak" max_length="20" name="x_g_sonc_ns_pro_utilization_peak" type="decimal"/>
+    </element>
+</database>

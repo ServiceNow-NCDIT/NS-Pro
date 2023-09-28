@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="CPE Model">c388e96ddb19791040eae46b1396192a</application>
+        <application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -14,18 +14,18 @@
         <mobile_title>CPE Models</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_g_sonc_ns_pro_cpe_model</name>
-        <order/>
+        <order>90</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_g_sonc_ns_pro.cpe_model_user</roles>
+        <roles>x_g_sonc_ns_pro.user,x_g_sonc_ns_pro.admin</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-09-15 11:02:40</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8788e96ddb19791040eae46b1396192e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>CPE Models</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_app_module_8788e96ddb19791040eae46b1396192e</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-09-15 11:02:40</sys_updated_on>
+        <sys_updated_on>2023-09-26 05:29:12</sys_updated_on>
         <timeline_page/>
         <title>CPE Models</title>
         <uncancelable>false</uncancelable>

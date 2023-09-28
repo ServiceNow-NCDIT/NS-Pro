@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="1fd6a778dbddf11040eae46b139619d8" label="Service Definition" max_length="40" name="x_g_sonc_ns_pro_service_definition" type="collection">
-        <element label="CPE_level" max_length="40" name="cpe_level" type="string"/>
-        <element label="CPE_model_1" max_length="40" name="cpe_model_1" type="string"/>
-        <element label="CPE_model_2" max_length="40" name="cpe_model_2" type="string"/>
-        <element label="CPE_model_3" max_length="40" name="cpe_model_3" type="string"/>
-        <element label="CPE_model_4" max_length="40" name="cpe_model_4" type="string"/>
-        <element label="CPE_port_range_high" max_length="40" name="cpe_port_range_high" type="integer"/>
+        <element label="Cost Per Month Core" max_length="20" name="cost_per_month_core" type="currency"/>
+        <element label="Cost Per Month CPE" max_length="20" name="cost_per_month_cpe" type="currency"/>
+        <element label="Cost Per Month Transport" max_length="20" name="cost_per_month_transport" type="currency"/>
+        <element label="CPE Level" max_length="40" name="cpe_level" type="string"/>
+        <element label="CPE Model 1" max_length="40" name="cpe_model_1" type="string"/>
+        <element label="CPE Model 2" max_length="40" name="cpe_model_2" type="string"/>
+        <element label="CPE Model 3" max_length="40" name="cpe_model_3" type="string"/>
+        <element label="CPE Model 4" max_length="40" name="cpe_model_4" type="string"/>
+        <element label="CPE Port Range High" max_length="40" name="cpe_port_range_high" type="integer"/>
+        <element label="CPE Port Range Low" max_length="40" name="cpe_port_range_low" type="integer"/>
+        <element label="Full Duplex" max_length="40" name="full_duplex" type="boolean"/>
+        <element label="Media" max_length="40" name="media" type="string"/>
+        <element label="Num CPE" max_length="40" name="num_cpe" type="integer"/>
+        <element label="SLA" max_length="20" name="sla" type="decimal"/>
+        <element label="Speed Egress" max_length="20" name="speed_egress" type="decimal"/>
+        <element label="Speed Ingress" max_length="20" name="speed_ingress" type="decimal"/>
+        <element label="Svc Code" max_length="40" name="svc_code" type="string"/>
+        <element label="Svc HA Category" max_length="40" name="svc_ha_category" type="string"/>
+        <element display="true" label="Svc Title" max_length="254" name="svc_title" type="string"/>
+        <element label="Svc Type" max_length="40" name="svc_type" type="string"/>
     </element>
 </database>

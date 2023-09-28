@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a50ac1601be13d10824752c1604bcb79" label="Telco Selection Criteria" max_length="40" name="x_g_sonc_ns_pro_telco_selection_criteria" type="collection">
+        <element choice="1" label="Available Services" max_length="40" name="available_services" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Enterprise WAN" sequence="10" value="enterprise_wan"/>
+                <element inactive_on_update="false" label="SDWAN" sequence="20" value="sdwan"/>
+            </choice>
+        </element>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="County" max_length="40" name="county" type="string"/>
+        <element label="Provider Count" max_length="40" name="provider_count" type="integer"/>
+        <element label="Provider Priority 1" max_length="40" name="provider_priority_1" type="string"/>
+        <element label="Provider Priority 2" max_length="40" name="provider_priority_2" type="string"/>
+        <element label="Provider Priority 3" max_length="40" name="provider_priority_3" type="string"/>
+        <element label="Provider Priority 4" max_length="40" name="provider_priority_4" type="string"/>
+        <element label="Provider Priority 5" max_length="40" name="provider_priority_5" type="string"/>
+        <element label="Provider Priority 6" max_length="40" name="provider_priority_6" type="string"/>
+        <element label="SDWAN Provider Count" max_length="40" name="sdwan_provider_count" type="integer"/>
+        <element label="SDWAN Provider Priority 1" max_length="40" name="sdwan_provider_priority_1" type="string"/>
+        <element label="SDWAN Provider Priority 2" max_length="40" name="sdwan_provider_priority_2" type="string"/>
+        <element label="SDWAN Provider Priority 3" max_length="40" name="sdwan_provider_priority_3" type="string"/>
+        <element label="Zip" max_length="15" name="zip" type="string"/>
+    </element>
+</database>

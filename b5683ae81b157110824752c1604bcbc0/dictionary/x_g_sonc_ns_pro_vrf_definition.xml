@@ -1,3 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="ae1750dfdbd1711040eae46b139619c2" extends="dscy_net_base" label="VRF Definition" max_length="40" name="x_g_sonc_ns_pro_vrf_definition" type="collection"/>
+    <element db_object_id="ae1750dfdbd1711040eae46b139619c2" extends="dscy_net_base" label="VRF Definition" max_length="40" name="x_g_sonc_ns_pro_vrf_definition" type="collection">
+        <element label="VRF Name" max_length="40" name="vrf_name" type="string"/>
+        <element label="VRF Number" max_length="40" name="vrf_number" type="string"/>
+        <element label="VRF Prefix" max_length="40" name="vrf_prefix" type="string"/>
+        <element choice="1" label="VRF Usage" max_length="40" name="vrf_usage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active for WAN" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Not Selectable" sequence="20" value="2"/>
+            </choice>
+        </element>
+    </element>
 </database>

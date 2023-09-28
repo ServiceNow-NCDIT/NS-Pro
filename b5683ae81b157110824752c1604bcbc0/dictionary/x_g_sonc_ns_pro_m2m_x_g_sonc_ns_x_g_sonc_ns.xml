@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0652a1ef1bd13510824752c1604bcb5d" label="x_g_sonc_ns_pro_m2m_Telco Orders_Service Definitions" max_length="40" name="x_g_sonc_ns_pro_m2m_x_g_sonc_ns_x_g_sonc_ns" type="collection">
+        <element attributes="encode_utf8=false" label="Service Definitions" max_length="32" name="x_g_sonc_ns_pro_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
+        <element attributes="encode_utf8=false" label="Telco Orders" max_length="32" name="x_g_sonc_ns_pro_telco_order" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
+        <index name="index">
+            <element name="x_g_sonc_ns_pro_telco_order"/>
+        </index>
+    </element>
+</database>

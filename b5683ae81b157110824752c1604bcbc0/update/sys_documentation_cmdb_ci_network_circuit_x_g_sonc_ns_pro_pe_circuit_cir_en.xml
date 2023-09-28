@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_g_sonc_ns_pro_pe_circuit_cir" label="PE Circuit CIR" language="en" table="cmdb_ci_network_circuit">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pe_circuit_cir</element>
+            <help/>
+            <hint/>
+            <label>PE Circuit CIR</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <plural>PE Circuit CIRs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-09-22 12:12:06</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>PE Circuit CIR</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_documentation_cmdb_ci_network_circuit_x_g_sonc_ns_pro_pe_circuit_cir_en</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-09-22 12:12:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
