@@ -42,7 +42,7 @@
         <read_roles/>
         <reference display_value="" name="cmdb_ci_site">cmdb_ci_site</reference>
         <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
+        <reference_floats>true</reference_floats>
         <reference_key/>
         <reference_qual>x_g_sonc_ns_pro_active=true^EQ</reference_qual>
         <reference_qual_condition table="cmdb_ci_site">x_g_sonc_ns_pro_active=true^EQ<item endquery="false" field="x_g_sonc_ns_pro_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
@@ -60,7 +60,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_dictionary_x_g_sonc_ns_pro_port_connection_site</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-09-27 18:58:54</sys_updated_on>
+        <sys_updated_on>2023-09-30 11:44:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

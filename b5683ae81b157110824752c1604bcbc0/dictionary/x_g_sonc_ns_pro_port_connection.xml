@@ -6,7 +6,7 @@
         <element label="A IP Address" max_length="40" name="a_ip_address" type="ip_addr"/>
         <element label="A Subnet Mask" max_length="40" name="a_subnet_mask" type="ip_addr"/>
         <element label="A VLAN" max_length="40" name="a_vlan" type="string"/>
-        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_floats="true" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
         <element label="VRF" max_length="32" name="vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
         <element label="Z Circuit Id" max_length="32" name="z_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Z Device Interface Name" max_length="254" name="z_device_interface_name" type="string"/>

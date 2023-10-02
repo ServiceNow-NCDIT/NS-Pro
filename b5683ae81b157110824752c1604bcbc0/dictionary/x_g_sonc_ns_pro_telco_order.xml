@@ -7,6 +7,7 @@
         <element label="Detailed CPE Needs" max_length="1000" name="detailed_cpe_needs" type="string"/>
         <element label="Due Date" max_length="40" name="due_date" type="glide_date"/>
         <element label="Monthly Cost" max_length="20" name="monthly_cost" type="currency"/>
+        <element display="true" label="Name" mandatory="true" max_length="80" name="name" type="string"/>
         <element label="Network Service Category" max_length="32" name="network_service_category" reference="x_g_sonc_ns_pro_network_service_category" type="reference"/>
         <element label="Other Cost" max_length="20" name="other_cost" type="currency"/>
         <element label="Ready Date" max_length="40" name="ready_date" type="glide_date"/>

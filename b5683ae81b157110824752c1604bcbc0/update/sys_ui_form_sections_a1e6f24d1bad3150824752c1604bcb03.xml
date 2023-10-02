@@ -28,6 +28,34 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2023-09-26 13:43:44</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-01 08:51:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f404e72a1bed7d50824752c1604bcb99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_network_circuit" name="cmdb_ci_network_circuit" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">a1e6f24d1bad3150824752c1604bcb03</sys_ui_form>
+            <sys_ui_section caption="CE Information" display_value="CE Information" name="cmdb_ci_network_circuit" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">7804e72a1bed7d50824752c1604bcb31</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-01 08:51:43</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-01 08:51:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b804e72a1bed7d50824752c1604bcb9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_network_circuit" name="cmdb_ci_network_circuit" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">a1e6f24d1bad3150824752c1604bcb03</sys_ui_form>
+            <sys_ui_section caption="Utilization" display_value="Utilization" name="cmdb_ci_network_circuit" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">7804e72a1bed7d50824752c1604bcb96</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-01 08:51:43</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>cmdb_ci_network_circuit</name>
             <roles/>

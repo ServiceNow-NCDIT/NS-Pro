@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="DELETE">
+        <group/>
+        <hidden>false</hidden>
+        <name>NSPro_User</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-26 14:39:10</sys_created_on>
+        <sys_id>e593878d1bed3150824752c1604bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Nspro_user</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_view_e593878d1bed3150824752c1604bcbf3</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-26 14:39:10</sys_updated_on>
+        <title>Nspro_user</title>
+        <user/>
+    </sys_ui_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_view_e593878d1bed3150824752c1604bcbf3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view"><sys_ui_view action="INSERT_OR_UPDATE"><group/><hidden>false</hidden><name>NSPro_User</name><roles/><sys_class_name>sys_ui_view</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-26 14:39:10</sys_created_on><sys_id>e593878d1bed3150824752c1604bcbf3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Nspro_user</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_view_e593878d1bed3150824752c1604bcbf3</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-09-26 14:39:10</sys_updated_on><title>Nspro_user</title><user/></sys_ui_view></record_update>]]></payload>
+        <payload_hash>-1607125487</payload_hash>
+        <record_name>Nspro_user</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-26 14:39:10</sys_created_on>
+        <sys_id>e593cb051b217150824752c1604bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ad1edff140000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-26 14:39:10</sys_updated_on>
+        <type>UI View</type>
+        <update_guid>a993cb05f4217150659918d994ccae87</update_guid>
+        <update_guid_history>a993cb05f4217150659918d994ccae87:-1607125487</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-28 19:18:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_view">sys_ui_view</sys_db_object>
+        <sys_id>b7b51b0bdbd44880a63189dbf3cd2040</sys_id>
+        <sys_metadata>e593878d1bed3150824752c1604bcbf3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Nspro_user</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_view_e593878d1bed3150824752c1604bcbf3</sys_update_name>
+        <sys_update_version display_value="sys_ui_view_e593878d1bed3150824752c1604bcbf3">e593cb051b217150824752c1604bcb88</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-28 19:18:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

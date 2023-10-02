@@ -29,7 +29,7 @@
         <element label="Point of Presence" max_length="32" name="x_g_sonc_ns_pro_point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
         <element label="Service Definition" max_length="32" name="x_g_sonc_ns_pro_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
         <element label="Service For" max_length="32" name="x_g_sonc_ns_pro_service_for" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
-        <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_floats="true" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
         <element choice="1" label="Status" max_length="40" name="x_g_sonc_ns_pro_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Active" sequence="10" value="1"/>
