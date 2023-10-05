@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="Site Type">00f9321b1b653590824752c1604bcb5c</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-03 13:50:48</sys_created_on>
+        <sys_id>528bfe571b653590824752c1604bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VOIP</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>question_choice_528bfe571b653590824752c1604bcbf9</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-03 13:50:48</sys_updated_on>
+        <text>VOIP</text>
+        <value>voip</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=528bfe571b653590824752c1604bcbf9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>question_choice_528bfe571b653590824752c1604bcbf9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>300</order><published_ref/><question display_value="Site Type">00f9321b1b653590824752c1604bcb5c</question><sys_class_name>question_choice</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-03 13:50:48</sys_created_on><sys_id>528bfe571b653590824752c1604bcbf9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>VOIP</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>question_choice_528bfe571b653590824752c1604bcbf9</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-03 13:50:48</sys_updated_on><text>VOIP</text><value>voip</value></question_choice><fx_price action="delete_multiple" query="id=528bfe571b653590824752c1604bcbf9"/></record_update>]]></payload>
+        <payload_hash>682635036</payload_hash>
+        <record_name>VOIP</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-03 13:50:48</sys_created_on>
+        <sys_id>a1abb21f1b653590824752c1604bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18af5ce3e710000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-03 13:50:48</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>a5abb21fed653590df19621f26fe95dc</update_guid>
+        <update_guid_history>a5abb21fed653590df19621f26fe95dc:682635036</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/03/2023 09:40:06">e3e687d31be53590824752c1604bcbed</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-03 14:40:06</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>1397f511847a48dc92af29719049ef44</sys_id>
+        <sys_metadata>528bfe571b653590824752c1604bcbf9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VOIP</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Site Type">00f9321b1b653590824752c1604bcb5c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>question_choice_528bfe571b653590824752c1604bcbf9</sys_update_name>
+        <sys_update_version display_value="question_choice_528bfe571b653590824752c1604bcbf9">a1abb21f1b653590824752c1604bcbdd</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-03 14:40:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

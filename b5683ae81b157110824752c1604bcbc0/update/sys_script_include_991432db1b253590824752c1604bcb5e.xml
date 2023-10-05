@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.cmdb_ci_site</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>cmdb_ci_site</name>
+        <script><![CDATA[var cmdb_ci_site = Class.create();
+cmdb_ci_site.prototype = {
+    initialize: function() {
+    },
+	
+	getNextSiteNum : function(site_type) {
+		
+		site_type = site_type.toLowerCase();
+		// gs.info('cmdb_ci_site.getNextSiteNum searching for site type ' + site_type);
+		var index;
+		var gr = new GlideRecord('cmdb_ci_site');
+		if (site_type == 'pop' || site_type == 'datacenter') {
+			index = 9943302;
+		}
+		else {
+			index = 7001;
+		}
+		// find the first available site id in the range from index to index + 4000 records
+		for (i = index; i < index + 4000; i++) {
+			// gs.info('Checking site ' + i);
+			if (!gr.get('site_identifier', i.toString())) {
+				// gs.info('found available site ' + i);
+				// found free site id
+				return i;
+			}
+		}
+		// if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
+		return;
+
+	},
+
+    type: 'cmdb_ci_site'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-03 13:18:16</sys_created_on>
+        <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>cmdb_ci_site</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-04 14:14:46</sys_updated_on>
+    </sys_script_include>
+</record_update>

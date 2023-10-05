@@ -12,6 +12,7 @@
         <element label="Other Cost" max_length="20" name="other_cost" type="currency"/>
         <element label="Ready Date" max_length="40" name="ready_date" type="glide_date"/>
         <element label="Redundant" max_length="40" name="redundant" type="boolean"/>
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Requested Speed" max_length="40" name="requested_speed" type="integer"/>
         <element label="Request Type" max_length="32" name="request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
         <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" type="reference"/>
@@ -31,6 +32,9 @@
             <element name="request_type"/>
         </index>
         <index name="index5">
+            <element name="requested_for"/>
+        </index>
+        <index name="index6">
             <element name="site"/>
         </index>
     </element>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Create New Site">b357f60b1b25b190824752c1604bcbf2</sc_cat_item>
+        <sc_catalog display_value="NCDIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-02 19:01:02</sys_created_on>
+        <sys_id>0019fecb1b25b190824752c1604bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NCDIT Service Catalog.Create New Site</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_0019fecb1b25b190824752c1604bcb78</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-02 19:01:02</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>
