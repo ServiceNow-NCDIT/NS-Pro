@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="DELETE">
+        <create_roles/>
+        <description/>
+        <display_title>true</display_title>
+        <internal_name>aaa_vs</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>299</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:05:40</sys_created_on>
+        <sys_id>d8dde8dc1bb93d90824752c1604bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AAA VS</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>item_option_new_set_d8dde8dc1bb93d90824752c1604bcbc2</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:05:40</sys_updated_on>
+        <title>AAA VS</title>
+        <type>one_to_one</type>
+        <write_roles/>
+    </item_option_new_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>item_option_new_set_d8dde8dc1bb93d90824752c1604bcbc2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set"><item_option_new_set action="INSERT_OR_UPDATE"><create_roles/><description/><display_title>true</display_title><internal_name>aaa_vs</internal_name><layout>normal</layout><name/><order>299</order><read_roles/><set_attributes/><sys_class_name>item_option_new_set</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-06 06:05:40</sys_created_on><sys_id>d8dde8dc1bb93d90824752c1604bcbc2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AAA VS</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>item_option_new_set_d8dde8dc1bb93d90824752c1604bcbc2</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-06 06:05:40</sys_updated_on><title>AAA VS</title><type>one_to_one</type><write_roles/></item_option_new_set></record_update>]]></payload>
+        <payload_hash>-2035331516</payload_hash>
+        <record_name>AAA VS</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:05:40</sys_created_on>
+        <sys_id>15fde4d01bf93d90824752c1604bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b03977a720000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:05:40</sys_updated_on>
+        <type>Variable Set</type>
+        <update_guid>19fde4d094f93d9084d6905eaface56f</update_guid>
+        <update_guid_history>19fde4d094f93d9084d6905eaface56f:-2035331516</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/06/2023 01:13:36">21cf2cd41bf93d90824752c1604bcbda</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:13:36</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new_set">item_option_new_set</sys_db_object>
+        <sys_id>2c14c8c3bec842c3b0de173be863dfb9</sys_id>
+        <sys_metadata>d8dde8dc1bb93d90824752c1604bcbc2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AAA VS</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>item_option_new_set_d8dde8dc1bb93d90824752c1604bcbc2</sys_update_name>
+        <sys_update_version display_value="item_option_new_set_d8dde8dc1bb93d90824752c1604bcbc2">15fde4d01bf93d90824752c1604bcb70</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:13:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>299</order>
+        <sc_cat_item display_value="Telco Order">59f65dc01bb9b990824752c1604bcbe5</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:07:21</sys_created_on>
+        <sys_id>7d5ea0141bf93d90824752c1604bcb22</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AAA VS.Telco Order</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>io_set_item_7d5ea0141bf93d90824752c1604bcb22</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:07:21</sys_updated_on>
+        <variable_set display_value="AAA VS">d8dde8dc1bb93d90824752c1604bcbc2</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>io_set_item_7d5ea0141bf93d90824752c1604bcb22</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>299</order><sc_cat_item display_value="Telco Order">59f65dc01bb9b990824752c1604bcbe5</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-06 06:07:21</sys_created_on><sys_id>7d5ea0141bf93d90824752c1604bcb22</sys_id><sys_mod_count>1</sys_mod_count><sys_name>AAA VS.Telco Order</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>io_set_item_7d5ea0141bf93d90824752c1604bcb22</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-06 06:07:21</sys_updated_on><variable_set display_value="AAA VS">d8dde8dc1bb93d90824752c1604bcbc2</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-1449645759</payload_hash>
+        <record_name>AAA VS.Telco Order</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:07:21</sys_created_on>
+        <sys_id>355eac141bf93d90824752c1604bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b039903c80000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:07:21</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>395eac1467f93d903faeda2465b488ee</update_guid>
+        <update_guid_history>395eac1467f93d903faeda2465b488ee:-1449645759</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/06/2023 01:13:20">edbfa8d41bf93d90824752c1604bcb35</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:13:20</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>5ed0706722ae4c94b6c9aa31722e7d79</sys_id>
+        <sys_metadata>7d5ea0141bf93d90824752c1604bcb22</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AAA VS.Telco Order</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>io_set_item_7d5ea0141bf93d90824752c1604bcb22</sys_update_name>
+        <sys_update_version display_value="io_set_item_7d5ea0141bf93d90824752c1604bcb22">355eac141bf93d90824752c1604bcbef</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:13:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

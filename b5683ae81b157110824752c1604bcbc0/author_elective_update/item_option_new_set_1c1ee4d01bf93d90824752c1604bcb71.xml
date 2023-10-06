@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="DELETE">
+        <create_roles/>
+        <description/>
+        <display_title>false</display_title>
+        <internal_name>test</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:06:24</sys_created_on>
+        <sys_id>1c1ee4d01bf93d90824752c1604bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>item_option_new_set_1c1ee4d01bf93d90824752c1604bcb71</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:06:24</sys_updated_on>
+        <title>test</title>
+        <type>one_to_one</type>
+        <write_roles/>
+    </item_option_new_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>item_option_new_set_1c1ee4d01bf93d90824752c1604bcb71</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set"><item_option_new_set action="INSERT_OR_UPDATE"><create_roles/><description/><display_title>false</display_title><internal_name>test</internal_name><layout>normal</layout><name/><order>100</order><read_roles/><set_attributes/><sys_class_name>item_option_new_set</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-06 06:06:24</sys_created_on><sys_id>1c1ee4d01bf93d90824752c1604bcb71</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>item_option_new_set_1c1ee4d01bf93d90824752c1604bcb71</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-06 06:06:24</sys_updated_on><title>test</title><type>one_to_one</type><write_roles/></item_option_new_set></record_update>]]></payload>
+        <payload_hash>-673071459</payload_hash>
+        <record_name>test</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:06:24</sys_created_on>
+        <sys_id>f71e68d01bf93d90824752c1604bcb8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b039824470000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:06:24</sys_updated_on>
+        <type>Variable Set</type>
+        <update_guid>fb1e68d04ef93d9071b26eac6a56b48d</update_guid>
+        <update_guid_history>fb1e68d04ef93d9071b26eac6a56b48d:-673071459</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/06/2023 01:13:47">d4dfacd41bf93d90824752c1604bcb88</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 06:13:47</sys_created_on>
+        <sys_db_object display_value="" name="item_option_new_set">item_option_new_set</sys_db_object>
+        <sys_id>51064d3bfcdf402a9b0c724017066b04</sys_id>
+        <sys_metadata>1c1ee4d01bf93d90824752c1604bcb71</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>item_option_new_set_1c1ee4d01bf93d90824752c1604bcb71</sys_update_name>
+        <sys_update_version display_value="item_option_new_set_1c1ee4d01bf93d90824752c1604bcb71">f71e68d01bf93d90824752c1604bcb8e</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 06:13:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

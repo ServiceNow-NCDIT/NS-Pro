@@ -9,34 +9,77 @@
         <name>cmdb_ci_site</name>
         <script><![CDATA[var cmdb_ci_site = Class.create();
 cmdb_ci_site.prototype = {
-    initialize: function() {
-    },
-	
-	getNextSiteNum : function(site_type) {
-		
-		site_type = site_type.toLowerCase();
-		// gs.info('cmdb_ci_site.getNextSiteNum searching for site type ' + site_type);
-		var index;
-		var gr = new GlideRecord('cmdb_ci_site');
-		if (site_type == 'pop' || site_type == 'datacenter') {
-			index = 9943302;
-		}
-		else {
-			index = 7001;
-		}
-		// find the first available site id in the range from index to index + 4000 records
-		for (i = index; i < index + 4000; i++) {
-			// gs.info('Checking site ' + i);
-			if (!gr.get('site_identifier', i.toString())) {
-				// gs.info('found available site ' + i);
-				// found free site id
-				return i;
-			}
-		}
-		// if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
-		return;
+    initialize: function() {},
 
-	},
+    getNextSiteNum: function(site_type) {
+
+        site_type = site_type.toLowerCase();
+        // gs.info('cmdb_ci_site.getNextSiteNum searching for site type ' + site_type);
+        var index;
+        var gr = new GlideRecord('cmdb_ci_site');
+        if (site_type == 'pop' || site_type == 'datacenter') {
+            index = 9943302;
+        } else {
+            index = 7001;
+        }
+        // find the first available site id in the range from index to index + 4000 records
+        for (i = index; i < index + 4000; i++) {
+            // gs.info('Checking site ' + i);
+            if (!gr.get('site_identifier', i.toString())) {
+                // gs.info('found available site ' + i);
+                // found free site id
+                return i;
+            }
+        }
+        // if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
+        return;
+
+    },
+
+    getSiteId: function(site) {
+
+		var site_id;
+        var gr = new GlideRecord('cmdb_ci_site');
+		if (gr.get(site.toString())) {
+			site_id = gr.site_identifier.toString();
+		}
+        // if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
+        return site_id;
+
+    },
+
+    getLocation: function(site_id) {
+		
+		gs.info('cmdb_ci_site.getLocation searching for site ' + site_id);
+
+        var loc = {};
+        var locGr = new GlideRecord('cmn_location');
+        var siteGr = new GlideRecord('cmdb_ci_site');
+
+        if (siteGr.get('site_identifier', site_id)) {
+			
+			gs.info('cmdb_ci_site.getLocation found site ' + siteGr.location);
+			
+            if (locGr.get(siteGr.location.toString())) {
+				
+				gs.info('cmdb_ci_site.getLocation found loc ' + locGr.name);
+				
+                loc.name = locGr.name.toString();
+				loc.county = locGr.u_county.toString();
+                loc.street = locGr.street.toString();
+                loc.city = locGr.city.toString();
+                loc.state = locGr.state.toString();
+                loc.zip = locGr.zip.toString();
+                loc.latitude = locGr.latitude.toString();
+                loc.longitude = locGr.longitude.toString();
+            }
+			else {
+				gs.info('location not found');
+			}
+        }
+        return global.JSON.stringify(loc);
+
+    },
 
     type: 'cmdb_ci_site'
 };]]></script>
@@ -44,13 +87,13 @@ cmdb_ci_site.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-04 14:14:46</sys_updated_on>
+        <sys_updated_on>2023-10-05 20:10:27</sys_updated_on>
     </sys_script_include>
 </record_update>

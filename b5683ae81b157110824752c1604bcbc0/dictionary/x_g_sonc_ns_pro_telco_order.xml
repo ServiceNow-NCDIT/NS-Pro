@@ -17,6 +17,7 @@
         <element label="Request Type" max_length="32" name="request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
         <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" type="reference"/>
         <element label="Special Instructions" max_length="2000" name="special_instructions" type="string"/>
+        <element label="Telco Provider" mandatory="true" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
         <element label="Total Cost" max_length="20" name="total_cost" type="currency"/>
         <element label="WAN CPE Ports" max_length="200" name="wan_cpe_ports" type="string"/>
         <index name="index">
@@ -36,6 +37,9 @@
         </index>
         <index name="index6">
             <element name="site"/>
+        </index>
+        <index name="index7">
+            <element name="telco_provider"/>
         </index>
     </element>
 </database>

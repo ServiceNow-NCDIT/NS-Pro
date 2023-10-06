@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>agency</name>
-        <order>200</order>
+        <order>140</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -55,7 +55,7 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table/>
-        <reference/>
+        <reference>u_org_agency</reference>
         <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
@@ -77,24 +77,24 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 20:33:39</sys_created_on>
         <sys_id>a9b79c2b1b617590824752c1604bcbb0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Agency</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_a9b79c2b1b617590824752c1604bcbb0</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-03 20:33:39</sys_updated_on>
+        <sys_updated_on>2023-10-06 09:10:06</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>6</type>
+        <type>8</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
-        <variable_set display_value="Telco Order">cec5dc271b617590824752c1604bcbad</variable_set>
+        <variable_set display_value="Service Request">cec5dc271b617590824752c1604bcbad</variable_set>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>

@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Create New Site">b357f60b1b25b190824752c1604bcbf2</cat_item>
+        <cat_item display_value="Request New Site - Studio">b357f60b1b25b190824752c1604bcbf2</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -21,10 +21,10 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>name</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
-        <help_text/>
+        <help_text>The full site name will be of the format [site id] : Name you provide automatically. You do not need to add the site id yourself. Do not use a colon (:) in the name</help_text>
         <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
@@ -38,11 +38,11 @@
         <macro/>
         <macroponent/>
         <mandatory>true</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>name</name>
-        <order>110</order>
+        <name>name_suffix</name>
+        <order>130</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -77,16 +77,16 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-02 19:25:57</sys_created_on>
         <sys_id>2e4ab68f1b25b190824752c1604bcb80</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>name</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>name_suffix</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_2e4ab68f1b25b190824752c1604bcb80</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-03 19:25:09</sys_updated_on>
+        <sys_updated_on>2023-10-06 04:53:00</sys_updated_on>
         <table/>
-        <tooltip/>
+        <tooltip>Will prepend site id automatically</tooltip>
         <type>6</type>
         <ui_page/>
         <unique>false</unique>

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
     <item_option_new_set action="INSERT_OR_UPDATE">
-        <create_roles/>
+        <create_roles>snc_internal</create_roles>
         <description/>
         <display_title>false</display_title>
-        <internal_name>telco_order</internal_name>
+        <internal_name>service_request</internal_name>
         <layout>normal</layout>
         <name/>
-        <order>250</order>
-        <read_roles/>
+        <order/>
+        <read_roles>snc_internal</read_roles>
         <set_attributes/>
         <sys_class_name>item_option_new_set</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 20:25:13</sys_created_on>
         <sys_id>cec5dc271b617590824752c1604bcbad</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Telco Order</sys_name>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Service Request</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_set_cec5dc271b617590824752c1604bcbad</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-04 11:03:10</sys_updated_on>
-        <title>Telco Order</title>
+        <sys_updated_on>2023-10-06 11:56:30</sys_updated_on>
+        <title>Service Request</title>
         <type>one_to_many</type>
-        <write_roles/>
+        <write_roles>snc_internal</write_roles>
     </item_option_new_set>
 </record_update>
