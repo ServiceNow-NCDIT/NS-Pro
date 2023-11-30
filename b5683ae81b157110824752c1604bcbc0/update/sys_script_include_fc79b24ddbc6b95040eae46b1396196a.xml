@@ -1,0 +1,3425 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.NcditNsw2Utils2</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>NcditNsw2Utils2</name>
+        <script><![CDATA[var NcditNsw2Utils2 = Class.create();
+NcditNsw2Utils2.prototype = {
+    initialize: function() {
+
+        this.debug = false;
+    },
+
+    /**
+     * These reuseable functions are callable from other parts of the nsw2 app
+     * They are placed here for easy update and to promote DRY coding
+     * If you have questions about them, ask rick.williams@nc.gov
+     */
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    geocodeAddress: function(street, city, state, zip) {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        var LogPrefix = "geocodeAddress --> ";
+        /* calls google maps for geocoding
+        expects and addr object with street, city, st, zip.
+        returns an object with status, message, geoObject
+        */
+        if (this.debug) gs.info(LogPrefix + "called with " + street + ", " + city + ", " + state + ", " + zip);
+        var returnObject = {
+            status: "",
+            message: "",
+            geo: {}
+        };
+        var address = "";
+
+        var geoInfo = {
+            lat: 0.0,
+            lng: 0.0,
+            formatted_address: "",
+            county: "",
+            geoObject: {},
+        };
+
+        // Make sure we have all of the fields
+        if (street != null && street != "" && state != null && state != "" && zip != null && zip != "") {
+            // create the string for calling ggogle maps api
+            street = street.replaceAll("\r", "");
+            street = street.replaceAll("\n", " ");
+            street = street.replaceAll(" & ", " and ");
+            street = street.replaceAll(" ", "+");
+            if (city != null) {
+                city = city.replaceAll(" ", "+");
+            } else {
+                city = "";
+            }
+            state = state.replaceAll(" ", "+");
+            zip = zip.replaceAll(" ", "+");
+            address = street + "," + city + "," + state + "," + zip;
+            if (this.debug) gs.info(LogPrefix + "address for gecode: " + address);
+
+            // get key for calling google. it is in a sys_property
+            var geoKey = "";
+            var propertyQ = "name=google.maps.key.geocoding";
+            var now_GR = new GlideRecord('sys_properties');
+            now_GR.addEncodedQuery(propertyQ);
+            now_GR.query();
+            if (now_GR.next()) {
+                if (this.debug) gs.info(LogPrefix + "key obtained for geocode lookup");
+                geoKey = now_GR.getValue('value');
+            }
+            if (geoKey == "") {
+                // no key, can't continue
+                gs.warn(LogPrefix + "could not obtain key for geocode lookup from sys.properties.");
+                returnObject.message = "could not get geokey from system property with " + propertyQ;
+                returnObject.status = "PROPERR";
+            } else {
+                try {
+                    var r = new sn_ws.RESTMessageV2('x_g_sonc_dit_nsw22.getLatLonViaGoogleMaps', 'Default GET');
+                    r.setStringParameterNoEscape('searchAddrString', address);
+                    r.setStringParameterNoEscape('gooKey', geoKey);
+
+                    var response = r.execute();
+                    var responseBody = response.getBody();
+                    var httpStatus = response.getStatusCode();
+                    if (this.debug) gs.info(LogPrefix + " geocoding: google api status is " + httpStatus);
+
+                    var output = JSON.parse(responseBody);
+                    global.JSUtil.logObject(output, LogPrefix + " geocoding : google maps call returned this object");
+                    if (output['status'] == "OK") {
+                        if (this.debug) gs.info(LogPrefix + " geocoding: google maps returned a response.");
+
+                        geoInfo.lat = output['results'][0]['geometry']['location']['lat'];
+                        geoInfo.lng = output['results'][0]['geometry']['location']['lng'];
+                        geoInfo.formatted_address = output['results'][0]['formatted_address'];
+                        geoInfo.geoObject = output;
+
+                        // walk through address_components to get county from "types" : [ "administrative_area_level_2", "political" ]
+                        for (var eindex = 0; eindex < output['results'][0]['address_components'].length; eindex++) {
+                            var element = output['results'][0]['address_components'][eindex];
+                            if (element['types'][0] == "administrative_area_level_2") {
+                                geoInfo.county = element['short_name'];
+                            }
+                        }
+
+                        returnObject.status = "OK";
+                        returnObject.message = "retrieved lat, lon from google maps api";
+                        returnObject.geo = geoInfo;
+                        if (this.debug) gs.info(LogPrefix + " geocoding: lat " + geoInfo.lat + " lng " + geoInfo.lng + " for " + geoInfo.formatted_address);
+                    } else {
+                        gs.error(LogPrefix + " geocoding Get_Lat_Long Lookup Error: " + output['status']);
+                        gs.error(LogPrefix + " geocoding Address: " + address);
+                        gs.error(LogPrefix + " geocoding API Response: " + responseBody);
+                        returnObject.status = "GEOCODEERR1";
+                    }
+                } catch (ex) {
+                    gs.error(LogPrefix + " geocoding error: " + responseBody);
+                    gs.error(LogPrefix + " geocoding error msg:" + ex.message);
+                    returnObject.status = "GEOCODEERR2";
+                }
+            }
+        } else {
+            gs.warn(LogPrefix + "geocode parms incomplete.");
+            returnObject.status = "BADGEOPARMS";
+            returnObject.message = "insufficient address data for geocode look up.";
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    createLoc4Move: function(telcoOrder) {
+        var LogPrefix = "createLoc4Move --> ";
+        if (this.debug) gs.info(LogPrefix + "called for with prov rcd " + telcoOrder.getValue('number'));
+        var returnObject = {
+            status: "",
+            message: "",
+            siteId: "",
+            siteRcdId: "",
+            locRcdId: ""
+        };
+
+        var addrObject = {
+            street: "",
+            city: "",
+            st: "",
+            zip: ""
+        };
+        addrObject.street = telcoOrder.getValue('req_addr_street');
+        addrObject.city = telcoOrder.getValue('req_addr_city');
+        addrObject.st = telcoOrder.getValue('req_addr_state');
+        addrObject.zip = telcoOrder.getValue('req_addr_zip');
+        if (this.debug) gs.info(LogPrefix + "confirming address via geocode request for " + telcoOrder.getValue('number'));
+        var geoCodeResult = this.geocodeAddress(addrObject.street, addrObject.city, addrObject.st, addrObject.zip);
+        if (geoCodeResult.status == "OK") {
+            returnObject.status = "GEOCODEOK";
+            // get site rcd so we can pass it
+            prSiteGR = new GlideRecord('x_g_sonc_dit_nsw22_nsw2_sites');
+            var gotSite = prSiteGR.get(telcoOrder.site_rcd_ref);
+            if (gotSite) {
+                // make a location record
+                if (this.debug) gs.info(LogPrefix + "Calling to create move to location...");
+                var makeLocResult = this.createLocWithProvSiteGeo(telcoOrder, prSiteGR, geoCodeResult.geo);
+                if (makeLocResult.status == "OK") {
+                    if (this.debug) gs.info(LogPrefix + "Move to location created. " + JSON.stringify(makeLocResult));
+                    returnObject.status = 'OK';
+                    returnObject.locRcdId = makeLocResult.locRcdId;
+                    telcoOrder.new_loc_rcd_ref = makeLocResult.locRcdId;
+                    telcoOrder.provisoning_state = 3; // remember there is a spelling error on this field. site and loc created.
+                    telcoOrder.update();
+                    if (this.debug) gs.info(LogPrefix + "Updated new loc rcd ref for move-to in procRcd " + telcoOrder.number);
+                } else {
+                    gs.error(LogPrefix + "Move to location creation FAILED. " + JSON.stringify(makeLocResult));
+                    returnObject.status = 'LOCERROR';
+                }
+            }
+        }
+        returnObject.message = "Work in progress";
+
+        return returnObject;
+    },
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    createLocWithProvSiteGeo: function(telcoOrder, siteRcd, geo) {
+        var LogPrefix = "createLocWithProvSiteGeo --> ";
+        var locationTable = "cmn_location";
+        var ditCountyTable = "u_county";
+        var ditCompanySysId = "7957d510db806300f861e3f3ca9619bb"; // for setting company on location (must be same in appdev, dev, test, prod)
+        /* there are different cases for when a location record will be created.
+        two are, when a new site provisioning request is being handled and when a site move 
+        provisioning request is being handled. In the first case, we need location to be active and 
+        linked back to the site AND THE SITE RCD LINKED TO THE LOC RCD. In the second case, the location is not active
+        until the move occurs. The location is linked back to the site, BUT THE SITE REMAINS LINKED TO THE ACTIVE LOC RCD.
+
+        for now (09/14/21), we are coding for the new site case. we'll work the move later on.
+
+        expect to be passed the fields needed for the location record and the site rcd sys_id.
+        
+        returns an object with status, message, site sys_id, loc sys_id
+
+        mods:
+            (09/15/21) need to add county look up (done)
+            (09/15/21) need to set primary contact (done)
+
+        */
+        if (this.debug) gs.info(LogPrefix + "called with " + siteRcd.site_name + ", " +
+            telcoOrder.req_addr_street + ", " + telcoOrder.req_addr_city + ", " + telcoOrder.req_addr_state + ", " + telcoOrder.req_addr_zip + ", " + geo.county);
+
+        var returnObject = {
+            status: "",
+            message: "",
+            siteId: "",
+            siteRcdId: "",
+            locRcdId: ""
+        };
+
+        // geo.county will likely contain the word 'county', like Graham County, the dit county table only has the 'Graham' part.
+        var countyName2Use = "";
+        var countyNameArray = geo.county.split(' ');
+        if (countyNameArray.length > 0) {
+            countyName2Use = countyNameArray[0].trim();
+            // look up the table name so we get it right
+            var countyGR = new GlideRecord(ditCountyTable);
+            countyGR.addEncodedQuery("u_name=" + countyName2Use);
+            countyGR.query();
+            if (countyGR.next()) {
+                if (this.debug) gs.info(LogPrefix + " county match found in " + ditCountyTable + ". Using " + countyGR.u_name);
+                countyName2Use = countyGR.u_name;
+                var countySysId = countyGR.sys_id;
+            } else {
+                gs.warn(LogPrefix + " no county match for " + countyName2Use);
+                countyName2Use = "";
+            }
+        }
+
+        if (telcoOrder.request_type == 1) {
+            if (this.debug) gs.info(LogPrefix + "prov request type is " + telcoOrder.request_type + " - New");
+            // if request is for new site, let's make sure there is no location for this site id yet.
+            var locGR = new GlideRecord(locationTable);
+            locGR.addEncodedQuery("name=" + siteRcd.site_name);
+            locGR.query();
+            if (locGR.next()) {
+                gs.error(LogPrefix + " location already exists for " + locGR.name);
+                returnObject.status = "DUPLOC";
+                returnObject.message = "prov req type new and location already exists for " + locGR.name;
+            } else {
+                // this means we didn't find any match - so go ahead with create
+                if (this.debug) gs.info(LogPrefix + " ready to create location rcd for " + siteRcd.site_name);
+                var newLocationGR = new GlideRecord(locationTable);
+                if (newLocationGR.canCreate()) {
+                    newLocationGR.initialize();
+                    newLocationGR.cmn_location_source = "nspro";
+                    newLocationGR.cmn_location_type = "ncdit ns site";
+                    newLocationGR.name = siteRcd.site_name;
+                    newLocationGR.street = telcoOrder.req_addr_street;
+                    newLocationGR.city = telcoOrder.req_addr_city;
+                    newLocationGR.state = telcoOrder.req_addr_state;
+                    newLocationGR.zip = telcoOrder.req_addr_zip;
+                    newLocationGR.latitude = geo.lat;
+                    newLocationGR.longitude = geo.lng;
+                    newLocationGR.contact = siteRcd.contact_ops_pri;
+                    newLocationGR.u_nsw_site_id = siteRcd.site_id;
+                    newLocationGR.u_nsw_site = siteRcd.sys_id;
+                    newLocationGR.u_agency = "DIT Dept of Information Technology";
+                    if (countyName2Use != "") {
+                        newLocationGR.u_county = countyName2Use;
+                        //newLocationGR.u_county_name = countyName2Use;
+                        newLocationGR.u_county_name = countySysId; // just name did not work
+                    }
+                    newLocationGR.company = ditCompanySysId;
+                    newLocationGR.insert();
+                    if (this.debug) gs.info(LogPrefix + "location record " + newLocationGR.sys_id + " created for " + telcoOrder.getValue('number'));
+
+                    returnObject.status = "OK";
+                    returnObject.message = "Location OK for site: " + siteRcd.site_id;
+                    //if (this.debug) gs.info(LogPrefix + "About to set siteRcdId to " + siteRcd.sys_id + " and locRcdId to " + newLocationGR.sys_id);
+                    returnObject.siteId = siteRcd.site_id.toString();
+                    returnObject.siteRcdId = siteRcd.sys_id.toString();
+                    returnObject.locRcdId = newLocationGR.sys_id.toString();
+                    if (this.debug) gs.info(LogPrefix + "Returning info: " + JSON.stringify(returnObject)); // 7/26/22 for debug
+
+                    // set our site record location reference to link to new location sys_id
+                    siteRcd.location = newLocationGR.sys_id;
+                    siteRcd.update();
+
+                } else {
+                    gs.error(LogPrefix + "cannot create location record. not permitted for " + telcoOrder.getValue('number'));
+                }
+            }
+        } else if (telcoOrder.request_type == 2) {
+            if (this.debug) gs.info(LogPrefix + "prov request type is " + telcoOrder.request_type + " - Move (not coded yet)");
+            // this means we didn't find any match - so go ahead with create
+            if (this.debug) gs.info(LogPrefix + " ready to create location rcd for " + siteRcd.site_name + " telcoOrder " + telcoOrder.number);
+            var newLocationGR = new GlideRecord(locationTable);
+            if (newLocationGR.canCreate()) {
+                newLocationGR.initialize();
+                // set proper lifecycle status for move in progress
+                if (this.debug) gs.info(LogPrefix + "Setting life cycle for Move to Design/Build");
+                newLocationGR.life_cycle_stage = "Design";
+                newLocationGR.life_cycle_stage_status = "Build";
+                // set other fields
+                newLocationGR.cmn_location_source = "nspro";
+                newLocationGR.cmn_location_type = "ncdit ns site";
+                newLocationGR.name = siteRcd.site_name;
+                newLocationGR.street = telcoOrder.req_addr_street;
+                newLocationGR.city = telcoOrder.req_addr_city;
+                newLocationGR.state = telcoOrder.req_addr_state;
+                newLocationGR.zip = telcoOrder.req_addr_zip;
+                newLocationGR.latitude = geo.lat;
+                newLocationGR.longitude = geo.lng;
+                newLocationGR.contact = siteRcd.contact_ops_pri;
+                newLocationGR.u_nsw_site_id = siteRcd.site_id;
+                newLocationGR.u_nsw_site = siteRcd.sys_id;
+                newLocationGR.u_agency = "DIT Dept of Information Technology";
+                if (countyName2Use != "") {
+                    newLocationGR.u_county = countyName2Use;
+                    //newLocationGR.u_county_name = countyName2Use;
+                    newLocationGR.u_county_name = countySysId; // just name did not work
+                }
+                newLocationGR.company = ditCompanySysId;
+                newLocationGR.insert();
+                if (this.debug) gs.info(LogPrefix + "location record " + newLocationGR.sys_id + " created for " + telcoOrder.getValue('number'));
+
+                // Don't do this for a MOVE.
+                // set our site record location reference to link to new location sys_id
+                //siteRcd.location = newLocationGR.sys_id;
+                //siteRcd.update();
+
+                returnObject.status = "OK";
+                returnObject.message = "Location OK for site: " + siteRcd.site_id;
+                //if (this.debug) gs.info(LogPrefix + "About to set siteRcdId to " + siteRcd.sys_id + " and locRcdId to " + newLocationGR.sys_id);
+                //returnObject.siteId = siteRcd.site_id.toString();
+                //returnObject.siteRcdId = siteRcd.sys_id.toString();
+                returnObject.locRcdId = newLocationGR.sys_id.toString();
+                if (this.debug) gs.info(LogPrefix + "Returning info: " + JSON.stringify(returnObject)); // 7/26/22 for debug
+
+            } else {
+                gs.error(LogPrefix + "cannot create location record for move. not permitted for " + telcoOrder.getValue('number'));
+            }
+
+        } else {
+            if (this.debug) gs.info(LogPrefix + "prov request type is " + telcoOrder.request_type + " - Not supported yet");
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    wait: function(time) {
+        /* time is in milliseconds - this is essentially a "sleep" function */
+        var t1 = new GlideDateTime().getNumericValue();
+        var t2 = new GlideDateTime().getNumericValue();
+        var duration = t2 - t1;
+        while (duration < time) {
+            t2 = new GlideDateTime().getNumericValue();
+            duration = t2 - t1;
+        }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getDistance2Point: function(lat1, lon1, lat2, lon2) {
+        // calculates distance between two points using the Haversine formula.
+        var LogPrefix = "getDistance2Point --> ";
+        //if (this.debug) gs.info(LogPrefix + " called, lat1 = " + lat1.toString() + ", lon1 = " + lon1.toString() + ", lat2 = " + lat2.toString() + ", lon2 = " + lon2.toString());
+        var Rkm = 6371; // Radius of the earth in km
+        var dLat = (lat2 - lat1) * (Math.PI / 180);
+        var dLon = (lon2 - lon1) * (Math.PI / 180);
+        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        var d = Rkm * c; // Distance in km
+
+        return d;
+    },
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    orderPopsClosest: function(lat, lon) {
+        /*
+        this function will return
+        a list of pop distances ordered closest to furthest from the supplied geo point.
+        */
+        var LogPrefix = "orderPopsClosest --> ";
+        var popList = [];
+        var popTable = "cmdb_ci_site";
+
+        var popGr = new GlideRecord(popTable);
+        popGr.addQuery('x_g_sonc_ns_pro_site_type', 'ad944f1f1ba53590824752c1604bcb08'); // POP site type
+        popGr.query();
+        if (this.debug) gs.info(LogPrefix + ' searching for pop sites returned row cnt ' + popGr.getRowCount());
+        while (popGr.next()) {
+            // if (this.debug) gs.info(LogPrefix + " processing POP site " + popGr.name);
+            // get lat, lon and find distance for this pop
+            var pop = {};
+            pop.popName = popGr.getValue('name');
+            pop.popSiteId = popGr.getValue('site_identifier');
+            pop.distanceKm = this.getDistance2Point(lat, lon, popGr.location.latitude, popGr.location.longitude);
+            pop.distanceMiles = pop.distanceKm * 0.62137; // convert Kms to miles
+            popList.push(pop);
+        }
+
+        if (this.debug) gs.info(LogPrefix + ' returning ' + global.JSON.stringify(popList));
+
+        return popList;
+    },
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getPEPort4Pop: function(NSProTask, popSiteId, provider_to_ignore) {
+        /*
+        Utility to find best pe port given a pop and provisioning record
+
+        Input:
+        NSProTask = provisioning record for this activity. Used for 
+            - logging the number and for 
+            - getting zip for telco lookup and for
+            - network_service_category to match pe ports
+        provider_to_ignore = used to ignore a telco such as when the call is for a redundanct connection
+        and the caller knows it wants to avoid a particular service_for telco becuase it was used
+        for the primary connection.
+
+        (new 01/25/22 rw) - add check for high speed, if => 250Mbps, then look for TenGig ports only.
+        (new 09/26/22 rw) - check up front for Best effort or Guaranteed:
+          NSProTask.network_service_category == 'enterprise' is Guaranteed, 'sd' is Best Effort
+        */
+
+          this.debug = true;
+
+        var LogPrefix = "getPEPort4Pop --> ";
+        if (this.debug) gs.info(LogPrefix + " called with NSProTask  " + NSProTask.number + ", pop site_id " + popSiteId + ' and provider to ignore of ' + provider_to_ignore);
+
+        var pePortTable = "cmdb_ci_network_circuit";
+        var returnObject = {
+            status: "",
+            message: "",
+            pop: "",
+            popAbbrev: "",
+            pe: "",
+            pePort: "",
+            telcoName: "",
+            popPePortSysId: ""
+        };
+        var lataStatus = "";
+        var telcoStatus = "";
+        var pePortStatus = "";
+        var port2Use = {};
+        var svcCatIsGuaranteed = false;
+        var svcCatIsBE = false;
+        var svcCat = "";
+
+        if (this.debug) gs.info(LogPrefix + "NSProTask network service category is " + NSProTask.network_service_category);
+
+        if (NSProTask.network_service_category == 'enterprise') {
+            svcCatIsGuaranteed = true;
+            svcCatIsBE = false;
+            svcCat = "guaranteed"; // 10/28/22 fix spelling
+            if (this.debug) gs.info(LogPrefix + " NSProTask " + NSProTask.number + " service category is " + NSProTask.network_service_category + " - Guaranteed.");
+        // } else if (NSProTask.network_service_category == 'sd') {  // switch to flat 'else' so we'd at least get best effort
+        }
+        else {
+            svcCatIsGuaranteed = false;
+            svcCatIsBE = true;
+            svcCat = "besteffort";
+            if (this.debug) gs.info(LogPrefix + " NSProTask " + NSProTask.number + " service category is " + NSProTask.network_service_category + " - Best effort.");
+        }
+
+        // =========================================================================================
+        // Get Telcos using telcoOrder zip
+        // =========================================================================================
+        if (this.debug) gs.info(LogPrefix + " calling for telco selection by zip");
+        // get telco provider list 
+        var telcoProviderList = this.selectTelcoByZip(NSProTask.telco_order.dest_zip, svcCat, provider_to_ignore);
+        if (telcoProviderList.length > 0) {
+            if (this.debug) gs.info(LogPrefix + " primary telco is: " + telcoProviderList[0]);
+            returnObject.telcoName = telcoProviderList[0];
+            telcoStatus = "OK";
+            //returnObject.telcoName = telcoProviderList[0];
+        } else {
+            gs.error(LogPrefix + " could not determine primary telco for " + NSProTask.number);
+            returnObject.message = returnObject.message + "; " + LogPrefix + " could not determine primary telco for " + NSProTask.number;
+            returnObject.status = "TELCOERR";
+        }
+
+        if (svcCatIsGuaranteed) {
+            if (telcoStatus == "OK") {
+                // =========================================================================================
+                // Get Primary PE port
+                // =========================================================================================
+                // get pop pe port records for pe prefix and telco match
+                // if (this.debug) gs.info(LogPrefix + " working on pe port assignment... " + telcoProviderList.length + " telco options");
+                var pePortOptions = [];
+                var telcoOptionNumber = 0;
+                var primaryPePortSet = false;
+                // determine service type for pe port search search
+                // still need to confirm this method.
+                var pe_circuit_type = "";
+                if (NSProTask.network_service_category == 'enterprise') {
+                    pe_circuit_type = 'IN1,3'; // Metro Ethernet or ASE
+                } else {
+                    pe_circuit_type = 'IN2,4'; // Metro Ethernet or ASE dedicated, will be used for best effort.
+                }
+                // first get a pe port using the passed in pop.
+                while (pePortOptions.length == 0 && telcoOptionNumber < telcoProviderList.length) {
+                    var poppeGR = new GlideRecord(pePortTable);
+                    poppeGR.addQuery("x_g_sonc_ns_pro_site.site_identifier", popSiteId);
+                    poppeGR.addQuery("x_g_sonc_ns_pro_telco_provider.name", telcoProviderList[telcoOptionNumber]);
+                    if (NSProTask.network_service_category == 'enterprise') {
+                        poppeGR.addQuery("x_g_sonc_ns_pro_pe_circuit_type", "IN", "1,3"); // Metro Ethernet or ASE
+                    } else {
+                        poppeGR.addQuery("x_g_sonc_ns_pro_pe_circuit_type", "IN", "2,4"); // Metro Ethernet or ASE dedicated, will be used for best effort.
+                    }
+                    poppeGR.addQuery("x_g_sonc_ns_pro_status", "1");
+                    var pePortQuery = poppeGR.getEncodedQuery();
+					if (this.debug) gs.info(LogPrefix + " searching for pe with '" + pePortQuery + "' for " + NSProTask.number);		 
+                    poppeGR.query();			
+					if (this.debug) gs.info(LogPrefix + ' ' + poppeGR.getRowCount() + ' rows returned from table ' + pePortTable);
+
+                    while (poppeGR.next()) {
+                        var pePortCandidateObj = {
+                            sys_id: "",
+                            name: "",
+                            pe: "",
+                            popAbbrev: "",
+                            cir_subscription_rate: 0.0,
+                            util_pct: 0.0,
+                            endpoint_count: 0
+                        };
+                        pePortCandidateObj.sys_id = poppeGR.getValue('sys_id');
+                        pePortCandidateObj.name = poppeGR.getValue('name');
+                        pePortCandidateObj.pe = poppeGR.x_g_sonc_ns_pro_pe_router.name.toString();
+                        pePortCandidateObj.popAbbrev = poppeGR.getValue('x_g_sonc_ns_pro_point_of_presence');
+                        pePortCandidateObj.cir_subscription_rate = poppeGR.getValue('x_g_sonc_ns_pro_cir_subscription_rate');
+                        pePortCandidateObj.util_pct = poppeGR.getValue('x_g_sonc_ns_pro_utilization_pct');
+                        pePortCandidateObj.endpoint_count = poppeGR.getValue('x_g_sonc_ns_pro_ce_count');
+                        pePortOptions.push(pePortCandidateObj);
+                        if (this.debug) gs.info(LogPrefix + " adding to pePortOptions: " + pePortCandidateObj.name);
+                    }
+                    global.JSUtil.logObject(pePortOptions, LogPrefix + " pePortOptions before call to selectBestPEPortFromList");
+
+                    if (this.debug) gs.info(LogPrefix + " pePortOptions = " + JSON.stringify(pePortOptions));
+
+                    if (pePortOptions.length > 0) {
+                        // we have port(s)
+                        if (this.debug) gs.info(LogPrefix + " " + pePortOptions.length + " pe port options available at pop " + popSiteId + " for " + NSProTask.number);
+                        port2Use = this.selectBestPEPortFromList(pePortOptions);
+                        if (port2Use.status == "BESTPORTFOUND") {
+                            if (this.debug) gs.info(LogPrefix + " best port assigned for pop " + popSiteId + " for NSProTask " + NSProTask.number);
+                            returnObject.pePort = port2Use.bestPort.name;
+                            returnObject.telcoName = telcoProviderList[telcoOptionNumber];
+                            returnObject.pop = popSiteId;
+                            returnObject.popAbbrev = port2Use.bestPort.popAbbrev;
+                            returnObject.popPePortSysId = port2Use.bestPort.sys_id;
+                            returnObject.pe = port2Use.bestPort.pe;
+                            returnObject.message = "best port assigned at pop " + popSiteId + ", " + port2Use.bestPort.name + " for NSProTask " + NSProTask.number;
+                            returnObject.status = "OK";
+                            primaryPePortSet = true;
+                        } else {
+                            gs.error(LogPrefix + " best pe port was not determined at pop site " + popSiteId);
+                            returnObject.status = "NOBESTPORT";
+                        }
+                    } else {
+                        gs.warn(LogPrefix + " no PE Ports found for telco option " + telcoProviderList[telcoOptionNumber] + " at pop " + popSiteId + " for " + NSProTask.number);
+                        telcoOptionNumber = telcoOptionNumber + 1;
+                    }
+                }
+                // if we reach here and still no pePortOptions, then we need to look at other pops.
+                if (!primaryPePortSet) {
+                    gs.warn(LogPrefix + " PE port was not determined for " + NSProTask.number + ", pop " + popSiteId);
+                    returnObject.status = "NOPORT4POP";
+                }
+            } else {
+                gs.warn(LogPrefix + " skipping PE port assignment due to telco error.");
+                returnObject.status = "TELCOERR";
+            }
+        } else {
+            // 09/26/22: service cat is Best effort, so instead of PE, tell user to get a firewall connection instead.
+            gs.warn(LogPrefix + " skipping PE port assignment due to best effort service - user instructed to use firewall");
+
+            //returnObject.status = "USEFIREWALL";
+            //returnObject.pePort = port2Use.bestPort.name;
+            returnObject.telcoName = telcoProviderList[0];
+            // returnObject.pop = "Use Firewall";
+            returnObject.pop = ""; // blank PoP b/c there is no 'Use Firewall' in Point of Presence table
+            //returnObject.popAbbrev = port2Use.bestPort.popAbbrev;
+            //returnObject.popPePortSysId = port2Use.bestPort.sys_id;
+            returnObject.pe = "Firewall";
+            returnObject.status = "OK";
+            returnObject.message = "Use firewall for best effort service for NSProTask " + NSProTask.number;
+        }
+
+        if (this.debug) gs.info(LogPrefix + " returnObject = " + JSON.stringify(returnObject));
+
+        this.debug = false;
+
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    selectPoPPEPort: function(NSProTask) {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /*
+        Invoked by UI Action, this function will do:
+            -- Get LATA using city by calling newt api (newt function calls https://localcallingguide.com ) (not any more)
+            -- Gets ordered telco vendor name list based on teclo selection table (contracts)
+            -- Gather port options for POP PE
+            -- Makes port assignment based on algorithm.
+            -- Updates provisioning record with appropriate info.
+        Returns object with applicable info.
+        */
+        var LogPrefix = "selectPoPPEPort --> ";
+        if (this.debug) gs.info(LogPrefix + " called with NSProTask  " + NSProTask.number);
+
+        var popGr = new GlideRecord('x_g_sonc_ns_pro_point_of_presence');
+        var telcoGr = new GlideRecord('x_g_sonc_ns_pro_telco_provider');
+
+        var pePortTable = "cmdb_ci_network_circuit";
+        var returnObject = {
+            status: "",
+            message: "",
+            pop: "",
+            pe: "",
+            pePort: "",
+            telcoName: ""
+        };
+        var lataStatus = "";
+        var telcoStatus = "";
+        var pePortStatus = "";
+        var notes4pr = "PoP PE port selection requested.";
+        var provider_to_ignore = ''; // used to track any provider already used in an HA pair to ignore it during selection of secondary HA pair
+        // =========================================================================================
+        // Get Pop distances
+        // We are replacing Get LATA with a method of selecting the pop by distance
+        // =========================================================================================
+        var popsByDistance = [];
+        //popsByDistance = this.orderPopsClosest([], 34.9493327, -78.7572291); // test using site 20014
+        // 07/13/22 if this is a move, then use new location lat/lon
+        // 07/26/22 re-factor check for new_loc_rcd_ref
+
+        // if (this.debug) gs.info(LogPrefix + "Request type is " + NSProTask.request_type.type);
+        // if (this.debug) gs.info(LogPrefix + "lat/lon is " + NSProTask.telco_order.dest_location.latitude + '/' + NSProTask.telco_order.dest_location.longitude);
+
+        // if (NSProTask.request_type.type == 'Relocate') {
+        //     if (gs.nil(telcoOrder.relocate_location) || telcoOrder.relocate_location == "") {
+        //         if (this.debug) gs.info(LogPrefix + "Move-request ERROR: Expected relocate_location value to be set");
+        //         returnObject.status = "MOVEERROR";
+        //         returnObject.message = "Move-request ERROR: Expected relocate_location value to be set";
+        //         return returnObject;
+        //     } else {
+        //         if (this.debug) gs.info(LogPrefix + "Using move-to location for finding pop distance, lat/lon " +
+        //         telcoOrder.relocate_location.latitude + "/" + telcoOrder.relocate_location.longitude);
+        //         popsByDistance = this.orderPopsClosest([], telcoOrder.relocate_location.latitude, telcoOrder.relocate_location.longitude);
+        //     }
+        // } else {
+        //     popsByDistance = this.orderPopsClosest([], NSProTask.telco_order.location.latitude, NSProTask.telco_order.location.longitude);
+        // }
+        popsByDistance = this.orderPopsClosest(NSProTask.telco_order.dest_location.latitude, NSProTask.telco_order.dest_location.longitude);
+        popsByDistance.sort(function(a, b) {
+            return a.distanceKm - b.distanceKm;
+        });
+        //        global.JSUtil.logObject(popsByDistance, LogPrefix + " ordered PoPs");
+        if (this.debug) gs.info(LogPrefix + " closest PoP is siteId " + popsByDistance[0].popSiteId + ". At distance of " + popsByDistance[0].distanceMiles.toFixed(2) + " miles");
+        if (this.debug) gs.info(LogPrefix + " next closest PoP is siteId " + popsByDistance[1].popSiteId + ". At distance of " + popsByDistance[1].distanceMiles.toFixed(2) + " miles");
+        lataStatus = "OK";
+
+        // // new function to get a primary pe port
+        // // need to loop through all pops to find closest acceptable for primary or secondary
+        // // if working on the secondary circuit, skip the telco provider of the primary circuit to ensure HA redundancy does not have
+        // // dependency on the same provider/configuration as the primary
+
+        // is this part of an HA pair?
+        if (NSProTask.telco_order.request_ha == true) {
+            // yes, part of HA - does other task have telco provider defined?
+            if (this.debug) gs.info(LogPrefix + NSProTask.number + ' is part of HA pair');
+            var nsprotaskGr = new GlideRecord('x_g_sonc_ns_pro_nspro_tasks');
+            // find tasks for same telco order, for WAN provisioning and not sys_id of current task being processed
+            nsprotaskGr.addQuery('telco_order', NSProTask.telco_order.toString());
+            nsprotaskGr.addQuery('short_description', 'Provision WAN Service');
+            nsprotaskGr.addQuery('sys_id', '!=', NSProTask.sys_id.toString());
+            nsprotaskGr.setLimit(1);
+            nsprotaskGr.query();
+            while (nsprotaskGr.next()) {
+                // find telco provider defined on other circuit (if any)
+                provider_to_ignore = nsprotaskGr.telco_provider.name;
+                if (this.debug) gs.info(LogPrefix + 'provider_to_ignore = ' + provider_to_ignore);
+            }
+            if (!provider_to_ignore.nil()) {
+                if (this.debug) gs.info(LogPrefix + NSProTask.number + ' is part of HA pair, ignoring already allocated telco provider ' + provider_to_ignore);
+            }
+            else {
+                if (this.debug) gs.info(LogPrefix + NSProTask.number + ' is part of HA pair, but other circuit has not been allocated telco provider');
+            }
+        }
+        else {
+            if (this.debug) gs.info(LogPrefix + NSProTask.number + ' is NOT part of HA pair');
+        }
+        for (var pindex = 0; pindex < popsByDistance.length; pindex++) {
+            if (this.debug) gs.info(LogPrefix + " calling get pe function for " + NSProTask.pri_sec_circuit + " pe port using pop " + popsByDistance[pindex].popSiteId);
+                        
+            var priPePort = this.getPEPort4Pop(NSProTask, popsByDistance[pindex].popSiteId, provider_to_ignore); // 3rd parm: exclude this provider from lookup
+
+            if (priPePort.status == "OK") {
+                // global.JSUtil.logObject(priPePort, LogPrefix + " primary pe port assignment function found this from call to getPEPort4Pop");
+                if (this.debug) gs.info(LogPrefix + " priPePort = " + JSON.stringify(priPePort));
+
+                if (telcoGr.get('name', priPePort.telcoName)) {
+                    if (this.debug) gs.info(LogPrefix + ' setting telco_provider to ' + telcoGr.sys_id.toString());
+                    NSProTask.telco_provider = telcoGr.sys_id.toString();
+                }
+                else {
+                    gs.warn(LogPrefix + " telco_provider not found in " + x_g_sonc_ns_pro_telco_provider);
+                }
+                NSProTask.assigned_pe_port = priPePort.popPePortSysId.toString();
+                NSProTask.assigned_pe = priPePort.pe.toString();
+                //NSProTask.setDisplayValue('pop_abbrev', priPePort.popAbbrev); //sprint 27 06/29/22 - error not allowd.
+
+                if (this.debug) gs.info('searching for pop with ' + priPePort.pop);
+
+                try {
+                    if (popGr.get('name', priPePort.popAbbrev)) {
+                        if (this.debug) gs.info(LogPrefix + ' setting pop to ' + popGr.sys_id.toString());
+                        NSProTask.assigned_pop = popGr.sys_id.toString();
+                    }
+                    else {
+                        gs.warn(LogPrefix + " PoP not found in " + x_g_sonc_ns_pro_point_of_presence);
+                    }
+                }
+                catch (ex) {
+                    gs.error(LogPrefix + 'Exception thrown attempting to set PoP. ex = ' + ex.message);
+
+                }
+                
+
+                // NSProTask.pop = priPePort.popAbbrev; //sprint 27 06/29/22 - also change prov rcd choice values to abbreviations.
+
+                //NSProTask.telco_name = priPePort.telcoName; // 02/24/22 - added to see if this is a good way to convey selected telco name for the uplink
+                notes4pr = notes4pr + " Primary PE suggested as " + priPePort.pePort + ".";
+                break; // stop looking
+            } else {
+                gs.error(LogPrefix + " primary telco was not selected by call to getPEPort4Pop at pop " + popsByDistance[pindex].popSiteId);
+                // if we reach here and still no pePortOptions, then we need to look at other pops.
+            }
+        }
+        NSProTask.work_notes = notes4pr;
+
+        // // move to PE Circuit Assignment
+        // NSProTask.provisioning_state = 4;  // moved to UI action code
+        //
+        NSProTask.update();
+        if (this.debug) gs.info(LogPrefix + NSProTask.number + ' updated with POP, PE and PE Port assignment');
+
+        returnObject = priPePort;
+
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    selectTelcoByZip: function(zip, svcCat, provider_to_ignore) {
+        /*
+        Provides and ordered list of telco names using the telco selection table.
+        09/26/22: mod to hanlde BE providers, too.
+        */
+        var LogPrefix = "selectTelcoByZip --> ";
+        zip = zip.substring(0,5); // if zip is longer than 5, trim it to 5 chars so we can use it for looking up in table
+        if (this.debug) gs.info(LogPrefix + ' trimmed zip is ' + zip);
+        var telcoTable = "x_g_sonc_ns_pro_telco_selection_by_zip";
+        var telcoProviderList = [];
+        if (this.debug) gs.info(LogPrefix + " invoked with zip = " + zip + ", service category = " + svcCat);
+        var telcoGR = new GlideRecord(telcoTable);
+        telcoGR.addQuery("zip", zip);
+        telcoGR.addQuery("service_category", svcCat)
+        telcoGR.addQuery("telco_provider.name", "!=", provider_to_ignore);
+        telcoGR.orderBy("priority");
+        telcoGR.query();
+        if (telcoGR.hasNext()) {
+            while (telcoGR.next()) {
+                if (this.debug) gs.info(LogPrefix + " pushing telco provider " + telcoGR.telco_provider.name);
+                telcoProviderList.push(telcoGR.telco_provider.name.toString());
+            }
+        } else {
+            gs.error(LogPrefix + " zip " + zip + " and svcCat of " + svcCat + " missing from telco selection table");
+        }
+		
+		if (this.debug) gs.info(LogPrefix + " telcoProviderList : " + JSON.stringify(telcoProviderList));
+				
+        return telcoProviderList;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    selectBestPEPortFromList: function(pePortList) {
+        var LogPrefix = "selectBestPEPortFromList --> ";
+        /*
+        Given a pe port list from the pop pe port circuits table, choose the best port to use for a new ce conntection.
+        pePortCandidateObj = { sys_id: "", name: "", cir_subscription_rate: 0.0, util_pct: 0.0, endpoint_count: 0};
+
+        Mark Cookes pe port selection criteria:
+         - total pe circuit count less than 200 CE
+         - each circuit less than 100 ce.
+         - service allowed
+         - not over subscribed.
+         - high speed (250m or more) endpoints should prefer ten gig pe.
+
+        */
+        var utilMaxTarget = 0.50;
+        var maxConnections = 100;
+        var bestPortIndex = null;
+        var bestPortReturnObject = {
+            status: "",
+            bestPort: {}
+        };
+        var utilVerifiedOk = false;
+        if (this.debug) gs.info(LogPrefix + " called with pe port list of " + pePortList.length + " records");
+        global.JSUtil.logObject(pePortList, LogPrefix + " pePortList at selectBestPEPortFromList items");
+        if (this.debug) gs.info(LogPrefix + " pePortList = " + JSON.stringify(pePortList));
+
+        /*
+        walk the list and look for the lowest subscription rate as long as the util_pct < 50 (utilMaxTarget)
+        */
+        var currentLowSubRate = 1.0; // 01/26/22 require subsription rate less than 1 (full)
+        var pePortArrayLength = pePortList.length;
+        for (var pindex = 0; pindex < pePortArrayLength; pindex++) {
+            if (this.debug) gs.info(LogPrefix + " value of pindex is " + pindex + ", examining port " + pePortList[pindex].name);
+            // add check in case end point count is blank
+            var portEnpointCount = parseInt(pePortList[pindex].endpoint_count);
+            if (portEnpointCount >= maxConnections) {
+                if (this.debug) gs.info(LogPrefix + " skipping " + pePortList[pindex].name + " because of max endpoint_count.");
+            } else {
+                // add check in case util numbers are blank
+                var portUtilPct = parseFloat(pePortList[pindex].util_pct);
+                if (isNaN(portUtilPct)) {
+                    gs.warn(LogPrefix + "port util for " + pePortList[pindex].name + " is undefined. Skipping check for util pct");
+                } else {
+                    if (this.debug) gs.info(LogPrefix + "checking: " + pePortList[pindex].name + " utilPct: " + pePortList[pindex].util_pct);
+                    if (portUtilPct < utilMaxTarget) {
+                        utilVerifiedOk = true;
+                    } else {
+                        if (this.debug) gs.info(LogPrefix + " skipping " + pePortList[pindex].name + " because of util pct above max target.");
+                    }
+                }
+
+                if (utilVerifiedOk || pePortList[pindex].util_pct == null) {
+                    var portSubscriptionRate = parseFloat(pePortList[pindex].cir_subscription_rate);
+                    if (isNaN(portSubscriptionRate)) {
+                        if (this.debug) gs.info(LogPrefix + " skipping " + pePortList[pindex].name + " because subscription rate is undefined.");
+                    } else {
+                        if (this.debug) gs.info(LogPrefix + "checking: " + pePortList[pindex].name +
+                            " subscription rate: " + pePortList[pindex].cir_subscription_rate +
+                            " vs " + currentLowSubRate.toString());
+                        if (portSubscriptionRate < currentLowSubRate) {
+                            currentLowSubRate = portSubscriptionRate;
+                            bestPortIndex = pindex;
+                        } else {
+                            if (this.debug) gs.info(LogPrefix + " skipping " + pePortList[pindex].name + " because of high subscription rate.");
+                        }
+                    }
+                }
+                if (bestPortIndex != null) {
+                    if (this.debug) gs.info(LogPrefix + " current selected pe port is " + pePortList[bestPortIndex].name);
+                }
+
+            }
+        }
+        if (bestPortIndex != null) {
+            if (this.debug) gs.info(LogPrefix + " best pe port is " + pePortList[bestPortIndex].name);
+            bestPortReturnObject.bestPort = pePortList[bestPortIndex];
+            bestPortReturnObject.status = "BESTPORTFOUND";
+        } else {
+            bestPortReturnObject.status = "NOBESTPORT";
+        }
+
+        if (this.debug) gs.info(LogPrefix + " bestPortReturnObject = " + JSON.stringify(bestPortReturnObject));
+
+        return bestPortReturnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    pePortHasCapacity: function(pePortRcdSysId, totalCeBandwidth, increaseOverCurrent) {
+        /*
+        This function will return a response to indicate if a given pop pe port has adequate capacity to support a bandwidth increase.
+        Used primarily for bandwidth increase requests.
+
+        pePortHasCapacity called with pePort sysid: dfcab9d51b8ab8107294db1ee54bcb55, new ce bandwidth = 20000000, increase = 10000000
+        */
+        var LogPrefix = "pePortHasCapacity --> ";
+        var poppeportTable = "cmdb_ci_network_circuit";
+        returnObject = {
+            status: "",
+            message: "",
+            hasCapacity: false,
+            capacityData: {
+                popPePortSysId: "",
+                name: "",
+                pe: "",
+                pop: "",
+                circuitId: "",
+                service_for: "",
+                endpoint_count: 0,
+                pe_circuit_cir: 0.0,
+                endpoint_cir_total: 0.0,
+                cir_subscription_rate: 0.0
+            }
+        };
+        if (this.debug) gs.info(LogPrefix + "called with pePort sysid: " + pePortRcdSysId + ", new ce bandwidth = " + totalCeBandwidth + ", increase = " + increaseOverCurrent);
+
+        // we can check subscription rate, ce cir total, pe cir cir, ce count
+        // we can verify if the service is using the right port.
+        // we can examine util pct.
+        // first check to see if increase is ok
+        // get service records, current and future
+        var popPePortGR = new GlideRecord(poppeportTable);
+        var gotPoPPortGR = popPePortGR.get(pePortRcdSysId);
+        if (gotPoPPortGR) {
+            if (this.debug) gs.info(LogPrefix + "got pop pe port for capacity verification. PE: " + popPePortGR.getValue('name'));
+
+            var availableBandwidth = popPePortGR.pe_circuit_cir - popPePortGR.x_g_sonc_ns_pro_ce_cir_total;
+            if (availableBandwidth > increaseOverCurrent) {
+                // capacity for increase exists
+                returnObject.hasCapacity = true;
+            }
+            returnObject.status = "OK";
+            returnObject.capacityData.popPePortSysId = popPePortGR.getValue('sys_id');
+            returnObject.capacityData.name = popPePortGR.getValue('name');
+            returnObject.capacityData.pe = popPePortGR.getValue('x_g_sonc_ns_pro_pe_router');
+            returnObject.capacityData.pop = popPePortGR.getValue('x_g_sonc_ns_pro_point_of_presence');
+            returnObject.capacityData.service_for = popPePortGR.getValue('x_g_sonc_ns_pro_service_for');
+            returnObject.capacityData.circuitId = popPePortGR.getValue('x_g_sonc_ns_pro_pe_circuit_id');
+            returnObject.capacityData.endpoint_count = popPePortGR.getValue('x_g_sonc_ns_pro_ce_count');
+            returnObject.capacityData.pe_circuit_cir = popPePortGR.getValue('x_g_sonc_ns_pro_pe_circuit_cir');
+            returnObject.capacityData.endpoint_cir_total = popPePortGR.getValue('x_g_sonc_ns_pro_ce_cir_total');
+            returnObject.capacityData.cir_subscription_rate = popPePortGR.getValue('x_g_sonc_ns_pro_cir_subscription_rate');
+        }
+
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getRate4telco: function(telcoName, serviceCode) {
+        var LogPrefix = "getRate4telco --> ";
+        /*
+        Utility to get a monthly rate given a telco name and a service code
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            rateInfo: {
+                provider: "",
+                monthlyRate: 0.0,
+                contractRef: ""
+            }
+        };
+
+        var svcCodeSuffix = serviceCode.substring(1); // drops first char of service
+        var telco_provider_rates_table = "x_g_sonc_ns_pro_telco_rates";
+        var tpr_searchString = "provider=" + telcoOrder.telco_provider.toString() + "^svc_code=" + svcCodeSuffix;
+        if (this.debug) gs.info(LogPrefix + "search tpr with " + tpr_searchString);
+        var tprGR = new GlideRecord(telco_provider_rates_table);
+        tprGR.addEncodedQuery(tpr_searchString);
+        tprGR.query();
+        if (tprGR.next()) {
+            returnObject.rateInfo.contractRef = tprGR.getValue("prov_contract_ref");
+            returnObject.rateInfo.monthlyRate = tpr.getValue("cost");
+            returnObject.rateInfo.provider = tpr.getValue("provider");
+
+        } else {
+            gs.error(LogPrefix + "could not find a match in telco provider rate table for " + serviceCode + ", " + telcoName);
+        }
+
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    populateCircuitOrderData: function(NSProTask) {
+        var LogPrefix = "populateCircuitOrderData --> ";
+        /*
+        Expected to be invoked by UI action button.
+        This function will gather and populate all data possible to prepare for issuing circuit orders.
+        The current data in the prov rcd is expected to contain verified (by the network analyst) content
+        so that the data will reflect that.
+        This explicit step is purposely introduced to provide the network analyst control over the provisioning process.
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            circuits: []
+        };
+
+        if (this.debug) gs.info(LogPrefix + "has been invoked for provisioning record " + NSProTask.number);
+        // use common date for order sent date
+        var orderSentDate = new GlideDateTime();
+        var orderSentDateStr = orderSentDate.getDisplayValue();
+        if (this.debug) gs.info(LogPrefix + "order sent date will be " + orderSentDateStr + " for " + NSProTask.number);
+
+        // lookup telco vendor data and contact info for primary circuit
+        // NSProTask telco_name, telco_name_2 will have been populated by pop pe selection.
+        // We can use that to get telco vendor reference and telco order contact info.
+        // Contracts search method.
+        // Use telco_name and service code suffix (drop first character for bronze, silver, gold)
+        // to find contract reference in the telco rate table. Then we have vendor record.
+        // Then we can search u_external_contacts table for primary function sales (later make it salesorders), sys_user last name "Salesorders".
+
+        // 7/1/22 added this code to handle prov rcd delete task. For this we use value stored in assigned_wan_service.
+        var svcCode4TaskRcd = "";
+        // 7/13/22 handle move as well as delete
+
+        gs.warn(LogPrefix + "request_type is " + NSProTask.request_type.type);
+
+        if (NSProTask.request_type.type == 'Terminate' || NSProTask.request_type.type == 'Relocate') {
+            // for delete request type
+            svcCode4TaskRcd = NSProTask.telco_order.service_code;
+        } else if (NSProTask.request_type.type == 'Change') {
+            // this is for a change - use requested service code
+            svcCode4TaskRcd = NSProTask.requested_service_code;
+            // go ahead and set quoted service code
+            NSProTask.telco_order.quoted_svc_code = svcCode4TaskRcd;
+        } else {
+            // svcCode4TaskRcd = NSProTask.telco_order.quoted_svc_code;     <--- original line switched to...
+            svcCode4TaskRcd = NSProTask.telco_order.service_code;
+        }
+        // 03/14/23 for debug, we may not have a good svc code
+        var svcCodeSuffix = "";
+        if (this.debug) gs.info(LogPrefix + "check service code (svcCode4TaskRcd) = " + svcCode4TaskRcd);
+        if (svcCode4TaskRcd != "") {
+            svcCodeSuffix = svcCode4TaskRcd.substring(1); // drops first char of service
+        }
+
+        // TODO - replace all this with call to telco provider table to get sales contact info
+
+        // var telco_provider_rates_table = "x_g_sonc_ns_pro_telco_rates";
+        // // var tpr_searchString = "telco_provider=" + NSProTask.telco_provider.toString() + "^svc_code=" + svcCodeSuffix;
+        // // if (this.debug) gs.info(LogPrefix + "search tpr with " + tpr_searchString);
+        // var tprGR = new GlideRecord(telco_provider_rates_table);
+        // //tprGR.addEncodedQuery(tpr_searchString);
+
+        // tprGR.addQuery('telco_provider', NSProTask.telco_provider);
+        // tprGR.addQuery('svc_code', svcCodeSuffix);
+        // if (this.debug) gs.info(LogPrefix + 'Searching TPR with search string ' + tprGR.getEncodedQuery());
+
+        // tprGR.query();
+        // if (tprGR.next()) {
+        //     // get the provider contract reference
+        //     var contractRefSysId = tprGR.getValue("contract");
+        //     if (contractRefSysId) {
+        //         if (this.debug) gs.info(LogPrefix + "found contract ref " + contractRefSysId + " for " + NSProTask.number + " provider " + NSProTask.telco_provider);
+        //         // Using the vendor from contract, locate the sales sys_user ref
+        //         var contractGR = new GlideRecord('ast_contract');
+        //         var contractRcdResp = contractGR.get(contractRefSysId.toString());
+        //         if (this.debug) gs.info(LogPrefix + "pri returned from call to ast_contract with " + contractRefSysId.toString() + ", contractRcdResp = " + contractRcdResp);
+        //         // for debug
+        //         if (contractRcdResp) {
+        //             var contract_vendor = contractGR.getValue('vendor');
+
+
+        //             // WBB - what is telco_vendor for? Can we use telco_provider?
+        //             NSProTask.telco_vendor = contract_vendor;
+
+
+        //             // 2/24/22 Note: sales will likely be changed when we determine the appropriate dropdown list for primary functions.
+        //             // use sys_user last name "Salesorders"
+        //             var ext_contacts_table = "u_external_contacts";
+        //             var ect_searchString = "u_primary_function=Sales" + "^u_associated_vendor=" + contract_vendor;
+        //             if (this.debug) gs.info(LogPrefix + "pri circuit, search external contacts with " + ect_searchString);
+        //             var ectGR = new GlideRecord(ext_contacts_table);
+        //             ectGR.addEncodedQuery(ect_searchString);
+        //             ectGR.query();
+        //             while (ectGR.next()) {
+        //                 // there could be many sales entries, find the one we want - lastname Salesorders
+        //                 // would be better if we have a specific primary function for this.
+        //                 var contactRcd = ectGR.getValue("u_contact_name");
+        //                 var userGR = new GlideRecord('sys_user');
+        //                 var contactUser = userGR.get(contactRcd);
+        //                 if (contactUser) {
+        //                     if (userGR.getValue('last_name') == "Salesorders") {
+        //                         NSProTask.telco_order_email = userGR.getValue('email');
+        //                         NSProTask.telco_order_contact = userGR.getValue('name');
+        //                         returnObject.status = "OK";
+        //                         break;
+        //                     }
+        //                 }
+        //             }
+        //             if (NSProTask.telco_order_email == "") {
+        //                 gs.error(LogPrefix + "failed to find a salesorder email for primary circuit for " + NSProTask.number);
+        //                 returnObject.status = "NOEMAIL";
+        //             }
+        //         } else {
+        //             gs.error(LogPrefix + "contract not found for primary circuit for " + NSProTask.number);
+        //             returnObject.status = "NOCONTRACT";
+        //         }
+        //     } else {
+        //         gs.error(LogPrefix + "contract reference not found for primary circuit for " + NSProTask.number);
+        //         returnObject.status = "NOCONTRACTREF";
+        //     }
+        // } else {
+        //     gs.error(LogPrefix + "could not find a match in telco provider rates for primary circuit for " + NSProTask.number);
+        //     returnObject.status = "NOTPR";
+        // }
+
+        // Replaced call to pull vendor contact info from [ast_contract] and [sys_user] to get from telco provider table for simplification
+        NSProTask.telco_order_email = NSProTask.telco_provider.poc_primary_email;
+        NSProTask.telco_order_contact = NSProTask.telco_provider.poc_primary_name;
+        if (NSProTask.telco_order_email == '') {
+            gs.error(LogPrefix + "provider reference not found in Telco Provider table for " + NSProTask.number);
+            returnObject.status = "NOCONTRACTREF";
+        }
+        else {
+            returnObject.status = 'OK';
+        }
+
+        // Fill in other stuff we know
+        if (NSProTask.request_type.type == "New Service") {
+            NSProTask.circuit_order_request_type = "add";
+        } else if (NSProTask.request_type.type == "Terminate") {
+            NSProTask.circuit_order_request_type = "terminate"; // added 7/5/22
+        } else if (NSProTask.request_type.type == "Change") {
+            NSProTask.circuit_order_request_type = "change"; // added 11/16/22
+        } else if (NSProTask.request_type.type == "Relocate") {
+            NSProTask.circuit_order_request_type = "add"; // added 7/13/22 for move
+        }
+
+        NSProTask.circuit_due_date = NSProTask.due_date;
+        NSProTask.circuit_order_sent_date = new GlideDate();
+        NSProTask.circuit_speed_ingress = NSProTask.requested_speed;
+        NSProTask.circuit_speed_egress = NSProTask.requested_speed;
+        returnObject.message += " Circuit order info populated";
+
+        // commented all this out since we handle HA with a seperate circuit order request
+        //         // now do the alternate circuit of we have HA redundancy =================================
+        //         if (telcoOrder.telco_name_2 != "" && telcoOrder.telco_name_2 != null) {
+        //             var tpr_searchString2 = "provider=" + telcoOrder.telco_name_2 + "^svc_code=" + svcCodeSuffix;
+        //             if (this.debug) gs.info(LogPrefix + "search alternate circuit tpr with " + tpr_searchString2);
+        //             var tpr2GR = new GlideRecord(telco_provider_rates_table);
+        //             tpr2GR.addEncodedQuery(tpr_searchString2);
+        //             tpr2GR.query();
+        //             if (tpr2GR.next()) {
+        //                 // get the provider contract reference
+        //                 var contractRefSysId2 = tpr2GR.getValue("prov_contract_ref");
+        //                 if (contractRefSysId2) {
+        //                     if (this.debug) gs.info(LogPrefix + "found contract ref " + contractRefSysId2 + " for " + telcoOrder.number + " provider " + telcoOrder.telco_name_2);
+        //                     // Using the vendor from contract, locate the sales sys_user ref
+        //                     var contract2GR = new GlideRecord('ast_contract');
+        //                     var contractRcdResp2 = contract2GR.get(contractRefSysId2.toString());
+        //                     if (this.debug) gs.info(LogPrefix + "sec returned from call to ast_contract with " + contractRefSysId2.toString() + ", contractRcdResp2 = " + contractRcdResp2);
+        //                     if (contractRcdResp2) {
+        //                         var contract_vendor2 = contract2GR.getValue('vendor');
+        //                         telcoOrder.telco_vendor_2 = contract_vendor2;
+        //                         // 2/24/22 Note: sales will likely be changed when we determine the appropriate dropdown list for primary functions.
+        //                         // use sys_user last name "Salesorders"
+        //                         var ect_searchString2 = "u_primary_function=Sales" + "^u_associated_vendor=" + contract_vendor2;
+        //                         if (this.debug) gs.info(LogPrefix + "sec circuit, search external contacts with " + ect_searchString2);
+        //                         var ect2GR = new GlideRecord(ext_contacts_table);
+        //                         ect2GR.addEncodedQuery(ect_searchString2);
+        //                         ect2GR.query();
+        //                         while (ect2GR.next()) {
+        //                             // there could be many sales entries, find the one we want - lastname Salesorders
+        //                             // would be better if we have a specific primary function for this.
+        //                             var contactRcd2 = ect2GR.getValue("u_contact_name");
+        //                             var user2GR = new GlideRecord('sys_user');
+        //                             var contactUser2 = user2GR.get(contactRcd2);
+        //                             if (contactUser2) {
+        //                                 if (user2GR.getValue('last_name') == "Salesorders") {
+        //                                     telcoOrder.telco_email_for_order_2 = user2GR.getValue('email');
+        //                                     telcoOrder.telco_order_contact_2 = user2GR.getValue('sys_id');
+        //                                     returnObject.status = "OK";
+        //                                     break;
+        //                                 }
+        //                             }
+        //                         }
+        //                         if (telcoOrder.telco_email_for_order_2 == "") {
+        //                             gs.error(LogPrefix + "failed to find a salesorder email for secondary circuit for " + telcoOrder.number);
+        //                             returnObject.status = "NOEMAIL";
+        //                         }
+        //                     } else {
+        //                         gs.error(LogPrefix + "contract not found for secondary circuit for " + telcoOrder.number);
+        //                         returnObject.status = "NOCONTRACT";
+        //                     }
+        //                 } else {
+        //                     gs.error(LogPrefix + "contract reference not found for secondary circuit for " + telcoOrder.number);
+        //                     returnObject.status = "NOCONTRACTREF";
+        //                 }
+        //             } else {
+        //                 gs.error(LogPrefix + "could not find a match in tpr for secondary circuit for " + telcoOrder.number);
+        //                 returnObject.status = "NOTPR";
+        //             }
+        //             // Fill in other stuff we know
+        //             telcoOrder.circuit_order_req_type_2 = "Add";
+        //             telcoOrder.circuit_ord_req_needby_date_2 = telcoOrder.req_date;
+        //             telcoOrder.circuit_order_sent_date_2 = orderSentDate;
+        //             telcoOrder.cir_speed_ingress_2 = telcoOrder.requested_speed;
+        //             telcoOrder.cir_speed_egress_2 = telcoOrder.requested_speed;
+        //             returnObject.message += " and secondary circuit";
+        //         } else {
+        //             if (this.debug) gs.info(LogPrefix + "skipping alternate circuit population, not HA service for " + telcoOrder.number);
+        //         }
+        // ==== end alternate ha circuit
+
+        NSProTask.work_notes = "Circuit order data population requested.";
+
+        NSProTask.update();
+
+        return returnObject;
+
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    orderCircuits: function(NSProTask) {
+        var LogPrefix = "orderCircuits --> ";
+        /*
+        Expected to be invoked by UI action button.
+        This function will issue the circuit order email(s) for circuit order data.
+        The current data in the prov rcd is expected to contain verified (by the network analyst) content.
+        This function will create an event which will, in turn, cause the email generation and transmission.
+        This explicit step is purposely introduced to provide the network analyst control over the provisioning process.
+
+        Event generation:
+        gs.eventQueue(String name, Object instance, String parm1, String parm2, String queue)
+        name - String, Name of the event being queued.
+        instance - Object, GlideRecord object, such as "current".
+        parm1 - String Optional, Saved with the instance if specified.
+        parm2 - String Optional, Saved with the instance if specified.
+        queue - String Optional, Name of the queue. (curstom queue requires a new watcher job)
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            circuits: []
+        };
+        var provTaskTable = "x_g_sonc_ns_pro_nspro_tasks";
+
+        // use common date for order sent date
+        var orderSentDate = new GlideDate();
+        var orderSentDateStr = orderSentDate.getDisplayValue();
+        if (this.debug) gs.info(LogPrefix + "order sent date will be " + orderSentDateStr + " for " + NSProTask.number);
+
+        if (this.debug) gs.info(LogPrefix + " has been invoked for provisioning record " + NSProTask.number);
+        // --------------------------- order circuits ---------------------------------------------------------------------------
+        // create an event on the event queue that will trigger the email for the primary circuit.
+        if (NSProTask.telco_order_email != "") {
+            gs.eventQueue("x_g_sonc_ns_pro.order_circuit", NSProTask);
+            returnObject.message = "Fired event x_g_sonc_ns_pro.order_circuit";
+            if (this.debug) gs.info(LogPrefix + " Fired event x_g_sonc_ns_pro.order_circuit for provisioning record " + NSProTask.number);
+
+
+            var makeNetCirResp = this.createDmyCircuitFromPr(NSProTask);
+            if (makeNetCirResp.status == "OK") {
+                if (this.debug) gs.info(LogPrefix + "create dummy circuit for primary returned " + makeNetCirResp.status);
+            } else {
+                gs.warn(LogPrefix + "create dummy circuit for primary returned " + makeNetCirResp.status + ", " + makeNetCirResp.message);
+            }
+
+
+            // TODO - find out why this process is broken
+            // trigger an event so that emails can be located and added to the prov record work notes by
+            // a separate script or flow that watched for that event.
+            var processTime = new GlideDateTime();
+            processTime.addSeconds(60); // delay
+            var parm2parms_pri = NSProTask.telco_provider.name + "," + NSProTask.telco_order_email;
+            gs.eventQueueScheduled("x_g_sonc_ns_pro.capture_circuit_order", NSProTask, NSProTask.number, parm2parms_pri, processTime);
+            NSProTask.circuit_order_sent_date = orderSentDate;
+        }
+        else {
+            gs.error(LogPrefix + " Failed to fire event x_g_sonc_ns_pro.order_circuit for provisioning record " + NSProTask.number);
+        }
+        // -----------------------------------------------------------------------------------------------------------------------
+        NSProTask.work_notes = "Circuit order(s) have been requested to be sent.";
+        // NSProTask.provisoning_state = "5"; //circuit ordered
+        NSProTask.update();
+
+        if (makeNetCirResp.status == "OK" || makeNetCirResp2 == "OK") {
+            //gs.eventQueue("x_g_sonc_dit_nsw22.updatePopPE", NSProTask, "1");  // TODO - find out what Rick intended here and why he commented it out
+            if (this.debug) gs.info(LogPrefix + "calling update pop pe port records function for " + NSProTask.number);
+            // this.runBackgroundFlowByName("updatePopPEPortCircuits");   TODO reenable
+        }
+
+        returnObject.status = "OK";
+        
+        gs.warn(LogPrefix + "end of process, returning  " + JSON.stringify(returnObject));
+
+        return returnObject;
+
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    terminateCircuits: function(NSProTask) {
+        var LogPrefix = "terminateCircuits --> ";
+        /*
+        Expected to be invoked by UI action button.
+        This function will issue the circuit termination order email(s) for circuit order data related to the site.
+        The current data in the prov rcd is expected to contain verified (by the network analyst) content.
+        This function will create an event which will, in turn, cause the email generation and transmission.
+        This explicit step is purposely introduced to provide the network analyst control over the provisioning process.
+
+        Event generation:
+        gs.eventQueue(String name, Object instance, String parm1, String parm2, String queue)
+        name - String, Name of the event being queued.
+        instance - Object, GlideRecord object, such as "current".
+        parm1 - String Optional, Saved with the instance if specified.
+        parm2 - String Optional, Saved with the instance if specified.
+        queue - String Optional, Name of the queue. (curstom queue requires a new watcher job)
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            circuits: []
+        };
+        var provTaskTable = "x_g_sonc_dit_nsw22_nsw2_provisioning_tasks";
+
+        // use common date for order sent date
+        var orderSentDate = new GlideDateTime();
+        var orderSentDateStr = orderSentDate.getDisplayValue();
+        if (this.debug) gs.info(LogPrefix + "order sent date will be " + orderSentDateStr + " for " + NSProTask.number);
+
+        if (this.debug) gs.info(LogPrefix + " has been invoked for provisioning record " + NSProTask.number);
+
+        // use site rcd ref to get related circuits.
+        if (NSProTask.site) {
+            // set search string to locate applicable circuits
+            // u_nsw2_site=7e98a2891b2e41906e32eaccac4bcb3c
+            // 03/14/23 need to search for installed or pending - could be either. Or maybe use operational status
+            var ncSearchString = "operational_status=1^u_nsw2_site=" + NSProTask.site; // installed=1, pending=4
+            //var ncSearchString =  "install_status=4^u_nsw2_site=" + NSProTask.site; // installed=1, pending=4
+            var siteCircuits = this.getCircuitsBySearch(ncSearchString);
+            if (this.debug) gs.info(LogPrefix + "getCircuitsBySearch call returned: " + JSON.stringify(siteCircuits));
+            returnObject.status = "OK";
+        } else {
+            gs.error(LogPrefix + "No valid site rcd reference. Cannot proceed with circuit termination requests.");
+            returnObject.status = "ERRNOSITEREF";
+            returnObject.message = "No valid site rcd reference. Cannot proceed with circuit termination requests.";
+        }
+
+        // prepare to send circuit terminate orders via email.
+        // --------------------- copied from orderCircuits, may consolidate later ------------------------
+        // --------------------------- order circuits ---------------------------------------------------------------------------
+        // create an event on the event queue that will trigger the email for the primary circuit.
+        if (NSProTask.telco_order_email != "") {
+            gs.eventQueue("x_g_sonc_dit_nsw22.terminate_circuits_pr", NSProTask, "1");
+            returnObject.message = "Fired event terminate_circuits_pr";
+
+            // trigger an event so that emails can be located and added to the prov record work notes by
+            // a separate script or flow that watched for that event.
+            var processTime = new GlideDateTime();
+            processTime.addSeconds(60); // delay
+            var parm2parms_pri = NSProTask.telco_name + "," + NSProTask.telco_order_email;
+            gs.eventQueueScheduled("x_g_sonc_dit_nsw22.capture_cir_ord", NSProTask, NSProTask.number, parm2parms_pri, processTime);
+            NSProTask.circuit_order_sent_date = orderSentDate;
+
+            // // if there is another circuit - HA redundancy - then trigger that event for that email, too.
+            // if (telcoOrder.telco_email_for_order_2 != "") {
+            //     gs.eventQueue("x_g_sonc_dit_nsw22.terminate_circuits_se", telcoOrder, "2");
+            //     returnObject.message += "; Fired event terminate_circuits_se";
+
+            //     // trigger an event so that emails can be located and added to the prov record work notes by
+            //     // a separate script or flow that watched for that event.
+            //     var processTime2 = new GlideDateTime();
+            //     processTime2.addSeconds(90); // delay
+            //     var parm2parms_sec = telcoOrder.telco_name_2 + "," + telcoOrder.telco_email_for_order_2;
+            //     gs.eventQueueScheduled("x_g_sonc_dit_nsw22.capture_cir_ord", telcoOrder, telcoOrder.number, parm2parms_sec, processTime2);
+            //     telcoOrder.circuit_order_sent_date_2 = orderSentDate;
+            // }
+        }
+        // -----------------------------------------------------------------------------------------------------------------------
+        NSProTask.work_notes = "Circuit order(s) have been requested to be sent.";
+        NSProTask.provisoning_state = "5"; //circuit ordered
+
+        NSProTask.update();
+
+        return returnObject;
+
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    changeCircuits: function(telcoOrder) {
+        var LogPrefix = "changeCircuits --> ";
+        /*
+        Expected to be invoked by UI action button.
+        This function will issue the circuit change order email(s) for circuit order data related to the site.
+        The current data in the prov rcd is expected to contain verified (by the network analyst) content.
+
+        The telcoOrder must contain a reference to the CE circuit id for the change order. (02/20/23 - doesn't yet)
+
+        This function will create an event which will, in turn, cause the email generation and transmission.
+        This explicit step is purposely introduced to provide the network analyst control over the provisioning process.
+
+        Event generation:
+        gs.eventQueue(String name, Object instance, String parm1, String parm2, String queue)
+        name - String, Name of the event being queued.
+        instance - Object, GlideRecord object, such as "current".
+        parm1 - String Optional, Saved with the instance if specified.
+        parm2 - String Optional, Saved with the instance if specified.
+        queue - String Optional, Name of the queue. (curstom queue requires a new watcher job)
+
+        mods:
+        03/09/23 populate circuit id for change so it can be used on the change order form outbound email.
+
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            circuits: []
+        };
+        var provTaskTable = "x_g_sonc_dit_nsw22_nsw2_provisioning_tasks";
+
+        var primaryCircuitId = "";
+        var secondaryCircuitId = "";
+        var updateProv4CircuitId = false;
+
+        // use common date for order sent date
+        var orderSentDate = new GlideDateTime();
+        var orderSentDateStr = orderSentDate.getDisplayValue();
+        if (this.debug) gs.info(LogPrefix + "order sent date will be " + orderSentDateStr + " for " + telcoOrder.number);
+
+        if (this.debug) gs.info(LogPrefix + " has been invoked for provisioning record " + telcoOrder.number);
+
+        // use site rcd ref to get related circuits.
+        if (telcoOrder.site_rcd_ref) {
+            // set search string to locate applicable circuits
+            // u_nsw2_site=7e98a2891b2e41906e32eaccac4bcb3c
+            // 02/20/23 should this be install_status = 4 or operational_status = 1 ? change to operational.
+            //var ncSearchString =  "install_status=4^u_nsw2_site=" + telcoOrder.site_rcd_ref; // installed=1, pending=4
+            var ncSearchString = "operational_status=1^u_nsw2_site=" + telcoOrder.site_rcd_ref; // installed=1, pending=4
+            var siteCircuits = this.getCircuitsBySearch(ncSearchString);
+            if (this.debug) gs.info(LogPrefix + "getCircuitsBySearch call returned: " + JSON.stringify(siteCircuits));
+            returnObject.status = "OK";
+
+            // we need to update the prov rcd with the circuit id(s) we just got. at least the primary and secondary if there are two.
+            // see how many we have in siteCircuits
+            if (siteCircuits.length > 0) {
+                primaryCircuitId = siteCircuits[0].circuit_id;
+                // only update if user has not already filled something in
+                if (telcoOrder.circuit_id == "" || telcoOrder.circuit_id == null) {
+                    telcoOrder.circuit_id = primaryCircuitId;
+                    updateProv4CircuitId = true;
+                }
+            }
+            if (siteCircuits.length > 1) {
+                secondaryCircuitId = siteCircuits[0].circuit_id;
+                // only update if user has not already filled something in
+                if (telcoOrder.circuit_id_2 == "" || telcoOrder.circuit_id_2 == null) {
+                    telcoOrder.circuit_id_2 = secondaryCircuitId;
+                    updateProv4CircuitId = true;
+                }
+            }
+            if (updateProv4CircuitId) {
+                telcoOrder.update();
+                if (this.debug) gs.info(LogPrefix + "Updated circuit ids for telco resp for change");
+            } else {
+                gs.warn(LogPrefix + "Skipped update to circuit ids for telco resp for change becuase user had already set it");
+            }
+
+
+        } else {
+            gs.error(LogPrefix + "No valid site rcd reference. Cannot proceed with circuit termination requests.");
+            returnObject.status = "ERRNOSITEREF";
+            returnObject.message = "No valid site rcd reference. Cannot proceed with circuit termination requests.";
+        }
+
+        // prepare to send circuit terminate orders via email.
+        // --------------------- copied from orderCircuits, may consolidate later ------------------------
+        // --------------------------- order circuits ---------------------------------------------------------------------------
+        // create an event on the event queue that will trigger the email for the primary circuit.
+        if (telcoOrder.telco_email_for_order != "") {
+            gs.eventQueue("x_g_sonc_dit_nsw22.change_circuits_pri", telcoOrder, "1");
+            returnObject.message = "Fired event change_circuits_pri";
+
+            // trigger an event so that emails can be located and added to the prov record work notes by
+            // a separate script or flow that watched for that event.
+            var processTime = new GlideDateTime();
+            processTime.addSeconds(60); // delay
+            var parm2parms_pri = telcoOrder.telco_name + "," + telcoOrder.telco_email_for_order;
+            gs.eventQueueScheduled("x_g_sonc_dit_nsw22.capture_cir_ord", telcoOrder, telcoOrder.number, parm2parms_pri, processTime);
+            telcoOrder.circuit_order_sent_date = orderSentDate;
+
+            // if there is another circuit - HA redundancy - then trigger that event for that email, too.
+            if (telcoOrder.telco_email_for_order_2 != "") {
+                gs.eventQueue("x_g_sonc_dit_nsw22.change_circuits_sec", telcoOrder, "2");
+                returnObject.message += "; Fired event change_circuits_sec";
+
+                // trigger an event so that emails can be located and added to the prov record work notes by
+                // a separate script or flow that watched for that event.
+                var processTime2 = new GlideDateTime();
+                processTime2.addSeconds(90); // delay
+                var parm2parms_sec = telcoOrder.telco_name_2 + "," + telcoOrder.telco_email_for_order_2;
+                gs.eventQueueScheduled("x_g_sonc_dit_nsw22.capture_cir_ord", telcoOrder, telcoOrder.number, parm2parms_sec, processTime2);
+                telcoOrder.circuit_order_sent_date_2 = orderSentDate;
+            }
+        }
+        // -----------------------------------------------------------------------------------------------------------------------
+        telcoOrder.work_notes = "Circuit order(s) have been requested to be sent.";
+        telcoOrder.provisoning_state = "5"; //circuit ordered
+
+        telcoOrder.update();
+
+        return returnObject;
+
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getCircuitsBySearch: function(searchStr) {
+        var LogPrefix = "getCircuitsBySearch --> ";
+        var netCirTable = "cmdb_ci_network_circuit";
+        /*
+        This function returns a list of network circuit records using a given search string. 
+        */
+        var circuitList = [];
+        if (this.debug) gs.info(LogPrefix + "called with " + searchStr);
+
+        var circGR = new GlideRecord(netCirTable);
+        circGR.addEncodedQuery(searchStr);
+        circGR.query();
+        if (circGR.next()) {
+            var circuitInfoRcd = {
+                nc_sys_id: "",
+                circuit_id: "",
+                site_ref: "",
+                vendor_ref: ""
+            };
+            circuitInfoRcd.nc_sys_id = circGR.getValue('sys_id');
+            circuitInfoRcd.circuit_id = circGR.getValue('name');
+            circuitInfoRcd.site_ref = circGR.getValue('u_nsw2_site');
+            circuitInfoRcd.vendor_ref = circGR.getValue('vendor');
+            circuitList.push(circuitInfoRcd);
+        } else {
+            gs.error(LogPrefix + "no network circuit record found");
+        }
+        return circuitList;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getSvcCpeModelsBySearch: function(searchStr) {
+        var LogPrefix = "getSvcCpeModelsBySearch --> ";
+        var svcTable = "x_g_sonc_ns_pro_service_definition";
+        /*
+        This function returns a list of ordered cpe models for the service using 
+        a given search string. 
+        */
+        var cpeModelList = [];
+        if (this.debug) gs.info(LogPrefix + "called with " + searchStr);
+
+        var scGR = new GlideRecord(svcTable);
+        scGR.addEncodedQuery(searchStr);
+        scGR.query();
+        if (scGR.next()) {
+            if (this.debug) gs.info(LogPrefix + "found svc record for cpe, " + scGR.getValue('sys_id') + ", " + scGR.getValue("svc_title"));
+            for (var sindex = 1; sindex < 5; sindex++) {
+                var svcCpeVarName = "cpe_model_" + sindex.toString();
+                var cpeMod = scGR.getValue(svcCpeVarName);
+                if (cpeMod != "" && cpeMod != null) {
+                    cpeModelList.push(cpeMod);
+                }
+            }
+        } else {
+            gs.error(LogPrefix + "service definition record not found");
+        }
+
+        if (this.debug) gs.info(LogPrefix + 'returning cpeModelList of ' + cpeModelList);
+
+        return cpeModelList;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    DefineReqCpe: function(NSProTask) {
+        var LogPrefix = "DefineReqCpe --> ";
+        var serviceTable = "x_g_sonc_ns_pro_service_definition";
+        var accumulateWorkNotes = "";
+        var modelsRequired = []
+        var detailedRequiredCpeInventory = []; // 10/20/22 we are going to need to provide detail to the FS task.
+        // it might be better to just make a related table of cpe requirements. would simplify everything.
+        /*
+        Driven by UI action.
+        This function is meant to determine if there exists enough of a particular model in stock to fullfill 
+        a provisioning function and then allocate models to the prov record.
+
+        10/10/22 - Extended this function to handle LAN CPE, too.
+        Provisioning rcd now allow for entry of the number of required LAN switch types. We will use that data to check for LAN switch
+        CPE in stock.
+
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                available: false,
+                inStockCount: 0
+            }
+        };
+        if (this.debug) gs.info(LogPrefix + "called for " + NSProTask.number);
+
+        /* This first section needs to be done if this is for WAN provisioning with CPE
+            if it is for something other than WAN, then we only need to concern ourselves with that part.
+            See checks below. 
+        */
+
+        /* --------------------------------------------------------------------------------
+            DO WAN RELATED CPE WORK
+            10/18/22 Since we're combining wan and lan, only do this wan part if
+            wan_cpe_ports_required is not blank or 0
+        -----------------------------------------------------------------------------------
+        */
+        if (NSProTask.wan_cpe_ports_required != '' && NSProTask.wan_cpe_ports_required != 0 && NSProTask.wan_cpe_ports_required != null) {
+
+            var defaultMedia = "mediaANYTHING";
+            var mediaSearch = defaultMedia;
+            var cpeQty = 1;
+
+            // lets first find out what model(s) do we need based on the provisioning activity
+            // We're going to have a process where the network analyst explicitly agrees and sets the assigned WAN service.
+            var provInputValid = true;
+            if (NSProTask.assigned_wan_service == null || NSProTask.assigned_wan_service == '') {
+                provInputValid = false;
+                returnObject.message = returnObject.message + " WAN service not explicitly set.";
+            } else {
+                // if we do have this wan service, then look it up and use this service code.
+                var svcGR = new GlideRecord(serviceTable);
+                assSvcRcdFound = svcGR.get(NSProTask.assigned_wan_service);
+                if (assSvcRcdFound) {
+                    var assSvcCode = svcGR.getValue('svc_code');
+                    // we only care about media for broadband to determine LTE4G or not.
+                    if (assSvcCode.charAt(0) == 'B') {
+                        // then we need to know the media requested for the provisioning activity
+                        if (NSProTask.wan_circuit_type_jack == null || NSProTask.wan_circuit_type_jack == '') {
+                            provInputValid = false;
+                            returnObject.message = returnObject.message + " WAN Circuit type jack undefined.";
+                        } else {
+                            mediaSearch = "media=" + NSProTask.wan_circuit_type_jack;
+                        }
+                    } else {
+                        //
+                        // TODO needed? will this order 4 when both circuits are processed? Commented out until verified
+                        //
+                        // if (assSvcCode.charAt(0) == 'G') {
+                        //     // this is HA, so cpe qty = 2
+                        //     cpeQty = 2;
+                        // }
+                    }
+                }
+            }
+            if (NSProTask.wan_cpe_ports_required < 1 || NSProTask.wan_cpe_ports_required == '') {
+                provInputValid = false;
+                returnObject.message = returnObject.message + " required ports unknown.";
+            }
+
+            // the search will be based on the following criteria
+            // svc_code, media, number of ports required.
+            // ex: mediaANYTHING^cpe_port_range_low<=2^cpe_port_range_high>=2^svc_code=SEW5M
+            // First check that we have the needed criteria
+            if (provInputValid) {
+                // ok, we have all of the input we need to proceed
+                // lets find the ordered, preferred cpe list for the service.
+                var cpeModelReqSearch = mediaSearch + "^svc_code=" + assSvcCode +
+                    "^cpe_port_range_low<=" + NSProTask.wan_cpe_ports_required.toString() +
+                    "^cpe_port_range_high>=" + NSProTask.wan_cpe_ports_required.toString();
+
+                var cpeModelOptions = this.getSvcCpeModelsBySearch(cpeModelReqSearch);
+
+                if (this.debug) gs.info(LogPrefix + "determined model options are: " + JSON.stringify(cpeModelOptions));
+                accumulateWorkNotes = "CPE Requirements Definition:\nModel options are " + cpeModelOptions.join() + "\n";
+
+                if (cpeModelOptions.length > 0) {
+                    // now that we know what models we can use and in what preferred order,
+                    // lets verify that we indeed have the quantity we need in stock.
+                    var cpeEquipmentVerified = false;
+                    // we need to make this loop through the options
+                    for (var cpei = 0; cpei < cpeModelOptions.length; cpei++) {
+                        var verifyCpeResp = this.verifyCpe(cpeModelOptions[cpei], cpeQty, 'WAN');
+                        if (this.debug) gs.info(LogPrefix + "verifyCpe response was " + JSON.stringify(verifyCpeResp));
+                        if (verifyCpeResp.status == 'OK' && verifyCpeResp.cpe.inStockCount >= cpeQty) {
+                            // set NSProTask
+                            cpeEquipmentVerified = true;
+                            // var modelsRequired = []; // move this to top, global
+                            for (var i = 0; i < cpeQty; i++) {
+                                modelsRequired.push(verifyCpeResp.cpe.model);
+                                detailedRequiredCpeInventory.push(verifyCpeResp); // 10/20/22 get details for cpe needs
+                            }
+                            // NSProTask.cpe_models_required = modelsRequired.join(); // move this below to handle lan models, too
+                            // set a work note in the prov rcd
+                            accumulateWorkNotes = accumulateWorkNotes + "Required WAN models:\n" + modelsRequired.join() + "\nVerified quantity in stock\n";
+                            // NSProTask.provisoning_state = "6"; //CPE requirements defined  - moved to UI action
+                            returnObject = verifyCpeResp;
+                            break;
+                        }
+                    }
+                    // if we reach here with no good model verification, alert the analyst.
+                    if (!cpeEquipmentVerified) {
+                        returnObject.status = "NOCPEINSTOCK";
+                        returnObject.message = "No acceptable cpe models found available in stock. Unable to continue provisioning activity.";
+                        gs.error(LogPrefix + returnObject.message + " for " + NSProTask.number);
+                        accumulateWorkNotes = accumulateWorkNotes + "CPE: " + returnObject.message + "\n";
+                        NSProTask.setValue('cpe_models_required', '');
+                    }
+                } else {
+                    returnObject.status = "NOCPEOPTIONS";
+                    returnObject.message = "No cpe models determined from service definition table search";
+                    gs.error(LogPrefix + returnObject.message + " for " + NSProTask.number);
+                    NSProTask.setValue('cpe_models_required', '');
+                }
+            } else {
+                returnObject.status = "INPUTERROR";
+                if (this.debug) gs.info(LogPrefix + "input error detected for " + NSProTask.number);
+                NSProTask.setValue('cpe_models_required', '');
+            }
+        } else {
+            if (this.debug) gs.info(LogPrefix + "Skipping WAN CPE work since no ports required for " + NSProTask.number);
+            returnObject.status = 'OK'
+            returnObject.message = "No wan ports required."
+        } // end do wan cpe work
+
+        /* --------------------------------------------------------------------------------
+            DO LAN RELATED CPE WORK
+        -----------------------------------------------------------------------------------
+        */
+        // add call for lan cpe
+        var cpeNeedsResp = this.verifyLANCpe(NSProTask);
+        if (this.debug) gs.info(LogPrefix + "cpeNeedsResp = " + JSON.stringify(cpeNeedsResp)) // lets see what we got 10/17/22
+        // add more work_notes from lan cpe responses
+        for (var crI = 0; crI < cpeNeedsResp.cpe.length; crI++) {
+            modelsRequired.push(cpeNeedsResp.cpe[crI].cpe.model);
+            accumulateWorkNotes = accumulateWorkNotes + "LAN CPE: " + cpeNeedsResp.cpe[crI].message + "\n";
+            detailedRequiredCpeInventory.push(cpeNeedsResp.cpe[crI]);
+        }
+
+        if (accumulateWorkNotes != "") {
+            NSProTask.work_notes = accumulateWorkNotes;
+        }
+
+        // gather all req cpe and add to list.
+        NSProTask.cpe_models_required = modelsRequired.join()
+        if (this.debug) gs.info(LogPrefix + "Detailed cpe needs for prov activity are: " + JSON.stringify(detailedRequiredCpeInventory));
+        NSProTask.detailed_cpe_needs = JSON.stringify(detailedRequiredCpeInventory);
+
+        NSProTask.update();
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    verifyCpe: function(modelNumber, qty, use) {
+        var LogPrefix = "verifyCpe --> ";
+        /*
+        Called from allocateCpe
+        This function is meant to determine if there exists enough of a particular model in stock to fullfill 
+        a provisioning function.
+        Returns a true or false condition and a count of the number of models in stock and available. 
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                use: use,
+                available: false,
+                inStockCount: 0
+            },
+            requestedQty: qty
+        }; // 10/20/22 add req qty
+        if (this.debug) gs.info(LogPrefix + "called with need for " + qty.toString() + " of model " + modelNumber);
+        returnObject.cpe.model = modelNumber;
+        // find how many we have in stock and available
+        //var asset_searchString = "display_nameCONTAINS" + modelNumber + "^install_status=6^substate=available";
+        var asset_searchString = "install_status=6^substatus=available" + "^" + "display_nameCONTAINS" + modelNumber;
+        if (this.debug) gs.info(LogPrefix + "searching assets with " + asset_searchString);
+        var assGR = new GlideRecord("alm_asset");
+        assGR.addEncodedQuery(asset_searchString);
+        assGR.query();
+        var inStockQty = assGR.getRowCount();
+        if (inStockQty > 0) {
+            returnObject.status = "OK";
+            returnObject.cpe.inStockCount = inStockQty;
+            if (inStockQty > qty) {
+                returnObject.cpe.available = true;
+                returnObject.message = "Found " + returnObject.cpe.inStockCount.toString() + " cpe model " + modelNumber + " in stock and available.";
+            } else {
+                returnObject.message = "Insufficient number of cpe model " + modelNumber + ". Found " + returnObject.cpe.inStockCount.toString() + " in stock and available.";
+            }
+        } else {
+            returnObject.status = "NOCPE";
+            returnObject.cpe.inStockCount = inStockQty;
+            returnObject.cpe.available = false;
+            returnObject.message = "No CPE model " + modelNumber + " in stock and available.";
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    verifyLANCpe: function(NSProTask) {
+        var LogPrefix = "verifyLANCpe --> ";
+        var serviceTable = "x_g_sonc_ns_pro_service_definition";
+        /*
+        Called from allocateCpe
+        This function is meant to determine if there exists enough LAN equipment to fullfill 
+        a provisioning function. It looks at the prov rcd and gets all of the quantities for LAN equipment,
+        determines the required models, and looks up the asset inventory.
+
+        Returns a true or false condition and a count of the number of each of the required models in stock and available. 
+
+        */
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: [],
+            totalLanCpeBoxCount: 0
+        }; // returns an array for lan equipment.
+        var lanCpeInfoRcd = {
+            reqQuantity: 0,
+            svcType: "",
+            model: "",
+            ports: 0,
+            available: false,
+            inStockCount: 0
+        };
+        var lanNeedList = [];
+        var totalLanBoxCountNeeded = 0;
+
+        if (this.debug) gs.info(LogPrefix + "called to determine need for LAN cpe for prov record " + NSProTask.number);
+
+        // see what is requested inside of prov rcd.
+        // do we have a need at all? check for non-zero values.
+        // fields to check
+        var lanCpeFormFields = [{
+                field: 'lan_cpe_basic_24_count',
+                svcType: 'LAN Basic',
+                ports: 24
+            },
+            {
+                field: 'lan_cpe_req_basic_48_cnt',
+                svcType: 'LAN Basic',
+                ports: 48
+            },
+            {
+                field: 'lan_cpe_req_premium_8_cnt',
+                svcType: 'LAN Premium',
+                ports: 8
+            },
+            {
+                field: 'lan_cpe_req_premium_24_cnt',
+                svcType: 'LAN Premium',
+                ports: 24
+            },
+            {
+                field: 'lan_cpe_req_premium_48_cnt',
+                svcType: 'LAN Premium',
+                ports: 48
+            },
+        ];
+        if (this.debug) gs.info(LogPrefix + "ready to build required lan cpe list");
+        // build lan needs list
+        for (var cpeForFieldI = 0; cpeForFieldI < lanCpeFormFields.length; cpeForFieldI++) {
+            var boxReqCount = 0;
+            if (this.debug) gs.info(LogPrefix + " working on field " + lanCpeFormFields[cpeForFieldI]['field']);
+            if (this.debug) gs.info(LogPrefix + " NSProTask " + lanCpeFormFields[cpeForFieldI]['field'] + " value is " + NSProTask[lanCpeFormFields[cpeForFieldI]['field']]);
+            if (NSProTask[lanCpeFormFields[cpeForFieldI]['field']] != "") {
+                boxReqCount = parseInt(NSProTask[lanCpeFormFields[cpeForFieldI]['field']]);
+            }
+
+            if (boxReqCount > 0) {
+                totalLanBoxCountNeeded += boxReqCount;
+                // make a lanCpeInfoRcd for this need
+                var cpeRcd = Object.create(lanCpeInfoRcd);
+                if (this.debug) gs.info(LogPrefix + " new cpe rcd is " + JSON.stringify(cpeRcd));
+                cpeRcd.svcType = lanCpeFormFields[cpeForFieldI].svcType;
+                cpeRcd.ports = lanCpeFormFields[cpeForFieldI].ports;
+                cpeRcd.reqQuantity = boxReqCount;
+                lanNeedList.push(cpeRcd);
+            }
+        }
+        if (this.debug) gs.info(LogPrefix + totalLanBoxCountNeeded + " LAN CPE units are required for NSProTask " + NSProTask.number);
+        if (this.debug) gs.info(LogPrefix + "LAN CPE needed: " + JSON.stringify(lanNeedList));
+
+        // Now lets do some lookups to figure out what models we need and have
+        for (var iCpeNeed = 0; iCpeNeed < lanNeedList.length; iCpeNeed++) {
+            if (this.debug) gs.info(LogPrefix + "checking for modelName for " + lanNeedList[iCpeNeed].svcType + ", port high = " + lanNeedList[iCpeNeed].ports);
+
+            // get model options for this lan device requirement
+            lsSearchString = "svc_type=" + lanNeedList[iCpeNeed].svcType + "^cpe_port_range_high=" + lanNeedList[iCpeNeed].ports.toString();
+            var cpeModelOptions = this.getSvcCpeModelsBySearch(lsSearchString);
+            if (this.debug) gs.info(LogPrefix + "Model options are ..." + JSON.stringify(cpeModelOptions));
+
+            // find out if we have the quantities we need.
+            var checkInStockResp = this.checkCpeStock(cpeModelOptions, lanNeedList[iCpeNeed].reqQuantity, 'LAN');
+            if (this.debug) gs.info(LogPrefix + "checkInStockResp is: " + JSON.stringify(checkInStockResp));
+
+            // based on response, update the data that will go back to caller
+            // lets add it to the returnObj at cpe array. 10/17/22
+            returnObject['cpe'].push(checkInStockResp)
+
+        }
+
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    checkCpeStock: function(cpeModelOptions, cpeQty, usage) {
+        /*
+        10/11/22: Broke this out as its own function so it can be more commonly called.
+        This function takes a list of ordered models and determines if the cpeQty required is in stock.
+        The ordered list is checked and the model that has enough in stock is selected and returned.
+        It assumes we want all of the same models.
+
+        If called with an empty cpeModelOptions list, a bad status is returned.
+        */
+        var LogPrefix = "checkCpeStock --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                use: usage,
+                available: false,
+                inStockCount: 0
+            }
+        };
+
+        if (cpeModelOptions.length > 0) {
+            // now that we know what models we can use and in what preferred order,
+            // lets verify that we indeed have the quantity we need in stock.
+            var cpeEquipmentVerified = false;
+            // we need to make this loop through the options
+            for (var cpei = 0; cpei < cpeModelOptions.length; cpei++) {
+                var verifyCpeResp = this.verifyCpe(cpeModelOptions[cpei], cpeQty, usage);
+                if (this.debug) gs.info(LogPrefix + "verifyCpe response was " + JSON.stringify(verifyCpeResp));
+                if (verifyCpeResp.status == 'OK' && verifyCpeResp.cpe.inStockCount >= cpeQty) {
+                    returnObject = verifyCpeResp;
+                    cpeEquipmentVerified = true;
+                    break;
+                }
+            }
+            // if we reach here with no good model verification, alert the analyst.
+            if (!cpeEquipmentVerified) {
+                returnObject.status = "NOCPEINSTOCK";
+                returnObject.message = "No acceptable cpe models found in stock and available. Unable to continue provisioning activity.";
+                gs.error(LogPrefix + returnObject.message);
+            }
+        } else {
+            returnObject.status = "NOCPEOPTIONS";
+            returnObject.message = "checkCPEStock called with 0 input model options.";
+            gs.error(LogPrefix + returnObject.message);
+        }
+        return returnObject
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    reqCpeAllocationByFS: function(NSProTask) {
+        /*
+        As of 10/20/22, we noew have a filed in the NSProTask that stores detailed_cpe_needs. It is a string of json with a record for each
+        model type that is required for the prov activity and the qty and the results of in stock verification.
+        */
+        var LogPrefix = "reqCpeAllocationByFS --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                available: false,
+                inStockCount: 0
+            }
+        };
+        if (this.debug) gs.info(LogPrefix + "called for " + NSProTask.number);
+
+        var fsTaskTable = "x_g_sonc_ns_pro_nspro_tasks";
+        var ditCompanySysId = "7957d510db806300f861e3f3ca9619bb";
+        var fsAssignmentGroup = "5755cd0ddb98630065fbf482ba9619d5"; // network field support assignment group
+        var naAssignmentGroup = "0355cd0ddb98630065fbf482ba96196f"; // WAN network operations assignment group
+        var sdString = "";
+        var descString = "";
+
+        // figure out how many cpe and what is in prov rcd info
+        var NSProTaskCPEArray = NSProTask.cpe_models_required.split(',');
+
+        var fst_GR = new GlideRecord(fsTaskTable);
+        fst_GR.initialize();
+
+        // fst_GR.setValue('assigned_to', NSProTask.assigned_to); // do this only if we decide to set a FS task for network analyst to get gear.
+
+        fst_GR.setValue('telco_order', NSProTask.telco_order.toString());
+        fst_GR.setValue('site', NSProTask.site.toString());
+
+
+        gs.warn(LogPrefix + ' NSProTask = ' + JSON.stringify(NSProTask));
+
+        if (NSProTask.request_type.type == 'New Service') {
+            fst_GR.setValue('nsp_activity_type', '1');
+            sdString = "Get (" + NSProTaskCPEArray.length.toString() + ") CPE model(s) for " + NSProTask.number;
+            descString = "This is a request for field service to allocate CPE for NSPro Telco Order " + NSProTask.number + ".\n" +
+                "Please acquire " + NSProTask.cpe_models_required;
+        } else if (NSProTask.request_type.type == 'Relocate') {
+            fst_GR.setValue('nsp_activity_type', '1');
+            sdString = "Get (" + NSProTaskCPEArray.length.toString() + ") CPE model(s) for " + NSProTask.number;
+            descString = "This is a request for field service to allocate CPE for NSPro MOVE Telco Order " + NSProTask.number + ".\n" +
+                "Please acquire " + NSProTask.cpe_models_required;
+        }
+        // 10/20/22 new description details
+        cpeReqDetails = JSON.parse(NSProTask.detailed_cpe_needs);
+        for (var i = 0; i < cpeReqDetails.length; i++) {
+            descString = descString + "(" + cpeReqDetails[i].requestedQty + ") of Model: " + cpeReqDetails[i].model + ".\n";
+        }
+        fst_GR.setValue('short_description', sdString);
+        fst_GR.setValue('pri_sec_circuit', NSProTask.pri_sec_circuit);
+        fst_GR.setValue('description', descString);
+        fst_GR.setValue('required_wan_models', NSProTask.cpe_models_required);
+        fst_GR.setValue('required_wan_cpe_count', NSProTaskCPEArray.length);
+        fst_GR.setValue('due_date', NSProTask.due_date);
+        fst_GR.setValue('assignment_group', fsAssignmentGroup);
+        fst_GR.setValue('company', ditCompanySysId);
+        var fsNumber = fst_GR.insert();
+
+        returnObject.status = "OK";
+        returnObject.message = "FS request created " + fsNumber;
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // reqCpeAllocationByFSFromClient: function(NSProTask, fsMsg) {
+    reqCpeAllocationByFSFromClient: function(NSProTask) {  // fsMsg now pulled from task record
+        /*
+        As of 10/20/22, we noew have a filed in the NSProTask that stores detailed_cpe_needs. It is a string of json with a record for each
+        model type that is required for the prov activity and the qty and the results of in stock verification.
+        */
+        var LogPrefix = "reqCpeAllocationByFSFromClient --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                available: false,
+                inStockCount: 0
+            }
+        };
+        if (this.debug) gs.info(LogPrefix + "called for " + NSProTask.number);
+
+        var fsTaskTable = "x_g_sonc_ns_pro_nspro_tasks";
+        var ditCompanySysId = "7957d510db806300f861e3f3ca9619bb";
+        var fsAssignmentGroup = "5755cd0ddb98630065fbf482ba9619d5"; // network field support assignment group
+        var naAssignmentGroup = "0355cd0ddb98630065fbf482ba96196f"; // WAN network operations assignment group
+        var sdString = "";
+        var descString = "";
+        var totalDeviceCountReq = 0;
+        var lanDeviceCount = 0;
+        var wanDeviceCount = 0;
+        var wanModelList = [];
+        var lanModelList = [];
+
+        // figure out how many cpe and what is in prov rcd info
+        // 10/18/22 we are going to need to know how many total units are required for the prov activity since it may include lan, too.
+        // figure out total need.
+        var prCpeFields2Check = [
+            'lan_cpe_basic_24_required',
+            'lan_cpe_basic_48_required',
+            'lan_cpe_premium_8_required',
+            'lan_cpe_premium_24_required',
+            'lan_cpe_premium_48_required',
+            'wlan_access_point_required',
+        ];
+        // check each field in list above for numbers.
+        for (var cpeIndex = 0; cpeIndex < prCpeFields2Check.length; cpeIndex++) {
+            if (this.debug) gs.info(LogPrefix + "checking " + prCpeFields2Check[cpeIndex] + ", value = " + NSProTask[prCpeFields2Check[cpeIndex]]);
+            if (isNaN(NSProTask[prCpeFields2Check[cpeIndex]])) {
+                continue;
+            } else {
+                totalDeviceCountReq = totalDeviceCountReq + NSProTask[prCpeFields2Check[cpeIndex]]
+                lanDeviceCount = lanDeviceCount + NSProTask[prCpeFields2Check[cpeIndex]]
+            }
+        }
+        // check wan total
+        //
+        // reworked this to not over order for HA since there are two distinct circuit orders now
+        //
+        // if (telcoOrder.service_definition.svc_ha_category == "Gold" && !isNaN(telcoOrder.wan_cpe_ports_required)) {
+        //     totalDeviceCountReq += 2; // add two for HA, second wan rtr
+        //     wanDeviceCount += 2;
+        //     if (this.debug) gs.info(LogPrefix + "Add two wan dev count for HA");
+        // } else {
+        totalDeviceCountReq += 1; // add one for wan, not HA
+        wanDeviceCount += 1;
+        if (this.debug) gs.info(LogPrefix + "Add one device count for wan, not HA");
+        // }
+
+        // end of HA edits
+
+
+        if (this.debug) gs.info(LogPrefix + "provisioning activity for " + NSProTask.number + " needs " + totalDeviceCountReq + " total devices");
+        // above section added 10/18/22 for lan support.
+
+        var NSProTaskCPEArray = NSProTask.cpe_models_required.split(',');
+
+        // duplicate existing task record and add/change fields as needed for Field Services
+        var fst_GR = new GlideRecord(fsTaskTable);
+        fst_GR.initialize();
+
+        // fst_GR.setValue('assigned_to', NSProTask.assigned_to); // do this only if we decide to set a FS task for network analyst to get gear.
+
+        fst_GR.setValue('telco_order', NSProTask.telco_order.toString());
+        fst_GR.setValue('site', NSProTask.site.toString());
+
+        if (NSProTask.request_type.type == 'New Service') {
+            // req type 1 = new
+            fst_GR.setValue('nsp_activity_type', '1'); // new site cpe allocation
+            sdString = "Get (" + totalDeviceCountReq.toString() + ") CPE model(s) for " + NSProTask.number;
+
+            descString = "This is a request for field service to allocate CPE for NSPro Telco Order " + NSProTask.number + ".\n" +
+                "Please acquire " + NSProTask.cpe_models_required;
+
+        } else if (NSProTask.request_type.type == 'Relocate') {
+            // req type 2 = move
+            fst_GR.setValue('nsp_activity_type', '1'); // new site cpe allocation
+            sdString = "Get (" + NSProTaskCPEArray.length.toString() + ") CPE model(s) for " + NSProTask.number;
+            descString = "This is a request for field service to allocate CPE for NSPro MOVE Telco Order " + NSProTask.number + ".\n" +
+                "Please acquire " + NSProTask.cpe_models_required;
+        }
+        // 10/20/22 new description details
+        cpeReqDetails = JSON.parse(NSProTask.detailed_cpe_needs);
+        descString = descString + "\n\n";
+        for (var i = 0; i < cpeReqDetails.length; i++) {
+            descString = descString + "(" + cpeReqDetails[i].requestedQty + ") of Model: " + cpeReqDetails[i].cpe.model + ".\n";
+            if (cpeReqDetails[i].cpe.use == 'WAN') {
+                wanModelList.push(cpeReqDetails[i].cpe.model);
+            } else if (cpeReqDetails[i].cpe.use == 'LAN') {
+                lanModelList.push(cpeReqDetails[i].cpe.model);
+            }
+        }
+        var fsMsg = NSProTask.field_services_message;
+        if (fsMsg != '') {
+            descString = descString + "\n\n" + fsMsg;
+        }
+
+        fst_GR.setValue('short_description', sdString);
+        fst_GR.setValue('description', descString);
+        fst_GR.setValue('pri_sec_circuit', NSProTask.pri_sec_circuit);
+        fst_GR.setValue('required_wan_models', wanModelList.join()); // perhaps we should count wan and lan separate? 10/18/22
+        fst_GR.setValue('required_wan_cpe_count', wanDeviceCount);
+        fst_GR.setValue('required_lan_models', lanModelList.join()); // 10/20/22 added lan model list
+        fst_GR.setValue('required_lan_cpe_count', lanDeviceCount); // 10/20/22 added lan cpe count
+        fst_GR.setValue('due_date', NSProTask.due_date);
+        fst_GR.setValue('assignment_group', fsAssignmentGroup);
+        fst_GR.setValue('company', ditCompanySysId.toString());
+        fst_GR.setValue('request_type', request_type.toString());
+        fst_GR.setValue('site', NSProTask.site.toString());
+        fst_GR.setValue('telco_order', NSProTask.telco_order.toString());
+        // fst_GR.setValue('assigned_to', NSProTask.assigned_to.toString());
+        fst_GR.setValue('location', NSProTask.location.toString());
+        fst_GR.setValue('network_service_category', NSProTask.network_service_category);
+        fst_GR.setValue('network_service_subcategory', NSProTask.network_service_subcategory);
+        fst_GR.setValue('quoted_cost', NSProTask.quoted_cost);
+        fst_GR.setValue('quoted_service_definition', NSProTask.quoted_service_definition);
+        fst_GR.setValue('quoted_service_code', NSProTask.quoted_service_code);
+        fst_GR.setValue('assigned_wan_service', NSProTask.assigned_wan_service.toString());
+        fst_GR.setValue('assigned_wan_service_code', NSProTask.assigned_wan_service_code);
+        fst_GR.setValue('requested_service_code', NSProTask.requested_service_code);
+        fst_GR.setValue('wan_cpe_ports_required', NSProTask.wan_cpe_ports_required);
+        fst_GR.setValue('wan_circuit_type_jack', NSProTask.wan_circuit_type_jack.toString());
+        fst_GR.setValue('telco_provider', NSProTask.telco_provider.toString());
+        fst_GR.setValue('telco_order_contact', NSProTask.telco_order_contact);
+        fst_GR.setValue('telco_order_email', NSProTask.telco_order_email);
+        fst_GR.setValue('assigned_pop', NSProTask.assigned_pop.toString());
+        fst_GR.setValue('assigned_pe', NSProTask.assigned_pe);
+        fst_GR.setValue('assigned_pe_port', NSProTask.assigned_pe_port.toString());
+        fst_GR.setValue('circuit_special_instructions', NSProTask.circuit_special_instructions);
+        fst_GR.setValue('special_instructions', NSProTask.special_instructions);
+        fst_GR.setValue('circuit_order_request_type', NSProTask.circuit_order_request_type);
+        fst_GR.setValue('lan_cpe_basic_24_count', NSProTask.lan_cpe_basic_24_count);
+        fst_GR.setValue('lan_cpe_basic_48_count', NSProTask.lan_cpe_basic_48_count);
+        fst_GR.setValue('lan_cpe_premium_8_count', NSProTask.lan_cpe_premium_8_count);
+        fst_GR.setValue('lan_cpe_premium_24_count', NSProTask.lan_cpe_premium_24_count);
+        fst_GR.setValue('lan_cpe_premium_48_count', NSProTask.lan_cpe_premium_48_count);
+        fst_GR.insert();
+
+        returnObject.status = "OK";
+        returnObject.message = "FS request created.";
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    reqCpeInstallByFS: function(NSProTask) {
+        var LogPrefix = "reqCpeInstallByFS --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                available: false,
+                inStockCount: 0
+            }
+        };
+
+        if (this.debug) gs.info(LogPrefix + "called for " + NSProTask.number);
+
+        var fsTaskTable = "x_g_sonc_ns_pro_nspro_tasks";
+        var ditCompanySysId = "7957d510db806300f861e3f3ca9619bb";
+        var fsAssignmentGroup = "5755cd0ddb98630065fbf482ba9619d5"; // network field support assignment group
+        var naAssignmentGroup = "0355cd0ddb98630065fbf482ba96196f"; // WAN network operations assignment group
+        var sdString = "";
+        var descString = "";
+
+        // figure out how many cpe and what is in prov rcd info
+        var NSProTaskCPEArray = NSProTask.cpe_models_required.split(',');
+
+        var fst_GR = new GlideRecord(fsTaskTable);
+        fst_GR.initialize();
+
+        // fst_GR.setValue('assigned_to', NSProTask.assigned_to); // do this only if we decide to set a FS task for network analyst to get gear.
+
+        // fst_GR.setValue('parent', NSProTask.telco_order.sys_id);  -- leave parent alone so tasks can nest under each other if need to add subtasks
+
+        if (NSProTask.request_type.type == 'New Service') {
+            fst_GR.setValue('nsp_activity_type', '2');
+            sdString = "Install, test, and turnup for Site: " + NSProTask.site.name + ", NSPro Telco Order: " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
+            descString = "This is a request for field service to schedule site install, test, and turn-up of CPE for NSPro Telco Order " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
+            fst_GR.setValue('location', NSProTask.site.location.toString()); // added 04/28/22 rw
+        } else {
+            // added 7/26/22 for supporting site move request
+            fst_GR.setValue('nsp_activity_type', '2');
+            sdString = "Install, test, and turnup for MOVE of Site: " + NSProTask.site.name + ", NSPro task: " + NSProTask.number;
+            descString = "This is a request for field service to schedule a site MOVE and install, test, and turn-up of CPE for NSPro Telco Order " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
+            fst_GR.setValue('location', NSProTask.site.location.toString()); // added 07/26/22 rw
+        }
+        fst_GR.setValue('short_description', sdString);
+        fst_GR.setValue('description', descString);
+        fst_GR.setValue('pri_sec_circuit', NSProTask.pri_sec_circuit);
+        fst_GR.setValue('required_wan_models', NSProTask.cpe_models_required);
+        fst_GR.setValue('required_wan_cpe_count', NSProTaskCPEArray.length);
+        fst_GR.setValue('due_date', NSProTask.due_date);
+        fst_GR.setValue('assignment_group', fsAssignmentGroup);
+        fst_GR.setValue('company', ditCompanySysId);
+        // fst_GR.setValue('required_lan_models', lanModelList.join()); // 10/20/22 added lan model list
+        // fst_GR.setValue('required_lan_cpe_count', lanDeviceCount); // 10/20/22 added lan cpe count
+        fst_GR.setValue('request_type', request_type.toString());
+        fst_GR.setValue('site', NSProTask.site.toString());
+        fst_GR.setValue('telco_order', NSProTask.telco_order.toString());
+        // fst_GR.setValue('assigned_to', NSProTask.assigned_to.toString());
+        fst_GR.setValue('location', NSProTask.location.toString());
+        fst_GR.setValue('network_service_category', NSProTask.network_service_category);
+        fst_GR.setValue('network_service_subcategory', NSProTask.network_service_subcategory);
+        fst_GR.setValue('quoted_cost', NSProTask.quoted_cost);
+        fst_GR.setValue('quoted_service_definition', NSProTask.quoted_service_definition);
+        fst_GR.setValue('quoted_service_code', NSProTask.quoted_service_code);
+        fst_GR.setValue('assigned_wan_service', NSProTask.assigned_wan_service.toString());
+        fst_GR.setValue('assigned_wan_service_code', NSProTask.assigned_wan_service_code);
+        fst_GR.setValue('requested_service_code', NSProTask.requested_service_code);
+        fst_GR.setValue('wan_cpe_ports_required', NSProTask.wan_cpe_ports_required);
+        fst_GR.setValue('wan_circuit_type_jack', NSProTask.wan_circuit_type_jack.toString());
+        fst_GR.setValue('telco_provider', NSProTask.telco_provider.toString());
+        fst_GR.setValue('telco_order_contact', NSProTask.telco_order_contact);
+        fst_GR.setValue('telco_order_email', NSProTask.telco_order_email);
+        fst_GR.setValue('assigned_pop', NSProTask.assigned_pop.toString());
+        fst_GR.setValue('assigned_pe', NSProTask.assigned_pe);
+        fst_GR.setValue('assigned_pe_port', NSProTask.assigned_pe_port.toString());
+        fst_GR.setValue('circuit_special_instructions', NSProTask.circuit_special_instructions);
+        fst_GR.setValue('special_instructions', NSProTask.special_instructions);
+        fst_GR.setValue('circuit_order_request_type', NSProTask.circuit_order_request_type);
+        fst_GR.setValue('lan_cpe_basic_24_count', NSProTask.lan_cpe_basic_24_count);
+        fst_GR.setValue('lan_cpe_basic_48_count', NSProTask.lan_cpe_basic_48_count);
+        fst_GR.setValue('lan_cpe_premium_8_count', NSProTask.lan_cpe_premium_8_count);
+        fst_GR.setValue('lan_cpe_premium_24_count', NSProTask.lan_cpe_premium_24_count);
+        fst_GR.setValue('lan_cpe_premium_48_count', NSProTask.lan_cpe_premium_48_count);
+        fst_GR.insert();
+
+        returnObject.status = "OK";
+        returnObject.message = "FS install request created.";
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    reqSiteCpeDecommByFS: function(NSProTask) {
+        var LogPrefix = "reqSiteCpeDecommByFS --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            cpe: {
+                model: "",
+                available: false,
+                inStockCount: 0
+            }
+        };
+
+        if (this.debug) gs.info(LogPrefix + "called for " + NSProTask.number);
+
+        // cpe equipment is listed in NSProTask required_cpe_models as comma delimted string of serial numbers.
+        var fsTaskTable = "x_g_sonc_dit_nsw22_nsw2_fs_tasks";
+        var ditCompanySysId = "7957d510db806300f861e3f3ca9619bb";
+        var fsAssignmentGroup = "5755cd0ddb98630065fbf482ba9619d5"; // network field support assignment group
+        //var naAssignmentGroup = "0355cd0ddb98630065fbf482ba96196f"; // WAN network operations assignment group
+        var sdString = "";
+        var descString = "";
+
+        // get cpe so we can set the FS task "site_equip_list"
+        var siteCpeGear = this.getCpeInfoForSite(telcoOrder.site_rcd_ref);
+        if (this.debug) gs.info(LogPrefix + "site gear to retrieve is: " + JSON.stringify(siteCpeGear));
+        // sometimes returns this
+        // reqSiteCpeDecommByFS site gear to retrieve is: {"status":"OK","message":"Retrieved 0 CPE info records for Site.","cpeInfo":[]}
+        //
+        var siteAssetsSysIdArray = [];
+        for (var iCpe = 0; iCpe < siteCpeGear.cpeInfo.length; iCpe++) {
+            siteAssetsSysIdArray.push(siteCpeGear.cpeInfo[iCpe].ng_sys_id);
+        }
+
+        // figure out how many cpe and what is in prov rcd info, changed this 03/14/23 for debug
+        var telcoOrderCPEArray = [];
+        if (!global.JSUtil.nil(telcoOrder.required_cpe_models)) {
+            telcoOrderCPEArray = telcoOrder.required_cpe_models.split(',');
+        }
+
+        // 03/14/23 for debug; message about what we know so far
+        if (this.debug) gs.info(LogPrefix + "About to create a FS task for site decomm for telcoOrder " + telcoOrder.number);
+
+        var fst_GR = new GlideRecord(fsTaskTable);
+        fst_GR.initialize();
+
+        // fst_GR.setValue('assigned_to', telcoOrder.assigned_to); // do this only if we decide to set a FS task for network analyst to get gear.
+
+        fst_GR.setValue('parent', telcoOrder.sys_id);
+        if (telcoOrder.request_type == '4') {
+            fst_GR.setValue('nsp_activity_type', '4');
+            sdString = "Decommission activity for Site: " + telcoOrder.site_id + ", nspro Prov Rcd: " + telcoOrder.number;
+            descString = "This is a request for field service to schedule site decommission and retrieval of CPE for nspro provisioning task " + telcoOrder.number + ".";
+
+            fst_GR.setValue('short_description', sdString);
+            fst_GR.setValue('description', descString);
+            fst_GR.setValue('pri_sec_circuit', NSProTask.pri_sec_circuit);
+            fst_GR.setValue('required_wan_models', telcoOrder.required_cpe_models);
+            fst_GR.setValue('required_wan_cpe_count', telcoOrderCPEArray.length);
+            fst_GR.setValue('due_date', telcoOrder.due_date);
+            fst_GR.setValue('nsp_planned_activity_datetime', telcoOrder.due_date);
+            fst_GR.setValue('assignment_group', fsAssignmentGroup);
+            fst_GR.setValue('company', ditCompanySysId);
+            fst_GR.setValue('site_rcd_ref', telcoOrder.site_rcd_ref);
+            fst_GR.setValue('location', telcoOrder.site_rcd_ref.location); // added 04/28/22 rw
+            // for debug
+            if (this.debug) gs.info(LogPrefix + "Adding cpe data: " + siteAssetsSysIdArray.join(','));
+            fst_GR.setValue('site_cpe_cmdb_items', siteAssetsSysIdArray.join(','));
+            var fsReqId = fst_GR.insert();
+
+            returnObject.status = "OK";
+            returnObject.message = "FS request for decomm created - " + fsReqId;
+
+        } else {
+            gs.error(LogPrefix + "Calling prov rcd was not a DELETE.");
+            returnObject.status = "BADREQ";
+            returnObject.message = "FS request for decomm failed.";
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getVrfs4user: function(sys_user_id) {
+        // returns list fo vrfs for a users agency
+        // get agency for user
+        var vrfList = [];
+        var userGR = new GlideRecord("sys_user");
+        userGR.addEncodedQuery("sys_id=" + sys_user_id);
+        userGR.query();
+        if (userGR.next()) {
+            var myAgency = userGR.u_agency.sys_id;
+            // get matching VRF list
+            var vrfGR = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_vrf_definitions");
+            vrfGR.addEncodedQuery("u_agency=" + myAgency);
+            vrfGR.query();
+            while (vrfGR.next()) {
+                vrfList.push(vrfGR.getValue('vrf_name'));
+            }
+        }
+        return vrfList;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    createDmyCircuitFromPr: function(NSProTask) {  // removed parameter priSec since we can pull that from the NSPro task record
+        var LogPrefix = "createDmyCircuitFromPr --> ";
+        /*
+        creates a dummy circuit in network circuit table when a circuit is ordered.
+        This is done so that the job to re-calculate pe port metrics can be run and 
+        be accurate for additional provisioning requests while circuit orders are in progress.
+        When real circuit ids are learned from telco vendors, these records will be updated
+        with the real circuit ids. In the emantime, they will have the prov task number with suffix "-Primary" or "-Secondary"
+        depending on if it is for the primary or secondary circuit.
+
+        inputs:
+        NSProTask
+        */
+
+        var priSec = NSProTask.pri_sec_circuit.getDisplayValue();
+        if (this.debug) gs.info(LogPrefix + " has been invoked for provisioning record " + NSProTask.number + " circuit " + priSec);
+        var returnObject = {
+            status: "",
+            message: "",
+            circuit: {
+                sys_id: "",
+                name: ""
+            }
+        };
+        var netCircuitTable = "cmdb_ci_network_circuit";
+
+        // find our what we are trying to do
+        var cirName = NSProTask.number + "-" + priSec; // this will be used for circuit id (name)
+
+        // TODO - need to confirm naming is Primary or Secondary suffix and fix netCircuitTable query as needed instead of '1' or '2'
+
+        // first, make sure no record already exists
+        var netcirGR = new GlideRecord(netCircuitTable);
+        netcirGR.addEncodedQuery("name=" + cirName);
+        netcirGR.query();
+        if (!netcirGR.next()) {
+            // no circuit rcd already exists
+            if (this.debug) gs.info(LogPrefix + "preparing to create network circuit record for " + cirName);
+            var newNCRcd = new GlideRecord(netCircuitTable);
+            newNCRcd.initialize();
+            newNCRcd.setValue('name', cirName);
+            newNCRcd.setValue('x_g_sonc_ns_pro_name', cirName);
+            newNCRcd.setValue('x_g_sonc_ns_pro_telco_provider', NSProTask.telco_provider.toString());
+            newNCRcd.setValue('access_type', NSProTask.assigned_pe_port.x_g_sonc_ns_pro_pe_circuit_type.getDisplayValue());
+            newNCRcd.setValue('correlation_id', NSProTask.assigned_pe_port.x_g_sonc_ns_pro_pe_circuit_id.getDisplayValue());
+            newNCRcd.setValue('serial_number', NSProTask.assigned_pe_port.x_g_sonc_ns_pro_pe_circuit_id.getDisplayValue());
+            // newNCRcd.setValue('u_nsw2_site_id', NSProTask.site.site_identifier);
+            newNCRcd.setValue('x_g_sonc_ns_pro_site', NSProTask.site.toString());
+            newNCRcd.setValue('x_g_sonc_ns_pro_telco_order', NSProTask.telco_order.toString());
+            newNCRcd.setValue('bandwidth_downstream', NSProTask.circuit_speed_egress); // to CE from telco
+            newNCRcd.setValue('bandwidth_upstream', NSProTask.circuit_speed_ingress); // from CE to telco
+            newNCRcd.setValue('install_status', '4'); // pending install  <-- TODO devise way to make these installed and operational
+            newNCRcd.setValue('operational_status', '2'); // not operational
+            var newRcdId = newNCRcd.insert();
+            returnObject.circuit.sys_id = newRcdId;
+            returnObject.message = "created primary network circuit " + newRcdId;
+            returnObject.status = "OK";
+            // circuit 2 for HA pair now created same as circuit 1 but with -2 in name so commented out below
+            // else if (priSec == 'Secondary') {
+            //     if (this.debug) gs.info(LogPrefix + "preparing to create secondary network circuit record for " + cirName);
+            //     var newNCRcd2 = new GlideRecord(netCircuitTable);
+            //     newNCRcd2.initialize();
+            //     newNCRcd2.setValue('name', cirName);
+            //     newNCRcd2.setValue('vendor', telcoOrder.telco_vendor_2);
+            //     newNCRcd2.setValue('access_type', telcoOrder.assigned_pe_port_secondary.pe_circuit_type.displayValue);
+            //     newNCRcd2.setValue('correlation_id', telcoOrder.assigned_pe_port_secondary.pe_circuit_id);
+            //     newNCRcd2.setValue('serial_number', telcoOrder.assigned_pe_port_secondary.pe_circuit_id);
+            //     newNCRcd.setValue('x_g_sonc_ns_pro_site', NSProTask.site.getDisplayValue());
+            //     // newNCRcd2.setValue('u_nsw2_site_id', telcoOrder.site_id);
+            //     // newNCRcd2.setValue('u_nsw2_site', telcoOrder.site_rcd_ref);
+            //     newNCRcd2.setValue('bandwidth_downstream', telcoOrder.cir_speed_egress_2); // to CE from telco
+            //     newNCRcd2.setValue('bandwidth_upstream', telcoOrder.cir_speed_ingress_2); // from CE to telco
+            //     newNCRcd2.setValue('install_status', '4'); // pending install
+            //     newNCRcd2.setValue('operational_status', '2'); // not operational
+            //     var newRcdId2 = newNCRcd2.insert();
+            //     returnObject.circuit.sys_id = newRcdId2;
+            //     returnObject.message = "created secondary network circuit " + newRcdId2;
+            //     returnObject.status = "OK";
+            // }
+        } else {
+            gs.warn(LogPrefix + "network circuit record already exists for " + cirName + ", sys_id = " + netcirGR.getValue('sys_id'));
+            returnObject.circuit.sys_id = netcirGR.getValue('sys_id');
+            returnObject.message = "network circuit record already exists";
+            returnObject.status = "EXISTS";
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    renameDmyCircuitFromPr: function(telcoOrder, priSec) {
+        var LogPrefix = "renameDmyCircuitFromPr --> ";
+        /*
+        renames a dummy circuit in network circuit table when a circuit id becomes known after order.
+
+        When real circuit ids are learned from telco vendors, these records will be updated
+        with the real circuit ids. In the emantime, they will have the prov task number with suffix "-1" or "-2"
+        depending on if it is for the primary or secondary circuit.
+
+        inputs:
+        telcoOrder and priSec with priSec to be either "1" or "2".
+        */
+        if (this.debug) gs.info(LogPrefix + " has been invoked for provisioning record " + telcoOrder.number + " circuit " + priSec);
+        var returnObject = {
+            status: "",
+            message: "",
+            circuit: {
+                sys_id: "",
+                name: ""
+            }
+        };
+        var netCircuitTable = "cmdb_ci_network_circuit";
+
+        // find our what we are trying to do
+        var cirName = "";
+        var cirIdField = "";
+        if (priSec == '1') {
+            // we are building a network circuit record for the primary circuit
+            cirName = telcoOrder.number + "-1"; // this will be used for circuit id (name)
+            cirIdField = 'circuit_id';
+        } else if (priSec == '2') {
+            cirName = telcoOrder.number + "-2"; // this will be used for circuit id (name)
+            cirIdField = 'circuit_id_2';
+        }
+
+        // find the circuit and update it
+        var netcirGR = new GlideRecord(netCircuitTable);
+        netcirGR.addEncodedQuery("name=" + cirName);
+        netcirGR.query();
+        if (netcirGR.next()) {
+            // guard against there being a second record to update - there should never be
+            if (returnObject.status == 'OK') {
+                // we've found a seond match - this would be an error - warn about it
+                returnObject.status = 'DUPTEMPCIRCUIT';
+                returnObject.message = "duplicate network circuit record exists for " + telcoOrder.number;
+            } else {
+                var netcir_sysId = netcirGR.sys_id;
+                netcirGR.name = telcoOrder[cirIdField];
+                netcirGR.update();
+                returnObject.status = 'OK';
+                returnObject.message = "network circuit record " + netcir_sysId + " updated; was " + cirName + ", now = " + telcoOrder[cirIdField];
+            }
+        } else {
+            returnObject.status = 'NOTEMPCIRCUIT';
+            returnObject.message = "no temp network circuit record exists for " + cirName + " on prov rcd " + telcoOrder.number;
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    runBackgroundFlowByName: function(flowName) {
+        var LogPrefix = "runBackgroundFlowByName --> ";
+        var returnObject = {
+            status: "",
+            message: ""
+        };
+        if (this.debug) gs.info(LogPrefix + "called to execute flow named " + flowName);
+        try {
+            var scopeName = "x_g_sonc_dit_nsw22." + flowName;
+            var result = sn_fd.FlowAPI.getRunner()
+                .flow(scopeName) // Run the global scope action named markapproved.
+                .inBackground()
+                .run(); // Run the action and return a FlowRunnerResult object.
+
+            var contextId = result.getContextId(); // Retrieve the context ID from the result
+            var dateRun = result.getDate();
+        } catch (ex) {
+            var message = ex.getMessage();
+            gs.error(LogPrefix + message);
+        }
+        returnObject.status = "OK";
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    createRelatedStdChangeFromPR: function(telcoOrder) {
+        var LogPrefix = "createRelatedStdChangeFromPR --> ";
+        var returnObject = {
+            status: "",
+            message: ""
+        };
+        if (this.debug) gs.info(LogPrefix + "called with telcoOrder " + telcoOrder.number);
+
+        // always set DIT as one of the u_agencies_affected along with the site agency.
+        var affected_agency_array = [];
+        var dit_agency_sys_id = telcoOrder.assigned_to.u_agency;
+        if (gs.nil(dit_agency_sys_id)) {
+            // set to constant dit sysid 
+            // "u_name": "Dept of Information Technology - DIT",
+            // "sys_id": "a1fc033fdbffdb8065fbf482ba961925",
+            dit_agency_sys_id = "a1fc033fdbffdb8065fbf482ba961925";
+            gs.warn(LogPrefix + "Using constant for DIT agency = " + dit_agency_sys_id);
+        } else {
+            if (this.debug) gs.info(LogPrefix + "Set affected agency based on assigned_to = " + dit_agency_sys_id);
+        }
+        affected_agency_array.push(dit_agency_sys_id);
+        // add site record agency ref to affected agency list - if it is not already there. i.e. its different than DIT.
+        if (affected_agency_array[0] != telcoOrder.site_rcd_ref.agency_ref) {
+            affected_agency_array.push(telcoOrder.site_rcd_ref.agency_ref);
+        }
+
+        // Let's get all of the CIs associated with this site - 7/8/22
+        var siteCpeGear = this.getCpeInfoForSite(telcoOrder.site_rcd_ref);
+        if (this.debug) gs.info(LogPrefix + "Related cpe gear is: " + JSON.stringify(siteCpeGear));
+
+        // This section determines which CIs to use for the change - primary and affected -----------------------
+        affectedCiSysids = [];
+        affectedCiSysIdList = ""; //comma delimted string of netgear ci sys_ids
+        primaryChangeCI = "";
+        //use related pe for primary cmdb_ci
+        if (this.debug) gs.info(LogPrefix + "Searching for PE using name(s) " + telcoOrder.assigned_pe + " or " + telcoOrder.assigned_pe_secondary);
+        var peQueryString = "";
+        var related_peRcds = [];
+        if (!gs.nil(telcoOrder.assigned_pe)) {
+            peQueryString = "name=" + telcoOrder.assigned_pe;
+            if (!gs.nil(telcoOrder.assigned_pe_secondary)) {
+                if (this.debug) gs.info(LogPrefix + "adding OR condition for secondary pe " + telcoOrder.assigned_pe_secondary);
+                peQueryString = peQueryString + "^ORname=" + telcoOrder.assigned_pe_secondary;
+            }
+            if (this.debug) gs.info(LogPrefix + "Ready to query for PEs with: " + peQueryString);
+            var peRcds = new GlideRecord("cmdb_ci_netgear");
+            peRcds.addEncodedQuery(peQueryString);
+            peRcds.query();
+            while (peRcds.next()) {
+                var peRcdInfo = {
+                    peSysId: "",
+                    peName: ""
+                };
+                peRcdInfo.peSysId = peRcds.getValue('sys_id');
+                peRcdInfo.peName = peRcds.getValue('name');
+                related_peRcds.push(peRcdInfo);
+            }
+        } else {
+            gs.error(LogPrefix + "telcoOrder assigned_pe was nil for " + telcoOrder.number);
+        }
+        if (related_peRcds.length == 0) {
+            gs.error(LogPrefix + "No PE found associated with this telcoOrder " + telcoOrder.number);
+        } else {
+            if (this.debug) gs.info(LogPrefix + "Related PE gear is: " + JSON.stringify(related_peRcds));
+            // use first pe as primary ci
+            primaryChangeCI = related_peRcds[0].peSysId;
+        }
+        // if there is another pe CI, add it to affected list
+        if (related_peRcds.length >= 2) {
+            affectedCiSysids.push(related_peRcds[1].peSysId);
+        }
+
+        for (var ceI = 0; ceI < siteCpeGear.cpeInfo.length; ceI++) {
+            affectedCiSysids.push(siteCpeGear.cpeInfo[ceI].ng_sys_id);
+        }
+        if (affectedCiSysids.length > 0) {
+            affectedCiSysIdList = affectedCiSysids.join(',');
+        }
+        if (this.debug) gs.info(LogPrefix + "Change CI data: primary ci = " + primaryChangeCI + ", affected CIs = " + affectedCiSysIdList);
+
+        // END: This section determines which CIs to use for the change - primary and affected -----------------------
+
+        // Now lets build the change
+
+        var spacChgName = "ASPAC WAN PE/CE Configuration";
+        var chgAssGroup = "0355cd0ddb98630065fbf482ba96196f"; // network operations
+
+        var chgRcd = new GlideRecord("change_request");
+        chgRcd.initialize();
+
+        // get standard spac change rcd producer version by query
+        var chgProd = new GlideRecord("std_change_producer_version");
+        chgProd.addQuery("std_change_producer.name", spacChgName);
+        chgProd.orderByDesc("version"); //latest version of Change Template is fetched
+        chgProd.query();
+        if (chgProd.next()) {
+            var chgProp = chgProd.std_change_proposal;
+
+            //Fetch the Standard Change Proposal Record, because Template values stays on this record.
+            var chgPropGR = new GlideRecord("std_change_proposal");
+            chgPropGR.addQuery("sys_id", chgProp);
+            chgPropGR.query();
+            if (chgPropGR.next()) {
+                var template = chgPropGR.template_value.toString();
+                if (this.debug) gs.info(LogPrefix + "Using template - " + template);
+
+                chgRcd.applyEncodedQuery(chgPropGR.getValue('template_value')); //This is the Magical Statement of this Code
+
+                chgRcd.std_change_producer_version = chgProd.sys_id;
+
+                // Ready to set values for the change request
+                //chgRcd.assignment_group = telcoOrder.assignment_group;
+                chgRcd.assignment_group = chgAssGroup;
+                chgRcd.assigned_to = telcoOrder.assigned_to;
+                chgRcd.short_description = "Change for " + telcoOrder.short_description;
+                chgRcd.priority = telcoOrder.priority;
+                chgRcd.parent = telcoOrder.sys_id;
+                chgRcd.u_agencies_affected = affected_agency_array.join(',');
+                chgRcd.work_notes = "Change created from nspro provisioning task " + telcoOrder.number;
+
+                // set primary ci for change
+                if (!gs.nil(primaryChangeCI)) {
+                    chgRcd.cmdb_ci = primaryChangeCI;
+                }
+
+                var sysID = chgRcd.insert();
+
+                // next add the affected CIs to the task_ci table. We need to insert these from the affectedCiSysids array
+                // added 8/9/22
+                if (this.debug) gs.info(LogPrefix + "Ready to insert any affected CIs if needed");
+                for (var acii = 0; acii < affectedCiSysids.length; acii++) {
+                    // for each ci sysid, insert a record in task_ci
+                    if (this.debug) gs.info(LogPrefix + "Inserting affected ci to task_ci for " + affectedCiSysids[acii] + ", Change Task: " + sysID);
+                    var affCiRcd = new GlideRecord("task_ci");
+                    affCiRcd.initialize();
+                    affCiRcd.ci_item = affectedCiSysids[acii];
+                    affCiRcd.task = sysID;
+                    affCiRcd.insert();
+                }
+
+                current.work_notes = 'Change ' + chgRcd.number + ' created.'; // change from comments to work_notes 7/11/22.
+                var mySysID = current.update();
+
+                if (this.debug) gs.info(LogPrefix + "Change " + chgRcd.number + " created for telcoOrder" + telcoOrder.number);
+
+                returnObject.status = "OK";
+                returnObject.message = "Change " + chgRcd.number + " created. You must update the Change Req and schedule it.";
+            } else {
+                gs.error(LogPrefix + "Problem getting standard change proposal");
+                returnObject.status = "ERRSTDCHGPROP";
+                returnObject.message = "Problem getting the standard change proposal.";
+            }
+        } else {
+            gs.error(funcName + "Problem getting standard change producer version");
+            returnObject.status = "ERRSTDCHGPROP";
+            returnObject.message = "Problem getting the standard change producer version.";
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getCpeInfoForSite: function(siteRcdSysId) {
+        var LogPrefix = "getCpeInfoForSite --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            cpeInfo: []
+        };
+        if (this.debug) gs.info(LogPrefix + "called with site rcd sys_id " + siteRcdSysId);
+
+        // get netgear that references this site id
+        var siteCpeNetgear = [];
+        var ngGR = new GlideRecord("cmdb_ci_netgear");
+        ngGR.addQuery("x_g_sonc_ns_pro_site", siteRcdSysId);
+        ngGR.orderBy("sys_class_name");
+        ngGR.query();
+        while (ngGR.next()) {
+            if (this.debug) gs.info(LogPrefix + "enter while loop");
+            var siteCpeRcd = {
+                ng_sys_id: "",
+                name: "",
+                class_name: "",
+                status: "",
+                sn: "",
+                ip: ""
+            };
+            siteCpeRcd.ng_sys_id = ngGR.getValue('sys_id');
+            siteCpeRcd.name = ngGR.getValue('name');
+            siteCpeRcd.class_name = ngGR.getValue('sys_class_name');
+            siteCpeRcd.status = ngGR.getDisplayValue('install_status');
+            siteCpeRcd.sn = ngGR.getValue('serial_number');
+            siteCpeRcd.ip = ngGR.getValue('ip_address');
+            siteCpeNetgear.push(siteCpeRcd);
+            if (this.debug) gs.info(LogPrefix + "pushed " + ngGR.getValue('name'));
+        }
+
+        returnObject.cpeInfo = siteCpeNetgear;
+        returnObject.status = "OK";
+        returnObject.message = "Retrieved " + siteCpeNetgear.length.toString() + " CPE info records for Site.";
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getCircuitInfoForSite: function(siteRcdSysId) {
+        var LogPrefix = "getCircuitInfoForSite --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            circuitInfo: []
+        };
+        if (this.debug) gs.info(LogPrefix + "called with site rcd sys_id " + siteRcdSysId);
+
+        // get network circuits that references this site id
+        var siteNetCircuits = [];
+        var ngGR = new GlideRecord("cmdb_ci_network_circuit");
+        ngGR.addQuery("u_nsw2_site", siteRcdSysId);
+        ngGR.orderBy("name");
+        ngGR.query();
+        while (ngGR.next()) {
+            if (this.debug) gs.info(LogPrefix + "enter while loop");
+            var siteCircuitRcd = {
+                ng_sys_id: "",
+                name: "",
+                telco_name: "",
+                vendor_ref: "",
+                correlation_id: "",
+                status: "",
+                bandwidth_upstream: "",
+                bandwidth_downstream: ""
+            };
+            siteCircuitRcd.ng_sys_id = ngGR.getValue('sys_id');
+            siteCircuitRcd.name = ngGR.getValue('name');
+            siteCircuitRcd.telco_name = ngGR.vendor.name.toString(); // dot walk to the vendor name string.
+            siteCircuitRcd.vendor_ref = ngGR.getValue('vendor');
+            siteCircuitRcd.correlation_id = ngGR.getValue('correlation_id');
+            siteCircuitRcd.status = ngGR.getDisplayValue('install_status');
+            siteCircuitRcd.bandwidth_upstream = ngGR.getValue('bandwidth_upstream');
+            siteCircuitRcd.bandwidth_downstream = ngGR.getValue('bandwidth_downstream');
+            siteNetCircuits.push(siteCircuitRcd);
+            if (this.debug) gs.info(LogPrefix + "pushed " + ngGR.getValue('name'));
+        }
+
+        returnObject.circuitInfo = siteNetCircuits;
+        returnObject.status = "OK";
+        returnObject.message = "Retrieved " + siteNetCircuits.length.toString() + " Network Circuits info records for Site.";
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getPEInfoByPECircuit: function(popPeCircuitIdId) {
+        var LogPrefix = "getPEInfoByPECircuit --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            peInfo: {}
+        };
+        if (this.debug) gs.info(LogPrefix + "called with pop circuit " + popPeCircuitIdId);
+
+        // get pop pe port info
+        var ppepGR = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_pop_pe_port_circuits");
+        ppepGR.addQuery("pe_circuit_id", popPeCircuitIdId);
+        ppepGR.query();
+        if (ppepGR.next()) {
+            var siteCircuitRcd = {
+                sys_id: "",
+                name: "",
+                site_id: "",
+                pop: "",
+                pe_router: "",
+                pe_interface: "",
+                service_for: ""
+            };
+            siteCircuitRcd.sys_id = ppepGR.getValue('sys_id');
+            siteCircuitRcd.name = ppepGR.getValue('name');
+            siteCircuitRcd.site_id = ppepGR.getValue('nsw_site_id');
+            siteCircuitRcd.pop = ppepGR.getValue('point_of_presence');
+            siteCircuitRcd.pe_router = ppepGR.getValue('pe_router');
+            siteCircuitRcd.pe_interface = ppepGR.getValue('pe_interface');
+            siteCircuitRcd.service_for = ppepGR.getValue('service_for');
+            returnObject.peInfo = siteCircuitRcd;
+            returnObject.status = "OK";
+            returnObject.message = "PoP PE Circuit found for " + popPeCircuitIdId + ", sys_id " + ppepGR.getValue('sys_id');
+            if (this.debug) gs.info(LogPrefix + "PoP PE Cricuit found for " + popPeCircuitIdId + ", sys_id " + ppepGR.getValue('sys_id'));
+        } else {
+            gs.error(LogPrefix + "No PoP PE Cricuit found for " + popPeCircuitIdId);
+            returnObject.status = "NOPECIRCUIT";
+            returnObject.message = "No PoP PE Cricuit found for " + popPeCircuitIdId;
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    setPortConRcds2ProvRcdForSite: function(siteRcdSysId, telcoOrderSysId) {
+        var LogPrefix = "setPortConRcds2ProvRcdForSite --> ";
+        var returnObject = {
+            status: "",
+            message: "",
+            pcrInfo: []
+        };
+        if (this.debug) gs.info(LogPrefix + "called with site rcd sys_id " + siteRcdSysId + ", PR " + telcoOrderSysId);
+
+        // get port connection records that references this site id
+        var sitePCRs = [];
+        var pcrGR = new GlideRecord("x_g_sonc_dit_nsw22_nsw2_port_connections");
+        pcrGR.addQuery("nsw_site", siteRcdSysId);
+        pcrGR.orderBy("name");
+        pcrGR.query();
+        while (pcrGR.next()) {
+            if (this.debug) gs.info(LogPrefix + "enter while loop to set prov rcd reference");
+            var sitePCRcd = {
+                sys_id: "",
+                name: "",
+                site_ref: "",
+                a_device_name: "",
+                a_device_intf_name: "",
+                a_ip_address: "",
+                z_device_name: "",
+                z_device_intf_name: "",
+                z_ip_address: "",
+            };
+            sitePCRcd.ng_sys_id = pcrGR.getValue('sys_id');
+            sitePCRcd.name = pcrGR.getValue('name');
+            sitePCRcd.site_ref = pcrGR.getValue('nsw_site');
+            sitePCRcd.a_device_name = pcrGR.getValue('a_device_name');
+            sitePCRcd.a_device_intf_name = pcrGR.getValue('a_device_intf_name');
+            sitePCRcd.a_ip_address = pcrGR.getValue('a_ip_address');
+            sitePCRcd.z_device_name = pcrGR.getValue('z_device_name');
+            sitePCRcd.z_device_intf_name = pcrGR.getValue('z_device_intf_name');
+            sitePCRcd.z_ip_address = pcrGR.getValue('z_ip_address');
+            sitePCRs.push(sitePCRcd);
+            if (this.debug) gs.info(LogPrefix + "pushed " + pcrGR.getValue('name'));
+            // set reference to Provisioning record
+            pcrGR.setValue('nsw_prov_rcd_ref', telcoOrderSysId);
+            pcrGR.update();
+        }
+
+        returnObject.pcrInfo = sitePCRs;
+        if (sitePCRs.length > 0) {
+            returnObject.status = "OK";
+            returnObject.message = "Retrieved and set PR for " + sitePCRs.length.toString() + " Port Connection info records for Site.";
+        } else {
+            returnObject.status = "NOPCRSSET";
+            returnObject.message = "No site PCR records retrieved for site " + siteRcdSysId + ", PR " + telcoOrderSysId;
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getChecklistTemplate: function(checklistName) {
+        var LogPrefix = "getChecklistTemplate --> ";
+        if (this.debug) gs.info(LogPrefix + "called to get checklist named " + checklistName);
+        var returnObject = {
+            status: "",
+            message: "",
+            template: {}
+        };
+        var grTemplate = new GlideRecord('checklist_template');
+        var gotTemplate = grTemplate.get('name', checklistName);
+        if (gotTemplate) {
+            returnObject.template = grTemplate.template;
+            returnObject.status = "OK";
+        } else {
+            returnObject.status = "NOTEMPPLATE";
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    genChecklistFromTemplate4Task: function(template, table, task) {
+        // expects task to be a sys_id
+        var LogPrefix = "genChecklistFromTemplate4Task --> ";
+        if (this.debug) gs.info(LogPrefix + "called for " + task);
+        var json = new global.JSON();
+        var itemJSON = json.decode(template);
+        var name = itemJSON['name'];
+        var items = itemJSON['items'];
+        var owner = itemJSON['owner'];
+        var checklistId = '';
+
+        var grList = new GlideRecord('checklist');
+        grList.addQuery('document', task + '');
+        grList.addQuery('table', table);
+        grList.query();
+        if (!grList.next()) {
+            if (this.debug) gs.info(LogPrefix + "adding checklist for prov task id" + task);
+            grList.document = task + '';
+            grList.name = name;
+            grList.owner = owner;
+            grList.table = table;
+            checklistId = grList.insert();
+
+            for (var i = 0; i < items.length; i++) {
+                var grItem = new GlideRecord('checklist_item');
+                grItem.checklist = checklistId;
+                grItem.complete = false;
+                grItem.name = items[i]['name'];
+                grItem.order = items[i]['order'];
+                grItem.insert();
+            }
+            if (this.debug) gs.info(LogPrefix + "checklist added for " + task);
+        } else {
+            gs.warn(LogPrefix + "Checklist already exists for prov task " + task);
+        }
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getSiteServicesInUse: function(siteSysId) {
+        var LogPrefix = "getSiteServicesInUse --> ";
+        var nswSiteTable = "x_g_sonc_dit_nsw22_nsw2_sites";
+        var svcTable = "x_g_sonc_dit_nsw22_service_definitions";
+        if (this.debug) gs.info(LogPrefix + "called to get site services in use for " + siteSysId);
+        var returnObject = {
+            status: "",
+            message: "",
+            siteServiceInfo: [],
+            svcsInUseDescription: ""
+        };
+
+        /*
+        siteServiceInfo will contain information about the current service in use at this site. 
+        The data is meant ofr human sonsumption so will be descriptive in nature and
+        include a multi-line text string suitable for display in a catalog item text field.
+        */
+
+        var grSite = new GlideRecord(nswSiteTable);
+        var gotSite = grSite.get('sys_id', siteSysId);
+        if (gotSite) {
+            // service_offerings_in_use will have a list of service definition sys_ids
+            siteSvcOfferingSysIds = grSite.service_offerings_in_use.toString();
+            if (this.debug) gs.info(LogPrefix + "Service offerings for Site " + grSite.site_id + " are: " + siteSvcOfferingSysIds);
+
+            // siteSvcOfferingSysIds is a comma delim string. make it an array
+            siteSvcOfferingSysIdArray = siteSvcOfferingSysIds.split(',');
+            if (this.debug) gs.info(LogPrefix + "siteSvcOfferingSysIdArray length = " + siteSvcOfferingSysIdArray.length.toString() + ", value 0 is " + siteSvcOfferingSysIdArray[0]);
+            svcsInfo = [];
+            // get svc_code and svc_title for each service in use
+            for (var svci = 0; svci < siteSvcOfferingSysIdArray.length; svci++) {
+                var svcGr = new GlideRecord(svcTable);
+                if (this.debug) gs.info(LogPrefix + "Looking up service info for " + siteSvcOfferingSysIdArray[svci]);
+                var gotSvc = svcGr.get(siteSvcOfferingSysIdArray[svci])
+                if (gotSvc) {
+                    var svcInfoRcd = {
+                        svc_code: "",
+                        svc_title: ""
+                    };
+                    if (this.debug) gs.info(LogPrefix + "Found service info for " + siteSvcOfferingSysIdArray[svci]);
+                    svcInfoRcd.svc_code = svcGr.getValue('svc_code');
+                    svcInfoRcd.svc_title = svcGr.getValue('svc_title');
+                    // build text descr string as we go
+                    returnObject.svcsInUseDescription = returnObject.svcsInUseDescription + svcInfoRcd.svc_title + " (" + svcInfoRcd.svc_code + ")\n";
+                    svcsInfo.push(svcInfoRcd);
+                }
+            }
+            returnObject.siteServiceInfo = svcsInfo;
+            returnObject.message = "Site " + grSite.site_id;
+            returnObject.status = "OK";
+            if (this.debug) gs.info(LogPrefix + JSON.stringify(returnObject)); // for debug.
+        } else {
+            returnObject.status = "NOSITE";
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    submitReqForEmon: function(NSProTask) {
+        var LogPrefix = "submitReqForEmon --> ";
+        if (this.debug) gs.info(LogPrefix + "called for " + NSProTask.number);
+        var returnObject = {
+            status: "",
+            message: "",
+            emonReqInfo: {}
+        };
+        var gotCpe = false;
+        var cpeGearDescription = "";
+        var assSvcCode = "";
+        var assSvcTitle = "";
+
+        var svcGR = new GlideRecord('x_g_sonc_ns_pro_service_definition');
+        assSvcRcdFound = svcGR.get(NSProTask.assigned_wan_service.getDisplayValue());
+        if (assSvcRcdFound) {
+            assSvcCode = svcGR.getValue('svc_code');
+            assSvcTitle = svcGR.getValue('svc_title');
+        }
+        if (this.debug) gs.info(LogPrefix + "this NSProTask assigned service title is: " + assSvcTitle);
+
+        // get cpe info using site
+        var siteCpeGear = this.getCpeInfoForSite(NSProTask.site.toString());
+        if (this.debug) gs.info(LogPrefix + "site gear to retrieve is: " + JSON.stringify(siteCpeGear));
+        if (siteCpeGear.cpeInfo.length > 0) {
+            gotCpe = true;
+            cpeGearDescription = JSON.stringify(siteCpeGear, null, 4);
+        }
+        if (gotCpe) {
+            // now work on creating a cart opbject to submit.
+            var catItemReqSysId = "bcdd058ddbc4dc50f9275ad3ca9619fe"; //for eMon DIT Monitoring Requests (Add, Change, Delete)
+            var currentUserRef = gs.getUser();
+            var currentUserName = gs.getUserDisplayName();
+            //var cartId = GlideGuid.gererate(null);
+            if (this.debug) gs.info(LogPrefix + "preparing cart for eMon request... NSProTask req type is " + NSProTask.request_type.type + ", user reqFor is: " + currentUserName);
+            var cart = new sn_sc.CartJS();
+
+            // fill in the required variables for the prov activity.
+            if (NSProTask.request_type.type == "New Service") {
+                if (this.debug) gs.info(LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+
+                var newrequest = {
+                    'sysparm_id': catItemReqSysId,
+                    'sysparm_quantity': '1',
+                    'variables': {
+                        'mon_type_of_request': 'Monitoring: WAN/LAN/VOIP/WLAN/SF Switch (Add, Change, Delete)',
+                        'mon_type_of_change': 'Add', // Add, Change, Delete
+                        'mon_hostname': 'site: ' + NSProTask.site.site_identifier,
+                        'mon_ip_address': 'refer to site',
+                        'is_this_a_wan_ce_device': true,
+                        'bandwidth': assSvcTitle,
+                        'mon_other': "Request created from NSPro task " + NSProTask.number + " for site: " + NSProTask.site.site_identifier + "\n\nCPE:\n" + cpeGearDescription,
+                    }
+                }
+
+                var cartDetails = cart.orderNow(newrequest);
+                if (this.debug) gs.info(LogPrefix + "eMon request cart details: " + JSON.stringify(cartDetails));
+                returnObject.status = "OK";
+                returnObject.message = "eMon request " + cartDetails.number + " created for " + NSProTask.number;
+            } else if (NSProTask.request_type.type == "Relocate") {
+                if (this.debug) gs.info(LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+
+                var movrequest = {
+                    'sysparm_id': catItemReqSysId,
+                    'sysparm_quantity': '1',
+                    'variables': {
+                        'mon_type_of_request': 'Monitoring: WAN/LAN/VOIP/WLAN/SF Switch (Add, Change, Delete)',
+                        'mon_type_of_change': 'Change', // Add, Change, Delete
+                        'mon_hostname': 'site: ' + NSProTask.site.site_identifier,
+                        'mon_ip_address': 'refer to site',
+                        'mon_other': "Request created from NSPro task " + NSProTask.number + " for site: " + NSProTask.site.site_identifier + "\n\nCPE:\n" + cpeGearDescription,
+                    }
+                }
+
+                var cartDetails = cart.orderNow(movrequest);
+                if (this.debug) gs.info(LogPrefix + "eMon request cart details: " + JSON.stringify(cartDetails));
+                returnObject.status = "OK";
+                returnObject.message = "eMon request " + cartDetails.number + " created for " + NSProTask.number;
+            } else if (NSProTask.request_type.type == "Change") {
+                if (this.debug) gs.info(LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+
+                var chgrequest = {
+                    'sysparm_id': catItemReqSysId,
+                    'sysparm_quantity': '1',
+                    'variables': {
+                        'mon_type_of_request': 'Monitoring: WAN/LAN/VOIP/WLAN/SF Switch (Add, Change, Delete)',
+                        'mon_type_of_change': 'Change', // Add, Change, Delete
+                        'mon_hostname': 'site: ' + NSProTask.site.site_identifier,
+                        'mon_ip_address': 'refer to site',
+                        'mon_other': "Request created from NSPro task " + NSProTask.number + " for site: " + NSProTask.site.site_identifier + "\n\nCPE:\n" + cpeGearDescription,
+                    }
+                }
+
+                var cartDetails = cart.orderNow(chgrequest);
+                if (this.debug) gs.info(LogPrefix + "eMon request cart details: " + JSON.stringify(cartDetails));
+                returnObject.status = "OK";
+                returnObject.message = "eMon request " + cartDetails.number + " created for " + NSProTask.number;
+            } else if (NSProTask.request_type.type == "Terminate") {
+                if (this.debug) gs.info(LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+
+                var delrequest = {
+                    'sysparm_id': catItemReqSysId,
+                    'sysparm_quantity': '1',
+                    'variables': {
+                        'mon_type_of_request': 'Monitoring: WAN/LAN/VOIP/WLAN/SF Switch (Add, Change, Delete)',
+                        'mon_type_of_change': 'Delete', // Add, Change, Delete
+                        'mon_hostname': 'site: ' + NSProTask.site.site_identifier,
+                        'mon_ip_address': 'refer to site',
+                        'mon_other': "Request created from NSPro task " + NSProTask.number + " for site: " + NSProTask.site.site_identifier + "\n\nCPE:\n" + cpeGearDescription,
+                    }
+                }
+
+                var cartDetails = cart.orderNow(delrequest);
+                if (this.debug) gs.info(LogPrefix + "eMon request cart details: " + JSON.stringify(cartDetails));
+                returnObject.status = "OK";
+                returnObject.message = "eMon request " + cartDetails.number + " created for " + NSProTask.number;
+            }
+        } else {
+            returnObject.status = "NOCPE";
+            returnObject.message = "No cpe found for site " + NSProTask.site.site_identifier + ". Ignoring eMon submission request."
+            if (this.debug) gs.info(LogPrefix + "No cpe retrived for site. Aborting eMon request creation.");
+        }
+        return returnObject;
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // TODO: CONVERT TO NEW TABLE STRUCTURE
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    verifyPoPPEPortCapacity: function(telcoOrder) {
+        /*
+        This function is meant to handle service change requests, particularly bandwidth service changes.
+        We need to allow the network analyst to verify that the current wan circuit has capacity for a bandwidth change.
+        Otherwise we will need to select a different pop pe port.
+
+        If the pe port has adequate capacity, then populate the pe info in the prov record.
+
+        */
+        var LogPrefix = "verifyPoPPEPortCapacity --> ";
+        var nswSiteTable = "cmdb_ci_site";
+        var poppeportTable = "cmdb_ci_network_circuit";  // need to check new table name
+        var svcTable = "x_g_sonc_ns_pro_service_definition";
+        if (this.debug) gs.info(LogPrefix + "called to verify PE port capacity for " + telcoOrder.number);
+        var returnObject = {
+            status: "",
+            message: "",
+            peInfo: {}
+        };
+        var popPeCircuitId = "";
+        var wanCeCircuit = "";
+        var wanCeCircuitBandwidth = {
+            upstream: "",
+            downstream: ""
+        };
+        var wanCurSvcIngressSpeed = 0;
+        var wanFutSvcIngressSpeed = 0;
+        var bandwidthIncrease = 0;
+        var peCapacityExists = false;
+
+        // given the telcoOrder, lets get stuff we need.
+
+        // get the associated site record
+        var siteGR = new GlideRecord(nswSiteTable);
+        var gotSiteGR = siteGR.get(telcoOrder.site);
+        if (gotSiteGR) {
+            if (this.debug) gs.info(LogPrefix + "got related site record - site is " + siteGR.name);
+            // with site record and provision rcd, we can determine what the speed change is.
+            // if we are increasing speed, then we need to verify capacity is available.
+
+            // get service records, current and future
+            var currentServiceGR = new GlideRecord(svcTable);
+            var gotCurrentSvcGR = currentServiceGR.get(telcoOrder.assigned_wan_service);
+            if (gotCurrentSvcGR) {
+                if (this.debug) gs.info(LogPrefix + "got related current wan assigned service record - svc_code is " + currentServiceGR.svc_code);
+                wanCurSvcIngressSpeed = Math.round(currentServiceGR.speed_ingress);
+            } else {
+                gs.error(LogPrefix + "Did not get current service record with ass svc.");
+                returnObject.message = "Did not get current service record with ass wan svc."
+            }
+            var futureServiceGR = new GlideRecord(svcTable);
+            // use requested svc code string value for lookup
+            svcCodeSearchStr = "svc_code=" + telcoOrder.requested_service_codes;
+            futureServiceGR.addEncodedQuery(svcCodeSearchStr);
+            futureServiceGR.query();
+            if (futureServiceGR.next()) {
+                if (this.debug) gs.info(LogPrefix + "got related future wan assigned service record - future svc_code is " + futureServiceGR.svc_code);
+                wanFutSvcIngressSpeed = Math.round(futureServiceGR.speed_ingress);
+            } else {
+                gs.error(LogPrefix + "Did not get future service record with req svc code.");
+            }
+
+            // get circuit info for site
+            var circuitResp = this.getCircuitInfoForSite(telcoOrder.site);
+            if (circuitResp.status == "OK") {
+                if (this.debug) gs.info(LogPrefix + "circuit info is: " + JSON.stringify(circuitResp));
+                // look for first circuit with a correlation id so we can determine which pop pe port we currently use.
+                var gotPePort = false;
+                for (var cirindex = 0; cirindex < circuitResp.circuitInfo.length; cirindex++) {
+                    if (gotPePort) {
+                        break;
+                    }
+                    var cirData = circuitResp.circuitInfo[cirindex];
+                    if (cirData.correlation_id != "") {
+                        // use this circuit to get pop pe port rcd
+                        gotPePort = true;
+                        if (this.debug) gs.info(LogPrefix + "getting pop pe port rcd for " + cirData.correlation_id);
+                        // store this circuit id to use for verification step below
+                        popPeCircuitId = cirData.correlation_id;
+                        wanCeCircuit = cirData.name;
+                        wanCeCircuitBandwidth.upstream = cirData.bandwidth_upstream;
+                        wanCeCircuitBandwidth.downstream = cirData.bandwidth_downstream;
+                    }
+                }
+            } else {
+                gs.error(LogPrefix + "Did not get related circuit for prov activity rcd " + telcoOrder.number);
+            }
+            /* Do we need this ????
+            if (gotPePort) {
+                // get the current service and future service records.
+                if (this.debug) gs.info(LogPrefix + "current service and future service records for " + cirData.correlation_id);
+            }
+            */
+        } else {
+            gs.error(funcName + "Failed to get site record for " + telcoOrder.number);
+        }
+
+        // do veirfication step
+        if (gotPePort && popPeCircuitId != "") {
+            if (this.debug) gs.info(LogPrefix + "performing pe port capacity verification for telcoOrder " + telcoOrder.number + "using pe circuit " + popPeCircuitId);
+            pePortInfoResp = this.getPEInfoByPECircuit(popPeCircuitId);
+            if (pePortInfoResp.status == "OK") {
+                if (this.debug) gs.info(LogPrefix + "pePortInfoResp: " + JSON.stringify(pePortInfoResp));
+                // check current service and ce circuit speed, we have the current service record from above query
+                // check service ingress with ce upstream (it's a string)
+                if (wanCurSvcIngressSpeed == parseInt(wanCeCircuitBandwidth.upstream)) {
+                    if (this.debug) gs.info(LogPrefix + "CE circuit upstream matches current service ingress, bandwidth = " + wanCeCircuitBandwidth.upstream);
+                    // calculate bandwidth increase (int)
+                    bandwidthIncrease = wanFutSvcIngressSpeed - wanCurSvcIngressSpeed;
+                    if (bandwidthIncrease > 0) {
+                        if (this.debug) gs.info(LogPrefix + "telcoOrder " + telcoOrder.number + " is requesting a bandwidth increase of " + bandwidthIncrease);
+
+                        // check it
+                        var peCapResp = this.pePortHasCapacity(pePortInfoResp.peInfo.sys_id, wanFutSvcIngressSpeed, bandwidthIncrease);
+                        if (this.debug) gs.info(LogPrefix + "peCapResp = " + JSON.stringify(peCapResp));
+                        if (peCapResp.status == "OK") {
+                            if (peCapResp.hasCapacity) {
+                                returnObject.status = "OK";
+                                returnObject.message = "Current port has capacity to support change.";
+                                peCapacityExists = true;
+                            } else {
+                                returnObject.status = "NOPECAP";
+                                returnObject.message = "Current port DOES NOT HAVE capacity to support change.";
+                            }
+                        } else {
+                            returnObject.status = "PECAPRESPERROR";
+                            returnObject.message = "There was an error perfroming PE port verification.";
+                        }
+                    } else {
+                        gs.warn(LogPrefix + "change requested, but bandwidth increase calculated to be " + bandwidthIncrease +
+                            " future " + wanFutSvcIngressSpeed + " - " + wanCurSvcIngressSpeed);
+                        gs.warn(LogPrefix + "confirm change is for a bandwidth DECREASE!");
+                        returnObject.status = "SPDDECREASE";
+                        returnObject.message = "Speed decrease request support not coded yet.";
+                    }
+                } else {
+                    gs.warn(LogPrefix + "current svc vs circuit speed mismatch: " +
+                        "svc = " + wanCurSvcIngressSpeed + ", circuit upstream = " + wanCeCircuitBandwidth.upstream);
+                    returnObject.status = "SPDMISMATCH";
+                    returnObject.message = "Current service does not match upstream circuit. Investigate before changing.";
+                }
+            }
+        }
+
+        // update provisioning record with some info
+        telcoOrder.work_notes = LogPrefix + "PoP PE port capacity verification results:\n" +
+            "PoP PE Circuit: " + popPeCircuitId + "\n" +
+            "WAN CE Circuit: " + wanCeCircuit + "\n" +
+            "CE speed: up = " + wanCeCircuitBandwidth.upstream + ", down = " + wanCeCircuitBandwidth.downstream + "\n" +
+            "New service code = " + futureServiceGR.svc_code + "\n" +
+            "Requested increase = " + bandwidthIncrease + "\n" +
+            "Message: " + returnObject.message;
+        // IF CAPACITY EXISTS, then populate some telco info
+        if (peCapacityExists) {
+            if (this.debug) gs.info(LogPrefix + "populating telco info with current pe port info");
+            telcoOrder.assigned_pe = peCapResp.capacityData.pe;
+            telcoOrder.pop_abbrev = peCapResp.capacityData.pop;
+            telcoOrder.assigned_pe_port = peCapResp.capacityData.popPePortSysId;
+            telcoOrder.telco_name = peCapResp.capacityData.service_for;
+            // 02/20/23 we need to set ce circuit id in prov rcd for change 
+            // there could be multiple circuits for the site. could be redundancy.
+
+            // move prov state along to PE circuit assigned
+            telcoOrder.provisoning_state = 4; // pe circuit assigned.
+        }
+
+        telcoOrder.update();
+
+        return returnObject;
+    },
+
+// This will get a GlideRecord as a mostly flat(ish) object.
+
+// https://davidmac.pro/posts/2021-06-10-gliderecord-json/
+
+// Intended to get a GlideRecord's details that are ready to be turned into a JSON message.
+// gr = The GlideRecord to work on.
+// fields = a string array of fields to include in the object from the glide record.
+// Returns an object, ready to be JSON-ified.
+// Usage example: 
+// var obj = getGrObject(grIncident, ["sys_id", "caller_id", "description"]);
+// var jsonObj = JSON.stringify(obj);
+// {
+//   "sys_id": {
+//     "value": "1c741bd70b2322007518478d83673af3",
+//     "display_value": ""
+//   },
+//   "caller_id": {
+//     "value": "681ccaf9c0a8016400b98a06818d57c7",
+//     "display_value": "Joe Employee"
+//   },
+//   "description": {
+//     "value": "I am unable to connect to the email server. It appears to be down.",
+//     "display_value": ""
+//   }
+// }
+getGrObject: function(gr, fields) {
+
+	var obj = {};
+	// If a list of fields has not been provided, use all fields
+	if (!fields) {
+		fields = [];
+		// getElements returns a Java array. Gotta use .size() and .get()
+		var elements = gr.getElements(); 
+		for (var i=0; i < elements.size(); i++)
+			fields.push(elements.get(i).getName());
+	}
+	for (var iField=0; iField < fields.length; iField++) {
+		var fname = fields[iField];
+		if (!gr.isValidField(fname)) {
+			addElement(obj, fname, "", ""); // field doesn't exist, just add blank
+			continue;
+		} 
+		var ed = gr.getElement(fname).getED(); // Get the Element Descriptor for this field
+		var isChoiceField = ed.isChoiceTable(); // Check if this field is a choice field
+		var fType = ""+ed.getInternalType(); // Get the field's type name
+		// Choice field
+		if (isChoiceField) {
+			// There's a special function to get the display value of a choice field
+			addElement(obj, fname, gr.getValue(fname), gr.getElement(fname).getChoiceValue());
+			continue;
+		}
+		
+		// Boolean
+		if (fType == "boolean") {
+			// Raw boolean values are either a 0 (false) or a 1 (true)
+			var boolValue = gr.getValue(fname) == 1;
+			addElement(obj, fname, boolValue, "");
+			continue;
+		}
+		// Fields that should return a value and a display value
+		var displayValueFields = ["reference", "glide_date", "glide_time", "glide_date_time"];
+		if (displayValueFields.indexOf(fType) > -1) {
+			addElement(obj, fname, gr.getValue(fname), gr.getDisplayValue(fname));
+			continue;
+		}
+		// Ordinary fields
+		addElement(obj, fname, gr.getValue(fname), "");
+	}
+	// Return the result
+	return obj;
+
+	function addElement(obj, fname, value, displayValue) {
+		obj[fname] = {};
+		obj[fname]["value"] = value || "";
+		obj[fname]["display_value"] = displayValue || "";
+	}
+},
+
+    type: 'NcditNsw2Utils2'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-21 10:26:40</sys_created_on>
+        <sys_id>fc79b24ddbc6b95040eae46b1396196a</sys_id>
+        <sys_mod_count>166</sys_mod_count>
+        <sys_name>NcditNsw2Utils2</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_fc79b24ddbc6b95040eae46b1396196a</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-30 12:22:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

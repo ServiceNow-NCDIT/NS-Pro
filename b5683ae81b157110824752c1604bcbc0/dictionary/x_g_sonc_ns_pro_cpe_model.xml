@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="2578296ddb19791040eae46b1396199c" label="CPE Model" max_length="40" name="x_g_sonc_ns_pro_cpe_model" type="collection">
-        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Name" max_length="40" name="name" type="string"/>
-    </element>
-</database>

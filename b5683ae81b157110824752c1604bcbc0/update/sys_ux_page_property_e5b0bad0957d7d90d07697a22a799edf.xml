@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>chrome_header</name>
+        <page display_value="NS Pro">59b0bad01b7d7d90824752c1604bcbae</page>
+        <required_translations>[]</required_translations>
+        <route display_value="Landing Page">a5b0bad0e07d7d907a7e5b0d516a3afe</route>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-10-06 15:36:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>e5b0bad0957d7d90d07697a22a799edf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_header</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ux_page_property_e5b0bad0957d7d90d07697a22a799edf</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-10-06 15:36:59</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_g_sonc_ns_pro.59b0bad01b7d7d90824752c1604bcbae.route.chrome_header.a5b0bad0e07d7d907a7e5b0d516a3afe</unique_name>
+        <value>{&#13;
+    "privatePage":{&#13;
+       "searchEnabled": false&#13;
+    }&#13;
+}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=e5b0bad0957d7d90d07697a22a799edf"/>
+</record_update>

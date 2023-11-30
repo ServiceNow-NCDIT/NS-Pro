@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.location</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>location</name>
+        <script><![CDATA[var location = Class.create();
+location.prototype = {
+    initialize: function() {
+    },
+
+    getLocation: function(loc_id) {
+
+        gs.info('location.getLocation searching for location ' + loc_id);
+
+        var loc = {};
+        var locGr = new GlideRecord('cmn_location');
+     
+		if (locGr.get(loc_id.toString())) {
+
+			gs.info('location.getLocation found loc ' + locGr.name);
+
+			loc.sysId = locGr.sys_id.toString();
+			loc.name = locGr.name.toString();
+			loc.county = locGr.u_county.toString();
+			loc.street = locGr.street.toString();
+			loc.city = locGr.city.toString();
+			loc.state = locGr.state.toString();
+			loc.zip = locGr.zip.toString();
+			loc.latitude = locGr.latitude.toString();
+			loc.longitude = locGr.longitude.toString();
+		} else {
+			gs.info('location not found');
+		}
+		
+		gs.info('location.getLocation returning ' + global.JSON.stringify(loc));
+		
+        return global.JSON.stringify(loc);
+
+    },
+	
+    type: 'location'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-23 03:07:18</sys_created_on>
+        <sys_id>a9472be9db46fd5040eae46b139619b6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>location</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_a9472be9db46fd5040eae46b139619b6</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-23 12:39:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

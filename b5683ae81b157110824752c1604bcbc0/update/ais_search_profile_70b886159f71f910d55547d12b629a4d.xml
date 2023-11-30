@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile">
+    <ais_search_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This is default AI Search profile for Network Services</description>
+        <genius_result_assembly/>
+        <label>network-services Search Profile</label>
+        <name>x_g_sonc_ns_pro_wrqlvgwk_search_profile</name>
+        <publish_id>4b4c2134-9876-4894-b059-58d398587ca4</publish_id>
+        <state>DRAFT</state>
+        <sys_class_name>ais_search_profile</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-09 15:16:04</sys_created_on>
+        <sys_id>70b886159f71f910d55547d12b629a4d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>network-services Search Profile</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>ais_search_profile_70b886159f71f910d55547d12b629a4d</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-09 15:16:09</sys_updated_on>
+    </ais_search_profile>
+</record_update>

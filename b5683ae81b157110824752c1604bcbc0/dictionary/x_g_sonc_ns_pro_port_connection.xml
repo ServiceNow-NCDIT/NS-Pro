@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="c94101a91b613550824752c1604bcb99" extends="dscy_net_base" label="Elemento de infraestructura de red" max_length="40" name="x_g_sonc_ns_pro_port_connection" type="collection">
+    <element db_object_id="c94101a91b613550824752c1604bcb99" extends="dscy_net_base" label="Elemento de infraestructura de red" max_length="40" name="x_g_sonc_ns_pro_port_connection" text_index="true" type="collection">
         <element label="A Circuit Id" max_length="254" name="a_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="A Device Interface Name" max_length="254" name="a_device_interface_name" type="string"/>
         <element label="A Device Name" max_length="40" name="a_device_name" type="string"/>

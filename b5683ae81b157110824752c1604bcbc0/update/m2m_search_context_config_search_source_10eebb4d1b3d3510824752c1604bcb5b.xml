@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>1100</order>
+        <search_context_config display_value="NS Pro - Workspace Search">322ef789e7f93510f5e11d7bc980ee2b</search_context_config>
+        <source display_value="NS Pro - x_g_sonc_ns_pro_telco_order">d4ee7b4d1b3d3510824752c1604bcbe7</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-09 05:13:55</sys_created_on>
+        <sys_id>10eebb4d1b3d3510824752c1604bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_10eebb4d1b3d3510824752c1604bcb5b</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:13:55</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

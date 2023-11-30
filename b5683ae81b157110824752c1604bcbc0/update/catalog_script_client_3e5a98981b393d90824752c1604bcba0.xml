@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Request New Site - Studio">b357f60b1b25b190824752c1604bcbf2</cat_item>
+        <cat_item/>
         <cat_variable>IO:a123830b1b65b190824752c1604bcb7a</cat_variable>
         <condition/>
         <description/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="a50ac1601be13d10824752c1604bcb79" label="Telco Selection Criteria" max_length="40" name="x_g_sonc_ns_pro_telco_selection_criteria" type="collection">
+    <element db_object_id="a50ac1601be13d10824752c1604bcb79" label="Telco Selection Criteria" max_length="40" name="x_g_sonc_ns_pro_telco_selection_criteria" text_index="true" type="collection">
         <element choice="1" label="Available Services" max_length="40" name="available_services" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Enterprise WAN" sequence="10" value="enterprise_wan"/>

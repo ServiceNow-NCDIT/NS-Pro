@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.request_type_ajax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>request_type_ajax</name>
+        <script><![CDATA[var request_type_ajax = Class.create();
+request_type_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getType : function() {
+		
+		var reqType = new x_g_sonc_ns_pro.request_type();
+        var type = this.getParameter('sysparm_type');
+		
+		gs.info('request_type_ajax.getType searching for type ' + type);
+		
+        return reqType.getType(type);
+
+	},
+
+    type: 'request_type_ajax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-15 04:13:36</sys_created_on>
+        <sys_id>c93aa603dbb9791040eae46b1396196d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>request_type_ajax</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_c93aa603dbb9791040eae46b1396196d</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-15 04:30:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

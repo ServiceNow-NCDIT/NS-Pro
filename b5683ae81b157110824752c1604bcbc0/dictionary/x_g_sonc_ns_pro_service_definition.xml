@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="1fd6a778dbddf11040eae46b139619d8" label="Service Definition" max_length="40" name="x_g_sonc_ns_pro_service_definition" type="collection">
+    <element db_object_id="1fd6a778dbddf11040eae46b139619d8" label="Service Definition" max_length="40" name="x_g_sonc_ns_pro_service_definition" text_index="true" type="collection">
         <element label="Cost Per Month Core" max_length="20" name="cost_per_month_core" type="currency"/>
         <element label="Cost Per Month CPE" max_length="20" name="cost_per_month_cpe" type="currency"/>
         <element label="Cost Per Month Transport" max_length="20" name="cost_per_month_transport" type="currency"/>

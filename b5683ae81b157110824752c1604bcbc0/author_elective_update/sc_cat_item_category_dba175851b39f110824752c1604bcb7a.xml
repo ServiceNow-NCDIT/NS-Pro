@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="LAN WAN Service Request (STS01)">d81ebf241bf93110824752c1604bcb74</sc_cat_item>
+        <sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-08 18:56:59</sys_created_on>
+        <sys_id>dba175851b39f110824752c1604bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.LAN WAN Service Request (STS01)</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sc_cat_item_category_dba175851b39f110824752c1604bcb7a</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-08 18:56:59</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_category_dba175851b39f110824752c1604bcb7a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="LAN WAN Service Request (STS01)">d81ebf241bf93110824752c1604bcb74</sc_cat_item><sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-08 18:56:59</sys_created_on><sys_id>dba175851b39f110824752c1604bcb7a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Enterprise WAN.LAN WAN Service Request (STS01)</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sc_cat_item_category_dba175851b39f110824752c1604bcb7a</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-08 18:56:59</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1801893254</payload_hash>
+        <record_name>Enterprise WAN.LAN WAN Service Request (STS01)</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-08 18:57:00</sys_created_on>
+        <sys_id>1ba175851b39f110824752c1604bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b10a65c780000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-08 18:57:00</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>5ba175854939f11044b8fc6e957d6d7e</update_guid>
+        <update_guid_history>5ba175854939f11044b8fc6e957d6d7e:1801893254</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 11/01/2023 13:11:47">cb7dc1fc1bd6bdd0824752c1604bcb85</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-01 18:11:47</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>002b4582e9b3470e8000c8f2cbb6c541</sys_id>
+        <sys_metadata>dba175851b39f110824752c1604bcb7a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.LAN WAN Service Request (STS01)</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_dba175851b39f110824752c1604bcb7a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_dba175851b39f110824752c1604bcb7a">1ba175851b39f110824752c1604bcb7f</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-01 18:11:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

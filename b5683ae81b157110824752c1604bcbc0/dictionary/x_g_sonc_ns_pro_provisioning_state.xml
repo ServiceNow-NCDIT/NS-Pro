@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="d73c078adbd9bd1040eae46b13961971" label="Provisioning State" max_length="40" name="x_g_sonc_ns_pro_provisioning_state" type="collection">
-        <element label="State" max_length="40" name="state" type="string"/>
-    </element>
-</database>

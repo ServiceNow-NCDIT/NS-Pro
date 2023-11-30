@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Service Location" section_id="26eeb3cd1b3d3510824752c1604bcbaa" sys_domain="global" table="x_g_sonc_ns_pro_telco_selection_criteria" version="3" view="workspace-ns-pro-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>availavble_services</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 05:14:04</sys_created_on>
+            <sys_id>eaee77cd1b3d3510824752c1604bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:14:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 05:14:04</sys_created_on>
+            <sys_id>eeee77cd1b3d3510824752c1604bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:14:04</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>county</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 05:14:04</sys_created_on>
+            <sys_id>e2ee77cd1b3d3510824752c1604bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:14:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>zip</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 05:14:04</sys_created_on>
+            <sys_id>e6ee77cd1b3d3510824752c1604bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:14:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 05:14:04</sys_created_on>
+            <sys_id>eaee77cd1b3d3510824752c1604bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:14:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>available_services</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 05:14:04</sys_created_on>
+            <sys_id>eeee77cd1b3d3510824752c1604bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:14:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Service Location</caption>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_telco_selection_criteria</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 05:14:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26eeb3cd1b3d3510824752c1604bcbaa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_selection_criteria</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_26eeb3cd1b3d3510824752c1604bcbaa</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 05:14:04</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="">762ef789a6f93510fdbf40ed3790952a</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_section_26eeb3cd1b3d3510824752c1604bcbaa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Service Location" section_id="26eeb3cd1b3d3510824752c1604bcbaa" sys_domain="global" table="x_g_sonc_ns_pro_telco_selection_criteria" version="3" view="workspace-ns-pro-0"><sys_ui_element action="INSERT_OR_UPDATE"><element>availavble_services</element><position>0</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 05:14:04</sys_created_on><sys_id>eaee77cd1b3d3510824752c1604bcba2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 05:14:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 05:14:04</sys_created_on><sys_id>eeee77cd1b3d3510824752c1604bcba2</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 05:14:04</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>county</element><position>2</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 05:14:04</sys_created_on><sys_id>e2ee77cd1b3d3510824752c1604bcba3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 05:14:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>zip</element><position>3</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 05:14:04</sys_created_on><sys_id>e6ee77cd1b3d3510824752c1604bcba3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 05:14:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>city</element><position>4</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 05:14:04</sys_created_on><sys_id>eaee77cd1b3d3510824752c1604bcba3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 05:14:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>available_services</element><position>5</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 05:14:04</sys_created_on><sys_id>eeee77cd1b3d3510824752c1604bcba3</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Service Location" display_value="Service Location" name="x_g_sonc_ns_pro_telco_selection_criteria" sys_domain="global" view="762ef789a6f93510fdbf40ed3790952a">26eeb3cd1b3d3510824752c1604bcbaa</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 05:14:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Service Location</caption><header>false</header><name>x_g_sonc_ns_pro_telco_selection_criteria</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 05:14:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>26eeb3cd1b3d3510824752c1604bcbaa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_telco_selection_criteria</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_section_26eeb3cd1b3d3510824752c1604bcbaa</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 05:14:04</sys_updated_on><sys_user/><title>false</title><view display_value="">762ef789a6f93510fdbf40ed3790952a</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1839461259</payload_hash>
+        <record_name>Telco Selection Criteria</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-10 20:27:59</sys_created_on>
+        <sys_id>86f2c433db5a315040eae46b1396194c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18bbaeb851b0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-10 20:27:59</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>46f2c4339b5a3150571ac40742d57d4c</update_guid>
+        <update_guid_history>46f2c4339b5a3150571ac40742d57d4c:-1839461259</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-10 20:27:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>19683691b42e4461be57755056e6a801</sys_id>
+        <sys_metadata>26eeb3cd1b3d3510824752c1604bcbaa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Location</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Telco Selection Criteria">a50ac1601be13d10824752c1604bcb79</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_section_26eeb3cd1b3d3510824752c1604bcbaa</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_26eeb3cd1b3d3510824752c1604bcbaa">86f2c433db5a315040eae46b1396194c</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-10 20:27:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

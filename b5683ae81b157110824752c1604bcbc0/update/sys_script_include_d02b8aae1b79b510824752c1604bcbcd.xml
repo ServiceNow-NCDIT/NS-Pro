@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.service_definition</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>service_definition</name>
+        <script><![CDATA[var service_definition = Class.create();
+service_definition.prototype = {
+    initialize: function() {},
+
+    getSvcDef: function(sysId) {
+
+        var gr = new GlideRecord('x_g_sonc_ns_pro_service_definition');
+		svcDef = {};
+        if (gr.get(sysId)) {
+
+			gs.info('found service definition ' + gr.svc_title.getDisplayValue());
+
+            svcDef.sys_id = gr.sys_id.getDisplayValue();
+            svcDef.svc_type = gr.svc_type.getDisplayValue();
+            svcDef.svc_title = gr.svc_title.getDisplayValue();
+            svcDef.svc_ha_category = gr.svc_ha_category.getDisplayValue();
+            svcDef.svc_code = gr.svc_code.getDisplayValue();
+            svcDef.speed_ingress = gr.speed_ingress.getDisplayValue();
+            svcDef.speed_egress = gr.speed_egress.getDisplayValue();
+            svcDef.sla = gr.sla.getDisplayValue();
+            svcDef.num_cpe = gr.num_cpe.getDisplayValue();
+            svcDef.media = gr.media.getDisplayValue();
+            svcDef.full_duplex = gr.full_duplex.getDisplayValue();
+            svcDef.cpe_port_range_low = gr.cpe_port_range_low.getDisplayValue();
+            svcDef.cpe_port_range_high = gr.cpe_port_range_high.getDisplayValue();
+            svcDef.cpe_model_4 = gr.cpe_model_4.getDisplayValue();
+            svcDef.cpe_model_3 = gr.cpe_model_3.getDisplayValue();
+            svcDef.cpe_model_2 = gr.cpe_model_2.getDisplayValue();
+            svcDef.cpe_model_1 = gr.cpe_model_1.getDisplayValue();
+            svcDef.cpe_level = gr.cpe_level.getDisplayValue();
+            svcDef.cost_per_month_transport = gr.cost_per_month_transport.getDisplayValue();
+            svcDef.cost_per_month_cpe = gr.cost_per_month_cpe.getDisplayValue();
+            svcDef.cost_per_month_core = gr.cost_per_month_core.getDisplayValue();
+        }
+		else {
+			gs.info('failed to find service definition');
+		}
+		return global.JSON.stringify(svcDef);
+    },
+
+    type: 'service_definition'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-13 12:39:19</sys_created_on>
+        <sys_id>d02b8aae1b79b510824752c1604bcbcd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>service_definition</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_d02b8aae1b79b510824752c1604bcbcd</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-13 21:25:59</sys_updated_on>
+    </sys_script_include>
+</record_update>

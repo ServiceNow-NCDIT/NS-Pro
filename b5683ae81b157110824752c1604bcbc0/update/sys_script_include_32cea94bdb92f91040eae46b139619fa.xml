@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.nspro_getSvcs</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>nspro_getSvcs</name>
+        <script><![CDATA[function nspro_getSvcs(ha) {
+
+	// https://servicenowguru.com/scripting/script-includes-scripting/advanced-reference-qualifier-script-include/
+
+	// gs.info('nspro_getSvcs has been called with ha = ' + ha);
+	var svcs = [];
+	var gr = new GlideRecord('x_g_sonc_ns_pro_service_definition');
+	gr.addQuery('svc_title','CONTAINS', 'WAN');
+	if ( ha == 'true') {
+		// gs.info('adding query for Gold services');
+		gr.addQuery('svc_ha_category', 'Gold');
+	}
+	else {
+		gr.addQuery('svc_ha_category', '!=', 'Gold');
+	}
+	gr.orderBy('svc_title');
+	
+	// gs.info('query = ' + gr.getEncodedQuery());
+	
+	gr.query();
+	// gs.info('Query returned ' + gr.getRowCount() + ' rows');
+	while (gr.next()) {
+		svcs.push(gr.getUniqueValue());
+	}
+	
+	// gs.info ('svcs = ' + svcs.join(','));
+	
+	return svcs;
+
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-08 20:24:03</sys_created_on>
+        <sys_id>32cea94bdb92f91040eae46b139619fa</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>nspro_getSvcs</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_32cea94bdb92f91040eae46b139619fa</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-20 20:14:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

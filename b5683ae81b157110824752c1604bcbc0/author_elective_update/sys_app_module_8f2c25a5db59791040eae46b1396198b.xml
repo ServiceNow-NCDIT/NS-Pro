@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Circuit Jack Types</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_ns_pro_circuit_jack_type</name>
+        <order>1030</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_g_sonc_ns_pro.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-15 11:18:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8f2c25a5db59791040eae46b1396198b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Circuit Jack Types</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_8f2c25a5db59791040eae46b1396198b</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-26 05:31:08</sys_updated_on>
+        <timeline_page/>
+        <title>Circuit Jack Types</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_8f2c25a5db59791040eae46b1396198b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Circuit Jack Types</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_ns_pro_circuit_jack_type</name><order>1030</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_g_sonc_ns_pro.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-15 11:18:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8f2c25a5db59791040eae46b1396198b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Circuit Jack Types</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_app_module_8f2c25a5db59791040eae46b1396198b</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-09-26 05:31:08</sys_updated_on><timeline_page/><title>Circuit Jack Types</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1440457253</payload_hash>
+        <record_name>Circuit Jack Types</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-26 05:31:08</sys_created_on>
+        <sys_id>f52649c51b213150824752c1604bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18acff843db0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-26 05:31:08</sys_updated_on>
+        <type>Module</type>
+        <update_guid>7d2649c5b42131501ceb49fdabfc4b82</update_guid>
+        <update_guid_history>7d2649c5b42131501ceb49fdabfc4b82:-1440457253,6a703121a3997910a249c5fcac87f737:2010309862,0f2c25a5565979108b6831207071598d:1430687804</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/11/2023 13:44:20">1b8b49ce1b7d7110824752c1604bcb53</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-11 18:44:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>abdfed9b55174c18b5039f86c5312640</sys_id>
+        <sys_metadata>8f2c25a5db59791040eae46b1396198b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Circuit Jack Types</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_app_module_8f2c25a5db59791040eae46b1396198b</sys_update_name>
+        <sys_update_version display_value="sys_app_module_8f2c25a5db59791040eae46b1396198b">f52649c51b213150824752c1604bcb83</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-11 18:44:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

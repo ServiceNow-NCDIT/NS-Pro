@@ -4,41 +4,69 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-28 10:01:26</sys_created_on>
-            <sys_id>b8375cb51bad7550824752c1604bcbd6</sys_id>
+            <sys_created_on>2023-10-25 06:00:52</sys_created_on>
+            <sys_id>c413aa12db0e359040eae46b139619ad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_point_of_presence" sys_domain="global" view="Default view">58d6d4b11bad7550824752c1604bcb78</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-28 10:01:26</sys_updated_on>
+            <sys_updated_on>2023-10-25 06:00:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-25 06:00:52</sys_created_on>
+            <sys_id>cc13aa12db0e359040eae46b139619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_point_of_presence" sys_domain="global" view="Default view">58d6d4b11bad7550824752c1604bcb78</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-25 06:00:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-28 10:01:26</sys_created_on>
-            <sys_id>b0375cb51bad7550824752c1604bcbd7</sys_id>
+            <sys_created_on>2023-10-25 06:00:52</sys_created_on>
+            <sys_id>c013aa12db0e359040eae46b139619ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_point_of_presence" sys_domain="global" view="Default view">58d6d4b11bad7550824752c1604bcb78</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-28 10:01:26</sys_updated_on>
+            <sys_updated_on>2023-10-25 06:00:52</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-28 10:01:26</sys_created_on>
-            <sys_id>34375cb51bad7550824752c1604bcbf0</sys_id>
+            <sys_created_on>2023-10-25 06:00:52</sys_created_on>
+            <sys_id>c413aa12db0e359040eae46b139619ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_point_of_presence" sys_domain="global" view="Default view">58d6d4b11bad7550824752c1604bcb78</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-28 10:01:26</sys_updated_on>
+            <sys_updated_on>2023-10-25 06:00:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:16:23</sys_created_on>
+            <sys_id>bed0138f1bcefd90824752c1604bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_point_of_presence" sys_domain="global" view="Default view">58d6d4b11bad7550824752c1604bcb78</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:16:23</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

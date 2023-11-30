@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Telco Info" section_id="9f3788da1b75f110824752c1604bcb95" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3" view="nspro">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_provider</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>af5d4f471bcefd90824752c1604bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_vendor</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>2b5d4f471bcefd90824752c1604bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_order_contact</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>2f5d4f471bcefd90824752c1604bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_order_email</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>235d4f471bcefd90824752c1604bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pop</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>275d4f471bcefd90824752c1604bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>2b5d4f471bcefd90824752c1604bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe_port</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>2f5d4f471bcefd90824752c1604bcb53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>235d4f471bcefd90824752c1604bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_request_type</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>275d4f471bcefd90824752c1604bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_sent_date</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>2b5d4f471bcefd90824752c1604bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_due_date</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>2f5d4f471bcefd90824752c1604bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_speed_ingress</element>
+            <position>11</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>235d4f471bcefd90824752c1604bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_speed_egress</element>
+            <position>12</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>275d4f471bcefd90824752c1604bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_special_instructions</element>
+            <position>13</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+            <sys_id>2b5d4f471bcefd90824752c1604bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Telco Info</caption>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:24:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9f3788da1b75f110824752c1604bcb95</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_9f3788da1b75f110824752c1604bcb95</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 08:24:22</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_section_9f3788da1b75f110824752c1604bcb95</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Telco Info" section_id="9f3788da1b75f110824752c1604bcb95" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3" view="nspro"><sys_ui_element action="INSERT_OR_UPDATE"><element>telco_provider</element><position>0</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>af5d4f471bcefd90824752c1604bcb51</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>telco_vendor</element><position>1</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>2b5d4f471bcefd90824752c1604bcb52</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>telco_order_contact</element><position>2</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>2f5d4f471bcefd90824752c1604bcb52</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>telco_order_email</element><position>3</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>235d4f471bcefd90824752c1604bcb53</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_pop</element><position>4</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>275d4f471bcefd90824752c1604bcb53</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_pe</element><position>5</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>2b5d4f471bcefd90824752c1604bcb53</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>assigned_pe_port</element><position>6</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>2f5d4f471bcefd90824752c1604bcb53</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>7</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>235d4f471bcefd90824752c1604bcb54</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>circuit_order_request_type</element><position>8</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>275d4f471bcefd90824752c1604bcb54</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>circuit_order_sent_date</element><position>9</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>2b5d4f471bcefd90824752c1604bcb54</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>circuit_due_date</element><position>10</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>2f5d4f471bcefd90824752c1604bcb54</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>circuit_speed_ingress</element><position>11</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>235d4f471bcefd90824752c1604bcb55</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>circuit_speed_egress</element><position>12</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>275d4f471bcefd90824752c1604bcb55</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>circuit_special_instructions</element><position>13</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-27 17:01:08</sys_created_on><sys_id>2b5d4f471bcefd90824752c1604bcb55</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">9f3788da1b75f110824752c1604bcb95</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-27 17:01:08</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Telco Info</caption><header>false</header><name>x_g_sonc_ns_pro_telco_order</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 08:24:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9f3788da1b75f110824752c1604bcb95</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_telco_order</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_section_9f3788da1b75f110824752c1604bcb95</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 08:24:22</sys_updated_on><sys_user/><title>false</title><view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>800900809</payload_hash>
+        <record_name>Telco Order</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-27 17:01:08</sys_created_on>
+        <sys_id>6b5d4f471bcefd90824752c1604bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b72151e5c0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-27 17:01:08</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>af5d4f4750cefd90ab9f60c2bca3d757</update_guid>
+        <update_guid_history>af5d4f4750cefd90ab9f60c2bca3d757:800900809,29bd3a868602f190a64a4f8439454caa:1233545516,2a5c7ec2b702f190b48500ca21f8c38a:-2146251513,8e4bf642f902f190be486367b1066d76:-1732911719,b969aa4e6b4eb190d18ac2626763a7f7:-769637002,0d3859ac7d427550f6c4e48b3de60e78:743048129,517fa90037c271506f6164408849afe3:2102715475,f19700807bc231504595852404e62143:-694032773,f7c3989602f5f11037a7a5e171e62113:1496854576,47ef80de69b5f11009ef79fa30513481:278796994,ac1ec05a01b5f1100ebb31f96774e293:279613897,5c6b00161cb5f110c544f96ac0363198:-1967888719,2b37c8dab875f110d2a8a842faeb0018:1611545125</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-07 17:30:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>8c22f20ffd854894adff64a28f1a6910</sys_id>
+        <sys_metadata>9f3788da1b75f110824752c1604bcb95</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telco Info</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Telco Order">e2b42525db19791040eae46b13961947</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_section_9f3788da1b75f110824752c1604bcb95</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_9f3788da1b75f110824752c1604bcb95">6b5d4f471bcefd90824752c1604bcb58</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-07 17:30:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

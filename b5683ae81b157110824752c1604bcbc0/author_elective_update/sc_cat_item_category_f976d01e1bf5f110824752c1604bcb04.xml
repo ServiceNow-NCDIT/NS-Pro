@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Telco Order">670690da1bf5f110824752c1604bcbe7</sc_cat_item>
+        <sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-12 09:30:53</sys_created_on>
+        <sys_id>f976d01e1bf5f110824752c1604bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.Telco Order</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sc_cat_item_category_f976d01e1bf5f110824752c1604bcb04</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-12 09:30:53</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_category_f976d01e1bf5f110824752c1604bcb04</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="DELETE"><sc_cat_item display_value="Telco Order">670690da1bf5f110824752c1604bcbe7</sc_cat_item><sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:30:53</sys_created_on><sys_id>f976d01e1bf5f110824752c1604bcb04</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Enterprise WAN.Telco Order</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sc_cat_item_category_f976d01e1bf5f110824752c1604bcb04</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:30:53</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1149487707</payload_hash>
+        <record_name>Enterprise WAN.Telco Order</record_name>
+        <reverted_from/>
+        <source>9ccfb3ee1bf5f510824752c1604bcbcc</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-10-13 21:08:38</sys_created_on>
+        <sys_id>50cff3ee1bf5f510824752c1604bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b2adeac980000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-10-13 21:08:38</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>14cff3eef5f5f510ba275385e9e51e39</update_guid>
+        <update_guid_history>14cff3eef5f5f510ba275385e9e51e39:-1149487707,3976d01e38f5f110347b3a839e768608:-1039327951</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/13/2023 16:08:38">18cff3ee1bf5f510824752c1604bcb3e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-10-13 21:08:38</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>3a5bbbdedf464bb08d63d4578b46c809</sys_id>
+        <sys_metadata>f976d01e1bf5f110824752c1604bcb04</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enterprise WAN.Telco Order</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_f976d01e1bf5f110824752c1604bcb04</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_f976d01e1bf5f110824752c1604bcb04">50cff3ee1bf5f510824752c1604bcb3a</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-10-13 21:08:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -9,91 +9,147 @@
         <name>cmdb_ci_site</name>
         <script><![CDATA[var cmdb_ci_site = Class.create();
 cmdb_ci_site.prototype = {
-    initialize: function() {},
+	initialize: function() {},
 
-    getNextSiteNum: function(site_type) {
+	getNextSiteNum: function(type_id) {
 
-        site_type = site_type.toLowerCase();
-        // gs.info('cmdb_ci_site.getNextSiteNum searching for site type ' + site_type);
-        var index;
-        var gr = new GlideRecord('cmdb_ci_site');
-        if (site_type == 'pop' || site_type == 'datacenter') {
-            index = 9943302;
-        } else {
-            index = 7001;
-        }
-        // find the first available site id in the range from index to index + 4000 records
-        for (i = index; i < index + 4000; i++) {
-            // gs.info('Checking site ' + i);
-            if (!gr.get('site_identifier', i.toString())) {
-                // gs.info('found available site ' + i);
-                // found free site id
-                return i;
-            }
-        }
-        // if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
-        return;
+		gs.info('cmdb_ci_site.getNextSiteNum searching for site type ' + type_id);
+		var typeGr = new GlideRecord('x_g_sonc_ns_pro_site_type');
+		if (typeGr.get(type_id)) {
+			var type_name = typeGr.name.toString().toLowerCase();
+			gs.info('cmdb_ci_site.getNextSiteNum found site type ' + type_name);
+			var index;
+			var gr = new GlideRecord('cmdb_ci_site');
+			if (type_name == 'pop') {
+				index = 9943302;
+			} else {
+				index = 7001;
+			}
+			// find the first available site id in the range from index to index + 4000 records
+			for (i = index; i < index + 4000; i++) {
+				gs.info('Checking site ' + i);
+				if (!gr.get('site_identifier', i.toString())) {
+					gs.info('found available site ' + i);
+					// found free site id
+					return i;
+				}
+			}
+		}
+		else {
+			gs.info('cmdb_ci_site.getNextSiteNum could not find site type ' + site_type);
+		}
 
-    },
+		// if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
+		return;
 
-    getSiteId: function(site) {
+	},
+
+	getSiteId: function(site) {
 
 		var site_id;
-        var gr = new GlideRecord('cmdb_ci_site');
+		var gr = new GlideRecord('cmdb_ci_site');
 		if (gr.get(site.toString())) {
 			site_id = gr.site_identifier.toString();
 		}
-        // if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
-        return site_id;
+		// if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
+		return site_id;
 
-    },
+	},
 
-    getLocation: function(site_id) {
-		
-		gs.info('cmdb_ci_site.getLocation searching for site ' + site_id);
+	getLocation: function(site_sys_id) {
 
-        var loc = {};
-        var locGr = new GlideRecord('cmn_location');
-        var siteGr = new GlideRecord('cmdb_ci_site');
+		gs.info('cmdb_ci_site.getLocation searching for site ' + site_sys_id);
 
-        if (siteGr.get('site_identifier', site_id)) {
-			
-			gs.info('cmdb_ci_site.getLocation found site ' + siteGr.location);
-			
-            if (locGr.get(siteGr.location.toString())) {
-				
+		var loc = {};
+		var locGr = new GlideRecord('cmn_location');
+		var siteGr = new GlideRecord('cmdb_ci_site');
+
+		if (siteGr.get(site_sys_id)) {
+
+			gs.info('cmdb_ci_site.getLocation found site ' + siteGr.name);
+
+			if (locGr.get(siteGr.location.toString())) {
+
 				gs.info('cmdb_ci_site.getLocation found loc ' + locGr.name);
-				
-                loc.name = locGr.name.toString();
+
+				loc.sysId = locGr.sys_id.toString();
+				loc.name = locGr.name.toString();
 				loc.county = locGr.u_county.toString();
-                loc.street = locGr.street.toString();
-                loc.city = locGr.city.toString();
-                loc.state = locGr.state.toString();
-                loc.zip = locGr.zip.toString();
-                loc.latitude = locGr.latitude.toString();
-                loc.longitude = locGr.longitude.toString();
-            }
-			else {
+				loc.street = locGr.street.toString();
+				loc.city = locGr.city.toString();
+				loc.state = locGr.state.toString();
+				loc.zip = locGr.zip.toString();
+				loc.latitude = locGr.latitude.toString();
+				loc.longitude = locGr.longitude.toString();
+			} else {
 				gs.info('location not found');
 			}
-        }
-        return global.JSON.stringify(loc);
+		}
+		else {
+			gs.error('site not found');
+		}
+		return global.JSON.stringify(loc);
 
-    },
+	},
 
-    type: 'cmdb_ci_site'
+	getSite: function(site_sys_id) {
+
+		// gs.info('cmdb_ci_site.getSite searching for site sys_id ' + site_sys_id);
+
+		var site = {};
+		var siteGr = new GlideRecord('cmdb_ci_site');
+
+		if (siteGr.get(site_sys_id)) {
+
+			// gs.info('cmdb_ci_site.getSite found site ' + siteGr.name);
+
+			site.sys_id = siteGr.getUniqueValue();
+			site.name = siteGr.name.getDisplayValue();
+			site.site_identifier = siteGr.site_identifier.getDisplayValue();
+			site.comments = siteGr.comments.getDisplayValue();
+			site.decommission_date = siteGr.x_g_sonc_ns_pro_decommission_date.getDisplayValue();
+			site.active = siteGr.x_g_sonc_ns_pro_active.getDisplayValue();
+			site.demarc_location = siteGr.x_g_sonc_ns_pro_demarc_location.getDisplayValue();
+			site.site_type = siteGr.x_g_sonc_ns_pro_site_type.getDisplayValue();
+			site.location = siteGr.location.toString();
+			site.latitude = siteGr.location.latitude.getDisplayValue();
+			site.longitude = siteGr.location.longitude.getDisplayValue();
+			site.install_status = siteGr.install_status.getDisplayValue();
+			site.county = siteGr.location.u_county.getDisplayValue();
+			site.city = siteGr.location.city.getDisplayValue();
+			site.street = siteGr.location.street.getDisplayValue();
+			site.state = siteGr.location.state.getDisplayValue();
+			site.zip = siteGr.location.zip.getDisplayValue();
+			site.primary_poc = siteGr.x_g_sonc_ns_pro_primary_poc.toString();
+			site.primary_poc_phone = siteGr.x_g_sonc_ns_pro_primary_poc.phone.getDisplayValue();
+			site.primary_poc_email = siteGr.x_g_sonc_ns_pro_primary_poc.email.getDisplayValue();
+			site.alternate_poc = siteGr.x_g_sonc_ns_pro_alternate_poc.toString();
+			site.alternate_poc_phone = siteGr.x_g_sonc_ns_pro_alternate_poc.phone.getDisplayValue();
+			site.alternate_poc_email = siteGr.x_g_sonc_ns_pro_alternate_poc.email.getDisplayValue();
+
+			// gs.warn('cmdb_ci_site.getSite constructed site ' + global.JSON.stringify(site));
+
+		}
+
+		// gs.warn('cmdb_ci_site.getSite returning ' + global.JSON.stringify(site));
+
+		return global.JSON.stringify(site);
+
+	},
+
+	type: 'cmdb_ci_site'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-05 20:10:27</sys_updated_on>
+        <sys_updated_on>2023-11-03 20:39:54</sys_updated_on>
     </sys_script_include>
 </record_update>

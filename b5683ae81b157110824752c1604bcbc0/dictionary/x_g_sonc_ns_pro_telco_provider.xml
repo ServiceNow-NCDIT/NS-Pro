@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="1621cae6db15b15040eae46b139619ae" extends="cmdb_ci" label="Telco Provider" max_length="40" name="x_g_sonc_ns_pro_telco_provider" type="collection">
+    <element db_object_id="1621cae6db15b15040eae46b139619ae" extends="cmdb_ci" label="Telco Provider" max_length="40" name="x_g_sonc_ns_pro_telco_provider" text_index="true" type="collection">
         <element label="Order Email" max_length="100" name="order_email" type="string"/>
         <element label="Order Phone" max_length="40" name="order_phone" type="phone_number_e164"/>
         <element label="POC Alternate Email" max_length="100" name="poc_alternate_email" type="string"/>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_datasource">
+    <ais_datasource action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <filter/>
+        <force_late_binding>false</force_late_binding>
+        <name>Telco Order Table</name>
+        <retention_policy/>
+        <source>x_g_sonc_ns_pro_telco_order</source>
+        <sys_class_name>ais_datasource</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-09 05:13:57</sys_created_on>
+        <sys_id>bcee738d1b3d3510824752c1604bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telco Order Table</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>ais_datasource_bcee738d1b3d3510824752c1604bcb0f</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-09 05:13:57</sys_updated_on>
+        <type>internal</type>
+    </ais_datasource>
+</record_update>

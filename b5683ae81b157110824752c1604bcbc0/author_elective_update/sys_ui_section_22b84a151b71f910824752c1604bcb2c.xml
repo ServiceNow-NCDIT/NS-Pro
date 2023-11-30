@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="LAN Details" section_id="22b84a151b71f910824752c1604bcb2c" sys_domain="global" table="x_g_sonc_ns_pro_lan_wan_service_request_sts01" version="3" view="workspace-network-services-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_interface</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 15:16:11</sys_created_on>
+            <sys_id>eab84a151b71f910824752c1604bcb2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 15:16:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>num_of_end_devices</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 15:16:11</sys_created_on>
+            <sys_id>eeb84a151b71f910824752c1604bcb2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 15:16:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 15:16:11</sys_created_on>
+            <sys_id>e2b84a151b71f910824752c1604bcb2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 15:16:11</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>num_data_ports</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 15:16:11</sys_created_on>
+            <sys_id>e6b84a151b71f910824752c1604bcb2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 15:16:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>num_of_conference_rooms</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 15:16:11</sys_created_on>
+            <sys_id>eab84a151b71f910824752c1604bcb2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 15:16:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>future_growth_plans</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 15:16:11</sys_created_on>
+            <sys_id>eeb84a151b71f910824752c1604bcb2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 15:16:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>LAN Details</caption>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-09 15:16:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22b84a151b71f910824752c1604bcb2c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_22b84a151b71f910824752c1604bcb2c</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-09 15:16:11</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Workspace Network Services 0">b4b88615d871f910930a322877a14d43</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_section_22b84a151b71f910824752c1604bcb2c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="LAN Details" section_id="22b84a151b71f910824752c1604bcb2c" sys_domain="global" table="x_g_sonc_ns_pro_lan_wan_service_request_sts01" version="3" view="workspace-network-services-0"><sys_ui_element action="INSERT_OR_UPDATE"><element>user_interface</element><position>0</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 15:16:11</sys_created_on><sys_id>eab84a151b71f910824752c1604bcb2d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 15:16:11</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>num_of_end_devices</element><position>1</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 15:16:11</sys_created_on><sys_id>eeb84a151b71f910824752c1604bcb2d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 15:16:11</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 15:16:11</sys_created_on><sys_id>e2b84a151b71f910824752c1604bcb2e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 15:16:11</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>num_data_ports</element><position>3</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 15:16:11</sys_created_on><sys_id>e6b84a151b71f910824752c1604bcb2e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 15:16:11</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>num_of_conference_rooms</element><position>4</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 15:16:11</sys_created_on><sys_id>eab84a151b71f910824752c1604bcb2e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 15:16:11</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>future_growth_plans</element><position>5</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 15:16:11</sys_created_on><sys_id>eeb84a151b71f910824752c1604bcb2e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="LAN Details" display_value="LAN Details" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" sys_domain="global" view="b4b88615d871f910930a322877a14d43">22b84a151b71f910824752c1604bcb2c</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 15:16:11</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>LAN Details</caption><header>false</header><name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-09 15:16:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>22b84a151b71f910824752c1604bcb2c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_section_22b84a151b71f910824752c1604bcb2c</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-09 15:16:11</sys_updated_on><sys_user/><title>false</title><view display_value="Workspace Network Services 0">b4b88615d871f910930a322877a14d43</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-616104970</payload_hash>
+        <record_name>LAN WAN Service Request (STS01)</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-10 20:27:41</sys_created_on>
+        <sys_id>2de28033db5a315040eae46b139619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18bbaeb3e670000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-10 20:27:41</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>e9e280330e5a31509b994a8f9e3593ea</update_guid>
+        <update_guid_history>e9e280330e5a31509b994a8f9e3593ea:-616104970</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-10 20:27:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>3230872948a842039330d0fe5f729e49</sys_id>
+        <sys_metadata>22b84a151b71f910824752c1604bcb2c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LAN Details</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="">5c51866c1b79fd90824752c1604bcb50</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_section_22b84a151b71f910824752c1604bcb2c</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_22b84a151b71f910824752c1604bcb2c">2de28033db5a315040eae46b139619ea</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-10 20:27:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

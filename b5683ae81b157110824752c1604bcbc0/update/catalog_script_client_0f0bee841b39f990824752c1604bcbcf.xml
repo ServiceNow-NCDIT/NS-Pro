@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Telco Order - Studio">59f65dc01bb9b990824752c1604bcbe5</cat_item>
+        <cat_item/>
         <cat_variable>IO:af5819441bb9b990824752c1604bcb48</cat_variable>
         <condition/>
         <description/>
@@ -27,7 +27,6 @@
 	ga.addParam('sysparm_site_id', newValue);
 	ga.getXMLAnswer(getSiteId);
 
-	
 	function getSiteId(response) {
 		
 		g_form.setValue('site_identifier', response.toString());
@@ -41,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0f0bee841b39f990824752c1604bcbcf</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>OnChange Site - Get Site Id</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -49,7 +48,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_0f0bee841b39f990824752c1604bcbcf</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-06 05:56:09</sys_updated_on>
+        <sys_updated_on>2023-10-15 04:27:08</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

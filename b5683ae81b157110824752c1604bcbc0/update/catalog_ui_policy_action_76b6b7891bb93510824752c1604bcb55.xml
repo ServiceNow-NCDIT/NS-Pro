@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:f23046811bb9f110824752c1604bcbee</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>1000</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-09 04:38:46</sys_created_on>
+        <sys_id>76b6b7891bb93510824752c1604bcb55</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>lan_details</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_76b6b7891bb93510824752c1604bcb55</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-09 11:32:35</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show LAN/WAN Questions">3a567b491bb93510824752c1604bcb87</ui_policy>
+        <variable>lan_details</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

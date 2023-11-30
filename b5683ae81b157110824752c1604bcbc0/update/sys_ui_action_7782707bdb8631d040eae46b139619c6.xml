@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>false</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>This will call a script include to drive a request for Field Service to act.&#13;
+(current.provisoning_state &gt;= '6' &amp;&amp; current.provisoning_state &lt; '7') &amp;&amp; (current.request_type == '1' || current.request_type == '2')</comments>
+        <condition>current.assignment_group=='0355cd0ddb98630065fbf482ba96196f' &amp;&amp; current.provisioning_state=='6' &amp;&amp; canWrite()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint>Click to submit CPE allocation request for Field Service</hint>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Allocate CPE - Deprecated</name>
+        <onclick>createFSTaskWithInfo()</onclick>
+        <order>100</order>
+        <script><![CDATA[function createFSTaskWithInfo() {
+	//     var thisFuncName = "createFSTaskWithInfo";
+	//     jslog("Running " + thisFuncName);
+
+	//     var promptBoxValue = prompt('Please enter a message you want to include for Field Service:');
+	//     if (promptBoxValue) {
+	//         jslog("user typed: " + promptBoxValue);
+	//     } else {
+	//         jslog("user skipped entry");
+	//     }
+	//     var PRSysId = g_form.getUniqueValue();
+	//     jslog("Provisioning record sysid = " + PRSysId);
+
+	//     // call to create FS task.
+	//     var detailsAjax = new GlideAjax('x_g_sonc_ns_pro.NcditNsw2UtilsClient2');
+	//     detailsAjax.addParam('sysparm_name', 'reqCpeAllocationByFS2');
+	//     detailsAjax.addParam('sysparm_provRcdId', PRSysId);
+	//     detailsAjax.addParam('sysparm_fs_msg', promptBoxValue);
+	//     // detailsAjax.getXML(callbackTestfs);
+	//     detailsAjax.getXMLAnswer(callbackTestfs);
+
+
+	//     function callbackTestfs(response) {
+	//         //console.log("debug response: ", response);
+	//         //var respRcdAnswer = response.responseXML.documentElement.getAttribute("answer");
+	//         //jslog("debug respRcdAnswer:", respRcdAnswer);
+	//         //var respInfo = JSON.parse(respRcdAnswer);
+
+	// 		// alert('response = ' + response);
+
+	//         var respInfo = JSON.parse(response); // better, shorter way because we used "getXMLAnswer" instead of just "getXML"
+	//         jslog("respInfo.message = " + respInfo.message);
+
+
+	//     }
+
+	// removed GlideAjax and converted to straight script include call
+	gs.addInfoMessage('createFSTaskWithInfo executed for ' + current.number);
+	//action.setRedirectURL(current);
+	//current.update();
+	//if (!current.isActionAborted()) {
+		// call a script include to perform the work
+		// Instantiate the nsw2 utilities
+		gs.addInfoMessage('prepping call to reqCpeAllocationByFSFromClient for ' + current.number);
+		var nsw2util = new NcditNsw2Utils2();
+		var respInfo = nsw2util.reqCpeAllocationByFSFromClient(current);
+		if (respInfo.status == 'OK') {
+			gs.addInfoMessage(respInfo.message);
+			current.provisioning_state='7';
+			current.update();
+		} else {
+			gs.addErrorMessage("Server side function reqCpeAllocationByFSFromClient to allocate CPE was called and returned " + respInfo.status + " , " + respInfo.message);
+		}
+
+	}
+// 	else {
+// 		gs.addInfoMessage('detected current.isActionAborted for ' + current.number);
+// 	}
+	// redirect to here
+	action.setRedirectURL(current);
+
+//}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-29 13:40:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7782707bdb8631d040eae46b139619c6</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Allocate CPE - Deprecated</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_action_7782707bdb8631d040eae46b139619c6</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-20 14:44:05</sys_updated_on>
+        <table>x_g_sonc_ns_pro_nspro_tasks</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

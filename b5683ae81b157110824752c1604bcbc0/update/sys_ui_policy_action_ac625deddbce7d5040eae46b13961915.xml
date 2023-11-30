@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>relocate_location</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-22 16:13:24</sys_created_on>
+        <sys_id>ac625deddbce7d5040eae46b13961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>relocate_location</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_policy_action_ac625deddbce7d5040eae46b13961915</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-22 16:13:24</sys_updated_on>
+        <table>x_g_sonc_ns_pro_telco_order</table>
+        <ui_policy display_value="on Request Type == Relocate set new site, new location to mandatory">0836a20b1b3db910824752c1604bcb49</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

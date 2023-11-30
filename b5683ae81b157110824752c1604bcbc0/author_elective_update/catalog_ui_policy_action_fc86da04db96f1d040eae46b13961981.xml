@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Telco Request">670690da1bf5f110824752c1604bcbe7</catalog_item>
+        <catalog_variable>IO:c000a6f61b7d3910824752c1604bcbf7</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-30 15:35:24</sys_created_on>
+        <sys_id>fc86da04db96f1d040eae46b13961981</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>assigned_pe_alternate</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_fc86da04db96f1d040eae46b13961981</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-10-30 15:55:20</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide/show second telco provider when HA requested">3886da04db96f1d040eae46b1396197a</ui_policy>
+        <variable>assigned_pe_alternate</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_ui_policy_action_fc86da04db96f1d040eae46b13961981</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Telco Request">670690da1bf5f110824752c1604bcbe7</catalog_item><catalog_variable>IO:c000a6f61b7d3910824752c1604bcbf7</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-30 15:35:24</sys_created_on><sys_id>fc86da04db96f1d040eae46b13961981</sys_id><sys_mod_count>1</sys_mod_count><sys_name>assigned_pe_alternate</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>catalog_ui_policy_action_fc86da04db96f1d040eae46b13961981</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2023-10-30 15:55:20</sys_updated_on><table/><ui_policy display_value="Hide/show second telco provider when HA requested">3886da04db96f1d040eae46b1396197a</ui_policy><variable>assigned_pe_alternate</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>2042767356</payload_hash>
+        <record_name>assigned_pe_alternate</record_name>
+        <reverted_from/>
+        <source>c01bd6ccdb96f1d040eae46b139619c4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-10-30 15:55:20</sys_created_on>
+        <sys_id>f81b5accdb96f1d040eae46b139619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b814bf4150000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-10-30 15:55:20</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>fc1b5acc8f96f1d003c0fbde72b943b3</update_guid>
+        <update_guid_history>fc1b5acc8f96f1d003c0fbde72b943b3:2042767356,fc1b5acce096f1d0cf950c956ab2d6b0:1549874946</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/30/2023 13:21:24">ac8c3208dbdaf1d040eae46b139619f3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-10-30 18:21:24</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>46f0f827b5ea415c9974638ac5088d69</sys_id>
+        <sys_metadata>fc86da04db96f1d040eae46b13961981</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assigned_pe_alternate</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_fc86da04db96f1d040eae46b13961981</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_fc86da04db96f1d040eae46b13961981">f81b5accdb96f1d040eae46b139619b4</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-10-30 18:21:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

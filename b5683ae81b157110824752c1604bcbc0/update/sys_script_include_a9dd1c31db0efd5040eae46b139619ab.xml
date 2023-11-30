@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.location_ajax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>location_ajax</name>
+        <script><![CDATA[var location_ajax = Class.create();
+location_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+getLocation: function() {
+
+        var loc = new x_g_sonc_ns_pro.location();
+        var loc_id = this.getParameter('sysparm_loc_id');
+        return loc.getLocation(loc_id);
+
+},
+
+    type: 'location_ajax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-23 07:02:24</sys_created_on>
+        <sys_id>a9dd1c31db0efd5040eae46b139619ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>location_ajax</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_a9dd1c31db0efd5040eae46b139619ab</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-23 08:05:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

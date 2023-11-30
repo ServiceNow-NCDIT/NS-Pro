@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>relocate_location</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange Relocate Location - Get Address</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+  // only use this location if the request type is not 'Relocate'
+    if (!request_type.type == 'Relocate') {
+
+        var ga = new GlideAjax('x_g_sonc_ns_pro.location_ajax');
+        ga.addParam('sysparm_name', 'getLocation');
+        ga.addParam('sysparm_loc_id', newValue);
+        ga.getXMLAnswer(getLoc);
+    }
+
+    function getLoc(response) {
+
+        var loc = JSON.parse(response);
+        g_form.setValue('location_address', loc.street + "\n" + loc.city + ', ' + loc.state);
+        g_form.setValue('county', loc.county);
+        g_form.setValue('zip', loc.zip);
+
+    }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-24 20:49:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fcb4e816db4ef19040eae46b139619d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>onChange Relocate Location - Get Address</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_client_fcb4e816db4ef19040eae46b139619d0</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-25 12:04:23</sys_updated_on>
+        <table>x_g_sonc_ns_pro_telco_order</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

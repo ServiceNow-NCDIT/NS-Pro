@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_g_sonc_ns_pro_nspro_tasks">x_g_sonc_ns_pro_nspro_tasks</category>
+        <maximum_digits>5</maximum_digits>
+        <number>1000</number>
+        <prefix>NSTSK</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-25 04:28:02</sys_created_on>
+        <sys_id>80dd8616db4a359040eae46b139619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NSTSK</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_number_80dd8616db4a359040eae46b139619d7</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-25 04:28:02</sys_updated_on>
+    </sys_number>
+</record_update>

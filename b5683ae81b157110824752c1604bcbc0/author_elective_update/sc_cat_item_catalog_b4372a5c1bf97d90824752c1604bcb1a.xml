@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Request New Site">45b6661c1bf97d90824752c1604bcbc5</sc_cat_item>
+        <sc_catalog display_value="NCDIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 14:55:23</sys_created_on>
+        <sys_id>b4372a5c1bf97d90824752c1604bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NCDIT Service Catalog.Request New Site</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_b4372a5c1bf97d90824752c1604bcb1a</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 14:55:23</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_catalog_b4372a5c1bf97d90824752c1604bcb1a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Request New Site">45b6661c1bf97d90824752c1604bcbc5</sc_cat_item><sc_catalog display_value="NCDIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-06 14:55:23</sys_created_on><sys_id>b4372a5c1bf97d90824752c1604bcb1a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>NCDIT Service Catalog.Request New Site</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sc_cat_item_catalog_b4372a5c1bf97d90824752c1604bcb1a</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-06 14:55:23</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-556504684</payload_hash>
+        <record_name>NCDIT Service Catalog.Request New Site</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 14:55:23</sys_created_on>
+        <sys_id>f4372a5c1bf97d90824752c1604bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b057c713e0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 14:55:23</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>38372a5ce3f97d90c7fbea427f33041d</update_guid>
+        <update_guid_history>38372a5ce3f97d90c7fbea427f33041d:-556504684</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/06/2023 09:55:40">7047aa5c1bf97d90824752c1604bcb59</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-06 14:55:40</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>0ab02ce9d60345aab453311cc2397389</sys_id>
+        <sys_metadata>b4372a5c1bf97d90824752c1604bcb1a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NCDIT Service Catalog.Request New Site</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Request New Site">45b6661c1bf97d90824752c1604bcbc5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_b4372a5c1bf97d90824752c1604bcb1a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_b4372a5c1bf97d90824752c1604bcb1a">f4372a5c1bf97d90824752c1604bcb1e</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-06 14:55:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

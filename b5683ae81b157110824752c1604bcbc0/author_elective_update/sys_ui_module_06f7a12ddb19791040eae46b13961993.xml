@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="NSPro">20056d25db19791040eae46b139619e3</application>
+        <filter/>
+        <name>Network Service Categories</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_g_sonc_ns_pro.network_service_category_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-15 11:00:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>06f7a12ddb19791040eae46b13961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Service Categories</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_module_06f7a12ddb19791040eae46b13961993</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-15 11:00:09</sys_updated_on>
+        <table>x_g_sonc_ns_pro_network_service_category</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_module_06f7a12ddb19791040eae46b13961993</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="NSPro">20056d25db19791040eae46b139619e3</application><filter/><name>Network Service Categories</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_g_sonc_ns_pro.network_service_category_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-15 11:00:09</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>06f7a12ddb19791040eae46b13961993</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Network Service Categories</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_module_06f7a12ddb19791040eae46b13961993</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-09-15 11:00:09</sys_updated_on><table>x_g_sonc_ns_pro_network_service_category</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>-888308353</payload_hash>
+        <record_name>Network Service Categories</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-15 11:00:09</sys_created_on>
+        <sys_id>c6f7a12ddb19791040eae46b13961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a987f87270000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-15 11:00:09</sys_updated_on>
+        <type>Module</type>
+        <update_guid>caf7a12d201979104f328f465c51fd94</update_guid>
+        <update_guid_history>caf7a12d201979104f328f465c51fd94:-888308353</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-23 04:55:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>146c62a829ed4a7289a968accae54b91</sys_id>
+        <sys_metadata>06f7a12ddb19791040eae46b13961993</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Service Categories</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_module_06f7a12ddb19791040eae46b13961993</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_06f7a12ddb19791040eae46b13961993">c6f7a12ddb19791040eae46b13961995</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-23 04:55:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

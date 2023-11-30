@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="16857223db797d1040eae46b139619f9" label="Telco Selection By Zip" max_length="40" name="x_g_sonc_ns_pro_telco_selection_by_zip" type="collection">
+        <element label="City" mandatory="true" max_length="100" name="city" type="string"/>
+        <element label="County" mandatory="true" max_length="40" name="county" type="string"/>
+        <element choice="1" label="Priority" mandatory="true" max_length="1" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="5" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="6" value="6"/>
+            </choice>
+        </element>
+        <element choice="1" label="Service Category" mandatory="true" max_length="40" name="service_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Guaranteed" sequence="100" value="guaranteed"/>
+                <element inactive_on_update="false" label="Best Effort" sequence="200" value="besteffort"/>
+            </choice>
+        </element>
+        <element display="true" label="Telco Provider" mandatory="true" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element label="Zip" mandatory="true" max_length="20" name="zip" type="string"/>
+        <index name="index">
+            <element name="telco_provider"/>
+        </index>
+    </element>
+</database>

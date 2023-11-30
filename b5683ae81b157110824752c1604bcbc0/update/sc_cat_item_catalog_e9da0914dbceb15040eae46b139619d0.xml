@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Report NSPro Issue">27d8cddcdb8eb15040eae46b139619b5</sc_cat_item>
+        <sc_catalog display_value="NCDIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-18 18:27:34</sys_created_on>
+        <sys_id>e9da0914dbceb15040eae46b139619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NCDIT Service Catalog.Report NSPro Issue</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_e9da0914dbceb15040eae46b139619d0</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-18 18:27:34</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

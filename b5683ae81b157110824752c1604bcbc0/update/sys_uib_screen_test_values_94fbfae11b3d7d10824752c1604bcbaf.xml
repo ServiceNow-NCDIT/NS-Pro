@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+  "userPrefs" : "",
+  "selectedTabIndex" : "",
+  "screen" : "",
+  "fields" : "",
+  "extraParams" : "",
+  "activityLogs" : "",
+  "views" : "",
+  "query" : "",
+  "table" : "x_g_sonc_ns_pro_lan_wan_service_request_sts01"
+}</macroponent_config>
+        <screen display_value="Home default">3cb886152d71f9105da523a08cfffc2d</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-10 13:38:25</sys_created_on>
+        <sys_id>94fbfae11b3d7d10824752c1604bcbaf</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_94fbfae11b3d7d10824752c1604bcbaf</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-11 03:31:23</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

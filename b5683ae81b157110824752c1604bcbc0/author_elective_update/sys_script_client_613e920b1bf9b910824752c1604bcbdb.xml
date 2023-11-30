@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>request_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange RequestType - Set New Loc Man</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var ga = new GlideAjax('x_g_sonc_ns_pro.request_type_ajax');
+    ga.addParam('sysparm_name', 'getType');
+    ga.addParam('sysparm_type', newValue);
+    ga.getXMLAnswer(getType);
+
+    function getType(response) {
+        //alert(response);
+        if (response == 'relocate') {
+			//alert('setting fields mandatory');
+			g_form.setVisible('relocate_site', true);
+			g_form.setVisible('relocate_location', true);
+            g_form.setMandatory('relocate_site', true);
+            g_form.setMandatory('relocate_location', true);
+        }
+		else {
+			//alert('setting fields not mandatory');
+            g_form.setMandatory('relocate_site', false);
+            g_form.setMandatory('relocate_location', false);
+			g_form.setVisible('relocate_site', false);
+			g_form.setVisible('relocate_location', false);
+		}
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-15 03:26:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>613e920b1bf9b910824752c1604bcbdb</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>onChange RequestType - Set New Loc Man</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_client_613e920b1bf9b910824752c1604bcbdb</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-15 13:14:50</sys_updated_on>
+        <table>x_g_sonc_ns_pro_telco_order</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_script_client_613e920b1bf9b910824752c1604bcbdb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;request_type&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onChange RequestType - Set New Loc Man&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var ga = new GlideAjax('x_g_sonc_ns_pro.request_type_ajax');
+    ga.addParam('sysparm_name', 'getType');
+    ga.addParam('sysparm_type', newValue);
+    ga.getXMLAnswer(getType);
+
+    function getType(response) {
+        //alert(response);
+        if (response == 'relocate') {
+			//alert('setting fields mandatory');
+			g_form.setVisible('relocate_site', true);
+			g_form.setVisible('relocate_location', true);
+            g_form.setMandatory('relocate_site', true);
+            g_form.setMandatory('relocate_location', true);
+        }
+		else {
+			//alert('setting fields not mandatory');
+            g_form.setMandatory('relocate_site', false);
+            g_form.setMandatory('relocate_location', false);
+			g_form.setVisible('relocate_site', false);
+			g_form.setVisible('relocate_location', false);
+		}
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wbbusby&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-15 03:26:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;613e920b1bf9b910824752c1604bcbdb&lt;/sys_id&gt;&lt;sys_mod_count&gt;17&lt;/sys_mod_count&gt;&lt;sys_name&gt;onChange RequestType - Set New Loc Man&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_613e920b1bf9b910824752c1604bcbdb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wbbusby&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-15 13:14:50&lt;/sys_updated_on&gt;&lt;table&gt;x_g_sonc_ns_pro_telco_order&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1157130476</payload_hash>
+        <record_name>onChange RequestType - Set New Loc Man</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-15 13:14:51</sys_created_on>
+        <sys_id>ef762c1bdb79b91040eae46b139619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b3379a1190000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-15 13:14:51</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>63762c1bb179b9104076e131020f7fcd</update_guid>
+        <update_guid_history>63762c1bb179b9104076e131020f7fcd:1157130476,6494b283c8bdb910f24ab6430b1d832c:-661218343,85b23a0305bdb910d9a015ed0cd75f31:1086118873,21227a8fb97db91077b1db18c40791f6:1383872821,1921b24f4d7db9107442b9192e298b5b:-1651822151,317faa0ff47db910522b3b2c9e8a6c75:1159035834,136dea0b207db91035aba9b08f5f93d2:383427555,3d6daa0bed7db9106975bbaff95d3bf1:-255556048,6917ee4b213db9108dbe89ea34ba9577:-676041847,bac5ae477a3db91069976eb01de72aa3:-1672562058,90852e87403db91043f7d4a7a0efff43:-1960959780,42156e03483db9109b272abbf7e36a8c:-285373218,6bb266cf8ef9b910eec1039bd12aefee:-1148705408,695266cffcf9b910439d1cb1d9fd87f9:-1877752230,64a16e0f2af9b910f12768fbfc6966f2:-695636568,bdb0660f8df9b91081caf753f32bbb00:-171465024,4f60e6cb01f9b910ca8404c99aeb4dbd:633553589,91ef1a8b09f9b910f4d9b57f9bf316c5:-807984863</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-24 20:29:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>03a466b4be39482380112ca2cf552419</sys_id>
+        <sys_metadata>613e920b1bf9b910824752c1604bcbdb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange RequestType - Set New Loc Man</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Telco Order">e2b42525db19791040eae46b13961947</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_script_client_613e920b1bf9b910824752c1604bcbdb</sys_update_name>
+        <sys_update_version display_value="sys_script_client_613e920b1bf9b910824752c1604bcbdb">ef762c1bdb79b91040eae46b139619cd</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-24 20:29:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

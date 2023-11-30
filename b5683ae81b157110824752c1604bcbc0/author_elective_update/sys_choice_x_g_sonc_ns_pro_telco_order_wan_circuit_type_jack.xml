@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="wan_circuit_type_jack" table="x_g_sonc_ns_pro_telco_order" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>wan_circuit_type_jack</element>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:55:12</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>wan_circuit_type_jack</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_x_g_sonc_ns_pro_telco_order_wan_circuit_type_jack</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 08:55:12</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wan_circuit_type_jack</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ethernet</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:55:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-29 12:12:38</sys_updated_on>
+            <value>Eth</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wan_circuit_type_jack</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DIT Fiber</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:55:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-29 12:13:07</sys_updated_on>
+            <value>DIT Fiber</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wan_circuit_type_jack</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Broadband</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:55:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-29 12:13:45</sys_updated_on>
+            <value>Broadband</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>wan_circuit_type_jack</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>LTE 4G</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:56:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-29 12:14:31</sys_updated_on>
+            <value>LTE4G</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.point_of_presence</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>point_of_presence</name>
+        <script><![CDATA[var point_of_presence = Class.create();
+point_of_presence.prototype = {
+    initialize: function() {},
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getDistanceDiff: function(lat1, lon1, lat2, lon2) {
+
+        // calculates distance between two points using the Haversine formula.
+        var thisFuncLogPrefix = "getDistanceDiff ";
+        gs.info(thisFuncLogPrefix + " called, lat1 = " + lat1.toString() + ", lon1 = " + lon1.toString() + ", lat2 = " + lat2.toString() + ", lon2 = " + lon2.toString());
+        var Rkm = 6371;
+        // Radius of the earth in km
+        var dLat = (lat2 - lat1) * (Math.PI / 180);
+        var dLon = (lon2 - lon1) * (Math.PI / 180);
+        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        var d = Rkm * c;
+        // Distance in km
+        gs.info(thisFuncLogPrefix + 'Distance between ' + lat1 + "\t" + lon1 + "\t" + lat2 + "\t" + lon2 + ' is ' + d);
+        return d;
+
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //     getClosestPop: function(lat, lon) {
+
+    //         /*
+    //         returns PoP closest to furthest from the supplied geo point.
+    //         */
+    //         var thisFuncLogPrefix = "getClosestPop ";
+    //         var closestPop = {};
+    //         closestPop.distance = 9999; // km, start with huge diff then whittle down to closest
+    //         closestPop.site = '';
+    //         closestPop.location = '';
+    //         var siteTable = "cmdb_ci_site";
+
+    //         gs.info(thisFuncLogPrefix + " called with lat = " + lat.toString() + ", lon = " + lon.toString());
+    //         //var dtest = this.nsw2Util_getDistance2Point(lat, long, 35.0525994, -78.8903642);
+    //         //var dtestMiles = dtest * 0.62137; // multiply the number of kilometers by 0.62137.
+    //         //gs.info(thisFuncLogPrefix + "TEST distance to FAY is " + dtest.toFixed(2) + " km, " + dtestMiles.toFixed(2) + " miles");
+
+    //         var popSiteGR = new GlideRecord(siteTable);
+    //         popSiteGR.addQuery('x_g_sonc_ns_pro_site_type', 'POP');  // PoP site type
+    //         popSiteGR.query();
+    //         while (popSiteGR.next()) {
+    //             gs.info('processing site ' + popSiteGR.name);
+    //             if (popSiteGR.location.latitude && popSiteGR.location.longitude) {
+    //                 var distance = this.getDistanceDiff(lat, lon, popSiteGR.location.latitude, popSiteGR.location.longitude);
+    //                 if (distance < closestPop.distance) {
+    //                     // we have a new winner, replace PoP record
+    // 					gs.info('new distance record of ' + distance);
+    //                     closestPop.distance = distance;
+    //                     closestPop.location = popSiteGR.location.toString();
+    //                     closestPop.site = popSiteGR.sys_id.toString();
+    //                 }
+    //             }
+    //         }
+    // 		gs.info('getClosestPop returning '+ JSON.stringify(closestPop));
+    //         return closestPop;
+
+    //     },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+    getClosestPop: function(telcoOrder) {
+
+        /*
+        returns PoP closest to furthest from the supplied geo point.
+        */
+        var startingDistance = 9999;
+        var thisFuncLogPrefix = "getClosestPop ";
+        var closestPop = {};
+        closestPop.distance = startingDistance; // km, start with huge diff then whittle down to closest
+        closestPop.site = '';
+        closestPop.location = '';
+        var siteTable = "cmdb_ci_site";
+
+        gs.info(thisFuncLogPrefix + " called with telcoOrder = " + JSON.stringify(telcoOrder));
+        var lat = telcoOrder.location.latitude;
+        var lon = telcoOrder.location.longitude;
+        gs.info(thisFuncLogPrefix + " lat = " + lat.toString() + ", lon = " + lon.toString());
+
+        var popSiteGR = new GlideRecord(siteTable);
+        popSiteGR.addQuery('x_g_sonc_ns_pro_site_type', 'ad944f1f1ba53590824752c1604bcb08'); // PoP site type
+        popSiteGR.query();
+        while (popSiteGR.next()) {
+            gs.info('processing site ' + popSiteGR.name);
+			global.JSUtil.logObject(closestPop, 'closestPop');
+            if (popSiteGR.location.latitude && popSiteGR.location.longitude) {
+                var distance = this.getDistanceDiff(lat, lon, popSiteGR.location.latitude, popSiteGR.location.longitude);
+                if (distance < closestPop.distance) {
+                    // we have a new winner, replace PoP record
+                    gs.info('new distance record of ' + distance);
+                    closestPop.distance = distance;
+                    closestPop.location = popSiteGR.location.toString();
+                    closestPop.site = popSiteGR.sys_id.toString();
+                    closestPop.name = popSiteGR.name;
+                }
+            }
+        }
+        if (closestPop.distance < startingDistance) {
+            // would only happen if we found a PoP...
+			gs.info('getClosestPop found ' + global.JSUtil.logObject(closestPop, 'closestPop'));
+            telcoOrder.assigned_pop = closestPop.site;
+            telcoOrder.update();
+            return true;
+        }
+
+        return false; // didn't find a PoP closer than startingDistance
+
+    },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getSecondClosestPop: function(telcoOrder) {
+
+        /*
+        returns PoP closest to furthest from the supplied geo point.
+        */
+        var startingDistance = 9999;
+        var thisFuncLogPrefix = "getClosestPop ";
+        var closestPop = {};
+        var secondPop = {};
+
+        closestPop.distance = startingDistance; // km, start with huge diff then whittle down to closest
+        closestPop.site = '';
+        closestPop.location = '';
+        var siteTable = "cmdb_ci_site";
+
+        gs.info(thisFuncLogPrefix + " called with telcoOrder = " + JSON.stringify(telcoOrder));
+        var lat = telcoOrder.location.latitude;
+        var lon = telcoOrder.location.longitude;
+        gs.info(thisFuncLogPrefix + " lat = " + lat.toString() + ", lon = " + lon.toString());
+
+        var popSiteGR = new GlideRecord(siteTable);
+        popSiteGR.addQuery('x_g_sonc_ns_pro_site_type', 'POP'); // PoP site type
+        popSiteGR.query();
+        while (popSiteGR.next()) {
+            gs.info('processing site ' + popSiteGR.name);
+			global.JSUtil.logObject(closestPop, 'closestPop');
+			global.JSUtil.logObject(secondPop, 'secondPop');
+            if (popSiteGR.location.latitude && popSiteGR.location.longitude) {
+                var distance = this.getDistanceDiff(lat, lon, popSiteGR.location.latitude, popSiteGR.location.longitude);
+                if (distance < closestPop.distance) {
+                    // we have a new winner, save current pop as second closest and replace PoP record
+                    gs.info('new distance record of ' + distance);
+					secondPop = closestPop; // this is the one we'll eventually return
+                    closestPop.distance = distance;
+                    closestPop.location = popSiteGR.location.toString();
+                    closestPop.site = popSiteGR.sys_id.toString();
+                    closestPop.name = popSiteGR.name;
+                }
+            }
+        }
+        if (secondPop.distance < startingDistance) {
+            // would only happen if we found a PoP...
+            gs.info('getSecondClosestPop found ' + global.JSUtil.logObject(secondPop, 'secondPop'));
+            telcoOrder.assigned_pop = secondPop.site;
+            telcoOrder.update();
+            return true;
+        }
+
+        return false; // didn't find a secondPop closer than startingDistance
+
+    },
+
+    type: 'point_of_presence'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-18 00:42:15</sys_created_on>
+        <sys_id>21e6d54cdbce315040eae46b13961912</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>point_of_presence</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_21e6d54cdbce315040eae46b13961912</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-20 18:56:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

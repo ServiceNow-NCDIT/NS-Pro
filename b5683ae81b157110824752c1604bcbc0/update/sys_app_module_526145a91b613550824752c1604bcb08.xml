@@ -18,7 +18,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles>x_g_sonc_ns_pro.port_connection_user</roles>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-09-27 18:27:22</sys_created_on>

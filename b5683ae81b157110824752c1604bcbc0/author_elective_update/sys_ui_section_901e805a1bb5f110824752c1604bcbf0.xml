@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="CPE Info" section_id="901e805a1bb5f110824752c1604bcbf0" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3" view="nspro">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wan_cpe_ports_required</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>4bef80de1bb5f110824752c1604bcb90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_basic_24_required</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>4fef80de1bb5f110824752c1604bcb90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_basic_48_required</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>43ef80de1bb5f110824752c1604bcb91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wlan_access_point_required</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>47ef80de1bb5f110824752c1604bcb91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>detailed_cpe_needs</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>4bef80de1bb5f110824752c1604bcb91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>4fef80de1bb5f110824752c1604bcb91</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wan_circuit_type_jack</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>43ef80de1bb5f110824752c1604bcb92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_premium_8_required</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>47ef80de1bb5f110824752c1604bcb92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_premium_24_required</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>4bef80de1bb5f110824752c1604bcb92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_premium_48_required</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>4fef80de1bb5f110824752c1604bcb92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpe_models_required</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+            <sys_id>43ef80de1bb5f110824752c1604bcb93</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>CPE Info</caption>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:54:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>901e805a1bb5f110824752c1604bcbf0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_901e805a1bb5f110824752c1604bcbf0</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 08:54:11</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_section_901e805a1bb5f110824752c1604bcbf0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="CPE Info" section_id="901e805a1bb5f110824752c1604bcbf0" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3" view="nspro"><sys_ui_element action="INSERT_OR_UPDATE"><element>wan_cpe_ports_required</element><position>0</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>4bef80de1bb5f110824752c1604bcb90</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>lan_cpe_basic_24_required</element><position>1</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>4fef80de1bb5f110824752c1604bcb90</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>lan_cpe_basic_48_required</element><position>2</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>43ef80de1bb5f110824752c1604bcb91</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>wlan_access_point_required</element><position>3</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>47ef80de1bb5f110824752c1604bcb91</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>detailed_cpe_needs</element><position>4</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>4bef80de1bb5f110824752c1604bcb91</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>5</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>4fef80de1bb5f110824752c1604bcb91</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>wan_circuit_type_jack</element><position>6</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>43ef80de1bb5f110824752c1604bcb92</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>lan_cpe_premium_8_required</element><position>7</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>47ef80de1bb5f110824752c1604bcb92</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>lan_cpe_premium_24_required</element><position>8</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>4bef80de1bb5f110824752c1604bcb92</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>lan_cpe_premium_48_required</element><position>9</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>4fef80de1bb5f110824752c1604bcb92</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cpe_models_required</element><position>10</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:02:19</sys_created_on><sys_id>43ef80de1bb5f110824752c1604bcb93</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">901e805a1bb5f110824752c1604bcbf0</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 09:02:19</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>CPE Info</caption><header>false</header><name>x_g_sonc_ns_pro_telco_order</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 08:54:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>901e805a1bb5f110824752c1604bcbf0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_telco_order</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_section_901e805a1bb5f110824752c1604bcbf0</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 08:54:11</sys_updated_on><sys_user/><title>false</title><view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1036439516</payload_hash>
+        <record_name>Telco Order</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-12 09:02:19</sys_created_on>
+        <sys_id>4bef80de1bb5f110824752c1604bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b231f59b30000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-12 09:02:19</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>cfef80ded1b5f1105f088591a13d6594</update_guid>
+        <update_guid_history>cfef80ded1b5f1105f088591a13d6594:-1036439516,909fc49e92b5f1106bba9e1e31dfdc49:-1303721230,281ec05a06b5f110c0e5839bb63153b1:1502217532</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-07 17:30:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>003193cc86de4fd58000304a60e6fae9</sys_id>
+        <sys_metadata>901e805a1bb5f110824752c1604bcbf0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPE Info</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Telco Order">e2b42525db19791040eae46b13961947</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_section_901e805a1bb5f110824752c1604bcbf0</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_901e805a1bb5f110824752c1604bcbf0">4bef80de1bb5f110824752c1604bcb95</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-07 17:30:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

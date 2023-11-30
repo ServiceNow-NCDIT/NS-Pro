@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.sys_user</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>sys_user</name>
+        <script><![CDATA[var sys_user = Class.create();
+sys_user.prototype = {
+    initialize: function() {},
+
+    getUser: function(userId) {
+
+        gs.info('sys_user.getUser searching for user ' + userId);
+
+        var user = {};
+        var gr = new GlideRecord('sys_user');
+        if (gr.get(userId)) {
+
+            // gs.info('sys_user.getUser found user ' + gr.name);
+ 
+			user.active = gr.active;
+            user.name = gr.name.toString();
+            user.phone = gr.phone.toString();
+            user.email = gr.email.toString();
+            user.manager = gr.manager.toString();
+            user.state = gr.state.toString();
+            user.zip = gr.zip.toString();
+            user.street = gr.street.toString();
+            user.state = gr.state.toString();
+			user.city = gr.city.toString();
+			user.agency = gr.u_agency.toString();
+			user.department = gr.department.toString();
+			user.last_login = gr.last_login.toString();
+			user.vip = gr.vip;
+        } else {
+            gs.error('user not found');
+        }
+        return global.JSON.stringify(user);
+    },
+
+    type: 'sys_user'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-09 19:49:46</sys_created_on>
+        <sys_id>0f644f951b79f910824752c1604bcb39</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_0f644f951b79f910824752c1604bcb39</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-23 05:48:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

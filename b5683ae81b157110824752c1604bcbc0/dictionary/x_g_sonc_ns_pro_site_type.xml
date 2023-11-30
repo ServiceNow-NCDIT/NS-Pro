@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="c5950da21b95b150824752c1604bcbd5" label="Site Type" max_length="40" name="x_g_sonc_ns_pro_site_type" type="collection">
+    <element db_object_id="c5950da21b95b150824752c1604bcbd5" label="Site Type" max_length="40" name="x_g_sonc_ns_pro_site_type" text_index="true" type="collection">
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
     </element>
 </database>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Provisioning States</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_ns_pro_provisioning_state</name>
+        <order>1090</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_g_sonc_ns_pro.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-17 07:35:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f65cc3cedbd9bd1040eae46b13961972</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Provisioning States</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_f65cc3cedbd9bd1040eae46b13961972</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-26 05:35:12</sys_updated_on>
+        <timeline_page/>
+        <title>Provisioning States</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_f65cc3cedbd9bd1040eae46b13961972</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Provisioning States</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_ns_pro_provisioning_state</name><order>1090</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_g_sonc_ns_pro.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-17 07:35:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f65cc3cedbd9bd1040eae46b13961972</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Provisioning States</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_app_module_f65cc3cedbd9bd1040eae46b13961972</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-09-26 05:35:12</sys_updated_on><timeline_page/><title>Provisioning States</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1639701596</payload_hash>
+        <record_name>Provisioning States</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-26 05:35:12</sys_created_on>
+        <sys_id>5d1745891b213150824752c1604bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18acffbfb820000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-26 05:35:12</sys_updated_on>
+        <type>Module</type>
+        <update_guid>51174589b1213150826431ed3da23d4f</update_guid>
+        <update_guid_history>51174589b1213150826431ed3da23d4f:1639701596,35fb58b8556d7d10da8204d3fbc6c664:1856278168,fe5c8742bb1dbd10aefd02a22400bcb9:725870918</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 11/27/2023 23:51:36">23f6a555db3e315040eae46b13961945</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-28 05:51:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>3ea92e8af7814e839d587328477bf5d1</sys_id>
+        <sys_metadata>f65cc3cedbd9bd1040eae46b13961972</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Provisioning States</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_app_module_f65cc3cedbd9bd1040eae46b13961972</sys_update_name>
+        <sys_update_version display_value="sys_app_module_f65cc3cedbd9bd1040eae46b13961972">5d1745891b213150824752c1604bcb4f</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-28 05:51:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

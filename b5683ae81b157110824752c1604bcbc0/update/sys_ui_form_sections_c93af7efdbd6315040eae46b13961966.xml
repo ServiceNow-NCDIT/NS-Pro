@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="c93af7efdbd6315040eae46b13961966" sys_domain="global" table="x_g_sonc_ns_pro_nspro_tasks" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-10 19:49:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d3af7efdbd6315040eae46b13961969</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_nspro_tasks" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">c93af7efdbd6315040eae46b13961966</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">493af7efdbd6315040eae46b13961962</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-10 19:49:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-10 19:49:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c53af7efdbd6315040eae46b13961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_nspro_tasks" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">c93af7efdbd6315040eae46b13961966</sys_ui_form>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">853af7efdbd6315040eae46b13961963</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-10 19:49:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-10 19:49:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>093af7efdbd6315040eae46b13961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_nspro_tasks" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">c93af7efdbd6315040eae46b13961966</sys_ui_form>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">8d3af7efdbd6315040eae46b13961963</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-10 19:49:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-10 19:49:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>193af7efdbd6315040eae46b1396198f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_nspro_tasks" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">c93af7efdbd6315040eae46b13961966</sys_ui_form>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">8d3af7efdbd6315040eae46b13961964</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-10 21:23:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-10 19:49:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>553af7efdbd6315040eae46b139619a0</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_nspro_tasks" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">c93af7efdbd6315040eae46b13961966</sys_ui_form>
+            <sys_ui_section caption="Activities" display_value="Activities" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="093ab7efdbd6315040eae46b139619e0">853af7efdbd6315040eae46b13961965</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-10 21:23:35</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-10 19:49:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c93af7efdbd6315040eae46b13961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_nspro_tasks</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c93af7efdbd6315040eae46b13961966</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-10 19:49:41</sys_updated_on>
+            <sys_user/>
+            <view display_value="NSPro FieldSvc" name="NSPro_FieldSvc">093ab7efdbd6315040eae46b139619e0</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

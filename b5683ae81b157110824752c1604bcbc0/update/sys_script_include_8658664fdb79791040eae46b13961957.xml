@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.request_type</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>request_type</name>
+        <script><![CDATA[var request_type = Class.create();
+request_type.prototype = {
+    initialize: function() {},
+
+    getType: function(type) {
+
+        gs.info('request_type.getType searching for type ' + type);
+
+        var gr = new GlideRecord('x_g_sonc_ns_pro_request_type');
+        if (gr.get(type)) {
+
+            gs.info('request_type.getType returning ' + gr.type.toString().toLowerCase());
+
+            return gr.type.toString().toLowerCase();
+        }
+		else {
+			gs.error('Could not locate type for ' + type);
+		}
+        return;
+
+    },
+
+    type: 'request_type'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-15 04:11:14</sys_created_on>
+        <sys_id>8658664fdb79791040eae46b13961957</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>request_type</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_8658664fdb79791040eae46b13961957</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-23 13:25:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

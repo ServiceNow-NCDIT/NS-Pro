@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_g_sonc_ns_pro_lan_wan_service_request_sts01" version="2" view="nspro">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c947de6c1b3dfd90824752c1604bcb75</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>acct_billing_code</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c147de6c1b3dfd90824752c1604bcb76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>bill_to_phone</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c547de6c1b3dfd90824752c1604bcb76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>broadband</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c947de6c1b3dfd90824752c1604bcb76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>city</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>cd47de6c1b3dfd90824752c1604bcb76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>comments</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c147de6c1b3dfd90824752c1604bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact_phone</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c547de6c1b3dfd90824752c1604bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>county</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c947de6c1b3dfd90824752c1604bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>demarc_location</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>cd47de6c1b3dfd90824752c1604bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>department</element>
+            <list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_id>c147de6c1b3dfd90824752c1604bcb78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8947de6c1b3dfd90824752c1604bcb74</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_lan_wan_service_request_sts01_nspro</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_list_x_g_sonc_ns_pro_lan_wan_service_request_sts01_nspro</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_g_sonc_ns_pro_lan_wan_service_request_sts01" version="2" view="nspro"><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>number</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c947de6c1b3dfd90824752c1604bcb75</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>acct_billing_code</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c147de6c1b3dfd90824752c1604bcb76</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>bill_to_phone</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c547de6c1b3dfd90824752c1604bcb76</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>broadband</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c947de6c1b3dfd90824752c1604bcb76</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>city</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>cd47de6c1b3dfd90824752c1604bcb76</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>comments</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c147de6c1b3dfd90824752c1604bcb77</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>contact_phone</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c547de6c1b3dfd90824752c1604bcb77</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>county</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>7</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c947de6c1b3dfd90824752c1604bcb77</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>demarc_location</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>8</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>cd47de6c1b3dfd90824752c1604bcb77</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>department</element><list_id display_value="x_g_sonc_ns_pro_lan_wan_service_request_sts01" element="NULL" name="x_g_sonc_ns_pro_lan_wan_service_request_sts01" parent="NULL" relationship="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">8947de6c1b3dfd90824752c1604bcb74</list_id><max_value>false</max_value><min_value>false</min_value><position>9</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_id>c147de6c1b3dfd90824752c1604bcb78</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-07 08:24:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8947de6c1b3dfd90824752c1604bcb74</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_list_x_g_sonc_ns_pro_lan_wan_service_request_sts01_nspro</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-07 08:24:15</sys_updated_on><sys_user/><view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>-910213909</payload_hash>
+        <record_name>LAN WAN Service Request (STS01)</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-07 08:24:15</sys_created_on>
+        <sys_id>8d47de6c1b3dfd90824752c1604bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b093cb7200000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-07 08:24:15</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>4d47de6c1e3dfd909c2495f6620fd37a</update_guid>
+        <update_guid_history>4d47de6c1e3dfd909c2495f6620fd37a:-910213909</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-23 05:23:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>56bccc88d1a3488098cf5af69e907100</sys_id>
+        <sys_metadata>8947de6c1b3dfd90824752c1604bcb74</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_lan_wan_service_request_sts01</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="">5c51866c1b79fd90824752c1604bcb50</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_lan_wan_service_request_sts01_nspro</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_g_sonc_ns_pro_lan_wan_service_request_sts01_nspro">8d47de6c1b3dfd90824752c1604bcb7a</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-23 05:23:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

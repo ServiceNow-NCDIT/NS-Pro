@@ -7,7 +7,7 @@
         <order/>
         <path/>
         <path_relative_to_root>false</path_relative_to_root>
-        <roles>x_g_sonc_ns_pro.port_connection_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_module</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-09-27 18:27:23</sys_created_on>

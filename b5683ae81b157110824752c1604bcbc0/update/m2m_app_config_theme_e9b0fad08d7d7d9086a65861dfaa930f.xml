@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_app_config_theme">
+    <m2m_app_config_theme action="INSERT_OR_UPDATE">
+        <applicability display_value="Public">29b0fad0277d7d9006392d81d279ad0f</applicability>
+        <order>0</order>
+        <sys_class_name>m2m_app_config_theme</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-10-06 15:36:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e9b0fad08d7d7d9086a65861dfaa930f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>m2m_app_config_theme_e9b0fad08d7d7d9086a65861dfaa930f</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-13 19:30:38</sys_updated_on>
+        <theme display_value="Light Theme">61b0fad0887d7d90bf6a215c220c9710</theme>
+        <ux_app_configuration display_value="NS Pro Config">5db0bad01b7d7d90824752c1604bcbae</ux_app_configuration>
+    </m2m_app_config_theme>
+</record_update>

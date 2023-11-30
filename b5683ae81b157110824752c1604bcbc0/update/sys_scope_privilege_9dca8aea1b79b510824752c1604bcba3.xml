@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>kdblackley</sys_created_by>
+        <sys_created_on>2023-10-13 12:37:31</sys_created_on>
+        <sys_id>9dca8aea1b79b510824752c1604bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SysList</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_scope_privilege_9dca8aea1b79b510824752c1604bcba3</sys_update_name>
+        <sys_updated_by>kdblackley</sys_updated_by>
+        <sys_updated_on>2023-10-13 12:37:31</sys_updated_on>
+        <target_name>SysList</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

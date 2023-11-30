@@ -34,11 +34,11 @@
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>4000</max_length>
+        <max_length>1000</max_length>
         <name>x_g_sonc_ns_pro_nspro_tasks</name>
         <next_element/>
         <primary>false</primary>
-        <read_only>false</read_only>
+        <read_only>true</read_only>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_dictionary_x_g_sonc_ns_pro_nspro_tasks_detailed_cpe_needs</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-09-20 14:50:01</sys_updated_on>
+        <sys_updated_on>2023-11-10 15:24:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

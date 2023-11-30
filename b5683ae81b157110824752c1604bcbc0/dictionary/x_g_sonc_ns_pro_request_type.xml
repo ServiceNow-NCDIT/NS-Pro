@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="8976e129db19791040eae46b13961979" label="Request Type" max_length="40" name="x_g_sonc_ns_pro_request_type" type="collection">
+    <element db_object_id="8976e129db19791040eae46b13961979" label="Request Type" max_length="40" name="x_g_sonc_ns_pro_request_type" text_index="true" type="collection">
         <element display="true" label="Type" mandatory="true" max_length="40" name="type" type="string"/>
     </element>
 </database>

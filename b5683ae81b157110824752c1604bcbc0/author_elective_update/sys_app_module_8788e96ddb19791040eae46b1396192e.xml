@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>CPE Models</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_ns_pro_cpe_model</name>
+        <order>1090</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_g_sonc_ns_pro.user,x_g_sonc_ns_pro.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-15 11:02:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8788e96ddb19791040eae46b1396192e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CPE Models</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_8788e96ddb19791040eae46b1396192e</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-02 10:15:36</sys_updated_on>
+        <timeline_page/>
+        <title>CPE Models</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_8788e96ddb19791040eae46b1396192e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>CPE Models</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_ns_pro_cpe_model</name><order>1090</order><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_g_sonc_ns_pro.user,x_g_sonc_ns_pro.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-15 11:02:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8788e96ddb19791040eae46b1396192e</sys_id><sys_mod_count>5</sys_mod_count><sys_name>CPE Models</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_app_module_8788e96ddb19791040eae46b1396192e</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-02 10:15:36</sys_updated_on><timeline_page/><title>CPE Models</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1634504393</payload_hash>
+        <record_name>CPE Models</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-02 10:15:36</sys_created_on>
+        <sys_id>23c0818f1b2d3190824752c1604bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18aefe2dccb0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-02 10:15:36</sys_updated_on>
+        <type>Module</type>
+        <update_guid>e7c0818f2e2d3190fa9876096aa1756a</update_guid>
+        <update_guid_history>e7c0818f2e2d3190fa9876096aa1756a:-1634504393,29b581c57e2131503639aca67ee815b9:877508632,7bd1018d19edfd109252ce5e2362d1ca:-223573826,afcb9474ac6d7d102da7aaaf1824302e:1560025631,d506c7bfb2dd7510000a2e8a568f398b:1315073443,c388e96dae1979101a2521d8ca7f7b30:1019696554</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/12/2023 00:06:09">7fd9df021b31f110824752c1604bcbda</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-10-12 05:06:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>0076610fd0e345408000b127ff386c40</sys_id>
+        <sys_metadata>8788e96ddb19791040eae46b1396192e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPE Models</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_app_module_8788e96ddb19791040eae46b1396192e</sys_update_name>
+        <sys_update_version display_value="sys_app_module_8788e96ddb19791040eae46b1396192e">23c0818f1b2d3190824752c1604bcb6b</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-10-12 05:06:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.core_nspro_ajax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>core_nspro_ajax</name>
+        <script><![CDATA[var core_nspro_ajax = Class.create();
+core_nspro_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getDaysFromToday: function() {
+		
+		var core = new x_g_sonc_ns_pro.core_nspro();
+		var days = this.getParameter('sysparm_days');
+		return core.getDaysFromToday(days);
+
+    },
+	
+	getDaysFromDate: function() {
+		
+		gs.info('calling core_nspro_ajax.getDaysFromDate');
+		
+		var core = new x_g_sonc_ns_pro.core_nspro();
+		var date = this.getParameter('sysparm_date');
+		var days = this.getParameter('sysparm_days');
+		return core.getDaysFromDate(date, days);
+
+    },
+	
+	isBeforeGracePeriod: function() {
+		
+		var core = new x_g_sonc_ns_pro.core_nspro();
+		var new_date = this.getParameter('sysparm_new_date');
+		var created_on = this.getParameter('sysparm_created_on');
+		var request_type = this.getParameter('sysparm_request_type');
+		
+		gs.info('core_nspro_ajax.isBeforeGracePeriod \nnew_date = ' + new_date + '\ncreated_on = ' + created_on + '\nrequest_type of ' + request_type);
+		var result = core.isBeforeGracePeriod(new_date, created_on, request_type);
+		gs.info('core_nspro_ajax.isBeforeGracePeriod result = ' + result);
+		return result;
+		
+	},
+
+    type: 'core_nspro_ajax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-02 12:39:06</sys_created_on>
+        <sys_id>2bca8dcd1bda3114824752c1604bcbd0</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>core_nspro_ajax</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_2bca8dcd1bda3114824752c1604bcbd0</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-26 13:02:26</sys_updated_on>
+    </sys_script_include>
+</record_update>
