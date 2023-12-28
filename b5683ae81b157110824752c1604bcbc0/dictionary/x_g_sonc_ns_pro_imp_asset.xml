@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="248fce211b4fb950824752c1604bcb5c" extends="sys_import_set_row" label="Imp Asset" max_length="40" name="x_g_sonc_ns_pro_imp_asset" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Dept" label="Dept" max_length="40" name="u_dept" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Desc" label="Desc" max_length="40" name="u_desc" type="string"/>
+    </element>
+</database>

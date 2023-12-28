@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="113e8aa91b0fb950824752c1604bcb9e" label="Agency" max_length="40" name="x_g_sonc_ns_pro_agency" type="collection">
+        <element label="Abbreviation" mandatory="true" max_length="40" name="abbreviation" type="string"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+    </element>
+</database>

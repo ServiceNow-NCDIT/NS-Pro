@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_g_sonc_ns_pro_port_connection" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_g_sonc_ns_pro_port_connection</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-03 19:56:00</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_x_g_sonc_ns_pro_port_connection_type</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-03 19:56:00</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port_connection</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-03 19:56:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-03 19:56:45</sys_updated_on>
+            <value>me</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME POP</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port_connection</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-03 19:56:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-03 19:56:22</sys_updated_on>
+            <value>me_pop</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DSL</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port_connection</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-03 19:56:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-03 19:56:35</sys_updated_on>
+            <value>dsl</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Network Service Request - New Service">670690da1bf5f110824752c1604bcbe7</cat_item>
+        <cat_variable>IO:44175a44db96f1d040eae46b1396196d</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onChange New/Existing Site</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+	var ga = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
+	ga.addParam('sysparm_name', 'getNextSiteNum');
+	ga.addParam('sysparm_site_type', newValue);
+	ga.getXMLAnswer(getSiteNum);
+	
+	function getSiteNum(response) {
+		
+		var site_id = parseInt(response);
+		g_form.setValue('site_identifier', site_id);
+	}
+   
+   
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-04 15:50:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c9996a931b7eb510824752c1604bcb0b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>onChange New/Existing Site</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_script_client_c9996a931b7eb510824752c1604bcb0b</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-13 17:20:04</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_script_client_c9996a931b7eb510824752c1604bcb0b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Network Service Request - New Service"&gt;670690da1bf5f110824752c1604bcbe7&lt;/cat_item&gt;&lt;cat_variable&gt;IO:44175a44db96f1d040eae46b1396196d&lt;/cat_variable&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onChange New/Existing Site&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+
+	var ga = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
+	ga.addParam('sysparm_name', 'getNextSiteNum');
+	ga.addParam('sysparm_site_type', newValue);
+	ga.getXMLAnswer(getSiteNum);
+	
+	function getSiteNum(response) {
+		
+		var site_id = parseInt(response);
+		g_form.setValue('site_identifier', site_id);
+	}
+   
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wbbusby&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-04 15:50:21&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c9996a931b7eb510824752c1604bcb0b&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;onChange New/Existing Site&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_c9996a931b7eb510824752c1604bcb0b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wbbusby&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-13 17:20:04&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1762564094</payload_hash>
+        <record_name>onChange New/Existing Site</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-13 17:20:04</sys_created_on>
+        <sys_id>476495d61bcb7110824752c1604bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c643158940000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-13 17:20:04</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>0b6495d665cb7110b66e3b56c24073d9</update_guid>
+        <update_guid_history>0b6495d665cb7110b66e3b56c24073d9:1762564094,c0b29dde9d8b71103a7dd09564c9fe63:-399123781,e466fcde34877110bd215efa502c1613:1798214011,e624fc92cb437110e37a0d980d60fa2a:1886662524,7e4f97a7ccfa79105f0301e566a5b333:1798214011,fe4f97a701fa7910d0422cc71c0e0830:-441871014</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12/22/2023 16:00:12">dada209ddb5bf95040eae46b1396194c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-12-22 22:00:12</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>0f7098dbf21a40e38c622c600b1286d9</sys_id>
+        <sys_metadata>c9996a931b7eb510824752c1604bcb0b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onChange New/Existing Site</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>catalog_script_client_c9996a931b7eb510824752c1604bcb0b</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_c9996a931b7eb510824752c1604bcb0b">476495d61bcb7110824752c1604bcbda</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-12-22 22:00:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

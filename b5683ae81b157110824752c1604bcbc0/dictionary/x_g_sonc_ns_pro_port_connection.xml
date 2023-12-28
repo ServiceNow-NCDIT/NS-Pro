@@ -6,7 +6,32 @@
         <element label="A IP Address" max_length="40" name="a_ip_address" type="ip_addr"/>
         <element label="A Subnet Mask" max_length="40" name="a_subnet_mask" type="ip_addr"/>
         <element label="A VLAN" max_length="40" name="a_vlan" type="string"/>
-        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_floats="true" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element label="CIR" max_length="40" name="cir" type="string"/>
+        <element label="Client Id" max_length="40" name="client_id" type="string"/>
+        <element label="Gateway" max_length="40" name="gateway" type="ip_addr"/>
+        <element label="Local Circuit" max_length="32" name="local_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="LocDLCI" max_length="40" name="locdlci" type="string"/>
+        <element label="Master Device Interface" max_length="40" name="master_device_interface" type="string"/>
+        <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" type="reference"/>
+        <element label="POP Circuit" max_length="32" name="pop_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element choice="1" label="Port Status" max_length="40" name="port_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hold" sequence="10" value="hold"/>
+                <element inactive_on_update="false" label="Pending" sequence="20" value="pending"/>
+                <element inactive_on_update="false" label="Installed" sequence="30" value="installed"/>
+                <element inactive_on_update="false" label="Shutdown" sequence="40" value="shutdown"/>
+            </choice>
+        </element>
+        <element label="RmtDLCI" max_length="40" name="rmtdlci" type="string"/>
+        <element label="Secondary Address" max_length="40" name="secondary_address" type="boolean"/>
+        <element label="Subnet Mask" max_length="40" name="subnet_mask" type="ip_addr"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
+                <element inactive_on_update="false" label="ME POP" sequence="20" value="me_pop"/>
+                <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
+            </choice>
+        </element>
         <element label="VRF" max_length="32" name="vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
         <element label="Z Circuit Id" max_length="32" name="z_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Z Device Interface Name" max_length="254" name="z_device_interface_name" type="string"/>

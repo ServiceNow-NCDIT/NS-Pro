@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="Network Operations">7b6581898e93795091adc6886ae1a06d</dashboard>
+        <experience display_value="Network Operations">bf658189399379507900f48f324f0d74</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-22 05:17:54</sys_created_on>
+        <sys_id>73658189a39379502323713d9015d66c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>par_dashboard_visibility_73658189a39379502323713d9015d66c</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-22 05:17:54</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>

@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="DIT New Network Service Request">670690da1bf5f110824752c1604bcbe7</cat_item>
+        <cat_item display_value="Network Service Request - New Service">670690da1bf5f110824752c1604bcbe7</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -42,12 +42,12 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>primary_uplink_vrf</name>
-        <order>3300</order>
+        <order>3400</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Primary Uplink VRF</question_text>
+        <question_text>Agency VRF</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -56,7 +56,7 @@
         <record/>
         <record_producer_table>x_g_sonc_ns_pro_telco_order</record_producer_table>
         <reference>x_g_sonc_ns_pro_vrf_definition</reference>
-        <reference_qual/>
+        <reference_qual>javascript:'sys_idIN' + x_g_sonc_ns_pro.nspro_getVRFs();  // returns comma sep list of filtered sys_id</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -75,23 +75,23 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-11-08 17:26:08</sys_created_on>
+        <sys_created_on>2023-12-22 18:13:04</sys_created_on>
         <sys_id>2171a59e1b713510824752c1604bcb00</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Primary Uplink VRF</sys_name>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency VRF</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_2171a59e1b713510824752c1604bcb00</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-08 17:42:32</sys_updated_on>
+        <sys_updated_on>2023-12-22 22:00:23</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

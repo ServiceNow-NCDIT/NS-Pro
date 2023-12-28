@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="DIT New Network Service Request">670690da1bf5f110824752c1604bcbe7</cat_item>
+        <cat_item display_value="Network Service Request - New Service">670690da1bf5f110824752c1604bcbe7</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -21,7 +21,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>site</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text>If you need assistance locating the site identifier, please open a support ticket with your requested site address included.</help_text>
@@ -38,11 +38,11 @@
         <macro/>
         <macroponent/>
         <mandatory>true</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>site</name>
-        <order>400</order>
+        <order>500</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -56,11 +56,8 @@
         <record/>
         <record_producer_table>x_g_sonc_ns_pro_telco_order</record_producer_table>
         <reference>cmdb_ci_site</reference>
-        <reference_qual>javascript:'sys_idIN' + x_g_sonc_ns_pro.nspro_getSites();  // returns comma sep list of filtered sys_id</reference_qual>
-        <reference_qual_condition table="cmdb_ci_site">x_g_sonc_ns_pro_active=true^location=current.location^EQ<item endquery="false" field="x_g_sonc_ns_pro_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="false" field="location" goto="false" newquery="false" operator="=" or="false" value="current.location"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual>javascript:'sys_idIN' + x_g_sonc_ns_pro.nspro_getSites(user.getUserId);  // returns comma sep list of filtered sys_id</reference_qual>
+        <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated 
@@ -78,7 +75,7 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-11-08 17:26:12</sys_created_on>
+        <sys_created_on>2023-12-22 18:13:07</sys_created_on>
         <sys_id>afcd15561b713510824752c1604bcb7d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Site</sys_name>
@@ -86,8 +83,8 @@
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_afcd15561b713510824752c1604bcb7d</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-12 07:43:45</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-12-22 22:00:24</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

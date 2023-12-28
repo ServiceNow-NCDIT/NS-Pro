@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c5671064471ff150f4af2ad2e16d4382" extends="sys_import_set_row" label="Imp NSWAN Ports" max_length="40" name="x_g_sonc_ns_pro_imp_nswan_ports" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=BillingSite" label="BillingSite" max_length="40" name="u_billingsite" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cir" label="Cir" max_length="40" name="u_cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit Number" label="Circuit Number" max_length="40" name="u_circuit_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ClientId" label="ClientId" max_length="40" name="u_clientid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GatewayIp" label="GatewayIp" max_length="40" name="u_gatewayip" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=HostName" label="HostName" max_length="43" name="u_hostname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IpAddressRange" label="IpAddressRange" max_length="48" name="u_ipaddressrange" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IP Address" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LocalCircuit" label="LocalCircuit" max_length="40" name="u_localcircuit" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LocDlci" label="LocDlci" max_length="40" name="u_locdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=MasterDeviceInterface" label="MasterDeviceInterface" max_length="60" name="u_masterdeviceinterface" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Port Name" label="Port Name" max_length="40" name="u_port_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Port Type" label="Port Type" max_length="40" name="u_port_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remarks" label="Remarks" max_length="553" name="u_remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=RmtDlci" label="RmtDlci" max_length="40" name="u_rmtdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Router Serial Number" label="Router Serial Number" max_length="40" name="u_router_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecondaryPort" label="SecondaryPort" max_length="40" name="u_secondaryport" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site" label="Site" max_length="40" name="u_site" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Subnet Mask" label="Subnet Mask" max_length="40" name="u_subnet_mask" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=VrfName" label="VrfName" max_length="40" name="u_vrfname" type="string"/>
+    </element>
+</database>

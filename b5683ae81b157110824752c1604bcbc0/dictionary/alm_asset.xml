@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" audit="true" db_object_id="c7b871bddb621300a27757c5ca96197a" label="Asset" max_length="40" name="alm_asset" type="collection">
+        <element label="iTag" max_length="40" name="x_g_sonc_ns_pro_itag" type="string"/>
+    </element>
+</database>

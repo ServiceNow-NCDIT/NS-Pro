@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>Used to get lattitude and logitude and confirm address for creation of location record and associated site record for NSPro </description>
+        <name>Get Geo Location</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://maps.googleapis.com/maps/api/geocode/json</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-14 15:02:16</sys_created_on>
+        <sys_id>994ef9a6470b7110f4af2ad2e16d43cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Geo Location</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rest_message_994ef9a6470b7110f4af2ad2e16d43cf</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-14 15:02:16</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

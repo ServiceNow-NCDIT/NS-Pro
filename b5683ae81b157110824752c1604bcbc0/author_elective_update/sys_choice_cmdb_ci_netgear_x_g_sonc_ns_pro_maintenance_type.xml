@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_g_sonc_ns_pro_maintenance_type" table="cmdb_ci_netgear" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_maintenance_type</element>
+            <name>cmdb_ci_netgear</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 13:08:06</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_maintenance_type</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_cmdb_ci_netgear_x_g_sonc_ns_pro_maintenance_type</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 13:08:06</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_maintenance_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NSAS</label>
+            <language>en</language>
+            <name>cmdb_ci_netgear</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 13:08:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 13:08:13</sys_updated_on>
+            <value>nsas</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_maintenance_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NSSP</label>
+            <language>en</language>
+            <name>cmdb_ci_netgear</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 13:08:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 13:08:28</sys_updated_on>
+            <value>nssp</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_maintenance_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NSST</label>
+            <language>en</language>
+            <name>cmdb_ci_netgear</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 13:08:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 13:08:43</sys_updated_on>
+            <value>nsst</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_maintenance_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NSSW</label>
+            <language>en</language>
+            <name>cmdb_ci_netgear</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 13:08:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 13:08:57</sys_updated_on>
+            <value>nssw</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

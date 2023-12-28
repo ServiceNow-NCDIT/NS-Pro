@@ -110,7 +110,7 @@ cmdb_ci_site.prototype = {
 			site.decommission_date = siteGr.x_g_sonc_ns_pro_decommission_date.getDisplayValue();
 			site.active = siteGr.x_g_sonc_ns_pro_active.getDisplayValue();
 			site.demarc_location = siteGr.x_g_sonc_ns_pro_demarc_location.getDisplayValue();
-			site.site_type = siteGr.x_g_sonc_ns_pro_site_type.getDisplayValue();
+			site.type = siteGr.x_g_sonc_ns_pro_type.getDisplayValue();
 			site.location = siteGr.location.toString();
 			site.latitude = siteGr.location.latitude.getDisplayValue();
 			site.longitude = siteGr.location.longitude.getDisplayValue();
@@ -143,13 +143,13 @@ cmdb_ci_site.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-03 20:39:54</sys_updated_on>
+        <sys_updated_on>2023-12-13 17:04:16</sys_updated_on>
     </sys_script_include>
 </record_update>

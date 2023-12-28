@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_g_sonc_ns_pro.service_user" name="x_g_sonc_ns_pro.service_user">bf47343b1bf6b910824752c1604bcb28</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-05 20:48:04</sys_created_on>
+        <sys_id>b3477c7f1bf6b910824752c1604bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bf47343b1bf6b910824752c1604bcb28</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_embedded_help_role_b3477c7f1bf6b910824752c1604bcbb6</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-05 20:48:04</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

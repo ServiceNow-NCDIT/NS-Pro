@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="DIT New Network Service Request">670690da1bf5f110824752c1604bcbe7</cat_item>
+        <cat_item display_value="Network Service Request - New Service">670690da1bf5f110824752c1604bcbe7</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>dest_site</name>
-        <order>800</order>
+        <order>1000</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -77,7 +77,7 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-11-08 17:26:12</sys_created_on>
+        <sys_created_on>2023-12-22 18:13:07</sys_created_on>
         <sys_id>a4f2f2d9db56bdd040eae46b139619c9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Dest Site</sys_name>
@@ -86,7 +86,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_a4f2f2d9db56bdd040eae46b139619c9</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-08 17:42:35</sys_updated_on>
+        <sys_updated_on>2023-12-22 22:00:27</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

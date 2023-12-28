@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <includes>58d17acf0b531010a8b1c96237673a68</includes>
+        <macroponent display_value="List">d87c8e12db9b359040eae46b139619fe</macroponent>
+        <name>Open Record From List</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[function handler({
+    api,
+    helpers,
+    event,
+    imports
+}) {
+    const {
+        routeMapping,
+        buildDefaultRoutePayload
+    } = imports["global.recordRoutesMapping"]();
+
+    var route = 'record';
+    var targetRoute = '';
+    const defaultRoutePayload = buildDefaultRoutePayload(route, targetRoute, event);
+    
+    const routeMap = api.data.dynamic_routing_list.routeMap;
+    const payload = routeMapping(routeMap, defaultRoutePayload, event);
+
+    // If a table name passed into trueupTable matches the existing table
+    // refresh trueup DR to get real table name; otherwise use existing.
+    if(api.state.routeParentTables && api.state.routeParentTables.split(',').find(table => table === payload.fields.table)) {
+        api.setState('navigationPayload', payload); 
+        api.data.resolve_route_parent_tables.refresh(); 
+    } else { 
+        api.emit('NAV_ITEM_SELECTED', payload); 
+    } 
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-26 07:40:34</sys_created_on>
+        <sys_id>057cce12db9b359040eae46b139619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Record From List</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ux_client_script_057cce12db9b359040eae46b139619cf</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:40:34</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ux_client_script_057cce12db9b359040eae46b139619cf</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;includes&gt;58d17acf0b531010a8b1c96237673a68&lt;/includes&gt;&lt;macroponent display_value="List"&gt;d87c8e12db9b359040eae46b139619fe&lt;/macroponent&gt;&lt;name&gt;Open Record From List&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[ ]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[function handler({
+    api,
+    helpers,
+    event,
+    imports
+}) {
+    const {
+        routeMapping,
+        buildDefaultRoutePayload
+    } = imports["global.recordRoutesMapping"]();
+
+    var route = 'record';
+    var targetRoute = '';
+    const defaultRoutePayload = buildDefaultRoutePayload(route, targetRoute, event);
+    
+    const routeMap = api.data.dynamic_routing_list.routeMap;
+    const payload = routeMapping(routeMap, defaultRoutePayload, event);
+
+    // If a table name passed into trueupTable matches the existing table
+    // refresh trueup DR to get real table name; otherwise use existing.
+    if(api.state.routeParentTables &amp;&amp; api.state.routeParentTables.split(',').find(table =&gt; table === payload.fields.table)) {
+        api.setState('navigationPayload', payload); 
+        api.data.resolve_route_parent_tables.refresh(); 
+    } else { 
+        api.emit('NAV_ITEM_SELECTED', payload); 
+    } 
+
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wbbusby&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-26 07:40:34&lt;/sys_created_on&gt;&lt;sys_id&gt;057cce12db9b359040eae46b139619cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Open Record From List&lt;/sys_name&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_057cce12db9b359040eae46b139619cf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wbbusby&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-26 07:40:34&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-447635046</payload_hash>
+        <record_name>Open Record From List</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-26 07:41:25</sys_created_on>
+        <sys_id>55ac4292db9b359040eae46b13961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ca5123d050000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:41:25</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>99ac4292559b3590666c419f1f25d987</update_guid>
+        <update_guid_history>99ac4292559b3590666c419f1f25d987:-447635046,417cce12869b3590547bbac36978a6e4:-1137761848,057cce12fd9b3590f4a2ec064aa551d1:-447635046</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-26 08:05:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>833d985290ea4bd09ee1b9047d3fb124</sys_id>
+        <sys_metadata>057cce12db9b359040eae46b139619cf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Open Record From List</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_057cce12db9b359040eae46b139619cf</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_057cce12db9b359040eae46b139619cf">55ac4292db9b359040eae46b13961988</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:05:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

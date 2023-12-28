@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>800</order>
+        <search_context_config display_value="Network Operations - Workspace Search">ff658189a49379509090fa2b54580a6a</search_context_config>
+        <source display_value="Network Operations - x_g_sonc_ns_pro_telco_provide">4675858947937950f4af2ad2e16d4383</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-22 05:18:02</sys_created_on>
+        <sys_id>c275858947937950f4af2ad2e16d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_c275858947937950f4af2ad2e16d4386</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-22 05:18:02</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

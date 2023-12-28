@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="DIT New Network Service Request">670690da1bf5f110824752c1604bcbe7</catalog_item>
+        <catalog_variable>IO:d131619e1b713510824752c1604bcb73</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>false</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-13 14:33:30</sys_created_on>
+        <sys_id>6c8e4a60db62395040eae46b139619f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>service_definition</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_6c8e4a60db62395040eae46b139619f3</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-13 14:33:30</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Request WAN Services">754e8260db62395040eae46b139619ce</ui_policy>
+        <variable>service_definition</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_ui_policy_action_6c8e4a60db62395040eae46b139619f3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="DIT New Network Service Request">670690da1bf5f110824752c1604bcbe7</catalog_item><catalog_variable>IO:d131619e1b713510824752c1604bcb73</catalog_variable><cleared>true</cleared><disabled>false</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-11-13 14:33:30</sys_created_on><sys_id>6c8e4a60db62395040eae46b139619f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>service_definition</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>catalog_ui_policy_action_6c8e4a60db62395040eae46b139619f3</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-11-13 14:33:30</sys_updated_on><table/><ui_policy display_value="Request WAN Services">754e8260db62395040eae46b139619ce</ui_policy><variable>service_definition</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-475928967</payload_hash>
+        <record_name>service_definition</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-13 14:33:30</sys_created_on>
+        <sys_id>f69ec6ecdb22395040eae46b139619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18bc91a10f80000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-13 14:33:30</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>fa9ec6ec55223950a4226298b59825eb</update_guid>
+        <update_guid_history>fa9ec6ec55223950a4226298b59825eb:-475928967</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12/04/2023 08:56:11">6b2dd2571bfab510824752c1604bcb6f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-12-04 14:56:11</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>7848b123875c448084ef9d61454d8690</sys_id>
+        <sys_metadata>6c8e4a60db62395040eae46b139619f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>service_definition</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_6c8e4a60db62395040eae46b139619f3</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_6c8e4a60db62395040eae46b139619f3">f69ec6ecdb22395040eae46b139619ec</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-12-04 14:56:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -17,6 +17,7 @@
         <element label="Circuit" max_length="32" name="circuit" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Circuit Construction Cost" max_length="20" name="circuit_construction_cost" type="currency"/>
         <element label="Circuit Due Date" max_length="40" name="circuit_due_date" type="glide_date"/>
+        <element label="Circuit Est Completion" max_length="40" name="circuit_est_completion" type="glide_date"/>
         <element choice="1" label="Circuit Order Request Type" max_length="32" name="circuit_order_request_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Add" sequence="10" value="add"/>
@@ -36,7 +37,7 @@
         <element label="Cir Ingress Speed 2" max_length="20" name="cir_ingress_speed_2" type="decimal"/>
         <element label="CPE Models Required" max_length="500" name="cpe_models_required" type="string"/>
         <element label="Current Location" max_length="32" name="current_location" reference="cmn_location" type="reference"/>
-        <element label="Demarc Location" max_length="200" name="demarc_location" type="string"/>
+        <element label="Requested Circuit Location" max_length="200" name="demarc_location" type="string"/>
         <element label="Detailed CPE Needs" max_length="1000" name="detailed_cpe_needs" read_only="true" type="string"/>
         <element label="Field Services Message" max_length="1000" name="field_services_message" type="string"/>
         <element label="LAN CPE Basic 24 Count" max_length="40" name="lan_cpe_basic_24_count" type="integer"/>
@@ -105,7 +106,7 @@
         <element label="Requested Service Code" max_length="40" name="requested_service_code" type="string"/>
         <element label="Requested Service Codes" max_length="512" name="requested_service_codes" type="string"/>
         <element label="Requested Speed" mandatory="true" max_length="20" name="requested_speed" type="decimal"/>
-        <element label="Requested VRF" max_length="32" name="requested_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="Agency VRF" max_length="32" name="requested_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
         <element label="Request Type" max_length="32" name="request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
         <element label="Required LAN CPE Count" max_length="40" name="required_lan_cpe_count" type="integer"/>
         <element label="Required LAN Models" max_length="254" name="required_lan_models" type="string"/>
@@ -122,7 +123,7 @@
                 <element inactive_on_update="false" label="Field Services" sequence="20" value="field_services"/>
             </choice>
         </element>
-        <element label="Telco Order" max_length="32" name="telco_order" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
+        <element label="Network Request" max_length="32" name="telco_order" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
         <element label="Telco Order Contact" max_length="100" name="telco_order_contact" type="string"/>
         <element label="Telco Order Email" max_length="100" name="telco_order_email" type="string"/>
         <element label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>

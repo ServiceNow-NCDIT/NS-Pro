@@ -14,20 +14,6 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2023-10-01 15:00:31</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>1</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-10-01 15:00:31</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>0f6878b61ba9bd50824752c1604bcb54</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="x_g_sonc_ns_pro_port_connection" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">836878b61ba9bd50824752c1604bcb50</sys_ui_form>
-            <sys_ui_section caption="Configuration" display_value="Configuration" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">c76878b61ba9bd50824752c1604bcb4f</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-10-01 15:00:31</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_g_sonc_ns_pro_port_connection</name>
             <roles/>

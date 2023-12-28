@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
     <par_dashboard_visibility action="INSERT_OR_UPDATE">
         <dashboard display_value="Sites">0a1bd8bafba279908b9980cb129dfa46</dashboard>
-        <experience display_value="Sites">4e1bd8ba70a2799015ce089c7de4424d</experience>
+        <experience/>
         <sys_class_name>par_dashboard_visibility</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-20 05:55:10</sys_created_on>

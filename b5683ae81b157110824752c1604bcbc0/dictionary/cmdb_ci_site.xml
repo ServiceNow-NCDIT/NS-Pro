@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="8b5561621b72211090990f6fe54bcb12" extends="cmdb_ci" label="Sitio" max_length="40" name="cmdb_ci_site" text_index="true" type="collection">
         <element default="true" label="Active" max_length="40" name="x_g_sonc_ns_pro_active" type="boolean"/>
-        <element label="Agency" max_length="32" name="x_g_sonc_ns_pro_agency" reference="u_org_agency" type="reference"/>
         <element label="Alternate POC" max_length="32" name="x_g_sonc_ns_pro_alternate_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Decommission Date" max_length="40" name="x_g_sonc_ns_pro_decommission_date" type="glide_date_time"/>
         <element label="Demarc Location" max_length="100" name="x_g_sonc_ns_pro_demarc_location" type="string"/>
+        <element label="Office Hours" max_length="40" name="x_g_sonc_ns_pro_office_hours" type="string"/>
         <element label="Point of Presence" max_length="32" name="x_g_sonc_ns_pro_point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
         <element label="Primary POC" max_length="32" name="x_g_sonc_ns_pro_primary_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Request Type" max_length="32" name="x_g_sonc_ns_pro_request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
-        <element label="Site Type" max_length="32" name="x_g_sonc_ns_pro_site_type" reference="x_g_sonc_ns_pro_site_type" type="reference"/>
+        <element label="Security LastUpgrade Date" max_length="40" name="x_g_sonc_ns_pro_security_lastupgrade_date" type="glide_date"/>
+        <element label="Security Start Date" max_length="40" name="x_g_sonc_ns_pro_security_start_date" type="glide_date"/>
+        <element choice="1" label="Status" max_length="40" name="x_g_sonc_ns_pro_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Complete" sequence="10" value="complete"/>
+                <element inactive_on_update="false" label="Delete" sequence="20" value="delete"/>
+            </choice>
+        </element>
         <element label="Telco Provider" max_length="32" name="x_g_sonc_ns_pro_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
         <element label="Telco Room" max_length="100" name="x_g_sonc_ns_pro_telco_room" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="x_g_sonc_ns_pro_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="LAN" sequence="10" value="lan"/>
+                <element inactive_on_update="false" label="MAN" sequence="20" value="man"/>
+                <element inactive_on_update="false" label="PoP" sequence="30" value="pop"/>
+                <element inactive_on_update="false" label="Staff" sequence="40" value="staff"/>
+                <element inactive_on_update="false" label="Vendor" sequence="50" value="vendor"/>
+                <element inactive_on_update="false" label="VideoSurv" sequence="60" value="videosurv"/>
+                <element inactive_on_update="false" label="VOIP" sequence="70" value="voip"/>
+                <element inactive_on_update="false" label="WAN" sequence="80" value="wan"/>
+                <element inactive_on_update="false" label="Warehouse" sequence="90" value="warehouse"/>
+            </choice>
+        </element>
         <element label="Uplink VRF" max_length="32" name="x_g_sonc_ns_pro_uplink_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
         <element label="VIP Site" max_length="40" name="x_g_sonc_ns_pro_vip_site" type="boolean"/>
     </element>

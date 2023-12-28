@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="e375c98947937950f4af2ad2e16d43ab" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3" view="workspace-network-operations-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due_date</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f75c98947937950f4af2ad2e16d43ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>construction_cost</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a775c98947937950f4af2ad2e16d43ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>redundant</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ab75c98947937950f4af2ad2e16d43ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>monthly_cost</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>af75c98947937950f4af2ad2e16d43ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>other_cost</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a375c98947937950f4af2ad2e16d43af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_cost</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a775c98947937950f4af2ad2e16d43af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ab75c98947937950f4af2ad2e16d43af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_type</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>af75c98947937950f4af2ad2e16d43af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ready_date</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a375c98947937950f4af2ad2e16d43b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a775c98947937950f4af2ad2e16d43b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_speed</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ab75c98947937950f4af2ad2e16d43b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpe_model</element>
+            <position>11</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>af75c98947937950f4af2ad2e16d43b0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>network_service_category</element>
+            <position>12</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a375c98947937950f4af2ad2e16d43b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>13</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a775c98947937950f4af2ad2e16d43b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>special_instructions</element>
+            <position>14</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ab75c98947937950f4af2ad2e16d43b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>detailed_cpe_needs</element>
+            <position>15</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>af75c98947937950f4af2ad2e16d43b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>demarc_location</element>
+            <position>16</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a375c98947937950f4af2ad2e16d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>17</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a775c98947937950f4af2ad2e16d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_jack_type</element>
+            <position>18</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ab75c98947937950f4af2ad2e16d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>19</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>af75c98947937950f4af2ad2e16d43b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wan_cpe_ports</element>
+            <position>20</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>a375c98947937950f4af2ad2e16d43b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>21</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4323</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_for</element>
+            <position>22</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4323</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_provider</element>
+            <position>23</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4323</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>relocate_site</element>
+            <position>24</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d4324</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_definition</element>
+            <position>25</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4324</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>26</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4324</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>relocate_location</element>
+            <position>27</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4324</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acct_billing_code</element>
+            <position>28</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d4325</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_date</element>
+            <position>29</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4325</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_ha</element>
+            <position>30</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4325</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_vrf</element>
+            <position>31</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4325</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_voip</element>
+            <position>32</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d4326</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_lan</element>
+            <position>33</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4326</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_wlan</element>
+            <position>34</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4326</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_request_type</element>
+            <position>35</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4326</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_need_by_date</element>
+            <position>36</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d4327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pop</element>
+            <position>37</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe</element>
+            <position>38</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_pe_port</element>
+            <position>39</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4327</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_order_response_received</element>
+            <position>40</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d4328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_lata_from_telco</element>
+            <position>41</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_speed_ingress</element>
+            <position>42</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_speed_egress</element>
+            <position>43</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4328</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_ready_date</element>
+            <position>44</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d4329</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_special_instructions</element>
+            <position>45</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4329</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit</element>
+            <position>46</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4329</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_due_date</element>
+            <position>47</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4329</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wlan_access_point_required</element>
+            <position>48</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d432a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_basic_24_required</element>
+            <position>49</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d432a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_basic_48_required</element>
+            <position>50</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d432a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_premium_48_required</element>
+            <position>51</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ef750d8947937950f4af2ad2e16d432a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_premium_24_required</element>
+            <position>52</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e3750d8947937950f4af2ad2e16d432b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_cpe_premium_8_required</element>
+            <position>53</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e7750d8947937950f4af2ad2e16d432b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wan_cpe_ports_required</element>
+            <position>54</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>eb750d8947937950f4af2ad2e16d432b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpe_models_required</element>
+            <position>55</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ef750d8947937950f4af2ad2e16d432b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_response_message</element>
+            <position>56</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e3750d8947937950f4af2ad2e16d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>57</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e7750d8947937950f4af2ad2e16d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quoted_cost</element>
+            <position>58</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>eb750d8947937950f4af2ad2e16d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>quoted_service_definition</element>
+            <position>59</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ef750d8947937950f4af2ad2e16d432c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wan_circuit_type_jack</element>
+            <position>60</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e3750d8947937950f4af2ad2e16d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_code</element>
+            <position>61</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e7750d8947937950f4af2ad2e16d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>point_of_presence</element>
+            <position>62</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>eb750d8947937950f4af2ad2e16d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>budget_authority</element>
+            <position>63</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ef750d8947937950f4af2ad2e16d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_selection</element>
+            <position>64</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e3750d8947937950f4af2ad2e16d432e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_county</element>
+            <position>65</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e7750d8947937950f4af2ad2e16d432e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_city</element>
+            <position>66</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>eb750d8947937950f4af2ad2e16d432e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_zip</element>
+            <position>67</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>ef750d8947937950f4af2ad2e16d432e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>68</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e3750d8947937950f4af2ad2e16d432f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>provisioning_state</element>
+            <position>69</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>e7750d8947937950f4af2ad2e16d432f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>change_type</element>
+            <position>70</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>move_type</element>
+            <position>71</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>network_service_subcategory</element>
+            <position>72</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_location</element>
+            <position>73</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_site</element>
+            <position>74</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_order_email</element>
+            <position>75</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d4349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>telco_order_contact</element>
+            <position>76</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d434a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>justification</element>
+            <position>77</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d434a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_service_assignment</element>
+            <position>78</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d434a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wlan_service_assignment</element>
+            <position>79</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6f750d8947937950f4af2ad2e16d434a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_wan</element>
+            <position>80</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>63750d8947937950f4af2ad2e16d434b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lan_svc_code</element>
+            <position>81</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>67750d8947937950f4af2ad2e16d434b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>wlan_svc_code</element>
+            <position>82</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_id>6b750d8947937950f4af2ad2e16d434b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="3765818980937950b4017ca74ab39d6a">e375c98947937950f4af2ad2e16d43ab</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-22 05:18:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e375c98947937950f4af2ad2e16d43ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_e375c98947937950f4af2ad2e16d43ab</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-22 05:18:09</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace Network Operations 0" name="workspace-network-operations-0">3765818980937950b4017ca74ab39d6a</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2ba31ca847dbf150f4af2ad2e16d4397" label="NSWAN Ports" max_length="40" name="x_g_sonc_ns_pro_nswan_ports" type="collection">
+        <element label="BillingSite" max_length="40" name="billingsite" type="string"/>
+        <element label="CIR" max_length="40" name="cir" type="string"/>
+        <element label="Circuit Number" max_length="40" name="circuit_number" type="string"/>
+        <element label="ClientId" max_length="40" name="clientid" type="string"/>
+        <element label="GatewayIp" max_length="40" name="gatewayip" type="string"/>
+        <element label="HostName" max_length="40" name="hostname" type="string"/>
+        <element label="IpAddressRange" max_length="40" name="ipaddressrange" type="string"/>
+        <element label="IP Address" max_length="40" name="ip_address" type="string"/>
+        <element label="LocalCircuit" max_length="40" name="localcircuit" type="string"/>
+        <element label="LocDlci" max_length="40" name="locdlci" type="string"/>
+        <element label="MasterDeviceInterface" max_length="40" name="masterdeviceinterface" type="string"/>
+        <element label="Model" max_length="40" name="model" type="string"/>
+        <element label="Port Name" max_length="40" name="port_name" type="string"/>
+        <element label="Port Type" max_length="40" name="port_type" type="string"/>
+        <element label="Remarks" max_length="200" name="remarks" type="string"/>
+        <element label="RmtDlci" max_length="40" name="rmtdlci" type="string"/>
+        <element label="Router Serial Number" max_length="60" name="router_serial_number" type="string"/>
+        <element label="SecondaryPort" max_length="40" name="secondaryport" type="string"/>
+        <element label="Site" max_length="10" name="site" type="string"/>
+        <element label="Status" max_length="40" name="status" type="string"/>
+        <element label="Subnet Mask" max_length="40" name="subnet_mask" type="string"/>
+        <element label="VrfName" max_length="40" name="vrfname" type="string"/>
+    </element>
+</database>

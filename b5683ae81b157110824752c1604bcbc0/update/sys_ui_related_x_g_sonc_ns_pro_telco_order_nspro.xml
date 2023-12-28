@@ -2,7 +2,7 @@
     <sys_ui_related sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="2" view="nspro">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Telco Order - NSPro" name="x_g_sonc_ns_pro_telco_order" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">54c621bfdbeaf11040eae46b139619ea</list_id>
+            <list_id display_value="Network Request - NSPro" name="x_g_sonc_ns_pro_telco_order" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">54c621bfdbeaf11040eae46b139619ea</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_g_sonc_ns_pro_nspro_tasks.telco_order</related_list>
@@ -15,7 +15,7 @@
             <sys_updated_on>2023-11-23 13:59:39</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Telco Order - NSPro</calculated_name>
+            <calculated_name>Network Request - NSPro</calculated_name>
             <filter/>
             <name>x_g_sonc_ns_pro_telco_order</name>
             <order_by/>

@@ -27,7 +27,6 @@
         <element label="PE Interface" max_length="255" name="x_g_sonc_ns_pro_pe_interface" type="string"/>
         <element label="PE Router" max_length="32" name="x_g_sonc_ns_pro_pe_router" reference="cmdb_ci_netgear" type="reference"/>
         <element label="Point of Presence" max_length="32" name="x_g_sonc_ns_pro_point_of_presence" type="string"/>
-        <element label="Service Definition" max_length="32" name="x_g_sonc_ns_pro_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
         <element label="Service For" max_length="32" name="x_g_sonc_ns_pro_service_for" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
         <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_floats="true" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
         <element choice="1" label="Status" max_length="40" name="x_g_sonc_ns_pro_status" type="choice">
@@ -38,8 +37,8 @@
                 <element inactive_on_update="false" label="Deleted" sequence="40" value="4"/>
             </choice>
         </element>
-        <element label="Telco Order" max_length="32" name="x_g_sonc_ns_pro_telco_order" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
         <element label="Telco Provider" max_length="32" name="x_g_sonc_ns_pro_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element label="Telco Provider Order Number" max_length="40" name="x_g_sonc_ns_pro_telco_provider_order_number" type="string"/>
         <element label="Utilization 95th %" max_length="20" name="x_g_sonc_ns_pro_utilization_95th" type="decimal"/>
         <element label="Utilization Average" max_length="20" name="x_g_sonc_ns_pro_utilization_average" type="decimal"/>
         <element label="Utilization In 95th %" max_length="20" name="x_g_sonc_ns_pro_utilization_in_95th" type="decimal"/>

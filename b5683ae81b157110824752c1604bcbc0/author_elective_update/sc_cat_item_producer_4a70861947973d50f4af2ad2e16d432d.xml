@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Network Service Requests</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="William Busby">dd8816f31b3cf5906e32eaccac4bcb62</owner>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=4a70861947973d50f4af2ad2e16d432d&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <save_options/>
+        <save_script/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template display_value="AES Record Producer">211f71ca73202010ae42d31ee2f6a785</sc_template>
+        <script/>
+        <short_description/>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-23 04:14:17</sys_created_on>
+        <sys_id>4a70861947973d50f4af2ad2e16d432d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Network Service Requests</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sc_cat_item_producer_4a70861947973d50f4af2ad2e16d432d</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-23 04:54:27</sys_updated_on>
+        <table_name>x_g_sonc_ns_pro_telco_order</table_name>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <u_company/>
+        <u_hide_from_new_call>false</u_hide_from_new_call>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="DELETE" query="documentkey=4a70861947973d50f4af2ad2e16d432d"/>
+    <fx_price action="DELETE" query="id=4a70861947973d50f4af2ad2e16d432d"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>4a70861947973d50f4af2ad2e16d432d</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-23 04:14:17</sys_created_on>
+        <sys_id>c270861947973d50f4af2ad2e16d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-23 04:14:17</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_producer_4a70861947973d50f4af2ad2e16d432d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer"><sc_cat_item_producer action="INSERT_OR_UPDATE"><access_type>restricted</access_type><active>true</active><allow_edit>false</allow_edit><availability>on_desktop</availability><billable>false</billable><can_cancel>false</can_cancel><category/><checked_out/><cost>0</cost><custom_cart/><delivery_plan/><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>non_zero</display_price_property><entitlement_script/><flow_designer_flow/><fulfillment_automation_level>unspecified</fulfillment_automation_level><group/><hide_sp>false</hide_sp><icon/><ignore_price>true</ignore_price><image/><location/><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Network Service Requests</name><no_attachment_v2>false</no_attachment_v2><no_cart>false</no_cart><no_cart_v2>false</no_cart_v2><no_delivery_time_v2>false</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_quantity_v2>false</no_quantity_v2><no_search>false</no_search><no_wishlist_v2>false</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><owner display_value="William Busby">dd8816f31b3cf5906e32eaccac4bcb62</owner><picture/><post_insert_script/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=4a70861947973d50f4af2ad2e16d432d&amp;sysparm_preview=true", "summary");</preview><price>0</price><published_ref/><recurring_frequency/><redirect_url>generated_record</redirect_url><request_method/><roles/><save_options/><save_script/><sc_catalogs/><sc_ic_item_staging/><sc_ic_version/><sc_template display_value="AES Record Producer">211f71ca73202010ae42d31ee2f6a785</sc_template><script/><short_description/><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><state/><sys_class_name>sc_cat_item_producer</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-23 04:14:17</sys_created_on><sys_id>4a70861947973d50f4af2ad2e16d432d</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Network Service Requests</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sc_cat_item_producer_4a70861947973d50f4af2ad2e16d432d</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-23 04:54:27</sys_updated_on><table_name>x_g_sonc_ns_pro_telco_order</table_name><taxonomy_topic/><template/><template_manager_roles/><type>item</type><u_company/><u_hide_from_new_call>false</u_hide_from_new_call><use_sc_layout>true</use_sc_layout><vendor/><view/><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item_producer><sys_translated_text action="delete_multiple" query="documentkey=4a70861947973d50f4af2ad2e16d432d"/><fx_price action="delete_multiple" query="id=4a70861947973d50f4af2ad2e16d432d"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>price</field><id>4a70861947973d50f4af2ad2e16d432d</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-23 04:14:17</sys_created_on><sys_id>c270861947973d50f4af2ad2e16d4330</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-23 04:14:17</sys_updated_on><table>sc_cat_item_producer</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>125086192</payload_hash>
+        <record_name>Network Service Requests</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-23 04:54:27</sys_created_on>
+        <sys_id>26a906d5db573d5040eae46b1396191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c95064f7b0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-23 04:54:27</sys_updated_on>
+        <type>Record Producer</type>
+        <update_guid>2aa906d5f6573d50255fde777d8c2c1d</update_guid>
+        <update_guid_history>2aa906d5f6573d50255fde777d8c2c1d:125086192,2212ca1d0a973d5089b0b3beaaa97797:-1735833808,5b8146d924973d505358f789565f8201:238596585,d37142d90f973d5055563917928045cb:-1348341695,88514a993f973d505ebcb57d5af28988:-1777566489,02708619b6973d509b76cdf5012f7834:-2008851544</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12/22/2023 22:54:28">2aa906d5db573d5040eae46b1396195b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-23 04:54:28</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_producer">sc_cat_item_producer</sys_db_object>
+        <sys_id>47db5345ba4147f4a0506226dcd2b664</sys_id>
+        <sys_metadata>4a70861947973d50f4af2ad2e16d432d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Service Requests</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Network Request">e2b42525db19791040eae46b13961947</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_producer_4a70861947973d50f4af2ad2e16d432d</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_producer_4a70861947973d50f4af2ad2e16d432d">26a906d5db573d5040eae46b1396191e</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-23 04:54:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

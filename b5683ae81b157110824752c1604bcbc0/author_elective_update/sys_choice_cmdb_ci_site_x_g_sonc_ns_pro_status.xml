@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_g_sonc_ns_pro_status" table="cmdb_ci_site" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_status</element>
+            <name>cmdb_ci_site</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-05 23:14:07</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_status</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_cmdb_ci_site_x_g_sonc_ns_pro_status</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-05 23:14:07</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-05 23:14:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-05 23:14:07</sys_updated_on>
+            <value>complete</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Delete</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-05 23:14:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-05 23:14:48</sys_updated_on>
+            <value>delete</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

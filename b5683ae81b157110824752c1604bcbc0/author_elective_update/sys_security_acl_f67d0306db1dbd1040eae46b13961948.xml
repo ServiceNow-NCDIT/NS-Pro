@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_g_sonc_ns_pro_nspro_tasks</description>
+        <name>x_g_sonc_ns_pro_nspro_tasks</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-17 07:40:38</sys_created_on>
+        <sys_id>f67d0306db1dbd1040eae46b13961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_nspro_tasks</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_security_acl_f67d0306db1dbd1040eae46b13961948</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-17 07:40:38</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_security_acl_f67d0306db1dbd1040eae46b13961948</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_g_sonc_ns_pro_nspro_tasks</description><name>x_g_sonc_ns_pro_nspro_tasks</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-17 07:40:38</sys_created_on><sys_id>f67d0306db1dbd1040eae46b13961948</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_nspro_tasks</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_security_acl_f67d0306db1dbd1040eae46b13961948</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-09-17 07:40:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1386931702</payload_hash>
+        <record_name>x_g_sonc_ns_pro_nspro_tasks</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-17 07:40:38</sys_created_on>
+        <sys_id>477d0306db1dbd1040eae46b139619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18aa215960b0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-17 07:40:38</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>7a7d03062e1dbd104684ff13970af9bf</update_guid>
+        <update_guid_history>7a7d03062e1dbd104684ff13970af9bf:1386931702</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-18 20:28:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>20e418ab1f124cc9a12a6d73b5388c09</sys_id>
+        <sys_metadata>f67d0306db1dbd1040eae46b13961948</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_nspro_tasks</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="x_g_sonc_ns_pro_nspro_tasks">477d0306db1dbd1040eae46b139619f9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_f67d0306db1dbd1040eae46b13961948</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_f67d0306db1dbd1040eae46b13961948">477d0306db1dbd1040eae46b139619c0</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-18 20:28:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
