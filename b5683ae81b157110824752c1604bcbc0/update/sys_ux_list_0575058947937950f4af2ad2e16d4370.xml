@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list">
     <sys_ux_list action="INSERT_OR_UPDATE">
         <active>true</active>
-        <category display_value="Point of Presence">4575058947937950f4af2ad2e16d436e</category>
+        <category display_value="Table Administration">c5540eef475bf1d0f4af2ad2e16d4364</category>
         <columns>name,location.full_name,location.latitude,location.longitude</columns>
         <condition/>
         <configuration display_value="Network Operations_menu_config">4d75c18947937950f4af2ad2e16d43c4</configuration>
@@ -59,7 +59,7 @@
         <sys_created_on>2023-12-22 05:17:58</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>0575058947937950f4af2ad2e16d4370</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>All</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -67,7 +67,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ux_list_0575058947937950f4af2ad2e16d4370</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-22 05:17:58</sys_updated_on>
+        <sys_updated_on>2023-12-30 04:22:39</sys_updated_on>
         <table>x_g_sonc_ns_pro_point_of_presence</table>
         <title>All</title>
         <view/>

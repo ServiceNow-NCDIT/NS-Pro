@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="50e24bfa47f77d10f4af2ad2e16d43e8" label="NSWAN Hardware" max_length="40" name="x_g_sonc_ns_pro_nswan_hardware" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Alerts" max_length="40" name="alerts" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Asset" max_length="40" name="asset" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Boot1" max_length="40" name="boot1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Boot2" max_length="40" name="boot2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Brand" max_length="40" name="brand" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CircuitId" max_length="40" name="circuitid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Configured_By" max_length="40" name="configured_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Config_file_Name" max_length="100" name="config_file_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cost_Center" max_length="40" name="cost_center" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CurrentPolicyName" max_length="40" name="currentpolicyname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date_Sent-to_Maint" max_length="40" name="date_sent_to_maint" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Device_Type" max_length="40" name="device_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="DMZ" max_length="40" name="dmz" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="DRAM" max_length="40" name="dram" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Firmware_Level" max_length="40" name="firmware_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Flash" max_length="40" name="flash" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="FwReports" max_length="40" name="fwreports" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Installation_Date" max_length="40" name="installation_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Internal_Serial_Number" max_length="40" name="internal_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="iTag" max_length="40" name="itag" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LastUpdated" max_length="40" name="lastupdated" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Lifecycle" max_length="40" name="lifecycle" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Maintenance_Type" max_length="40" name="maintenance_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ManagementStation" max_length="40" name="managementstation" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Nat" max_length="40" name="nat" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Owner" max_length="40" name="owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="O_S" max_length="40" name="o_s" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Platform" max_length="40" name="platform" type="string"/>
+        <element label="PortQty" max_length="40" name="portqty" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="PrimarySecondary" max_length="40" name="primarysecondary" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Purchase-date" max_length="40" name="purchase_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Purchase_Order" max_length="40" name="purchase_order" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Replacement_Date" max_length="40" name="replacement_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="RMA" max_length="40" name="rma" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Routing_Protocol" max_length="40" name="routing_protocol" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SecurityLevel" max_length="40" name="securitylevel" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Serial_Number" max_length="40" name="serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ServiceSize" max_length="40" name="servicesize" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site ID" max_length="40" name="site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Software_Feature_Set" max_length="40" name="software_feature_set" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Software_Revision-Level" max_length="40" name="software_revision_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Surplus_Date" max_length="40" name="surplus_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Unit_Cost" max_length="40" name="unit_cost" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="UpdateBy" max_length="40" name="updateby" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Version" max_length="40" name="version" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Warranty" max_length="40" name="warranty" type="string"/>
+    </element>
+</database>

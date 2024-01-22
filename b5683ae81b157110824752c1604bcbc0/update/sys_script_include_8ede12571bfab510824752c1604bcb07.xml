@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_g_sonc_ns_pro.nspro_getVRFs</api_name>
         <caller_access/>
@@ -37,13 +37,13 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-04 15:11:35</sys_created_on>
         <sys_id>8ede12571bfab510824752c1604bcb07</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>nspro_getVRFs</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_8ede12571bfab510824752c1604bcb07</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-04 15:20:19</sys_updated_on>
+        <sys_updated_on>2024-01-05 14:23:41</sys_updated_on>
     </sys_script_include>
 </record_update>

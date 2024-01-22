@@ -21,8 +21,9 @@ NcditNsw2Utils2.prototype = {
      */
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    timestamp: function(street, city, state, zip) {
+    timestamp: function() {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
         return new GlideDateTime().getNumericValue();
     },
 
@@ -781,7 +782,9 @@ NcditNsw2Utils2.prototype = {
         var telcoGR = new GlideRecord(telcoTable);
         telcoGR.addQuery("zip", zip);
         telcoGR.addQuery("service_category", svcCat)
-        telcoGR.addQuery("telco_provider.name", "!=", provider_to_ignore);
+        if (provider_to_ignore) {  // add this criteria only if there is a provider to ignore
+            telcoGR.addQuery("telco_provider.name", "!=", provider_to_ignore);
+        }
         telcoGR.orderBy("priority");
         telcoGR.query();
         if (telcoGR.hasNext()) {
@@ -893,7 +896,7 @@ NcditNsw2Utils2.prototype = {
         This function will return a response to indicate if a given pop pe port has adequate capacity to support a bandwidth increase.
         Used primarily for bandwidth increase requests.
 
-        pePortHasCapacity called with pePort sysid: dfcab9d51b8ab8107294db1ee54bcb55, new ce bandwidth = 20000000, increase = 10000000
+        pePortHasCapacity called with pePort sysid: dfcab9d51b8ab8107294db1ee54bcb55, new ce bandwidth = 20, increase = 10
         */
         var LogPrefix = " pePortHasCapacity --> ";
         var poppeportTable = "cmdb_ci_network_circuit";
@@ -3334,6 +3337,9 @@ NcditNsw2Utils2.prototype = {
 
         return returnObject;
     },
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+getGrObject: function(gr, fields) {
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // This will get a GlideRecord as a mostly flat(ish) object.
 
@@ -3360,7 +3366,7 @@ NcditNsw2Utils2.prototype = {
 //     "display_value": ""
 //   }
 // }
-getGrObject: function(gr, fields) {
+
 
 	var obj = {};
 	// If a list of fields has not been provided, use all fields
@@ -3413,19 +3419,43 @@ getGrObject: function(gr, fields) {
 	}
 },
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+addService2Site: function(site, service, agency, start_date) {
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    var LogPrefix = " addService2Site --> ";
+
+    if (this.debug) gs.info(this.timestamp() + LogPrefix + "called to add service to site with:\nsite : " + site + '\nservice: ' + service + '\nagency: ' + agency + '\nstart_date: ' + start_date);
+    var table = 'x_g_sonc_ns_pro_service';
+
+    // if start date is NIL then use current date
+    if (start_date.nil()) {
+        start_date = new GlideDate();
+    }
+
+    var gr = new GlideRecord(table);
+    gr.agency = agency;
+    gr.service_definition = service;
+    gr.cmdb_ci_site = site;
+    gr.start_date = start_date;
+    gr.insert();
+
+},
+
+
     type: 'NcditNsw2Utils2'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-21 10:26:40</sys_created_on>
         <sys_id>fc79b24ddbc6b95040eae46b1396196a</sys_id>
-        <sys_mod_count>172</sys_mod_count>
+        <sys_mod_count>174</sys_mod_count>
         <sys_name>NcditNsw2Utils2</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_fc79b24ddbc6b95040eae46b1396196a</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-11 17:13:52</sys_updated_on>
+        <sys_updated_on>2024-01-08 05:38:51</sys_updated_on>
     </sys_script_include>
 </record_update>

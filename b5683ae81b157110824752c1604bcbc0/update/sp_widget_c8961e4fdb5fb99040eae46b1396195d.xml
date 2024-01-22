@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	c.calculate = function() {
+		c.data.action = "calculate";
+		
+		console.log('ap_cnt = ' + c.data.ap_cnt);
+		
+		c.server.update().then(function(){
+			c.data.action = undefined;
+			//c.data.ap_cnt = "";
+		})
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>nspro_wlan_quote</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>NSPro WLAN Quote</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+	//data.ap_cnt = 0;
+	//data.charge = 0;
+	if (input) {	
+		if (input.action == "calculate") {
+			data.charge = input.ap_cnt * 28.33;
+		}
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-28 16:20:11</sys_created_on>
+        <sys_id>c8961e4fdb5fb99040eae46b1396195d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>NSPro WLAN Quote</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sp_widget_c8961e4fdb5fb99040eae46b1396195d</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-01-02 22:25:06</sys_updated_on>
+        <template><![CDATA[<div>
+  <h2>Wireless LAN (WLAN) Quick Quote</h2>
+  <h4>
+    You can get an estimate of WLAN services costs by entering the information here. Again, the estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment when a survey is performed. The monthly WLAN service recurring charges is based on the total number of wireless access points that are used.
+  </h4>
+  <table style="100%">
+    <tr>
+      <td>WLAN Service one-time charge</td>
+      <td>$500</td>
+    </tr>
+    <tr>
+    	<td>Enter the number of wireless access points required</td>
+      <td>
+          <div class="input-group">
+          <input type="text" class="form-control" ng-model="c.data.ap_cnt" id="ap-cnt" name="ap-cnt">
+          <div class="input-group-btn">
+            <button type = "submit" class="btn btn-primary" ng-click="c.calculate()" >Calculate</button>
+          </div>
+       </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Monthly charge</td>
+    	<td>${{data.charge}}</td>
+    </tr>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

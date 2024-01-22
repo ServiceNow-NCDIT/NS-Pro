@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>table, th, td {
+  border: 1px solid;
+  padding: 5px;
+}
+
+table {
+  width: 100%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>nspro_lan_quote</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>NSPro LAN Quote</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-28 17:03:34</sys_created_on>
+        <sys_id>ab70e2cbdb9fb99040eae46b139619be</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>NSPro LAN Quote</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sp_widget_ab70e2cbdb9fb99040eae46b139619be</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-01-02 22:20:32</sys_updated_on>
+        <template><![CDATA[<div>
+  <h2>Local Area Network (LAN) Quick Quote</h2>
+  <h4>
+    You can get an estimate of LAN services costs by entering the information here. The estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment. The monthly LAN service recurring charges is based on the total switch port capacity and the service level. Two service levels are offered, Basic or Premium.
+  </h4>
+  <table style="100%">
+    <tr>
+      <td>LAN Service one-time charge</td>
+      <td align="right">$500.00</td>
+    </tr>
+    <tr>
+    	<td>Cost per 4-port basic service</td>
+      <td align="right">$  66.84</td>
+    	<td>Cost per 8-port premium switch</td>
+      <td align="right">$ 138.33</td>
+    </tr>
+    <tr>
+      <td>Cost per 24-port basic switch</td>
+    	<td align="right">$ 201.03</td>
+      <td>Cost per 24-port premium switch</td>
+    	<td align="right">$ 258.23</td>
+    </tr>
+    <tr>
+      <td>Cost per 48-port basic switch</td>
+    	<td align="right">$ 314.27</td>
+      <td>Cost per 48-port premium switch</td>
+    	<td align="right">$ 391.70</td>
+    </tr>
+  </table>
+  <h4>
+    Because actual cost will depend on several factors, please request a consultation and someone will reach out to you.
+  </h4>
+</div>]]></template>
+    </sp_widget>
+</record_update>

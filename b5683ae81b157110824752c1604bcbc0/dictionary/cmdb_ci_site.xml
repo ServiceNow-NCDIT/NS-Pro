@@ -10,12 +10,6 @@
         <element label="Request Type" max_length="32" name="x_g_sonc_ns_pro_request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
         <element label="Security LastUpgrade Date" max_length="40" name="x_g_sonc_ns_pro_security_lastupgrade_date" type="glide_date"/>
         <element label="Security Start Date" max_length="40" name="x_g_sonc_ns_pro_security_start_date" type="glide_date"/>
-        <element choice="1" label="Status" max_length="40" name="x_g_sonc_ns_pro_status" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Complete" sequence="10" value="complete"/>
-                <element inactive_on_update="false" label="Delete" sequence="20" value="delete"/>
-            </choice>
-        </element>
         <element label="Telco Provider" max_length="32" name="x_g_sonc_ns_pro_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
         <element label="Telco Room" max_length="100" name="x_g_sonc_ns_pro_telco_room" type="string"/>
         <element choice="1" label="Type" max_length="40" name="x_g_sonc_ns_pro_type" type="choice">

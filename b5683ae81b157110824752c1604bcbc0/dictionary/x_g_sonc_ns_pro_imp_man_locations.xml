@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e8de9697479771d0f4af2ad2e16d43cd" extends="sys_import_set_row" label="Imp MAN Locations" max_length="40" name="x_g_sonc_ns_pro_imp_man_locations" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Address" label="Address" max_length="45" name="u_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Building" label="Building" max_length="40" name="u_building" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Zip" label="Zip" max_length="40" name="u_zip" type="string"/>
+    </element>
+</database>

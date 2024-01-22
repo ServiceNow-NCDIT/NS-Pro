@@ -71,7 +71,7 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : { }
+  "styles" : null
 }, {
   "elementId" : "modalContainerViewport",
   "elementLabel" : "Modal Container (Viewport)",
@@ -157,7 +157,7 @@
   } ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : { }
+  "styles" : null
 }, {
   "elementId" : "resizable_panes",
   "elementLabel" : "Resizable panes",
@@ -247,7 +247,10 @@
           "type" : "JSON_LITERAL",
           "value" : null
         },
-        "defaultRoute" : null,
+        "defaultRoute" : {
+          "type" : "JSON_LITERAL",
+          "value" : null
+        },
         "selectedTabIndex" : {
           "type" : "CONTEXT_BINDING",
           "binding" : {
@@ -374,6 +377,10 @@
             "ariaRegionHeadingLevel" : {
               "type" : "JSON_LITERAL",
               "value" : "1"
+            },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
             },
             "ariaRegionName" : {
               "type" : "TRANSLATION_LITERAL",
@@ -774,7 +781,7 @@
                   "items" : [ ],
                   "styles" : { }
                 } ],
-                "layout" : { }
+                "layout" : null
               },
               "isHidden" : {
                 "type" : "JSON_LITERAL",
@@ -789,15 +796,13 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : {
-                "width" : "100%"
-              }
+              "styles" : null
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"details_resizable_panes","styles":{"flex":"","width":"100%","padding-top":"0.3rem"}}],
+                "items" : [{"element_id":"details_resizable_panes","styles":{"width":"100%","flex":"","padding-top":"0.3rem"}}],
                 "root" : null,
                 "rules" : null,
                 "styles" : {"flex-direction":"row","height":"100%"},
@@ -1325,7 +1330,7 @@
             "apiVersion" : "2.0.0",
             "controllerElementId" : null,
             "inlineScript" : null,
-            "scriptSysId" : "3b658189af937950a6d863fe456dc366",
+            "scriptSysId" : "e4a7c8fc47e7fdd0f4af2ad2e16d43e8",
             "target" : null
           }
         },
@@ -1476,6 +1481,10 @@
               "type" : "JSON_LITERAL",
               "value" : "1"
             },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
             "ariaRegionName" : {
               "type" : "TRANSLATION_LITERAL",
               "value" : {
@@ -1533,15 +1542,13 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : {
-                "position" : "relative"
-              }
+              "styles" : null
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"attachment","styles":{}}],
+                "items" : [{"element_id":"attachment","styles":{"position":"relative"}}],
                 "root" : null,
                 "rules" : null,
                 "styles" : {"padding":"calc(var(--now-scale-space--xl, 1) * var(--now-static-space--xl))","overflow":"auto","height":"calc( 100% - ( (2rem * var(--now-scale-space--xl, 1)) + (var(--now-scale-space--xl, 1) * var(--now-static-space--xl))))"},
@@ -1571,6 +1578,10 @@
             "ariaRegionHeadingLevel" : {
               "type" : "JSON_LITERAL",
               "value" : "1"
+            },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
             },
             "ariaRegionName" : {
               "type" : "TRANSLATION_LITERAL",
@@ -1635,17 +1646,13 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : {
-                "position" : "relative",
-                "width" : "100%",
-                "height" : "100%"
-              }
+              "styles" : null
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"form_templates","styles":{}}],
+                "items" : [{"element_id":"form_templates","styles":{"position":"relative","width":"100%","height":"100%"}}],
                 "root" : null,
                 "rules" : null,
                 "styles" : {"width":"100%","height":"100%"},
@@ -1818,7 +1825,7 @@
         "overflow" : "hidden"
       }
     } ],
-    "layout" : { }
+    "layout" : null
   },
   "isHidden" : {
     "type" : "BINARY",
@@ -1929,9 +1936,7 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
+  "styles" : null
 }, {
   "elementId" : "top_container",
   "elementLabel" : "Top Container",
@@ -1939,6 +1944,10 @@
     "ariaRegionHeadingLevel" : {
       "type" : "JSON_LITERAL",
       "value" : "1"
+    },
+    "hideEmptyStateUi" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
     },
     "ariaRegionName" : {
       "type" : "TRANSLATION_LITERAL",
@@ -1976,6 +1985,10 @@
           "type" : "JSON_LITERAL",
           "value" : "1"
         },
+        "hideEmptyStateUi" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
+        },
         "ariaRegionName" : {
           "type" : "TRANSLATION_LITERAL",
           "value" : {
@@ -2011,6 +2024,10 @@
             "ariaRegionHeadingLevel" : {
               "type" : "JSON_LITERAL",
               "value" : "1"
+            },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
             },
             "ariaRegionName" : {
               "type" : "TRANSLATION_LITERAL",
@@ -2099,11 +2116,7 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : {
-                "max-width" : "42px",
-                "height" : "42px",
-                "margin-inline-end" : "0.75rem"
-              }
+              "styles" : null
             }, {
               "elementId" : "header_content",
               "elementLabel" : "Header content",
@@ -2111,6 +2124,10 @@
                 "ariaRegionHeadingLevel" : {
                   "type" : "JSON_LITERAL",
                   "value" : "1"
+                },
+                "hideEmptyStateUi" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
                 },
                 "ariaRegionName" : {
                   "type" : "TRANSLATION_LITERAL",
@@ -2147,6 +2164,10 @@
                     "ariaRegionHeadingLevel" : {
                       "type" : "JSON_LITERAL",
                       "value" : "1"
+                    },
+                    "hideEmptyStateUi" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : true
                     },
                     "ariaRegionName" : {
                       "type" : "TRANSLATION_LITERAL",
@@ -2200,9 +2221,7 @@
                       "extensionPoints" : [ ],
                       "isNonDestructive" : false,
                       "items" : [ ],
-                      "styles" : {
-                        "min-width" : "0"
-                      }
+                      "styles" : null
                     }, {
                       "elementId" : "record_tags",
                       "elementLabel" : "Record tags",
@@ -2257,16 +2276,13 @@
                       "extensionPoints" : [ ],
                       "isNonDestructive" : false,
                       "items" : [ ],
-                      "styles" : {
-                        "margin-left" : "0.25rem",
-                        "margin-right" : "1rem"
-                      }
+                      "styles" : null
                     } ],
                     "layout" : {
                       "default" : {
                         "children" : null,
                         "isInline" : null,
-                        "items" : [{"element_id":"primary_field","styles":{}},{"element_id":"record_tags","styles":{}}],
+                        "items" : [{"element_id":"primary_field","styles":{"min-width":"0"}},{"element_id":"record_tags","styles":{"margin-left":"0.25rem","margin-right":"1rem"}}],
                         "root" : null,
                         "rules" : null,
                         "styles" : {"width":"100%","flex-direction":"row"},
@@ -2284,9 +2300,7 @@
                   "extensionPoints" : [ ],
                   "isNonDestructive" : false,
                   "items" : [ ],
-                  "styles" : {
-                    "flex-direction" : "column"
-                  }
+                  "styles" : null
                 }, {
                   "elementId" : "subheading",
                   "elementLabel" : "Subheading",
@@ -2341,9 +2355,7 @@
                   "extensionPoints" : [ ],
                   "isNonDestructive" : false,
                   "items" : [ ],
-                  "styles" : {
-                    "margin-top" : "0.5rem"
-                  }
+                  "styles" : null
                 }, {
                   "elementId" : "secondary_items",
                   "elementLabel" : "Secondary items",
@@ -2479,16 +2491,13 @@
                   "extensionPoints" : [ ],
                   "isNonDestructive" : false,
                   "items" : [ ],
-                  "styles" : {
-                    "width" : "max-content",
-                    "max-width" : "200%"
-                  }
+                  "styles" : null
                 } ],
                 "layout" : {
                   "default" : {
                     "children" : null,
                     "isInline" : null,
-                    "items" : [{"element_id":"header_title_row","styles":{}},{"element_id":"subheading","styles":{}},{"element_id":"secondary_items","styles":{}}],
+                    "items" : [{"element_id":"header_title_row","styles":{"flex-direction":"column"}},{"element_id":"subheading","styles":{"margin-top":"0.5rem"}},{"element_id":"secondary_items","styles":{"width":"max-content","max-width":"200%"}}],
                     "root" : null,
                     "rules" : null,
                     "styles" : {"flex-direction":"column"},
@@ -2506,15 +2515,13 @@
               "extensionPoints" : [ ],
               "isNonDestructive" : false,
               "items" : [ ],
-              "styles" : {
-                "width" : ""
-              }
+              "styles" : null
             } ],
             "layout" : {
               "default" : {
                 "children" : null,
                 "isInline" : null,
-                "items" : [{"element_id":"header_image","styles":{}},{"element_id":"header_content","styles":{}},{"element_id":"top_right_container","styles":{}}],
+                "items" : [{"element_id":"header_image","styles":{"max-width":"42px","height":"42px","margin-inline-end":"0.75rem"}},{"element_id":"header_content","styles":{"width":""}},{"element_id":"top_right_container","styles":{}}],
                 "root" : null,
                 "rules" : null,
                 "styles" : {"flex-direction":"row","gap":""},
@@ -2628,15 +2635,13 @@
           "extensionPoints" : [ ],
           "isNonDestructive" : false,
           "items" : [ ],
-          "styles" : {
-            "width" : "100%"
-          }
+          "styles" : null
         } ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"rules":{},"styles":{},"element_id":"header_container"}],
+            "items" : [{"rules":{},"styles":{"width":"100%"},"element_id":"header_container"}],
             "root" : null,
             "rules" : {},
             "styles" : {"align-items":"flex-start","display":"flex","gap":"1.5rem 1.5rem 0.75rem"},
@@ -2654,9 +2659,7 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : {
-        "min-width" : "0px"
-      }
+      "styles" : null
     }, {
       "elementId" : "top_right_container",
       "elementLabel" : "Top Right",
@@ -2664,6 +2667,10 @@
         "ariaRegionHeadingLevel" : {
           "type" : "JSON_LITERAL",
           "value" : "1"
+        },
+        "hideEmptyStateUi" : {
+          "type" : "JSON_LITERAL",
+          "value" : true
         },
         "ariaRegionName" : {
           "type" : "TRANSLATION_LITERAL",
@@ -2822,7 +2829,7 @@
           "extensionPoints" : [ ],
           "isNonDestructive" : false,
           "items" : [ ],
-          "styles" : { }
+          "styles" : null
         }, {
           "elementId" : "form_record_presence",
           "elementLabel" : "Form record presence",
@@ -2943,7 +2950,7 @@
           "extensionPoints" : [ ],
           "isNonDestructive" : false,
           "items" : [ ],
-          "styles" : { }
+          "styles" : null
         } ],
         "layout" : {
           "default" : {
@@ -2967,15 +2974,13 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : {
-        "flex" : "1 0 auto"
-      }
+      "styles" : null
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"top_left_container","styles":{}},{"element_id":"top_right_container","styles":{}}],
+        "items" : [{"element_id":"top_left_container","styles":{"min-width":"0px"}},{"element_id":"top_right_container","styles":{"flex":"1 0 auto"}}],
         "root" : null,
         "rules" : null,
         "styles" : {"padding":"1.5rem 1.5rem 0.75rem"},
@@ -2993,9 +2998,7 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
+  "styles" : null
 }, {
   "elementId" : "ribbon_container",
   "elementLabel" : "Ribbon Container",
@@ -3003,6 +3006,10 @@
     "ariaRegionHeadingLevel" : {
       "type" : "JSON_LITERAL",
       "value" : "1"
+    },
+    "hideEmptyStateUi" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
     },
     "ariaRegionName" : {
       "type" : "TRANSLATION_LITERAL",
@@ -3084,7 +3091,7 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : { }
+      "styles" : null
     } ],
     "layout" : {
       "default" : {
@@ -3108,9 +3115,7 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
+  "styles" : null
 }, {
   "elementId" : "warning_messages_container",
   "elementLabel" : "Warning Messages Container",
@@ -3118,6 +3123,10 @@
     "ariaRegionHeadingLevel" : {
       "type" : "JSON_LITERAL",
       "value" : "1"
+    },
+    "hideEmptyStateUi" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
     },
     "ariaRegionName" : {
       "type" : "TRANSLATION_LITERAL",
@@ -3247,7 +3256,7 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : { }
+      "styles" : null
     }, {
       "elementId" : "security_constraints",
       "elementLabel" : "Security constraints",
@@ -3392,7 +3401,7 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : { }
+      "styles" : null
     } ],
     "layout" : {
       "default" : {
@@ -3416,9 +3425,7 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
+  "styles" : null
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -3787,7 +3794,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"top_container","styles":{}},{"element_id":"ribbon_container","styles":{}},{"element_id":"warning_messages_container","styles":{}},{"element_id":"resizable_panes","styles":{"flex":"none","min-width":"730px"}}],
+    "items" : [{"element_id":"top_container","styles":{"width":"100%"}},{"element_id":"ribbon_container","styles":{"width":"100%"}},{"element_id":"warning_messages_container","styles":{"width":"100%"}},{"element_id":"resizable_panes","styles":{"width":"100%","flex":"none","min-width":"730px"}}],
     "root" : null,
     "rules" : null,
     "styles" : {"overflow-x":"auto","width":"100%","height":"100%","display":"grid","grid-template-rows":"max-content max-content max-content minmax(0px, 1fr)","grid-template-columns":"1fr"},
@@ -3980,13 +3987,13 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-22 05:18:07</sys_created_on>
         <sys_id>9b75898947937950f4af2ad2e16d43c2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Port Connection Record Page</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ux_macroponent_9b75898947937950f4af2ad2e16d43c2</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-22 05:18:07</sys_updated_on>
+        <sys_updated_on>2024-01-02 16:25:06</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

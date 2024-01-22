@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="hasLabels=true" db_object_id="9d0739f5db221300a27757c5ca9619a7" defaultsort="-1" dynamic_creation_script="// default on the table level is to create a server&#13;&#10;&#13;&#10;var gr = new GlideRecord(&quot;cmdb_ci_server&quot;);&#13;&#10;gr.initialize();&#13;&#10;gr.name=value;&#13;&#10;gr.insert();" extends="cmdb" label="Configuration Item" max_length="40" name="cmdb_ci" text_index="true" type="collection">
+        <element choice="1" label="NSPro Future Status" max_length="40" name="x_g_sonc_ns_pro_nspro_future_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Maintenance" value="3"/>
+                <element inactive_on_update="false" label="In Stock" value="6"/>
+                <element inactive_on_update="false" label="Installed" value="1"/>
+                <element inactive_on_update="false" label="Pending Install" value="4"/>
+                <element inactive_on_update="false" label="Relocate" value="80"/>
+                <element inactive_on_update="false" label="Retired" value="7"/>
+            </choice>
+        </element>
+        <element choice="1" label="NSPro State" max_length="40" name="x_g_sonc_ns_pro_nspro_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" value="pending"/>
+                <element inactive_on_update="false" label="Static" value="static"/>
+            </choice>
+        </element>
+    </element>
+</database>

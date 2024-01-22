@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="Network Operations_menu_config">4d75c18947937950f4af2ad2e16d43c4</configuration>
+        <description/>
+        <order>500</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-30 04:18:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c5540eef475bf1d0f4af2ad2e16d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Administration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ux_list_category_c5540eef475bf1d0f4af2ad2e16d4364</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-30 04:18:30</sys_updated_on>
+        <title>Table Administration</title>
+    </sys_ux_list_category>
+</record_update>

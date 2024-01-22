@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	c.zipChanged = function() {
+		
+		console.log('zip = ' + c.zip);
+		console.log('ha = ' + c.ha);
+		console.log('zipFound = ' + c.zipFound);
+		
+		c.data.zip = c.zip;
+		c.data.ha = c.ha;
+		
+		c.server.update();
+		
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>nspro_wan_quote</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>NSPro WAN Quote</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	var manLoc = [];
+	var services = [];
+
+	if (input) {
+
+		console.log('server zip = ' + input.zip);
+
+		var gr = new GlideRecord('x_g_sonc_ns_pro_man_locations');
+		gr.addQuery('zip', 'CONTAINS', input.zip);
+		gr.orderBy('address');
+		gr.query();
+		data.zipFound = gr.hasNext();
+
+		// look up services
+		var grSvc = new GlideRecord('x_g_sonc_ns_pro_service_definition');
+		if (input.zipFound) {
+			grSvc.addQuery('svc_title', 'CONTAINS', 'MAN');
+		}
+		else {
+			grSvc.addQuery('svc_title', 'DOES NOT CONTAIN', 'MAN');
+		}
+		if (input.ha == true) {
+			grSvc.addQuery('svc_ha_category', 'Gold');
+		}
+		else {
+			grSvc.addQuery('svc_ha_category', '!=', 'Gold');
+		}
+		grSvc.orderBy('svc_title');
+		grSvc.query();
+		while (grSvc.next()) {
+			var svc = {};
+			svc.definition = grSvc.getValue('svc_title');
+			svc.code = grSvc.getValue('svc_code');
+			services.push(svc);
+		}
+		data.services = services;
+
+		//while (gr.next()) {
+		//	manLoc.push(gr.getValue('address'));
+		//}
+		//data.manLoc = manLoc;
+		//console.log('data.manLoc = ' + data.manLoc);
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-28 18:00:00</sys_created_on>
+        <sys_id>d66de60fdb13f99040eae46b1396192a</sys_id>
+        <sys_mod_count>71</sys_mod_count>
+        <sys_name>NSPro WAN Quote</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sp_widget_d66de60fdb13f99040eae46b1396192a</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-01-08 20:12:22</sys_updated_on>
+        <template><![CDATA[<div>
+	<h2>
+    Wide Area Network (WAN) Quick Quote
+  </h2>
+  <h4>
+    <p>
+      Enter a zip code and select a service to get a quick estimate of the monthly cost for network services. Remember, this is an estimate only and may not include other one-time charges like construction costs. Use this to get an idea of what services are available for a location and to compare the cost of one type of service with another.
+    </p>
+    <p>
+  		If a service offering does not appear in the selection drop-down, then it might not be currently available at the supplied zip code. If service is indeed required but not show as available, go ahead and request the service you need using the New Service Request and fill in your need in the "special instructions" field. Someone will review your request and contact you.
+		</p>
+		<p>
+  		When ready, order your service by submitting a New Service Request from this page.
+		</p>
+  </h4>
+  <table width="100%">
+    <tr>
+    	<td>WAN Service one-time charge</td>
+      <td>$500</td>
+    </tr>
+    <tr>
+      <td>Circuit redundancy required</td>
+      <td><input type="checkbox" id="ha" ng-model="c.ha"></td>
+    </tr>
+    <tr>
+    	<td>Enter 5 digit zip code</td>
+      <td><input type="text" id="zip" ng-model="c.zip" ng-blur="c.zipChanged()"></td>
+      <td>{{data.zipFound}}</td>
+    </tr>
+    <tr ng-if="data.zipFound">
+      <td>Search list of MAN locations</td>
+      <td><sn-record-picker field="location" table="'cmn_location'" display-field="'name'" value-field="'sys_id'" search-fields="'name'" page-size="100" ></sn-record-picker></td>
+    </tr>
+  </table>
+  
+  <table width="100%">
+    <th>Service Title</th>
+    <th>Service Code</th>
+    <tr ng-repeat="svc in c.data.services">
+    	<td>{{svc.definition}}</td>
+      <td>{{svc.code}}</td>
+    </tr>
+  </table>
+    
+    
+    <!--
+    <tr ng-repeat="row in c.data.manLoc">
+    	<td>Metropolitan Area Network?</td>
+      <td>
+        {{row}}
+      </td>
+    </tr>
+
+  </table>
+
+-->
+  <pre>
+  {{c.data | json}}
+  </pre>
+</div>]]></template>
+    </sp_widget>
+</record_update>

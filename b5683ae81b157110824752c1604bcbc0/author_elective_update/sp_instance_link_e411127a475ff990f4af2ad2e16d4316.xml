@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item display_value="Network Service Request - New Service">670690da1bf5f110824752c1604bcbe7</sc_cat_item>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">b9d88ab2471ff990f4af2ad2e16d4387</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-27 21:17:43</sys_created_on>
+        <sys_id>e411127a475ff990f4af2ad2e16d4316</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>New Service</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sp_instance_link_e411127a475ff990f4af2ad2e16d4316</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-28 09:03:08</sys_updated_on>
+        <title>New Service</title>
+        <type>sc_cat_item</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=e411127a475ff990f4af2ad2e16d4316"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sp_instance_link_e411127a475ff990f4af2ad2e16d4316</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item display_value="Network Service Request - New Service"&gt;670690da1bf5f110824752c1604bcbe7&lt;/sc_cat_item&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;b9d88ab2471ff990f4af2ad2e16d4387&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wbbusby&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-27 21:17:43&lt;/sys_created_on&gt;&lt;sys_id&gt;e411127a475ff990f4af2ad2e16d4316&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;New Service&lt;/sys_name&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_e411127a475ff990f4af2ad2e16d4316&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wbbusby&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-28 09:03:08&lt;/sys_updated_on&gt;&lt;title&gt;New Service&lt;/title&gt;&lt;type&gt;sc_cat_item&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=e411127a475ff990f4af2ad2e16d4316"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>667603607</payload_hash>
+        <record_name>New Service</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-28 09:03:09</sys_created_on>
+        <sys_id>ca82704b475b7d90f4af2ad2e16d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cafa9c8d00000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-28 09:03:09</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>0282704bcd5b7d9039492fec2cf4d22e</update_guid>
+        <update_guid_history>0282704bcd5b7d9039492fec2cf4d22e:667603607,a9a0b4c39a5b7d90919fa5a33cae78e5:1120336845,a3a79a767e9ff99089d873eedb1a24b6:2011431047,6f71daba6d5ff9901a7a31da632863f8:514305640,a411127a4f5ff990aaf556f1801f0d18:833846645</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12/28/2023 06:45:54">4985e107db1bb99040eae46b139619ef</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-28 12:45:54</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>088192a58c2d4ec887c4b8d39b961b11</sys_id>
+        <sys_metadata>e411127a475ff990f4af2ad2e16d4316</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Service</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sp_instance_link_e411127a475ff990f4af2ad2e16d4316</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_e411127a475ff990f4af2ad2e16d4316">ca82704b475b7d90f4af2ad2e16d432e</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-28 12:45:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

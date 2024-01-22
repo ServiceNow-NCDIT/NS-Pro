@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>NSPro User - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="nspro">8a1842f2471ff990f4af2ad2e16d43c7</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-27 20:41:15</sys_created_on>
+        <sys_id>66b84e36471ff990f4af2ad2e16d43eb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>NSPro User - Container 1</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sp_container_66b84e36471ff990f4af2ad2e16d43eb</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-28 11:31:35</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sp_container_66b84e36471ff990f4af2ad2e16d43eb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>NSPro User - Container 1</name><order>1</order><sp_page display_value="nspro">8a1842f2471ff990f4af2ad2e16d43c7</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-27 20:41:15</sys_created_on><sys_id>66b84e36471ff990f4af2ad2e16d43eb</sys_id><sys_mod_count>2</sys_mod_count><sys_name>NSPro User - Container 1</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sp_container_66b84e36471ff990f4af2ad2e16d43eb</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-28 11:31:35</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>1290816086</payload_hash>
+        <record_name>NSPro User - Container 1</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-28 11:31:35</sys_created_on>
+        <sys_id>ec841583db97b99040eae46b139619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cb031b0ac0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-28 11:31:35</sys_updated_on>
+        <type>Container</type>
+        <update_guid>e08415830b97b9904109b9c05c07fdd4</update_guid>
+        <update_guid_history>e08415830b97b9904109b9c05c07fdd4:1290816086,ca26b4836f9b7d90329d70041f9eb877:-2078486073,a6b84e36d61ff990157ca79d470a30ec:-1228781707</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 12/28/2023 06:46:54">3bb561c3db1bb99040eae46b1396196a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-28 12:46:54</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>2773fb4889cb4f4293f75ef253209811</sys_id>
+        <sys_metadata>66b84e36471ff990f4af2ad2e16d43eb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NSPro User - Container 1</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sp_container_66b84e36471ff990f4af2ad2e16d43eb</sys_update_name>
+        <sys_update_version display_value="sp_container_66b84e36471ff990f4af2ad2e16d43eb">ec841583db97b99040eae46b139619d4</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-28 12:46:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

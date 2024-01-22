@@ -3,299 +3,7 @@
         <associated_types/>
         <category>page</category>
         <component_dependencies/>
-        <composition>[ {
-  "elementId" : "container_1",
-  "elementLabel" : "Container 1",
-  "propertyValues" : {
-    "ariaRegionHeadingLevel" : {
-      "type" : "JSON_LITERAL",
-      "value" : "1"
-    },
-    "hideEmptyStateUi" : {
-      "type" : "JSON_LITERAL",
-      "value" : true
-    },
-    "ariaRegionName" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "code" : null,
-        "message" : "",
-        "comment" : ""
-      }
-    },
-    "includeAriaHeading" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "type" : {
-      "type" : "JSON_LITERAL",
-      "value" : "section"
-    },
-    "ariaRole" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "eventMappings" : [ ],
-  "slot" : null,
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "btn_new_service",
-      "elementLabel" : "Button New Service",
-      "propertyValues" : {
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "md"
-        },
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "primary-positive"
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Request New Services",
-            "comment" : ""
-          }
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : null,
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : null
-    }, {
-      "elementId" : "button_1",
-      "elementLabel" : "Button 1",
-      "propertyValues" : {
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "md"
-        },
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "primary-positive"
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Change Services",
-            "comment" : ""
-          }
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : null,
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : null
-    }, {
-      "elementId" : "button_2",
-      "elementLabel" : "Button 2",
-      "propertyValues" : {
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "md"
-        },
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "primary-positive"
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Relocate Existing Site",
-            "comment" : ""
-          }
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : null,
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : null
-    }, {
-      "elementId" : "button_3",
-      "elementLabel" : "Button 3",
-      "propertyValues" : {
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "md"
-        },
-        "variant" : {
-          "type" : "JSON_LITERAL",
-          "value" : "primary-positive"
-        },
-        "icon" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Terminate Site",
-            "comment" : ""
-          }
-        },
-        "tooltipContent" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a label",
-            "comment" : ""
-          }
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : { }
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : null,
-      "definition" : {
-        "id" : "d37ce8abca89d02905fed903c8e34d8e",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : null,
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : null
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "isInline" : null,
-        "items" : [{"element_id":"btn_new_service","styles":{"margin":"var(--now-static-space--lg)","padding":"var(--now-static-space--lg)","background":"rgb(var(--now-color--primary-2))","text-align":"center"}},{"element_id":"button_1","styles":{"margin":"var(--now-static-space--lg)","padding":"var(--now-static-space--lg)","background":"rgb(var(--now-color--primary-2))","text-align":"center"}},{"element_id":"button_2","styles":{"margin":"var(--now-static-space--lg)","padding":"var(--now-static-space--lg)","background":"rgb(var(--now-color--primary-2))","text-align":"center"}},{"element_id":"button_3","styles":{"margin":"var(--now-static-space--lg)","padding":"var(--now-static-space--lg)","background":"rgb(var(--now-color--primary-2))","text-align":"center"}}],
-        "root" : null,
-        "rules" : null,
-        "styles" : {"flex-direction":"column","display":"grid","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr"},
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "grid"
-      },
-      "version" : "3.0.0"
-    }
-  },
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  },
-  "isHero" : false,
-  "extensionPoints" : [ ],
-  "isNonDestructive" : false,
-  "items" : [ ],
-  "styles" : null
-} ]</composition>
+        <composition>[ ]</composition>
         <da_relay_models/>
         <data>[ ]</data>
         <description/>
@@ -312,7 +20,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"container_1","styles":{"width":"100%","background":"rgb(var(--now-color--secondary-2))"}}],
+    "items" : [],
     "root" : null,
     "rules" : null,
     "styles" : {"grid-template-rows":"minmax(400px,auto)","grid-template-columns":"1fr","grid-template-areas":"\"main\"","grid-gap":"var(--now-static-space--lg)","height":"100%","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"solid","border-radius":"var(--now-static-border-radius--lg)","gap":"var(--now-static-space--lg)"},
@@ -349,22 +57,7 @@
   "selectable" : false,
   "disabled" : false
 } ]</props>
-        <required_translations>[ {
-  "message" : "Change Services",
-  "comment" : ""
-}, {
-  "message" : "Enter a label",
-  "comment" : ""
-}, {
-  "message" : "Relocate Existing Site",
-  "comment" : ""
-}, {
-  "message" : "Request New Services",
-  "comment" : ""
-}, {
-  "message" : "Terminate Site",
-  "comment" : ""
-} ]</required_translations>
+        <required_translations>[ ]</required_translations>
         <root_component/>
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
@@ -374,13 +67,13 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-22 05:17:55</sys_created_on>
         <sys_id>bb658189ae9379500092747c22de2264</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ux_macroponent_bb658189ae9379500092747c22de2264</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-22 08:12:38</sys_updated_on>
+        <sys_updated_on>2023-12-30 04:15:27</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
