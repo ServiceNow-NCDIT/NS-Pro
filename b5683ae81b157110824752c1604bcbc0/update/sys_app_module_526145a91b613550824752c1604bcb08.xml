@@ -14,7 +14,7 @@
         <mobile_title>Port Connections</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_g_sonc_ns_pro_port_connection</name>
-        <order/>
+        <order>10</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -25,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>526145a91b613550824752c1604bcb08</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Port Connections</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -33,7 +33,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_app_module_526145a91b613550824752c1604bcb08</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-09-27 18:27:22</sys_updated_on>
+        <sys_updated_on>2024-01-26 14:28:01</sys_updated_on>
         <timeline_page/>
         <title>Port Connections</title>
         <uncancelable>false</uncancelable>

@@ -4,13 +4,13 @@
             <element>wan_cpe_ports_required</element>
             <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>16693e35db66b19040eae46b13961913</sys_id>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>5c0c9e00db99825040eae46b139619d6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,69 @@
             <element>wan_circuit_type_jack</element>
             <position>1</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>1e693e35db66b19040eae46b13961913</sys_id>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>540c9e00db99825040eae46b139619d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_wan_service</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>580c9e00db99825040eae46b139619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>12693e35db66b19040eae46b13961914</sys_id>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>5c0c9e00db99825040eae46b139619d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>requested_for</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>16693e35db66b19040eae46b13961914</sys_id>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>500c9e00db99825040eae46b139619d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>requested_vrf</element>
-            <position>4</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>1a693e35db66b19040eae46b13961914</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>requested_service_codes</element>
             <position>5</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>1e693e35db66b19040eae46b13961914</sys_id>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>540c9e00db99825040eae46b139619d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>wlan_ap_required</element>
             <position>6</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>12693e35db66b19040eae46b13961915</sys_id>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>580c9e00db99825040eae46b139619d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>demarc_location</element>
             <position>7</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-11-17 14:52:55</sys_created_on>
-            <sys_id>16693e35db66b19040eae46b13961915</sys_id>
+            <sys_created_on>2024-03-27 19:07:46</sys_created_on>
+            <sys_id>5c0c9e00db99825040eae46b139619d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">3ee0ead6db5a751040eae46b1396192f</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-11-17 14:52:55</sys_updated_on>
+            <sys_updated_on>2024-03-27 19:07:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

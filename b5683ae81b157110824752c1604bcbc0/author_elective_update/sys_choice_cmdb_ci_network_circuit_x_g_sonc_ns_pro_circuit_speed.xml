@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_g_sonc_ns_pro_circuit_speed" table="cmdb_ci_network_circuit" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <name>cmdb_ci_network_circuit</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:14:47</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_circuit_speed</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_cmdb_ci_network_circuit_x_g_sonc_ns_pro_circuit_speed</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-29 21:14:47</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:14:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:00</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:15:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:09</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>10M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:16:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:21</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>20M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:16:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:29</sys_updated_on>
+            <value>20</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>50M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:17:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:36</sys_updated_on>
+            <value>50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>60M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:17:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:45</sys_updated_on>
+            <value>60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>100M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:17:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:52</sys_updated_on>
+            <value>100</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>200M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:17:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:44:58</sys_updated_on>
+            <value>200</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>250M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>90</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:18:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:45:05</sys_updated_on>
+            <value>250</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>500M</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:18:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:45:13</sys_updated_on>
+            <value>500</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>110</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:18:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:45:48</sys_updated_on>
+            <value>1000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>120</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:18:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:45:56</sys_updated_on>
+            <value>2000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>130</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:18:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:02</sys_updated_on>
+            <value>3000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>140</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:19:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:08</sys_updated_on>
+            <value>4000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>150</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:19:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:16</sys_updated_on>
+            <value>5000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>6G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>160</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:19:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:22</sys_updated_on>
+            <value>6000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>7G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>170</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:19:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:26</sys_updated_on>
+            <value>7000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>8G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>180</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:20:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:33</sys_updated_on>
+            <value>8000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>9G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>190</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:20:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:38</sys_updated_on>
+            <value>9000</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>10G</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:20:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-13 18:46:45</sys_updated_on>
+            <value>10000</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

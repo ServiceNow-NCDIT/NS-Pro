@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="55a4aa5447dc0e10f4af2ad2e16d43c0" extends="cmdb_ci_server" label="Servidor" max_length="40" name="x_g_sonc_ns_pro_novell" type="collection"/>
+</database>

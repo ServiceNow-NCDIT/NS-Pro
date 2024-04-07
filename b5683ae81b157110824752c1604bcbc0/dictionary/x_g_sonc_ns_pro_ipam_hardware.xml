@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ac4c4a90471c0e10f4af2ad2e16d430d" extends="cmdb_ci_netgear" label="Equipo de red" max_length="40" name="x_g_sonc_ns_pro_ipam_hardware" type="collection"/>
+</database>

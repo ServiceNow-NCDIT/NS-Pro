@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3f40e2d4475c0e10f4af2ad2e16d43cd" extends="cmdb_ci_server" label="Cisco" max_length="40" name="x_g_sonc_ns_pro_cisco" type="collection"/>
+</database>

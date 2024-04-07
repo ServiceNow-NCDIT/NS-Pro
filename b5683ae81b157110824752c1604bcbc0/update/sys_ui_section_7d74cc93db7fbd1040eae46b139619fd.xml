@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="7d74cc93db7fbd1040eae46b139619fd" sys_domain="global" table="x_g_sonc_ns_pro_nswan_service" version="3" view="workspace-ns-pro-imc-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7174cc93db7fbd1040eae46b139619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site_id</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7574cc93db7fbd1040eae46b139619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7974cc93db7fbd1040eae46b139619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dept_code</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7d74cc93db7fbd1040eae46b139619ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>717400d3db7fbd1040eae46b13961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>project</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>757400d3db7fbd1040eae46b13961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>street_address</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>797400d3db7fbd1040eae46b13961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>floor_suite</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7d7400d3db7fbd1040eae46b13961900</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>717400d3db7fbd1040eae46b13961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>757400d3db7fbd1040eae46b13961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>county</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>797400d3db7fbd1040eae46b13961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_name</element>
+            <position>11</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7d7400d3db7fbd1040eae46b13961901</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>12</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>717400d3db7fbd1040eae46b13961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contacts_phone</element>
+            <position>13</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>757400d3db7fbd1040eae46b13961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>14</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>797400d3db7fbd1040eae46b13961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contacts_email_address</element>
+            <position>15</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7d7400d3db7fbd1040eae46b13961902</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>16</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>717400d3db7fbd1040eae46b13961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>alt_contacts_name</element>
+            <position>17</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>757400d3db7fbd1040eae46b13961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>18</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>797400d3db7fbd1040eae46b13961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>alt_contacts_phone</element>
+            <position>19</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7d7400d3db7fbd1040eae46b13961903</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>20</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>717400d3db7fbd1040eae46b13961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>alt_contacts_email_address</element>
+            <position>21</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>757400d3db7fbd1040eae46b13961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>22</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>797400d3db7fbd1040eae46b13961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serv_type</element>
+            <position>23</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7d7400d3db7fbd1040eae46b13961904</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order</element>
+            <position>24</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>717400d3db7fbd1040eae46b13961905</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_date</element>
+            <position>25</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b57400d3db7fbd1040eae46b1396195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_service_date</element>
+            <position>26</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b97400d3db7fbd1040eae46b1396195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>27</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>bd7400d3db7fbd1040eae46b1396195c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <position>28</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b17400d3db7fbd1040eae46b1396195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>29</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b57400d3db7fbd1040eae46b1396195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>system_district</element>
+            <position>30</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b97400d3db7fbd1040eae46b1396195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>31</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>bd7400d3db7fbd1040eae46b1396195d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>remarks</element>
+            <position>32</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b17400d3db7fbd1040eae46b1396195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>33</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b57400d3db7fbd1040eae46b1396195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rjzfsiteid</element>
+            <position>34</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b97400d3db7fbd1040eae46b1396195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>zip</element>
+            <position>35</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>bd7400d3db7fbd1040eae46b1396195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lastupgradedate</element>
+            <position>36</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b17400d3db7fbd1040eae46b1396195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>latitude</element>
+            <position>37</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b57400d3db7fbd1040eae46b1396195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>38</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b97400d3db7fbd1040eae46b1396195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>longitude</element>
+            <position>39</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>bd7400d3db7fbd1040eae46b1396195f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>allowdupsw</element>
+            <position>40</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b17400d3db7fbd1040eae46b13961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>officehours</element>
+            <position>41</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b57400d3db7fbd1040eae46b13961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>42</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b97400d3db7fbd1040eae46b13961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vantivename</element>
+            <position>43</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>bd7400d3db7fbd1040eae46b13961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>44</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b17400d3db7fbd1040eae46b13961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vantivesite</element>
+            <position>45</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b57400d3db7fbd1040eae46b13961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sitetype</element>
+            <position>46</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b97400d3db7fbd1040eae46b13961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>47</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>bd7400d3db7fbd1040eae46b13961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>securitystartdate</element>
+            <position>48</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b17400d3db7fbd1040eae46b13961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>securitylastupgradedate</element>
+            <position>49</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b57400d3db7fbd1040eae46b13961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>50</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b97400d3db7fbd1040eae46b13961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_service" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">7d74cc93db7fbd1040eae46b139619fd</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_nswan_service</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d74cc93db7fbd1040eae46b139619fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_nswan_service</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_7d74cc93db7fbd1040eae46b139619fd</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace NS Pro IMC 0" name="workspace-ns-pro-imc-0">c8644493de7fbd10af5b1b2cb2c51ef5</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="cb6878b61ba9bd50824752c1604bcb4e" sys_domain="global" table="x_g_sonc_ns_pro_port_connection" version="3" view="nspro">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6a10b66c1b07b150824752c1604bcba4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vrf</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6210b66c1b07b150824752c1604bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>network_gear</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6610b66c1b07b150824752c1604bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_id</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6a10b66c1b07b150824752c1604bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_number</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6e10b66c1b07b150824752c1604bcba5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serial_number</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6210b66c1b07b150824752c1604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ip_address</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6610b66c1b07b150824752c1604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>subnet_mask</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6a10b66c1b07b150824752c1604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gateway</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6e10b66c1b07b150824752c1604bcba6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6210b66c1b07b150824752c1604bcba7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>port_status</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6610b66c1b07b150824752c1604bcba7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>install_status</element>
+            <position>11</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6a10b66c1b07b150824752c1604bcba7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>operational_status</element>
+            <position>12</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6e10b66c1b07b150824752c1604bcba7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cir</element>
+            <position>13</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6210b66c1b07b150824752c1604bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>secondary_address</element>
+            <position>14</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6610b66c1b07b150824752c1604bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>client_id</element>
+            <position>15</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6a10b66c1b07b150824752c1604bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>master_device_interface</element>
+            <position>16</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6e10b66c1b07b150824752c1604bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rmtdlci</element>
+            <position>17</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6210b66c1b07b150824752c1604bcba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>locdlci</element>
+            <position>18</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6610b66c1b07b150824752c1604bcba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>19</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6a10b66c1b07b150824752c1604bcba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>20</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6e10b66c1b07b150824752c1604bcba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>21</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+            <sys_id>6210b66c1b07b150824752c1604bcbaa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_port_connection</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-01 15:00:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb6878b61ba9bd50824752c1604bcb4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_port_connection</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_cb6878b61ba9bd50824752c1604bcb4e</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-01 15:00:31</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_section_cb6878b61ba9bd50824752c1604bcb4e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="cb6878b61ba9bd50824752c1604bcb4e" sys_domain="global" table="x_g_sonc_ns_pro_port_connection" version="3" view="nspro"><sys_ui_element action="INSERT_OR_UPDATE"><element>name</element><position>0</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6a10b66c1b07b150824752c1604bcba4</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>vrf</element><position>1</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6210b66c1b07b150824752c1604bcba5</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>network_gear</element><position>2</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6610b66c1b07b150824752c1604bcba5</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>model_id</element><position>3</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6a10b66c1b07b150824752c1604bcba5</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>model_number</element><position>4</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6e10b66c1b07b150824752c1604bcba5</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>serial_number</element><position>5</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6210b66c1b07b150824752c1604bcba6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>ip_address</element><position>6</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6610b66c1b07b150824752c1604bcba6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>subnet_mask</element><position>7</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6a10b66c1b07b150824752c1604bcba6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>gateway</element><position>8</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6e10b66c1b07b150824752c1604bcba6</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>9</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6210b66c1b07b150824752c1604bcba7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>port_status</element><position>10</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6610b66c1b07b150824752c1604bcba7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>install_status</element><position>11</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6a10b66c1b07b150824752c1604bcba7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>operational_status</element><position>12</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6e10b66c1b07b150824752c1604bcba7</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>cir</element><position>13</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6210b66c1b07b150824752c1604bcba8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>secondary_address</element><position>14</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6610b66c1b07b150824752c1604bcba8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>client_id</element><position>15</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6a10b66c1b07b150824752c1604bcba8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>master_device_interface</element><position>16</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6e10b66c1b07b150824752c1604bcba8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>rmtdlci</element><position>17</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6210b66c1b07b150824752c1604bcba9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>locdlci</element><position>18</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6610b66c1b07b150824752c1604bcba9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>19</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6a10b66c1b07b150824752c1604bcba9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>20</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6e10b66c1b07b150824752c1604bcba9</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>comments</element><position>21</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-08 13:31:16</sys_created_on><sys_id>6210b66c1b07b150824752c1604bcbaa</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port_connection" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">cb6878b61ba9bd50824752c1604bcb4e</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-08 13:31:16</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_g_sonc_ns_pro_port_connection</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-01 15:00:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cb6878b61ba9bd50824752c1604bcb4e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_port_connection</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_section_cb6878b61ba9bd50824752c1604bcb4e</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-01 15:00:31</sys_updated_on><sys_user/><title>false</title><view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1573494778</payload_hash>
+        <record_name>Port Connection</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-08 13:31:16</sys_created_on>
+        <sys_id>2a10b66c1b07b150824752c1604bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c49a011e30000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-08 13:31:16</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>ae10b66cc507b1507450fe8bc47a22ac</update_guid>
+        <update_guid_history>ae10b66cc507b1507450fe8bc47a22ac:-1573494778,eb1deea41207b150ba5fbefd39b13c99:1861707013,da5ca264ab07b1505f6301cddd1cf082:1129650163,a38baae06707b150bd56ae9db7e91289:-813125924,ae3e7e1c718331508dd3b2f9adc00944:-28281644,dc40d2488d877d1048dd405b1d85998f:1741359247,5b6878b660a9bd506f6eb4196a3d7c5f:1261320758</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-15 17:50:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0522d9986c774c14b850d9f2b768da29</sys_id>
+        <sys_metadata>cb6878b61ba9bd50824752c1604bcb4e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_port_connection</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Port Connection">c94101a91b613550824752c1604bcb99</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_section_cb6878b61ba9bd50824752c1604bcb4e</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_cb6878b61ba9bd50824752c1604bcb4e">2a10b66c1b07b150824752c1604bcbad</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-15 17:50:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

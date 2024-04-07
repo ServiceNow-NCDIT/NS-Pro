@@ -12,7 +12,7 @@
         <element label="Local Circuit" max_length="32" name="local_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="LocDLCI" max_length="40" name="locdlci" type="string"/>
         <element label="Master Device Interface" max_length="40" name="master_device_interface" type="string"/>
-        <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" type="reference"/>
+        <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_floats="true" type="reference"/>
         <element label="POP Circuit" max_length="32" name="pop_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
         <element choice="1" label="Port Status" max_length="40" name="port_status" type="choice">
             <choice>

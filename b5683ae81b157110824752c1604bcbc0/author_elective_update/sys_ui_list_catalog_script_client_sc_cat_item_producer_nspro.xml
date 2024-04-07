@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="sc_cat_item_producer" relationship="" sys_domain="global" table="catalog_script_client" version="2" view="nspro">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_id>832b647ddb688a5040eae46b13961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_id>072b647ddb688a5040eae46b13961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>table</element>
+            <list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_id>872b647ddb688a5040eae46b13961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>view</element>
+            <list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_id>1b2b647ddb688a5040eae46b13961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_id>9b2b647ddb688a5040eae46b13961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cat_variable</element>
+            <list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_id>1f2b647ddb688a5040eae46b13961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_id>9f2b647ddb688a5040eae46b13961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>catalog_script_client</name>
+            <parent>sc_cat_item_producer</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c72b647ddb688a5040eae46b13961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>catalog_script_client</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_list_catalog_script_client_sc_cat_item_producer_nspro</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+            <sys_user/>
+            <view display_value="Nspro" name="nspro">31c5cb7247900610f4af2ad2e16d43b7</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_list_catalog_script_client_sc_cat_item_producer_nspro</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="sc_cat_item_producer" relationship="" sys_domain="global" table="catalog_script_client" version="2" view="nspro"><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>name</element><list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_id>832b647ddb688a5040eae46b13961963</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>active</element><list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_id>072b647ddb688a5040eae46b13961963</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>table</element><list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_id>872b647ddb688a5040eae46b13961963</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>view</element><list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_id>1b2b647ddb688a5040eae46b13961963</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>type</element><list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_id>9b2b647ddb688a5040eae46b13961963</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>cat_variable</element><list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_id>1f2b647ddb688a5040eae46b13961963</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sys_updated_on</element><list_id display_value="catalog_script_client" element="NULL" name="catalog_script_client" parent="sc_cat_item_producer" relationship="NULL" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">c72b647ddb688a5040eae46b13961962</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_id>9f2b647ddb688a5040eae46b13961963</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>catalog_script_client</name><parent>sc_cat_item_producer</parent><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-24 14:37:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c72b647ddb688a5040eae46b13961962</sys_id><sys_mod_count>0</sys_mod_count><sys_name>catalog_script_client</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_list_catalog_script_client_sc_cat_item_producer_nspro</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-24 14:37:04</sys_updated_on><sys_user/><view display_value="Nspro" name="nspro">31c5cb7247900610f4af2ad2e16d43b7</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>1894687133</payload_hash>
+        <record_name>Record Producer.Catalog Client Scripts</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-24 14:37:04</sys_created_on>
+        <sys_id>1b2b647ddb688a5040eae46b13961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ddb8c59a80000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-24 14:37:04</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>5f2b647d9b688a502743ad16a27cac65</update_guid>
+        <update_guid_history>5f2b647d9b688a502743ad16a27cac65:1894687133,12eaec3de3688a503d2610c370404fda:-1801964080</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-04-07 14:19:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>000ed033502140088066009708466684</sys_id>
+        <sys_metadata>c72b647ddb688a5040eae46b13961962</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_script_client</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Catalog Script Client">b549f9b1dba21300a27757c5ca961966</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_list_catalog_script_client_sc_cat_item_producer_nspro</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_catalog_script_client_sc_cat_item_producer_nspro">1b2b647ddb688a5040eae46b13961966</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-04-07 14:19:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

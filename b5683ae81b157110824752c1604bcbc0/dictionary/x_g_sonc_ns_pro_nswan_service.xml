@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="19b6cd2c47933550f4af2ad2e16d4326" label="NSWAN Service" max_length="40" name="x_g_sonc_ns_pro_nswan_service" type="collection">
+    <element db_object_id="19b6cd2c47933550f4af2ad2e16d4326" label="NSWAN Service" max_length="40" name="x_g_sonc_ns_pro_nswan_service" text_index="true" type="collection">
         <element label="AllowDupSw" max_length="40" name="allowdupsw" type="string"/>
         <element label="Alt. Contacts Email Address" max_length="100" name="alt_contacts_email_address" type="string"/>
         <element label="Alt. Contacts Name" max_length="40" name="alt_contacts_name" type="string"/>

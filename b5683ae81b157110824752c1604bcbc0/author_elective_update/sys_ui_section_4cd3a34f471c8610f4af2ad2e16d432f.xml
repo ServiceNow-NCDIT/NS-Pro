@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Request Info" section_id="4cd3a34f471c8610f4af2ad2e16d432f" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3" view="nspro">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>502e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_location</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>d02e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_county</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>542e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_city</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>d42e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dest_zip</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>582e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_speed</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>d82e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>network_service_category</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>5c2e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>network_service_subcategory</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>dc2e79c5dbe4465040eae46b139619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>requested_vrf</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>502e79c5dbe4465040eae46b139619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_ha</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>d02e79c5dbe4465040eae46b139619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_wan</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>542e79c5dbe4465040eae46b139619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_lan</element>
+            <position>11</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>d42e79c5dbe4465040eae46b139619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_wlan</element>
+            <position>12</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>582e79c5dbe4465040eae46b139619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_voip</element>
+            <position>13</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+            <sys_id>d82e79c5dbe4465040eae46b139619bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Request Info</caption>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-16 15:00:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4cd3a34f471c8610f4af2ad2e16d432f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_4cd3a34f471c8610f4af2ad2e16d432f</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-16 15:00:29</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Nspro" name="nspro">31c5cb7247900610f4af2ad2e16d43b7</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_section_4cd3a34f471c8610f4af2ad2e16d432f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Request Info" section_id="4cd3a34f471c8610f4af2ad2e16d432f" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3" view="nspro"><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>0</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>502e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>dest_location</element><position>1</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>d02e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>dest_county</element><position>2</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>542e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>dest_city</element><position>3</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>d42e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>dest_zip</element><position>4</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>582e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>requested_speed</element><position>5</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>d82e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>network_service_category</element><position>6</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>5c2e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>network_service_subcategory</element><position>7</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>dc2e79c5dbe4465040eae46b139619be</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>requested_vrf</element><position>8</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>502e79c5dbe4465040eae46b139619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>request_ha</element><position>9</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>d02e79c5dbe4465040eae46b139619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>request_managed_wan</element><position>10</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>542e79c5dbe4465040eae46b139619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>request_managed_lan</element><position>11</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>d42e79c5dbe4465040eae46b139619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>request_managed_wlan</element><position>12</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>582e79c5dbe4465040eae46b139619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>request_managed_voip</element><position>13</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-22 12:44:04</sys_created_on><sys_id>d82e79c5dbe4465040eae46b139619bf</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="31c5cb7247900610f4af2ad2e16d43b7">4cd3a34f471c8610f4af2ad2e16d432f</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-22 12:44:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Request Info</caption><header>false</header><name>x_g_sonc_ns_pro_telco_order</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-16 15:00:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4cd3a34f471c8610f4af2ad2e16d432f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_telco_order</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_section_4cd3a34f471c8610f4af2ad2e16d432f</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-02-16 15:00:29</sys_updated_on><sys_user/><title>false</title><view display_value="Nspro" name="nspro">31c5cb7247900610f4af2ad2e16d43b7</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>308279247</payload_hash>
+        <record_name>Network Request</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-22 12:44:04</sys_created_on>
+        <sys_id>542e79c5dbe4465040eae46b139619c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18dd0d82cb70000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-22 12:44:04</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>982e79c5e2e4465072ddbe0ba4e855c1</update_guid>
+        <update_guid_history>982e79c5e2e4465072ddbe0ba4e855c1:308279247,54d3a34fb11c861057038025cb8a1f9b:-1207503292</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-22 12:45:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>064ef477794f40ccb0698926c210f2f1</sys_id>
+        <sys_metadata>4cd3a34f471c8610f4af2ad2e16d432f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Info</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Network Request">e2b42525db19791040eae46b13961947</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_section_4cd3a34f471c8610f4af2ad2e16d432f</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_4cd3a34f471c8610f4af2ad2e16d432f">542e79c5dbe4465040eae46b139619c2</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-22 12:45:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

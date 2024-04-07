@@ -2,10 +2,9 @@
     <element db_object_id="c437b87f1bf6b910824752c1604bcb16" label="Service" max_length="40" name="x_g_sonc_ns_pro_service" text_index="true" type="collection">
         <element label="Agency" mandatory="true" max_length="32" name="agency" reference="x_g_sonc_ns_pro_agency" type="reference"/>
         <element label="AP Count" max_length="40" name="ap_count" type="integer"/>
-        <element label="Change Date" max_length="40" name="change_date" type="glide_date"/>
         <element label="Comments" max_length="2000" name="comments" type="string"/>
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
-        <element label="Service Definition" mandatory="true" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
+        <element display="true" label="Service Definition" mandatory="true" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
         <element label="Site" max_length="32" name="site" read_only="true" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
         <element label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
         <index name="index">

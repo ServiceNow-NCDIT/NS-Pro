@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="9d17f139db221300a27757c5ca961928" extends="cmdb_ci" label="Hardware" max_length="40" name="cmdb_ci_hardware" text_index="true" type="collection">
+        <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_floats="true" type="reference"/>
+    </element>
+</database>

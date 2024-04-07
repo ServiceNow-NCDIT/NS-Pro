@@ -3,7 +3,7 @@
         <active>false</active>
         <applicability display_value="Audience for app network-operations">f475c18947937950f4af2ad2e16d43a8</applicability>
         <order>0</order>
-        <screen display_value="Network Operations">37b78ad947d73d50f4af2ad2e16d4363</screen>
+        <screen display_value="IMC">37b78ad947d73d50f4af2ad2e16d4363</screen>
         <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-23 04:46:06</sys_created_on>

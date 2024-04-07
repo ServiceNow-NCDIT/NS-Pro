@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="DELETE">
+        <active>true</active>
+        <application display_value="NSPro">20056d25db19791040eae46b139619e3</application>
+        <filter/>
+        <name>Telco Selection Criterias</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_g_sonc_ns_pro.telco_selection_criteria_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-24 16:31:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e71a85601be13d10824752c1604bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telco Selection Criterias</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_module_e71a85601be13d10824752c1604bcbad</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-24 16:31:29</sys_updated_on>
+        <table>x_g_sonc_ns_pro_telco_selection_criteria</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_module_e71a85601be13d10824752c1604bcbad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module"><sys_ui_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="NSPro">20056d25db19791040eae46b139619e3</application><filter/><name>Telco Selection Criterias</name><order/><path/><path_relative_to_root>false</path_relative_to_root><roles>x_g_sonc_ns_pro.telco_selection_criteria_user</roles><sys_class_name>sys_ui_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-09-24 16:31:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e71a85601be13d10824752c1604bcbad</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Telco Selection Criterias</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_module_e71a85601be13d10824752c1604bcbad</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-09-24 16:31:29</sys_updated_on><table>x_g_sonc_ns_pro_telco_selection_criteria</table><uncancelable>false</uncancelable><view_name/></sys_ui_module></record_update>]]></payload>
+        <payload_hash>1628845131</payload_hash>
+        <record_name>Telco Selection Criterias</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-09-24 16:31:29</sys_created_on>
+        <sys_id>eb1a85601be13d10824752c1604bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ac8081cc10000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-09-24 16:31:29</sys_updated_on>
+        <type>Module</type>
+        <update_guid>ef1a856073e13d107c456a3b091d32ae</update_guid>
+        <update_guid_history>ef1a856073e13d107c456a3b091d32ae:1628845131</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-03-22 21:01:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_module">sys_ui_module</sys_db_object>
+        <sys_id>589e3bdc6fbb46ccaf4e3b9b3716bbf9</sys_id>
+        <sys_metadata>e71a85601be13d10824752c1604bcbad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telco Selection Criterias</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_module_e71a85601be13d10824752c1604bcbad</sys_update_name>
+        <sys_update_version display_value="sys_ui_module_e71a85601be13d10824752c1604bcbad">eb1a85601be13d10824752c1604bcbaf</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-03-22 21:01:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

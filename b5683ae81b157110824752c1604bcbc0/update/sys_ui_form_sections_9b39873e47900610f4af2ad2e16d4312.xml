@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="9b39873e47900610f4af2ad2e16d4312" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-15 18:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef39873e47900610f4af2ad2e16d4391</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_telco_order" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">9b39873e47900610f4af2ad2e16d4312</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">6e9830a3db15f11040eae46b139619be</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-15 18:25:55</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-15 18:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab39873e47900610f4af2ad2e16d4392</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_telco_order" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">9b39873e47900610f4af2ad2e16d4312</sys_ui_form>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">db39873e47900610f4af2ad2e16d4311</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-15 18:25:55</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-15 21:11:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d12febb647580610f4af2ad2e16d435a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_telco_order" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">9b39873e47900610f4af2ad2e16d4312</sys_ui_form>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">852febb647580610f4af2ad2e16d4349</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-15 21:11:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-15 21:11:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5d2febb647580610f4af2ad2e16d435e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_telco_order" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">9b39873e47900610f4af2ad2e16d4312</sys_ui_form>
+            <sys_ui_section caption="Telco Response" display_value="Telco Response" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">052febb647580610f4af2ad2e16d434a</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-15 21:11:30</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-15 21:11:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9d2febb647580610f4af2ad2e16d4362</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_telco_order" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">9b39873e47900610f4af2ad2e16d4312</sys_ui_form>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="Default view">0d2febb647580610f4af2ad2e16d434a</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-15 21:11:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-15 18:25:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9b39873e47900610f4af2ad2e16d4312</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_9b39873e47900610f4af2ad2e16d4312</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-15 18:25:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ihub_data_mapping_definition">
+    <sn_ihub_data_mapping_definition action="INSERT_OR_UPDATE">
+        <integration_table>sys_data_source</integration_table>
+        <published_source_structure display_value="ih_import_FD9d1bf8b97f41421000fc95f56746a136">911bf8b947414210f4af2ad2e16d4337</published_source_structure>
+        <record_id>b50bb87947414210f4af2ad2e16d4321</record_id>
+        <source_structure display_value="ih_import_FD9d1bf8b97f41421000fc95f56746a136">911bf8b947414210f4af2ad2e16d4337</source_structure>
+        <sys_class_name>sn_ihub_data_mapping_definition</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-03-20 12:17:59</sys_created_on>
+        <sys_id>591bb0f947414210f4af2ad2e16d43b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sn_ihub_data_mapping_definition_591bb0f947414210f4af2ad2e16d43b5</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-03-20 12:18:00</sys_updated_on>
+    </sn_ihub_data_mapping_definition>
+</record_update>

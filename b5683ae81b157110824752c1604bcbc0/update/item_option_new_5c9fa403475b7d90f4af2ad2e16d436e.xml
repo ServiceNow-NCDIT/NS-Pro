@@ -57,7 +57,7 @@
         <record_producer_table>x_g_sonc_ns_pro_telco_order</record_producer_table>
         <reference>cmdb_ci_network_circuit</reference>
         <reference_qual>x_g_sonc_ns_pro_circuit_type=pe</reference_qual>
-        <reference_qual_condition table="cmdb_ci_network_circuit">x_g_sonc_ns_pro_circuit_type=pe<item display_value="PE" endquery="false" field="x_g_sonc_ns_pro_circuit_type" goto="false" newquery="false" operator="=" or="false" value="pe"/>
+        <reference_qual_condition table="cmdb_ci_network_circuit">x_g_sonc_ns_pro_circuit_type=pe<item display_value="pe" endquery="false" field="x_g_sonc_ns_pro_circuit_type" goto="false" newquery="false" operator="=" or="false" value="pe"/>
         </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -76,7 +76,7 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-12-28 08:50:12</sys_created_on>
+        <sys_created_on>2024-02-24 13:22:29</sys_created_on>
         <sys_id>5c9fa403475b7d90f4af2ad2e16d436e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Assigned PE - Primary</sys_name>
@@ -84,8 +84,8 @@
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_5c9fa403475b7d90f4af2ad2e16d436e</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-28 08:50:12</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-02-24 13:57:01</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

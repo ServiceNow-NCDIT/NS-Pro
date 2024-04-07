@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.assignment_group=='0355cd0ddb98630065fbf482ba96196f' &amp;&amp; current.provisioning_state=='1' &amp;&amp; canWrite()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Select PoP PE Port</name>
+        <onclick/>
+        <order>1400</order>
+        <script><![CDATA[action.setRedirectURL(current);
+current.update();
+if (!current.isActionAborted()) {
+    var circuit = new x_g_sonc_ns_pro.circuit();
+	var closestCircuit = JSON.parse(circuit.getHostPort(current));
+
+	current.assigned_pop = closestCircuit.pop;
+	current.assigned_pe = closestCircuit.pe_router_dv;
+	current.assigned_pe_port = closestCircuit.x_g_sonc_ns_pro_pop_pe_interface;
+	current.provisioning_state = '2';
+	current.update();
+}
+// redirect to here
+action.setRedirectURL(current);]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-03-25 16:07:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>288fd79bdb054e1040eae46b139619ff</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Select PoP PE Port</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_action_288fd79bdb054e1040eae46b139619ff</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-03-28 07:20:22</sys_updated_on>
+        <table>x_g_sonc_ns_pro_nspro_tasks</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

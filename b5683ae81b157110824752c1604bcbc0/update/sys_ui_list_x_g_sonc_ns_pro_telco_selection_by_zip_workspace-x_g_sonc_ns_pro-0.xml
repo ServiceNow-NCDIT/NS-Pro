@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_g_sonc_ns_pro_telco_selection_by_zip" version="2" view="workspace-ns-pro-imc-0">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>city</element>
+            <list_id display_value="x_g_sonc_ns_pro_telco_selection_by_zip" element="NULL" name="x_g_sonc_ns_pro_telco_selection_by_zip" parent="NULL" relationship="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f17400d3db7fbd1040eae46b1396191f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>3d7400d3db7fbd1040eae46b1396191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>county</element>
+            <list_id display_value="x_g_sonc_ns_pro_telco_selection_by_zip" element="NULL" name="x_g_sonc_ns_pro_telco_selection_by_zip" parent="NULL" relationship="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f17400d3db7fbd1040eae46b1396191f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>317400d3db7fbd1040eae46b13961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>priority</element>
+            <list_id display_value="x_g_sonc_ns_pro_telco_selection_by_zip" element="NULL" name="x_g_sonc_ns_pro_telco_selection_by_zip" parent="NULL" relationship="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f17400d3db7fbd1040eae46b1396191f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>357400d3db7fbd1040eae46b13961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>service_category</element>
+            <list_id display_value="x_g_sonc_ns_pro_telco_selection_by_zip" element="NULL" name="x_g_sonc_ns_pro_telco_selection_by_zip" parent="NULL" relationship="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f17400d3db7fbd1040eae46b1396191f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>397400d3db7fbd1040eae46b13961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>telco_provider</element>
+            <list_id display_value="x_g_sonc_ns_pro_telco_selection_by_zip" element="NULL" name="x_g_sonc_ns_pro_telco_selection_by_zip" parent="NULL" relationship="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f17400d3db7fbd1040eae46b1396191f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>3d7400d3db7fbd1040eae46b13961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>zip</element>
+            <list_id display_value="x_g_sonc_ns_pro_telco_selection_by_zip" element="NULL" name="x_g_sonc_ns_pro_telco_selection_by_zip" parent="NULL" relationship="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f17400d3db7fbd1040eae46b1396191f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>317400d3db7fbd1040eae46b13961921</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_g_sonc_ns_pro_telco_selection_by_zip</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f17400d3db7fbd1040eae46b1396191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_selection_by_zip</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_telco_selection_by_zip_Workspace-x_g_sonc_ns_pro-0</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace NS Pro IMC 0" name="workspace-ns-pro-imc-0">c8644493de7fbd10af5b1b2cb2c51ef5</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

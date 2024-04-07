@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.telco</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>telco</name>
+        <script><![CDATA[var telco = Class.create();
+telco.prototype = {
+    initialize: function() {
+        this.debug = true;
+    },
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    timestamp: function() {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        return new GlideDateTime().getNumericValue();
+    },
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    getProvider : function (NSProTask, pri) {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        var LogPrefix = " telco().getProvider --> ";
+        var zip = NSProTask.location.zip.substring(0,5); // if zip is longer than 5, trim it to 5 chars so we can use it for looking up in table
+		var cat = NSProTask.network_service_category;
+
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + ' trimmed zip is ' + zip);
+		if (this.debug) gs.info(this.timestamp() + LogPrefix + ' cat is ' + cat);
+		
+		var gr = new GlideRecord('x_g_sonc_ns_pro_telco_selection_by_zip');
+		gr.addQuery('zip', zip);
+		gr.addQuery('priority', pri);
+		gr.addQuery('service_category', cat);
+		gr.setLimit(1);
+		gr.query();
+		while (gr.next()) {
+			if (this.debug) gs.info(this.timestamp() + LogPrefix + 'found x_g_sonc_ns_pro_telco_selection_by_zip');
+			var provider = {};
+			var grProvider = new GlideRecord('x_g_sonc_ns_pro_telco_provider');
+			grProvider.get(gr.telco_provider.toString());
+			provider.sys_id = grProvider.getUniqueValue();
+			provider.poc = grProvider.getValue('poc_primary_name');
+			provider.email = grProvider.getValue('order_email');
+			if (this.debug) gs.info(this.timestamp() + LogPrefix + 'provider = ' + JSON.stringify(provider));
+			return JSON.stringify(provider);
+		}
+		if (this.debug) gs.info(this.timestamp() + LogPrefix + 'no provider found in x_g_sonc_ns_pro_telco_selection_by_zip');
+		return; // null = no provider
+
+    },
+
+    type: 'telco'
+};
+
+
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-03-23 01:20:56</sys_created_on>
+        <sys_id>1531826247090a10f4af2ad2e16d43ed</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>telco</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_1531826247090a10f4af2ad2e16d43ed</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-03-26 14:40:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

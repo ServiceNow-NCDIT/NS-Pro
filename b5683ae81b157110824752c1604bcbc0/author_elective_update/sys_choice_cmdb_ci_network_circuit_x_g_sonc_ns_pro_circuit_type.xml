@@ -20,38 +20,228 @@
             <element>x_g_sonc_ns_pro_circuit_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>CE</label>
+            <label>ASE</label>
             <language>en</language>
             <name>cmdb_ci_network_circuit</name>
             <sequence>10</sequence>
             <synonyms/>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-22 12:51:44</sys_created_on>
+            <sys_created_on>2024-02-29 20:58:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-22 12:51:51</sys_updated_on>
-            <value>ce</value>
+            <sys_updated_on>2024-02-29 20:59:00</sys_updated_on>
+            <value>ase</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>x_g_sonc_ns_pro_circuit_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>PE</label>
+            <label>Point to Point ASE</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>15</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-03-15 13:54:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-15 13:54:48</sys_updated_on>
+            <value>p2p_ase</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BCE Cable</label>
             <language>en</language>
             <name>cmdb_ci_network_circuit</name>
             <sequence>20</sequence>
             <synonyms/>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-22 12:51:55</sys_created_on>
+            <sys_created_on>2024-02-29 20:59:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-04 14:40:02</sys_updated_on>
+            <value>bce_cable</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cable BB</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 20:59:34</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-22 12:52:02</sys_updated_on>
-            <value>pe</value>
+            <sys_updated_on>2024-02-29 20:59:42</sys_updated_on>
+            <value>cable_bb</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CORE Ring</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 20:59:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-29 21:00:00</sys_updated_on>
+            <value>core_ring</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DSL BB</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:00:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-29 21:00:17</sys_updated_on>
+            <value>dsl_bb</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MAN</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:00:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-29 21:00:35</sys_updated_on>
+            <value>man</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MM</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:00:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-29 21:00:50</sys_updated_on>
+            <value>mm</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MAN SM</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:01:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-29 21:01:12</sys_updated_on>
+            <value>man_sm</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>90</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:01:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-29 21:01:28</sys_updated_on>
+            <value>me</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Point to Point ME</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>95</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-03-15 13:55:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-15 13:55:31</sys_updated_on>
+            <value>p2p_me</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wireless</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 21:01:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-04 14:39:35</sys_updated_on>
+            <value>wireless</value>
         </sys_choice>
     </sys_choice>
 </record_update>

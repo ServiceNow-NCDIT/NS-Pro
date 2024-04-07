@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="16857223db797d1040eae46b139619f9" label="Telco Selection By Zip" max_length="40" name="x_g_sonc_ns_pro_telco_selection_by_zip" type="collection">
+    <element db_object_id="16857223db797d1040eae46b139619f9" label="Telco Selection By Zip" max_length="40" name="x_g_sonc_ns_pro_telco_selection_by_zip" text_index="true" type="collection">
         <element label="City" mandatory="true" max_length="100" name="city" type="string"/>
         <element label="County" mandatory="true" max_length="40" name="county" type="string"/>
         <element choice="1" label="Priority" mandatory="true" max_length="1" name="priority" type="choice">

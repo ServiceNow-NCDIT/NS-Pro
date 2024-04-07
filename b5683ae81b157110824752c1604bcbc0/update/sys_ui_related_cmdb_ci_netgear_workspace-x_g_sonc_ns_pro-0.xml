@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="cmdb_ci_netgear" version="2" view="workspace-ns-pro-imc-0">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Network Gear - Workspace NS Pro IMC 0" name="cmdb_ci_netgear" related_list="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f174cc93db7fbd1040eae46b139619e2</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>cmdb_ci_network_adapter.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>7d74cc93db7fbd1040eae46b139619e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Network Gear - Workspace NS Pro IMC 0" name="cmdb_ci_netgear" related_list="NULL" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">f174cc93db7fbd1040eae46b139619e2</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>cmdb_switch_port.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_id>b574cc93db7fbd1040eae46b139619e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Network Gear - Workspace NS Pro IMC 0</calculated_name>
+            <filter/>
+            <name>cmdb_ci_netgear</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-01-22 20:51:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f174cc93db7fbd1040eae46b139619e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Network Gear - Workspace-x g sonc ns pro-0</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_related_cmdb_ci_netgear_Workspace-x_g_sonc_ns_pro-0</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-01-22 20:51:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace NS Pro IMC 0" name="workspace-ns-pro-imc-0">c8644493de7fbd10af5b1b2cb2c51ef5</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

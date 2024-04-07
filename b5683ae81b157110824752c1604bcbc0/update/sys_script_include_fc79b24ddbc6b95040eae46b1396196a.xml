@@ -12,6 +12,7 @@ NcditNsw2Utils2.prototype = {
     initialize: function() {
 
         this.debug = true;
+
     },
 
     /**
@@ -141,7 +142,7 @@ NcditNsw2Utils2.prototype = {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     createLoc4Move: function(telcoOrder) {
         var LogPrefix = "createLoc4Move --> ";
-        if (this.debug) gs.info(LogPrefix + "called for with prov rcd " + telcoOrder.getValue('number'));
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "called for with prov rcd " + telcoOrder.getValue('number'));
         var returnObject = {
             status: "",
             message: "",
@@ -160,7 +161,7 @@ NcditNsw2Utils2.prototype = {
         addrObject.city = telcoOrder.getValue('req_addr_city');
         addrObject.st = telcoOrder.getValue('req_addr_state');
         addrObject.zip = telcoOrder.getValue('req_addr_zip');
-        if (this.debug) gs.info(LogPrefix + "confirming address via geocode request for " + telcoOrder.getValue('number'));
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "confirming address via geocode request for " + telcoOrder.getValue('number'));
         var geoCodeResult = this.geocodeAddress(addrObject.street, addrObject.city, addrObject.st, addrObject.zip);
         if (geoCodeResult.status == "OK") {
             returnObject.status = "GEOCODEOK";
@@ -169,18 +170,18 @@ NcditNsw2Utils2.prototype = {
             var gotSite = prSiteGR.get(telcoOrder.site_rcd_ref);
             if (gotSite) {
                 // make a location record
-                if (this.debug) gs.info(LogPrefix + "Calling to create move to location...");
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "Calling to create move to location...");
                 var makeLocResult = this.createLocWithProvSiteGeo(telcoOrder, prSiteGR, geoCodeResult.geo);
                 if (makeLocResult.status == "OK") {
-                    if (this.debug) gs.info(LogPrefix + "Move to location created. " + JSON.stringify(makeLocResult));
+                    if (this.debug) gs.info(this.timestamp() + LogPrefix + "Move to location created. " + JSON.stringify(makeLocResult));
                     returnObject.status = 'OK';
                     returnObject.locRcdId = makeLocResult.locRcdId;
                     telcoOrder.new_loc_rcd_ref = makeLocResult.locRcdId;
                     telcoOrder.provisoning_state = 3; // remember there is a spelling error on this field. site and loc created.
                     telcoOrder.update();
-                    if (this.debug) gs.info(LogPrefix + "Updated new loc rcd ref for move-to in procRcd " + telcoOrder.number);
+                    if (this.debug) gs.info(this.timestamp() + LogPrefix + "Updated new loc rcd ref for move-to in procRcd " + telcoOrder.number);
                 } else {
-                    gs.error(LogPrefix + "Move to location creation FAILED. " + JSON.stringify(makeLocResult));
+                    gs.error(this.timestamp() + LogPrefix + "Move to location creation FAILED. " + JSON.stringify(makeLocResult));
                     returnObject.status = 'LOCERROR';
                 }
             }
@@ -215,7 +216,7 @@ NcditNsw2Utils2.prototype = {
             (09/15/21) need to set primary contact (done)
 
         */
-        if (this.debug) gs.info(LogPrefix + "called with " + siteRcd.site_name + ", " +
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "called with " + siteRcd.site_name + ", " +
             telcoOrder.req_addr_street + ", " + telcoOrder.req_addr_city + ", " + telcoOrder.req_addr_state + ", " + telcoOrder.req_addr_zip + ", " + geo.county);
 
         var returnObject = {
@@ -236,7 +237,7 @@ NcditNsw2Utils2.prototype = {
             countyGR.addEncodedQuery("u_name=" + countyName2Use);
             countyGR.query();
             if (countyGR.next()) {
-                if (this.debug) gs.info(LogPrefix + " county match found in " + ditCountyTable + ". Using " + countyGR.u_name);
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + " county match found in " + ditCountyTable + ". Using " + countyGR.u_name);
                 countyName2Use = countyGR.u_name;
                 var countySysId = countyGR.sys_id;
             } else {
@@ -246,7 +247,7 @@ NcditNsw2Utils2.prototype = {
         }
 
         if (telcoOrder.request_type == 1) {
-            if (this.debug) gs.info(LogPrefix + "prov request type is " + telcoOrder.request_type + " - New");
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + "prov request type is " + telcoOrder.request_type + " - New");
             // if request is for new site, let's make sure there is no location for this site id yet.
             var locGR = new GlideRecord(locationTable);
             locGR.addEncodedQuery("name=" + siteRcd.site_name);
@@ -257,7 +258,7 @@ NcditNsw2Utils2.prototype = {
                 returnObject.message = "prov req type new and location already exists for " + locGR.name;
             } else {
                 // this means we didn't find any match - so go ahead with create
-                if (this.debug) gs.info(LogPrefix + " ready to create location rcd for " + siteRcd.site_name);
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + " ready to create location rcd for " + siteRcd.site_name);
                 var newLocationGR = new GlideRecord(locationTable);
                 if (newLocationGR.canCreate()) {
                     newLocationGR.initialize();
@@ -281,7 +282,7 @@ NcditNsw2Utils2.prototype = {
                     }
                     newLocationGR.company = ditCompanySysId;
                     newLocationGR.insert();
-                    if (this.debug) gs.info(LogPrefix + "location record " + newLocationGR.sys_id + " created for " + telcoOrder.getValue('number'));
+                    if (this.debug) gs.info(this.timestamp() + LogPrefix + "location record " + newLocationGR.sys_id + " created for " + telcoOrder.getValue('number'));
 
                     returnObject.status = "OK";
                     returnObject.message = "Location OK for site: " + siteRcd.site_id;
@@ -289,7 +290,7 @@ NcditNsw2Utils2.prototype = {
                     returnObject.siteId = siteRcd.site_id.toString();
                     returnObject.siteRcdId = siteRcd.sys_id.toString();
                     returnObject.locRcdId = newLocationGR.sys_id.toString();
-                    if (this.debug) gs.info(LogPrefix + "Returning info: " + JSON.stringify(returnObject)); // 7/26/22 for debug
+                    if (this.debug) gs.info(this.timestamp() + LogPrefix + "Returning info: " + JSON.stringify(returnObject)); // 7/26/22 for debug
 
                     // set our site record location reference to link to new location sys_id
                     siteRcd.location = newLocationGR.sys_id;
@@ -300,14 +301,14 @@ NcditNsw2Utils2.prototype = {
                 }
             }
         } else if (telcoOrder.request_type == 2) {
-            if (this.debug) gs.info(LogPrefix + "prov request type is " + telcoOrder.request_type + " - Move (not coded yet)");
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + "prov request type is " + telcoOrder.request_type + " - Move (not coded yet)");
             // this means we didn't find any match - so go ahead with create
-            if (this.debug) gs.info(LogPrefix + " ready to create location rcd for " + siteRcd.site_name + " telcoOrder " + telcoOrder.number);
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + " ready to create location rcd for " + siteRcd.site_name + " telcoOrder " + telcoOrder.number);
             var newLocationGR = new GlideRecord(locationTable);
             if (newLocationGR.canCreate()) {
                 newLocationGR.initialize();
                 // set proper lifecycle status for move in progress
-                if (this.debug) gs.info(LogPrefix + "Setting life cycle for Move to Design/Build");
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "Setting life cycle for Move to Design/Build");
                 newLocationGR.life_cycle_stage = "Design";
                 newLocationGR.life_cycle_stage_status = "Build";
                 // set other fields
@@ -331,7 +332,7 @@ NcditNsw2Utils2.prototype = {
                 }
                 newLocationGR.company = ditCompanySysId;
                 newLocationGR.insert();
-                if (this.debug) gs.info(LogPrefix + "location record " + newLocationGR.sys_id + " created for " + telcoOrder.getValue('number'));
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "location record " + newLocationGR.sys_id + " created for " + telcoOrder.getValue('number'));
 
                 // Don't do this for a MOVE.
                 // set our site record location reference to link to new location sys_id
@@ -340,18 +341,18 @@ NcditNsw2Utils2.prototype = {
 
                 returnObject.status = "OK";
                 returnObject.message = "Location OK for site: " + siteRcd.site_id;
-                //if (this.debug) gs.info(LogPrefix + "About to set siteRcdId to " + siteRcd.sys_id + " and locRcdId to " + newLocationGR.sys_id);
+                //if (this.debug) gs.info(this.timestamp() + LogPrefix + "About to set siteRcdId to " + siteRcd.sys_id + " and locRcdId to " + newLocationGR.sys_id);
                 //returnObject.siteId = siteRcd.site_id.toString();
                 //returnObject.siteRcdId = siteRcd.sys_id.toString();
                 returnObject.locRcdId = newLocationGR.sys_id.toString();
-                if (this.debug) gs.info(LogPrefix + "Returning info: " + JSON.stringify(returnObject)); // 7/26/22 for debug
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "Returning info: " + JSON.stringify(returnObject)); // 7/26/22 for debug
 
             } else {
-                gs.error(LogPrefix + "cannot create location record for move. not permitted for " + telcoOrder.getValue('number'));
+                gs.error(this.timestamp() + LogPrefix + "cannot create location record for move. not permitted for " + telcoOrder.getValue('number'));
             }
 
         } else {
-            if (this.debug) gs.info(LogPrefix + "prov request type is " + telcoOrder.request_type + " - Not supported yet");
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + "prov request type is " + telcoOrder.request_type + " - Not supported yet");
         }
         return returnObject;
     },
@@ -373,14 +374,24 @@ NcditNsw2Utils2.prototype = {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     getDistance2Point: function(lat1, lon1, lat2, lon2) {
         // calculates distance between two points using the Haversine formula.
+
+        var debugState = this.debug;
+        this.debug = false;
+
         var LogPrefix = " getDistance2Point --> ";
+
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " called, lat1 = " + lat1.toString() + ", lon1 = " + lon1.toString() + ", lat2 = " + lat2.toString() + ", lon2 = " + lon2.toString());
+
         var Rkm = 6371; // Radius of the earth in km
         var dLat = (lat2 - lat1) * (Math.PI / 180);
         var dLon = (lon2 - lon1) * (Math.PI / 180);
         var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
         var d = Rkm * c; // Distance in km
+
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + " is returning " + d);
+
+        this.debug = debugState;
 
         return d;
     },
@@ -393,27 +404,36 @@ NcditNsw2Utils2.prototype = {
         this function will return
         a list of pop distances ordered closest to furthest from the supplied geo point.
         */
+        var debugState = this.debug;
+        this.debug = false;
+
         var LogPrefix = " orderPopsClosest --> ";
         var popList = [];
         var popTable = "cmdb_ci_site";
 
         var popGr = new GlideRecord(popTable);
         popGr.addQuery('x_g_sonc_ns_pro_type', 'pop'); // POP site type
+        popGr.addQuery('install_status', '1'); // installed POPs only
         popGr.query();
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' searching for pop sites returned row cnt ' + popGr.getRowCount());
         while (popGr.next()) {
-            // if (this.debug) gs.info(this.timestamp() + LogPrefix + " processing POP site " + popGr.name);
             // get lat, lon and find distance for this pop
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + ' getting longitude/latitude for pop site ' + popGr.getValue('name'));
             var pop = {};
             pop.popName = popGr.getValue('name');
             pop.popSiteId = popGr.getValue('site_identifier');
             pop.distanceKm = this.getDistance2Point(lat, lon, popGr.location.latitude, popGr.location.longitude);
             pop.distanceMiles = pop.distanceKm * 0.62137; // convert Kms to miles
+
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + ' PoP object found ' + global.JSON.stringify(pop));
+
             popList.push(pop);
         }
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' returning ' + global.JSON.stringify(popList));
-
+        
+        this.debug = debugState;
+        
         return popList;
     },
 
@@ -421,6 +441,7 @@ NcditNsw2Utils2.prototype = {
     //
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     getPEPort4Pop: function(NSProTask, popSiteId, provider_to_ignore) {
+
         /*
         Utility to find best pe port given a pop and provisioning record
 
@@ -435,15 +456,15 @@ NcditNsw2Utils2.prototype = {
 
         (new 01/25/22 rw) - add check for high speed, if => 250Mbps, then look for TenGig ports only.
         (new 09/26/22 rw) - check up front for Best effort or Guaranteed:
-          NSProTask.network_service_category == 'enterprise' is Guaranteed, 'sd' is Best Effort
+          NSProTask.network_service_category == 'guaranteed' is Guaranteed, 'best_effort' is Best Effort
         */
 
-          this.debug = true;
+           
 
         var LogPrefix = " getPEPort4Pop --> ";
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " called with NSProTask  " + NSProTask.number + ", pop site_id " + popSiteId + ' and provider to ignore of ' + provider_to_ignore);
 
-        var pePortTable = "cmdb_ci_network_circuit";
+        var  circuitTable = "cmdb_ci_network_circuit";
         var returnObject = {
             status: "",
             message: "",
@@ -464,7 +485,7 @@ NcditNsw2Utils2.prototype = {
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + "NSProTask network service category is " + NSProTask.network_service_category);
 
-        if (NSProTask.network_service_category == 'enterprise') {
+        if (NSProTask.network_service_category == 'guaranteed') {
             svcCatIsGuaranteed = true;
             svcCatIsBE = false;
             svcCat = "guaranteed"; // 10/28/22 fix spelling
@@ -474,7 +495,7 @@ NcditNsw2Utils2.prototype = {
         else {
             svcCatIsGuaranteed = false;
             svcCatIsBE = true;
-            svcCat = "besteffort";
+            svcCat = "best_effort";
             if (this.debug) gs.info(this.timestamp() + LogPrefix + " NSProTask " + NSProTask.number + " service category is " + NSProTask.network_service_category + " - Best effort.");
         }
 
@@ -484,6 +505,9 @@ NcditNsw2Utils2.prototype = {
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " calling for telco selection by zip");
         // get telco provider list 
         var telcoProviderList = this.selectTelcoByZip(NSProTask.telco_order.dest_zip, svcCat, provider_to_ignore);
+
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + " telcoProviderList is : " + JSON.stringify(telcoProviderList));
+
         if (telcoProviderList.length > 0) {
             if (this.debug) gs.info(this.timestamp() + LogPrefix + " primary telco is: " + telcoProviderList[0]);
             returnObject.telcoName = telcoProviderList[0];
@@ -505,29 +529,30 @@ NcditNsw2Utils2.prototype = {
                 var pePortOptions = [];
                 var telcoOptionNumber = 0;
                 var primaryPePortSet = false;
-                // determine service type for pe port search search
-                // still need to confirm this method.
-                var pe_circuit_type = "";
-                if (NSProTask.network_service_category == 'enterprise') {
-                    pe_circuit_type = 'IN1,3'; // Metro Ethernet or ASE
-                } else {
-                    pe_circuit_type = 'IN2,4'; // Metro Ethernet or ASE dedicated, will be used for best effort.
-                }
+                // determine service type for pe port search
+                // still need to confirm this method - rw
+                // var pe_circuit_type = "";
+                // if (NSProTask.network_service_category == 'guaranteed') {
+                //     pe_circuit_type = 'IN1,3'; // Metro Ethernet or ASE
+                // } else {
+                //     pe_circuit_type = 'IN2,4'; // Metro Ethernet dedicated or ASE dedicated, will be used for best effort.
+                // }
                 // first get a pe port using the passed in pop.
                 while (pePortOptions.length == 0 && telcoOptionNumber < telcoProviderList.length) {
-                    var poppeGR = new GlideRecord(pePortTable);
+                    var poppeGR = new GlideRecord( circuitTable);
                     poppeGR.addQuery("x_g_sonc_ns_pro_site.site_identifier", popSiteId);
                     poppeGR.addQuery("x_g_sonc_ns_pro_telco_provider.name", telcoProviderList[telcoOptionNumber]);
-                    if (NSProTask.network_service_category == 'enterprise') {
-                        poppeGR.addQuery("x_g_sonc_ns_pro_pe_circuit_type", "IN", "1,3"); // Metro Ethernet or ASE
+                    if (NSProTask.network_service_category == 'guaranteed') {
+                        poppeGR.addQuery("x_g_sonc_ns_pro_circuit_type", "IN", "me,ase"); // Metro Ethernet or ASE
                     } else {
-                        poppeGR.addQuery("x_g_sonc_ns_pro_pe_circuit_type", "IN", "2,4"); // Metro Ethernet or ASE dedicated, will be used for best effort.
+                        poppeGR.addQuery("x_g_sonc_ns_pro_circuit_type", "IN", "p2p_me,p2p_ase"); // point-to-point Metro Ethernet or point-to-point ASE, will be used for best effort.
                     }
-                    poppeGR.addQuery("x_g_sonc_ns_pro_status", "1");
-                    var pePortQuery = poppeGR.getEncodedQuery();
-					if (this.debug) gs.info(this.timestamp() + LogPrefix + " searching for pe with '" + pePortQuery + "' for " + NSProTask.number);		 
+
+                    poppeGR.addQuery("x_g_sonc_ns_pro_status", "installed");  // circuits use circuit status, not installed status
+                    var peCircuitQuery = poppeGR.getEncodedQuery();
+					if (this.debug) gs.info(this.timestamp() + LogPrefix + " searching for pe with " + peCircuitQuery + " for " + NSProTask.number);		 
                     poppeGR.query();			
-					if (this.debug) gs.info(this.timestamp() + LogPrefix + ' ' + poppeGR.getRowCount() + ' rows returned from table ' + pePortTable);
+					if (this.debug) gs.info(this.timestamp() + LogPrefix + ' ' + poppeGR.getRowCount() + ' rows returned from table ' +  circuitTable);
 
                     while (poppeGR.next()) {
                         var pePortCandidateObj = {
@@ -539,19 +564,26 @@ NcditNsw2Utils2.prototype = {
                             util_pct: 0.0,
                             endpoint_count: 0
                         };
+
+                        // get PoP abbreviation based on site identifier
+                        var popGr = new GlideRecord('x_g_sonc_ns_pro_point_of_presence');
+                        popGr.get('site.site_identifier', popSiteId);
+                        var popAbbrev = popGr.getValue('name');
+
+                        // build the rest of the object
                         pePortCandidateObj.sys_id = poppeGR.getValue('sys_id');
                         pePortCandidateObj.name = poppeGR.getValue('name');
                         pePortCandidateObj.pe = poppeGR.x_g_sonc_ns_pro_pe_router.name.toString();
-                        pePortCandidateObj.popAbbrev = poppeGR.getValue('x_g_sonc_ns_pro_point_of_presence');
+                        pePortCandidateObj.popAbbrev = popAbbrev;
                         pePortCandidateObj.cir_subscription_rate = poppeGR.getValue('x_g_sonc_ns_pro_cir_subscription_rate');
                         pePortCandidateObj.util_pct = poppeGR.getValue('x_g_sonc_ns_pro_utilization_pct');
                         pePortCandidateObj.endpoint_count = poppeGR.getValue('x_g_sonc_ns_pro_ce_count');
                         pePortOptions.push(pePortCandidateObj);
                         if (this.debug) gs.info(this.timestamp() + LogPrefix + " adding to pePortOptions: " + pePortCandidateObj.name);
                     }
-                    global.JSUtil.logObject(pePortOptions, LogPrefix + " pePortOptions before call to selectBestPEPortFromList");
+                    //global.JSUtil.logObject(pePortOptions, LogPrefix + " pePortOptions before call to selectBestPEPortFromList");
 
-                    if (this.debug) gs.info(this.timestamp() + LogPrefix + " pePortOptions = " + JSON.stringify(pePortOptions));
+                    if (this.debug) gs.info(this.timestamp() + LogPrefix + " pePortOptions before call to selectBestPEPortFromList = " + JSON.stringify(pePortOptions));
 
                     if (pePortOptions.length > 0) {
                         // we have port(s)
@@ -604,7 +636,7 @@ NcditNsw2Utils2.prototype = {
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " returnObject = " + JSON.stringify(returnObject));
 
-        this.debug = false;
+         
 
         return returnObject;
     },
@@ -620,13 +652,13 @@ NcditNsw2Utils2.prototype = {
             -- Updates provisioning record with appropriate info.
         Returns object with applicable info.
         */
+
         var LogPrefix = " selectPoPPEPort --> ";
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " called with NSProTask  " + NSProTask.number);
 
         var popGr = new GlideRecord('x_g_sonc_ns_pro_point_of_presence');
         var telcoGr = new GlideRecord('x_g_sonc_ns_pro_telco_provider');
-
-        var pePortTable = "cmdb_ci_network_circuit";
+        // var  circuitTable = "cmdb_ci_network_circuit";
         var returnObject = {
             status: "",
             message: "",
@@ -649,10 +681,12 @@ NcditNsw2Utils2.prototype = {
         // 07/13/22 if this is a move, then use new location lat/lon
         // 07/26/22 re-factor check for new_loc_rcd_ref
 
-        // if (this.debug) gs.info(this.timestamp() + LogPrefix + "Request type is " + NSProTask.request_type.type);
-        // if (this.debug) gs.info(this.timestamp() + LogPrefix + "lat/lon is " + NSProTask.telco_order.dest_location.latitude + '/' + NSProTask.telco_order.dest_location.longitude);
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "lat/lon is " + NSProTask.telco_order.dest_location.latitude + '/' + NSProTask.telco_order.dest_location.longitude);
 
         // if (NSProTask.request_type.type == 'Relocate') {
+
+        // TODO - populate relocate_location
+        
         //     if (gs.nil(telcoOrder.relocate_location) || telcoOrder.relocate_location == "") {
         //         if (this.debug) gs.info(this.timestamp() + LogPrefix + "Move-request ERROR: Expected relocate_location value to be set");
         //         returnObject.status = "MOVEERROR";
@@ -670,7 +704,6 @@ NcditNsw2Utils2.prototype = {
         popsByDistance.sort(function(a, b) {
             return a.distanceKm - b.distanceKm;
         });
-        //        global.JSUtil.logObject(popsByDistance, LogPrefix + " ordered PoPs");
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " closest PoP is siteId " + popsByDistance[0].popSiteId + "(" + popsByDistance[0].popName + "). At distance of " + popsByDistance[0].distanceMiles.toFixed(2) + " miles");
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " next closest PoP is siteId " + popsByDistance[1].popSiteId + "(" + popsByDistance[1].popName + "). At distance of " + popsByDistance[1].distanceMiles.toFixed(2) + " miles");
         lataStatus = "OK";
@@ -711,34 +744,35 @@ NcditNsw2Utils2.prototype = {
                         
             var priPePort = this.getPEPort4Pop(NSProTask, popsByDistance[pindex].popSiteId, provider_to_ignore); // 3rd parm: exclude this provider from lookup
 
-            if (priPePort.status == "OK") {
-                // global.JSUtil.logObject(priPePort, LogPrefix + " primary pe port assignment function found this from call to getPEPort4Pop");
-                if (this.debug) gs.info(this.timestamp() + LogPrefix + " priPePort = " + JSON.stringify(priPePort));
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + " priPePort = " + JSON.stringify(priPePort));
 
+            if (priPePort.status == "OK") {
                 if (telcoGr.get('name', priPePort.telcoName)) {
-                    if (this.debug) gs.info(this.timestamp() + LogPrefix + ' setting telco_provider to ' + telcoGr.sys_id.toString());
+
+                    if (this.debug) gs.info(this.timestamp() + LogPrefix + ' setting telco_provider to ' + telcoGr.getUniqueValue() + ' (' + telcoGr.name + ')');
+                    
                     NSProTask.telco_provider = telcoGr.sys_id.toString();
                 }
                 else {
-                    gs.warn(this.timestamp() + LogPrefix + " telco_provider not found in " + x_g_sonc_ns_pro_telco_provider);
+                    gs.warn(this.timestamp() + LogPrefix + " telco_provider not found in x_g_sonc_ns_pro_telco_provider" );
                 }
                 NSProTask.assigned_pe_port = priPePort.popPePortSysId.toString();
                 NSProTask.assigned_pe = priPePort.pe.toString();
                 //NSProTask.setDisplayValue('pop_abbrev', priPePort.popAbbrev); //sprint 27 06/29/22 - error not allowd.
 
-                if (this.debug) gs.info(this.timestamp() + 'searching for pop with ' + priPePort.pop);
+                if (this.debug) gs.info(this.timestamp() + LogPrefix  + ' searching for pop with ' + priPePort.pop);
 
                 try {
                     if (popGr.get('name', priPePort.popAbbrev)) {
-                        if (this.debug) gs.info(this.timestamp() + LogPrefix + ' setting pop to ' + popGr.sys_id.toString());
-                        NSProTask.assigned_pop = popGr.sys_id.toString();
+                        if (this.debug) gs.info(this.timestamp() + LogPrefix + ' setting pop to ' + popGr.name);
+                        NSProTask.assigned_pop = popGr.getUniqueValue();
                     }
                     else {
-                        gs.warn(this.timestamp() + LogPrefix + " PoP not found in " + x_g_sonc_ns_pro_point_of_presence);
+                        gs.error(this.timestamp() + LogPrefix + " PoP not found in x_g_sonc_ns_pro_point_of_presence" );
                     }
                 }
                 catch (ex) {
-                    gs.error(this.timestamp() + LogPrefix + 'Exception thrown attempting to set PoP. ex = ' + ex.message);
+                    gs.error(this.timestamp() + LogPrefix + 'Exception thrown attempting to set PoP. ex = ' + ex);
 
                 }
                 
@@ -773,6 +807,7 @@ NcditNsw2Utils2.prototype = {
         Provides and ordered list of telco names using the telco selection table.
         09/26/22: mod to hanlde BE providers, too.
         */
+
         var LogPrefix = " selectTelcoByZip --> ";
         zip = zip.substring(0,5); // if zip is longer than 5, trim it to 5 chars so we can use it for looking up in table
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' trimmed zip is ' + zip);
@@ -798,12 +833,13 @@ NcditNsw2Utils2.prototype = {
 		
 		if (this.debug) gs.info(this.timestamp() + LogPrefix + " telcoProviderList : " + JSON.stringify(telcoProviderList));
 				
+         
+
         return telcoProviderList;
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     selectBestPEPortFromList: function(pePortList) {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         var LogPrefix = " selectBestPEPortFromList --> ";
         /*
         Given a pe port list from the pop pe port circuits table, choose the best port to use for a new ce conntection.
@@ -817,6 +853,9 @@ NcditNsw2Utils2.prototype = {
          - high speed (250m or more) endpoints should prefer ten gig pe.
 
         */
+
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + 'pePortList = ' + JSON.stringify(pePortList));
+
         var utilMaxTarget = 0.50;
         var maxConnections = 100;
         var bestPortIndex = null;
@@ -826,15 +865,12 @@ NcditNsw2Utils2.prototype = {
         };
         var utilVerifiedOk = false;
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " called with pe port list of " + pePortList.length + " records");
-        global.JSUtil.logObject(pePortList, LogPrefix + " pePortList at selectBestPEPortFromList items");
-        if (this.debug) gs.info(this.timestamp() + LogPrefix + " pePortList = " + JSON.stringify(pePortList));
 
         /*
         walk the list and look for the lowest subscription rate as long as the util_pct < 50 (utilMaxTarget)
         */
         var currentLowSubRate = 1.0; // 01/26/22 require subsription rate less than 1 (full)
-        var pePortArrayLength = pePortList.length;
-        for (var pindex = 0; pindex < pePortArrayLength; pindex++) {
+        for (var pindex = 0; pindex < pePortList.length; pindex++) {
             if (this.debug) gs.info(this.timestamp() + LogPrefix + " value of pindex is " + pindex + ", examining port " + pePortList[pindex].name);
             // add check in case end point count is blank
             var portEnpointCount = parseInt(pePortList[pindex].endpoint_count);
@@ -885,6 +921,8 @@ NcditNsw2Utils2.prototype = {
         }
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + " bestPortReturnObject = " + JSON.stringify(bestPortReturnObject));
+
+         
 
         return bestPortReturnObject;
     },
@@ -1027,7 +1065,7 @@ NcditNsw2Utils2.prototype = {
             svcCode4TaskRcd = NSProTask.telco_order.service_code;
         } else if (NSProTask.request_type.type == 'Change') {
             // this is for a change - use requested service code
-            svcCode4TaskRcd = NSProTask.requested_service_code;
+            svcCode4TaskRcd = NSProTask.service_code;
             // go ahead and set quoted service code
             NSProTask.telco_order.quoted_svc_code = svcCode4TaskRcd;
         } else {
@@ -1041,7 +1079,6 @@ NcditNsw2Utils2.prototype = {
             svcCodeSuffix = svcCode4TaskRcd.substring(1); // drops first char of service
         }
 
-        // TODO - replace all this with call to telco provider table to get sales contact info
 
         // var telco_provider_rates_table = "x_g_sonc_ns_pro_telco_rates";
         // // var tpr_searchString = "telco_provider=" + NSProTask.telco_provider.toString() + "^svc_code=" + svcCodeSuffix;
@@ -1112,16 +1149,16 @@ NcditNsw2Utils2.prototype = {
         //     returnObject.status = "NOTPR";
         // }
 
-        // Replaced call to pull vendor contact info from [ast_contract] and [sys_user] to get from telco provider table for simplification
-        NSProTask.telco_order_email = NSProTask.telco_provider.poc_primary_email;
-        NSProTask.telco_order_contact = NSProTask.telco_provider.poc_primary_name;
-        if (NSProTask.telco_order_email == '') {
-            gs.error(this.timestamp() + LogPrefix + "provider reference not found in Telco Provider table for " + NSProTask.number);
-            returnObject.status = "NOCONTRACTREF";
-        }
-        else {
-            returnObject.status = 'OK';
-        }
+        // // Replaced call to pull vendor contact info from [ast_contract] and [sys_user] to get from telco provider table for simplification
+        // NSProTask.telco_order_email = NSProTask.telco_provider.poc_primary_email;
+        // NSProTask.telco_order_contact = NSProTask.telco_provider.poc_primary_name;
+        // if (NSProTask.telco_order_email == '') {
+        //     gs.error(this.timestamp() + LogPrefix + "provider reference not found in Telco Provider table for " + NSProTask.number);
+        //     returnObject.status = "NOCONTRACTREF";
+        // }
+        // else {
+        //     returnObject.status = 'OK';
+        // }
 
         // Fill in other stuff we know
         if (NSProTask.request_type.type == "New Service") {
@@ -1134,11 +1171,12 @@ NcditNsw2Utils2.prototype = {
             NSProTask.circuit_order_request_type = "add"; // added 7/13/22 for move
         }
 
-        NSProTask.circuit_due_date = NSProTask.due_date;
+        // NSProTask.circuit_due_date = NSProTask.due_date;
         NSProTask.circuit_order_sent_date = new GlideDate();
-        NSProTask.circuit_speed_ingress = NSProTask.requested_speed;
-        NSProTask.circuit_speed_egress = NSProTask.requested_speed;
-        returnObject.message += " Circuit order info populated";
+        // NSProTask.circuit_speed_ingress = NSProTask.speed;
+        // NSProTask.circuit_speed_egress = NSProTask.speed;
+
+
 
         // commented all this out since we handle HA with a seperate circuit order request
         //         // now do the alternate circuit of we have HA redundancy =================================
@@ -1202,8 +1240,8 @@ NcditNsw2Utils2.prototype = {
         //             telcoOrder.circuit_order_req_type_2 = "Add";
         //             telcoOrder.circuit_ord_req_needby_date_2 = telcoOrder.req_date;
         //             telcoOrder.circuit_order_sent_date_2 = orderSentDate;
-        //             telcoOrder.cir_speed_ingress_2 = telcoOrder.requested_speed;
-        //             telcoOrder.cir_speed_egress_2 = telcoOrder.requested_speed;
+        //             telcoOrder.cir_speed_ingress_2 = telcoOrder.speed;
+        //             telcoOrder.cir_speed_egress_2 = telcoOrder.speed;
         //             returnObject.message += " and secondary circuit";
         //         } else {
         //             if (this.debug) gs.info(LogPrefix + "skipping alternate circuit population, not HA service for " + telcoOrder.number);
@@ -1213,6 +1251,9 @@ NcditNsw2Utils2.prototype = {
         NSProTask.work_notes = "Circuit order data population requested.";
 
         NSProTask.update();
+
+        returnObject.status = 'OK';
+        returnObject.message += " Circuit order info populated";
 
         return returnObject;
 
@@ -1286,14 +1327,14 @@ NcditNsw2Utils2.prototype = {
         if (makeNetCirResp.status == "OK" || makeNetCirResp2 == "OK") {
             //gs.eventQueue("x_g_sonc_dit_nsw22.updatePopPE", NSProTask, "1");  // TODO - find out what Rick intended here and why he commented it out
             if (this.debug) gs.info(this.timestamp() + LogPrefix + "calling update pop pe port records function for " + NSProTask.number);
-            // this.runBackgroundFlowByName("updatePopPEPortCircuits");   TODO reenable
+            this.runBackgroundFlowByName("updatePopPEPortCircuits"); 
         }
 
         returnObject.status = "OK";
         
-        gs.warn(this.timestamp() + LogPrefix + "end of process, returning  " + JSON.stringify(returnObject));
+        gs.info(this.timestamp() + LogPrefix + "end of process, returning  " + JSON.stringify(returnObject));
 
-        return returnObject;
+        return JSON.stringify(returnObject);
 
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2170,7 +2211,7 @@ NcditNsw2Utils2.prototype = {
         fst_GR.setValue('quoted_service_code', NSProTask.quoted_service_code);
         fst_GR.setValue('assigned_wan_service', NSProTask.assigned_wan_service.toString());
         fst_GR.setValue('assigned_wan_service_code', NSProTask.assigned_wan_service_code);
-        fst_GR.setValue('requested_service_code', NSProTask.requested_service_code);
+        fst_GR.setValue('service_code', NSProTask.service_code);
         fst_GR.setValue('wan_cpe_ports_required', NSProTask.wan_cpe_ports_required);
         fst_GR.setValue('wan_circuit_type_jack', NSProTask.wan_circuit_type_jack.toString());
         fst_GR.setValue('telco_provider', NSProTask.telco_provider.toString());
@@ -2191,6 +2232,9 @@ NcditNsw2Utils2.prototype = {
 
         returnObject.status = "OK";
         returnObject.message = "FS request created.";
+
+         
+
         return returnObject;
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2261,7 +2305,7 @@ NcditNsw2Utils2.prototype = {
         fst_GR.setValue('quoted_service_code', NSProTask.quoted_service_code);
         fst_GR.setValue('assigned_wan_service', NSProTask.assigned_wan_service.toString());
         fst_GR.setValue('assigned_wan_service_code', NSProTask.assigned_wan_service_code);
-        fst_GR.setValue('requested_service_code', NSProTask.requested_service_code);
+        fst_GR.setValue('service_code', NSProTask.service_code);
         fst_GR.setValue('wan_cpe_ports_required', NSProTask.wan_cpe_ports_required);
         fst_GR.setValue('wan_circuit_type_jack', NSProTask.wan_circuit_type_jack.toString());
         fst_GR.setValue('telco_provider', NSProTask.telco_provider.toString());
@@ -2389,9 +2433,12 @@ NcditNsw2Utils2.prototype = {
         return vrfList;
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     createDmyCircuitFromPr: function(NSProTask) {  // removed parameter priSec since we can pull that from the NSPro task record
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        // TODO - validate fields written represent the ones needed
+
+        
         var LogPrefix = " createDmyCircuitFromPr --> ";
         /*
         creates a dummy circuit in network circuit table when a circuit is ordered.
@@ -2418,7 +2465,8 @@ NcditNsw2Utils2.prototype = {
         var netCircuitTable = "cmdb_ci_network_circuit";
 
         // find our what we are trying to do
-        var cirName = NSProTask.number + "-" + priSec; // this will be used for circuit id (name)
+        // var cirName = NSProTask.number + "-" + priSec; // this will be used for circuit id (name)
+        var cirName = NSProTask.number; // this will be used for circuit id (name)
 
         // TODO - need to confirm naming is Primary or Secondary suffix and fix netCircuitTable query as needed instead of '1' or '2'
 
@@ -2432,18 +2480,19 @@ NcditNsw2Utils2.prototype = {
             var newNCRcd = new GlideRecord(netCircuitTable);
             newNCRcd.initialize();
             newNCRcd.setValue('name', cirName);
-            newNCRcd.setValue('x_g_sonc_ns_pro_name', cirName);
+            // newNCRcd.setValue('x_g_sonc_ns_pro_name', cirName);
             newNCRcd.setValue('x_g_sonc_ns_pro_telco_provider', NSProTask.telco_provider.toString());
-            newNCRcd.setValue('access_type', NSProTask.assigned_pe_port.x_g_sonc_ns_pro_pe_circuit_type.getDisplayValue());
-            newNCRcd.setValue('correlation_id', NSProTask.assigned_pe_port.x_g_sonc_ns_pro_pe_circuit_id.getDisplayValue());
-            newNCRcd.setValue('serial_number', NSProTask.assigned_pe_port.x_g_sonc_ns_pro_pe_circuit_id.getDisplayValue());
+            newNCRcd.setValue('access_type', NSProTask.assigned_pe_port);
+            newNCRcd.setValue('correlation_id', NSProTask.assigned_pe_port);
+            newNCRcd.setValue('serial_number', NSProTask.assigned_pe_port);
             // newNCRcd.setValue('u_nsw2_site_id', NSProTask.site.site_identifier);
             newNCRcd.setValue('x_g_sonc_ns_pro_site', NSProTask.site.toString());
-            newNCRcd.setValue('x_g_sonc_ns_pro_telco_order', NSProTask.telco_order.toString());
-            newNCRcd.setValue('bandwidth_downstream', NSProTask.circuit_speed_egress); // to CE from telco
-            newNCRcd.setValue('bandwidth_upstream', NSProTask.circuit_speed_ingress); // from CE to telco
+            // newNCRcd.setValue('x_g_sonc_ns_pro_telco_provider_order_number', NSProTask.telco_order.toString());
+            newNCRcd.setValue('bandwidth_downstream', NSProTask.speed); // to CE from telco
+            newNCRcd.setValue('bandwidth_upstream', NSProTask.speed); // from CE to telco
+            newNCRcd.setValue('x_g_sonc_ns_pro_circuit_speed', NSProTask.speed);
             newNCRcd.setValue('install_status', '4'); // pending install  <-- TODO devise way to make these installed and operational
-            newNCRcd.setValue('operational_status', '2'); // not operational
+            // newNCRcd.setValue('operational_status', '2'); // not operational
             var newRcdId = newNCRcd.insert();
             returnObject.circuit.sys_id = newRcdId;
             returnObject.message = "created primary network circuit " + newRcdId;
@@ -3177,7 +3226,7 @@ NcditNsw2Utils2.prototype = {
 
         */
         var LogPrefix = " verifyPoPPEPortCapacity --> ";
-        var nswSiteTable = "cmdb_ci_site";
+        var siteTable = "cmdb_ci_site";
         var poppeportTable = "cmdb_ci_network_circuit";  // need to check new table name
         var svcTable = "x_g_sonc_ns_pro_service_definition";
         if (this.debug) gs.info(this.timestamp() + LogPrefix + "called to verify PE port capacity for " + telcoOrder.number);
@@ -3200,7 +3249,7 @@ NcditNsw2Utils2.prototype = {
         // given the telcoOrder, lets get stuff we need.
 
         // get the associated site record
-        var siteGR = new GlideRecord(nswSiteTable);
+        var siteGR = new GlideRecord(siteTable);
         var gotSiteGR = siteGR.get(telcoOrder.site);
         if (gotSiteGR) {
             if (this.debug) gs.info(this.timestamp() + LogPrefix + "got related site record - site is " + siteGR.name);
@@ -3219,7 +3268,7 @@ NcditNsw2Utils2.prototype = {
             }
             var futureServiceGR = new GlideRecord(svcTable);
             // use requested svc code string value for lookup
-            svcCodeSearchStr = "svc_code=" + telcoOrder.requested_service_codes;
+            svcCodeSearchStr = "svc_code=" + telcoOrder.service_codes;
             futureServiceGR.addEncodedQuery(svcCodeSearchStr);
             futureServiceGR.query();
             if (futureServiceGR.next()) {
@@ -3449,13 +3498,13 @@ addService2Site: function(site, service, agency, start_date) {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-21 10:26:40</sys_created_on>
         <sys_id>fc79b24ddbc6b95040eae46b1396196a</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>205</sys_mod_count>
         <sys_name>NcditNsw2Utils2</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_fc79b24ddbc6b95040eae46b1396196a</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-01-08 05:38:51</sys_updated_on>
+        <sys_updated_on>2024-03-29 21:45:28</sys_updated_on>
     </sys_script_include>
 </record_update>

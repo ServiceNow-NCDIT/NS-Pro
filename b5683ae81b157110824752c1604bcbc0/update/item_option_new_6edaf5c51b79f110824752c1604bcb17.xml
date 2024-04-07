@@ -57,8 +57,7 @@
         <record_producer_table>x_g_sonc_ns_pro_lan_wan_service_request_sts01</record_producer_table>
         <reference>cmdb_ci_site</reference>
         <reference_qual>x_g_sonc_ns_pro_active=true</reference_qual>
-        <reference_qual_condition table="cmdb_ci_site">x_g_sonc_ns_pro_active=true<item endquery="false" field="x_g_sonc_ns_pro_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-        </reference_qual_condition>
+        <reference_qual_condition table="cmdb_ci_site">x_g_sonc_ns_pro_active=true</reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated 

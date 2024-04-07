@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="nsp_activity_type" table="x_g_sonc_ns_pro_nspro_tasks">
-        <active>true</active>
+        <active>false</active>
         <array>false</array>
         <attributes/>
         <audit>false</audit>
@@ -58,7 +58,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_dictionary_x_g_sonc_ns_pro_nspro_tasks_nsp_activity_type</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-29 14:12:34</sys_updated_on>
+        <sys_updated_on>2024-03-20 06:58:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

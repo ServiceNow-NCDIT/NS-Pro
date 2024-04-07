@@ -16,22 +16,7 @@
         </element>
         <element label="Circuit" max_length="32" name="circuit" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Circuit Due Date" max_length="40" name="circuit_due_date" type="glide_date"/>
-        <element label="Circuit LATA From Telco" max_length="40" name="circuit_lata_from_telco" type="string"/>
-        <element label="Circuit Order Need By Date" max_length="40" name="circuit_order_need_by_date" type="glide_date"/>
-        <element choice="1" label="Circuit Order Request Type" max_length="40" name="circuit_order_request_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Add" sequence="100" value="add"/>
-                <element inactive_on_update="false" label="Terminate" sequence="200" value="terminate"/>
-            </choice>
-        </element>
-        <element label="Circuit Order Response Received" max_length="40" name="circuit_order_response_received" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="Circuit Order Sent Date" max_length="40" name="circuit_order_sent_date" type="glide_date"/>
-        <element label="Circuit Ready Date" max_length="40" name="circuit_ready_date" type="glide_date"/>
-        <element label="Circuit Special Instructions" max_length="1000" name="circuit_special_instructions" type="string"/>
-        <element label="Circuit Speed Egress" max_length="40" name="circuit_speed_egress" type="integer"/>
-        <element label="Circuit Speed Ingress" max_length="40" name="circuit_speed_ingress" type="integer"/>
         <element label="Construction Cost" max_length="20" name="construction_cost" type="currency"/>
-        <element label="CPE Models Required" max_length="500" name="cpe_models_required" type="string"/>
         <element label="Requested Circuit Location" max_length="200" name="demarc_location" type="string"/>
         <element label="Dest City" max_length="100" name="dest_city" read_only="true" type="string"/>
         <element label="Dest County" max_length="40" name="dest_county" read_only="true" type="string"/>
@@ -100,19 +85,13 @@
         <element label="Request Managed VOIP" max_length="40" name="request_managed_voip" type="boolean"/>
         <element default="true" label="Request Managed WAN" max_length="40" name="request_managed_wan" type="boolean"/>
         <element label="Request Managed WLAN" max_length="40" name="request_managed_wlan" type="boolean"/>
-        <element label="Request Type" max_length="32" name="request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
+        <element label="Request Type" max_length="32" name="request_type" read_only="true" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Request Comments" max_length="1000" name="req_comments" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Requested Service Codes" max_length="200" name="req_svc_code" type="string"/>
         <element label="Service Code" max_length="40" name="service_code" type="string"/>
         <element label="Assigned WAN Service" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" reference_qual="svc_titleLIKEWAN^ORsvc_titleLIKEHybrid^EQ" reference_qual_condition="svc_titleLIKEWAN^ORsvc_titleLIKEHybrid^EQ" type="reference"/>
         <element label="Site" mandatory="true" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="'location='+current.location" reference_qual_condition="'location='+current.location" type="reference"/>
         <element label="Special Instructions" max_length="2000" name="special_instructions" type="string"/>
-        <element label="Telco Order Contact" max_length="100" name="telco_order_contact" type="string"/>
-        <element label="Telco Order Email" max_length="100" name="telco_order_email" type="string"/>
-        <element label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
-        <element label="Telco Response Message" max_length="4000" name="telco_response_message" type="string"/>
-        <element label="Telco Selection" max_length="32" name="telco_selection" reference="x_g_sonc_ns_pro_telco_selection_by_zip" reference_qual="javascript:&quot;zip=&quot;+current.dest_zip&#13;&#10;//javascript:&quot;zip=&quot;+current.dest_zip+&quot;^service_category=&quot;+current.network_service_category" type="reference" use_reference_qualifier="advanced"/>
-        <element attributes="encode_utf8=false" label="Telco Vendor" max_length="32" name="telco_vendor" reference="core_company" type="reference"/>
         <element label="Total Cost" max_length="20" name="total_cost" type="currency"/>
         <element choice="1" label="WAN Circuit Type Jack" max_length="40" name="wan_circuit_type_jack" type="choice">
             <choice>
@@ -188,15 +167,6 @@
             <element name="site"/>
         </index>
         <index name="index21">
-            <element name="telco_provider"/>
-        </index>
-        <index name="index22">
-            <element name="telco_selection"/>
-        </index>
-        <index name="index23">
-            <element name="telco_vendor"/>
-        </index>
-        <index name="index24">
             <element name="wlan_service_assignment"/>
         </index>
     </element>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related action="DELETE" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="2" view="nspro">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Telco Order - NSPro" name="x_g_sonc_ns_pro_telco_order" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">54c621bfdbeaf11040eae46b139619ea</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_g_sonc_ns_pro_nspro_tasks.telco_order</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-23 13:59:39</sys_created_on>
+            <sys_id>1cc621bfdbeaf11040eae46b139619eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-23 13:59:39</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Telco Order - NSPro</calculated_name>
+            <filter/>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-11-23 13:59:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54c621bfdbeaf11040eae46b139619ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Telco Order - NSPro</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_related_x_g_sonc_ns_pro_telco_order_nspro</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-23 13:59:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_related_x_g_sonc_ns_pro_telco_order_nspro</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="2" view="nspro"><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Telco Order - NSPro" name="x_g_sonc_ns_pro_telco_order" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">54c621bfdbeaf11040eae46b139619ea</list_id><order_by/><position>0</position><related_list>x_g_sonc_ns_pro_nspro_tasks.telco_order</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-11-23 13:59:39</sys_created_on><sys_id>1cc621bfdbeaf11040eae46b139619eb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-11-23 13:59:39</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Telco Order - NSPro</calculated_name><filter/><name>x_g_sonc_ns_pro_telco_order</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-11-23 13:59:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>54c621bfdbeaf11040eae46b139619ea</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Telco Order - NSPro</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_related_x_g_sonc_ns_pro_telco_order_nspro</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-11-23 13:59:39</sys_updated_on><sys_user/><view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+        <payload_hash>1823450185</payload_hash>
+        <record_name>Telco Order</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-23 13:59:39</sys_created_on>
+        <sys_id>dcc6e1bfdbeaf11040eae46b13961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18bfc7aacb10000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-11-23 13:59:39</sys_updated_on>
+        <type>Related Lists</type>
+        <update_guid>10c6e1bfcaeaf110061359ee11b75636</update_guid>
+        <update_guid_history>10c6e1bfcaeaf110061359ee11b75636:1823450185,1dc88c29cc22fd50b467f48029479e09:-348272994,5fc5398c4752f1d0fa74d0f91a941b3d:-508274029,5328e4d4f2b93d90edeb33ce2733b561:-1999517986,ca51c3961da9f95090fe8541bf05233c:-370179374,8651c3563da9f950ae3c430f6fc15bb3:-518680448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-15 17:50:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_related_list">sys_ui_related_list</sys_db_object>
+        <sys_id>5802a34752f448608ab70fe8b3d52f09</sys_id>
+        <sys_metadata>54c621bfdbeaf11040eae46b139619ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telco Order - NSPro</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Network Request">e2b42525db19791040eae46b13961947</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_related_x_g_sonc_ns_pro_telco_order_nspro</sys_update_name>
+        <sys_update_version display_value="sys_ui_related_x_g_sonc_ns_pro_telco_order_nspro">dcc6e1bfdbeaf11040eae46b13961936</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-15 17:50:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

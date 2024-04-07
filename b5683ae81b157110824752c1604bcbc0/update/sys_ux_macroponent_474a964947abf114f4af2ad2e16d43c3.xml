@@ -49,7 +49,7 @@
       "propertyValues" : {
         "size" : {
           "type" : "JSON_LITERAL",
-          "value" : "md"
+          "value" : "lg"
         },
         "variant" : {
           "type" : "JSON_LITERAL",
@@ -177,7 +177,7 @@
       "propertyValues" : {
         "size" : {
           "type" : "JSON_LITERAL",
-          "value" : "md"
+          "value" : "lg"
         },
         "variant" : {
           "type" : "JSON_LITERAL",
@@ -305,7 +305,7 @@
       "propertyValues" : {
         "size" : {
           "type" : "JSON_LITERAL",
-          "value" : "md"
+          "value" : "lg"
         },
         "variant" : {
           "type" : "JSON_LITERAL",
@@ -323,7 +323,7 @@
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "Relocate Site",
+            "message" : "Relocate Site Request",
             "comment" : ""
           }
         },
@@ -433,7 +433,7 @@
       "propertyValues" : {
         "size" : {
           "type" : "JSON_LITERAL",
-          "value" : "md"
+          "value" : "lg"
         },
         "variant" : {
           "type" : "JSON_LITERAL",
@@ -451,7 +451,7 @@
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "Decommission Site",
+            "message" : "Decommission Site Request",
             "comment" : ""
           }
         },
@@ -560,7 +560,7 @@
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"button_new_service_request","styles":{"margin":"var(--now-static-space--xxl)","border-color":"rgb(var(--now-color_background--primary))","border-width":"var(--now-static-space--xxs)","border-style":"solid","border-radius":"var(--now-static-border-radius--lg)","width":""}},{"element_id":"button_change_request","styles":{"margin":"var(--now-static-space--xxl)","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"id","border-radius":"var(--now-static-border-radius--lg)"}},{"element_id":"button_relocate","styles":{"margin":"var(--now-static-space--xxl)","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"id","border-radius":"var(--now-static-border-radius--lg)"}},{"element_id":"button_decommission","styles":{"margin":"var(--now-static-space--xxl)","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"id","border-radius":"var(--now-static-border-radius--lg)"}}],
+        "items" : [{"element_id":"button_new_service_request","styles":{"margin":"var(--now-static-space--xxl)","border-color":"rgb(var(--now-color_background--primary))","border-width":"var(--now-static-space--xxs)","border-style":"solid","border-radius":"var(--now-static-border-radius--lg)","width":""}},{"element_id":"button_change_request","styles":{"margin":"var(--now-static-space--xxl)","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"id","border-radius":"var(--now-static-border-radius--lg)"}},{"element_id":"button_relocate","styles":{"margin":"var(--now-static-space--xxl)","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"id","border-radius":"var(--now-static-border-radius--lg)"}},{"element_id":"button_decommission","styles":{"margin":"var(--now-static-space--xxl)","border-color":"RGB(var(--now-color--neutral-5))","border-width":"var(--now-static-space--xxs)","border-style":"id","border-radius":"var(--now-static-border-radius--lg)","width":"","height":"","padding":"var(--now-static-space--lg)"}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"column","display":"grid","grid-template-columns":"1fr 1fr 1fr 1fr","grid-template-rows":"1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr"},
@@ -637,7 +637,7 @@
         },
         "tag" : {
           "type" : "JSON_LITERAL",
-          "value" : "h4"
+          "value" : "h3"
         }
       },
       "eventMappings" : [ ],
@@ -668,13 +668,13 @@
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "If a service offering does not appear in the selection drop-down, then it might not be currently available at the supplied zip code. If service is indeed required but not show as available, go ahead and request the service you need using the Site \"new\" service request and fill in your need in the \"special instructions\" field. Someone will review your request and contact you.",
+            "message" : "If a service offering does not appear in the selection drop-down, then it might not be currently available at the supplied zip code. If service is indeed required but not shown as available, go ahead and request the service you need using the Site \"new\" service request and fill in your need in the \"special instructions\" field. Someone will review your request and contact you.",
             "comment" : ""
           }
         },
         "tag" : {
           "type" : "JSON_LITERAL",
-          "value" : "h4"
+          "value" : "h3"
         }
       },
       "eventMappings" : [ ],
@@ -767,183 +767,829 @@
       "isNonDestructive" : false,
       "items" : [ ],
       "styles" : null
-    } ],
-    "layout" : {
-      "default" : {
-        "children" : null,
-        "isInline" : null,
-        "items" : [{"element_id":"stylized_text_2","styles":{"flex":"none"}},{"element_id":"stylized_text_1","styles":{"margin":"var(--now-static-space--lg)","margin-right":"5rem","margin-left":"5rem","margin-top":"var(--now-static-space--xxs)","margin-bottom":"var(--now-static-space--xxs)","padding":"var(--now-static-space--xxs)"}},{"element_id":"stylized_text_3","styles":{"margin":"var(--now-static-space--lg)","margin-top":"var(--now-static-space--xxs)","margin-bottom":"var(--now-static-space--xxs)","margin-right":"5rem","margin-left":"5rem","padding":"var(--now-static-space--xxs)"}},{"element_id":"stylized_text_4","styles":{"margin-right":"5rem","margin-left":"5rem","margin-top":".125rem","margin-bottom":"var(--now-static-space--xxs)","text-align":"center"}}],
-        "root" : null,
-        "rules" : null,
-        "styles" : {"flex-direction":"column"},
-        "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
-      },
-      "version" : "3.0.0"
-    }
-  },
-  "isHidden" : {
-    "type" : "JSON_LITERAL",
-    "value" : null
-  },
-  "isHero" : false,
-  "extensionPoints" : [ ],
-  "isNonDestructive" : false,
-  "items" : [ ],
-  "styles" : null
-}, {
-  "elementId" : "container_zip_code",
-  "elementLabel" : "Container Zip Code",
-  "propertyValues" : {
-    "ariaRegionHeadingLevel" : {
-      "type" : "JSON_LITERAL",
-      "value" : "1"
-    },
-    "hideEmptyStateUi" : {
-      "type" : "JSON_LITERAL",
-      "value" : true
-    },
-    "ariaRegionName" : {
-      "type" : "TRANSLATION_LITERAL",
-      "value" : {
-        "code" : null,
-        "message" : "",
-        "comment" : ""
-      }
-    },
-    "includeAriaHeading" : {
-      "type" : "JSON_LITERAL",
-      "value" : false
-    },
-    "type" : {
-      "type" : "JSON_LITERAL",
-      "value" : "section"
-    },
-    "ariaRole" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "eventMappings" : [ ],
-  "slot" : null,
-  "definition" : {
-    "id" : "d356d14b6e293a3020a244b63d278d8f",
-    "type" : "MACROPONENT"
-  },
-  "overrides" : {
-    "composition" : [ {
-      "elementId" : "input_zip_code",
-      "elementLabel" : "Input Zip Code",
+    }, {
+      "elementId" : "container_zip_code",
+      "elementLabel" : "Container Zip Code",
       "propertyValues" : {
-        "minlength" : {
+        "ariaRegionHeadingLevel" : {
           "type" : "JSON_LITERAL",
-          "value" : 5
+          "value" : "1"
         },
-        "maxlength" : {
-          "type" : "JSON_LITERAL",
-          "value" : 5
-        },
-        "max" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "multiple" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "helperContent" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "pattern" : {
-          "type" : "JSON_LITERAL",
-          "value" : "[0-9]{5,5}"
-        },
-        "optional" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "label" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "Enter a 5 digit zip code",
-            "comment" : ""
-          }
-        },
-        "type" : {
-          "type" : "JSON_LITERAL",
-          "value" : "text"
-        },
-        "autofocus" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "configAria" : {
-          "type" : "MAP_CONTAINER",
-          "container" : {
-            "input" : {
-              "type" : "MAP_CONTAINER",
-              "container" : { }
-            }
-          }
-        },
-        "required" : {
+        "hideEmptyStateUi" : {
           "type" : "JSON_LITERAL",
           "value" : true
         },
-        "min" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
+        "ariaRegionName" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "",
+            "comment" : ""
+          }
         },
-        "size" : {
-          "type" : "JSON_LITERAL",
-          "value" : "md"
-        },
-        "readonly" : {
+        "includeAriaHeading" : {
           "type" : "JSON_LITERAL",
           "value" : false
         },
-        "name" : {
+        "type" : {
           "type" : "JSON_LITERAL",
-          "value" : "formZip"
+          "value" : "section"
         },
-        "invalid" : {
+        "ariaRole" : {
           "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "messages" : {
-          "type" : "JSON_LITERAL",
-          "value" : [ ]
-        },
-        "disabled" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "step" : {
-          "type" : "JSON_LITERAL",
-          "value" : "any"
-        },
-        "placeholder" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "value" : {
-          "type" : "JSON_LITERAL",
-          "value" : null
-        },
-        "hideRequiredIndicator" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
+          "value" : ""
         }
       },
       "eventMappings" : [ ],
-      "slot" : null,
+      "slot" : "",
       "definition" : {
-        "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+        "id" : "d356d14b6e293a3020a244b63d278d8f",
         "type" : "MACROPONENT"
       },
-      "overrides" : null,
+      "overrides" : {
+        "composition" : [ {
+          "elementId" : "input_1",
+          "elementLabel" : "Input 1",
+          "propertyValues" : {
+            "minlength" : {
+              "type" : "JSON_LITERAL",
+              "value" : 5
+            },
+            "maxlength" : {
+              "type" : "JSON_LITERAL",
+              "value" : 5
+            },
+            "max" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "multiple" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "helperContent" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "pattern" : {
+              "type" : "JSON_LITERAL",
+              "value" : "[0-9]{5,5}"
+            },
+            "optional" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "Enter a 5 digit zip code",
+                "comment" : ""
+              }
+            },
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "text"
+            },
+            "autofocus" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : {
+                "input" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : { }
+                }
+              }
+            },
+            "required" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "min" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "readonly" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "name" : {
+              "type" : "JSON_LITERAL",
+              "value" : "formZip"
+            },
+            "invalid" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "messages" : {
+              "type" : "JSON_LITERAL",
+              "value" : [ ]
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "step" : {
+              "type" : "JSON_LITERAL",
+              "value" : "any"
+            },
+            "placeholder" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "value" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "hideRequiredIndicator" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "clrsbdyggbbaaccsaddffhhyghhggbtbyff",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_input.NOW_INPUT#INVALID_SET",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_input.NOW_INPUT#INVALID_SET",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : {
+                "sysId" : "eb07dab747777550f4af2ad2e16d43ba"
+              },
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : null,
+              "operation" : null,
+              "targetId" : "clrsbdyggbbaaccsbddffhhylrpffeeaadhh",
+              "type" : "CLIENT_SCRIPT"
+            } ]
+          } ],
+          "slot" : null,
+          "definition" : {
+            "id" : "bb0f92e8d7eff1590624bfe69d316f23",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : null
+        }, {
+          "elementId" : "container_5",
+          "elementLabel" : "Container 5",
+          "propertyValues" : {
+            "ariaRegionHeadingLevel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "1"
+            },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "ariaRegionName" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "includeAriaHeading" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "section"
+            },
+            "ariaRole" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : null,
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "list_1",
+              "elementLabel" : "List 1",
+              "propertyValues" : {
+                "hideUnnecessaryRowSelectors" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "selectedListId" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "Select..."
+                },
+                "menuSelection" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "view" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "Default"
+                },
+                "hideLastRefreshedText" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "limit" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 5
+                },
+                "hideColumnReorder" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideMenuButton" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "listMenuOpen" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideHighlightedValues" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRowSelector" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "recordSelectedTable" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hideCheckboxHover" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideHeader" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideLastPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePages" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideRowCount" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "query" : {
+                  "type" : "CLIENT_TRANSFORM",
+                  "transform" : {
+                    "operands" : {
+                      "type" : "LIST_CONTAINER",
+                      "container" : [ {
+                        "type" : "JSON_LITERAL",
+                        "value" : "svc_codeLIKE"
+                      }, {
+                        "type" : "STATE_BINDING",
+                        "binding" : {
+                          "address" : [ "svcCodeMatch" ]
+                        }
+                      }, {
+                        "type" : "JSON_LITERAL",
+                        "value" : "^cpe_port_range_low&lt;1^ORDERBYsvc_title"
+                      } ]
+                    },
+                    "operator" : "CONCAT"
+                  }
+                },
+                "hideFilterPanel" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideHighlightContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideLimitSelector" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideEmptyStateImage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideQuickEdit" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideRefreshButton" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "groupByField" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "listTitle" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Service Definitions",
+                    "comment" : ""
+                  }
+                },
+                "fixedQuery" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hideDotwalk" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "tiny" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hideDeclarativeActions" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideRange" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "page" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 1
+                },
+                "hidePanelRestore" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "highlightedValueConfigId" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "maxCharLimit" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 254
+                },
+                "columns" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "svc_title,svc_code"
+                },
+                "hideLinks" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "wordWrap" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideTitleRowCount" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideColumnFiltering" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hidePanelAdvanced" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "daClientActionContract" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "error" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : { }
+                },
+                "maxColumns" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "hidePreviousPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideOptionToSaveAs" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hidePanelFooter" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "actionConfigId" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "isRefList" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideInlineEditing" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hidePanelConditionDelete" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hidePagination" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "table" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "x_g_sonc_dit_nsw22_service_definitions"
+                },
+                "hideColumnGrouping" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideCellFilter" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideNextPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "recordSelectedSysId" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "recordSelectedView" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hideColumnResizing" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "refreshRequested" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : null
+                },
+                "highlightContent" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "patterns" : [ ],
+                    "color" : ""
+                  }
+                },
+                "hideListSharing" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "headerSize" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "md"
+                },
+                "hideSelectAll" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideTitle" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideDragDrop" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                },
+                "hideColumnSorting" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "overrideWordWrapUserPref" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "hideFirstPage" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : false
+                },
+                "selectedRecords" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : [ ]
+                },
+                "headingLevel" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : 1
+                },
+                "recordSelectedQuery" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : ""
+                },
+                "hidePersonalization" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : true
+                }
+              },
+              "eventMappings" : [ {
+                "eventMappingId" : "clrsbfjqeaaccsnddffhhypaotkffbbn",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#DATA_FETCH_SUCCEEDED",
+                "sourceEventCorrelationId" : null,
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#DATA_FETCH_SUCCEEDED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "bc36dab747777550f4af2ad2e16d4316"
+                  },
+                  "conditional" : null,
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "clrsbfjqeaaccsoddffhhyjcaavfhiff",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              }, {
+                "eventMappingId" : "clrsbfaagggaaccslddffhhyfvvccqaaaak",
+                "isConfiguration" : false,
+                "offRowStorageId" : null,
+                "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+                "sourceEventCorrelationId" : null,
+                "sourceEventDefinition" : {
+                  "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+                  "id" : null,
+                  "type" : "UXEVENT"
+                },
+                "sourceEventSysId" : null,
+                "targets" : [ {
+                  "broker" : null,
+                  "clientScript" : {
+                    "sysId" : "37a7963b47777550f4af2ad2e16d43ae"
+                  },
+                  "conditional" : null,
+                  "declarativeAction" : null,
+                  "event" : null,
+                  "operation" : null,
+                  "targetId" : "clrsbfaagggaaccsmddffhhyffoeehhgumt",
+                  "type" : "CLIENT_SCRIPT"
+                } ]
+              } ],
+              "slot" : null,
+              "definition" : {
+                "id" : "66ee7d86e81f696c9f9be19d8424cc0d",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : null
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "isInline" : null,
+                "items" : [{"element_id":"list_1","styles":{}}],
+                "root" : null,
+                "rules" : null,
+                "styles" : {"flex-direction":"column"},
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "flex"
+              },
+              "version" : "3.0.0"
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : null
+        }, {
+          "elementId" : "container_6",
+          "elementLabel" : "Container 6",
+          "propertyValues" : {
+            "ariaRegionHeadingLevel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "1"
+            },
+            "hideEmptyStateUi" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "ariaRegionName" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "code" : null,
+                "message" : "",
+                "comment" : ""
+              }
+            },
+            "includeAriaHeading" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "type" : {
+              "type" : "JSON_LITERAL",
+              "value" : "section"
+            },
+            "ariaRole" : {
+              "type" : "JSON_LITERAL",
+              "value" : ""
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : null,
+          "definition" : {
+            "id" : "d356d14b6e293a3020a244b63d278d8f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : {
+            "composition" : [ {
+              "elementId" : "stylized_text_10",
+              "elementLabel" : "Stylized text 10",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Monthly Cost Estimate\n(Confirm with Network Services)",
+                    "comment" : ""
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h1"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : null,
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : null
+            }, {
+              "elementId" : "stylized_text_11",
+              "elementLabel" : "Stylized text 11",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "TRANSLATION_LITERAL",
+                  "value" : {
+                    "code" : null,
+                    "message" : "Plus a one-time installation fee: $500.00",
+                    "comment" : ""
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h4"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : null,
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : null
+            }, {
+              "elementId" : "stylized_text_12",
+              "elementLabel" : "Stylized text 12",
+              "propertyValues" : {
+                "css" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "* { }"
+                },
+                "text" : {
+                  "type" : "STATE_BINDING",
+                  "binding" : {
+                    "address" : [ "qqMCostStr" ]
+                  }
+                },
+                "tag" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : "h1"
+                }
+              },
+              "eventMappings" : [ ],
+              "slot" : "",
+              "definition" : {
+                "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+                "type" : "MACROPONENT"
+              },
+              "overrides" : null,
+              "isHidden" : {
+                "type" : "JSON_LITERAL",
+                "value" : null
+              },
+              "isHero" : false,
+              "extensionPoints" : [ ],
+              "isNonDestructive" : false,
+              "items" : [ ],
+              "styles" : null
+            } ],
+            "layout" : {
+              "default" : {
+                "children" : null,
+                "isInline" : null,
+                "items" : [{"element_id":"stylized_text_10","styles":{"text-align":"center"}},{"element_id":"stylized_text_12","styles":{"text-align":"center"}},{"element_id":"stylized_text_11","styles":{"text-align":"center"}}],
+                "root" : null,
+                "rules" : null,
+                "styles" : {"flex-direction":"column"},
+                "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+                "type" : "flex"
+              },
+              "version" : "3.0.0"
+            }
+          },
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : null
+          },
+          "isHero" : false,
+          "extensionPoints" : [ ],
+          "isNonDestructive" : false,
+          "items" : [ ],
+          "styles" : null
+        } ],
+        "layout" : {
+          "default" : {
+            "children" : null,
+            "isInline" : null,
+            "items" : [{"element_id":"input_1","styles":{"align-items":"center","width":"200px"}},{"element_id":"container_5","styles":{"width":"100%"}},{"element_id":"container_6","styles":{"width":"100%"}}],
+            "root" : null,
+            "rules" : null,
+            "styles" : {"flex-direction":"column","justify-content":"center","display":"flex","align-items":"center"},
+            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "type" : "flex"
+          },
+          "version" : "3.0.0"
+        }
+      },
       "isHidden" : {
         "type" : "JSON_LITERAL",
         "value" : null
@@ -958,10 +1604,10 @@
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"input_zip_code","styles":{"align-items":"center","width":"200px"}}],
+        "items" : [{"element_id":"stylized_text_2","styles":{"flex":"none"}},{"element_id":"stylized_text_1","styles":{"margin":"var(--now-static-space--lg)","margin-right":"5rem","margin-left":"5rem","margin-top":"var(--now-static-space--xxs)","margin-bottom":"var(--now-static-space--xxs)","padding":"var(--now-static-space--xxs)"}},{"element_id":"stylized_text_3","styles":{"margin":"var(--now-static-space--lg)","margin-top":"var(--now-static-space--xxs)","margin-bottom":"var(--now-static-space--xxs)","margin-right":"5rem","margin-left":"5rem","padding":"var(--now-static-space--xxs)"}},{"element_id":"stylized_text_4","styles":{"margin-right":"5rem","margin-left":"5rem","margin-top":".125rem","margin-bottom":"var(--now-static-space--xxs)","text-align":"center"}},{"element_id":"container_zip_code","styles":{}}],
         "root" : null,
         "rules" : null,
-        "styles" : {"flex-direction":"column","justify-content":"center","display":"flex","align-items":"center"},
+        "styles" : {"flex-direction":"column"},
         "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
         "type" : "flex"
       },
@@ -1047,7 +1693,7 @@
       "overrides" : null,
       "isHidden" : {
         "type" : "JSON_LITERAL",
-        "value" : null
+        "value" : true
       },
       "isHero" : false,
       "extensionPoints" : [ ],
@@ -1242,7 +1888,7 @@
       "overrides" : null,
       "isHidden" : {
         "type" : "JSON_LITERAL",
-        "value" : null
+        "value" : true
       },
       "isHero" : false,
       "extensionPoints" : [ ],
@@ -1353,44 +1999,7 @@
         "type" : "MACROPONENT"
       },
       "overrides" : {
-        "composition" : [ {
-          "elementId" : "stylized_text_6",
-          "elementLabel" : "Stylized text 6",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Local Area Network (LAN) Quick Quote",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "h1"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : null,
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : null
-        } ],
+        "composition" : [ ],
         "layout" : {
           "default" : {
             "children" : null,
@@ -1454,49 +2063,12 @@
         "type" : "MACROPONENT"
       },
       "overrides" : {
-        "composition" : [ {
-          "elementId" : "stylized_text_7",
-          "elementLabel" : "Stylized text 7",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Wireless LAN (WLAN) Quick Quote",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "h1"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : null,
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : null
-        } ],
+        "composition" : [ ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"stylized_text_7","styles":{}}],
+            "items" : [],
             "root" : null,
             "rules" : null,
             "styles" : {"flex-direction":"column","align-items":"center"},
@@ -1580,8 +2152,8 @@
   },
   "overrides" : {
     "composition" : [ {
-      "elementId" : "container_2",
-      "elementLabel" : "Container 2",
+      "elementId" : "container_7",
+      "elementLabel" : "Container 7",
       "propertyValues" : {
         "ariaRegionHeadingLevel" : {
           "type" : "JSON_LITERAL",
@@ -1619,153 +2191,15 @@
         "type" : "MACROPONENT"
       },
       "overrides" : {
-        "composition" : [ {
-          "elementId" : "stylized_text_8",
-          "elementLabel" : "Stylized text 8",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Local Area Network (LAN) Quick Quote",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "h1"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : null,
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : null
-        } ],
+        "composition" : [ ],
         "layout" : {
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"stylized_text_8","styles":{}}],
+            "items" : [],
             "root" : null,
             "rules" : null,
-            "styles" : {"flex-direction":"column","align-items":"center"},
-            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-            "type" : "flex"
-          },
-          "version" : "3.0.0"
-        }
-      },
-      "isHidden" : {
-        "type" : "JSON_LITERAL",
-        "value" : null
-      },
-      "isHero" : false,
-      "extensionPoints" : [ ],
-      "isNonDestructive" : false,
-      "items" : [ ],
-      "styles" : null
-    }, {
-      "elementId" : "container_3",
-      "elementLabel" : "Container 3",
-      "propertyValues" : {
-        "ariaRegionHeadingLevel" : {
-          "type" : "JSON_LITERAL",
-          "value" : "1"
-        },
-        "hideEmptyStateUi" : {
-          "type" : "JSON_LITERAL",
-          "value" : true
-        },
-        "ariaRegionName" : {
-          "type" : "TRANSLATION_LITERAL",
-          "value" : {
-            "code" : null,
-            "message" : "",
-            "comment" : ""
-          }
-        },
-        "includeAriaHeading" : {
-          "type" : "JSON_LITERAL",
-          "value" : false
-        },
-        "type" : {
-          "type" : "JSON_LITERAL",
-          "value" : "section"
-        },
-        "ariaRole" : {
-          "type" : "JSON_LITERAL",
-          "value" : ""
-        }
-      },
-      "eventMappings" : [ ],
-      "slot" : null,
-      "definition" : {
-        "id" : "d356d14b6e293a3020a244b63d278d8f",
-        "type" : "MACROPONENT"
-      },
-      "overrides" : {
-        "composition" : [ {
-          "elementId" : "stylized_text_9",
-          "elementLabel" : "Stylized text 9",
-          "propertyValues" : {
-            "css" : {
-              "type" : "JSON_LITERAL",
-              "value" : "* { }"
-            },
-            "text" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "code" : null,
-                "message" : "Wireless LAN (WLAN) Quick Quote",
-                "comment" : ""
-              }
-            },
-            "tag" : {
-              "type" : "JSON_LITERAL",
-              "value" : "h1"
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : null,
-          "definition" : {
-            "id" : "4335ba6dca80378f7ba7a67cd6667bec",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : null
-          },
-          "isHero" : false,
-          "extensionPoints" : [ ],
-          "isNonDestructive" : false,
-          "items" : [ ],
-          "styles" : null
-        } ],
-        "layout" : {
-          "default" : {
-            "children" : null,
-            "isInline" : null,
-            "items" : [{"element_id":"stylized_text_9","styles":{}}],
-            "root" : null,
-            "rules" : null,
-            "styles" : {"flex-direction":"column","align-items":"center"},
+            "styles" : {"flex-direction":"column"},
             "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
             "type" : "flex"
           },
@@ -1786,7 +2220,7 @@
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"container_2","styles":{"width":"100%"}},{"element_id":"container_3","styles":{"width":"100%"}}],
+        "items" : [{"element_id":"container_7","styles":{"width":"100%"}}],
         "root" : null,
         "rules" : null,
         "styles" : {"flex-direction":"row"},
@@ -1846,6 +2280,43 @@
   },
   "overrides" : {
     "composition" : [ {
+      "elementId" : "stylized_text_6",
+      "elementLabel" : "Stylized text 6",
+      "propertyValues" : {
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* { }"
+        },
+        "text" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Local Area Network (LAN) Quick Quote",
+            "comment" : ""
+          }
+        },
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "h1"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : null
+    }, {
       "elementId" : "rich_text_1",
       "elementLabel" : "Rich text 1",
       "propertyValues" : {
@@ -1853,13 +2324,13 @@
           "type" : "TRANSLATION_LITERAL",
           "value" : {
             "code" : null,
-            "message" : "&lt;p&gt;-----------------------------------------------------------------&lt;/p&gt;",
+            "message" : "&lt;p&gt;You can get an estimate of LAN services costs by entering the information here. The estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment. The monthly LAN service recurring charges is based on the total switch port capacity and the service level. Two service levels are offered, Basic or Premium.&lt;/p&gt;\n&lt;table style=\"border-collapse: collapse; width: 99.9511%;\" border=\"1\"&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 4-port basic service&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$&amp;nbsp; &amp;nbsp;66.84&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 8-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 138.33&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 24-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 201.03&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 24-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 258.23&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 48-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 314.27&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 48-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 391.70&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;br /&gt;&lt;span style=\"font-size: 12pt;\"&gt;&lt;strong&gt;Because actual cost will depend on several factors, please request a consultation and someone will reach out to you.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;",
             "comment" : ""
           }
         }
       },
       "eventMappings" : [ ],
-      "slot" : null,
+      "slot" : "",
       "definition" : {
         "id" : "2d56f06d55f46bbd4e79b5e624beb940",
         "type" : "MACROPONENT"
@@ -1873,18 +2344,92 @@
       "extensionPoints" : [ ],
       "isNonDestructive" : false,
       "items" : [ ],
-      "styles" : { }
+      "styles" : null
+    }, {
+      "elementId" : "stylized_text_13",
+      "elementLabel" : "Stylized text 13",
+      "propertyValues" : {
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* {\r\n    text-align: center;\r\n }"
+        },
+        "text" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "Wireless LAN (WLAN) Quick Quote",
+            "comment" : ""
+          }
+        },
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "h1"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : null
+    }, {
+      "elementId" : "stylized_text_14",
+      "elementLabel" : "Stylized text 14",
+      "propertyValues" : {
+        "css" : {
+          "type" : "JSON_LITERAL",
+          "value" : "* { }"
+        },
+        "text" : {
+          "type" : "TRANSLATION_LITERAL",
+          "value" : {
+            "code" : null,
+            "message" : "You can get an estimate of WLAN services costs by entering the information here. Again, the estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment when a survey is performed. The monthly WLAN service recurring charges is based on the total number of wireless access points that are used.",
+            "comment" : ""
+          }
+        },
+        "tag" : {
+          "type" : "JSON_LITERAL",
+          "value" : "p"
+        }
+      },
+      "eventMappings" : [ ],
+      "slot" : "",
+      "definition" : {
+        "id" : "4335ba6dca80378f7ba7a67cd6667bec",
+        "type" : "MACROPONENT"
+      },
+      "overrides" : null,
+      "isHidden" : {
+        "type" : "JSON_LITERAL",
+        "value" : null
+      },
+      "isHero" : false,
+      "extensionPoints" : [ ],
+      "isNonDestructive" : false,
+      "items" : [ ],
+      "styles" : null
     } ],
     "layout" : {
       "default" : {
         "children" : null,
         "isInline" : null,
-        "items" : [{"element_id":"rich_text_1","styles":{}}],
+        "items" : [{"element_id":"stylized_text_6","styles":{"text-align":"center"}},{"element_id":"rich_text_1","styles":{"padding":"var(--now-static-space--lg)"}},{"element_id":"stylized_text_13","styles":{}},{"element_id":"stylized_text_14","styles":{}}],
         "root" : null,
         "rules" : null,
-        "styles" : {"flex-direction":"column"},
+        "styles" : {"flex-direction":"column","display":"grid","grid-template-columns":"1fr 1fr","grid-template-rows":"1fr 1fr","grid-auto-rows":"1fr","grid-auto-columns":"1fr","grid-auto-flow":"column","align-items":"end"},
         "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
-        "type" : "flex"
+        "type" : "grid"
       },
       "version" : "3.0.0"
     }
@@ -1897,9 +2442,133 @@
   "extensionPoints" : [ ],
   "isNonDestructive" : false,
   "items" : [ ],
-  "styles" : {
-    "width" : "100%"
-  }
+  "styles" : null
+}, {
+  "elementId" : "alert_1",
+  "elementLabel" : "Alert 1",
+  "propertyValues" : {
+    "preventDefaultAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "headerLabel" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Telco Contract Unavailable",
+        "comment" : ""
+      }
+    },
+    "content" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "DIT does not currently have an established a telco service contract for the zip code you requested. If you are sure you need service for a location at this zip code, please refer to the knowledge article about \"network service contracts\" for instructions.",
+        "comment" : ""
+      }
+    },
+    "buttonLabel" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Got it",
+        "comment" : ""
+      }
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "05d8b1515b230010b913cbd59b81c71a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : null
+}, {
+  "elementId" : "confirm_and_destroy_1",
+  "elementLabel" : "Confirm and destroy 1",
+  "propertyValues" : {
+    "preventDefaultSecondaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "headerLabel" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Are you sure you want to delete?",
+        "comment" : ""
+      }
+    },
+    "primaryButtonLabel" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Delete",
+        "comment" : ""
+      }
+    },
+    "preventDefaultPrimaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "content" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "This can't be reversed.",
+        "comment" : ""
+      }
+    },
+    "secondaryButtonLabel" : {
+      "type" : "TRANSLATION_LITERAL",
+      "value" : {
+        "code" : null,
+        "message" : "Cancel",
+        "comment" : ""
+      }
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : null,
+  "definition" : {
+    "id" : "637fc6a75b230010b913cbd59b81c779",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  },
+  "isHero" : false,
+  "extensionPoints" : [ ],
+  "isNonDestructive" : false,
+  "items" : [ ],
+  "styles" : null
 } ]</composition>
         <da_relay_models/>
         <data>[ {
@@ -1909,8 +2578,8 @@
     "type" : "COMPOSITE"
   },
   "dependencies" : { },
-  "elementId" : "look_up_records_1",
-  "elementLabel" : "Look Up Records 1",
+  "elementId" : "look_up_user",
+  "elementLabel" : "Look Up User",
   "eventMappings" : [ ],
   "inputValues" : {
     "table" : {
@@ -2002,6 +2671,287 @@
     }
   },
   "readEvaluationMode" : "EXPLICIT"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "dependencies" : { },
+  "elementId" : "look_up_telco_selection",
+  "elementLabel" : "Look Up Telco Selection",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_g_sonc_dit_nsw22_telco_selection_criteria"
+    },
+    "encodedQuery" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "zip,available_services,providerpriority1,providerpriority2,providercount"
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1000"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "dependencies" : { },
+  "elementId" : "look_up_telcos",
+  "elementLabel" : "Look Up Telcos by Zip",
+  "eventMappings" : [ {
+    "eventMappingId" : "clrtkyhmeaacciijddffhhybwkshhccmk",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "7337527b47777550f4af2ad2e16d43e6"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrtkyhmeaacciikddffhhyawfytfffii",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_g_sonc_dit_nsw22_telco_selection_criteria"
+    },
+    "encodedQuery" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "telcoSelectFilter" ]
+      }
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "zip,available_services,providercount,providerpriority1,providerpriority2,beprovidercount,beproviderpriority1,beproviderpriority2"
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1000"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EXPLICIT"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "9664d48053461010cbc2ddeeff7b128e",
+    "type" : "COMPOSITE"
+  },
+  "dependencies" : { },
+  "elementId" : "look_up_telco_rate",
+  "elementLabel" : "Look Up Telco Rate",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_g_sonc_dit_nsw22_telcoprov_rates"
+    },
+    "recordId" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "sys_id,provider,svc_code,cost"
+    },
+    "returnTableMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "dependencies" : { },
+  "elementId" : "look_up_telcoRates",
+  "elementLabel" : "Get Telco Rates",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_g_sonc_dit_nsw22_telcoprov_rates"
+    },
+    "encodedQuery" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1000"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EXPLICIT"
+}, {
+  "cachePolicy" : null,
+  "definition" : {
+    "id" : "b997a84053021010cbc2ddeeff7b1228",
+    "type" : "COMPOSITE"
+  },
+  "dependencies" : { },
+  "elementId" : "look_up_svcByCode",
+  "elementLabel" : "Look Up Svc by svc_code",
+  "eventMappings" : [ {
+    "eventMappingId" : "clrtmiidddggaacceoddffhhyhhenjqwhc",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "6266d6b747777550f4af2ad2e16d4344"
+      },
+      "conditional" : null,
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "clrtmiidddggaaccepddffhhyggzcceetiijm",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "table" : {
+      "type" : "JSON_LITERAL",
+      "value" : "x_g_sonc_dit_nsw22_service_definitions"
+    },
+    "encodedQuery" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "svcCodeLookup1" ]
+      }
+    },
+    "returnFields" : {
+      "type" : "JSON_LITERAL",
+      "value" : "svc_code,cpm_cpe,cpm_core,svc_ha_category,svc_title"
+    },
+    "orderBy" : {
+      "type" : "JSON_LITERAL",
+      "value" : "Svc title"
+    },
+    "sortType" : {
+      "type" : "JSON_LITERAL",
+      "value" : "asc"
+    },
+    "limit" : {
+      "type" : "JSON_LITERAL",
+      "value" : "1000"
+    },
+    "offset" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    },
+    "queryCategory" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "returnFieldMetadata" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    }
+  },
+  "readEvaluationMode" : "EAGER"
 } ]</data>
         <description/>
         <dispatched_events>1216264d472ff114f4af2ad2e16d43ea</dispatched_events>
@@ -2017,7 +2967,7 @@
   "default" : {
     "children" : null,
     "isInline" : null,
-    "items" : [{"element_id":"container_button_links","styles":{"width":"100%"}},{"element_id":"container_wan_quick_quote","styles":{"width":"100%"}},{"element_id":"container_zip_code","styles":{}},{"element_id":"container_man_search","styles":{"width":"100%"}},{"element_id":"container_user","styles":{"width":"100%"}},{"element_id":"container_4","styles":{}},{"element_id":"container_added_quotes","styles":{"width":"100%"}},{"element_id":"container_1","styles":{"width":"100%"}}],
+    "items" : [{"element_id":"container_button_links","styles":{"width":"100%","border-color":"rgb(var(--now-color--neutral-21))","border-width":"var(--now-static-space--xxs)","border-style":"solid"}},{"element_id":"container_wan_quick_quote","styles":{"width":"100%","border-color":"rgb(var(--now-color--neutral-21))","border-width":"var(--now-static-space--xxs)","border-style":"solid"}},{"element_id":"container_zip_code","styles":{}},{"element_id":"container_man_search","styles":{"width":"100%"}},{"element_id":"container_user","styles":{"width":"100%"}},{"element_id":"container_4","styles":{"width":"100%"}},{"element_id":"container_added_quotes","styles":{"width":"100%"}},{"element_id":"container_1","styles":{"width":"100%"}}],
     "root" : null,
     "rules" : null,
     "styles" : {"flex-direction":"column"},
@@ -2031,13 +2981,28 @@
         <output_prop_mapping/>
         <props>[ ]</props>
         <required_translations>[ {
-  "message" : "&lt;p&gt;-----------------------------------------------------------------&lt;/p&gt;",
+  "message" : "&lt;p&gt;You can get an estimate of LAN services costs by entering the information here. The estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment. The monthly LAN service recurring charges is based on the total switch port capacity and the service level. Two service levels are offered, Basic or Premium.&lt;/p&gt;\n&lt;table style=\"border-collapse: collapse; width: 99.9511%;\" border=\"1\"&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 4-port basic service&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$&amp;nbsp; &amp;nbsp;66.84&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 8-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 138.33&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 24-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 201.03&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 24-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 258.23&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 48-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 314.27&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 48-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 391.70&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;br /&gt;&lt;span style=\"font-size: 12pt;\"&gt;&lt;strong&gt;Because actual cost will depend on several factors, please request a consultation and someone will reach out to you.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;",
+  "comment" : ""
+}, {
+  "message" : "Are you sure you want to delete?",
+  "comment" : ""
+}, {
+  "message" : "Cancel",
   "comment" : ""
 }, {
   "message" : "Change Service Request",
   "comment" : ""
 }, {
+  "message" : "DIT does not currently have an established a telco service contract for the zip code you requested. If you are sure you need service for a location at this zip code, please refer to the knowledge article about \"network service contracts\" for instructions.",
+  "comment" : ""
+}, {
   "message" : "Decommission Site",
+  "comment" : ""
+}, {
+  "message" : "Decommission Site Request",
+  "comment" : ""
+}, {
+  "message" : "Delete",
   "comment" : ""
 }, {
   "message" : "Enter a 5 digit zip code",
@@ -2049,7 +3014,10 @@
   "message" : "Enter location address",
   "comment" : ""
 }, {
-  "message" : "If a service offering does not appear in the selection drop-down, then it might not be currently available at the supplied zip code. If service is indeed required but not show as available, go ahead and request the service you need using the Site \"new\" service request and fill in your need in the \"special instructions\" field. Someone will review your request and contact you.",
+  "message" : "Got it",
+  "comment" : ""
+}, {
+  "message" : "If a service offering does not appear in the selection drop-down, then it might not be currently available at the supplied zip code. If service is indeed required but not shown as available, go ahead and request the service you need using the Site \"new\" service request and fill in your need in the \"special instructions\" field. Someone will review your request and contact you.",
   "comment" : ""
 }, {
   "message" : "Local Area Network (LAN) Quick Quote",
@@ -2058,19 +3026,40 @@
   "message" : "MAN Search",
   "comment" : ""
 }, {
+  "message" : "Monthly Cost Estimate\n(Confirm with Network Services)",
+  "comment" : ""
+}, {
   "message" : "NSPro Quick Quote",
   "comment" : ""
 }, {
   "message" : "New Service Request",
   "comment" : ""
 }, {
+  "message" : "Plus a one-time installation fee: $500.00",
+  "comment" : ""
+}, {
   "message" : "Relocate Site",
+  "comment" : ""
+}, {
+  "message" : "Relocate Site Request",
+  "comment" : ""
+}, {
+  "message" : "Service Definitions",
+  "comment" : ""
+}, {
+  "message" : "Telco Contract Unavailable",
+  "comment" : ""
+}, {
+  "message" : "This can't be reversed.",
   "comment" : ""
 }, {
   "message" : "When ready, order your service by submitting a New Service Request from this page.",
   "comment" : ""
 }, {
   "message" : "Wireless LAN (WLAN) Quick Quote",
+  "comment" : ""
+}, {
+  "message" : "You can get an estimate of WLAN services costs by entering the information here. Again, the estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment when a survey is performed. The monthly WLAN service recurring charges is based on the total number of wireless access points that are used.",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -2099,18 +3088,205 @@
     "type" : "JSON_LITERAL",
     "value" : null
   }
+}, {
+  "name" : "ditNsServiceOptions",
+  "label" : "ditNsServiceOptions",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : [ ]
+  }
+}, {
+  "name" : "qqStatusMsg",
+  "label" : "qqStatusMsg",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "zip2Search",
+  "label" : "zip2Search",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "27609"
+  }
+}, {
+  "name" : "svcAvailDesc",
+  "label" : "svcAvailDesc",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "dataInfo",
+  "label" : "dataInfo",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "svcCodeMatch",
+  "label" : "svcCodeMatch",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "*"
+  }
+}, {
+  "name" : "qqQuoteSubtitle",
+  "label" : "qqQuoteSubtitle",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "qqMCostStr",
+  "label" : "qqMCostStr",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "$0.00"
+  }
+}, {
+  "name" : "telcoRateFilter",
+  "label" : "telcoRateFilter",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "svc_code=EW5M"
+  }
+}, {
+  "name" : "telcoSelectFilter",
+  "label" : "telcoSelectFilter",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "zip=27609"
+  }
+}, {
+  "name" : "qqCost",
+  "label" : "qqCost",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  }
+}, {
+  "name" : "svcCodeLookup1",
+  "label" : "svcCodeLookup1",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "qqCpeCost",
+  "label" : "qqCpeCost",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  }
+}, {
+  "name" : "qqCoreCost",
+  "label" : "qqCoreCost",
+  "fieldType" : "number",
+  "valueType" : "number",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : 0
+  }
+}, {
+  "name" : "myProvider1",
+  "label" : "myProvider1",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "myProvider2",
+  "label" : "myProvider2",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
+}, {
+  "name" : "qqInstruction2",
+  "label" : "qqInstruction2",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : null
+  }
 } ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-01-03 21:44:21</sys_created_on>
         <sys_id>474a964947abf114f4af2ad2e16d43c3</sys_id>
-        <sys_mod_count>93</sys_mod_count>
+        <sys_mod_count>141</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ux_macroponent_474a964947abf114f4af2ad2e16d43c3</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-01-05 10:04:39</sys_updated_on>
+        <sys_updated_on>2024-02-02 21:07:13</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

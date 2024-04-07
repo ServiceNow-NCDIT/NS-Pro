@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related action="DELETE" sys_domain="global" table="cmdb_ci_site" version="2" view="nspro">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_g_sonc_ns_pro_nspro_tasks.site</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-12 17:49:49</sys_created_on>
+            <sys_id>c9a198c61b43bd50824752c1604bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-12 17:49:49</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>cmdb_ci_netgear.x_g_sonc_ns_pro_site</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-12 17:49:49</sys_created_on>
+            <sys_id>c9a1904a1b43bd50824752c1604bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-12 17:49:49</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>cmdb_ci_network_circuit.x_g_sonc_ns_pro_site</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-12 17:49:49</sys_created_on>
+            <sys_id>cda1904a1b43bd50824752c1604bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-12 17:49:49</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>x_g_sonc_ns_pro_service.site</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-12 17:49:49</sys_created_on>
+            <sys_id>c1a1904a1b43bd50824752c1604bcb72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-12 17:49:49</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Site - NSPro</calculated_name>
+            <filter/>
+            <name>cmdb_ci_site</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-12 17:49:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>49a198c61b43bd50824752c1604bcbba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Site - NSPro</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_related_cmdb_ci_site_nspro</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-12 17:49:49</sys_updated_on>
+            <sys_user/>
+            <view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_related_cmdb_ci_site_nspro</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="cmdb_ci_site" version="2" view="nspro"><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id><order_by/><position>0</position><related_list>x_g_sonc_ns_pro_nspro_tasks.site</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-12 17:49:49</sys_created_on><sys_id>c9a198c61b43bd50824752c1604bcbbb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-12 17:49:49</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id><order_by/><position>1</position><related_list>cmdb_ci_netgear.x_g_sonc_ns_pro_site</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-12 17:49:49</sys_created_on><sys_id>c9a1904a1b43bd50824752c1604bcb71</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-12 17:49:49</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id><order_by/><position>2</position><related_list>cmdb_ci_network_circuit.x_g_sonc_ns_pro_site</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-12 17:49:49</sys_created_on><sys_id>cda1904a1b43bd50824752c1604bcb71</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-12 17:49:49</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Site - NSPro" name="cmdb_ci_site" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">49a198c61b43bd50824752c1604bcbba</list_id><order_by/><position>3</position><related_list>x_g_sonc_ns_pro_service.site</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-12 17:49:49</sys_created_on><sys_id>c1a1904a1b43bd50824752c1604bcb72</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-12 17:49:49</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Site - NSPro</calculated_name><filter/><name>cmdb_ci_site</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-12 17:49:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>49a198c61b43bd50824752c1604bcbba</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Site - NSPro</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_related_cmdb_ci_site_nspro</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-12 17:49:49</sys_updated_on><sys_user/><view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+        <payload_hash>1143504991</payload_hash>
+        <record_name>Site</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-12 17:49:49</sys_created_on>
+        <sys_id>85a1904a1b43bd50824752c1604bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c5f2637a60000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-12 17:49:49</sys_updated_on>
+        <type>Related Lists</type>
+        <update_guid>c9a1904af943bd506854607d43d30d73</update_guid>
+        <update_guid_history>c9a1904af943bd506854607d43d30d73:1143504991,68cf4b618a87f95035894a55bf2dbeba:1583628363,760ecb6d9547f9506d207496746f1a8c:1812402919,24ed076d5b47f950e5a0aac4f064f4b7:-1383191849,c1389669518fb950c6bd75680acf164b:159628874,1b77dee5e78fb950da59d9d9c628cd32:-89701975,bb471ae5578fb95045511b1cd87d6e69:646045265,5c3e898c024f3d1096d1db18e2d92597:-1462929105,2eed4100ea8f3d1011b53d6bf8b6bbc5:-196088375,f324a5bbd0beb9103b08efc6320319c6:422926312,6eec70fbbc3ab910de4c2f9e21c31da4:-1713364032,cd4c787b963ab9104de9e417437165dd:635946547,dea7c8b3a072b910425400955ddf37fd:929777884,d8ae3410e1267550c895cb9ee221b15b:-1209457376,e3b94267659afd10ea3e7bed39b241dd:680069166,3e898a273f9afd10d008aa3b14c13bce:363481887,78aa9d639bbd3d1022f00c7f91953d91:69855718,fc479e6ccc3dfd90e895c45d561ca3b2:1727276812,5711efef466db590a1f61a7e2a29ef09:1839200762,f50b09ae46e93d50e314e813276995d2:-653640440,50c6cd2631e93d50c8606321b3d09a0f:882867008,35d147d622a9f950dd7696d91e2fc58d:-733378012,3d81f646b9257950ad8b03d2a8e0a102:1902278978,0401814d8bedfd1077a6a60eef11f25c:1425789588,f8b0414946edfd10be03caf3c0a019c2:-1391294720</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-15 17:50:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_related_list">sys_ui_related_list</sys_db_object>
+        <sys_id>4d947493c3cd4b5bba5c52bf6f09d0b9</sys_id>
+        <sys_metadata>49a198c61b43bd50824752c1604bcbba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Site - NSPro</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="CMDB CI Site">8b5561621b72211090990f6fe54bcb12</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_related_cmdb_ci_site_nspro</sys_update_name>
+        <sys_update_version display_value="sys_ui_related_cmdb_ci_site_nspro">85a1904a1b43bd50824752c1604bcb74</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-15 17:50:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

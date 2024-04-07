@@ -3,62 +3,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d92a65edbca359040eae46b13961902</list_id>
+            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">716823a1dbb4ce1040eae46b13961986</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-10-25 05:58:46</sys_created_on>
-            <sys_id>9d92a65edbca359040eae46b13961903</sys_id>
+            <sys_created_on>2024-03-07 20:01:03</sys_created_on>
+            <sys_id>316823a1dbb4ce1040eae46b13961987</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-10-25 05:58:46</sys_updated_on>
+            <sys_updated_on>2024-03-07 20:01:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>location.full_name</element>
-            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d92a65edbca359040eae46b13961902</list_id>
+            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">716823a1dbb4ce1040eae46b13961986</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-10-25 05:58:46</sys_created_on>
-            <sys_id>9592a65edbca359040eae46b13961904</sys_id>
+            <sys_created_on>2024-03-07 20:01:03</sys_created_on>
+            <sys_id>b56823a1dbb4ce1040eae46b13961987</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-10-25 05:58:46</sys_updated_on>
+            <sys_updated_on>2024-03-07 20:01:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>location.latitude</element>
-            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d92a65edbca359040eae46b13961902</list_id>
+            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">716823a1dbb4ce1040eae46b13961986</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-10-25 05:58:46</sys_created_on>
-            <sys_id>9992a65edbca359040eae46b13961904</sys_id>
+            <sys_created_on>2024-03-07 20:01:03</sys_created_on>
+            <sys_id>396823a1dbb4ce1040eae46b13961987</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-10-25 05:58:46</sys_updated_on>
+            <sys_updated_on>2024-03-07 20:01:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>location.longitude</element>
-            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5d92a65edbca359040eae46b13961902</list_id>
+            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">716823a1dbb4ce1040eae46b13961986</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-10-25 05:58:46</sys_created_on>
-            <sys_id>9d92a65edbca359040eae46b13961904</sys_id>
+            <sys_created_on>2024-03-07 20:01:03</sys_created_on>
+            <sys_id>b96823a1dbb4ce1040eae46b13961987</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-10-25 05:58:46</sys_updated_on>
+            <sys_updated_on>2024-03-07 20:01:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>site</element>
+            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">716823a1dbb4ce1040eae46b13961986</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-03-07 20:01:03</sys_created_on>
+            <sys_id>3d6823a1dbb4ce1040eae46b13961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-07 20:01:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>site.site_identifier</element>
+            <list_id display_value="x_g_sonc_ns_pro_point_of_presence" element="NULL" name="x_g_sonc_ns_pro_point_of_presence" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">716823a1dbb4ce1040eae46b13961986</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-03-07 20:01:03</sys_created_on>
+            <sys_id>bd6823a1dbb4ce1040eae46b13961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-07 20:01:03</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -72,10 +102,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-10-25 05:58:46</sys_created_on>
+            <sys_created_on>2024-03-07 20:01:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>5d92a65edbca359040eae46b13961902</sys_id>
+            <sys_id>716823a1dbb4ce1040eae46b13961986</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_g_sonc_ns_pro_point_of_presence</sys_name>
             <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -83,7 +113,7 @@
             <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
             <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_point_of_presence_null</sys_update_name>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-10-25 05:58:46</sys_updated_on>
+            <sys_updated_on>2024-03-07 20:01:03</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

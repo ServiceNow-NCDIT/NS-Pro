@@ -20,7 +20,7 @@
             <element>x_g_sonc_ns_pro_status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Active</label>
+            <label>Installed</label>
             <language>en</language>
             <name>cmdb_ci_network_circuit</name>
             <sequence>10</sequence>
@@ -29,10 +29,48 @@
             <sys_created_on>2023-09-22 12:35:40</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-05 17:37:03</sys_updated_on>
+            <value>installed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-29 22:20:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-22 12:35:45</sys_updated_on>
-            <value>1</value>
+            <sys_updated_on>2024-03-05 17:37:12</sys_updated_on>
+            <value>pending</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hold</label>
+            <language>en</language>
+            <name>cmdb_ci_network_circuit</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-09-22 12:36:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-05 17:37:20</sys_updated_on>
+            <value>hold</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -42,35 +80,35 @@
             <label>Pending Delete</label>
             <language>en</language>
             <name>cmdb_ci_network_circuit</name>
-            <sequence>20</sequence>
+            <sequence>40</sequence>
             <synonyms/>
             <sys_created_by>wbbusby</sys_created_by>
             <sys_created_on>2023-09-22 12:36:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-22 12:36:16</sys_updated_on>
-            <value>2</value>
+            <sys_updated_on>2024-03-05 17:37:32</sys_updated_on>
+            <value>pending_delete</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>x_g_sonc_ns_pro_status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Not Active For Use</label>
+            <label>Deletable</label>
             <language>en</language>
             <name>cmdb_ci_network_circuit</name>
-            <sequence>30</sequence>
+            <sequence>50</sequence>
             <synonyms/>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-22 12:36:31</sys_created_on>
+            <sys_created_on>2023-09-22 12:36:45</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-22 12:36:36</sys_updated_on>
-            <value>3</value>
+            <sys_updated_on>2024-03-05 17:37:42</sys_updated_on>
+            <value>deletable</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -80,16 +118,16 @@
             <label>Deleted</label>
             <language>en</language>
             <name>cmdb_ci_network_circuit</name>
-            <sequence>40</sequence>
+            <sequence>60</sequence>
             <synonyms/>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-22 12:36:45</sys_created_on>
+            <sys_created_on>2024-03-13 13:55:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-22 12:36:50</sys_updated_on>
-            <value>4</value>
+            <sys_updated_on>2024-03-13 13:55:13</sys_updated_on>
+            <value>deleted</value>
         </sys_choice>
     </sys_choice>
 </record_update>

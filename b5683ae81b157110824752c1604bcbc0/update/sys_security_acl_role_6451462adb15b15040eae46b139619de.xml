@@ -14,6 +14,5 @@
         <sys_updated_by>wbbusby</sys_updated_by>
         <sys_updated_on>2023-09-18 15:24:50</sys_updated_on>
         <sys_user_role display_value="x_g_sonc_ns_pro.telco_provider_user" name="x_g_sonc_ns_pro.telco_provider_user">10518a66db15b15040eae46b13961943</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
 </record_update>

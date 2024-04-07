@@ -12,11 +12,19 @@ service_definition_ajax.prototype = Object.extendsObject(global.AbstractAjaxProc
 
     getSvcDef: function() {
 
-        var def = new x_g_sonc_ns_pro.service_definition();
+        var svc_def = new x_g_sonc_ns_pro.service_definition();
         var sysid = this.getParameter('sysparm_sysid');
-        return def.getSvcDef(sysid);
+        return svc_def.getSvcDef(sysid);
 
     },
+	
+	getSvcByTypeAndLevel: function() {
+		
+		var svc_def = new x_g_sonc_ns_pro.service_definition();
+		var svc_type = this.getParameter('sysparm_svc_type');
+        var svc_level = this.getParameter('sysparm_svc_level');
+        return svc_def.getSvcByTypeAndLevel(svc_type, svc_level);
+	},
 
     type: 'service_definition_ajax'
 });]]></script>
@@ -24,13 +32,13 @@ service_definition_ajax.prototype = Object.extendsObject(global.AbstractAjaxProc
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-13 21:19:26</sys_created_on>
         <sys_id>00d1cc36dbf1b51040eae46b13961909</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>service_definition_ajax</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_00d1cc36dbf1b51040eae46b13961909</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-14 07:53:53</sys_updated_on>
+        <sys_updated_on>2024-03-19 12:47:40</sys_updated_on>
     </sys_script_include>
 </record_update>

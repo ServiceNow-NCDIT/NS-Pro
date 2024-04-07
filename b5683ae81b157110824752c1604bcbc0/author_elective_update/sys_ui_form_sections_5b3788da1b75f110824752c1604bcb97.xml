@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections action="DELETE" form_id="5b3788da1b75f110824752c1604bcb97" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 09:00:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>909f849e1bb5f110824752c1604bcbe6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_telco_order" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">5b3788da1b75f110824752c1604bcb97</sys_ui_form>
+            <sys_ui_section display_value="">c09f849e1bb5f110824752c1604bcbe2</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-11-07 17:30:02</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-10-12 08:24:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b3788da1b75f110824752c1604bcb97</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_telco_order</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_5b3788da1b75f110824752c1604bcb97</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-10-12 08:24:22</sys_updated_on>
+            <sys_user/>
+            <view display_value="">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_form_sections_5b3788da1b75f110824752c1604bcb97</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_form_sections form_id="5b3788da1b75f110824752c1604bcb97" sys_domain="global" table="x_g_sonc_ns_pro_telco_order" version="3"><sys_ui_form_section action="INSERT_OR_UPDATE"><position>2</position><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 09:00:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>909f849e1bb5f110824752c1604bcbe6</sys_id><sys_mod_count>1</sys_mod_count><sys_overrides/><sys_ui_form display_value="x_g_sonc_ns_pro_telco_order" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">5b3788da1b75f110824752c1604bcb97</sys_ui_form><sys_ui_section display_value="">c09f849e1bb5f110824752c1604bcbe2</sys_ui_section><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-11-07 17:30:02</sys_updated_on></sys_ui_form_section><sys_ui_form action="INSERT_OR_UPDATE"><name>x_g_sonc_ns_pro_telco_order</name><roles/><sys_class_name>sys_ui_form</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-10-12 08:24:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5b3788da1b75f110824752c1604bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_g_sonc_ns_pro_telco_order</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_form_sections_5b3788da1b75f110824752c1604bcb97</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-10-12 08:24:22</sys_updated_on><sys_user/><view display_value="">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_form></sys_ui_form_sections></record_update>]]></payload>
+        <payload_hash>-589127946</payload_hash>
+        <record_name>Network Request</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-15 17:50:31</sys_created_on>
+        <sys_id>09210b3e47500610f4af2ad2e16d43eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18dade437ff0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-15 17:50:31</sys_updated_on>
+        <type>Form Sections</type>
+        <update_guid>4d210b3e58500610fc7e800e8dc387ea</update_guid>
+        <update_guid_history>4d210b3e58500610fc7e800e8dc387ea:-589127946,2c210b3e80500610995d8079f006ef1d:-1678832944,19d876b65c100610878125a5da3aa0fa:2115241701,58bd6eee1b8f7110cc25b62eb84e83b0:1726676591,4e7d7f6aa0d2391078b6a917d644edcf:2115241701,067d7f6a06d2391065a2a157864c8bca:-2124672830,8e7d7f6ad7d23910a193305772825491:1106215420,467d7f6af3d23910314945e68489e15b:2037268980,909f849ec7b5f11071b6b7acfd6238e8:573702060,5c1ec05a8cb5f110f718e645221a1765:36073433,633788da2b75f1109ebcc0eb26bc04d7:-491509729,533788da2e75f110a348f4425cf2f1d3:1437851175,573788dab775f11071504c1fd5ecd8cf:1726676591,5b3788dad975f110fe78ec063c584699:-168530242</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-15 17:50:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_form">sys_ui_form</sys_db_object>
+        <sys_id>5bf331eb73dd40daa47817b725e021c4</sys_id>
+        <sys_metadata>5b3788da1b75f110824752c1604bcb97</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_telco_order</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Network Request">e2b42525db19791040eae46b13961947</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_form_sections_5b3788da1b75f110824752c1604bcb97</sys_update_name>
+        <sys_update_version display_value="sys_ui_form_sections_5b3788da1b75f110824752c1604bcb97">09210b3e47500610f4af2ad2e16d43eb</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-15 17:50:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

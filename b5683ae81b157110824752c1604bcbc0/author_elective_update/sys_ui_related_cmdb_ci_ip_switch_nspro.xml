@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related action="DELETE" sys_domain="global" table="cmdb_ci_ip_switch" version="2" view="nspro">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:366eda7b0a0004970a7d925c9258806b</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6942ce0c1b077d10824752c1604bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>cmdb_ci_network_adapter.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6142ce0c1b077d10824752c1604bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>dscy_switchport.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6542ce0c1b077d10824752c1604bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>dscy_swtch_partition.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6942ce0c1b077d10824752c1604bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>dscy_swtch_fwd_rule.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6d42ce0c1b077d10824752c1604bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>5</position>
+            <related_list>cmdb_ci_vpn.vpn_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6142ce0c1b077d10824752c1604bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>6</position>
+            <related_list>discovery_switch_fwd_table.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6542ce0c1b077d10824752c1604bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>7</position>
+            <related_list>cmdb_switch_port.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6942ce0c1b077d10824752c1604bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>8</position>
+            <related_list>discovery_switch_spanning_tree_table.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6d42ce0c1b077d10824752c1604bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>9</position>
+            <related_list>discovery_switch_bridge_port_table.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6142ce0c1b077d10824752c1604bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>10</position>
+            <related_list>discovery_net_arp_table.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6542ce0c1b077d10824752c1604bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>11</position>
+            <related_list>discovery_device_neighbors.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6942ce0c1b077d10824752c1604bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>12</position>
+            <related_list>change_request.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6d42ce0c1b077d10824752c1604bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>13</position>
+            <related_list>incident_task.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6142ce0c1b077d10824752c1604bcb5e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>14</position>
+            <related_list>change_task.cmdb_ci</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6542ce0c1b077d10824752c1604bcb5e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id>
+            <order_by/>
+            <position>15</position>
+            <related_list>x_g_sonc_ns_pro_port_connection.network_gear</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_id>6942ce0c1b077d10824752c1604bcb5e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>IP Switch - NSPro</calculated_name>
+            <filter/>
+            <name>cmdb_ci_ip_switch</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6942ce0c1b077d10824752c1604bcb59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>IP Switch - NSPro</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_related_cmdb_ci_ip_switch_nspro</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+            <sys_user/>
+            <view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_related_cmdb_ci_ip_switch_nspro</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="cmdb_ci_ip_switch" version="2" view="nspro"><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>0</position><related_list>REL:366eda7b0a0004970a7d925c9258806b</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6942ce0c1b077d10824752c1604bcb5a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>1</position><related_list>cmdb_ci_network_adapter.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6142ce0c1b077d10824752c1604bcb5b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>2</position><related_list>dscy_switchport.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6542ce0c1b077d10824752c1604bcb5b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>3</position><related_list>dscy_swtch_partition.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6942ce0c1b077d10824752c1604bcb5b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>4</position><related_list>dscy_swtch_fwd_rule.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6d42ce0c1b077d10824752c1604bcb5b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>5</position><related_list>cmdb_ci_vpn.vpn_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6142ce0c1b077d10824752c1604bcb5c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>6</position><related_list>discovery_switch_fwd_table.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6542ce0c1b077d10824752c1604bcb5c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>7</position><related_list>cmdb_switch_port.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6942ce0c1b077d10824752c1604bcb5c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>8</position><related_list>discovery_switch_spanning_tree_table.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6d42ce0c1b077d10824752c1604bcb5c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>9</position><related_list>discovery_switch_bridge_port_table.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6142ce0c1b077d10824752c1604bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>10</position><related_list>discovery_net_arp_table.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6542ce0c1b077d10824752c1604bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>11</position><related_list>discovery_device_neighbors.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6942ce0c1b077d10824752c1604bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>12</position><related_list>change_request.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6d42ce0c1b077d10824752c1604bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>13</position><related_list>incident_task.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6142ce0c1b077d10824752c1604bcb5e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>14</position><related_list>change_task.cmdb_ci</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6542ce0c1b077d10824752c1604bcb5e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="IP Switch - NSPro" name="cmdb_ci_ip_switch" related_list="NULL" sys_domain="global" view="7d269f741be1fd10824752c1604bcb31">6942ce0c1b077d10824752c1604bcb59</list_id><order_by/><position>15</position><related_list>x_g_sonc_ns_pro_port_connection.network_gear</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_id>6942ce0c1b077d10824752c1604bcb5e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>IP Switch - NSPro</calculated_name><filter/><name>cmdb_ci_ip_switch</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2023-12-06 20:54:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6942ce0c1b077d10824752c1604bcb59</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IP Switch - NSPro</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_related_cmdb_ci_ip_switch_nspro</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2023-12-06 20:54:05</sys_updated_on><sys_user/><view display_value="NSPro" name="nspro">7d269f741be1fd10824752c1604bcb31</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+        <payload_hash>-1229253261</payload_hash>
+        <record_name>IP Switch</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-12-06 20:54:05</sys_created_on>
+        <sys_id>6d42ce0c1b077d10824752c1604bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c40e8c29a0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:54:05</sys_updated_on>
+        <type>Related Lists</type>
+        <update_guid>ad42ce0cae077d108b10b4fd87a6f860</update_guid>
+        <update_guid_history>ad42ce0cae077d108b10b4fd87a6f860:-1229253261,7e7a5e5f25bab51051022215dd9b2611:-1565655811,200a5a1f05bab510d6be7d46984f3251:594300651</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-15 17:50:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_related_list">sys_ui_related_list</sys_db_object>
+        <sys_id>532e1355e4bc4574a5528c6ba6778f29</sys_id>
+        <sys_metadata>6942ce0c1b077d10824752c1604bcb59</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IP Switch - NSPro</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="CMDB CI IP Switch">c8c775fddb221300a27757c5ca96199b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_related_cmdb_ci_ip_switch_nspro</sys_update_name>
+        <sys_update_version display_value="sys_ui_related_cmdb_ci_ip_switch_nspro">6d42ce0c1b077d10824752c1604bcb61</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-02-15 17:50:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

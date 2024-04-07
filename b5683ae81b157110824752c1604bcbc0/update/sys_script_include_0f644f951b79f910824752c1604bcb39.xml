@@ -36,7 +36,7 @@ sys_user.prototype = {
 			user.last_login = gr.last_login.toString();
 			user.vip = gr.vip;
         } else {
-            gs.error('user not found');
+            gs.error('user not found in SI sys_user.getUser');
         }
         return global.JSON.stringify(user);
     },
@@ -47,13 +47,13 @@ sys_user.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-09 19:49:46</sys_created_on>
         <sys_id>0f644f951b79f910824752c1604bcb39</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>sys_user</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_0f644f951b79f910824752c1604bcb39</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-23 05:48:19</sys_updated_on>
+        <sys_updated_on>2024-03-07 21:42:25</sys_updated_on>
     </sys_script_include>
 </record_update>

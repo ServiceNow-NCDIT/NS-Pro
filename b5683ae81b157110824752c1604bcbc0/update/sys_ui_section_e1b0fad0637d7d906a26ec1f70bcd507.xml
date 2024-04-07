@@ -3,42 +3,56 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>time_zone</element>
             <position>0</position>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2023-10-06 15:37:00</sys_created_on>
-            <sys_id>65b0fad0547d7d902cbd2d47cd9bc708</sys_id>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-26 15:46:32</sys_created_on>
+            <sys_id>d44e4f92dba0ce5040eae46b13961993</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="edb0fad0857d7d9011cc7360779fe707">e1b0fad0637d7d906a26ec1f70bcd507</sys_ui_section>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2023-10-06 15:37:00</sys_updated_on>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-26 15:46:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-26 15:46:32</sys_created_on>
+            <sys_id>dc4e4f92dba0ce5040eae46b13961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="edb0fad0857d7d9011cc7360779fe707">e1b0fad0637d7d906a26ec1f70bcd507</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-26 15:46:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>1</position>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2023-10-06 15:37:00</sys_created_on>
-            <sys_id>29b0fad03c7d7d90bb2bf83f45cbb308</sys_id>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-26 15:46:32</sys_created_on>
+            <sys_id>d04e4f92dba0ce5040eae46b13961994</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="edb0fad0857d7d9011cc7360779fe707">e1b0fad0637d7d906a26ec1f70bcd507</sys_ui_section>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2023-10-06 15:37:00</sys_updated_on>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-26 15:46:32</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>preferred_language</element>
-            <position>2</position>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2023-10-06 15:37:00</sys_created_on>
-            <sys_id>a5b0fad05b7d7d906bbe4a520c1e7807</sys_id>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-02-26 15:46:32</sys_created_on>
+            <sys_id>d44e4f92dba0ce5040eae46b13961994</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="edb0fad0857d7d9011cc7360779fe707">e1b0fad0637d7d906a26ec1f70bcd507</sys_ui_section>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2023-10-06 15:37:00</sys_updated_on>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-02-26 15:46:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

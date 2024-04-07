@@ -38,17 +38,18 @@ if (!current.isActionAborted()) {
     // Instantiate the nsw2 utilities
     var nsw2util = new NcditNsw2Utils2();
     var cirOrdResp = nsw2util.orderCircuits(current);
-
-	// alert(JSON.stringify(cirOrdResp));
+	current.provisioning_state='5';
+	current.update();
+	// alert(global.JSON.stringify(cirOrdResp));
 	
-    if (cirOrdResp.status == 'OK') {
-        gs.addInfoMessage("Circuit order status: nsw2Util_orderCircuits called, return OK.");
-		gs.addInfoMessage("nsw2Util_orderCircuits msg: " + cirOrdResp.message);
-		current.provisioning_state='5';
-		current.update();
-    } else {
-        gs.addErrorMessage("nsw2 server side script to order circuits was called and returned " + cirOrdResp.status + " , " + cirOrdResp.message);
-    }
+    // if (cirOrdResp.status == 'OK') {
+    //     gs.addInfoMessage("Circuit order status: nsw2Util_orderCircuits called, return OK.");
+	// 	gs.addInfoMessage("nsw2Util_orderCircuits msg: " + cirOrdResp.message);
+	// 	current.provisioning_state='5';
+	// 	current.update();
+    // } else {
+    //     gs.addErrorMessage("nsw2 server side script to order circuits was called and returned " + cirOrdResp.status + " , " + cirOrdResp.message);
+    // }
 
 }
 // redirect to here
@@ -64,7 +65,7 @@ action.setRedirectURL(current);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5f9d8fdfdb4a7d9040eae46b139619a4</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>Order Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -72,7 +73,7 @@ action.setRedirectURL(current);
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_5f9d8fdfdb4a7d9040eae46b139619a4</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-13 19:02:06</sys_updated_on>
+        <sys_updated_on>2024-03-29 22:03:03</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

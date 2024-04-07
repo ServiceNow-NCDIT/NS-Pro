@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="2ba31ca847dbf150f4af2ad2e16d4397" label="NSWAN Ports" max_length="40" name="x_g_sonc_ns_pro_nswan_ports" type="collection">
+    <element db_object_id="2ba31ca847dbf150f4af2ad2e16d4397" label="NSWAN Ports" max_length="40" name="x_g_sonc_ns_pro_nswan_ports" text_index="true" type="collection">
         <element label="BillingSite" max_length="40" name="billingsite" type="string"/>
         <element label="CIR" max_length="40" name="cir" type="string"/>
         <element label="Circuit Number" max_length="40" name="circuit_number" type="string"/>

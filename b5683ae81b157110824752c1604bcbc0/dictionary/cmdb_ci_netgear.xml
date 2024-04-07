@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="d117f139db221300a27757c5ca961968" extends="cmdb_ci_hardware" label="Equipo de red" max_length="40" name="cmdb_ci_netgear" text_index="true" type="collection">
         <element label="CE Circuit" max_length="32" name="x_g_sonc_ns_pro_ce_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element choice="1" label="Device Status" max_length="40" name="x_g_sonc_ns_pro_device_status" type="choice">
-            <choice/>
-        </element>
         <element label="Internal Serial Number" max_length="40" name="x_g_sonc_ns_pro_internal_serial_number" type="string"/>
         <element choice="1" label="Maintenance Type" max_length="40" name="x_g_sonc_ns_pro_maintenance_type" type="choice">
             <choice>
@@ -13,6 +10,5 @@
                 <element inactive_on_update="false" label="NSSW" sequence="40" value="nssw"/>
             </choice>
         </element>
-        <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_floats="true" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
     </element>
 </database>

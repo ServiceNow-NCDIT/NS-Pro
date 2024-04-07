@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>8f26e10c478c8650f4af2ad2e16d4349</includes>
+        <macroponent display_value="Default">474a964947abf114f4af2ad2e16d43c3</macroponent>
+        <name>query4servicesByZip</name>
+        <preset/>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    // use zip code from form
+    const {nsw2GetTelcoAvailSvcs4Zip} = imports['x_g_sonc_ns_pro.QuickQuoteSI']();
+    // call to get list of applicable services.
+    //console.info("call ux script include for services...");
+	//api.setState('qqStatusMsg', "calling for services");
+	
+	//console.log(JSON.stringify(event,null,4)); // for debug
+	const myzip = event.payload.value;
+
+	api.setState('zip2Search', myzip);
+	
+	const svcOptionsList = [];
+	api.setState('ditNsServiceOptions', svcOptionsList);
+
+	api.setState('telcoSelectFilter', "zip=" + myzip);
+	api.data.look_up_telcos.refresh();
+	
+	return;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-01-24 20:49:10</sys_created_on>
+        <sys_id>eb07dab747777550f4af2ad2e16d43ba</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>query4servicesByZip</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ux_client_script_eb07dab747777550f4af2ad2e16d43ba</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-01-25 19:10:03</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

@@ -4,13 +4,13 @@
             <element>telco_provider</element>
             <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>3fd1672f1bfa7910824752c1604bcb72</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>d4993ba547090210f4af2ad2e16d4392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>telco_order_contact</element>
             <position>1</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>37d1672f1bfa7910824752c1604bcb73</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>58993ba547090210f4af2ad2e16d4392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>telco_order_email</element>
             <position>2</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>3bd1672f1bfa7910824752c1604bcb73</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>d8993ba547090210f4af2ad2e16d4392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>assigned_pop</element>
             <position>3</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>3fd1672f1bfa7910824752c1604bcb73</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>5c993ba547090210f4af2ad2e16d4392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>assigned_pe</element>
             <position>4</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>33d1672f1bfa7910824752c1604bcb74</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>dc993ba547090210f4af2ad2e16d4392</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,69 +74,69 @@
             <element>assigned_pe_port</element>
             <position>5</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>37d1672f1bfa7910824752c1604bcb74</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>50993ba547090210f4af2ad2e16d4393</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>circuit_special_instructions</element>
-            <position>6</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>3bd1672f1bfa7910824752c1604bcb74</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>6</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>3fd1672f1bfa7910824752c1604bcb74</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>d0993ba547090210f4af2ad2e16d4393</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>circuit_order_request_type</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>33d1672f1bfa7910824752c1604bcb75</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>54993ba547090210f4af2ad2e16d4393</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>requested_speed</element>
-            <position>9</position>
+            <element>speed</element>
+            <position>8</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-12-05 14:34:47</sys_created_on>
-            <sys_id>37d1672f1bfa7910824752c1604bcb75</sys_id>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>d4993ba547090210f4af2ad2e16d4393</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-12-05 14:34:47</sys_updated_on>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>circuit_special_instructions</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-03-20 07:31:44</sys_created_on>
+            <sys_id>58993ba547090210f4af2ad2e16d4393</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Telco Info" display_value="Telco Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="Default view">76e0ead6db5a751040eae46b13961931</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-03-20 07:31:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
