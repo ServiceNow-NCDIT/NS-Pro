@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -21,6 +23,8 @@
         <sys_updated_on>2024-03-18 21:12:42</sys_updated_on>
         <table/>
         <ui_policy display_value="Hide/show second telco provider when HA requested">638d109147c9ca50f4af2ad2e16d4393</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>assigned_pe_alternate</variable>
         <variable_set/>
         <visible>true</visible>

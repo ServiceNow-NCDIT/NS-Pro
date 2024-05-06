@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="">8b39e0be87fdc2d0f9f20f280cbb35e7</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-04-29 20:21:38</sys_created_on>
+        <sys_id>0469e8fe87fdc2d0f9f20f280cbb3565</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested For Test.SNC External</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_0469e8fe87fdc2d0f9f20f280cbb3565</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-04-29 20:21:38</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_0469e8fe87fdc2d0f9f20f280cbb3565</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="">8b39e0be87fdc2d0f9f20f280cbb35e7</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-04-29 20:21:38</sys_created_on><sys_id>0469e8fe87fdc2d0f9f20f280cbb3565</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Requested For Test.SNC External</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_0469e8fe87fdc2d0f9f20f280cbb3565</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-04-29 20:21:38</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>2089502438</payload_hash>
+        <record_name>Requested For Test.SNC External</record_name>
+        <reverted_from/>
+        <source>d68a14134711021040fd43ff336d432d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-04-06 12:02:22</sys_created_on>
+        <sys_id>3082fd4f47f9461440fd43ff336d4385</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18eb349ccb00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>fc82fd4fa5f94614fb8bd76d5c886c84</update_guid>
+        <update_guid_history>fc82fd4fa5f94614fb8bd76d5c886c84:2089502438</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 04/30/2024 15:19:39">7c82fd4f47f9461440fd43ff336d4387</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-04-30 20:19:39</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>0fa79a77cc9d42528842f19ccbccfa24</sys_id>
+        <sys_metadata>0469e8fe87fdc2d0f9f20f280cbb3565</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested For Test.SNC External</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_0469e8fe87fdc2d0f9f20f280cbb3565</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_0469e8fe87fdc2d0f9f20f280cbb3565">3082fd4f47f9461440fd43ff336d4385</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-04-30 20:19:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

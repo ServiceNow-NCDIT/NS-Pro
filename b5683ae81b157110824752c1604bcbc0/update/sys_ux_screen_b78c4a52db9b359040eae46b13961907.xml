@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="Network Operations Config">7b658189729379501acea81ca572c874</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
         <macroponent display_value="Article Template Selector">2f8c0a52db9b359040eae46b13961999</macroponent>
         <macroponent_config>{

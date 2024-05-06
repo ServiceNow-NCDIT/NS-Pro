@@ -18,5 +18,6 @@
         <sys_updated_by>wbbusby</sys_updated_by>
         <sys_updated_on>2024-01-05 10:46:42</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
+        <use_layout_items_only>false</use_layout_items_only>
     </sys_ux_form_action_layout>
 </record_update>

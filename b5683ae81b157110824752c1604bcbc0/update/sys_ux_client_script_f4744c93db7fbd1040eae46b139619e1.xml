@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
     <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
         <includes/>
         <macroponent display_value="Site Type Record Page">34744c93db7fbd1040eae46b139619df</macroponent>
         <name>viewport_gph/initiallyCollapsed</name>

@@ -5,6 +5,8 @@
         <cleared>true</cleared>
         <disabled>false</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -21,6 +23,8 @@
         <sys_updated_on>2024-02-24 13:56:56</sys_updated_on>
         <table/>
         <ui_policy display_value="Set WLAN RO If LAN Not Selected">c02ad8fddbe48a5040eae46b139619a3</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>request_managed_wlan</variable>
         <variable_set/>
         <visible>ignore</visible>

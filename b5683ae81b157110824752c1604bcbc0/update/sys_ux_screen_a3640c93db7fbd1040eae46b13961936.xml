@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="NS Pro IMC Config">00648493717fbd105e11b6170fbc4300</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Network Gear Record Page">d3640c93db7fbd1040eae46b1396191f</macroponent>
         <macroponent_config>{

@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="NS Pro IMC Config">00648493717fbd105e11b6170fbc4300</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Record Default">88644493157fbd10e24ff8c23fdfc7f0</macroponent>
         <macroponent_config>{

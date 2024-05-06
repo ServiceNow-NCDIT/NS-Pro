@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="NS Pro Config">ba2ef78920f935108396b936f3d81534</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Site Type Record Page">f1ee7f8d1b3d3510824752c1604bcbd3</macroponent>
         <macroponent_config>{

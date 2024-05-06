@@ -5,6 +5,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
@@ -21,6 +23,8 @@
         <sys_updated_on>2024-03-19 19:24:26</sys_updated_on>
         <table/>
         <ui_policy display_value="Request WAN Services">bf8d109147c9ca50f4af2ad2e16d43b8</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <variable>network_service_category</variable>
         <variable_set/>
         <visible>true</visible>

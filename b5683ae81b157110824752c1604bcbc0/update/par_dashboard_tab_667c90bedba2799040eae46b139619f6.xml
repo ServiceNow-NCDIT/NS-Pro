@@ -1,15 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_tab">
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab">
     <par_dashboard_tab action="INSERT_OR_UPDATE">
         <active>true</active>
+        <background_color/>
         <dashboard display_value="Sites">0a1bd8bafba279908b9980cb129dfa46</dashboard>
         <name>Edit Site</name>
         <order>1</order>
         <sys_class_name>par_dashboard_tab</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-20 06:01:12</sys_created_on>
+        <sys_domain>global</sys_domain>
         <sys_id>667c90bedba2799040eae46b139619f6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Edit Site</sys_name>
+        <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>

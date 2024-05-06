@@ -3,6 +3,8 @@
         <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field>relocate_site</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>true</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
@@ -18,6 +20,8 @@
         <sys_updated_on>2023-10-22 16:13:47</sys_updated_on>
         <table>x_g_sonc_ns_pro_telco_order</table>
         <ui_policy display_value="on Request Type == Relocate set new site, new location to mandatory">0836a20b1b3db910824752c1604bcb49</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <visible>true</visible>
     </sys_ui_policy_action>
 </record_update>

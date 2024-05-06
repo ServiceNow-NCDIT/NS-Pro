@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="network-ops">863b42941b9ab9d0824752c1604bcb83</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Default">996bce141b9ab9d0824752c1604bcbf4</macroponent>
         <macroponent_config>{

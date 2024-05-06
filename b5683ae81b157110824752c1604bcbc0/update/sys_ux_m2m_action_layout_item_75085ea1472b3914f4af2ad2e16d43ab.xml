@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_m2m_action_layout_item">
     <sys_ux_m2m_action_layout_item action="INSERT_OR_UPDATE">
         <active>true</active>
+        <display_type/>
+        <icon/>
+        <order>0</order>
         <sys_class_name>sys_ux_m2m_action_layout_item</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-01-05 10:51:23</sys_created_on>
@@ -16,5 +19,6 @@
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ux_form_action_layout display_value="NSPro">28c6d621472b3914f4af2ad2e16d43da</ux_form_action_layout>
         <ux_form_action_layout_item display_value="Button">40479661472b3914f4af2ad2e16d434c</ux_form_action_layout_item>
+        <variant/>
     </sys_ux_m2m_action_layout_item>
 </record_update>

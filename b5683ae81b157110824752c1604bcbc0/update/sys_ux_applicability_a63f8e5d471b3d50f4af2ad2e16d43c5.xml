@@ -4,6 +4,7 @@
         <api_name>x_g_sonc_ns_pro.NSPro Internal Users</api_name>
         <description/>
         <name>NSPro Internal Users</name>
+        <role_names/>
         <roles name="snc_internal">7fcaa702933002009c8579b4f47ffbde</roles>
         <sys_class_name>sys_ux_applicability</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>

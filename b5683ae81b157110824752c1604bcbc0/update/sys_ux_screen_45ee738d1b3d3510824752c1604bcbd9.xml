@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="NS Pro Config">ba2ef78920f935108396b936f3d81534</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="NSPro Tasks Record Page">f0ee738d1b3d3510824752c1604bcbcf</macroponent>
         <macroponent_config>{

@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="NS Pro Config">5db0bad01b7d7d90824752c1604bcbae</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Search Page">a9b0bad0d17d7d90643f93aeb3346ffa</macroponent>
         <macroponent_config>{

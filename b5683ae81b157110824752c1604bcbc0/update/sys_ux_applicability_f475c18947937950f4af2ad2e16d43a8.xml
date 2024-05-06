@@ -4,6 +4,7 @@
         <api_name>x_g_sonc_ns_pro.Audience for app network-operations</api_name>
         <description/>
         <name>Audience for app network-operations</name>
+        <role_names/>
         <roles name="x_g_sonc_ns_pro.admin">1b78f62c1b157110824752c1604bcbf5</roles>
         <sys_class_name>sys_ux_applicability</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>

@@ -3,6 +3,8 @@
         <cleared>true</cleared>
         <disabled>false</disabled>
         <field>request_managed_wlan</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
         <mandatory>ignore</mandatory>
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
@@ -18,6 +20,8 @@
         <sys_updated_on>2023-10-24 20:34:51</sys_updated_on>
         <table>x_g_sonc_ns_pro_telco_order</table>
         <ui_policy display_value="Set WLAN RO If LAN Not Selected">0701ac5edb0ef19040eae46b139619d5</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

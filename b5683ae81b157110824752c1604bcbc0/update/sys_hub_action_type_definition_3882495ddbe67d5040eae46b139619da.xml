@@ -6,11 +6,14 @@
         <action_template/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>Allows the addition or subtraction of a number of days from a specified date. Returns a GlideDate object.</description>
+        <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>get_days_from_date</internal_name>
         <label_cache>[{"name":"{{action.date}}","label":"action➛Date","type":"action","ref":"","reference_display":"","base_type":"glide_date","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.numofdays}}","label":"action➛NumOfDays","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
@@ -723,11 +726,14 @@
         <action_status/>
         <action_template/>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>allows the addition or subtraction of a number of days from a specified date. Returns a GlideDate object.</description>
+        <flow_priority/>
         <internal_name>get_days_from_date</internal_name>
         <label_cache>[]</label_cache>
         <master>true</master>

@@ -9,6 +9,7 @@
             <item display_table="ais_search_profile" display_value="network-services Search Profile" endquery="false" field="search_profile" goto="false" newquery="false" operator="=" or="false" value="70b886159f71f910d55547d12b629a4d"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
+        <pretrained>false</pretrained>
         <profile display_value="network-services Search Profile">70b886159f71f910d55547d12b629a4d</profile>
         <request_source>api</request_source>
         <solution_label>ais_relevancy_70b886159f71f910d55547d12b629a4d</solution_label>

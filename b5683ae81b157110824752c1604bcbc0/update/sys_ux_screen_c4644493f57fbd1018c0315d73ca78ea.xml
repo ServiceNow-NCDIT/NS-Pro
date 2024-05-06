@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="NS Pro IMC Config">00648493717fbd105e11b6170fbc4300</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings/>
         <macroponent display_value="Workspace notification">2683731bb7fa5010fddc6c91de11a93c</macroponent>
         <macroponent_config/>

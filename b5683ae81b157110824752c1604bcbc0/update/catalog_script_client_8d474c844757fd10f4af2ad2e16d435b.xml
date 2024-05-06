@@ -17,6 +17,7 @@
         <messages/>
         <name>onLoad - Set Site Id</name>
         <order/>
+        <published_ref/>
         <script><![CDATA[function onLoad() {
 	
     var ga = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
@@ -50,6 +51,7 @@
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

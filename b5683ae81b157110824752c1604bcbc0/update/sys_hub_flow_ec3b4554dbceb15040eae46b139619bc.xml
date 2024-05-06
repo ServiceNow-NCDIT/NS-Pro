@@ -4,11 +4,15 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
         <copied_from_name>FlowTemplate_Empty</copied_from_name>
         <description/>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>nspro_issue</internal_name>
         <label_cache>[{"name":"Service Catalog_1.request_item.priority","label":"Trigger - Service Catalog➛Requested Item Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"sc_req_item","column_name":"priority","choices":[{"image":"","label":"1 - Critical","used":false,"rawLabel":"1 - Critical","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task"}},{"image":"","label":"2 - High","used":false,"rawLabel":"2 - High","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task"}},{"image":"","label":"3 - Medium","used":false,"rawLabel":"3 - Medium","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task"}},{"image":"","label":"4 - Low","used":false,"rawLabel":"4 - Low","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task"}}]},{"name":"Service Catalog_1.request_item.description","label":"Trigger - Service Catalog➛Requested Item Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"description"},{"name":"Service Catalog_1.request_item.short_description","label":"Trigger - Service Catalog➛Requested Item Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"short_description"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}}]</label_cache>
         <master_snapshot>1edbcd94dbceb15040eae46b13961955</master_snapshot>
@@ -189,6 +193,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9b5b09d0dbceb15040eae46b1396198e"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -272,6 +277,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=df5b4d54dbceb15040eae46b13961928"/>
     <sys_hub_flow_output action="delete_multiple" query="model=ec3b4554dbceb15040eae46b139619bc"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=ec3b4554dbceb15040eae46b139619bc"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=ec3b4554dbceb15040eae46b139619bc^sys_idNOT INd19b4594dbceb15040eae46b13961903"/>
@@ -280,9 +286,11 @@
         <action_inputs/>
         <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="NSPro Issue">ec3b4554dbceb15040eae46b139619bc</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -450,11 +458,14 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
         <copied_from_name/>
         <description/>
+        <flow_priority/>
         <internal_name>nspro_issue</internal_name>
         <label_cache>[{"name":"Service Catalog_1.request_item.priority","label":"Trigger - Service Catalog➛Requested Item Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"sc_req_item","column_name":"priority","choices":[{"image":"","label":"1 - Critical","used":false,"rawLabel":"1 - Critical","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task"}},{"image":"","label":"2 - High","used":false,"rawLabel":"2 - High","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task"}},{"image":"","label":"3 - Medium","used":false,"rawLabel":"3 - Medium","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task"}},{"image":"","label":"4 - Low","used":false,"rawLabel":"4 - Low","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task"}}]},{"name":"Service Catalog_1.request_item.description","label":"Trigger - Service Catalog➛Requested Item Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"description"},{"name":"Service Catalog_1.request_item.short_description","label":"Trigger - Service Catalog➛Requested Item Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"short_description"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}}]</label_cache>
         <master>true</master>
@@ -612,6 +623,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5adbcd94dbceb15040eae46b13961958"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -695,6 +707,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a2db01d4dbceb15040eae46b1396194c"/>
     <sys_hub_flow_output action="delete_multiple" query="model=1edbcd94dbceb15040eae46b13961955"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=1edbcd94dbceb15040eae46b13961955"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=1edbcd94dbceb15040eae46b13961955^sys_idNOT INe2db01d4dbceb15040eae46b13961960"/>
@@ -703,9 +716,11 @@
         <action_inputs/>
         <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
         <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="NSPro Issue">1edbcd94dbceb15040eae46b13961955</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>

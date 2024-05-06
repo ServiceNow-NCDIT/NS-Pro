@@ -4,11 +4,15 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>Move telco order to in work when any sub task is moved out of pending state</description>
+        <flow_priority/>
+        <generation_source/>
         <internal_name>start_telco_order_work</internal_name>
         <label_cache>[{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Telco Order","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"}]</label_cache>
         <master_snapshot>b91921c41b72f510824752c1604bcb88</master_snapshot>
@@ -262,6 +266,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0509a9841b72f510824752c1604bcb6b"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -345,6 +350,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4909a9841b72f510824752c1604bcb87"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -428,6 +434,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d09a9841b72f510824752c1604bcb65"/>
     <sys_hub_flow_output action="delete_multiple" query="model=2d3869c01b72f510824752c1604bcb12"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d3869c01b72f510824752c1604bcb12"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=2d3869c01b72f510824752c1604bcb12^sys_idNOT INd509a9841b72f510824752c1604bcbac"/>
@@ -436,23 +443,25 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Start Telco Order Work">2d3869c01b72f510824752c1604bcb12</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:48:01</sys_created_on>
         <sys_id>d509a9841b72f510824752c1604bcbac</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-03-03 07:51:19</sys_updated_on>
+        <sys_updated_on>2024-04-07 19:20:32</sys_updated_on>
         <ui_id>8a2b9512-6aba-4ad1-b237-a2ac16009952</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d509a9841b72f510824752c1604bcbac"/>
@@ -605,11 +614,14 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
+        <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description>Move telco order to in work when any sub task is moved out of pending state</description>
+        <flow_priority/>
         <internal_name>start_telco_order_work</internal_name>
         <label_cache>[{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Telco Order","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"}]</label_cache>
         <master>true</master>
@@ -796,6 +808,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=021961c41b72f510824752c1604bcbb2"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -879,6 +892,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b11921c41b72f510824752c1604bcba4"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -962,6 +976,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c61961c41b72f510824752c1604bcbf8"/>
     <sys_hub_flow_output action="delete_multiple" query="model=b91921c41b72f510824752c1604bcb88"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=b91921c41b72f510824752c1604bcb88"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=b91921c41b72f510824752c1604bcb88^sys_idNOT IN4219a1c41b72f510824752c1604bcb16"/>
@@ -970,9 +985,11 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Start Telco Order Work">b91921c41b72f510824752c1604bcb88</flow>
+        <generation_source/>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -1137,14 +1154,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>2d3869c01b72f510824752c1604bcb12</sys_id>
         <latest_snapshot>b91921c41b72f510824752c1604bcb88</latest_snapshot>
-        <compiler_build>glide-utah-12-21-2022__patch9-hotfix1b-01-16-2024_01-30-2024_1048.zip</compiler_build>
+        <compiler_build>glide-utah-12-21-2022__patch10-01-10-2024_01-26-2024_1356.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2d3869c01b72f510824752c1604bcb12^sys_idNOT IN5e19a1c41b72f510824752c1604bcb4d"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"5e19a1c41b72f510824752c1604bcb4d","name":"plan","plan_signature":null}}</plan>
         <plan_id>2d3869c01b72f510824752c1604bcb12</plan_id>
-        <snapshot>d90b945cdb38821040eae46b13961976</snapshot>
+        <snapshot>be684f6747d9c21040fd43ff336d43d9</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:48:22</sys_created_on>

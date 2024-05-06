@@ -3,6 +3,7 @@
         <active>true</active>
         <app_config display_value="NS Pro Config">bdf4ced147d73d50f4af2ad2e16d433f</app_config>
         <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
         <event_mappings>[ ]</event_mappings>
         <macroponent display_value="Additional details">c6f4ced15cd73d50684b421d7a719779</macroponent>
         <macroponent_config>{&#13;
