@@ -15,11 +15,11 @@ sys_user_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		gs.info('sys_user_ajax.getUser running...');
 
         var user = new x_g_sonc_ns_pro.sys_user();
-        var user_id = this.getParameter('sysparm_user_id');
+        var userId = this.getParameter('sysparm_userId');
 
-		gs.info('sys_user_ajax.getUser running for user ' + user_id);
+		gs.info('sys_user_ajax.getUser running for user ' + userId);
 
-        return user.getUser(user_id);
+        return user.getUser(userId);
 
     },
 	
@@ -29,13 +29,13 @@ sys_user_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-10 06:18:10</sys_created_on>
         <sys_id>11f61d691b7d3d10824752c1604bcbf1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>sys_user_ajax</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_11f61d691b7d3d10824752c1604bcbf1</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-10 06:18:10</sys_updated_on>
+        <sys_updated_on>2024-04-29 16:31:58</sys_updated_on>
     </sys_script_include>
 </record_update>

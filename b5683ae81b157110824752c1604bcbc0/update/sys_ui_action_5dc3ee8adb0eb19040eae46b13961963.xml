@@ -43,7 +43,7 @@ if (!current.isActionAborted()) {
 		current.provisioning_state='3';
 		current.update();
 	} else {
-		gs.addErrorMessage("Populate Circuit Order Data was called and returned " + popCirDataResp.status + " , " + popCirDataResp.message);
+		// gs.addErrorMessage("Populate Circuit Order Data was called and returned " + popCirDataResp.status + " , " + popCirDataResp.message);
 	}
 }
 // redirect to here
@@ -58,7 +58,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5dc3ee8adb0eb19040eae46b13961963</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Populate Circuit Order Data</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -66,7 +66,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_5dc3ee8adb0eb19040eae46b13961963</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-02-22 13:19:11</sys_updated_on>
+        <sys_updated_on>2024-04-09 15:38:00</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

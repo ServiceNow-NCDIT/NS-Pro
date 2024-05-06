@@ -4,6 +4,8 @@
         <element attributes="edge_encryption_enabled=true" label="Assigned PE" max_length="40" name="assigned_pe" type="string"/>
         <element label="Assigned PE Port" max_length="32" name="assigned_pe_port" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Assigned PoP" max_length="32" name="assigned_pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dependent_field="true"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Budget Authority" max_length="32" name="budget_authority" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element choice="1" label="Change Type" max_length="40" name="change_type" type="choice">
             <choice>
@@ -48,8 +50,8 @@
         <element display="true" label="Name" mandatory="true" max_length="80" name="name" type="string"/>
         <element label="Network Service Category" mandatory="true" max_length="32" name="network_service_category" reference="x_g_sonc_ns_pro_network_service_category" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Enterprise WAN (Guaranteed)" sequence="0" value="enterprise"/>
-                <element inactive_on_update="false" label="SD-WAN (Best Effort)" sequence="1" value="sd"/>
+                <element inactive_on_update="false" label="Enterprise WAN (Guaranteed)" sequence="0" value="guaranteed"/>
+                <element inactive_on_update="false" label="SD-WAN (Best Effort)" sequence="1" value="best_effort"/>
             </choice>
         </element>
         <element choice="1" label="Network Service Subcategory" max_length="40" name="network_service_subcategory" type="choice">
@@ -57,6 +59,12 @@
                 <element inactive_on_update="false" label="Ethernet" sequence="10" value="ethernet"/>
                 <element inactive_on_update="false" label="Cable" sequence="20" value="cable"/>
                 <element inactive_on_update="false" label="LTE" sequence="30" value="lte"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="New or Existing Site" max_length="40" name="new_or_existing_site" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="10" value="new"/>
+                <element inactive_on_update="false" label="Existing" sequence="20" value="existing"/>
             </choice>
         </element>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
@@ -93,6 +101,14 @@
         <element label="Site" mandatory="true" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="'location='+current.location" reference_qual_condition="'location='+current.location" type="reference"/>
         <element label="Special Instructions" max_length="2000" name="special_instructions" type="string"/>
         <element label="Total Cost" max_length="20" name="total_cost" type="currency"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Type Request" max_length="40" name="type_request" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New Service" sequence="10" value="new"/>
+                <element inactive_on_update="false" label="Change Service" sequence="20" value="change"/>
+                <element inactive_on_update="false" label="Relocate Site" sequence="30" value="relocate"/>
+                <element inactive_on_update="false" label="Terminate Site" sequence="40" value="terminate"/>
+            </choice>
+        </element>
         <element choice="1" label="WAN Circuit Type Jack" max_length="40" name="wan_circuit_type_jack" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Ethernet" sequence="100" value="Eth"/>
@@ -113,60 +129,66 @@
             <element name="assigned_pop"/>
         </index>
         <index name="index3">
-            <element name="budget_authority"/>
+            <element name="assigned_to"/>
         </index>
         <index name="index4">
-            <element name="circuit"/>
+            <element name="assignment_group"/>
         </index>
         <index name="index5">
-            <element name="dest_location"/>
+            <element name="budget_authority"/>
         </index>
         <index name="index6">
-            <element name="dest_site"/>
+            <element name="circuit"/>
         </index>
         <index name="index7">
-            <element name="dest_site_alternate_poc"/>
+            <element name="dest_location"/>
         </index>
         <index name="index8">
-            <element name="dest_site_primary_poc"/>
+            <element name="dest_site"/>
         </index>
         <index name="index9">
-            <element name="lan_service_assignment"/>
+            <element name="dest_site_alternate_poc"/>
         </index>
         <index name="index10">
-            <element name="location"/>
+            <element name="dest_site_primary_poc"/>
         </index>
         <index name="index11">
-            <element name="network_service_category"/>
+            <element name="lan_service_assignment"/>
         </index>
         <index name="index12">
-            <element name="point_of_presence"/>
+            <element name="location"/>
         </index>
         <index name="index13">
-            <element name="quoted_service_definition"/>
+            <element name="network_service_category"/>
         </index>
         <index name="index14">
-            <element name="relocate_location"/>
+            <element name="point_of_presence"/>
         </index>
         <index name="index15">
-            <element name="relocate_site"/>
+            <element name="quoted_service_definition"/>
         </index>
         <index name="index16">
-            <element name="request_type"/>
+            <element name="relocate_location"/>
         </index>
         <index name="index17">
-            <element name="requested_for"/>
+            <element name="relocate_site"/>
         </index>
         <index name="index18">
-            <element name="requested_vrf"/>
+            <element name="request_type"/>
         </index>
         <index name="index19">
-            <element name="service_definition"/>
+            <element name="requested_for"/>
         </index>
         <index name="index20">
-            <element name="site"/>
+            <element name="requested_vrf"/>
         </index>
         <index name="index21">
+            <element name="service_definition"/>
+        </index>
+        <index name="index22">
+            <element name="site"/>
+        </index>
+        <index name="index23">
             <element name="wlan_service_assignment"/>
         </index>
     </element>

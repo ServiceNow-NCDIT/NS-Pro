@@ -33,7 +33,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Choice">choice</internal_type>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_g_sonc_ns_pro_nspro_tasks</name>
         <next_element/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_dictionary_x_g_sonc_ns_pro_nspro_tasks_network_service_category</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-16 07:03:36</sys_updated_on>
+        <sys_updated_on>2024-05-01 11:49:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments>This will call a script include to drive a request for Field Service to act.&#13;
-(current.provisoning_state &gt;= '6' &amp;&amp; current.provisoning_state &lt; '7') &amp;&amp; (current.request_type == '1' || current.request_type == '2')</comments>
+(current.provisoning_state &gt;= '6' &amp;&amp; current.provisoning_state &lt; '7') &amp;&amp; (current.type_request== '1' || current.type_request== '2')</comments>
         <condition>current.assignment_group=='0355cd0ddb98630065fbf482ba96196f' &amp;&amp; current.provisioning_state=='6' &amp;&amp; canWrite()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -103,7 +103,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7782707bdb8631d040eae46b139619c6</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>Allocate CPE - Deprecated</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -111,7 +111,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_7782707bdb8631d040eae46b139619c6</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-20 14:44:05</sys_updated_on>
+        <sys_updated_on>2024-04-25 01:45:31</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

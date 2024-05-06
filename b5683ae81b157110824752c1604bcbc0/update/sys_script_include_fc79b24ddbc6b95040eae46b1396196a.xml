@@ -683,7 +683,7 @@ NcditNsw2Utils2.prototype = {
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + "lat/lon is " + NSProTask.telco_order.dest_location.latitude + '/' + NSProTask.telco_order.dest_location.longitude);
 
-        // if (NSProTask.request_type.type == 'Relocate') {
+        // if (NSProTask.type_request == 'relocate') {
 
         // TODO - populate relocate_location
         
@@ -1058,12 +1058,12 @@ NcditNsw2Utils2.prototype = {
         var svcCode4TaskRcd = "";
         // 7/13/22 handle move as well as delete
 
-        gs.warn(this.timestamp() + LogPrefix + "request_type is " + NSProTask.request_type.type);
+        gs.warn(this.timestamp() + LogPrefix + "type_request is " + NSProTask.type_request);
 
-        if (NSProTask.request_type.type == 'Terminate' || NSProTask.request_type.type == 'Relocate') {
+        if (NSProTask.type_request == 'terminate' || NSProTask.type_request == 'relocate') {
             // for delete request type
             svcCode4TaskRcd = NSProTask.telco_order.service_code;
-        } else if (NSProTask.request_type.type == 'Change') {
+        } else if (NSProTask.type_request == 'change') {
             // this is for a change - use requested service code
             svcCode4TaskRcd = NSProTask.service_code;
             // go ahead and set quoted service code
@@ -1161,13 +1161,13 @@ NcditNsw2Utils2.prototype = {
         // }
 
         // Fill in other stuff we know
-        if (NSProTask.request_type.type == "New Service") {
+        if (NSProTask.type_request == "new") {
             NSProTask.circuit_order_request_type = "add";
-        } else if (NSProTask.request_type.type == "Terminate") {
+        } else if (NSProTask.type_request == "terminate") {
             NSProTask.circuit_order_request_type = "terminate"; // added 7/5/22
-        } else if (NSProTask.request_type.type == "Change") {
+        } else if (NSProTask.type_request == "change") {
             NSProTask.circuit_order_request_type = "change"; // added 11/16/22
-        } else if (NSProTask.request_type.type == "Relocate") {
+        } else if (NSProTask.type_request == "add") {
             NSProTask.circuit_order_request_type = "add"; // added 7/13/22 for move
         }
 
@@ -1306,10 +1306,8 @@ NcditNsw2Utils2.prototype = {
                 gs.warn(this.timestamp() + LogPrefix + "create dummy circuit for primary returned " + makeNetCirResp.status + ", " + makeNetCirResp.message);
             }
 
-
-            // TODO - find out why this process is broken
             // trigger an event so that emails can be located and added to the prov record work notes by
-            // a separate script or flow that watched for that event.
+            // a separate script action that watched for that event.
             var processTime = new GlideDateTime();
             processTime.addSeconds(60); // delay
             var parm2parms_pri = NSProTask.telco_provider.name + "," + NSProTask.telco_order_email;
@@ -1323,18 +1321,18 @@ NcditNsw2Utils2.prototype = {
         NSProTask.work_notes = "Circuit order(s) have been requested to be sent.";
         // NSProTask.provisoning_state = "5"; //circuit ordered
         NSProTask.update();
-
-        if (makeNetCirResp.status == "OK" || makeNetCirResp2 == "OK") {
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "calling runBackgroundFlowByName('updatePopPEPortCircuits') for object makeNetCirResp" + JSON.stringify(makeNetCirResp));
+        if (makeNetCirResp.status == "OK") {
             //gs.eventQueue("x_g_sonc_dit_nsw22.updatePopPE", NSProTask, "1");  // TODO - find out what Rick intended here and why he commented it out
             if (this.debug) gs.info(this.timestamp() + LogPrefix + "calling update pop pe port records function for " + NSProTask.number);
-            this.runBackgroundFlowByName("updatePopPEPortCircuits"); 
+            // this.runBackgroundFlowByName("updatePopPEPortCircuits"); 
         }
 
         returnObject.status = "OK";
         
-        gs.info(this.timestamp() + LogPrefix + "end of process, returning  " + JSON.stringify(returnObject));
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "end of process, returning  " + JSON.stringify(returnObject));
 
-        return JSON.stringify(returnObject);
+        return returnObject;
 
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2043,13 +2041,13 @@ NcditNsw2Utils2.prototype = {
 
         gs.warn(this.timestamp() + LogPrefix + ' NSProTask = ' + JSON.stringify(NSProTask));
 
-        if (NSProTask.request_type.type == 'New Service') {
-            fst_GR.setValue('nsp_activity_type', '1');
+        if (NSProTask.type_request == 'new') {
+            // fst_GR.setValue('nsp_activity_type', '1');
             sdString = "Get (" + NSProTaskCPEArray.length.toString() + ") CPE model(s) for " + NSProTask.number;
             descString = "This is a request for field service to allocate CPE for NSPro Telco Order " + NSProTask.number + ".\n" +
                 "Please acquire " + NSProTask.cpe_models_required;
-        } else if (NSProTask.request_type.type == 'Relocate') {
-            fst_GR.setValue('nsp_activity_type', '1');
+        } else if (NSProTask.type_request == 'relocate') {
+            // fst_GR.setValue('nsp_activity_type', '1');
             sdString = "Get (" + NSProTaskCPEArray.length.toString() + ") CPE model(s) for " + NSProTask.number;
             descString = "This is a request for field service to allocate CPE for NSPro MOVE Telco Order " + NSProTask.number + ".\n" +
                 "Please acquire " + NSProTask.cpe_models_required;
@@ -2158,20 +2156,21 @@ NcditNsw2Utils2.prototype = {
         fst_GR.setValue('telco_order', NSProTask.telco_order.toString());
         fst_GR.setValue('site', NSProTask.site.toString());
 
-        if (NSProTask.request_type.type == 'New Service') {
-            // req type 1 = new
-            fst_GR.setValue('nsp_activity_type', '1'); // new site cpe allocation
-            sdString = "Get (" + totalDeviceCountReq.toString() + ") CPE model(s) for " + NSProTask.number;
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "NSProTask.type_request == " + NSProTask.type_request);
+
+        fst_GR.setValue('type_request', NSProTask.type_request);
+
+        if (NSProTask.type_request == 'new') {
+            // modified short description to value we can use to find the allocate CPE task in business rule Capture CPE Serial Numbers
+            sdString = 'Allocate CPE';
 
             descString = "This is a request for field service to allocate CPE for NSPro Telco Order " + NSProTask.number + ".\n" +
-                "Please acquire " + NSProTask.cpe_models_required;
+                "Please acquire " + totalDeviceCountReq.toString() + ") CPE model(s) for " + NSProTask.cpe_models_required;
 
-        } else if (NSProTask.request_type.type == 'Relocate') {
-            // req type 2 = move
-            fst_GR.setValue('nsp_activity_type', '1'); // new site cpe allocation
-            sdString = "Get (" + NSProTaskCPEArray.length.toString() + ") CPE model(s) for " + NSProTask.number;
+        } else if (NSProTask.type_request == 'relocate') {
+            sdString = 'Allocate CPE';
             descString = "This is a request for field service to allocate CPE for NSPro MOVE Telco Order " + NSProTask.number + ".\n" +
-                "Please acquire " + NSProTask.cpe_models_required;
+                "Please acquire " + totalDeviceCountReq.toString() + ") CPE model(s) for " + NSProTask.cpe_models_required;
         }
         // 10/20/22 new description details
         cpeReqDetails = JSON.parse(NSProTask.detailed_cpe_needs);
@@ -2199,7 +2198,6 @@ NcditNsw2Utils2.prototype = {
         fst_GR.setValue('due_date', NSProTask.due_date);
         fst_GR.setValue('assignment_group', fsAssignmentGroup);
         fst_GR.setValue('company', ditCompanySysId.toString());
-        fst_GR.setValue('request_type', request_type.toString());
         fst_GR.setValue('site', NSProTask.site.toString());
         fst_GR.setValue('telco_order', NSProTask.telco_order.toString());
         // fst_GR.setValue('assigned_to', NSProTask.assigned_to.toString());
@@ -2232,8 +2230,6 @@ NcditNsw2Utils2.prototype = {
 
         returnObject.status = "OK";
         returnObject.message = "FS request created.";
-
-         
 
         return returnObject;
     },
@@ -2271,18 +2267,26 @@ NcditNsw2Utils2.prototype = {
 
         // fst_GR.setValue('parent', NSProTask.telco_order.sys_id);  -- leave parent alone so tasks can nest under each other if need to add subtasks
 
-        if (NSProTask.request_type.type == 'New Service') {
-            fst_GR.setValue('nsp_activity_type', '2');
-            sdString = "Install, test, and turnup for Site: " + NSProTask.site.name + ", NSPro Telco Order: " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
-            descString = "This is a request for field service to schedule site install, test, and turn-up of CPE for NSPro Telco Order " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
+        if (NSProTask.type_request == 'new') {
+            fst_GR.setValue('type_request', 'new');
+
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + "processing new request for " + NSProTask.number);
+
+            // fst_GR.setValue('nsp_activity_type', '2');
+            sdString = "Install, test, and turnup for Site: " + NSProTask.site.name + ", NSPro Network Request: " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
+            descString = "This is a request for field service to schedule site install, test, and turn-up of CPE for NSPro Network Request " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
             fst_GR.setValue('location', NSProTask.site.location.toString()); // added 04/28/22 rw
         } else {
+            fst_GR.setValue('type_request', 'relocate');
             // added 7/26/22 for supporting site move request
-            fst_GR.setValue('nsp_activity_type', '2');
+            // fst_GR.setValue('nsp_activity_type', '2');
             sdString = "Install, test, and turnup for MOVE of Site: " + NSProTask.site.name + ", NSPro task: " + NSProTask.number;
-            descString = "This is a request for field service to schedule a site MOVE and install, test, and turn-up of CPE for NSPro Telco Order " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
+            descString = "This is a request for field service to schedule a site MOVE and install, test, and turn-up of CPE for NSPro Network Request " + NSProTask.telco_order.number  + ", NSPro Task: " + NSProTask.number;
             fst_GR.setValue('location', NSProTask.site.location.toString()); // added 07/26/22 rw
         }
+
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "setting new values for " + NSProTask.number);
+
         fst_GR.setValue('short_description', sdString);
         fst_GR.setValue('description', descString);
         fst_GR.setValue('pri_sec_circuit', NSProTask.pri_sec_circuit);
@@ -2291,18 +2295,27 @@ NcditNsw2Utils2.prototype = {
         fst_GR.setValue('due_date', NSProTask.due_date);
         fst_GR.setValue('assignment_group', fsAssignmentGroup);
         fst_GR.setValue('company', ditCompanySysId);
+
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "setting new values for " + NSProTask.number);
+
         // fst_GR.setValue('required_lan_models', lanModelList.join()); // 10/20/22 added lan model list
         // fst_GR.setValue('required_lan_cpe_count', lanDeviceCount); // 10/20/22 added lan cpe count
-        fst_GR.setValue('request_type', request_type.toString());
+        fst_GR.setValue('type_request', NSProTask.type_request.toString());
         fst_GR.setValue('site', NSProTask.site.toString());
         fst_GR.setValue('telco_order', NSProTask.telco_order.toString());
         // fst_GR.setValue('assigned_to', NSProTask.assigned_to.toString());
-        fst_GR.setValue('location', NSProTask.location.toString());
+        
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "setting new values for " + NSProTask.number);
+        
+        fst_GR.setValue('location', NSProTask.site.location.toString());
         fst_GR.setValue('network_service_category', NSProTask.network_service_category);
         fst_GR.setValue('network_service_subcategory', NSProTask.network_service_subcategory);
         fst_GR.setValue('quoted_cost', NSProTask.quoted_cost);
         fst_GR.setValue('quoted_service_definition', NSProTask.quoted_service_definition);
         fst_GR.setValue('quoted_service_code', NSProTask.quoted_service_code);
+        
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "setting new values for " + NSProTask.number);
+        
         fst_GR.setValue('assigned_wan_service', NSProTask.assigned_wan_service.toString());
         fst_GR.setValue('assigned_wan_service_code', NSProTask.assigned_wan_service_code);
         fst_GR.setValue('service_code', NSProTask.service_code);
@@ -2311,17 +2324,26 @@ NcditNsw2Utils2.prototype = {
         fst_GR.setValue('telco_provider', NSProTask.telco_provider.toString());
         fst_GR.setValue('telco_order_contact', NSProTask.telco_order_contact);
         fst_GR.setValue('telco_order_email', NSProTask.telco_order_email);
+        
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "setting new values for " + NSProTask.number);
+        
         fst_GR.setValue('assigned_pop', NSProTask.assigned_pop.toString());
         fst_GR.setValue('assigned_pe', NSProTask.assigned_pe);
         fst_GR.setValue('assigned_pe_port', NSProTask.assigned_pe_port.toString());
         fst_GR.setValue('circuit_special_instructions', NSProTask.circuit_special_instructions);
         fst_GR.setValue('special_instructions', NSProTask.special_instructions);
+        
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "setting new values for " + NSProTask.number);
+        
         fst_GR.setValue('circuit_order_request_type', NSProTask.circuit_order_request_type);
         fst_GR.setValue('lan_cpe_basic_24_count', NSProTask.lan_cpe_basic_24_count);
         fst_GR.setValue('lan_cpe_basic_48_count', NSProTask.lan_cpe_basic_48_count);
         fst_GR.setValue('lan_cpe_premium_8_count', NSProTask.lan_cpe_premium_8_count);
         fst_GR.setValue('lan_cpe_premium_24_count', NSProTask.lan_cpe_premium_24_count);
         fst_GR.setValue('lan_cpe_premium_48_count', NSProTask.lan_cpe_premium_48_count);
+
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "inserting new FS task for " + NSProTask.number);
+
         fst_GR.insert();
 
         returnObject.status = "OK";
@@ -2379,8 +2401,9 @@ NcditNsw2Utils2.prototype = {
         // fst_GR.setValue('assigned_to', telcoOrder.assigned_to); // do this only if we decide to set a FS task for network analyst to get gear.
 
         fst_GR.setValue('parent', telcoOrder.sys_id);
-        if (telcoOrder.request_type == '4') {
-            fst_GR.setValue('nsp_activity_type', '4');
+        if (telcoOrder.type_request == '4') {
+            // fst_GR.setValue('nsp_activity_type', '4');
+            fst_GR.setValue('type_request', 'terminate');
             sdString = "Decommission activity for Site: " + telcoOrder.site_id + ", nspro Prov Rcd: " + telcoOrder.number;
             descString = "This is a request for field service to schedule site decommission and retrieval of CPE for nspro provisioning task " + telcoOrder.number + ".";
 
@@ -2480,45 +2503,20 @@ NcditNsw2Utils2.prototype = {
             var newNCRcd = new GlideRecord(netCircuitTable);
             newNCRcd.initialize();
             newNCRcd.setValue('name', cirName);
-            // newNCRcd.setValue('x_g_sonc_ns_pro_name', cirName);
+            newNCRcd.setValue('x_g_sonc_ns_pro_pe_host_circuit_id', NSProTask.circuit);
             newNCRcd.setValue('x_g_sonc_ns_pro_telco_provider', NSProTask.telco_provider.toString());
             newNCRcd.setValue('access_type', NSProTask.assigned_pe_port);
             newNCRcd.setValue('correlation_id', NSProTask.assigned_pe_port);
             newNCRcd.setValue('serial_number', NSProTask.assigned_pe_port);
-            // newNCRcd.setValue('u_nsw2_site_id', NSProTask.site.site_identifier);
             newNCRcd.setValue('x_g_sonc_ns_pro_site', NSProTask.site.toString());
-            // newNCRcd.setValue('x_g_sonc_ns_pro_telco_provider_order_number', NSProTask.telco_order.toString());
             newNCRcd.setValue('bandwidth_downstream', NSProTask.speed); // to CE from telco
             newNCRcd.setValue('bandwidth_upstream', NSProTask.speed); // from CE to telco
             newNCRcd.setValue('x_g_sonc_ns_pro_circuit_speed', NSProTask.speed);
-            newNCRcd.setValue('install_status', '4'); // pending install  <-- TODO devise way to make these installed and operational
-            // newNCRcd.setValue('operational_status', '2'); // not operational
+            newNCRcd.setValue('x_g_sonc_ns_pro_status', 'pending'); // pending install
             var newRcdId = newNCRcd.insert();
             returnObject.circuit.sys_id = newRcdId;
-            returnObject.message = "created primary network circuit " + newRcdId;
+            returnObject.message = "created network circuit " + newRcdId;
             returnObject.status = "OK";
-            // circuit 2 for HA pair now created same as circuit 1 but with -2 in name so commented out below
-            // else if (priSec == 'Secondary') {
-            //     if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing to create secondary network circuit record for " + cirName);
-            //     var newNCRcd2 = new GlideRecord(netCircuitTable);
-            //     newNCRcd2.initialize();
-            //     newNCRcd2.setValue('name', cirName);
-            //     newNCRcd2.setValue('vendor', telcoOrder.telco_vendor_2);
-            //     newNCRcd2.setValue('access_type', telcoOrder.assigned_pe_port_secondary.pe_circuit_type.displayValue);
-            //     newNCRcd2.setValue('correlation_id', telcoOrder.assigned_pe_port_secondary.pe_circuit_id);
-            //     newNCRcd2.setValue('serial_number', telcoOrder.assigned_pe_port_secondary.pe_circuit_id);
-            //     newNCRcd.setValue('x_g_sonc_ns_pro_site', NSProTask.site.getDisplayValue());
-            //     // newNCRcd2.setValue('u_nsw2_site_id', telcoOrder.site_id);
-            //     // newNCRcd2.setValue('u_nsw2_site', telcoOrder.site_rcd_ref);
-            //     newNCRcd2.setValue('bandwidth_downstream', telcoOrder.cir_speed_egress_2); // to CE from telco
-            //     newNCRcd2.setValue('bandwidth_upstream', telcoOrder.cir_speed_ingress_2); // from CE to telco
-            //     newNCRcd2.setValue('install_status', '4'); // pending install
-            //     newNCRcd2.setValue('operational_status', '2'); // not operational
-            //     var newRcdId2 = newNCRcd2.insert();
-            //     returnObject.circuit.sys_id = newRcdId2;
-            //     returnObject.message = "created secondary network circuit " + newRcdId2;
-            //     returnObject.status = "OK";
-            // }
         } else {
             gs.warn(this.timestamp() + LogPrefix + "network circuit record already exists for " + cirName + ", sys_id = " + netcirGR.getValue('sys_id'));
             returnObject.circuit.sys_id = netcirGR.getValue('sys_id');
@@ -2599,7 +2597,7 @@ NcditNsw2Utils2.prototype = {
         };
         if (this.debug) gs.info(this.timestamp() + LogPrefix + "called to execute flow named " + flowName);
         try {
-            var scopeName = "x_g_sonc_dit_nsw22." + flowName;
+            var scopeName = "x_g_sonc_ns_pro." + flowName;
             var result = sn_fd.FlowAPI.getRunner()
                 .flow(scopeName) // Run the global scope action named markapproved.
                 .inBackground()
@@ -3123,12 +3121,12 @@ NcditNsw2Utils2.prototype = {
             var currentUserRef = gs.getUser();
             var currentUserName = gs.getUserDisplayName();
             //var cartId = GlideGuid.gererate(null);
-            if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing cart for eMon request... NSProTask req type is " + NSProTask.request_type.type + ", user reqFor is: " + currentUserName);
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing cart for eMon request... NSProTask req type is " + NSProTask.type_request + ", user reqFor is: " + currentUserName);
             var cart = new sn_sc.CartJS();
 
             // fill in the required variables for the prov activity.
-            if (NSProTask.request_type.type == "New Service") {
-                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+            if (NSProTask.type_request == "new") {
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for type_request = (" + NSProTask.type_request + ")");
 
                 var newrequest = {
                     'sysparm_id': catItemReqSysId,
@@ -3148,8 +3146,8 @@ NcditNsw2Utils2.prototype = {
                 if (this.debug) gs.info(this.timestamp() + LogPrefix + "eMon request cart details: " + JSON.stringify(cartDetails));
                 returnObject.status = "OK";
                 returnObject.message = "eMon request " + cartDetails.number + " created for " + NSProTask.number;
-            } else if (NSProTask.request_type.type == "Relocate") {
-                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+            } else if (NSProTask.type_request == "relocate") {
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for type_request = (" + NSProTask.type_request + ")");
 
                 var movrequest = {
                     'sysparm_id': catItemReqSysId,
@@ -3167,8 +3165,8 @@ NcditNsw2Utils2.prototype = {
                 if (this.debug) gs.info(this.timestamp() + LogPrefix + "eMon request cart details: " + JSON.stringify(cartDetails));
                 returnObject.status = "OK";
                 returnObject.message = "eMon request " + cartDetails.number + " created for " + NSProTask.number;
-            } else if (NSProTask.request_type.type == "Change") {
-                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+            } else if (NSProTask.type_request == "change") {
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for type_request = (" + NSProTask.type_request + ")");
 
                 var chgrequest = {
                     'sysparm_id': catItemReqSysId,
@@ -3186,8 +3184,8 @@ NcditNsw2Utils2.prototype = {
                 if (this.debug) gs.info(this.timestamp() + LogPrefix + "eMon request cart details: " + JSON.stringify(cartDetails));
                 returnObject.status = "OK";
                 returnObject.message = "eMon request " + cartDetails.number + " created for " + NSProTask.number;
-            } else if (NSProTask.request_type.type == "Terminate") {
-                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for request_type = (" + NSProTask.request_type.type + ")");
+            } else if (NSProTask.type_request == "terminate") {
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "preparing emon req for type_request = (" + NSProTask.type_request + ")");
 
                 var delrequest = {
                     'sysparm_id': catItemReqSysId,
@@ -3498,13 +3496,13 @@ addService2Site: function(site, service, agency, start_date) {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-21 10:26:40</sys_created_on>
         <sys_id>fc79b24ddbc6b95040eae46b1396196a</sys_id>
-        <sys_mod_count>205</sys_mod_count>
+        <sys_mod_count>226</sys_mod_count>
         <sys_name>NcditNsw2Utils2</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_fc79b24ddbc6b95040eae46b1396196a</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-03-29 21:45:28</sys_updated_on>
+        <sys_updated_on>2024-04-25 20:07:36</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="cmdb_ci_site" relationship="" sys_domain="global" table="cmdb_ci_netgear" version="2" view="nspro">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="cmdb_ci_netgear" element="NULL" name="cmdb_ci_netgear" parent="cmdb_ci_site" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f390cb4d473d06d040fd43ff336d43bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-04-24 20:53:03</sys_created_on>
+            <sys_id>3790cb4d473d06d040fd43ff336d43c0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-04-24 20:53:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_class_name</element>
+            <list_id display_value="cmdb_ci_netgear" element="NULL" name="cmdb_ci_netgear" parent="cmdb_ci_site" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f390cb4d473d06d040fd43ff336d43bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-04-24 20:53:03</sys_created_on>
+            <sys_id>f7908b81477d06d040fd43ff336d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-04-24 20:53:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>manufacturer</element>
+            <list_id display_value="cmdb_ci_netgear" element="NULL" name="cmdb_ci_netgear" parent="cmdb_ci_site" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f390cb4d473d06d040fd43ff336d43bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-04-24 20:53:03</sys_created_on>
+            <sys_id>7b908b81477d06d040fd43ff336d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-04-24 20:53:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>model_id.name</element>
+            <list_id display_value="cmdb_ci_netgear" element="NULL" name="cmdb_ci_netgear" parent="cmdb_ci_site" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f390cb4d473d06d040fd43ff336d43bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-04-24 20:53:03</sys_created_on>
+            <sys_id>fb908b81477d06d040fd43ff336d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-04-24 20:53:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ip_address</element>
+            <list_id display_value="cmdb_ci_netgear" element="NULL" name="cmdb_ci_netgear" parent="cmdb_ci_site" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f390cb4d473d06d040fd43ff336d43bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-04-24 20:53:03</sys_created_on>
+            <sys_id>7f908b81477d06d040fd43ff336d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-04-24 20:53:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>serial_number</element>
+            <list_id display_value="cmdb_ci_netgear" element="NULL" name="cmdb_ci_netgear" parent="cmdb_ci_site" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f390cb4d473d06d040fd43ff336d43bf</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-04-24 20:53:03</sys_created_on>
+            <sys_id>ff908b81477d06d040fd43ff336d4305</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-04-24 20:53:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_netgear</name>
+            <parent>cmdb_ci_site</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-04-24 20:53:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f390cb4d473d06d040fd43ff336d43bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_netgear</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_netgear_cmdb_ci_site_nspro</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-04-24 20:53:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

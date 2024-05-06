@@ -60,24 +60,19 @@ service_definition.prototype = {
 
 		var svcs = [];
 		strQuery = 'svc_titleLIKE' + svc_type + '^svc_titleLIKE' + svc_level;
-		var gr = new GlideRecord('x_g_sonc_ns_pro_service_definition');
+		var gr = new GlideRecord('x_g_sonc_ns_pro_service_code');
 		gr.addEncodedQuery(strQuery);
-		gr.orderBy('svc_code');
+		gr.orderBy('speed_egress');
 		gr.query();
 		while (gr.next()) {
 			svc = {};
 			svc.title = gr.getValue('svc_title');
 			svc.type = gr.getValue('svc_type');
-			svc.code = gr.getValue('svc_code');
-			svc.cost_per_month_transport = gr.cost_per_month_transport.getDisplayValue();
-			svc.cost_per_month_cpe = gr.cost_per_month_cpe.getDisplayValue();
-			svc.cost_per_month_core = gr.cost_per_month_core.getDisplayValue();		
-			// add to list of service definitions only if we haven't already found another with the same service code
-			var found = false;
+			svc.code = gr.getValue('svc_code');	
 			for (i=0; i < svcs.length; i++) {
 				if (svcs[i].code == svc.code) found = true;
 			}
-			if (!found) svcs.push(svc);
+			svcs.push(svc);
 		}
 		return global.JSON.stringify(svcs);
 		
@@ -89,13 +84,13 @@ service_definition.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-13 12:39:19</sys_created_on>
         <sys_id>d02b8aae1b79b510824752c1604bcbcd</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>service_definition</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_d02b8aae1b79b510824752c1604bcbcd</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-03-19 16:29:55</sys_updated_on>
+        <sys_updated_on>2024-04-17 20:28:20</sys_updated_on>
     </sys_script_include>
 </record_update>

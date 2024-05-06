@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments>This will call a script include to determine what CPE is required for the service and check CPE availability.&#13;
-(current.req_addr_zip != '' &amp;&amp; current.assigned_pe != '' &amp;&amp; parseInt(current.provisoning_state) &lt; 6) &amp;&amp; (current.request_type == '1' || current.request_type == '2')</comments>
+(current.req_addr_zip != '' &amp;&amp; current.assigned_pe != '' &amp;&amp; parseInt(current.provisoning_state) &lt; 6) &amp;&amp; (current.type_request== '1' || current.type_request== '2')</comments>
         <condition>current.assignment_group=='0355cd0ddb98630065fbf482ba96196f' &amp;&amp; current.provisioning_state=='6' &amp;&amp; canWrite()</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -38,6 +38,9 @@ if (!current.isActionAborted()) {
     // Instantiate the nsw2 utilities
     var nsw2util = new NcditNsw2Utils2();
     var cpeResp = nsw2util.reqCpeAllocationByFSFromClient(current);
+
+	// gs.addInfoMessage(JSON.stringify(cpeResp));
+	
     if (cpeResp.status == 'OK') {
         gs.addInfoMessage(cpeResp.message);
 		current.provisioning_state='7';
@@ -59,7 +62,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9f43d6b2db66b99040eae46b139619aa</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Allocate CPE</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -67,7 +70,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_9f43d6b2db66b99040eae46b139619aa</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-12-13 19:01:40</sys_updated_on>
+        <sys_updated_on>2024-04-25 16:01:35</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

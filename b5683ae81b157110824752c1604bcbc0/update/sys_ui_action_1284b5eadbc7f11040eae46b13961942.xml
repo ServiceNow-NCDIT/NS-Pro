@@ -30,7 +30,28 @@
         <name>Get Geo Location</name>
         <onclick/>
         <order>100</order>
-        <script/>
+        <script><![CDATA[action.setRedirectURL(current);
+current.update();
+if (!current.isActionAborted()) {
+    // call a script include to perform the work
+    gs.addInfoMessage('Executing order circuit');
+    var nsw2util = new NcditNsw2Utils2();
+    var cirOrdResp = nsw2util.orderCircuits(current);
+	gs.addInfoMessage(JSON.stringify(nsw2util.orderCircuits(current)));
+	
+    if (cirOrdResp.status == 'OK') {
+        gs.addInfoMessage("Circuit order status: nsw2Util_orderCircuits called, return OK.");
+		gs.addInfoMessage("nsw2Util_orderCircuits msg: " + cirOrdResp.message);
+		current.provisioning_state='5';
+		current.update();
+    } else {
+        gs.addErrorMessage("nsw2 server side script to order circuits was called and returned " + cirOrdResp.status + " , " + cirOrdResp.message);
+    }
+
+}
+// redirect to here
+action.setRedirectURL(current);
+]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -41,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1284b5eadbc7f11040eae46b13961942</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Get Geo Location</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -49,7 +70,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_1284b5eadbc7f11040eae46b13961942</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-03-24 20:05:41</sys_updated_on>
+        <sys_updated_on>2024-04-09 19:13:55</sys_updated_on>
         <table>cmn_location</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

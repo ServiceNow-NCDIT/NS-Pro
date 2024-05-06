@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1d7a514687394e90f9f20f280cbb35cb" label="Netplus Circuit Code" max_length="40" name="x_g_sonc_ns_pro_netplus_circuit_code" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Amt" max_length="40" name="amt" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Item Code" max_length="40" name="item_code" type="string"/>
+    </element>
+</database>

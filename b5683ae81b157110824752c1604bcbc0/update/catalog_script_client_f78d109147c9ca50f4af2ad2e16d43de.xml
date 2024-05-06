@@ -17,7 +17,25 @@
         <messages/>
         <name>Confirm Submission</name>
         <order/>
+        <published_ref/>
         <script><![CDATA[function onSubmit() {
+	
+	var wan = 0;
+	var lan = 0;
+	var wlan = 0;
+	var voip = 0;
+	
+	if (g_form.getValue('request_managed_wan') == 'true') wan++;
+	if (g_form.getValue('request_managed_lan') == 'true') lan++;
+	if (g_form.getValue('request_managed_wlan') == 'true') wlan++;
+	if (g_form.getValue('request_managed_voip') == 'true') voip++;
+	
+	var total = wan + lan + wlan + voip;
+	
+	if (total == 0) {
+		alert('You must select a service option to submit');
+		return false;
+	}
 	
 	return confirm('Submitting this request will initiate provisioning processes for network fulfillment. Please confirm your authorization to proceed.');
    
@@ -28,18 +46,19 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f78d109147c9ca50f4af2ad2e16d43de</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Confirm Submission</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_f78d109147c9ca50f4af2ad2e16d43de</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-03-18 21:12:40</sys_updated_on>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-04-10 10:39:21</sys_updated_on>
         <table/>
         <type>onSubmit</type>
         <ui_type>10</ui_type>
+        <va_supported>false</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

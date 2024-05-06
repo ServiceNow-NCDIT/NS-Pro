@@ -4,6 +4,8 @@
         <element label="AP Count" max_length="40" name="ap_count" type="integer"/>
         <element label="Comments" max_length="2000" name="comments" type="string"/>
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NetPlus" max_length="32" name="netplus" reference="x_g_sonc_ns_pro_netplus_code" type="reference" use_dependent_field="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Service Code" max_length="32" name="service_code" reference="x_g_sonc_ns_pro_service_code" type="reference"/>
         <element display="true" label="Service Definition" mandatory="true" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
         <element label="Site" max_length="32" name="site" read_only="true" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
         <element label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
@@ -11,9 +13,15 @@
             <element name="agency"/>
         </index>
         <index name="index2">
-            <element name="service_definition"/>
+            <element name="netplus"/>
         </index>
         <index name="index3">
+            <element name="service_code"/>
+        </index>
+        <index name="index4">
+            <element name="service_definition"/>
+        </index>
+        <index name="index5">
             <element name="site"/>
         </index>
     </element>

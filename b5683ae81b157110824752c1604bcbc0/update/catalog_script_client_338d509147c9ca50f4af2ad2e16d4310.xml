@@ -17,21 +17,25 @@
         <messages/>
         <name>onChange New/Existing Site</name>
         <order/>
+        <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
    if (isLoading || newValue == '') {
       return;
    }
-
-	var ga = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
-	ga.addParam('sysparm_name', 'getNextSiteNum');
-	ga.addParam('sysparm_site_type', newValue);
-	ga.getXMLAnswer(getSiteNum);
 	
-	function getSiteNum(response) {
+	g_form.setMandatory('site', false);
+	g_form.setVisible('site', false);
+
+// 	var ga = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
+// 	ga.addParam('sysparm_name', 'getNextSiteNum');
+// 	ga.addParam('sysparm_site_type', newValue);
+// 	ga.getXMLAnswer(getSiteNum);
+	
+// 	function getSiteNum(response) {
 		
-		var site_id = parseInt(response);
-		g_form.setValue('site_identifier', site_id);
-	}
+// 		var site_id = parseInt(response);
+// 		g_form.setValue('site_identifier', site_id);
+// 	}
    
    
 }]]></script>
@@ -41,18 +45,19 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>338d509147c9ca50f4af2ad2e16d4310</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>onChange New/Existing Site</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_338d509147c9ca50f4af2ad2e16d4310</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-03-18 21:12:39</sys_updated_on>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-01 19:00:38</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

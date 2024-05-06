@@ -22,8 +22,8 @@
 <p><span style="font-size: 12pt;">Circuit order req type: ${circuit_order_request_type}<br /></span></p>
 <p><span style="font-size: 12pt;">Circuit type:</span></p>
 <p><span style="font-size: 12pt;">Circuit ord req needby date: ${circuit_due_date}</span></p>
-<p><span style="font-size: 12pt;">Circuit No - Add to: &nbsp;${assigned_pe_port.name}</span></p>
-<p><span style="font-size: 12pt;">Requested speed: ${requested_speed} Mb</span></p>
+<p><span style="font-size: 12pt;">Circuit No - Add to: &nbsp;${circuit.name}</span></p>
+<p><span style="font-size: 12pt;">Requested speed: ${speed} Mb</span></p>
 <p>&nbsp;</p>
 <p><span style="font-size: 12pt;">Comments or instructions:</span></p>
 <p><span style="font-size: 12pt;">${special_instructions}</span></p>
@@ -70,14 +70,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-28 17:16:32</sys_created_on>
         <sys_id>9d47106bdbc2bd9040eae46b139619cd</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>NSPro New Circuit Order Request</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sysevent_email_template_9d47106bdbc2bd9040eae46b139619cd</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-01-05 02:53:24</sys_updated_on>
+        <sys_updated_on>2024-04-07 19:48:30</sys_updated_on>
         <sys_version>2</sys_version>
     </sysevent_email_template>
 </record_update>

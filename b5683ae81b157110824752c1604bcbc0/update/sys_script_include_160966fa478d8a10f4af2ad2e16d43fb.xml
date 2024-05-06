@@ -43,7 +43,23 @@ circuit.prototype = {
         var LogPrefix = " circuit().getHostPort --> ";
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' executing for task ' + NSProTask.number);
+		if (this.debug) gs.info(this.timestamp() + LogPrefix + ' executing for network_service_category ' + NSProTask.network_service_category);
+		// is this best effort?
+		if (NSProTask.network_service_category == 'best_effort') {
+			if (this.debug) gs.info(this.timestamp() + LogPrefix + ' for best_effort network_service_category');
+			// return host circuit dummy record instructing use of firewall
+			var hostCircuit = {};
+			hostCircuit.x_g_sonc_ns_pro_pop_pe_interface = 'Use Firewall';
+			hostCircuit.pop = 'Use Firewall';
+			hostCircuit.pop_dv = 'Use Firewall';
+			hostCircuit.pe_router = 'Use Firewall';
+			hostCircuit.pe_router_dv = 'Use Firewall';
+			
+			return JSON.stringify(hostCircuit);
+		}
 		
+		// execute this for guaranteed service
+		if (this.debug) gs.info(this.timestamp() + LogPrefix + ' for guaranteed network_service_category');
 		// get provider record
 		var grProvider = new GlideRecord('x_g_sonc_ns_pro_telco_provider');
 		var hostCircuits = this.getHostCircuitsForProvider(NSProTask.telco_provider); // retrieve an array of host circuit records
@@ -62,7 +78,9 @@ circuit.prototype = {
 				}
 			}
 			var closestCircuit = this.getClosestCircuit(NSProTask, hostsWithCapacity);
-			// gs.addErrorMessage('Closest circuit is ' + JSON.stringify(closestCircuit));
+			NSProTask.circuit = closestCircuit.sys_id;
+			NSProTask.update();
+			gs.addErrorMessage('Closest circuit is ' + JSON.stringify(closestCircuit));
 			return JSON.stringify(closestCircuit);
 		}
 		return; // null, could not find a closest circuit
@@ -147,13 +165,13 @@ circuit.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 22:52:58</sys_created_on>
         <sys_id>160966fa478d8a10f4af2ad2e16d43fb</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>circuit</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_160966fa478d8a10f4af2ad2e16d43fb</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-03-27 11:41:05</sys_updated_on>
+        <sys_updated_on>2024-04-14 17:08:17</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -15,7 +15,7 @@
         <element choice="1" label="Service Category" mandatory="true" max_length="40" name="service_category" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Guaranteed" sequence="100" value="guaranteed"/>
-                <element inactive_on_update="false" label="Best Effort" sequence="200" value="besteffort"/>
+                <element inactive_on_update="false" label="Best Effort" sequence="200" value="best_effort"/>
             </choice>
         </element>
         <element display="true" label="Telco Provider" mandatory="true" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>

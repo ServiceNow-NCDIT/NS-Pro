@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5c234c3c473142d040fd43ff336d43f9" label="Site Location Lat Lon" max_length="40" name="x_g_sonc_ns_pro_site_location_lat_lon" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element label="Latitude" max_length="40" name="latitude" type="float"/>
+        <element label="Longitude" max_length="40" name="longitude" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site identifier" max_length="40" name="site_identifier" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="State / Province" max_length="40" name="state_province" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Street" max_length="100" name="street" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip / Postal Code" max_length="40" name="zip_postal_code" type="string"/>
+    </element>
+</database>

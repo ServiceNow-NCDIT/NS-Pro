@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b93a290e476d0a5040fd43ff336d434c" label="NetPlus Code" max_length="40" name="x_g_sonc_ns_pro_netplus_code" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Item Code" max_length="40" name="item_code" type="string"/>
+        <element label="Rate" max_length="38" name="rate" type="decimal"/>
+    </element>
+</database>

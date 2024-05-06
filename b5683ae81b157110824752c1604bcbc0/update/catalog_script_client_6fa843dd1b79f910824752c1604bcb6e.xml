@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
     <catalog_script_client action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <applies_catalog>true</applies_catalog>
         <applies_extended>false</applies_extended>
         <applies_req_item>false</applies_req_item>
@@ -17,6 +17,7 @@
         <messages/>
         <name>onChange Requestor - Get User Info</name>
         <order/>
+        <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
     if (isLoading || newValue == '') {
         return;
@@ -24,7 +25,7 @@
 
     var ga = new GlideAjax('x_g_sonc_ns_pro.sys_user_ajax');
     ga.addParam('sysparm_name', 'getUser');
-    ga.addParam('sysparm_user_id', newValue);
+    ga.addParam('sysparm_userId', newValue);
     ga.getXMLAnswer(getUser);
 
     function getUser(response) {
@@ -42,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6fa843dd1b79f910824752c1604bcb6e</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>onChange Requestor - Get User Info</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -50,10 +51,11 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_6fa843dd1b79f910824752c1604bcb6e</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-10 13:28:59</sys_updated_on>
+        <sys_updated_on>2024-04-29 16:44:47</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>

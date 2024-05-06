@@ -42,6 +42,115 @@ location.prototype = {
 
     },
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    geocodeAddress: function(street, city, state, zip) {
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        var LogPrefix = " geocodeAddress --> ";
+        /* calls google maps for geocoding
+        expects and addr object with street, city, st, zip.
+        returns an object with status, message, geoObject
+        */
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + "called with " + street + ", " + city + ", " + state + ", " + zip);
+        var returnObject = {
+            status: "",
+            message: "",
+            geo: {}
+        };
+        var address = "";
+
+        var geoInfo = {
+            lat: 0.0,
+            lng: 0.0,
+            formatted_address: "",
+            county: "",
+            geoObject: {},
+        };
+
+        // Make sure we have all of the fields
+        if (street != null && street != "" && state != null && state != "" && zip != null && zip != "") {
+            // create the string for calling ggogle maps api
+            street = street.replaceAll("\r", "");
+            street = street.replaceAll("\n", " ");
+            street = street.replaceAll(" & ", " and ");
+            street = street.replaceAll(" ", "+");
+            if (city != null) {
+                city = city.replaceAll(" ", "+");
+            } else {
+                city = "";
+            }
+            state = state.replaceAll(" ", "+");
+            zip = zip.replaceAll(" ", "+");
+            address = street + "," + city + "," + state + "," + zip;
+            if (this.debug) gs.info(this.timestamp() + LogPrefix + "address for gecode: " + address);
+
+            // get key for calling google. it is in a sys_property
+            var geoKey = "";
+            var propertyQ = "name=google.maps.key.geocoding";
+            var now_GR = new GlideRecord('sys_properties');
+            now_GR.addEncodedQuery(propertyQ);
+            now_GR.query();
+            if (now_GR.next()) {
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + "key obtained for geocode lookup");
+                geoKey = now_GR.getValue('value');
+            }
+            if (geoKey == "") {
+                // no key, can't continue
+                gs.warn(this.timestamp() + LogPrefix + "could not obtain key for geocode lookup from sys.properties.");
+                returnObject.message = "could not get geokey from system property with " + propertyQ;
+                returnObject.status = "PROPERR";
+            } else {
+                try {
+                    var r = new sn_ws.RESTMessageV2('x_g_sonc_dit_nsw22.getLatLonViaGoogleMaps', 'Default GET');
+                    r.setStringParameterNoEscape('searchAddrString', address);
+                    r.setStringParameterNoEscape('gooKey', geoKey);
+
+                    var response = r.execute();
+                    var responseBody = response.getBody();
+                    var httpStatus = response.getStatusCode();
+                    if (this.debug) gs.info(this.timestamp() + LogPrefix + " geocoding: google api status is " + httpStatus);
+
+                    var output = JSON.parse(responseBody);
+                    global.JSUtil.logObject(output, LogPrefix + " geocoding : google maps call returned this object");
+                    if (output['status'] == "OK") {
+                        if (this.debug) gs.info(this.timestamp() + LogPrefix + " geocoding: google maps returned a response.");
+
+                        geoInfo.lat = output['results'][0]['geometry']['location']['lat'];
+                        geoInfo.lng = output['results'][0]['geometry']['location']['lng'];
+                        geoInfo.formatted_address = output['results'][0]['formatted_address'];
+                        geoInfo.geoObject = output;
+
+                        // walk through address_components to get county from "types" : [ "administrative_area_level_2", "political" ]
+                        for (var eindex = 0; eindex < output['results'][0]['address_components'].length; eindex++) {
+                            var element = output['results'][0]['address_components'][eindex];
+                            if (element['types'][0] == "administrative_area_level_2") {
+                                geoInfo.county = element['short_name'];
+                            }
+                        }
+
+                        returnObject.status = "OK";
+                        returnObject.message = "retrieved lat, lon from google maps api";
+                        returnObject.geo = geoInfo;
+                        if (this.debug) gs.info(this.timestamp() + LogPrefix + " geocoding: lat " + geoInfo.lat + " lng " + geoInfo.lng + " for " + geoInfo.formatted_address);
+                    } else {
+                        gs.error(LogPrefix + " geocoding Get_Lat_Long Lookup Error: " + output['status']);
+                        gs.error(LogPrefix + " geocoding Address: " + address);
+                        gs.error(LogPrefix + " geocoding API Response: " + responseBody);
+                        returnObject.status = "GEOCODEERR1";
+                    }
+                } catch (ex) {
+                    gs.error(LogPrefix + " geocoding error: " + responseBody);
+                    gs.error(LogPrefix + " geocoding error msg:" + ex.message);
+                    returnObject.status = "GEOCODEERR2";
+                }
+            }
+        } else {
+            gs.warn(LogPrefix + "geocode parms incomplete.");
+            returnObject.status = "BADGEOPARMS";
+            returnObject.message = "insufficient address data for geocode look up.";
+        }
+        return returnObject;
+    },
 	
     type: 'location'
 };]]></script>
@@ -49,13 +158,13 @@ location.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-23 03:07:18</sys_created_on>
         <sys_id>a9472be9db46fd5040eae46b139619b6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>location</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_a9472be9db46fd5040eae46b139619b6</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-03-26 21:24:50</sys_updated_on>
+        <sys_updated_on>2024-04-09 19:13:46</sys_updated_on>
     </sys_script_include>
 </record_update>

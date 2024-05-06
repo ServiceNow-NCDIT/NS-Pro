@@ -15,7 +15,7 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_g_sonc_ns_pro_nspro_tasks">nsp_activity_type=1^stateCHANGESTO3^EQ<item display_value="New site CPE allocation" endquery="false" field="nsp_activity_type" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        <filter_condition table="x_g_sonc_ns_pro_nspro_tasks">short_descriptionLIKEAllocate CPE^stateCHANGESTO3^EQ<item endquery="false" field="short_description" goto="false" newquery="false" operator="LIKE" or="false" value="Allocate CPE"/>
             <item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
@@ -44,37 +44,43 @@
 	for (var index = 0; index < assSysIdList.length; index++) {
 		gs.info('NSPro task ' + current.number + ' asset id = ' + assSysIdList[index]);
 		var grAss = new GlideRecord('alm_asset');
-		var returnValue = grAss.get(assSysIdList[index]);
-		if (returnValue) {
-			gs.info('NSPro serial number ' + grAss.serial_number + ' asset and ci is being modified for fs task ' + current.number);
+		grAss.initialize();
+		if (grAss.get(assSysIdList[index])) {
+			gs.info('NSPro serial number ' + grAss.serial_number + ' asset and ci is being modified for field services task ' + current.number);
 			// add serial number to string list so it can be added to task rcd.
 			myAssetSNs.push(grAss.serial_number); 
-
 			// Update asset record. "In transit = 9, In stock = 6, In use = 1, In maintenance = 3"
 			// Make sure it is still set to in stock 6 and available
-			if (grAss.install_status == '6' && grAss.substatus == 'available') {
-				grAss.install_status = '9'; // change it to 9 in transit (if it gets changed now, then the stock room is cleared. so don't do.)
-				grAss.substatus = 'pending_install';
-				grAss.comments = "Status updated from task " + current.number + " by " + current.assigned_to.email;
-				grAss.work_notes = "Status updated from task " + current.number + " by " + current.assigned_to.email;
-				grAss.assigned_to = current.assigned_to; // assign the asset to the fs task record user. uncommented 10/21/22
-				grAss.reserved_for = current.assigned_to; // added because assigned_to is being cleared 10/21/22
-				grAss.update();
-				gs.info('NSPro serial number ' + grAss.serial_number + ' asset updated for NSPro fs task ' + current.number);
-				fsRcdWorkNotes = fsRcdWorkNotes +
-					'Asset serial number ' + grAss.serial_number + ' Status updated to In transit, pending_install' +
-					'\n';
-			} else {
-				gs.warn('NSPro serial number ' + grAss.serial_number + ' asset NOT updated for NSPro fs task ' + current.number);
-			}
-
-			// Update CI record by serial number match
+			// 			if (grAss.install_status == '6' && grAss.substatus == 'available') {
+			// 				grAss.install_status = '9'; // change it to 9 in transit (if it gets changed now, then the stock room is cleared. so don't do.)
+			// 				grAss.substatus = 'pending_install';
+			// 				grAss.comments = "Status updated from task " + current.number + " by " + current.assigned_to.email;
+			// 				grAss.work_notes = "Status updated from task " + current.number + " by " + current.assigned_to.email;
+			// 				grAss.assigned_to = current.assigned_to; // assign the asset to the fs task record user. uncommented 10/21/22
+			// 				grAss.reserved_for = current.assigned_to; // added because assigned_to is being cleared 10/21/22
+			// 				grAss.update();
+			// 				gs.info('NSPro serial number ' + grAss.serial_number + ' asset updated for NSPro fs task ' + current.number);
+			// 				fsRcdWorkNotes = fsRcdWorkNotes +
+			// 					'Asset serial number ' + grAss.serial_number + ' Status updated to In transit, pending_install' +
+			// 					'\n';
+			// 			} else {
+			// 				gs.warn('NSPro serial number ' + grAss.serial_number + ' asset NOT updated for NSPro fs task ' + current.number);
+			// 			}
+			grAss.install_status = '9'; // change it to 9 in transit (if it gets changed now, then the stock room is cleared. so don't do.)
+			grAss.substatus = 'pending_install';
+			grAss.comments = "Status updated from task " + current.number + " by " + current.assigned_to.email;
+			grAss.work_notes = "Status updated from task " + current.number + " by " + current.assigned_to.email;
+			grAss.assigned_to = current.assigned_to; // assign the asset to the fs task record user. uncommented 10/21/22
+			grAss.reserved_for = current.assigned_to; // added because assigned_to is being cleared 10/21/22
+			grAss.update();
+			gs.info('NSPro serial number ' + grAss.serial_number + ' asset updated for NSPro fs task ' + current.number);
+			fsRcdWorkNotes = fsRcdWorkNotes +
+				'Asset serial number ' + grAss.serial_number + ' Status updated to In transit, pending_install' +
+				'\n';
+			// Update netgear CI to associate it with site
 			var grAssCI = new GlideRecord('cmdb_ci_netgear');
-			grAssCI.addEncodedQuery("serial_number=" + grAss.serial_number);
-			grAssCI.query();
-			if (grAssCI.next()) {
-				// ass ci found
-				gs.info('NSPro CI with serial number ' + grAssCI.serial_number + ' is being updated for NSPro fs task ' + current.number);
+			if (grAssCI.get(grAss.ci.toString())) {
+				gs.info('Netgear CI ' + grAssCI.serial_number + ' is being updated for NSPro fs task ' + current.number);
 				// set the site reference
 				grAssCI.x_g_sonc_ns_pro_site = current.site.toString();
 				// update the asset record
@@ -83,9 +89,27 @@
 				fsRcdWorkNotes = fsRcdWorkNotes + '\n' +
 					'CI with serial number ' + grAss.serial_number + ' site reference has been set to site id ' + current.site.site_identifier +
 					'\n';
-			} else {
-				gs.warn('NSPro asset CI for serial number ' + grAss.serial_number + ' was NOT found for NSPro fs task ' + current.number);
 			}
+			else {
+				// asset record didn't have a valid netgear CI associated with it so try again with serial number
+				if (grAssCI.get('serial_number', grAss.serial_number)) {
+					gs.info('Netgear CI ' + grAssCI.serial_number + ' is being updated for NSPro fs task ' + current.number);
+					// set the site reference
+					grAssCI.x_g_sonc_ns_pro_site = current.site.toString();
+					// update the asset record
+					grAssCI.update();
+					gs.info('NSPro CI with serial number ' + grAssCI.serial_number + ' has been updated for NSPro fs task ' + current.number);
+					fsRcdWorkNotes = fsRcdWorkNotes + '\n' +
+						'CI with serial number ' + grAss.serial_number + ' site reference has been set to site id ' + current.site.site_identifier +
+						'\n';
+				}
+				else {
+					gs.warn('NSPro asset CI for serial number ' + grAss.serial_number + ' was NOT found for NSPro fs task ' + current.number);
+				}
+			}
+		}
+		else {
+			gs.error('Failed to find asset ' + assSysIdList[index]);
 		}
 	}
 
@@ -102,7 +126,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>21ee58acdba2f55040eae46b139619a5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Capture CPE Serial Numbers</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -110,7 +134,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_21ee58acdba2f55040eae46b139619a5</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-13 07:02:50</sys_updated_on>
+        <sys_updated_on>2024-04-24 20:48:32</sys_updated_on>
         <template/>
         <when>async_always</when>
     </sys_script>
