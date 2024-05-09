@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <attributes/>
-        <cat_item display_value="Network Service Request - Change Service">a78f64cb471b7d90f4af2ad2e16d439a</cat_item>
+        <cat_item display_value="Request Change Service">a78f64cb471b7d90f4af2ad2e16d439a</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -30,11 +30,11 @@
         <instructions/>
         <layout>normal</layout>
         <list_table/>
-        <lookup_label/>
+        <lookup_label>svc_code</lookup_label>
         <lookup_price/>
-        <lookup_table/>
+        <lookup_table>x_g_sonc_ns_pro_service_code</lookup_table>
         <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_value>svc_title</lookup_value>
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
@@ -42,13 +42,13 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>service_code</name>
-        <order>2800</order>
+        <order>2105</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
         <question_text>WAN Service Code</question_text>
-        <read_only>true</read_only>
+        <read_only>false</read_only>
         <read_roles/>
         <read_script/>
         <rec_lookup_price/>
@@ -56,7 +56,7 @@
         <record/>
         <record_producer_table>x_g_sonc_ns_pro_telco_order</record_producer_table>
         <reference/>
-        <reference_qual/>
+        <reference_qual>ORDERBYspeed_egress</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -77,21 +77,21 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-02-24 13:22:28</sys_created_on>
         <sys_id>189fa403475b7d90f4af2ad2e16d4364</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>WAN Service Code</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_189fa403475b7d90f4af2ad2e16d4364</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-02-24 13:57:01</sys_updated_on>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-08 12:57:31</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>6</type>
+        <type>18</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

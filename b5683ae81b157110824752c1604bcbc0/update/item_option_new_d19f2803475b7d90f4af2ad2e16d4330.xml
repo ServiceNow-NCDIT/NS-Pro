@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Network Service Request - Change Service">a78f64cb471b7d90f4af2ad2e16d439a</cat_item>
+        <cat_item display_value="Request Change Service">a78f64cb471b7d90f4af2ad2e16d439a</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>justification</name>
-        <order>1200</order>
+        <order>2250</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -77,14 +77,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-02-24 13:22:32</sys_created_on>
         <sys_id>d19f2803475b7d90f4af2ad2e16d4330</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Justification for early delivery</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_d19f2803475b7d90f4af2ad2e16d4330</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-02-24 13:57:02</sys_updated_on>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-09 12:14:06</sys_updated_on>
         <table/>
         <tooltip/>
         <type>2</type>

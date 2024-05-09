@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>50</order>
+        <published_ref/>
+        <question display_value="What type of change is this?">0d6b90b1db288a5040eae46b139619bf</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-08 20:49:09</sys_created_on>
+        <sys_id>fcd543e1474ece1040fd43ff336d43f6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add high availability (HA)</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>question_choice_fcd543e1474ece1040fd43ff336d43f6</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-08 20:49:43</sys_updated_on>
+        <text>Add high availability (HA)</text>
+        <value>add_ha</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=fcd543e1474ece1040fd43ff336d43f6"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>fcd543e1474ece1040fd43ff336d43f6</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-08 20:49:10</sys_created_on>
+        <sys_id>dbf5c7e1474ece1040fd43ff336d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-08 20:49:10</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>fcd543e1474ece1040fd43ff336d43f6</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-08 20:49:10</sys_created_on>
+        <sys_id>dbf5c7e1474ece1040fd43ff336d4374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-08 20:49:10</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

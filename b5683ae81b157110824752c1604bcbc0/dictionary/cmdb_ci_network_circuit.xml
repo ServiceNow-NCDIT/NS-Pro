@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="20efb8a81b013010c0a9db1ee54bcbe6" extends="cmdb_ci" label="Network Circuit" max_length="40" name="cmdb_ci_network_circuit" text_index="true" type="collection">
-        <element default="true" label="Active" max_length="40" name="x_g_sonc_ns_pro_active" type="boolean"/>
         <element label="Available Capacity" max_length="20" name="x_g_sonc_ns_pro_available_capacity" type="decimal"/>
         <element label="CE CIR Total" max_length="20" name="x_g_sonc_ns_pro_ce_cir_total" type="decimal"/>
         <element label="CE Count" max_length="40" name="x_g_sonc_ns_pro_ce_count" type="integer"/>
