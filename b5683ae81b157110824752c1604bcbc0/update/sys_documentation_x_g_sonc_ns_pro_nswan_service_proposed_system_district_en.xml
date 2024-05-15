@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="system_district" label="System/District" language="en" table="x_g_sonc_ns_pro_nswan_service_proposed">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>system_district</element>
+            <help/>
+            <hint/>
+            <label>System/District</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_service_proposed</name>
+            <plural>System/Districts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 21:34:10</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>System/District</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_documentation_x_g_sonc_ns_pro_nswan_service_proposed_system_district_en</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 21:34:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

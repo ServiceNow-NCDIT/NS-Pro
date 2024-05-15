@@ -29,6 +29,6 @@
         </element>
         <element label="Remote Site Circuit VLAN" max_length="100" name="x_g_sonc_ns_pro_remote_site_circuit_vlan" type="string"/>
         <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_qual="install_statusNOT IN100,7^EQ" reference_qual_condition="install_statusNOT IN100,7^EQ" type="reference"/>
-        <element label="VRF" max_length="32" name="x_g_sonc_ns_pro_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="VRF" max_length="40" name="x_g_sonc_ns_pro_vrf" type="string"/>
     </element>
 </database>

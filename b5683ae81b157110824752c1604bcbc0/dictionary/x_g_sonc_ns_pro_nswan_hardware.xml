@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="50e24bfa47f77d10f4af2ad2e16d43e8" label="NSWAN Hardware" max_length="40" name="x_g_sonc_ns_pro_nswan_hardware" type="collection">
+    <element db_object_id="e8dc543e87ce0e50f9f20f280cbb3546" label="NSWAN Hardware" max_length="40" name="x_g_sonc_ns_pro_nswan_hardware" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Alerts" max_length="40" name="alerts" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Asset" max_length="40" name="asset" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Boot1" max_length="40" name="boot1" type="string"/>

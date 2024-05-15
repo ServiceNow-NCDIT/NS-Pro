@@ -105,7 +105,7 @@
         <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requestor" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
         <element label="Requested Service Code" max_length="40" name="requested_service_code" type="string"/>
         <element label="Requested Service Codes" max_length="512" name="requested_service_codes" type="string"/>
-        <element label="Agency VRF" max_length="32" name="requested_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="Agency VRF" max_length="40" name="requested_vrf" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Request Type" max_length="40" name="request_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New Service" sequence="10" value="new"/>

@@ -91,5 +91,24 @@
             <sys_updated_on>2024-04-07 11:45:58</sys_updated_on>
             <value>shutdown</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unassigned</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-13 13:38:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-13 13:38:50</sys_updated_on>
+            <value>unassigned</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

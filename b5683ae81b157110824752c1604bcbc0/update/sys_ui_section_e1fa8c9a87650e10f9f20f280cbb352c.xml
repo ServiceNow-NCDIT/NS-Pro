@@ -4,13 +4,13 @@
             <element>site_identifier</element>
             <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>8e6c581e87e50e10f9f20f280cbb35c8</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>6587fffa878e8e50f9f20f280cbb35d2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>x_g_sonc_ns_pro_type</element>
             <position>1</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>066c581e87e50e10f9f20f280cbb35c9</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>install_status</element>
             <position>2</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>866c581e87e50e10f9f20f280cbb35c9</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35d3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,223 +46,251 @@
             <element>location</element>
             <position>3</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>0a6c581e87e50e10f9f20f280cbb35c9</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35d4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_floor_suite</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>start_date</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>8a6c581e87e50e10f9f20f280cbb35c9</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35d5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_security_start_date</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>0e6c581e87e50e10f9f20f280cbb35c9</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35d5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_security_lastupgrade_date</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>8e6c581e87e50e10f9f20f280cbb35c9</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35d6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>026c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35d6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>826c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_vip_site</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>066c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35d7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_primary_poc</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>866c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_alternate_poc</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>0a6c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35d8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_office_hours</element>
-            <position>12</position>
+            <position>13</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>8a6c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_telco_room</element>
-            <position>13</position>
+            <position>14</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>0e6c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_demarc_location</element>
-            <position>14</position>
+            <position>15</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>8e6c581e87e50e10f9f20f280cbb35ca</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_nswan_site</element>
+            <position>16</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>15</position>
+            <position>17</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>026c581e87e50e10f9f20f280cbb35cb</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35db</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>16</position>
+            <position>18</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>826c581e87e50e10f9f20f280cbb35cb</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35db</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>comments</element>
-            <position>17</position>
+            <position>19</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>066c581e87e50e10f9f20f280cbb35cb</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a187fffa878e8e50f9f20f280cbb35dc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>activity.xml</element>
-            <position>18</position>
+            <position>20</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-15 19:52:19</sys_created_on>
-            <sys_id>866c581e87e50e10f9f20f280cbb35cb</sys_id>
+            <sys_created_on>2024-05-12 21:38:00</sys_created_on>
+            <sys_id>a987fffa878e8e50f9f20f280cbb35dc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_site" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">e1fa8c9a87650e10f9f20f280cbb352c</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-15 19:52:19</sys_updated_on>
+            <sys_updated_on>2024-05-12 21:38:00</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>

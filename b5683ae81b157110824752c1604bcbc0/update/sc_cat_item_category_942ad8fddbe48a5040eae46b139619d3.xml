@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Network Service Request - Change Service">a78f64cb471b7d90f4af2ad2e16d439a</sc_cat_item>
+        <sc_cat_item display_value="Request Change Service">a78f64cb471b7d90f4af2ad2e16d439a</sc_cat_item>
         <sc_category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>

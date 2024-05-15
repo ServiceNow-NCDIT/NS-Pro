@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>true</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Network Service Request - Change Service">a78f64cb471b7d90f4af2ad2e16d439a</cat_item>
+        <cat_item display_value="Request Change Service">a78f64cb471b7d90f4af2ad2e16d439a</cat_item>
         <cat_variable>IO:009f6403475b7d90f4af2ad2e16d43b7</cat_variable>
         <condition/>
         <description/>

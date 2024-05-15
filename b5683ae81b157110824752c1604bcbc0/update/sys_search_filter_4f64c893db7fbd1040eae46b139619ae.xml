@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
     <sys_search_filter action="INSERT_OR_UPDATE">
         <active>true</active>
-        <ais_search_source display_value="Site Type">fcee338d1b3d3510824752c1604bcb0a</ais_search_source>
+        <ais_search_source/>
         <label>Site Type</label>
         <name>Site Type</name>
         <order>1000</order>

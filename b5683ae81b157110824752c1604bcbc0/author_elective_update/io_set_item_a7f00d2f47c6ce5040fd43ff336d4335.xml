@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>310</order>
+        <sc_cat_item display_value="Request Decommission Site &amp; Services">e0213007475b7d90f4af2ad2e16d4397</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-14 16:17:22</sys_created_on>
+        <sys_id>a7f00d2f47c6ce5040fd43ff336d4335</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Site Services.Request Decommission Site &amp; Services</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>io_set_item_a7f00d2f47c6ce5040fd43ff336d4335</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-14 16:35:43</sys_updated_on>
+        <variable_set display_value="Site Services">2311c1af47c6ce5040fd43ff336d4337</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>io_set_item_a7f00d2f47c6ce5040fd43ff336d4335</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>310</order><sc_cat_item display_value="Request Decommission Site &amp; Services">e0213007475b7d90f4af2ad2e16d4397</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-05-14 16:17:22</sys_created_on><sys_id>a7f00d2f47c6ce5040fd43ff336d4335</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Site Services.Request Decommission Site &amp; Services</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>io_set_item_a7f00d2f47c6ce5040fd43ff336d4335</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-05-14 16:35:43</sys_updated_on><variable_set display_value="Site Services">2311c1af47c6ce5040fd43ff336d4337</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-874929850</payload_hash>
+        <record_name>Site Services.Request Decommission Site &amp; Services</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-14 16:35:43</sys_created_on>
+        <sys_id>d5850de7470ace5040fd43ff336d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f77f5ba670000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-14 16:35:43</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>d9850de7c70ace50f2490e812085dc51</update_guid>
+        <update_guid_history>d9850de7c70ace50f2490e812085dc51:-874929850,545149af77c6ce50af8a28c2bc4261bd:849647623</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 05/14/2024 13:39:06">54c1e523470ece5040fd43ff336d4396</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-14 18:39:06</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>1c4fc44431cb47839a13ba7c397307f1</sys_id>
+        <sys_metadata>a7f00d2f47c6ce5040fd43ff336d4335</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Site Services.Request Decommission Site &amp; Services</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>io_set_item_a7f00d2f47c6ce5040fd43ff336d4335</sys_update_name>
+        <sys_update_version display_value="io_set_item_a7f00d2f47c6ce5040fd43ff336d4335">d5850de7470ace5040fd43ff336d4352</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-14 18:39:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Request New Site">45b6661c1bf97d90824752c1604bcbc5</sc_cat_item>
+        <sc_cat_item display_value="Request Site Record">45b6661c1bf97d90824752c1604bcbc5</sc_cat_item>
         <sc_catalog display_value="NCDIT Service Catalog">8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>

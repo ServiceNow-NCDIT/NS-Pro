@@ -32,7 +32,7 @@
                 <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
             </choice>
         </element>
-        <element label="VRF" max_length="32" name="vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="VRF" max_length="40" name="vrf" type="string"/>
         <element label="Z Circuit Id" max_length="32" name="z_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Z Device Interface Name" max_length="254" name="z_device_interface_name" type="string"/>
         <element label="Z Device Name" max_length="40" name="z_device_name" type="string"/>

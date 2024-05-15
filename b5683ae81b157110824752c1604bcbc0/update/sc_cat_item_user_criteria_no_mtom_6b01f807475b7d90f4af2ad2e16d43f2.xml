@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
     <sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Network Service Request - Relocate Site">38d03043475b7d90f4af2ad2e16d433b</sc_cat_item>
+        <sc_cat_item display_value="Request Relocate Site">38d03043475b7d90f4af2ad2e16d433b</sc_cat_item>
         <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-28 08:56:42</sys_created_on>

@@ -15,7 +15,7 @@
         <mobile_title>Sites</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>cmdb_ci_site</name>
-        <order>30</order>
+        <order>201</order>
         <override_menu_roles>true</override_menu_roles>
         <query/>
         <report/>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4bcf1bd31bd1f110824752c1604bcbee</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Sites</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_app_module_4bcf1bd31bd1f110824752c1604bcbee</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-09-25 07:54:13</sys_updated_on>
+        <sys_updated_on>2024-05-14 12:34:40</sys_updated_on>
         <timeline_page/>
         <title>Sites</title>
         <uncancelable>false</uncancelable>

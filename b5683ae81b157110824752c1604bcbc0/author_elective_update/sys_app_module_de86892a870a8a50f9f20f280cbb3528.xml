@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Sonc Ns Pro 1715436366866</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_ns_pro_1715436366866</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-11 14:06:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de86892a870a8a50f9f20f280cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sonc Ns Pro 1715436366866</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_de86892a870a8a50f9f20f280cbb3528</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-11 14:06:15</sys_updated_on>
+        <timeline_page/>
+        <title>Sonc Ns Pro 1715436366866</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_de86892a870a8a50f9f20f280cbb3528</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Sonc Ns Pro 1715436366866</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_ns_pro_1715436366866</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-05-11 14:06:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>de86892a870a8a50f9f20f280cbb3528</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Sonc Ns Pro 1715436366866</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_app_module_de86892a870a8a50f9f20f280cbb3528</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-05-11 14:06:15</sys_updated_on><timeline_page/><title>Sonc Ns Pro 1715436366866</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1885077674</payload_hash>
+        <record_name>Sonc Ns Pro 1715436366866</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-11 14:06:15</sys_created_on>
+        <sys_id>5a86892a870a8a50f9f20f280cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f67f9cef10000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-11 14:06:15</sys_updated_on>
+        <type>Module</type>
+        <update_guid>da86892adf0a8a5042aa072ec029502a</update_guid>
+        <update_guid_history>da86892adf0a8a5042aa072ec029502a:-1885077674</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 05/11/2024 10:59:52">32806962870e8a50f9f20f280cbb35b5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-11 15:59:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>045e5d6418fa4bb8aa5c0e646aeba544</sys_id>
+        <sys_metadata>de86892a870a8a50f9f20f280cbb3528</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sonc Ns Pro 1715436366866</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_app_module_de86892a870a8a50f9f20f280cbb3528</sys_update_name>
+        <sys_update_version display_value="sys_app_module_de86892a870a8a50f9f20f280cbb3528">5a86892a870a8a50f9f20f280cbb352b</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-11 15:59:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

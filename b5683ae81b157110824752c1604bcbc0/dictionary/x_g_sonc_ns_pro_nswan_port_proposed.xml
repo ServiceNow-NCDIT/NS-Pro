@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="91df627287468e50f9f20f280cbb3526" label="NSWAN Port Proposed" max_length="40" name="x_g_sonc_ns_pro_nswan_port_proposed" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="AddressTransMask" max_length="40" name="addresstransmask" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="AddressTransRange" max_length="40" name="addresstransrange" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="BillCode" max_length="40" name="billcode" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="BillingSite" max_length="40" name="billingsite" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="BudgetFundRcc" max_length="40" name="budgetfundrcc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cir" max_length="40" name="cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Circuit Number" max_length="40" name="circuit_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ClientId" max_length="40" name="clientid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ConnectToPort" max_length="40" name="connecttoport" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ConnectToSerial" max_length="40" name="connecttoserial" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ConnectToSite" max_length="40" name="connecttosite" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EndDate" max_length="40" name="enddate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Form5LocVpiVci" max_length="40" name="form5locvpivci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Form5RmtVpiVci" max_length="40" name="form5rmtvpivci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="GatewayIp" max_length="40" name="gatewayip" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="HostName" max_length="40" name="hostname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IpAddressRange" max_length="40" name="ipaddressrange" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IPX Access List" max_length="40" name="ipx_access_list" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IPX Encapsulation" max_length="40" name="ipx_encapsulation" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IPX Network" max_length="40" name="ipx_network" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IP Address" max_length="40" name="ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Isal_NNI" max_length="40" name="isal_nni" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LastUpgradeDate" max_length="40" name="lastupgradedate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LocalCircuit" max_length="40" name="localcircuit" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LocDlci" max_length="40" name="locdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="MasterDeviceInterface" max_length="55" name="masterdeviceinterface" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PortAltContact" max_length="40" name="portaltcontact" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PortAltPhone" max_length="40" name="portaltphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PortContact" max_length="40" name="portcontact" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PortPhone" max_length="40" name="portphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Port Name" max_length="40" name="port_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Port Type" max_length="40" name="port_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remarks" max_length="2000" name="remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="RequestId" max_length="40" name="requestid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="RmtDlci" max_length="40" name="rmtdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Router Serial Number" max_length="40" name="router_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SecLevel" max_length="40" name="seclevel" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SecondaryPort" max_length="40" name="secondaryport" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site" max_length="40" name="site" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Speed" max_length="40" name="speed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="StartDate" max_length="40" name="startdate" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Subnet Mask" max_length="40" name="subnet_mask" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="TomsDept" max_length="40" name="tomsdept" type="string"/>
+        <element label="TotalMonthlyCost" max_length="40" name="totalmonthlycost" type="integer"/>
+        <element label="UserMpc" max_length="40" name="usermpc" type="integer"/>
+        <element label="UserMrc" max_length="40" name="usermrc" type="integer"/>
+        <element label="UserNrc" max_length="40" name="usernrc" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="VrfName" max_length="40" name="vrfname" type="string"/>
+    </element>
+</database>

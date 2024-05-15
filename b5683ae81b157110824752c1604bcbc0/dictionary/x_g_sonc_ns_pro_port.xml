@@ -3,8 +3,8 @@
         <element label="Client Id" max_length="40" name="client_id" type="string"/>
         <element choice="1" label="Host Ckt Type" max_length="40" name="host_ckt_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="QnQ" sequence="10" value="qnq"/>
-                <element inactive_on_update="false" label="non-QnQ" sequence="20" value="non_qnq"/>
+                <element inactive_on_update="false" label="QinQ" sequence="10" value="qinq"/>
+                <element inactive_on_update="false" label="non-QinQ" sequence="20" value="non_qinq"/>
             </choice>
         </element>
         <element label="Interface Subnet Mask" max_length="40" name="interface_subnet_mask" type="string"/>
@@ -17,9 +17,9 @@
                 <element inactive_on_update="false" label="Pending" sequence="20" value="pending"/>
                 <element inactive_on_update="false" label="Hold" sequence="30" value="hold"/>
                 <element inactive_on_update="false" label="Shutdown" sequence="40" value="shutdown"/>
+                <element inactive_on_update="false" label="Unassigned" sequence="50" value="unassigned"/>
             </choice>
         </element>
-        <element label="Remote Site Circuit VLAN" max_length="32" name="remote_site_circuit_vlan" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
         <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
@@ -29,6 +29,6 @@
             </choice>
         </element>
         <element label="Uplink Connection Description" max_length="100" name="uplink_connection_description" type="string"/>
-        <element label="VRF" max_length="32" name="vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="VRF" max_length="40" name="vrf" type="string"/>
     </element>
 </database>

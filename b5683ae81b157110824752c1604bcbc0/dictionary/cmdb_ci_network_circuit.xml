@@ -70,6 +70,7 @@
             </choice>
         </element>
         <element label="CIR Subscription Rate" max_length="20" name="x_g_sonc_ns_pro_cir_subscription_rate" type="decimal"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="ExIP Address" max_length="40" name="x_g_sonc_ns_pro_exip_address" type="string"/>
         <element label="Gap Circuit" max_length="40" name="x_g_sonc_ns_pro_gap" type="boolean"/>
         <element label="GAP Circuit End Term Date" max_length="40" name="x_g_sonc_ns_pro_gap_circuit_end_term_date" type="glide_date"/>
         <element label="Host Ckt" max_length="40" name="x_g_sonc_ns_pro_host_ckt" type="boolean"/>
@@ -79,6 +80,7 @@
                 <element inactive_on_update="false" label="non-QnQ" sequence="20" value="non-qnq"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Local Circuit" max_length="32" name="x_g_sonc_ns_pro_local_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Network Request" max_length="32" name="x_g_sonc_ns_pro_network_request" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
         <element label="NSWANCircuit Order" max_length="40" name="x_g_sonc_ns_pro_nswancircuit_order" type="string"/>
         <element label="PE Circuit CIR" max_length="20" name="x_g_sonc_ns_pro_pe_circuit_cir" type="decimal"/>
@@ -101,6 +103,7 @@
                 <element inactive_on_update="false" label="Deleted" sequence="60" value="deleted"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Subnet Mask" max_length="40" name="x_g_sonc_ns_pro_subnet_mask" type="string"/>
         <element label="Telco Provider" max_length="32" name="x_g_sonc_ns_pro_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
         <element label="Telco Provider Order Number" max_length="40" name="x_g_sonc_ns_pro_telco_provider_order_number" type="string"/>
         <element label="Telco Service Priority" max_length="100" name="x_g_sonc_ns_pro_telco_service_priority" type="string"/>

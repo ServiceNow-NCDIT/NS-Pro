@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-12 16:25:45</sys_created_on>
+        <sys_id>630036b287468e50f9f20f280cbb3550</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_nswan_port_proposed.x_g_sonc_ns_pro.admin</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_security_acl display_value="x_g_sonc_ns_pro_nswan_port_proposed">d70036b287468e50f9f20f280cbb3521</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_630036b287468e50f9f20f280cbb3550</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-12 16:25:45</sys_updated_on>
+        <sys_user_role display_value="x_g_sonc_ns_pro.admin" name="x_g_sonc_ns_pro.admin">1b78f62c1b157110824752c1604bcbf5</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

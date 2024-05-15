@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_g_sonc_ns_pro_nswan_hardware" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>386dd0fe87ce0e50f9f20f280cbb358b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>site_id</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>306dd0fe87ce0e50f9f20f280cbb358c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>serial_number</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>346dd0fe87ce0e50f9f20f280cbb358c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>circuitid</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>386dd0fe87ce0e50f9f20f280cbb358c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>internal_serial_number</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>3c6dd0fe87ce0e50f9f20f280cbb358c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>device_type</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>306dd0fe87ce0e50f9f20f280cbb358d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>brand</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>346dd0fe87ce0e50f9f20f280cbb358d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>model</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>386dd0fe87ce0e50f9f20f280cbb358d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>purchase_date</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>3c6dd0fe87ce0e50f9f20f280cbb358d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>purchase_order</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>306dd0fe87ce0e50f9f20f280cbb358e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>warranty</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>346dd0fe87ce0e50f9f20f280cbb358e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date_sent_to_maint</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>386dd0fe87ce0e50f9f20f280cbb358e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rma</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>3c6dd0fe87ce0e50f9f20f280cbb358e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>asset</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>306dd0fe87ce0e50f9f20f280cbb358f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>dram</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>14</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>346dd0fe87ce0e50f9f20f280cbb358f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>flash</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>15</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>386dd0fe87ce0e50f9f20f280cbb358f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>software_feature_set</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>16</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>3c6dd0fe87ce0e50f9f20f280cbb358f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>software_revision_level</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>17</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>306dd0fe87ce0e50f9f20f280cbb3590</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>firmware_level</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>18</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>346dd0fe87ce0e50f9f20f280cbb3590</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>boot1</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>19</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>386dd0fe87ce0e50f9f20f280cbb3590</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>boot2</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>20</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>3c6dd0fe87ce0e50f9f20f280cbb3590</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>routing_protocol</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>21</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>746d54fe87ce0e50f9f20f280cbb3544</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>configured_by</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>22</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>786d54fe87ce0e50f9f20f280cbb3544</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>config_file_name</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>23</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>7c6d54fe87ce0e50f9f20f280cbb3544</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>installation_date</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>24</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>706d54fe87ce0e50f9f20f280cbb3545</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>managementstation</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>25</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>746d54fe87ce0e50f9f20f280cbb3545</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>currentpolicyname</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>26</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>786d54fe87ce0e50f9f20f280cbb3545</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>dmz</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>27</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>7c6d54fe87ce0e50f9f20f280cbb3545</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>alerts</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>28</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>706d54fe87ce0e50f9f20f280cbb3546</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>fwreports</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>29</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>746d54fe87ce0e50f9f20f280cbb3546</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>nat</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>30</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>786d54fe87ce0e50f9f20f280cbb3546</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>portqty</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>31</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>7c6d54fe87ce0e50f9f20f280cbb3546</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>servicesize</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>32</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>706d54fe87ce0e50f9f20f280cbb3547</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>platform</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>33</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>746d54fe87ce0e50f9f20f280cbb3547</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>o_s</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>34</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>786d54fe87ce0e50f9f20f280cbb3547</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>version</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>35</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>7c6d54fe87ce0e50f9f20f280cbb3547</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>securitylevel</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>36</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>706d54fe87ce0e50f9f20f280cbb3548</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>owner</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>37</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>746d54fe87ce0e50f9f20f280cbb3548</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>lastupdated</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>38</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>786d54fe87ce0e50f9f20f280cbb3548</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>updateby</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>39</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>7c6d54fe87ce0e50f9f20f280cbb3548</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>primarysecondary</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>40</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>706d54fe87ce0e50f9f20f280cbb3549</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>lifecycle</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>41</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>746d54fe87ce0e50f9f20f280cbb3549</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>unit_cost</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>42</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>786d54fe87ce0e50f9f20f280cbb3549</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>surplus_date</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>43</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>7c6d54fe87ce0e50f9f20f280cbb3549</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>maintenance_type</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>44</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>706d54fe87ce0e50f9f20f280cbb354a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cost_center</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>45</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>746d54fe87ce0e50f9f20f280cbb354a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>replacement_date</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>46</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>786d54fe87ce0e50f9f20f280cbb354a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>itag</element>
+            <list_id display_value="x_g_sonc_ns_pro_nswan_hardware" element="NULL" name="x_g_sonc_ns_pro_nswan_hardware" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b46dd0fe87ce0e50f9f20f280cbb358a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>47</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_id>7c6d54fe87ce0e50f9f20f280cbb354a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_g_sonc_ns_pro_nswan_hardware</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-12 05:44:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b46dd0fe87ce0e50f9f20f280cbb358a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_nswan_hardware</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_nswan_hardware_null</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-12 05:44:57</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

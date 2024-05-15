@@ -15,43 +15,5 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2023-09-28 09:19:38</sys_updated_on>
         </sys_choice_set>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>vrf_usage</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Active for WAN</label>
-            <language>en</language>
-            <name>x_g_sonc_ns_pro_vrf_definition</name>
-            <sequence>10</sequence>
-            <synonyms/>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-28 09:19:38</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-28 09:19:43</sys_updated_on>
-            <value>1</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>vrf_usage</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Not Selectable</label>
-            <language>en</language>
-            <name>x_g_sonc_ns_pro_vrf_definition</name>
-            <sequence>20</sequence>
-            <synonyms/>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-28 09:19:54</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-28 09:19:58</sys_updated_on>
-            <value>2</value>
-        </sys_choice>
     </sys_choice>
 </record_update>

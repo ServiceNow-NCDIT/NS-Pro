@@ -4,6 +4,7 @@
         <element label="Decommission Date" max_length="40" name="x_g_sonc_ns_pro_decommission_date" type="glide_date_time"/>
         <element label="Demarc Location" max_length="100" name="x_g_sonc_ns_pro_demarc_location" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Floor/Suite" max_length="40" name="x_g_sonc_ns_pro_floor_suite" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NSWAN Site" max_length="32" name="x_g_sonc_ns_pro_nswan_site" read_only="true" reference="x_g_sonc_ns_pro_nswan_service" type="reference"/>
         <element label="Office Hours" max_length="40" name="x_g_sonc_ns_pro_office_hours" type="string"/>
         <element label="Point of Presence" max_length="32" name="x_g_sonc_ns_pro_point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
         <element label="Primary POC" max_length="32" name="x_g_sonc_ns_pro_primary_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
@@ -22,7 +23,7 @@
                 <element inactive_on_update="false" label="Warehouse" sequence="90" value="warehouse"/>
             </choice>
         </element>
-        <element label="Uplink VRF" max_length="32" name="x_g_sonc_ns_pro_uplink_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="Uplink VRF" max_length="40" name="x_g_sonc_ns_pro_uplink_vrf" type="string"/>
         <element label="VIP Site" max_length="40" name="x_g_sonc_ns_pro_vip_site" type="boolean"/>
     </element>
 </database>

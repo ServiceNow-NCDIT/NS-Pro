@@ -14,7 +14,7 @@
         <mobile_title>Ciscos</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_g_sonc_ns_pro_cisco</name>
-        <order/>
+        <order>330</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1480ae58479c0e10f4af2ad2e16d431c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Ciscos</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_app_module_1480ae58479c0e10f4af2ad2e16d431c</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-02-07 21:03:07</sys_updated_on>
+        <sys_updated_on>2024-05-14 11:59:55</sys_updated_on>
         <timeline_page/>
         <title>Ciscos</title>
         <uncancelable>false</uncancelable>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e107008a4786825040fd43ff336d43e8" label="MetroEthernet Builder Current Sites" max_length="40" name="x_g_sonc_ns_pro_metroethernet_builder_current_sites" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Cir" max_length="40" name="cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Circuit_ID" max_length="40" name="circuit_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Circuit Number" max_length="40" name="circuit_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ExIP Address" max_length="40" name="exip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IP Address" max_length="40" name="ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LocalCircuit" max_length="40" name="localcircuit" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LocDlci" max_length="40" name="locdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project" max_length="200" name="project" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="RmtDlci" max_length="40" name="rmtdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site" max_length="40" name="site" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Speed" max_length="40" name="speed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SubnetMask" max_length="40" name="subnetmask" type="string"/>
+    </element>
+</database>

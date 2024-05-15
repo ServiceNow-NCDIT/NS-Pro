@@ -51,7 +51,7 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_name>NCDIT Service Catalog.Network Service Request - New Service</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
-        <sys_parent display_value="Network Service Request - New Service">670690da1bf5f110824752c1604bcbe7</sys_parent>
+        <sys_parent display_value="Request New Site">670690da1bf5f110824752c1604bcbe7</sys_parent>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>

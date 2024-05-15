@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Request New Site">45b6661c1bf97d90824752c1604bcbc5</cat_item>
+        <cat_item display_value="Request Site Record">45b6661c1bf97d90824752c1604bcbc5</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>

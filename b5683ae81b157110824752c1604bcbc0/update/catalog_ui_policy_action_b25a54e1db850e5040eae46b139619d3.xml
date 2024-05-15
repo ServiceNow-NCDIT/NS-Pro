@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
-        <catalog_item display_value="Network Service Request - New Service">670690da1bf5f110824752c1604bcbe7</catalog_item>
+        <catalog_item display_value="Request New Site">670690da1bf5f110824752c1604bcbe7</catalog_item>
         <catalog_variable>IO:9e1e54d147c9ca50f4af2ad2e16d43ae</catalog_variable>
         <cleared>false</cleared>
         <disabled>ignore</disabled>
