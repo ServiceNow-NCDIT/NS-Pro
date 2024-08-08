@@ -13,7 +13,7 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description/>
+        <description><![CDATA[<h2><span style="font-family: verdana, geneva; font-size: 14pt;">Request to move site equipment and services to a new location</span></h2>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <flow_designer_flow/>
@@ -24,6 +24,7 @@
         <ignore_price>true</ignore_price>
         <image/>
         <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
         <mandatory_attachment>false</mandatory_attachment>
         <meta/>
         <mobile_hide_price>false</mobile_hide_price>
@@ -63,7 +64,7 @@
         <sc_ic_version/>
         <sc_template/>
         <script/>
-        <short_description/>
+        <short_description>NSPro Site Relocation Request</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state/>
@@ -71,14 +72,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-28 08:56:42</sys_created_on>
         <sys_id>38d03043475b7d90f4af2ad2e16d433b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>Request Relocate Site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_producer_38d03043475b7d90f4af2ad2e16d433b</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-13 21:43:11</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-06-19 13:13:43</sys_updated_on>
         <table_name>x_g_sonc_ns_pro_telco_order</table_name>
         <taxonomy_topic/>
         <template/>
@@ -88,7 +89,7 @@
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>2</version>
+        <version>69</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

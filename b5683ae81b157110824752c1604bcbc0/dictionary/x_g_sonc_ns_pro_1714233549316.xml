@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="302a950687394e90f9f20f280cbb352f" extends="sys_import_set_row" max_length="40" name="x_g_sonc_ns_pro_1714233549316" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=New Recur Amt" label="New Recur Amt" max_length="40" name="u_new_recur_amt" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="40" name="u_description" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Item Code" label="Item Code" max_length="40" name="u_item_code" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=New Recur Amt" label="New Recur Amt" max_length="40" name="u_new_recur_amt" type="string"/>
     </element>
 </database>

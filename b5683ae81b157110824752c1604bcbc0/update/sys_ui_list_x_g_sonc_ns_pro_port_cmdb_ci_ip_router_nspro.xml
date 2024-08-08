@@ -2,183 +2,183 @@
     <sys_ui_list parent="cmdb_ci_ip_router" relationship="" sys_domain="global" table="x_g_sonc_ns_pro_port" version="2" view="nspro">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>name</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>network_gear.name</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>f74fe22f4719c21040fd43ff336d43d2</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>4ba2b6e047660a5040fd43ff336d431c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_class_name</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>name</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>7f4fe22f4719c21040fd43ff336d43d2</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>4fa2b6e047660a5040fd43ff336d431c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>vrf</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>ip_address</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>ff4fe22f4719c21040fd43ff336d43d2</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>43a2b6e047660a5040fd43ff336d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>remote_site_circuit_vlan</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>interface_subnet_mask</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>734fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>47a2b6e047660a5040fd43ff336d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>port_status</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>vrf</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>f34fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>4ba2b6e047660a5040fd43ff336d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>pe_host_circuit_id</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>port_status</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>774fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>4fa2b6e047660a5040fd43ff336d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>network_gear</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>remote_site_circuit_vlan</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>f74fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>43a2b6e047660a5040fd43ff336d431e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>local_circuit_id</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>pe_host_circuit_id</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>7b4fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>47a2b6e047660a5040fd43ff336d431e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>interface_subnet_mask</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>network_gear</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>fb4fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>4ba2b6e047660a5040fd43ff336d431e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>host_ckt_type</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>local_circuit_id</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>7f4fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>4fa2b6e047660a5040fd43ff336d431e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>ip_address</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <element>host_ckt_type</element>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>ff4fe22f4719c21040fd43ff336d43d3</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>43a2b6e047660a5040fd43ff336d431f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>client_id</element>
-            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">bb4fe22f4719c21040fd43ff336d43d1</list_id>
+            <list_id display_value="x_g_sonc_ns_pro_port" element="NULL" name="x_g_sonc_ns_pro_port" parent="cmdb_ci_ip_router" relationship="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">cfa2b6e047660a5040fd43ff336d431b</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>11</position>
             <sum>false</sum>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
-            <sys_id>734fe22f4719c21040fd43ff336d43d4</sys_id>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
+            <sys_id>47a2b6e047660a5040fd43ff336d431f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -192,10 +192,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 17:30:51</sys_created_on>
+            <sys_created_on>2024-05-30 13:22:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>bb4fe22f4719c21040fd43ff336d43d1</sys_id>
+            <sys_id>cfa2b6e047660a5040fd43ff336d431b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_g_sonc_ns_pro_port</sys_name>
             <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -203,7 +203,7 @@
             <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
             <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_port_cmdb_ci_ip_router_nspro</sys_update_name>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 17:30:51</sys_updated_on>
+            <sys_updated_on>2024-05-30 13:22:15</sys_updated_on>
             <sys_user/>
             <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
             <view_name/>

@@ -2,17 +2,31 @@
     <sys_ui_related sys_domain="global" table="cmdb_ci_network_circuit" version="2" view="nspro">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Network Circuit - Nspro" name="cmdb_ci_network_circuit" related_list="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">d7a0c89a87cac650f9f20f280cbb35b6</list_id>
+            <list_id display_value="Network Circuit - Nspro" name="cmdb_ci_network_circuit" related_list="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">a70a0864879e0e90f9f20f280cbb350b</list_id>
             <order_by/>
             <position>0</position>
             <related_list>cmdb_ci_network_circuit.x_g_sonc_ns_pro_pe_host_circuit_id</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-10 14:22:33</sys_created_on>
-            <sys_id>57a0c89a87cac650f9f20f280cbb35b7</sys_id>
+            <sys_created_on>2024-05-17 14:49:51</sys_created_on>
+            <sys_id>270a0864879e0e90f9f20f280cbb350c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-10 14:22:33</sys_updated_on>
+            <sys_updated_on>2024-05-17 14:49:51</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Network Circuit - Nspro" name="cmdb_ci_network_circuit" related_list="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">a70a0864879e0e90f9f20f280cbb350b</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:210ff31c871e0e90f9f20f280cbb35ee</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-17 14:49:51</sys_created_on>
+            <sys_id>2f0a0864879e0e90f9f20f280cbb350c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-17 14:49:51</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Network Circuit - Nspro</calculated_name>
@@ -23,10 +37,10 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-10 14:22:33</sys_created_on>
+            <sys_created_on>2024-05-17 14:49:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d7a0c89a87cac650f9f20f280cbb35b6</sys_id>
+            <sys_id>a70a0864879e0e90f9f20f280cbb350b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Network Circuit - Nspro</sys_name>
             <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -34,7 +48,7 @@
             <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
             <sys_update_name>sys_ui_related_cmdb_ci_network_circuit_nspro</sys_update_name>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-10 14:22:33</sys_updated_on>
+            <sys_updated_on>2024-05-17 14:49:51</sys_updated_on>
             <sys_user/>
             <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
             <view_name/>

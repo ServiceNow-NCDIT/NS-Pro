@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="c94101a91b613550824752c1604bcb99" extends="dscy_net_base" label="Elemento de infraestructura de red" max_length="40" name="x_g_sonc_ns_pro_port_connection" text_index="true" type="collection">
-        <element label="A Circuit Id" max_length="254" name="a_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="A Device Interface Name" max_length="254" name="a_device_interface_name" type="string"/>
-        <element label="A Device Name" max_length="40" name="a_device_name" type="string"/>
-        <element label="A IP Address" max_length="40" name="a_ip_address" type="ip_addr"/>
-        <element label="A Subnet Mask" max_length="40" name="a_subnet_mask" type="ip_addr"/>
-        <element label="A VLAN" max_length="40" name="a_vlan" type="string"/>
         <element label="CIR" max_length="40" name="cir" type="string"/>
-        <element label="Client Id" max_length="40" name="client_id" type="string"/>
-        <element label="Gateway" max_length="40" name="gateway" type="ip_addr"/>
-        <element label="Local Circuit" max_length="32" name="local_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="LocDLCI" max_length="40" name="locdlci" type="string"/>
-        <element label="Master Device Interface" max_length="40" name="master_device_interface" type="string"/>
-        <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_floats="true" type="reference"/>
-        <element label="POP Circuit" max_length="32" name="pop_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Z Subnet Mask" max_length="40" name="z_subnet_mask" type="ip_addr"/>
         <element choice="1" label="Port Status" max_length="40" name="port_status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Hold" sequence="10" value="hold"/>
                 <element inactive_on_update="false" label="Pending" sequence="20" value="pending"/>
-                <element inactive_on_update="false" label="Installed" sequence="30" value="installed"/>
+                <element inactive_on_update="false" label="Hold" sequence="10" value="hold"/>
                 <element inactive_on_update="false" label="Shutdown" sequence="40" value="shutdown"/>
+                <element inactive_on_update="false" label="Installed" sequence="30" value="installed"/>
             </choice>
         </element>
-        <element label="RmtDLCI" max_length="40" name="rmtdlci" type="string"/>
-        <element label="Secondary Address" max_length="40" name="secondary_address" type="boolean"/>
+        <element label="A Circuit Id" max_length="254" name="a_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="A IP Address" max_length="40" name="a_ip_address" type="ip_addr"/>
+        <element label="POP Circuit" max_length="32" name="pop_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="A VLAN" max_length="40" name="a_vlan" type="string"/>
+        <element label="LocDLCI" max_length="40" name="locdlci" type="string"/>
+        <element label="Z VLAN" max_length="40" name="z_vlan" type="string"/>
+        <element label="Z Device Interface Name" max_length="254" name="z_device_interface_name" type="string"/>
         <element label="Subnet Mask" max_length="40" name="subnet_mask" type="ip_addr"/>
+        <element label="A Subnet Mask" max_length="40" name="a_subnet_mask" type="ip_addr"/>
+        <element label="Master Device Interface" max_length="40" name="master_device_interface" type="string"/>
+        <element label="RmtDLCI" max_length="40" name="rmtdlci" type="string"/>
+        <element label="Gateway" max_length="40" name="gateway" type="ip_addr"/>
+        <element label="A Device Name" max_length="40" name="a_device_name" type="string"/>
+        <element label="Client Id" max_length="40" name="client_id" type="string"/>
+        <element label="Z Circuit Id" max_length="32" name="z_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_floats="true" type="reference"/>
+        <element label="A Device Interface Name" max_length="254" name="a_device_interface_name" type="string"/>
+        <element label="VRF" max_length="40" name="vrf" type="string"/>
+        <element label="Local Circuit" max_length="32" name="local_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
@@ -32,12 +36,8 @@
                 <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
             </choice>
         </element>
-        <element label="VRF" max_length="40" name="vrf" type="string"/>
-        <element label="Z Circuit Id" max_length="32" name="z_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="Z Device Interface Name" max_length="254" name="z_device_interface_name" type="string"/>
         <element label="Z Device Name" max_length="40" name="z_device_name" type="string"/>
         <element label="Z IP Address" max_length="40" name="z_ip_address" type="ip_addr"/>
-        <element label="Z Subnet Mask" max_length="40" name="z_subnet_mask" type="ip_addr"/>
-        <element label="Z VLAN" max_length="40" name="z_vlan" type="string"/>
+        <element label="Secondary Address" max_length="40" name="secondary_address" type="boolean"/>
     </element>
 </database>

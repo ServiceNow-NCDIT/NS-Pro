@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="91424b7a47f77d10f4af2ad2e16d437d" extends="sys_import_set_row" max_length="40" name="x_g_sonc_ns_pro_1705872229043" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alerts" label="Alerts" max_length="40" name="u_alerts" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Owner" label="Owner" max_length="40" name="u_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityLevel" label="SecurityLevel" max_length="40" name="u_securitylevel" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Config_file_Name" label="Config_file_Name" max_length="100" name="u_config_file_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Date_Sent-to_Maint" label="Date_Sent-to_Maint" max_length="40" name="u_date_sent_to_maint" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial_Number" label="Serial_Number" max_length="40" name="u_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Flash" label="Flash" max_length="40" name="u_flash" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Warranty" label="Warranty" max_length="40" name="u_warranty" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Surplus_Date" label="Surplus_Date" max_length="40" name="u_surplus_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Version" label="Version" max_length="40" name="u_version" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Software_Feature_Set" label="Software_Feature_Set" max_length="40" name="u_software_feature_set" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=O_S" label="O_S" max_length="40" name="u_o_s" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Brand" label="Brand" max_length="40" name="u_brand" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Asset" label="Asset" max_length="40" name="u_asset" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Lifecycle" label="Lifecycle" max_length="40" name="u_lifecycle" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Firmware_Level" label="Firmware_Level" max_length="40" name="u_firmware_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Replacement_Date" label="Replacement_Date" max_length="40" name="u_replacement_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alerts" label="Alerts" max_length="40" name="u_alerts" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=UpdateBy" label="UpdateBy" max_length="40" name="u_updateby" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Configured_By" label="Configured_By" max_length="40" name="u_configured_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Nat" label="Nat" max_length="40" name="u_nat" type="string"/>
+        <element attributes="import_attribute_name=PortQty" label="PortQty" max_length="40" name="u_portqty" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="import_attribute_name=Cost_Center" label="Cost_Center" max_length="40" name="u_cost_center" type="float"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Internal_Serial_Number" label="Internal_Serial_Number" max_length="40" name="u_internal_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DRAM" label="DRAM" max_length="40" name="u_dram" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Routing_Protocol" label="Routing_Protocol" max_length="40" name="u_routing_protocol" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Software_Revision-Level" label="Software_Revision-Level" max_length="40" name="u_software_revision_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CircuitId" label="CircuitId" max_length="40" name="u_circuitid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Unit_Cost" label="Unit_Cost" max_length="40" name="u_unit_cost" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=RMA" label="RMA" max_length="40" name="u_rma" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=iTag" label="iTag" max_length="40" name="u_itag" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=FwReports" label="FwReports" max_length="40" name="u_fwreports" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CurrentPolicyName" label="CurrentPolicyName" max_length="40" name="u_currentpolicyname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Device_Type" label="Device_Type" max_length="40" name="u_device_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site ID" label="Site ID" max_length="40" name="u_site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LastUpdated" label="LastUpdated" max_length="40" name="u_lastupdated" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Maintenance_Type" label="Maintenance_Type" max_length="40" name="u_maintenance_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DMZ" label="DMZ" max_length="40" name="u_dmz" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Boot1" label="Boot1" max_length="40" name="u_boot1" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Boot2" label="Boot2" max_length="40" name="u_boot2" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Brand" label="Brand" max_length="40" name="u_brand" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=CircuitId" label="CircuitId" max_length="40" name="u_circuitid" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Configured_By" label="Configured_By" max_length="40" name="u_configured_by" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Config_file_Name" label="Config_file_Name" max_length="100" name="u_config_file_name" type="string"/>
-        <element attributes="import_attribute_name=Cost_Center" label="Cost_Center" max_length="40" name="u_cost_center" type="float"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=CurrentPolicyName" label="CurrentPolicyName" max_length="40" name="u_currentpolicyname" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Date_Sent-to_Maint" label="Date_Sent-to_Maint" max_length="40" name="u_date_sent_to_maint" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Device_Type" label="Device_Type" max_length="40" name="u_device_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=DMZ" label="DMZ" max_length="40" name="u_dmz" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=DRAM" label="DRAM" max_length="40" name="u_dram" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Firmware_Level" label="Firmware_Level" max_length="40" name="u_firmware_level" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Flash" label="Flash" max_length="40" name="u_flash" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=FwReports" label="FwReports" max_length="40" name="u_fwreports" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Installation_Date" label="Installation_Date" max_length="40" name="u_installation_date" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Internal_Serial_Number" label="Internal_Serial_Number" max_length="40" name="u_internal_serial_number" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=iTag" label="iTag" max_length="40" name="u_itag" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=LastUpdated" label="LastUpdated" max_length="40" name="u_lastupdated" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Lifecycle" label="Lifecycle" max_length="40" name="u_lifecycle" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Maintenance_Type" label="Maintenance_Type" max_length="40" name="u_maintenance_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ManagementStation" label="ManagementStation" max_length="40" name="u_managementstation" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Nat" label="Nat" max_length="40" name="u_nat" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Owner" label="Owner" max_length="40" name="u_owner" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=O_S" label="O_S" max_length="40" name="u_o_s" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Platform" label="Platform" max_length="40" name="u_platform" type="string"/>
-        <element attributes="import_attribute_name=PortQty" label="PortQty" max_length="40" name="u_portqty" type="integer"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=PrimarySecondary" label="PrimarySecondary" max_length="40" name="u_primarysecondary" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Purchase-date" label="Purchase-date" max_length="40" name="u_purchase_date" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Purchase_Order" label="Purchase_Order" max_length="40" name="u_purchase_order" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Replacement_Date" label="Replacement_Date" max_length="40" name="u_replacement_date" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=RMA" label="RMA" max_length="40" name="u_rma" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Routing_Protocol" label="Routing_Protocol" max_length="40" name="u_routing_protocol" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityLevel" label="SecurityLevel" max_length="40" name="u_securitylevel" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial_Number" label="Serial_Number" max_length="40" name="u_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Platform" label="Platform" max_length="40" name="u_platform" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PrimarySecondary" label="PrimarySecondary" max_length="40" name="u_primarysecondary" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ManagementStation" label="ManagementStation" max_length="40" name="u_managementstation" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=ServiceSize" label="ServiceSize" max_length="40" name="u_servicesize" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site ID" label="Site ID" max_length="40" name="u_site_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Software_Feature_Set" label="Software_Feature_Set" max_length="40" name="u_software_feature_set" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Software_Revision-Level" label="Software_Revision-Level" max_length="40" name="u_software_revision_level" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Surplus_Date" label="Surplus_Date" max_length="40" name="u_surplus_date" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Unit_Cost" label="Unit_Cost" max_length="40" name="u_unit_cost" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=UpdateBy" label="UpdateBy" max_length="40" name="u_updateby" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Version" label="Version" max_length="40" name="u_version" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Warranty" label="Warranty" max_length="40" name="u_warranty" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Purchase_Order" label="Purchase_Order" max_length="40" name="u_purchase_order" type="string"/>
     </element>
 </database>

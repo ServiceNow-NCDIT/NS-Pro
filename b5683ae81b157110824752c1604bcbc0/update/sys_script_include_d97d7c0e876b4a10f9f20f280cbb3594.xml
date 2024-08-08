@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.core_nspro_networkHelper</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>core_nspro_networkHelper</name>
+        <script><![CDATA[var core_nspro_networkHelper = Class.create();
+core_nspro_networkHelper.prototype = {
+    createIpLimit: 0,
+    initialize: function() {
+        var configs = JSON.parse(gs.getProperty('x_g_sonc_ns_pro.nspro_config'));
+        var classProps = configs.classProps.core_nspro_networkHelper;
+        this.createIpLimit = classProps.createIpLimit;
+    },
+    _checkIpLimit: function() {
+        return this.createIpLimit;
+    },
+    validateIPAddress: function(ipAddress) {
+        var parts;
+        var ipv4Regex = /^(\d{1,3}\.){3}\d{1,3}$/;
+        var ipv6Regex = /^([\da-f]{1,4}:){7}[\da-f]{1,4}$/i;
+        if (ipv4Regex.test(ipAddress)) {
+            parts = ipAddress.split('.');
+            for (var part4 in parts) {
+                if (parseInt(parts[part4]) > 255) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        if (ipv6Regex.test(ipAddress)) {
+            parts = ipAddress.split(':');
+            for (var part6 in parts) {
+                if (parts[part6].length > 4) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
+
+    },
+    getTotalIpsForRange: function(start, end) {
+        var errorString;
+        var totalIps;
+        try {
+            if (!this.validateIPAddress(start)) {
+                throw new IllegalArgumentException(start + " is not a valid IP Address");
+            }
+            if (!this.validateIPAddress(end)) {
+                throw new IllegalArgumentException(end + " is not a valid IP Address");
+            }
+            if (!this._startIPLessThanEnd(start, end)) {
+                throw new IllegalArgumentException("Staring IP Address must be less than the ending IP Address");
+            }
+
+            start = start.split('.');
+
+            totalIps = end.split('.').reduce(function(sum, x, i) {
+                return (sum << 8) + Number(x) - Number(start[i])
+            }, 0);
+        } catch (Ex) {
+            errorString = "Error Occured in core_nspro_networkHelper.getTotalIpsForRange - " + Ex.toString();
+            gs.log(errorString);
+        }
+        if (errorString) {
+            return errorString;
+        } else {
+            return totalIps;
+        }
+
+
+
+    },
+    incrementIpAddress: function(startingIP, increment) {
+        var resultingIPAddress;
+        var errorString;
+
+        try {
+            if (!this.validateIPAddress(startingIP)) {
+                throw new IllegalArgumentException(startingIP + " is not a valid IP Address");
+            }
+            if (isNaN(increment)) {
+                throw new IllegalArgumentException(increment + " is not a valid number");
+            } 
+			var counter = 0;
+            var startHex = this._getHexFromIP(startingIP);
+
+            startHex = "0x" + startHex;
+ 
+			for (var i = startHex;counter <= increment;i++){
+                var oc4 = (i >> 24) & 0xff;
+                var oc3 = (i >> 16) & 0xff;
+                var oc2 = (i >> 8) & 0xff;
+                var oc1 = i & 0xff;
+
+				counter++;
+			}
+			resultingIPAddress = oc4 + "." + oc3 + "." + oc2 + "." + oc1;
+
+        } catch (Ex) {
+            errorString = "Error Occured in core_nspro_networkHelper.generateIPAdressesFromRange - " + Ex.toString();
+            gs.info(errorString);
+        }
+
+        if (errorString) {
+            return errorString;
+        } else {
+            return resultingIPAddress;
+        }
+
+    },
+    generateIPAddressesFromRange: function(startingIP, endingIP) {
+        var ipArray = [];
+        var errorString;
+
+        try {
+            if (!this.validateIPAddress(startingIP)) {
+                throw new IllegalArgumentException(startingIP + " is not a valid IP Address");
+            }
+            if (!this.validateIPAddress(endingIP)) {
+                throw new IllegalArgumentException(endingIP + " is not a valid IP Address");
+            }
+            if (!this._startIPLessThanEnd(startingIP, endingIP)) {
+                throw new IllegalArgumentException("Staring IP Address must be less than the ending IP Address");
+            }
+
+            var startHex = this._getHexFromIP(startingIP);
+            startHex = "0x" + startHex;
+            var endHex = this._getHexFromIP(endingIP);
+            endHex = "0x" + endHex;
+
+            for (var i = startHex; i < endHex; i++) {
+                var oc4 = (i >> 24) & 0xff;
+                var oc3 = (i >> 16) & 0xff;
+                var oc2 = (i >> 8) & 0xff;
+                var oc1 = i & 0xff;
+
+                ipArray.push(oc4 + "." + oc3 + "." + oc2 + "." + oc1);
+
+            }
+
+        } catch (Ex) {
+            errorString = "Error Occured in core_nspro_networkHelper.generateIPAdressesFromRange - " + Ex.toString();
+            gs.info(errorString);
+        }
+
+        if (errorString) {
+            return errorString;
+        } else {
+            return ipArray;
+        }
+
+    },
+    _startIPLessThanEnd: function(start, end) {
+        var validRange = false;
+        const pad = (num) => String("00" + num).slice(-3);
+        var ip1 = start.split(".").map(num => pad(num)).join('.');
+        var ip2 = end.split(".").map(num => pad(num)).join('.');
+        if (ip1 < ip2) {
+            validRange = true;
+        }
+        return validRange;
+    },
+    _getHexFromIP: function(ipAddress) {
+        var hexCombined;
+        const octets = ipAddress.split('.');
+
+        const hexArray = octets.map(octet => {
+            const hex = parseInt(octet, 10).toString(16).toUpperCase();
+            return hex.padStart(2, '0');
+        });
+
+        hexCombined = hexArray.join("");
+        return hexCombined;
+    },
+    type: 'core_nspro_networkHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-07-23 13:47:05</sys_created_on>
+        <sys_id>d97d7c0e876b4a10f9f20f280cbb3594</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>core_nspro_networkHelper</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_d97d7c0e876b4a10f9f20f280cbb3594</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-07-26 20:22:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

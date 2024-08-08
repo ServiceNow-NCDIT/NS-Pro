@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci" version="2" view="RPT588c892a87fa0a10f9f20f280cbb35a5">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="cmdb_ci" element="NULL" name="cmdb_ci" parent="NULL" relationship="NULL" sys_domain="global" view="508c892a87fa0a10f9f20f280cbb35ae">d48c892a87fa0a10f9f20f280cbb35af</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_id>5c8ccd6a87fa0a10f9f20f280cbb35a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_class_name</element>
+            <list_id display_value="cmdb_ci" element="NULL" name="cmdb_ci" parent="NULL" relationship="NULL" sys_domain="global" view="508c892a87fa0a10f9f20f280cbb35ae">d48c892a87fa0a10f9f20f280cbb35af</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_id>dc8ccd6a87fa0a10f9f20f280cbb35a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>serial_number</element>
+            <list_id display_value="cmdb_ci" element="NULL" name="cmdb_ci" parent="NULL" relationship="NULL" sys_domain="global" view="508c892a87fa0a10f9f20f280cbb35ae">d48c892a87fa0a10f9f20f280cbb35af</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_id>508ccd6a87fa0a10f9f20f280cbb35a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>install_status</element>
+            <list_id display_value="cmdb_ci" element="NULL" name="cmdb_ci" parent="NULL" relationship="NULL" sys_domain="global" view="508c892a87fa0a10f9f20f280cbb35ae">d48c892a87fa0a10f9f20f280cbb35af</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_id>d08ccd6a87fa0a10f9f20f280cbb35a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>operational_status</element>
+            <list_id display_value="cmdb_ci" element="NULL" name="cmdb_ci" parent="NULL" relationship="NULL" sys_domain="global" view="508c892a87fa0a10f9f20f280cbb35ae">d48c892a87fa0a10f9f20f280cbb35af</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_id>548ccd6a87fa0a10f9f20f280cbb35a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="cmdb_ci" element="NULL" name="cmdb_ci" parent="NULL" relationship="NULL" sys_domain="global" view="508c892a87fa0a10f9f20f280cbb35ae">d48c892a87fa0a10f9f20f280cbb35af</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_id>d48ccd6a87fa0a10f9f20f280cbb35a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="cmdb_ci" element="NULL" name="cmdb_ci" parent="NULL" relationship="NULL" sys_domain="global" view="508c892a87fa0a10f9f20f280cbb35ae">d48c892a87fa0a10f9f20f280cbb35af</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_id>588ccd6a87fa0a10f9f20f280cbb35a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-17 21:19:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d48c892a87fa0a10f9f20f280cbb35af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_RPT588c892a87fa0a10f9f20f280cbb35a5</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-17 21:19:25</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt588c892a87fa0a10f9f20f280cbb35a5" name="RPT588c892a87fa0a10f9f20f280cbb35a5">508c892a87fa0a10f9f20f280cbb35ae</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

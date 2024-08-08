@@ -4,195 +4,97 @@
             <element>required_wan_cpe_count</element>
             <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>5224422f47d1c21040fd43ff336d43a1</sys_id>
+            <sys_created_on>2024-06-03 12:44:36</sys_created_on>
+            <sys_id>626053f54726c29040fd43ff336d4359</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>required_lan_cpe_count</element>
-            <position>1</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>d224422f47d1c21040fd43ff336d43a1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
+            <sys_updated_on>2024-06-03 12:44:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>selected_asset_serial_numbers</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-06-03 12:44:36</sys_created_on>
+            <sys_id>ae6053f54726c29040fd43ff336d4359</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-06-03 12:44:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cpe_model_code</element>
             <position>2</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>5624422f47d1c21040fd43ff336d43a1</sys_id>
+            <sys_created_on>2024-06-03 12:44:36</sys_created_on>
+            <sys_id>a66053f54726c29040fd43ff336d435a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>detailed_cpe_needs</element>
-            <position>3</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>d624422f47d1c21040fd43ff336d43a1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>lan_cpe_basic_24_count</element>
-            <position>4</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>5a24422f47d1c21040fd43ff336d43a1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>lan_cpe_basic_48_count</element>
-            <position>5</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>da24422f47d1c21040fd43ff336d43a1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
+            <sys_updated_on>2024-06-03 12:44:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>6</position>
+            <position>3</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>5e24422f47d1c21040fd43ff336d43a1</sys_id>
+            <sys_created_on>2024-06-03 12:44:36</sys_created_on>
+            <sys_id>ae6053f54726c29040fd43ff336d435a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
+            <sys_updated_on>2024-06-03 12:44:36</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cpe_models_required</element>
-            <position>7</position>
+            <position>4</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>de24422f47d1c21040fd43ff336d43a1</sys_id>
+            <sys_created_on>2024-06-03 12:44:36</sys_created_on>
+            <sys_id>a66053f54726c29040fd43ff336d435b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
+            <sys_updated_on>2024-06-03 12:44:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>required_wan_models</element>
-            <position>8</position>
+            <position>5</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>5224422f47d1c21040fd43ff336d43a2</sys_id>
+            <sys_created_on>2024-06-03 12:44:36</sys_created_on>
+            <sys_id>ae6053f54726c29040fd43ff336d435b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>required_lan_models</element>
-            <position>9</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>d224422f47d1c21040fd43ff336d43a2</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>lan_cpe_premium_8_count</element>
-            <position>10</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>5624422f47d1c21040fd43ff336d43a2</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>lan_cpe_premium_24_count</element>
-            <position>11</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>d624422f47d1c21040fd43ff336d43a2</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>lan_cpe_premium_48_count</element>
-            <position>12</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>5a24422f47d1c21040fd43ff336d43a2</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
+            <sys_updated_on>2024-06-03 12:44:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>selected_assets</element>
-            <position>13</position>
+            <position>6</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-07 14:22:19</sys_created_on>
-            <sys_id>da24422f47d1c21040fd43ff336d43a2</sys_id>
+            <sys_created_on>2024-06-03 12:44:36</sys_created_on>
+            <sys_id>a66053f54726c29040fd43ff336d435c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="CPE Info" display_value="CPE Info" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8e24422f47d1c21040fd43ff336d435b</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
+            <sys_updated_on>2024-06-03 12:44:36</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

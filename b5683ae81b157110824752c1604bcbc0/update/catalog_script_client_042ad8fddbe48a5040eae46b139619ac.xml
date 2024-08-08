@@ -32,13 +32,16 @@
 
     function getSvcs(response) {
 		
-		// alert('getSvcs response = ' + response);
+		//alert('getSvcs response = ' + response);
 
         var svc_response = JSON.parse(response);
 		var svcs = '';
 		for (i=0; i < svc_response.length; i++) {
 			if (svc_response[i].end_date == "") {
-				svcs = svcs + svc_response[i].service_definition + '\n';
+				
+				alert('adding service ' + svc_response[i].svc_title);
+
+				svcs = svcs + svc_response[i].svc_title + '\n';
 			}
 		}
         g_form.setValue('existing_services', svcs);
@@ -52,15 +55,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>042ad8fddbe48a5040eae46b139619ac</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>onChange Site - Get Services</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_042ad8fddbe48a5040eae46b139619ac</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-02-24 15:16:09</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-07-15 17:11:04</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

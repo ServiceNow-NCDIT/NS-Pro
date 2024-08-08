@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="113e8aa91b0fb950824752c1604bcb9e" label="Agency" max_length="40" name="x_g_sonc_ns_pro_agency" type="collection">
-        <element label="Abbreviation" mandatory="true" max_length="40" name="abbreviation" type="string"/>
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Abbreviation" mandatory="true" max_length="40" name="abbreviation" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Agency" max_length="32" name="agency" reference="x_g_sonc_ns_pro_agency" type="reference"/>
+        <index name="index">
+            <element name="agency"/>
+        </index>
     </element>
 </database>

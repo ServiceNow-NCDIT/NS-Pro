@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Moving to an Existing or New Location?">a8d43203dbb3bd1040eae46b139619d9</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-01-22 15:05:22</sys_created_on>
+        <sys_id>0f153607dbb3bd1040eae46b13961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Existing Location</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>question_choice_0f153607dbb3bd1040eae46b13961985</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-01-22 15:05:22</sys_updated_on>
+        <text>Existing Location</text>
+        <value>existing</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=0f153607dbb3bd1040eae46b13961985"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>question_choice_0f153607dbb3bd1040eae46b13961985</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>100</order><published_ref/><question display_value="Moving to an Existing or New Location?">a8d43203dbb3bd1040eae46b139619d9</question><sys_class_name>question_choice</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-01-22 15:05:22</sys_created_on><sys_id>0f153607dbb3bd1040eae46b13961985</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Existing Location</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>question_choice_0f153607dbb3bd1040eae46b13961985</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-01-22 15:05:22</sys_updated_on><text>Existing Location</text><value>existing</value></question_choice><fx_price action="delete_multiple" query="id=0f153607dbb3bd1040eae46b13961985"/></record_update>]]></payload>
+        <payload_hash>79640081</payload_hash>
+        <record_name>Existing Location</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-01-22 15:05:22</sys_created_on>
+        <sys_id>f7257e07dbb3bd1040eae46b13961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d31b465150000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-01-22 15:05:22</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>fb257e0742b3bd10622c4e0e16f8d574</update_guid>
+        <update_guid_history>fb257e0742b3bd10622c4e0e16f8d574:79640081</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 06/18/2024 09:58:12">06de383247b20e1040fd43ff336d4306</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-18 14:58:12</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0929a7d6938640789dc4a037cd9c4804</sys_id>
+        <sys_metadata>0f153607dbb3bd1040eae46b13961985</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Existing Location</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>question_choice_0f153607dbb3bd1040eae46b13961985</sys_update_name>
+        <sys_update_version display_value="question_choice_0f153607dbb3bd1040eae46b13961985">f7257e07dbb3bd1040eae46b13961975</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-18 14:58:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

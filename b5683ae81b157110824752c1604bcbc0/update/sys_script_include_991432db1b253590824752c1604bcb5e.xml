@@ -131,7 +131,7 @@ cmdb_ci_site.prototype = {
 
 	getServices: function(site_id) {
 
-		gs.info('cmdb_ci_site.getServices searching for site ' + site_id);
+		// gs.info('cmdb_ci_site.getServices searching for site ' + site_id);
 
 		var svcs = []; // array of all services
 		var siteGr = new GlideRecord('cmdb_ci_site');
@@ -141,22 +141,16 @@ cmdb_ci_site.prototype = {
 			var svcGr = new GlideRecord('x_g_sonc_ns_pro_service');
 			svcGr.addQuery('site', site_id);
 			svcGr.query();
-			while (svcGr.next()) {
+			while (svcGr.next()) {				
 				var svc = {}; // service instance
-
-				gs.info('cmdb_ci_site.getServices found site ' + siteGr.name);
-
 				svc.sys_id = svcGr.getUniqueValue();
-				svc.service_definition = svcGr.getDisplayValue('service_definition');
+				svc.svc_title = svcGr.service_code.svc_title.getDisplayValue();
 				svc.start_date = svcGr.getDisplayValue('start_date');
 				svc.end_date = svcGr.getDisplayValue('end_date');
 				svc.agency = svcGr.getDisplayValue('agency');
-				svc.ap_count = svcGr.getDisplayValue('ap_count');
-				svc.comments = svcGr.getDisplayValue('comments');
+				svc.ap_count = svcGr.getValue('ap_count');
+				svc.comments = svcGr.getValue('comments');
 				svc.site = svcGr.getDisplayValue('site');
-
-				gs.info(global.JSON.stringify(svc));
-
 				svcs.push(svc);				
 			}
 		}
@@ -167,19 +161,51 @@ cmdb_ci_site.prototype = {
 
 	},
 
+		getBilling: function(site_id) {
+
+		// gs.info('cmdb_ci_site.getBilling searching for site ' + site_id);
+
+		var bills = []; // array of all billing history
+		var siteGr = new GlideRecord('cmdb_ci_site');
+
+		if (siteGr.get(site_id)) {
+			
+			var billGr = new GlideRecord('x_g_sonc_ns_pro_billing_changes');
+			billGr.addQuery('site', site_id);
+			billGr.query();
+			while (billGr.next()) {				
+				var bill = {}; // service instance
+				bill.sys_id = billGr.getUniqueValue();
+				bill.billing_code = billGr.getValue('billing_code');
+				bill.billing_type = billGr.getDisplayValue('billing_type');
+				bill.effective_date = billGr.getDisplayValue('effective_date');
+				bill.end_date = billGr.getDisplayValue('end_date');
+				bill.agency = billGr.getDisplayValue('network_request');
+				bill.ap_count = billGr.getValue('network_task');
+				bill.site = billGr.getDisplayValue('site');
+				bills.push(bill);				
+			}
+		}
+		else {
+			gs.error('site not found');
+		}
+		return global.JSON.stringify(bills);
+
+	},
+
 	type: 'cmdb_ci_site'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>83</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-04-26 11:37:49</sys_updated_on>
+        <sys_updated_on>2024-07-25 16:19:34</sys_updated_on>
     </sys_script_include>
 </record_update>

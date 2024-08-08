@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="c437b87f1bf6b910824752c1604bcb16" label="Service" max_length="40" name="x_g_sonc_ns_pro_service" text_index="true" type="collection">
-        <element label="Agency" mandatory="true" max_length="32" name="agency" reference="x_g_sonc_ns_pro_agency" type="reference"/>
-        <element label="AP Count" max_length="40" name="ap_count" type="integer"/>
-        <element label="Comments" max_length="2000" name="comments" type="string"/>
-        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NetPlus" max_length="32" name="netplus" reference="x_g_sonc_ns_pro_netplus_code" type="reference" use_dependent_field="true"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Service Code" max_length="32" name="service_code" reference="x_g_sonc_ns_pro_service_code" type="reference"/>
         <element display="true" label="Service Definition" mandatory="true" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
-        <element label="Site" max_length="32" name="site" read_only="true" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element label="AP Count" max_length="40" name="ap_count" type="integer"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
         <element label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Service Code" max_length="32" name="service_code" reference="x_g_sonc_ns_pro_service_code" type="reference"/>
+        <element label="Site" max_length="32" name="site" read_only="true" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NetPlus Type Service" max_length="32" name="netplus_type_service" reference="x_g_sonc_ns_pro_netplus_code" type="reference"/>
+        <element label="Comments" max_length="2000" name="comments" type="string"/>
+        <element label="Agency" mandatory="true" max_length="32" name="agency" reference="x_g_sonc_ns_pro_agency" type="reference"/>
         <index name="index">
             <element name="agency"/>
         </index>
         <index name="index2">
-            <element name="netplus"/>
+            <element name="netplus_type_service"/>
         </index>
         <index name="index3">
             <element name="service_code"/>

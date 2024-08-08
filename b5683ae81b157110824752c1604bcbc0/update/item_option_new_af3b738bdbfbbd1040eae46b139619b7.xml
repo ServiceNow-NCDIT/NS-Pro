@@ -37,12 +37,12 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>dest_zip</name>
-        <order>260</order>
+        <order>230</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -77,14 +77,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-01-22 20:12:51</sys_created_on>
         <sys_id>af3b738bdbfbbd1040eae46b139619b7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Dest Zip</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_af3b738bdbfbbd1040eae46b139619b7</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-01-22 20:12:51</sys_updated_on>
+        <sys_updated_on>2024-06-18 15:14:18</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>

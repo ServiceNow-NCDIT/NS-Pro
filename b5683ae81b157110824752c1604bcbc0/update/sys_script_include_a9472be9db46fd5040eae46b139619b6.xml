@@ -12,7 +12,9 @@ location.prototype = {
     initialize: function() {
     },
 
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
     getLocation: function(loc_id) {
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
 
         gs.info('location.getLocation searching for location ' + loc_id);
 
@@ -42,9 +44,41 @@ location.prototype = {
 
     },
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    getSiteLocation: function(sys_id) {
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+        gs.info('location().getSiteLocation() searching for site sys_id' + sys_id);
+
+		var siteGr = new GlideRecord('cmdb_ci_site');
+     	var loc = {};
+        
+		if (siteGr.get(sys_id.toString())) {
+
+			gs.info('site.getSiteLocation found site ' + siteGr.site_identifier);
+
+			loc.sysId = siteGr.getValue('location');
+			loc.name = siteGr.location.name.toString();
+			loc.county = siteGr.location.u_county.toString();
+			loc.street = siteGr.location.street.toString();
+			loc.city = siteGr.location.city.toString();
+			loc.state = siteGr.location.state.toString();
+			loc.zip = siteGr.location.zip.toString();
+			loc.latitude = siteGr.location.latitude.toString();
+			loc.longitude = siteGr.location.longitude.toString();
+		} else {
+			gs.error('location().getSiteLocation() location not found');
+		}
+		
+		gs.info('location().getSiteLocation() returning ' + global.JSON.stringify(loc));
+		
+        return global.JSON.stringify(loc);
+
+    },
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
     geocodeAddress: function(street, city, state, zip) {
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
     
         var LogPrefix = " geocodeAddress --> ";
         /* calls google maps for geocoding
@@ -158,13 +192,13 @@ location.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-23 03:07:18</sys_created_on>
         <sys_id>a9472be9db46fd5040eae46b139619b6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>location</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_a9472be9db46fd5040eae46b139619b6</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-04-09 19:13:46</sys_updated_on>
+        <sys_updated_on>2024-05-29 12:02:31</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Billing Type">c7f36f1e47afca1040fd43ff336d431e</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-07-24 20:33:00</sys_created_on>
+        <sys_id>2154af5647efca1040fd43ff336d437f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>NetPlus CAC</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>question_choice_2154af5647efca1040fd43ff336d437f</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-03 18:25:55</sys_updated_on>
+        <text>NetPlus CAC</text>
+        <value>netplus_cac</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=2154af5647efca1040fd43ff336d437f"/>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_robust_import_set_transformer">
+    <sys_robust_import_set_transformer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <batch_size>10</batch_size>
+        <description>RTE definition for NSWAN Port Data Mapping</description>
+        <name>NSWAN Port Data Mapping_rte_ihub</name>
+        <properties/>
+        <robust_transform_engine display_value="NSWAN Port Data Mapping_etl_ihub">b0ace98347face1040fd43ff336d439b</robust_transform_engine>
+        <source_table>x_g_sonc_ns_pro_ihub_import_559ca90747face1040fd43ff336d4333</source_table>
+        <sys_class_name>sys_robust_import_set_transformer</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-19 12:56:46</sys_created_on>
+        <sys_id>b0ace98347face1040fd43ff336d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NSWAN Port Data Mapping_rte_ihub</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_robust_import_set_transformer_b0ace98347face1040fd43ff336d439e</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-19 12:56:46</sys_updated_on>
+        <verbose>false</verbose>
+    </sys_robust_import_set_transformer>
+</record_update>

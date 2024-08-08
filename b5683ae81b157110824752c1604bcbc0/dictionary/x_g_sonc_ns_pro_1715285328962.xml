@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="de560cc64786825040fd43ff336d4310" extends="sys_import_set_row" max_length="40" name="x_g_sonc_ns_pro_1715285328962" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cir" label="Cir" max_length="40" name="u_cir" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit_ID" label="Circuit_ID" max_length="40" name="u_circuit_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit Number" label="Circuit Number" max_length="40" name="u_circuit_number" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=City" label="City" max_length="40" name="u_city" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=ExIP Address" label="ExIP Address" max_length="40" name="u_exip_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=IP Address" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=LocalCircuit" label="LocalCircuit" max_length="40" name="u_localcircuit" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=LocDlci" label="LocDlci" max_length="40" name="u_locdlci" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Project" label="Project" max_length="40" name="u_project" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=RmtDlci" label="RmtDlci" max_length="40" name="u_rmtdlci" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site" label="Site" max_length="40" name="u_site" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Speed" label="Speed" max_length="40" name="u_speed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit_ID" label="Circuit_ID" max_length="40" name="u_circuit_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LocDlci" label="LocDlci" max_length="40" name="u_locdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site" label="Site" max_length="40" name="u_site" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IP Address" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=RmtDlci" label="RmtDlci" max_length="40" name="u_rmtdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cir" label="Cir" max_length="40" name="u_cir" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=SubnetMask" label="SubnetMask" max_length="40" name="u_subnetmask" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Project" label="Project" max_length="40" name="u_project" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit Number" label="Circuit Number" max_length="40" name="u_circuit_number" type="string"/>
     </element>
 </database>

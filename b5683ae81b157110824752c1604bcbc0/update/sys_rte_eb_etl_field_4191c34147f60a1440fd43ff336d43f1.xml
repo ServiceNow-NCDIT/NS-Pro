@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>requested_service_date</field>
+        <name>Requested Service Date</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-13 14:00:02</sys_created_on>
+        <sys_id>4191c34147f60a1440fd43ff336d43f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested Service Date</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Service Data Mapping_etl_ihub">8c91478d47b60a1440fd43ff336d43b3</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Target_x_g_sonc_ns_pro_nswan_service">3491c34147f60a1440fd43ff336d438e</sys_rte_eb_entity>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_4191c34147f60a1440fd43ff336d43f1</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-13 14:00:02</sys_updated_on>
+    </sys_rte_eb_etl_field>
+</record_update>

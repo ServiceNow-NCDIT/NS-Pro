@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="aca2e8bd479642d040fd43ff336d4314" label="Billing Changes" max_length="40" name="x_g_sonc_ns_pro_billing_changes" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="3" default="new" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="10" value="new"/>
+                <element inactive_on_update="false" label="Current" sequence="30" value="current"/>
+                <element inactive_on_update="false" label="Retired" sequence="40" value="retired"/>
+                <element inactive_on_update="false" label="Sent" sequence="20" value="sent"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Site" mandatory="true" max_length="32" name="site" reference="cmdb_ci_site" type="reference">
+            <choice/>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Network Request" max_length="32" name="network_request" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Service" max_length="32" name="service" reference="x_g_sonc_ns_pro_service" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Billing Code" mandatory="true" max_length="40" name="billing_code" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Billing Type" mandatory="true" max_length="40" name="billing_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="NetPlus CPE Level" sequence="30" value="netplus_cpe_level"/>
+                <element inactive_on_update="false" label="NetPlus CAC" sequence="20" value="netplus_cac"/>
+                <element inactive_on_update="false" label="NetPlus Type Service" sequence="10" value="netplus_type_service"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Action" mandatory="true" max_length="40" name="action" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Add" sequence="10" value="add"/>
+                <element inactive_on_update="false" label="Remove" sequence="20" value="remove"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Network Task" max_length="32" name="network_task" reference="x_g_sonc_ns_pro_nspro_tasks" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Effective Date" mandatory="true" max_length="40" name="effective_date" type="glide_date" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="network_request"/>
+        </index>
+        <index name="index2">
+            <element name="network_task"/>
+        </index>
+        <index name="index3">
+            <element name="service"/>
+        </index>
+        <index name="index4">
+            <element name="site"/>
+        </index>
+    </element>
+</database>

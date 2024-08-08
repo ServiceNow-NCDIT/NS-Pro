@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="195dad4b47face1040fd43ff336d43e3" extends="sys_import_set_row" label="NSWAN Port Proposed Data Mapping" max_length="40" name="x_g_sonc_ns_pro_ihub_import_621dadc747face1040fd43ff336d43ea" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LocalCircuit" label="LocalCircuit" max_length="40" name="u_localcircuit" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=HostName" label="HostName" max_length="40" name="u_hostname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ConnectToSerial" label="ConnectToSerial" max_length="40" name="u_connecttoserial" type="string"/>
+        <element attributes="import_attribute_name=UserNrc" label="UserNrc" max_length="40" name="u_usernrc" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=EndDate" label="EndDate" max_length="40" name="u_enddate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IP Address" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit Number" label="Circuit Number" max_length="40" name="u_circuit_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PortPhone" label="PortPhone" max_length="40" name="u_portphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecLevel" label="SecLevel" max_length="40" name="u_seclevel" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=VrfName" label="VrfName" max_length="40" name="u_vrfname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Port Name" label="Port Name" max_length="40" name="u_port_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ConnectToSite" label="ConnectToSite" max_length="40" name="u_connecttosite" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Isal_NNI" label="Isal_NNI" max_length="40" name="u_isal_nni" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PortAltPhone" label="PortAltPhone" max_length="40" name="u_portaltphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IPX Access List" label="IPX Access List" max_length="40" name="u_ipx_access_list" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IPX Network" label="IPX Network" max_length="40" name="u_ipx_network" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Form5LocVpiVci" label="Form5LocVpiVci" max_length="40" name="u_form5locvpivci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Form5RmtVpiVci" label="Form5RmtVpiVci" max_length="40" name="u_form5rmtvpivci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=MasterDeviceInterface" label="MasterDeviceInterface" max_length="55" name="u_masterdeviceinterface" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=BudgetFundRcc" label="BudgetFundRcc" max_length="40" name="u_budgetfundrcc" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=BillingSite" label="BillingSite" max_length="40" name="u_billingsite" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=GatewayIp" label="GatewayIp" max_length="40" name="u_gatewayip" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AddressTransRange" label="AddressTransRange" max_length="40" name="u_addresstransrange" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ClientId" label="ClientId" max_length="40" name="u_clientid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Router Serial Number" label="Router Serial Number" max_length="40" name="u_router_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecondaryPort" label="SecondaryPort" max_length="40" name="u_secondaryport" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=StartDate" label="StartDate" max_length="40" name="u_startdate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ConnectToPort" label="ConnectToPort" max_length="40" name="u_connecttoport" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=RmtDlci" label="RmtDlci" max_length="40" name="u_rmtdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IpAddressRange" label="IpAddressRange" max_length="40" name="u_ipaddressrange" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AddressTransMask" label="AddressTransMask" max_length="40" name="u_addresstransmask" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remarks" label="Remarks" max_length="106" name="u_remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LastUpgradeDate" label="LastUpgradeDate" max_length="40" name="u_lastupgradedate" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PortAltContact" label="PortAltContact" max_length="40" name="u_portaltcontact" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Subnet Mask" label="Subnet Mask" max_length="40" name="u_subnet_mask" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cir" label="Cir" max_length="40" name="u_cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Speed" label="Speed" max_length="40" name="u_speed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LocDlci" label="LocDlci" max_length="40" name="u_locdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=IPX Encapsulation" label="IPX Encapsulation" max_length="40" name="u_ipx_encapsulation" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PortContact" label="PortContact" max_length="40" name="u_portcontact" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site" label="Site" max_length="40" name="u_site" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=BillCode" label="BillCode" max_length="40" name="u_billcode" type="string"/>
+        <element attributes="import_attribute_name=UserMrc" label="UserMrc" max_length="40" name="u_usermrc" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Port Type" label="Port Type" max_length="40" name="u_port_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=RequestId" label="RequestId" max_length="40" name="u_requestid" type="string"/>
+        <element attributes="import_attribute_name=UserMpc" label="UserMpc" max_length="40" name="u_usermpc" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=TomsDept" label="TomsDept" max_length="40" name="u_tomsdept" type="string"/>
+        <element attributes="import_attribute_name=TotalMonthlyCost" label="TotalMonthlyCost" max_length="40" name="u_totalmonthlycost" type="integer"/>
+    </element>
+</database>

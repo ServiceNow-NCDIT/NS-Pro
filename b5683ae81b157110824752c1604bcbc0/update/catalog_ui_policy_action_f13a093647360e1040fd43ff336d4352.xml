@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Request Relocate Site">38d03043475b7d90f4af2ad2e16d433b</catalog_item>
+        <catalog_variable>IO:91c809fe47f20e1040fd43ff336d4357</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-18 15:48:21</sys_created_on>
+        <sys_id>f13a093647360e1040fd43ff336d4352</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>cs_service</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_f13a093647360e1040fd43ff336d4352</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-18 16:56:57</sys_updated_on>
+        <table/>
+        <ui_policy display_value="onChange WAN Service - Show Svcs">94d9c5f247360e1040fd43ff336d4315</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>cs_service</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

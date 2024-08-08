@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="1621cae6db15b15040eae46b139619ae" extends="cmdb_ci" label="Telco Provider" max_length="40" name="x_g_sonc_ns_pro_telco_provider" text_index="true" type="collection">
-        <element label="Order Email" max_length="100" name="order_email" type="string"/>
-        <element label="Order Phone" max_length="40" name="order_phone" type="phone_number_e164"/>
-        <element label="POC Alternate Email" max_length="100" name="poc_alternate_email" type="string"/>
-        <element label="POC Alternate Name" max_length="100" name="poc_alternate_name" type="string"/>
-        <element label="POC Alternate Phone" max_length="40" name="poc_alternate_phone" type="phone_number_e164"/>
-        <element label="POC Primary Email" max_length="100" name="poc_primary_email" type="string"/>
         <element label="POC Primary Name" max_length="100" name="poc_primary_name" type="string"/>
+        <element label="POC Alternate Phone" max_length="40" name="poc_alternate_phone" type="phone_number_e164"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="POC Alternate Email" max_length="100" name="poc_alternate_email" type="string"/>
+        <element label="POC Primary Email" max_length="100" name="poc_primary_email" type="string"/>
         <element label="POC Primary Phone" max_length="40" name="poc_primary_phone" type="phone_number_e164"/>
+        <element label="Order Email" max_length="100" name="order_email" type="string"/>
+        <element label="POC Alternate Name" max_length="100" name="poc_alternate_name" type="string"/>
+        <element label="Order Phone" max_length="40" name="order_phone" type="phone_number_e164"/>
     </element>
 </database>

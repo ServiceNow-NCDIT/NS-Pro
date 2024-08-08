@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="14ec99aa47e54e5040fd43ff336d431b" label="CPE Model" max_length="40" name="x_g_sonc_ns_pro_cpe_model" type="collection">
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Cost per Month CPE" max_length="20" name="cost_per_month_cpe" type="currency"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="CPE Level" max_length="40" name="cpe_level" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="1" sequence="1" value="1"/>
-                <element inactive_on_update="false" label="2" sequence="2" value="2"/>
-                <element inactive_on_update="false" label="3" sequence="3" value="3"/>
-                <element inactive_on_update="false" label="4" sequence="4" value="4"/>
-            </choice>
-        </element>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 1" max_length="40" name="cpe_model_1" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 2" max_length="40" name="cpe_model_2" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 3" max_length="40" name="cpe_model_3" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 4" max_length="40" name="cpe_model_4" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Port Range High" max_length="40" name="cpe_port_range_high" type="integer"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Port Range Low" max_length="40" name="cpe_port_range_low" type="integer"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Full Duplex" max_length="40" name="full_duplex" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="SLA" max_length="20" name="sla" type="decimal"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Media" max_length="40" name="media" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Broadband" value="broadband"/>
                 <element inactive_on_update="false" label="DIT Fiber" value="dit_fiber"/>
-                <element inactive_on_update="false" label="Eth" value="eth"/>
                 <element inactive_on_update="false" label="Hybrid" value="hybrid"/>
                 <element inactive_on_update="false" label="LTE4G" value="lte4g"/>
+                <element inactive_on_update="false" label="Eth" value="eth"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 2" max_length="40" name="cpe_model_2" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Port Range Low" max_length="40" name="cpe_port_range_low" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 4" max_length="40" name="cpe_model_4" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Cost per Month CPE" max_length="20" name="cost_per_month_cpe" type="currency"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Service Level" max_length="40" name="service_level" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Bronze" sequence="1" value="bronze"/>
-                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
                 <element inactive_on_update="false" label="Gold" sequence="3" value="gold"/>
+                <element inactive_on_update="false" label="Silver" sequence="2" value="silver"/>
             </choice>
         </element>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="SLA" max_length="20" name="sla" type="decimal"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 3" max_length="40" name="cpe_model_3" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Port Range High" max_length="40" name="cpe_port_range_high" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Full Duplex" max_length="40" name="full_duplex" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" display="true" label="CPE Level" max_length="40" name="cpe_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="CPE-LEVEL-1" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="CPE-LEVEL-3" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="CPE-LEVEL-4" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="CPE-LEVEL-2" sequence="2" value="2"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="CPE Model 1" max_length="40" name="cpe_model_1" type="string"/>
     </element>
 </database>

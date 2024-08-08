@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Billing Code">cbdf97a247638e1040fd43ff336d4357</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-07-25 14:53:15</sys_created_on>
+        <sys_id>92606be247638e1040fd43ff336d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPE Level 4</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>question_choice_92606be247638e1040fd43ff336d4356</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-07-25 14:53:15</sys_updated_on>
+        <text>CPE Level 4</text>
+        <value>cpe_level_4</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=92606be247638e1040fd43ff336d4356"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>question_choice_92606be247638e1040fd43ff336d4356</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>400</order><published_ref/><question display_value="Billing Code">cbdf97a247638e1040fd43ff336d4357</question><sys_class_name>question_choice</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-07-25 14:53:15</sys_created_on><sys_id>92606be247638e1040fd43ff336d4356</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CPE Level 4</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>question_choice_92606be247638e1040fd43ff336d4356</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-07-25 14:53:15</sys_updated_on><text>CPE Level 4</text><value>cpe_level_4</value></question_choice><fx_price action="delete_multiple" query="id=92606be247638e1040fd43ff336d4356"/></record_update>]]></payload>
+        <payload_hash>-1644759081</payload_hash>
+        <record_name>CPE Level 4</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-07-25 14:53:15</sys_created_on>
+        <sys_id>16802be247638e1040fd43ff336d4369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190ea61ca950000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-07-25 14:53:15</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>d6802be21b638e10f0c5bf096982c068</update_guid>
+        <update_guid_history>d6802be21b638e10f0c5bf096982c068:-1644759081</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 08/03/2024 13:30:45">cca8e2ed4777c69040fd43ff336d4305</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-03 18:30:45</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>3be195e9689c4cae9975815ac5276039</sys_id>
+        <sys_metadata>92606be247638e1040fd43ff336d4356</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPE Level 4</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Billing Code">cbdf97a247638e1040fd43ff336d4357</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>question_choice_92606be247638e1040fd43ff336d4356</sys_update_name>
+        <sys_update_version display_value="question_choice_92606be247638e1040fd43ff336d4356">16802be247638e1040fd43ff336d4369</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-03 18:30:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

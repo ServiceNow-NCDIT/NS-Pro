@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="billing_type" table="x_g_sonc_ns_pro_billing_changes" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>billing_type</element>
+            <name>x_g_sonc_ns_pro_billing_changes</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-21 14:10:36</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>billing_type</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_x_g_sonc_ns_pro_billing_changes_billing_type</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-21 14:10:36</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>billing_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NetPlus Type Service</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_billing_changes</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-21 14:10:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-21 14:11:07</sys_updated_on>
+            <value>netplus_type_service</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>billing_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NetPlus CAC</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_billing_changes</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-21 14:11:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-21 14:11:52</sys_updated_on>
+            <value>netplus_cac</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>billing_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NetPlus CPE Level</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_billing_changes</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-05-21 14:12:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-05-21 14:12:45</sys_updated_on>
+            <value>netplus_cpe_level</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

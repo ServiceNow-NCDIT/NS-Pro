@@ -22,10 +22,10 @@
 
     function getSvcDef(response) {
 
-		// alert(response);
 		
         var def = JSON.parse(response);
-        g_form.setValue('netplus', def.netplus.toString());
+        // alert(def.netplus.toString());
+		g_form.setValue('netplus_type_service', def.netplus.toString());
 
     }
 
@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9cce45b18735ca90f9f20f280cbb3578</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Set NetPlus Code</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -45,7 +45,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_client_9cce45b18735ca90f9f20f280cbb3578</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-04-27 15:29:19</sys_updated_on>
+        <sys_updated_on>2024-05-23 15:30:47</sys_updated_on>
         <table>x_g_sonc_ns_pro_service</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

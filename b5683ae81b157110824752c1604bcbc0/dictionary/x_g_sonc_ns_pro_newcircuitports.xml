@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1d80712e4733821040fd43ff336d43a4" extends="sys_import_set_row" label="NewCircuitPorts" max_length="40" name="x_g_sonc_ns_pro_newcircuitports" type="collection">
+        <element label="Beginning VLan" max_length="40" name="beginning_vlan" type="string"/>
+        <element label="Host Circuit" max_length="32" name="host_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Starting IP Address" max_length="40" name="starting_ip_address" type="string"/>
+        <element label="Ending IP Address" max_length="40" name="ending_ip_address" type="string"/>
+        <index name="index">
+            <element name="host_circuit"/>
+        </index>
+    </element>
+</database>

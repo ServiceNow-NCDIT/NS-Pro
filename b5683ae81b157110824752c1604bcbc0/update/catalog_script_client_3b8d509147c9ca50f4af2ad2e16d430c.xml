@@ -5,7 +5,7 @@
         <applies_extended>false</applies_extended>
         <applies_req_item>false</applies_req_item>
         <applies_sc_task>false</applies_sc_task>
-        <applies_target_record>true</applies_target_record>
+        <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Request New Site">670690da1bf5f110824752c1604bcbe7</cat_item>
         <cat_variable>IO:03f0a15e1b713510824752c1604bcbf5</cat_variable>
@@ -23,8 +23,10 @@
       return;
    }
 
+	//alert('newValue = ' + newValue);
+	
 	var ga = new GlideAjax('x_g_sonc_ns_pro.core_nspro_ajax');
-    ga.addParam('sysparm_name', 'isBeforeGracePeriod');
+    ga.addParam('sysparm_name', 'requiresJustification');
 	ga.addParam('sysparm_new_date', newValue);
 	ga.addParam('sysparm_created_on', g_form.getValue('created_on'));
 	ga.addParam('sysparm_request_type', "New Service");
@@ -32,15 +34,15 @@
 
     function checkDate(response) {
 		
-		// alert('response = ' + response);
+		//alert('response = ' + response);
 		
 		if (response == 'true') {
-			g_form.setVisible('justification', true);
+			g_form.setDisplay('justification', true);
 			g_form.setMandatory('justification', true);
 		}
 		else {
 			g_form.setMandatory('justification', false);
-			g_form.setVisible('justification', false);
+			g_form.setDisplay('justification', false);
 		}
 		
 
@@ -53,15 +55,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3b8d509147c9ca50f4af2ad2e16d430c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>onChange Need By Date</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_3b8d509147c9ca50f4af2ad2e16d430c</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-03-18 21:12:40</sys_updated_on>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-10 13:01:06</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="593652ca470c8a90f4af2ad2e16d436b" extends="sys_import_set_row" max_length="40" name="x_g_sonc_ns_pro_1706733116830" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=AltCircuitContact" label="AltCircuitContact" max_length="40" name="u_altcircuitcontact" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=AltCircuitPhone" label="AltCircuitPhone" max_length="40" name="u_altcircuitphone" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ATM_Address" label="ATM_Address" max_length="40" name="u_atm_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=ATM_Ckt_Id" label="ATM_Ckt_Id" max_length="40" name="u_atm_ckt_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cabinet_#" label="Cabinet_#" max_length="40" name="u_cabinet__" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Channel_#" label="Channel_#" max_length="40" name="u_channel__" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cir" label="Cir" max_length="40" name="u_cir" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=CircuitContact" label="CircuitContact" max_length="40" name="u_circuitcontact" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=CircuitPhone" label="CircuitPhone" max_length="40" name="u_circuitphone" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit_ID" label="Circuit_ID" max_length="40" name="u_circuit_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit_Ref" label="Circuit_Ref" max_length="40" name="u_circuit_ref" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ckt Type" label="Ckt Type" max_length="40" name="u_ckt_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Disconnect_Date" label="Disconnect_Date" max_length="40" name="u_disconnect_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Form5LocVpiVci" label="Form5LocVpiVci" max_length="40" name="u_form5locvpivci" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Form5RmtVpiVci" label="Form5RmtVpiVci" max_length="40" name="u_form5rmtvpivci" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=FractionOfCkt" label="FractionOfCkt" max_length="40" name="u_fractionofckt" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gap" label="Gap" max_length="40" name="u_gap" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Lata" label="Lata" max_length="40" name="u_lata" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Master Ckt ID" label="Master Ckt ID" max_length="93" name="u_master_ckt_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Master-Flex_Serve_ID" label="Master-Flex_Serve_ID" max_length="40" name="u_master_flex_serve_id" type="string"/>
-        <element attributes="import_attribute_name=MRC" label="MRC" max_length="15" name="u_mrc" type="decimal"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=MRC_Account" label="MRC_Account" max_length="40" name="u_mrc_account" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Non-StdBillingExpirationDate" label="Non-StdBillingExpirationDate" max_length="40" name="u_non_stdbillingexpirationdate" type="glide_date"/>
-        <element attributes="import_attribute_name=NRC" label="NRC" max_length="15" name="u_nrc" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AltCircuitPhone" label="AltCircuitPhone" max_length="40" name="u_altcircuitphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Master Ckt ID" label="Master Ckt ID" max_length="93" name="u_master_ckt_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Lata" label="Lata" max_length="40" name="u_lata" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=NRC_Account" label="NRC_Account" max_length="40" name="u_nrc_account" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Phone_Company" label="Phone_Company" max_length="40" name="u_phone_company" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=PortName" label="PortName" max_length="40" name="u_portname" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remarks" label="Remarks" max_length="1026" name="u_remarks" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remote_Flex_Serve_ID" label="Remote_Flex_Serve_ID" max_length="40" name="u_remote_flex_serve_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Scope" label="Scope" max_length="40" name="u_scope" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial" label="Serial" max_length="40" name="u_serial" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site ID" label="Site ID" max_length="40" name="u_site_id" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=SMDS_Group_Address" label="SMDS_Group_Address" max_length="40" name="u_smds_group_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SMDS_Indv_Address" label="SMDS_Indv_Address" max_length="40" name="u_smds_indv_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Speed" label="Speed" max_length="40" name="u_speed" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Start_Date" label="Start_Date" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site ID" label="Site ID" max_length="40" name="u_site_id" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=TelcoOrderNumber" label="TelcoOrderNumber" max_length="40" name="u_telcoordernumber" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=TelcoServicePriority" label="TelcoServicePriority" max_length="40" name="u_telcoservicepriority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cir" label="Cir" max_length="40" name="u_cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Form5RmtVpiVci" label="Form5RmtVpiVci" max_length="40" name="u_form5rmtvpivci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remarks" label="Remarks" max_length="1026" name="u_remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=FractionOfCkt" label="FractionOfCkt" max_length="40" name="u_fractionofckt" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Disconnect_Date" label="Disconnect_Date" max_length="40" name="u_disconnect_date" type="string"/>
+        <element attributes="import_attribute_name=NRC" label="NRC" max_length="15" name="u_nrc" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SMDS_Indv_Address" label="SMDS_Indv_Address" max_length="40" name="u_smds_indv_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cabinet_#" label="Cabinet_#" max_length="40" name="u_cabinet__" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Master-Flex_Serve_ID" label="Master-Flex_Serve_ID" max_length="40" name="u_master_flex_serve_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AltCircuitContact" label="AltCircuitContact" max_length="40" name="u_altcircuitcontact" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Gap" label="Gap" max_length="40" name="u_gap" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit_Ref" label="Circuit_Ref" max_length="40" name="u_circuit_ref" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=VPI/VCI" label="VPI/VCI" max_length="40" name="u_vpi_vci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Channel_#" label="Channel_#" max_length="40" name="u_channel__" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=TelcoOrderNumber" label="TelcoOrderNumber" max_length="40" name="u_telcoordernumber" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Phone_Company" label="Phone_Company" max_length="40" name="u_phone_company" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CircuitPhone" label="CircuitPhone" max_length="40" name="u_circuitphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ckt Type" label="Ckt Type" max_length="40" name="u_ckt_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remote_Flex_Serve_ID" label="Remote_Flex_Serve_ID" max_length="40" name="u_remote_flex_serve_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Start_Date" label="Start_Date" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CircuitContact" label="CircuitContact" max_length="40" name="u_circuitcontact" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Scope" label="Scope" max_length="40" name="u_scope" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Form5LocVpiVci" label="Form5LocVpiVci" max_length="40" name="u_form5locvpivci" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ATM_Address" label="ATM_Address" max_length="40" name="u_atm_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=MRC_Account" label="MRC_Account" max_length="40" name="u_mrc_account" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Speed" label="Speed" max_length="40" name="u_speed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial" label="Serial" max_length="40" name="u_serial" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=PortName" label="PortName" max_length="40" name="u_portname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=TelcoServicePriority" label="TelcoServicePriority" max_length="40" name="u_telcoservicepriority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ATM_Ckt_Id" label="ATM_Ckt_Id" max_length="40" name="u_atm_ckt_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Circuit_ID" label="Circuit_ID" max_length="40" name="u_circuit_id" type="string"/>
+        <element attributes="import_attribute_name=MRC" label="MRC" max_length="15" name="u_mrc" type="decimal"/>
     </element>
 </database>

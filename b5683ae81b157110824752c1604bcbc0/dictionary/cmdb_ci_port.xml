@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="2237f979db221300a27757c5ca9619a6" extends="cmdb_ci" label="Puerto" max_length="40" name="cmdb_ci_port" text_index="true" type="collection">
-        <element label="CE Circuit" max_length="32" name="x_g_sonc_ns_pro_ce_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="Client Id" max_length="100" name="x_g_sonc_ns_pro_client_id" type="string"/>
+        <element label="Remote Site Circuit VLAN" max_length="100" name="x_g_sonc_ns_pro_remote_site_circuit_vlan" type="string"/>
         <element choice="1" label="Host Ckt Type" max_length="40" name="x_g_sonc_ns_pro_host_ckt_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="QnQ" sequence="10" value="qnq"/>
                 <element inactive_on_update="false" label="non-QnQ" sequence="20" value="non_qnq"/>
+                <element inactive_on_update="false" label="QnQ" sequence="10" value="qnq"/>
             </choice>
         </element>
-        <element label="Interface Subnet Mask" max_length="40" name="x_g_sonc_ns_pro_interface_subnet_mask" type="ip_addr"/>
-        <element label="Master Device Interface" max_length="200" name="x_g_sonc_ns_pro_master_device_interface" type="string"/>
+        <element label="CE Circuit" max_length="32" name="x_g_sonc_ns_pro_ce_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_qual="install_statusNOT IN100,7^EQ" reference_qual_condition="install_statusNOT IN100,7^EQ" type="reference"/>
         <element label="Network Gear" max_length="32" name="x_g_sonc_ns_pro_network_gear" reference="cmdb_ci_netgear" type="reference"/>
-        <element label="PE Host Circuit ID" max_length="32" name="x_g_sonc_ns_pro_pop_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Master Device Interface" max_length="200" name="x_g_sonc_ns_pro_master_device_interface" type="string"/>
+        <element label="VRF" max_length="40" name="x_g_sonc_ns_pro_vrf" type="string"/>
+        <element label="Interface Subnet Mask" max_length="40" name="x_g_sonc_ns_pro_interface_subnet_mask" type="ip_addr"/>
         <element choice="1" label="Port Status" max_length="40" name="x_g_sonc_ns_pro_port_status" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Hold" sequence="10" value="hold"/>
+                <element inactive_on_update="false" label="Shutdown" sequence="40" value="shutdown"/>
                 <element inactive_on_update="false" label="Pending" sequence="20" value="pending"/>
                 <element inactive_on_update="false" label="Installed" sequence="30" value="installed"/>
-                <element inactive_on_update="false" label="Shutdown" sequence="40" value="shutdown"/>
+                <element inactive_on_update="false" label="Hold" sequence="10" value="hold"/>
             </choice>
         </element>
+        <element label="Client Id" max_length="100" name="x_g_sonc_ns_pro_client_id" type="string"/>
         <element choice="1" label="Port Type" max_length="40" name="x_g_sonc_ns_pro_port_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
                 <element inactive_on_update="false" label="ME PoP" sequence="20" value="me_pop"/>
                 <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
+                <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
             </choice>
         </element>
-        <element label="Remote Site Circuit VLAN" max_length="100" name="x_g_sonc_ns_pro_remote_site_circuit_vlan" type="string"/>
-        <element label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" reference_qual="install_statusNOT IN100,7^EQ" reference_qual_condition="install_statusNOT IN100,7^EQ" type="reference"/>
-        <element label="VRF" max_length="40" name="x_g_sonc_ns_pro_vrf" type="string"/>
+        <element label="PE Host Circuit ID" max_length="32" name="x_g_sonc_ns_pro_pop_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
     </element>
 </database>

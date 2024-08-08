@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.billing</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>billing</name>
+        <script><![CDATA[var billing = Class.create();
+billing.prototype = {
+initialize: function() {
+},
+
+getNetplusCodes: function() {
+
+	// gs.info('billing.getNetplusCodes executing);
+
+	var codes = []; // array of all codes
+	var codeGr = new GlideRecord('x_g_sonc_ns_pro_netplus_code');
+	codeGr.orderBy('description');
+	codeGr.query();
+	while (codeGr.next()) {				
+		var code = {};
+		code.sys_id = codeGr.getUniqueValue();
+		code.item_code = codeGr.getValue('item_code');
+		code.description = codeGr.getValue('description');
+		code.rate = codeGr.getValue('rate');
+		codes.push(code);				
+	}
+	return global.JSON.stringify(codes);
+
+},
+
+getNetplusCircuitCodes: function() {
+
+	// gs.info('billing.getNetplusCircuitCodes executing);
+
+	var codes = []; // array of all codes
+	var codeGr = new GlideRecord('x_g_sonc_ns_pro_netplus_circuit_code');
+	codeGr.orderBy('description');
+	codeGr.query();
+	while (codeGr.next()) {				
+		var code = {};
+		code.sys_id = codeGr.getUniqueValue();
+		code.item_code = codeGr.getValue('item_code');
+		code.description = codeGr.getValue('description');
+		code.rate = codeGr.getValue('amt');
+		codes.push(code);
+	}
+	return global.JSON.stringify(codes);
+
+},
+
+getCPEModelCodes: function() {
+
+	// gs.info('billing.getCPEModelCodes executing);
+
+	var codes = []; // array of all codes
+	var codeGr = new GlideRecord('x_g_sonc_ns_pro_cpe_model');
+	codeGr.addNotNullQuery('cpe_level');
+	codeGr.orderBy('cpe_level');
+	codeGr.query();
+	while (codeGr.next()) {				
+		var code = {};
+		code.sys_id = codeGr.getUniqueValue();
+		code.cpe_level = codeGr.getValue('cpe_level');
+		code.cpe_model_1 = codeGr.getValue('cpe_model_1');
+		code.cpe_model_2 = codeGr.getValue('cpe_model_2');
+		code.cpe_model_3 = codeGr.getValue('cpe_model_3');
+		code.cpe_model_4 = codeGr.getValue('cpe_model_4');
+		code.port_range_high = codeGr.getValue('cpe_port_range_high');
+		code.port_range_low = codeGr.getValue('cpe_port_range_low');
+		code.cost_per_month_cpe = codeGr.getValue('cost_per_month_cpe');
+		code.full_duplex = codeGr.getValue('full_duplex');
+		code.media = codeGr.getValue('media');
+		code.sla = codeGr.getValue('sla');
+		code.service_level = codeGr.getValue('service_level');
+		codes.push(code);				
+	}
+	return global.JSON.stringify(codes);
+
+},
+
+	getBilling: function(site_id) {
+
+	// gs.info('x_g_sonc_ns_pro.billing.getBilling searching for site ' + site_id);
+
+	var bills = []; // array of all billing history
+	var siteGr = new GlideRecord('cmdb_ci_site');
+
+	if (siteGr.get(site_id)) {
+		var billGr = new GlideRecord('x_g_sonc_ns_pro_billing_changes');
+		billGr.addQuery('site', site_id);
+		billGr.query();
+		while (billGr.next()) {				
+			var bill = {}; // service instance
+			bill.sys_id = billGr.getUniqueValue();
+			bill.billing_code = billGr.getValue('billing_code');
+			bill.billing_type = billGr.getDisplayValue('billing_type');
+			bill.effective_date = billGr.getDisplayValue('effective_date');
+			bill.agency = billGr.getDisplayValue('network_request');
+			bill.ap_count = billGr.getValue('network_task');
+			bill.site = billGr.getDisplayValue('site');
+			bills.push(bill);				
+		}
+	}
+	else {
+		gs.error('site not found');
+	}
+	return global.JSON.stringify(bills);
+
+},
+
+type: 'billing'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-07-29 14:53:51</sys_created_on>
+        <sys_id>a2b6ccc847b34a5040fd43ff336d4324</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>billing</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_a2b6ccc847b34a5040fd43ff336d4324</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-06 14:41:46</sys_updated_on>
+    </sys_script_include>
+</record_update>

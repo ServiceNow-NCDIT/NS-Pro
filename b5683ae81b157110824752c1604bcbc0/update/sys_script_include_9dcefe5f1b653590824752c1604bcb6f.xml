@@ -50,19 +50,27 @@ cmdb_ci_site_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor,
 
     },
 
+	getBilling: function() {
+
+        var site = new x_g_sonc_ns_pro.cmdb_ci_site();
+        var site_id = this.getParameter('sysparm_site_id');
+        return site.getBilling(site_id);
+
+    },
+
     type: 'cmdb_ci_site_ajax'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 14:09:55</sys_created_on>
         <sys_id>9dcefe5f1b653590824752c1604bcb6f</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>cmdb_ci_site_ajax</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_9dcefe5f1b653590824752c1604bcb6f</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-02-21 06:17:54</sys_updated_on>
+        <sys_updated_on>2024-07-25 16:24:54</sys_updated_on>
     </sys_script_include>
 </record_update>

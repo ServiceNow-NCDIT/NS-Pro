@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_sonc_ns_pro_service</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_sonc_ns_pro_service">netplus_type_serviceVALCHANGES^EQ<item endquery="false" field="netplus_type_service" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>Billing information updated</p>]]></message>
+        <name>Capture NetPlus Type Service</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var gr = new GlideRecord('x_g_sonc_ns_pro_billing_changes');
+	gr.addQuery('action', 'add');
+	gr.addQuery('billing_type', 'netplus_type_service');
+	gr.addQuery('state', 'new');
+	gr.setLimit(1);
+	gr.query();
+	if (gr.next()) {
+		// gs.warn('found record, need to update row');
+		gr.billing_type = 'netplus_type_service';
+		gr.billing_code = current.getDisplayValue('netplus_type_service');
+		// gr.network_request = current.getValue('telco_order');
+		gr.service = current.getUniqueValue();
+		gr.site = current.getValue('site');
+		gr.update();		
+	}
+	else {
+		// need to add row
+		// gs.warn('no existing record, need to add row');
+		gr.initialize();
+		gr.action = 'add';
+		gr.state = 'new';
+		gr.billing_type = 'netplus_type_service';
+		gr.billing_code = current.getDisplayValue('netplus_type_service');
+		// gr.network_request = current.getValue('telco_order');
+		gr.service = current.getUniqueValue();
+		gr.site = current.getValue('site');
+		gr.insert();
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-05-22 18:09:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>baa5ee02879a4210f9f20f280cbb3552</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Capture NetPlus Type Service</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_baa5ee02879a4210f9f20f280cbb3552</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-05-29 10:56:46</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=baa5ee02879a4210f9f20f280cbb3552"/>
+</record_update>

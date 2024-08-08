@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>9c601da287fd42d0f9f20f280cbb352c</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>b9c73885476aca5040fd43ff336d4319</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>type_request</element>
             <position>1</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>14601da287fd42d0f9f20f280cbb352d</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>f5c73885476aca5040fd43ff336d431a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>due_date</element>
             <position>2</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>94601da287fd42d0f9f20f280cbb352d</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>fdc73885476aca5040fd43ff336d431a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>site</element>
             <position>3</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>18601da287fd42d0f9f20f280cbb352d</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>f5c73885476aca5040fd43ff336d431b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>location</element>
             <position>4</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>98601da287fd42d0f9f20f280cbb352d</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>fdc73885476aca5040fd43ff336d431b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>assignment_group</element>
             <position>5</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>1c601da287fd42d0f9f20f280cbb352d</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>f5c73885476aca5040fd43ff336d431c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>assigned_to</element>
             <position>6</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>9c601da287fd42d0f9f20f280cbb352d</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>fdc73885476aca5040fd43ff336d431c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>.split</element>
             <position>7</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>10601da287fd42d0f9f20f280cbb352e</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>f5c73885476aca5040fd43ff336d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>state</element>
             <position>8</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>90601da287fd42d0f9f20f280cbb352e</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>fdc73885476aca5040fd43ff336d431d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>provisioning_state</element>
             <position>9</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>14601da287fd42d0f9f20f280cbb352e</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>f5c73885476aca5040fd43ff336d431e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>pri_sec_circuit</element>
             <position>10</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>94601da287fd42d0f9f20f280cbb352e</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>fdc73885476aca5040fd43ff336d431e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,139 +158,125 @@
             <element>telco_order</element>
             <position>11</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>18601da287fd42d0f9f20f280cbb352e</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>f5c73885476aca5040fd43ff336d431f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>quoted_cost</element>
-            <position>12</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>98601da287fd42d0f9f20f280cbb352e</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>service_code</element>
-            <position>13</position>
+            <position>12</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>1c601da287fd42d0f9f20f280cbb352e</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>fdc73885476aca5040fd43ff336d431f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>network_service_category</element>
-            <position>14</position>
+            <position>13</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>9c601da287fd42d0f9f20f280cbb352e</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>f5c73885476aca5040fd43ff336d4320</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>network_service_subcategory</element>
-            <position>15</position>
+            <position>14</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:33</sys_created_on>
-            <sys_id>10601da287fd42d0f9f20f280cbb352f</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>fdc73885476aca5040fd43ff336d4320</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:33</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>16</position>
+            <position>15</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:34</sys_created_on>
-            <sys_id>90601da287fd42d0f9f20f280cbb352f</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>75c73885476aca5040fd43ff336d433a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:34</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>17</position>
+            <position>16</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:34</sys_created_on>
-            <sys_id>14601da287fd42d0f9f20f280cbb352f</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>7dc73885476aca5040fd43ff336d433a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:34</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>18</position>
+            <position>17</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:34</sys_created_on>
-            <sys_id>94601da287fd42d0f9f20f280cbb352f</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>75c73885476aca5040fd43ff336d433b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:34</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>special_instructions</element>
-            <position>19</position>
+            <position>18</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:34</sys_created_on>
-            <sys_id>18601da287fd42d0f9f20f280cbb352f</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>7dc73885476aca5040fd43ff336d433b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:34</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>field_services_message</element>
-            <position>20</position>
+            <position>19</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-04-29 04:33:34</sys_created_on>
-            <sys_id>98601da287fd42d0f9f20f280cbb352f</sys_id>
+            <sys_created_on>2024-05-31 17:42:17</sys_created_on>
+            <sys_id>75c73885476aca5040fd43ff336d433c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8624422f47d1c21040fd43ff336d4359</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-29 04:33:34</sys_updated_on>
+            <sys_updated_on>2024-05-31 17:42:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -1,130 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="e2b42525db19791040eae46b13961947" label="Network Request" max_length="40" name="x_g_sonc_ns_pro_telco_order" text_index="true" type="collection">
-        <element label="Acct Billing Code" max_length="40" name="acct_billing_code" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Assigned PE" max_length="40" name="assigned_pe" type="string"/>
+        <element label="LAN Service" max_length="32" name="lan_service_assignment" reference="x_g_sonc_ns_pro_service_definition" reference_qual="svc_titleLIKELAN^EQ" reference_qual_condition="svc_titleLIKELAN^EQ" type="reference"/>
+        <element label="Dest Location" max_length="32" name="dest_location" read_only="true" reference="cmn_location" type="reference"/>
+        <element label="Circuit" max_length="32" name="circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Requested Circuit Location" max_length="200" name="demarc_location" type="string"/>
+        <element label="WLAN Service" max_length="32" name="wlan_service_assignment" reference="x_g_sonc_ns_pro_service_definition" reference_qual="svc_titleLIKEWLAN^EQ" reference_qual_condition="svc_titleLIKEWLAN^EQ" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Total Cost" max_length="20" name="total_cost" type="currency"/>
         <element label="Assigned PE Port" max_length="32" name="assigned_pe_port" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="Assigned PoP" max_length="32" name="assigned_pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
-        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dependent_field="true"/>
-        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
-        <element label="Budget Authority" max_length="32" name="budget_authority" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
-        <element choice="1" label="Change Type" max_length="40" name="change_type" type="choice">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="New or Existing Site" max_length="40" name="new_or_existing_site" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Add New Service" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="Remove Service" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="WAN Service Change" sequence="30" value="3"/>
-                <element inactive_on_update="false" label="WAN Routing Change (IP, Subnet, VRF)" sequence="40" value="4"/>
-                <element inactive_on_update="false" label="Other Special Request" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Existing" sequence="20" value="existing"/>
+                <element inactive_on_update="false" label="New" sequence="10" value="new"/>
             </choice>
         </element>
-        <element label="Circuit" max_length="32" name="circuit" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="Circuit Due Date" max_length="40" name="circuit_due_date" type="glide_date"/>
-        <element label="Construction Cost" max_length="20" name="construction_cost" type="currency"/>
-        <element label="Requested Circuit Location" max_length="200" name="demarc_location" type="string"/>
-        <element label="Dest City" max_length="100" name="dest_city" read_only="true" type="string"/>
-        <element label="Dest County" max_length="40" name="dest_county" read_only="true" type="string"/>
-        <element label="Dest Location" max_length="32" name="dest_location" read_only="true" reference="cmn_location" type="reference"/>
-        <element label="Dest Site" max_length="32" name="dest_site" read_only="true" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
-        <element attributes="encode_utf8=false" label="Dest Site Alternate POC" max_length="32" name="dest_site_alternate_poc" reference="sys_user" type="reference"/>
-        <element attributes="encode_utf8=false" label="Dest Site Primary POC" max_length="32" name="dest_site_primary_poc" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Dest State" max_length="40" name="dest_state" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Dest Street Address" max_length="100" name="dest_street" read_only="true" type="string"/>
-        <element label="Dest Zip" max_length="20" name="dest_zip" read_only="true" type="string"/>
-        <element label="Detailed CPE Needs" max_length="1000" name="detailed_cpe_needs" type="string"/>
-        <element label="Requested Due Date" max_length="40" name="due_date" type="glide_date"/>
-        <element label="Justification" max_length="1000" name="justification" type="string"/>
-        <element label="LAN CPE Basic 24 Required" max_length="40" name="lan_cpe_basic_24_required" type="integer"/>
-        <element label="LAN CPE Basic 48 Required" max_length="40" name="lan_cpe_basic_48_required" type="integer"/>
-        <element label="LAN CPE Premium 24 Required" max_length="40" name="lan_cpe_premium_24_required" type="integer"/>
-        <element label="LAN CPE Premium 48 Required" max_length="40" name="lan_cpe_premium_48_required" type="integer"/>
-        <element label="LAN CPE Premium 8 Required" max_length="40" name="lan_cpe_premium_8_required" type="integer"/>
-        <element label="LAN Service Assignment" max_length="32" name="lan_service_assignment" reference="x_g_sonc_ns_pro_service_definition" reference_qual="svc_titleLIKELAN^EQ" reference_qual_condition="svc_titleLIKELAN^EQ" type="reference"/>
-        <element label="LAN Svc Code" max_length="40" name="lan_svc_code" type="string"/>
-        <element label="Location" max_length="32" name="location" read_only="true" reference="cmn_location" type="reference"/>
-        <element label="Monthly Cost" max_length="20" name="monthly_cost" type="currency"/>
+        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="'location='+current.location" reference_qual_condition="'location='+current.location" type="reference"/>
+        <element label="Request Managed VOIP" max_length="40" name="request_managed_voip" type="boolean"/>
         <element choice="1" label="Move Type" max_length="40" name="move_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Swing CPE to new circuit" sequence="10" value="swing_cpe"/>
                 <element inactive_on_update="false" label="New CPE, new circuit" sequence="20" value="new_cpe"/>
+                <element inactive_on_update="false" label="Swing CPE to new circuit" sequence="10" value="swing_cpe"/>
             </choice>
         </element>
+        <element label="Quoted Service Definition" max_length="32" name="quoted_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
+        <element label="WLAN Svc Code" max_length="40" name="wlan_svc_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested Service Codes" max_length="200" name="req_svc_code" type="string"/>
+        <element label="Request Circuit Redundancy (HA - GoldService)" max_length="40" name="request_ha" type="boolean"/>
+        <element label="Requested VRF" max_length="40" name="requested_vrf" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site Name" max_length="100" name="site_name" read_only="true" type="string"/>
+        <element label="Detailed CPE Needs" max_length="1000" name="detailed_cpe_needs" type="string"/>
+        <element label="LAN CPE Premium 8 Required" max_length="40" name="lan_cpe_premium_8_required" type="integer"/>
+        <element label="Dest Site" max_length="32" name="dest_site" read_only="true" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
         <element display="true" label="Name" mandatory="true" max_length="80" name="name" type="string"/>
-        <element label="Network Service Category" max_length="32" name="network_service_category" reference="x_g_sonc_ns_pro_network_service_category" type="choice">
+        <element label="Dest County" max_length="40" name="dest_county" read_only="true" type="string"/>
+        <element label="Requested Speed" max_length="40" name="requested_speed" type="integer"/>
+        <element label="Acct Billing Code" max_length="40" name="acct_billing_code" type="string"/>
+        <element label="Assigned PoP" max_length="32" name="assigned_pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="Request Managed WLAN" max_length="40" name="request_managed_wlan" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Dest Site Alternate POC" max_length="32" name="dest_site_alternate_poc" reference="sys_user" type="reference"/>
+        <element label="Construction Cost" max_length="20" name="construction_cost" type="currency"/>
+        <element label="LAN Svc Code" max_length="40" name="lan_svc_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Dest State" max_length="40" name="dest_state" read_only="true" type="string"/>
+        <element label="WAN Service" max_length="32" name="network_service_category" reference="x_g_sonc_ns_pro_network_service_category" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Enterprise WAN (Guaranteed)" sequence="0" value="guaranteed"/>
                 <element inactive_on_update="false" label="SD-WAN (Best Effort)" sequence="1" value="best_effort"/>
             </choice>
         </element>
-        <element choice="1" label="Network Service Subcategory" max_length="40" name="network_service_subcategory" type="choice">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NetPlus CAC" max_length="32" name="netplus_cac" reference="x_g_sonc_ns_pro_netplus_circuit_code" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Assigned PE" max_length="40" name="assigned_pe" type="string"/>
+        <element label="Circuit Due Date" max_length="40" name="circuit_due_date" type="glide_date"/>
+        <element label="Service Code" max_length="40" name="service_code" type="string"/>
+        <element label="LAN CPE Premium 24 Required" max_length="40" name="lan_cpe_premium_24_required" type="integer"/>
+        <element choice="1" label="WAN Circuit Type Jack" max_length="40" name="wan_circuit_type_jack" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Ethernet" sequence="10" value="ethernet"/>
+                <element inactive_on_update="false" label="DIT Fiber" sequence="200" value="DIT Fiber"/>
+                <element inactive_on_update="false" label="LTE 4G" sequence="400" value="LTE4G"/>
+                <element inactive_on_update="false" label="Ethernet" sequence="100" value="Eth"/>
+                <element inactive_on_update="false" label="Broadband" sequence="300" value="Broadband"/>
+            </choice>
+        </element>
+        <element label="LAN CPE Premium 48 Required" max_length="40" name="lan_cpe_premium_48_required" type="integer"/>
+        <element label="Relocate Site" max_length="32" name="relocate_site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dependent_field="true"/>
+        <element label="Request Date" max_length="40" name="request_date" type="glide_date"/>
+        <element label="Monthly Cost" max_length="20" name="monthly_cost" type="currency"/>
+        <element label="Point of Presence" max_length="32" name="point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Dest Street Address" max_length="100" name="dest_street" read_only="true" type="string"/>
+        <element label="Justification" max_length="1000" name="justification" type="string"/>
+        <element label="Requestor" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Budget Authority" max_length="32" name="budget_authority" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element choice="1" label="WAN Service Circuit Type" max_length="40" name="network_service_subcategory" type="choice">
+            <choice>
                 <element inactive_on_update="false" label="Cable" sequence="20" value="cable"/>
+                <element inactive_on_update="false" label="Ethernet" sequence="10" value="ethernet"/>
                 <element inactive_on_update="false" label="LTE" sequence="30" value="lte"/>
             </choice>
         </element>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="New or Existing Site" max_length="40" name="new_or_existing_site" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="New" sequence="10" value="new"/>
-                <element inactive_on_update="false" label="Existing" sequence="20" value="existing"/>
-            </choice>
-        </element>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element label="Other Cost" max_length="20" name="other_cost" type="currency"/>
-        <element label="Point of Presence" max_length="32" name="point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
         <element choice="1" label="Provisioning State" max_length="40" name="provisioning_state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Pending" sequence="10" value="1"/>
                 <element inactive_on_update="false" label="In Work" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Closed Complete" sequence="30" value="3"/>
                 <element inactive_on_update="false" label="Closed Skipped/Canceled" sequence="50" value="4"/>
+                <element inactive_on_update="false" label="Pending" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Closed Complete" sequence="30" value="3"/>
             </choice>
         </element>
-        <element default="0.00" label="Quoted Cost" max_length="20" name="quoted_cost" type="currency"/>
-        <element label="Quoted Service Definition" max_length="32" name="quoted_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Quoted Service Code" max_length="40" name="quoted_svc_code" type="string"/>
-        <element label="Ready Date" max_length="40" name="ready_date" type="glide_date"/>
-        <element label="Relocate Location" max_length="32" name="relocate_location" read_only="true" reference="cmn_location" type="reference"/>
-        <element label="Relocate Site" max_length="32" name="relocate_site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
-        <element label="Requestor" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
-        <element label="Requested Speed" max_length="40" name="requested_speed" type="integer"/>
-        <element label="Requested VRF" max_length="40" name="requested_vrf" type="string"/>
-        <element label="Request Date" max_length="40" name="request_date" type="glide_date"/>
-        <element label="Request Circuit Redundancy (HA - GoldService)" max_length="40" name="request_ha" type="boolean"/>
-        <element label="Request Managed LAN" max_length="40" name="request_managed_lan" type="boolean"/>
-        <element label="Request Managed VOIP" max_length="40" name="request_managed_voip" type="boolean"/>
-        <element default="true" label="Request Managed WAN" max_length="40" name="request_managed_wan" type="boolean"/>
-        <element label="Request Managed WLAN" max_length="40" name="request_managed_wlan" type="boolean"/>
-        <element label="Request Type" max_length="32" name="request_type" read_only="true" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Request Comments" max_length="1000" name="req_comments" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Requested Service Codes" max_length="200" name="req_svc_code" type="string"/>
-        <element label="Service Code" max_length="40" name="service_code" type="string"/>
         <element label="Assigned WAN Service" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" reference_qual="svc_titleLIKEWAN^ORsvc_titleLIKEHybrid^EQ" reference_qual_condition="svc_titleLIKEWAN^ORsvc_titleLIKEHybrid^EQ" type="reference"/>
-        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="'location='+current.location" reference_qual_condition="'location='+current.location" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site Name" max_length="100" name="site_name" read_only="true" type="string"/>
-        <element label="Special Instructions" max_length="2000" name="special_instructions" type="string"/>
+        <element label="Dest City" max_length="100" name="dest_city" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Quoted Service Code" max_length="40" name="quoted_svc_code" type="string"/>
+        <element default="true" label="Request Managed WAN" max_length="40" name="request_managed_wan" type="boolean"/>
+        <element choice="1" label="Change Type" max_length="40" name="change_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Remove Service" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Other Special Request" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="Add New Service" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="WAN Service Change" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="WAN Routing Change (IP, Subnet, VRF)" sequence="40" value="4"/>
+            </choice>
+        </element>
+        <element label="Ready Date" max_length="40" name="ready_date" type="glide_date"/>
+        <element label="WAN CPE Ports" max_length="200" name="wan_cpe_ports" type="string"/>
+        <element label="Other Cost" max_length="20" name="other_cost" type="currency"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Terminate Service" max_length="200" name="terminate_service" type="string"/>
-        <element label="Total Cost" max_length="20" name="total_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Request Comments" max_length="1000" name="req_comments" type="string"/>
+        <element label="Request Managed LAN" max_length="40" name="request_managed_lan" type="boolean"/>
+        <element label="Location" max_length="32" name="location" read_only="true" reference="cmn_location" type="reference"/>
+        <element label="Requested Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element default="0.00" label="Quoted Cost" max_length="20" name="quoted_cost" type="currency"/>
+        <element label="Request Type" max_length="32" name="request_type" read_only="true" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
+        <element label="LAN CPE Basic 24 Required" max_length="40" name="lan_cpe_basic_24_required" type="integer"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Type Request" max_length="40" name="type_request" type="choice">
             <choice>
                 <element inactive_on_update="false" label="New Service" sequence="10" value="new"/>
-                <element inactive_on_update="false" label="Change Service" sequence="20" value="change"/>
-                <element inactive_on_update="false" label="Relocate Site" sequence="30" value="relocate"/>
                 <element inactive_on_update="false" label="Terminate Site" sequence="40" value="terminate_site"/>
                 <element inactive_on_update="false" label="Terminate Service" sequence="50" value="terminate_service"/>
+                <element inactive_on_update="false" label="Change Service" sequence="20" value="change"/>
+                <element inactive_on_update="false" label="Relocate Site" sequence="30" value="relocate"/>
             </choice>
         </element>
-        <element choice="1" label="WAN Circuit Type Jack" max_length="40" name="wan_circuit_type_jack" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Ethernet" sequence="100" value="Eth"/>
-                <element inactive_on_update="false" label="DIT Fiber" sequence="200" value="DIT Fiber"/>
-                <element inactive_on_update="false" label="Broadband" sequence="300" value="Broadband"/>
-                <element inactive_on_update="false" label="LTE 4G" sequence="400" value="LTE4G"/>
-            </choice>
-        </element>
-        <element label="WAN CPE Ports" max_length="200" name="wan_cpe_ports" type="string"/>
         <element label="WAN CPE Ports Required" max_length="40" name="wan_cpe_ports_required" type="integer"/>
+        <element attributes="encode_utf8=false" label="Dest Site Primary POC" max_length="32" name="dest_site_primary_poc" reference="sys_user" type="reference"/>
+        <element label="LAN CPE Basic 48 Required" max_length="40" name="lan_cpe_basic_48_required" type="integer"/>
+        <element label="Relocate Location" max_length="32" name="relocate_location" read_only="true" reference="cmn_location" type="reference"/>
+        <element label="Special Instructions" max_length="2000" name="special_instructions" type="string"/>
         <element label="WLAN Access Point Required" max_length="40" name="wlan_access_point_required" type="integer"/>
-        <element label="WLAN Service Assignment" max_length="32" name="wlan_service_assignment" reference="x_g_sonc_ns_pro_service_definition" reference_qual="svc_titleLIKEWLAN^EQ" reference_qual_condition="svc_titleLIKEWLAN^EQ" type="reference"/>
-        <element label="WLAN Svc Code" max_length="40" name="wlan_svc_code" type="string"/>
+        <element label="Dest Zip" max_length="20" name="dest_zip" read_only="true" type="string"/>
         <index name="index">
             <element name="assigned_pe_port"/>
         </index>
@@ -162,36 +163,39 @@
             <element name="location"/>
         </index>
         <index name="index13">
-            <element name="network_service_category"/>
+            <element name="netplus_cac"/>
         </index>
         <index name="index14">
-            <element name="point_of_presence"/>
+            <element name="network_service_category"/>
         </index>
         <index name="index15">
-            <element name="quoted_service_definition"/>
+            <element name="point_of_presence"/>
         </index>
         <index name="index16">
-            <element name="relocate_location"/>
+            <element name="quoted_service_definition"/>
         </index>
         <index name="index17">
-            <element name="relocate_site"/>
+            <element name="relocate_location"/>
         </index>
         <index name="index18">
-            <element name="request_type"/>
+            <element name="relocate_site"/>
         </index>
         <index name="index19">
-            <element name="requested_for"/>
+            <element name="request_type"/>
         </index>
         <index name="index20">
-            <element name="requested_vrf"/>
+            <element name="requested_for"/>
         </index>
         <index name="index21">
-            <element name="service_definition"/>
+            <element name="requested_vrf"/>
         </index>
         <index name="index22">
-            <element name="site"/>
+            <element name="service_definition"/>
         </index>
         <index name="index23">
+            <element name="site"/>
+        </index>
+        <index name="index24">
             <element name="wlan_service_assignment"/>
         </index>
     </element>

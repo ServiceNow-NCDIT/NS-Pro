@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="d117f139db221300a27757c5ca961968" extends="cmdb_ci_hardware" label="Equipo de red" max_length="40" name="cmdb_ci_netgear" text_index="true" type="collection">
-        <element label="CE Circuit" max_length="32" name="x_g_sonc_ns_pro_ce_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="Internal Serial Number" max_length="40" name="x_g_sonc_ns_pro_internal_serial_number" type="string"/>
         <element choice="1" label="Maintenance Type" max_length="40" name="x_g_sonc_ns_pro_maintenance_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="NSAS" sequence="10" value="nsas"/>
-                <element inactive_on_update="false" label="NSSP" sequence="20" value="nssp"/>
-                <element inactive_on_update="false" label="NSST" sequence="30" value="nsst"/>
                 <element inactive_on_update="false" label="NSSW" sequence="40" value="nssw"/>
+                <element inactive_on_update="false" label="NSAS" sequence="10" value="nsas"/>
+                <element inactive_on_update="false" label="NSST" sequence="30" value="nsst"/>
+                <element inactive_on_update="false" label="NSSP" sequence="20" value="nssp"/>
             </choice>
         </element>
+        <element label="CE Circuit" max_length="32" name="x_g_sonc_ns_pro_ce_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Internal Serial Number" max_length="40" name="x_g_sonc_ns_pro_internal_serial_number" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Brand" max_length="100" name="x_g_sonc_ns_pro_brand" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Warranty" max_length="40" name="x_g_sonc_ns_pro_warranty" type="choice">
+            <choice/>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Sent to Surplus" max_length="40" name="x_g_sonc_ns_pro_sent_to_surplus" type="glide_date"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Surplus Date" max_length="40" name="x_g_sonc_ns_pro_surplus_date" type="glide_date"/>
     </element>
 </database>

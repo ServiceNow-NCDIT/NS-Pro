@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="3b5d1ee68786ca50f9f20f280cbb3509" extends="sys_import_set_row" label="NSWAN Service Data Mapping" max_length="40" name="x_g_sonc_ns_pro_ihub_import_e90412228746ca50f9f20f280cbb3535" type="collection">
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=AllowDupSw" label="AllowDupSw" max_length="40" name="u_allowdupsw" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name= Alt. Contacts Email Address" label=" Alt. Contacts Email Address" max_length="40" name="u_alt__contacts_email_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alt. Contacts Name" label="Alt. Contacts Name" max_length="40" name="u_alt__contacts_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alt. Contacts Pager" label="Alt. Contacts Pager" max_length="40" name="u_alt__contacts_pager" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alt. Contacts Phone" label="Alt. Contacts Phone" max_length="40" name="u_alt__contacts_phone" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Analyst Assigned" label="Analyst Assigned" max_length="40" name="u_analyst_assigned" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=City" label="City" max_length="40" name="u_city" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Community NW Seg." label="Community NW Seg." max_length="40" name="u_community_nw_seg_" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contacts Email Address" label="Contacts Email Address" max_length="40" name="u_contacts_email_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contacts Pager" label="Contacts Pager" max_length="40" name="u_contacts_pager" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contacts Phone" label="Contacts Phone" max_length="40" name="u_contacts_phone" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contact  Name" label="Contact  Name" max_length="40" name="u_contact__name" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=County" label="County" max_length="40" name="u_county" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Dept. Code" label="Dept. Code" max_length="40" name="u_dept__code" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=EduCentral" label="EduCentral" max_length="40" name="u_educentral" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Field Service Analyst" label="Field Service Analyst" max_length="40" name="u_field_service_analyst" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Floor/Suite" label="Floor/Suite" max_length="60" name="u_floor_suite" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=FwCentral" label="FwCentral" max_length="40" name="u_fwcentral" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=LastUpgradeDate" label="LastUpgradeDate" max_length="40" name="u_lastupgradedate" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Latitude" label="Latitude" max_length="40" name="u_latitude" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=LatLongSource" label="LatLongSource" max_length="40" name="u_latlongsource" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Longitude" label="Longitude" max_length="40" name="u_longitude" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=OfficeHours" label="OfficeHours" max_length="40" name="u_officehours" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Order" label="Order" max_length="40" name="u_order" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Project" label="Project" max_length="40" name="u_project" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remarks" label="Remarks" max_length="9343" name="u_remarks" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Requested Date" label="Requested Date" max_length="40" name="u_requested_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Requested Service Date" label="Requested Service Date" max_length="40" name="u_requested_service_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=RjzfSiteId" label="RjzfSiteId" max_length="40" name="u_rjzfsiteid" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Scope" label="Scope" max_length="40" name="u_scope" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityAdmnEmail" label="SecurityAdmnEmail" max_length="40" name="u_securityadmnemail" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityAdmnName" label="SecurityAdmnName" max_length="40" name="u_securityadmnname" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityAdmnPhone" label="SecurityAdmnPhone" max_length="40" name="u_securityadmnphone" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityLastUpgradeDate" label="SecurityLastUpgradeDate" max_length="40" name="u_securitylastupgradedate" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityStartDate" label="SecurityStartDate" max_length="40" name="u_securitystartdate" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serv_Type" label="Serv_Type" max_length="40" name="u_serv_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=SiteType" label="SiteType" max_length="40" name="u_sitetype" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site ID" label="Site ID" max_length="40" name="u_site_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Start_Date" label="Start_Date" max_length="40" name="u_start_date" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Street_Address" label="Street_Address" max_length="40" name="u_street_address" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=System/District" label="System/District" max_length="40" name="u_system_district" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=VantiveName" label="VantiveName" max_length="40" name="u_vantivename" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=VantiveSite" label="VantiveSite" max_length="40" name="u_vantivesite" type="string"/>
-        <element attributes="edge_encryption_enabled=true,import_attribute_name=Video Site ID" label="Video Site ID" max_length="40" name="u_video_site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LastUpgradeDate" label="LastUpgradeDate" max_length="40" name="u_lastupgradedate" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contacts Pager" label="Contacts Pager" max_length="40" name="u_contacts_pager" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Latitude" label="Latitude" max_length="40" name="u_latitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site ID" label="Site ID" max_length="40" name="u_site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Floor/Suite" label="Floor/Suite" max_length="60" name="u_floor_suite" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Field Service Analyst" label="Field Service Analyst" max_length="40" name="u_field_service_analyst" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Scope" label="Scope" max_length="40" name="u_scope" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serv_Type" label="Serv_Type" max_length="40" name="u_serv_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Remarks" label="Remarks" max_length="9343" name="u_remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Dept. Code" label="Dept. Code" max_length="40" name="u_dept__code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Community NW Seg." label="Community NW Seg." max_length="40" name="u_community_nw_seg_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Requested Service Date" label="Requested Service Date" max_length="40" name="u_requested_service_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=FwCentral" label="FwCentral" max_length="40" name="u_fwcentral" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Analyst Assigned" label="Analyst Assigned" max_length="40" name="u_analyst_assigned" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alt. Contacts Pager" label="Alt. Contacts Pager" max_length="40" name="u_alt__contacts_pager" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name= Alt. Contacts Email Address" label=" Alt. Contacts Email Address" max_length="40" name="u_alt__contacts_email_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=EduCentral" label="EduCentral" max_length="40" name="u_educentral" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contacts Email Address" label="Contacts Email Address" max_length="40" name="u_contacts_email_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityAdmnPhone" label="SecurityAdmnPhone" max_length="40" name="u_securityadmnphone" type="string"/>
         <element attributes="edge_encryption_enabled=true,import_attribute_name=Zip" label="Zip" max_length="40" name="u_zip" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AllowDupSw" label="AllowDupSw" max_length="40" name="u_allowdupsw" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityStartDate" label="SecurityStartDate" max_length="40" name="u_securitystartdate" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Start_Date" label="Start_Date" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contacts Phone" label="Contacts Phone" max_length="40" name="u_contacts_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Project" label="Project" max_length="40" name="u_project" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=LatLongSource" label="LatLongSource" max_length="40" name="u_latlongsource" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=VantiveName" label="VantiveName" max_length="40" name="u_vantivename" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=OfficeHours" label="OfficeHours" max_length="40" name="u_officehours" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SiteType" label="SiteType" max_length="40" name="u_sitetype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=RjzfSiteId" label="RjzfSiteId" max_length="40" name="u_rjzfsiteid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Longitude" label="Longitude" max_length="40" name="u_longitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityLastUpgradeDate" label="SecurityLastUpgradeDate" max_length="40" name="u_securitylastupgradedate" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=County" label="County" max_length="40" name="u_county" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alt. Contacts Name" label="Alt. Contacts Name" max_length="40" name="u_alt__contacts_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Order" label="Order" max_length="40" name="u_order" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=City" label="City" max_length="40" name="u_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=SecurityAdmnName" label="SecurityAdmnName" max_length="40" name="u_securityadmnname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Video Site ID" label="Video Site ID" max_length="40" name="u_video_site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=VantiveSite" label="VantiveSite" max_length="40" name="u_vantivesite" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contact  Name" label="Contact  Name" max_length="40" name="u_contact__name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Requested Date" label="Requested Date" max_length="40" name="u_requested_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Alt. Contacts Phone" label="Alt. Contacts Phone" max_length="40" name="u_alt__contacts_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Street_Address" label="Street_Address" max_length="40" name="u_street_address" type="string"/>
     </element>
 </database>

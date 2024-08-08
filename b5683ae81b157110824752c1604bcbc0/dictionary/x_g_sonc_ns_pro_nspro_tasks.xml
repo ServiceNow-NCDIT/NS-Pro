@@ -1,161 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="0a5d8bc2db1dbd1040eae46b139619f0" extends="task" label="NSPro Tasks" max_length="40" name="x_g_sonc_ns_pro_nspro_tasks" text_index="true" type="collection">
-        <element label="Assigned PE" max_length="40" name="assigned_pe" reference_qual="install_status!=1^EQ" reference_qual_condition="install_status!=1^EQ" type="string"/>
-        <element label="Assigned PE Port" max_length="40" name="assigned_pe_port" type="string"/>
-        <element label="Assigned PoP" max_length="32" name="assigned_pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
-        <element label="Assigned WAN Service" max_length="32" name="assigned_wan_service" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
-        <element label="Assigned WAN Service Code" max_length="40" name="assigned_wan_service_code" type="string"/>
-        <element choice="1" label="Change Type" max_length="40" name="change_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Add Service" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="Remove Service" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="WAN Service Change" sequence="30" value="3"/>
-                <element inactive_on_update="false" label="WAN Routing Change (IP, Subnet, VRF)" sequence="40" value="4"/>
-                <element inactive_on_update="false" label="Other" sequence="50" value="5"/>
-            </choice>
-        </element>
-        <element label="Circuit" max_length="32" name="circuit" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="Circuit Construction Cost" max_length="20" name="circuit_construction_cost" type="currency"/>
-        <element label="Circuit Due Date" max_length="40" name="circuit_due_date" type="glide_date"/>
-        <element label="Circuit Est Completion" max_length="40" name="circuit_est_completion" type="glide_date"/>
-        <element choice="1" label="Circuit Order Request Type" max_length="32" name="circuit_order_request_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Add" sequence="10" value="add"/>
-                <element inactive_on_update="false" label="Change" sequence="15" value="change"/>
-                <element inactive_on_update="false" label="Terminate" sequence="20" value="terminate"/>
-            </choice>
-        </element>
-        <element label="Circuit Order Sent Date" max_length="40" name="circuit_order_sent_date" type="glide_date"/>
-        <element label="Circuit Ready Date" max_length="40" name="circuit_ready_date" type="glide_date"/>
-        <element label="Circuit Special Instructions" max_length="2000" name="circuit_special_instructions" type="string"/>
-        <element label="Circuit Speed Egress" max_length="40" name="circuit_speed_egress" type="string"/>
-        <element label="Circuit Speed Ingress" max_length="40" name="circuit_speed_ingress" type="string"/>
         <element label="Circuit Total Cost" max_length="20" name="circuit_total_cost" type="currency"/>
-        <element label="CIR Egress Speed" max_length="40" name="cir_egress_speed" type="decimal"/>
-        <element label="CIR Egress Speed 2" max_length="40" name="cir_egress_speed_2" type="decimal"/>
-        <element label="CIR Ingress Speed" max_length="40" name="cir_ingress_speed" type="decimal"/>
-        <element label="Cir Ingress Speed 2" max_length="20" name="cir_ingress_speed_2" type="decimal"/>
-        <element label="CPE Models Required" max_length="500" name="cpe_models_required" type="string"/>
-        <element label="Current Location" max_length="32" name="current_location" reference="cmn_location" type="reference"/>
-        <element label="Requested Circuit Location" max_length="200" name="demarc_location" type="string"/>
-        <element label="Detailed CPE Needs" max_length="1000" name="detailed_cpe_needs" read_only="true" type="string"/>
-        <element label="Field Services Message" max_length="1000" name="field_services_message" type="string"/>
-        <element label="LAN CPE Basic 24 Count" max_length="40" name="lan_cpe_basic_24_count" type="integer"/>
-        <element label="LAN CPE Basic 48 Count" max_length="40" name="lan_cpe_basic_48_count" type="integer"/>
-        <element label="LAN CPE Premium 24 Count" max_length="40" name="lan_cpe_premium_24_count" type="integer"/>
-        <element label="LAN CPE Premium 48 Count" max_length="40" name="lan_cpe_premium_48_count" type="integer"/>
-        <element label="LAN CPE Premium 8 Count" max_length="40" name="lan_cpe_premium_8_count" type="integer"/>
-        <element choice="1" label="Move Type" max_length="40" name="move_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Swing CPE to New Service" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="New CPE, New Service" sequence="20" value="2"/>
-            </choice>
-        </element>
-        <element choice="1" label="Network Service Category" max_length="40" name="network_service_category" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Enterprise WAN (Guaranteed)" sequence="10" value="guaranteed"/>
-                <element inactive_on_update="false" label="SD-WAN (Best Effort)" sequence="20" value="best_effort"/>
-            </choice>
-        </element>
-        <element choice="1" label="Network Service Subcategory" max_length="40" name="network_service_subcategory" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Ethernet" sequence="10" value="ethernet"/>
-                <element inactive_on_update="false" label="Cable" sequence="20" value="cable"/>
-                <element inactive_on_update="false" label="LTE" sequence="30" value="lte"/>
-            </choice>
-        </element>
-        <element label="New Location" max_length="32" name="new_location" reference="cmn_location" type="reference"/>
-        <element active="false" choice="1" label="Activity Type" max_length="40" name="nsp_activity_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="New site CPE allocation" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="New site CPE install" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Equipment replacement" sequence="30" value="3"/>
-                <element inactive_on_update="false" label="Equipment retrieval" sequence="40" value="4"/>
-            </choice>
-        </element>
-        <element default="install_status=6^substatus=available" label="NSP Asset Search" max_length="254" name="nsp_asset_search" type="string"/>
-        <element label="Planned Activity Date" max_length="40" name="planned_activity_date" type="glide_date"/>
-        <element label="PoP" max_length="32" name="pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="Required WAN Models" max_length="254" name="required_wan_models" type="string"/>
         <element choice="1" default="pri" label="Pri/Sec Circuit" max_length="40" name="pri_sec_circuit" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Primary" sequence="10" value="pri"/>
                 <element inactive_on_update="false" label="Secondary" sequence="20" value="sec"/>
+                <element inactive_on_update="false" label="Primary" sequence="10" value="pri"/>
             </choice>
         </element>
+        <element label="Planned Activity Date" max_length="40" name="planned_activity_date" type="glide_date"/>
+        <element label="Circuit Due Date" max_length="40" name="circuit_due_date" type="glide_date"/>
+        <element label="WLAN AP Required" max_length="40" name="wlan_ap_required" type="integer"/>
+        <element label="Assigned PoP" max_length="32" name="assigned_pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element choice="1" label="WAN Circuit Type Jack" max_length="40" name="wan_circuit_type_jack" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DIT Fiber" sequence="200" value="DIT Fiber"/>
+                <element inactive_on_update="false" label="LTE4G" sequence="400" value="LTE4G"/>
+                <element inactive_on_update="false" label="Ethernet" sequence="100" value="Eth"/>
+                <element inactive_on_update="false" label="Broadband" sequence="300" value="Broadband"/>
+            </choice>
+        </element>
+        <element label="Telco Response Message" max_length="4000" name="telco_response_message" type="string"/>
+        <element label="Circuit" max_length="32" name="circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Selected Assets" max_length="4000" name="selected_assets" reference="alm_asset" type="glide_list"/>
+        <element label="LAN CPE Premium 48 Count" max_length="40" name="lan_cpe_premium_48_count" type="integer"/>
+        <element label="Circuit Est Completion" max_length="40" name="circuit_est_completion" type="glide_date"/>
         <element choice="1" default="1" label="Provisioning State" max_length="32" name="provisioning_state" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Pending" sequence="10" value="1"/>
-                <element inactive_on_update="false" label="PE Port Assigned" sequence="20" value="2"/>
-                <element inactive_on_update="false" label="Circuit Order Populated" sequence="30" value="3"/>
                 <element inactive="true" inactive_on_update="true" label="PE Circuit Assignment" sequence="40" value="4"/>
-                <element inactive_on_update="false" label="CE Circuit Order Created" sequence="50" value="5"/>
-                <element inactive_on_update="false" label="CPE Requirements Defined" sequence="60" value="6"/>
-                <element inactive_on_update="false" label="CPE Allocated" sequence="70" value="7"/>
-                <element inactive_on_update="false" label="Circuit Ready" sequence="80" value="8"/>
                 <element inactive_on_update="false" label="Field Svc Visit Scheduled" sequence="90" value="9"/>
-                <element inactive_on_update="false" label="Test and Turn Up" sequence="100" value="10"/>
-                <element inactive_on_update="false" label="Canceled" sequence="110" value="11"/>
-                <element inactive_on_update="false" label="Complete" sequence="120" value="12"/>
+                <element inactive_on_update="false" label="CE Circuit Order Created" sequence="50" value="5"/>
                 <element inactive_on_update="false" label="PE Circuit Change Created" sequence="130" value="13"/>
+                <element inactive_on_update="false" label="PE Port Assigned" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="CPE Allocated" sequence="70" value="7"/>
+                <element inactive_on_update="false" label="Pending" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="CPE Requirements Defined" sequence="60" value="6"/>
+                <element inactive_on_update="false" label="Circuit Ready" sequence="80" value="8"/>
+                <element inactive_on_update="false" label="Complete" sequence="120" value="12"/>
+                <element inactive_on_update="false" label="Test and Turn Up" sequence="100" value="10"/>
+                <element inactive_on_update="false" label="Circuit Order Populated" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Canceled" sequence="110" value="11"/>
             </choice>
         </element>
-        <element label="Quoted Cost" max_length="20" name="quoted_cost" type="currency"/>
-        <element attributes="edge_encryption_enabled=true" label="Quoted Service Code" max_length="40" name="quoted_service_code" type="string"/>
-        <element label="Quoted Service Definition" mandatory="true" max_length="32" name="quoted_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
-        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requestor" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
-        <element label="Requested Service Code" max_length="40" name="requested_service_code" type="string"/>
-        <element label="Requested Service Codes" max_length="512" name="requested_service_codes" type="string"/>
-        <element label="Agency VRF" max_length="40" name="requested_vrf" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Request Type" max_length="40" name="request_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="New Service" sequence="10" value="new"/>
-                <element inactive_on_update="false" label="Change Service" sequence="20" value="change"/>
-                <element inactive_on_update="false" label="Relocate Service" sequence="30" value="relocate"/>
-                <element inactive_on_update="false" label="Terminate Service" sequence="40" value="terminate"/>
-            </choice>
-        </element>
-        <element label="Required LAN CPE Count" max_length="40" name="required_lan_cpe_count" type="integer"/>
-        <element label="Required LAN Models" max_length="254" name="required_lan_models" type="string"/>
-        <element label="Required WAN CPE Count" max_length="40" name="required_wan_cpe_count" type="integer"/>
-        <element label="Required WAN Models" max_length="254" name="required_wan_models" type="string"/>
-        <element label="Selected Assets" max_length="4000" name="selected_assets" reference="alm_asset" type="glide_list"/>
-        <element label="Selected Asset Serial Numbers" max_length="1000" name="selected_asset_serial_numbers" read_only="true" type="string"/>
-        <element label="Service Code" max_length="40" name="service_code" type="string"/>
-        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
-        <element label="Site CPE Network Gear" max_length="4000" name="site_cpe_network_gear" reference="cmdb_ci_netgear" type="glide_list"/>
+        <element label="Telco Order Contact" max_length="100" name="telco_order_contact" type="string"/>
         <element label="Special Instructions" max_length="2000" name="special_instructions" type="string"/>
-        <element label="Speed (Mb)" max_length="40" name="speed" type="string"/>
+        <element choice="1" label="Circuit Order Request Type" max_length="32" name="circuit_order_request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Change" sequence="15" value="change"/>
+                <element inactive_on_update="false" label="Terminate" sequence="20" value="terminate"/>
+                <element inactive_on_update="false" label="Add" sequence="10" value="add"/>
+            </choice>
+        </element>
         <element choice="1" label="Task Type" max_length="40" name="task_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Provisioning" sequence="10" value="provisioning"/>
                 <element inactive_on_update="false" label="Field Services" sequence="20" value="field_services"/>
             </choice>
         </element>
-        <element label="Network Request" max_length="32" name="telco_order" read_only="true" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
-        <element label="Telco Order Contact" max_length="100" name="telco_order_contact" type="string"/>
-        <element label="Telco Order Email" max_length="100" name="telco_order_email" type="string"/>
-        <element label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element label="Required WAN CPE Count" max_length="40" name="required_wan_cpe_count" type="integer"/>
+        <element label="Circuit Construction Cost" max_length="20" name="circuit_construction_cost" type="currency"/>
+        <element label="Assigned PE Port" max_length="40" name="assigned_pe_port" type="string"/>
+        <element label="Assigned WAN Service Code" max_length="40" name="assigned_wan_service_code" type="string"/>
+        <element label="Circuit Ready Date" max_length="40" name="circuit_ready_date" type="glide_date"/>
+        <element label="Agency VRF" max_length="40" name="requested_vrf" type="string"/>
+        <element label="Quoted Cost" max_length="20" name="quoted_cost" type="currency"/>
+        <element label="Service Code" max_length="40" name="service_code" type="string"/>
         <element label="Telco Response Date" max_length="40" name="telco_response_date" type="glide_date"/>
-        <element label="Telco Response Message" max_length="4000" name="telco_response_message" type="string"/>
-        <element label="Telco Vendor" max_length="32" name="telco_vendor" reference="core_company" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Type Request" max_length="40" name="type_request" read_only="true" type="choice">
+        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="x_g_sonc_ns_pro_active=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_active=true^EQ" type="reference"/>
+        <element label="Circuit Special Instructions" max_length="2000" name="circuit_special_instructions" type="string"/>
+        <element label="LAN CPE Premium 8 Count" max_length="40" name="lan_cpe_premium_8_count" type="integer"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Requestor" max_length="32" name="requested_for" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dynamic_default="true"/>
+        <element label="Circuit Speed Ingress" max_length="40" name="circuit_speed_ingress" type="string"/>
+        <element label="Requested Circuit Location" max_length="200" name="demarc_location" type="string"/>
+        <element label="Requested Service Codes" max_length="512" name="requested_service_codes" type="string"/>
+        <element label="Requested Service Code" max_length="40" name="requested_service_code" type="string"/>
+        <element label="Site CPE Network Gear" max_length="4000" name="site_cpe_network_gear" reference="cmdb_ci_netgear" type="glide_list"/>
+        <element choice="1" label="Change Type" max_length="40" name="change_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="New Service" sequence="10" value="new"/>
-                <element inactive_on_update="false" label="Change Service" sequence="20" value="change"/>
-                <element inactive_on_update="false" label="Relocate Site" sequence="30" value="relocate"/>
-                <element inactive_on_update="false" label="Terminate Site" sequence="40" value="terminate"/>
+                <element inactive_on_update="false" label="Other" sequence="50" value="5"/>
+                <element inactive_on_update="false" label="WAN Service Change" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Add Service" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="WAN Routing Change (IP, Subnet, VRF)" sequence="40" value="4"/>
+                <element inactive_on_update="false" label="Remove Service" sequence="20" value="2"/>
             </choice>
         </element>
-        <element choice="1" label="WAN Circuit Type Jack" max_length="40" name="wan_circuit_type_jack" type="choice">
+        <element label="Assigned PE" max_length="40" name="assigned_pe" reference_qual="install_status!=1^EQ" reference_qual_condition="install_status!=1^EQ" type="string"/>
+        <element label="Assigned WAN Service" max_length="32" name="assigned_wan_service" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
+        <element label="Network Request" max_length="32" name="telco_order" read_only="true" reference="x_g_sonc_ns_pro_telco_order" type="reference"/>
+        <element label="Current Location" max_length="32" name="current_location" reference="cmn_location" type="reference"/>
+        <element active="false" choice="1" label="Activity Type" max_length="40" name="nsp_activity_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Ethernet" sequence="100" value="Eth"/>
-                <element inactive_on_update="false" label="DIT Fiber" sequence="200" value="DIT Fiber"/>
-                <element inactive_on_update="false" label="Broadband" sequence="300" value="Broadband"/>
-                <element inactive_on_update="false" label="LTE4G" sequence="400" value="LTE4G"/>
+                <element inactive_on_update="false" label="Equipment replacement" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="New site CPE install" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="New site CPE allocation" sequence="10" value="1"/>
+                <element inactive_on_update="false" label="Equipment retrieval" sequence="40" value="4"/>
+            </choice>
+        </element>
+        <element label="PoP" max_length="32" name="pop" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element label="Speed (Mb)" max_length="40" name="speed" type="string"/>
+        <element choice="1" label="Network Service Category" max_length="40" name="network_service_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SD-WAN (Best Effort)" sequence="20" value="best_effort"/>
+                <element inactive_on_update="false" label="Enterprise WAN (Guaranteed)" sequence="10" value="guaranteed"/>
+            </choice>
+        </element>
+        <element label="LAN CPE Basic 24 Count" max_length="40" name="lan_cpe_basic_24_count" type="integer"/>
+        <element choice="1" label="Network Service Subcategory" max_length="40" name="network_service_subcategory" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cable" sequence="20" value="cable"/>
+                <element inactive_on_update="false" label="LTE" sequence="30" value="lte"/>
+                <element inactive_on_update="false" label="Ethernet" sequence="10" value="ethernet"/>
+            </choice>
+        </element>
+        <element label="CIR Egress Speed" max_length="40" name="cir_egress_speed" type="decimal"/>
+        <element label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Required LAN Models" max_length="254" name="required_lan_models" type="string"/>
+        <element label="CPE Model Code" max_length="32" name="cpe_model_code" reference="x_g_sonc_ns_pro_cpe_model" type="reference"/>
+        <element label="Required LAN CPE Count" max_length="40" name="required_lan_cpe_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Quoted Service Code" max_length="40" name="quoted_service_code" type="string"/>
+        <element label="Field Services Message" max_length="1000" name="field_services_message" type="string"/>
+        <element label="Telco Order Email" max_length="100" name="telco_order_email" type="string"/>
+        <element label="CIR Ingress Speed" max_length="40" name="cir_ingress_speed" type="decimal"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Type Request" max_length="40" name="type_request" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Terminate Site" sequence="40" value="terminate"/>
+                <element inactive_on_update="false" label="New Service" sequence="10" value="new"/>
+                <element inactive_on_update="false" label="Relocate Site" sequence="30" value="relocate"/>
+                <element inactive_on_update="false" label="Change Service" sequence="20" value="change"/>
             </choice>
         </element>
         <element label="WAN CPE Ports Required" max_length="40" name="wan_cpe_ports_required" type="integer"/>
-        <element label="WLAN AP Required" max_length="40" name="wlan_ap_required" type="integer"/>
+        <element label="New Location" max_length="32" name="new_location" reference="cmn_location" type="reference"/>
+        <element default="install_status=6^substatus=available" label="NSP Asset Search" max_length="254" name="nsp_asset_search" type="string"/>
+        <element label="LAN CPE Basic 48 Count" max_length="40" name="lan_cpe_basic_48_count" type="integer"/>
+        <element label="Cir Ingress Speed 2" max_length="20" name="cir_ingress_speed_2" type="decimal"/>
+        <element label="Detailed CPE Needs" max_length="1000" name="detailed_cpe_needs" read_only="true" type="string"/>
+        <element label="Circuit Order Sent Date" max_length="40" name="circuit_order_sent_date" type="glide_date"/>
+        <element choice="1" label="Move Type" max_length="40" name="move_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New CPE, New Service" sequence="20" value="2"/>
+                <element inactive_on_update="false" label="Swing CPE to New Service" sequence="10" value="1"/>
+            </choice>
+        </element>
+        <element label="Circuit Speed Egress" max_length="40" name="circuit_speed_egress" type="string"/>
+        <element label="CPE Models Required" max_length="500" name="cpe_models_required" type="string"/>
+        <element label="LAN CPE Premium 24 Count" max_length="40" name="lan_cpe_premium_24_count" type="integer"/>
+        <element label="Selected Asset Serial Numbers" max_length="1000" name="selected_asset_serial_numbers" read_only="true" type="string"/>
+        <element label="NetPlus CAC" max_length="32" name="netplus_cac" reference="x_g_sonc_ns_pro_netplus_circuit_code" type="reference"/>
+        <element label="CIR Egress Speed 2" max_length="40" name="cir_egress_speed_2" type="decimal"/>
+        <element label="Quoted Service Definition" mandatory="true" max_length="32" name="quoted_service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
+        <element label="Telco Vendor" max_length="32" name="telco_vendor" reference="core_company" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Request Type" max_length="40" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Change Service" sequence="20" value="change"/>
+                <element inactive_on_update="false" label="Relocate Service" sequence="30" value="relocate"/>
+                <element inactive_on_update="false" label="Terminate Service" sequence="40" value="terminate"/>
+                <element inactive_on_update="false" label="New Service" sequence="10" value="new"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="assigned_pe"/>
         </index>
@@ -175,36 +177,42 @@
             <element name="circuit_order_request_type"/>
         </index>
         <index name="index7">
-            <element name="current_location"/>
+            <element name="cpe_model_code"/>
         </index>
         <index name="index8">
-            <element name="new_location"/>
+            <element name="current_location"/>
         </index>
         <index name="index9">
-            <element name="pop"/>
+            <element name="netplus_cac"/>
         </index>
         <index name="index10">
-            <element name="provisioning_state"/>
+            <element name="new_location"/>
         </index>
         <index name="index11">
-            <element name="quoted_service_definition"/>
+            <element name="pop"/>
         </index>
         <index name="index12">
-            <element name="requested_for"/>
+            <element name="provisioning_state"/>
         </index>
         <index name="index13">
-            <element name="requested_vrf"/>
+            <element name="quoted_service_definition"/>
         </index>
         <index name="index14">
-            <element name="site"/>
+            <element name="requested_for"/>
         </index>
         <index name="index15">
-            <element name="telco_order"/>
+            <element name="requested_vrf"/>
         </index>
         <index name="index16">
-            <element name="telco_provider"/>
+            <element name="site"/>
         </index>
         <index name="index17">
+            <element name="telco_order"/>
+        </index>
+        <index name="index18">
+            <element name="telco_provider"/>
+        </index>
+        <index name="index19">
             <element name="telco_vendor"/>
         </index>
     </element>

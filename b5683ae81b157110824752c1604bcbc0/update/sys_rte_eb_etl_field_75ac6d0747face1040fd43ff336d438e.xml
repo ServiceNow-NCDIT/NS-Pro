@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>clientid</field>
+        <name>ClientId</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-19 12:56:50</sys_created_on>
+        <sys_id>75ac6d0747face1040fd43ff336d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ClientId</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Port Data Mapping_etl_ihub">b0ace98347face1040fd43ff336d439b</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="Target_x_g_sonc_ns_pro_nswan_port">39ac6d0747face1040fd43ff336d437c</sys_rte_eb_entity>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_75ac6d0747face1040fd43ff336d438e</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-19 12:56:50</sys_updated_on>
+    </sys_rte_eb_etl_field>
+</record_update>

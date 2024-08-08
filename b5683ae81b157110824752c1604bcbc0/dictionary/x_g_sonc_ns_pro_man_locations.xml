@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="882d9a53479771d0f4af2ad2e16d4322" label="MAN Locations" max_length="40" name="x_g_sonc_ns_pro_man_locations" type="collection">
-        <element label="Address" mandatory="true" max_length="100" name="address" type="string"/>
         <element label="Building" max_length="40" name="building" type="string"/>
         <element label="Zip" mandatory="true" max_length="10" name="zip" type="string"/>
+        <element label="Address" mandatory="true" max_length="100" name="address" type="string"/>
     </element>
 </database>

@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="db74620647c10610f4af2ad2e16d433d" extends="cmdb_ci" label="Port" max_length="40" name="x_g_sonc_ns_pro_port" type="collection">
-        <element label="Client Id" max_length="40" name="client_id" type="string"/>
-        <element choice="1" label="Host Ckt Type" max_length="40" name="host_ckt_type" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="QinQ" sequence="10" value="qinq"/>
-                <element inactive_on_update="false" label="non-QinQ" sequence="20" value="non_qinq"/>
-            </choice>
-        </element>
-        <element label="Interface Subnet Mask" max_length="40" name="interface_subnet_mask" type="string"/>
-        <element label="Local Circuit ID" max_length="32" name="local_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>
-        <element label="PE Host Circuit ID" max_length="32" name="pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element choice="1" label="Port Status" max_length="40" name="port_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Installed" sequence="10" value="installed"/>
                 <element inactive_on_update="false" label="Pending" sequence="20" value="pending"/>
-                <element inactive_on_update="false" label="Hold" sequence="30" value="hold"/>
-                <element inactive_on_update="false" label="Shutdown" sequence="40" value="shutdown"/>
                 <element inactive_on_update="false" label="Unassigned" sequence="50" value="unassigned"/>
+                <element inactive_on_update="false" label="Shutdown" sequence="40" value="shutdown"/>
+                <element inactive_on_update="false" label="Hold" sequence="30" value="hold"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Remote Site Circuit VLAN" max_length="40" name="remote_site_circuit_vlan" type="string"/>
+        <element label="Local Circuit ID" max_length="32" name="local_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element choice="1" label="Host Ckt Type" max_length="40" name="host_ckt_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="non-QinQ" sequence="20" value="non_qinq"/>
+                <element inactive_on_update="false" label="QinQ" sequence="10" value="qinq"/>
             </choice>
         </element>
         <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NSWAN Port" max_length="32" name="nswan_port" read_only="true" reference="x_g_sonc_ns_pro_nswan_port" type="reference"/>
+        <element label="Uplink Connection Description" max_length="100" name="uplink_connection_description" type="string"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
@@ -28,7 +27,10 @@
                 <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
             </choice>
         </element>
-        <element label="Uplink Connection Description" max_length="100" name="uplink_connection_description" type="string"/>
         <element label="VRF" max_length="40" name="vrf" type="string"/>
+        <element label="PE Host Circuit ID" max_length="32" name="pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Interface Subnet Mask" max_length="40" name="interface_subnet_mask" type="string"/>
+        <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>
+        <element label="Client Id" max_length="40" name="client_id" type="string"/>
     </element>
 </database>

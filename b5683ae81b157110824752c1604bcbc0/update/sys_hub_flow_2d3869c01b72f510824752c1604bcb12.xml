@@ -11,6 +11,7 @@
         <copied_from/>
         <copied_from_name/>
         <description>Move telco order to in work when any sub task is moved out of pending state</description>
+        <display_name_after_preview/>
         <flow_priority/>
         <generation_source/>
         <internal_name>start_telco_order_work</internal_name>
@@ -27,6 +28,7 @@
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
         <status>published</status>
+        <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:44:30</sys_created_on>
@@ -454,14 +456,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:48:01</sys_created_on>
         <sys_id>d509a9841b72f510824752c1604bcbac</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-06 20:33:40</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-07-23 18:37:45</sys_updated_on>
         <ui_id>8a2b9512-6aba-4ad1-b237-a2ac16009952</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d509a9841b72f510824752c1604bcbac"/>
@@ -1154,14 +1156,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>2d3869c01b72f510824752c1604bcb12</sys_id>
         <latest_snapshot>b91921c41b72f510824752c1604bcb88</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch2-hotfix1-04-15-2024_04-17-2024_1014.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1-06-10-2024_06-17-2024_2231.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=2d3869c01b72f510824752c1604bcb12^sys_idNOT IN5e19a1c41b72f510824752c1604bcb4d"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"5e19a1c41b72f510824752c1604bcb4d","name":"plan","plan_signature":null}}</plan>
         <plan_id>2d3869c01b72f510824752c1604bcb12</plan_id>
-        <snapshot>644f60c947c68a1040fd43ff336d439f</snapshot>
+        <snapshot>03b006ca87e38a10f9f20f280cbb3507</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:48:22</sys_created_on>

@@ -19,45 +19,59 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
-      return;
-   }
+    if (isLoading || newValue == '') {
+        return;
+    }
 
-	// alert('oldValue = ' + oldValue + '\nnewValue = ' + newValue);
-	var service_level;
-	if (newValue == 'add_ha') {
-		// if HA then service category is always 'Guaranteed'
-		g_form.setValue('network_service_category', 'guaranteed');
-		g_form.setReadOnly('network_service_category', true);
-		service_level = 'gold';
-	}
-	else {
-		g_form.setReadOnly('network_service_category', false);
-		service_level = 'silver';
-		if (g_form.getValue('network_service_level') == 'best_effort') {
-			service_level = 'bronze';
-		}
-	}
-	
-	// alert('service level = ' + service_level);
-	
-	var ga = new GlideAjax('x_g_sonc_ns_pro.service_definition_ajax');
+
+   // alert('oldValue = ' + oldValue + '\nnewValue = ' + newValue);
+    var service_level;
+    if (newValue == 'add_ha') {
+        // if HA then service category is always 'Guaranteed'
+        g_form.setValue('network_service_category', 'guaranteed');
+        g_form.setReadOnly('network_service_category', true);
+        service_level = 'gold';
+    } else {
+        g_form.setReadOnly('network_service_category', false);
+        service_level = 'silver';
+        if (g_form.getValue('network_service_level') == 'best_effort') {
+            service_level = 'bronze';
+        }
+    }
+
+    if (oldValue != newValue) {
+        var gad = new GlideAjax('x_g_sonc_ns_pro.core_nspro_ajax');
+        gad.addParam('sysparm_name', 'getdefaultNeedByDate');
+        gad.addParam('sysparm_created_on', g_form.getValue('created_on'));
+        gad.addParam('sysparm_request_type', g_form.getValue('type_request'));
+        gad.addParam('sysparm_change_type', g_form.getValue('type_change'));
+        gad.getXMLAnswer(getDate);
+    }
+
+    // alert('service level = ' + service_level);
+
+    var ga = new GlideAjax('x_g_sonc_ns_pro.service_definition_ajax');
     ga.addParam('sysparm_name', 'getSvcByTypeAndLevel');
     ga.addParam('sysparm_svc_type', 'wan');
-	ga.addParam('sysparm_svc_level', service_level);
+    ga.addParam('sysparm_svc_level', service_level);
     ga.getXMLAnswer(getSvcs);
 
     function getSvcs(response) {
-		
-		// alert(response);
+
+        // alert(response);
 
         var svcs = JSON.parse(response);
-		g_form.clearOptions('service_code');
-		g_form.addOption('service_code', '', '-- None --');
-		for (var i = 0; i < svcs.length; i++) {
-			g_form.addOption('service_code', svcs[i].code, svcs[i].title);
-		}
-    }	
+        g_form.clearOptions('service_code');
+        g_form.addOption('service_code', '', '-- None --');
+        for (var i = 0; i < svcs.length; i++) {
+            g_form.addOption('service_code', svcs[i].code, svcs[i].title);
+        }
+    }
+
+    function getDate(response) {
+        //alert(response);
+        g_form.setValue('need_by_date', response);
+    }
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
@@ -65,15 +79,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>002ad8fddbe48a5040eae46b139619b2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>onChange request_ha - Set Service Level</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_002ad8fddbe48a5040eae46b139619b2</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-09 01:04:15</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-07-16 13:52:01</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

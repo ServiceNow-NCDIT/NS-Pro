@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="175de67a87068e50f9f20f280cbb35fa" label="NSWAN Circuit Proposed" max_length="40" name="x_g_sonc_ns_pro_nswan_circuit_proposed" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="TelcoServicePriority" max_length="40" name="telcoservicepriority" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="AltCircuitContact" max_length="40" name="altcircuitcontact" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="AltCircuitPhone" max_length="40" name="altcircuitphone" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="ATM_Address" max_length="40" name="atm_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="PortName" max_length="40" name="portname" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Gap" max_length="40" name="gap" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remote_Flex_Serve_ID" max_length="40" name="remote_flex_serve_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Speed" max_length="40" name="speed" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="ATM_Ckt_Id" max_length="40" name="atm_ckt_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Cabinet_#" max_length="40" name="cabinet" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site ID" max_length="40" name="site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Non-StdBillingExpirationDate" max_length="40" name="non_stdbillingexpirationdate" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Master Ckt ID" max_length="40" name="master_ckt_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Channel_#" max_length="40" name="channel" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Cir" max_length="40" name="cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Form5LocVpiVci" max_length="40" name="form5locvpivci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start_Date" max_length="40" name="start_date" type="string"/>
+        <element label="NRC" max_length="40" name="nrc" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Lata" max_length="40" name="lata" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="MRC_Account" max_length="40" name="mrc_account" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="AltCircuitPhone" max_length="40" name="altcircuitphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remarks" max_length="533" name="remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Disconnect_Date" max_length="40" name="disconnect_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="TelcoOrderNumber" max_length="40" name="telcoordernumber" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Form5RmtVpiVci" max_length="40" name="form5rmtvpivci" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="CircuitContact" max_length="40" name="circuitcontact" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="CircuitPhone" max_length="40" name="circuitphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="NRC_Account" max_length="40" name="nrc_account" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="FractionOfCkt" max_length="40" name="fractionofckt" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Master-Flex_Serve_ID" max_length="40" name="master_flex_serve_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Circuit_ID" max_length="40" name="circuit_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cabinet_#" max_length="40" name="cabinet" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="VPI/VCI" max_length="40" name="vpi_vci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cir" max_length="40" name="cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ATM_Address" max_length="40" name="atm_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Scope" max_length="40" name="scope" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Phone_Company" max_length="40" name="phone_company" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Circuit_Ref" max_length="40" name="circuit_ref" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Ckt Type" max_length="40" name="ckt_type" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Disconnect_Date" max_length="40" name="disconnect_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Form5LocVpiVci" max_length="40" name="form5locvpivci" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Form5RmtVpiVci" max_length="40" name="form5rmtvpivci" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="FractionOfCkt" max_length="40" name="fractionofckt" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Gap" max_length="40" name="gap" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Lata" max_length="40" name="lata" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Master Ckt ID" max_length="40" name="master_ckt_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Master-Flex_Serve_ID" max_length="40" name="master_flex_serve_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="MRC" max_length="40" name="mrc" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="MRC_Account" max_length="40" name="mrc_account" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Non-StdBillingExpirationDate" max_length="40" name="non_stdbillingexpirationdate" type="glide_date"/>
-        <element label="NRC" max_length="40" name="nrc" type="integer"/>
-        <element attributes="edge_encryption_enabled=true" label="NRC_Account" max_length="40" name="nrc_account" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Phone_Company" max_length="40" name="phone_company" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="PortName" max_length="40" name="portname" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Remarks" max_length="533" name="remarks" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Remote_Flex_Serve_ID" max_length="40" name="remote_flex_serve_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Scope" max_length="40" name="scope" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Serial" max_length="40" name="serial" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Site ID" max_length="40" name="site_id" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="SMDS_Group_Address" max_length="40" name="smds_group_address" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="SMDS_Indv_Address" max_length="40" name="smds_indv_address" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Speed" max_length="40" name="speed" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Start_Date" max_length="40" name="start_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="TelcoOrderNumber" max_length="40" name="telcoordernumber" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="TelcoServicePriority" max_length="40" name="telcoservicepriority" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="VPI/VCI" max_length="40" name="vpi_vci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CircuitPhone" max_length="40" name="circuitphone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="MRC" max_length="40" name="mrc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SMDS_Group_Address" max_length="40" name="smds_group_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Serial" max_length="40" name="serial" type="string"/>
     </element>
 </database>

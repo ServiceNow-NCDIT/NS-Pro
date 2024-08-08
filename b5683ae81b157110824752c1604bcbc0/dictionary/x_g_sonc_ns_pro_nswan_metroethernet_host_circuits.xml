@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c8c1109847d2469040fd43ff336d4377" label="NSWAN MetroEthernet Host Circuits" max_length="40" name="x_g_sonc_ns_pro_nswan_metroethernet_host_circuits" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Circuit_ID" max_length="40" name="circuit_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remarks" max_length="48" name="remarks" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="LocDlci" max_length="40" name="locdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="RmtDlci" max_length="40" name="rmtdlci" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Lata" max_length="40" name="lata" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project" max_length="40" name="project" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="L" max_length="40" name="l" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Subnet Mask" max_length="40" name="subnet_mask" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="IP Address" max_length="40" name="ip_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cir" max_length="40" name="cir" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site" max_length="40" name="site" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Port Name" max_length="40" name="port_name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="9c20b70b87d3c654f9f20f280cbb3521" sys_domain="global" table="cmdb_ci_ip_switch" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-07-14 19:02:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>18203b0b87d3c654f9f20f280cbb35d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_ip_switch" name="cmdb_ci_ip_switch" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">9c20b70b87d3c654f9f20f280cbb3521</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_ip_switch" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">94203b0b87d3c654f9f20f280cbb35c4</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-07-14 19:02:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-07-14 19:02:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c203b0b87d3c654f9f20f280cbb35c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_ip_switch" name="cmdb_ci_ip_switch" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">9c20b70b87d3c654f9f20f280cbb3521</sys_ui_form>
+            <sys_ui_section caption="Configuration" display_value="Configuration" name="cmdb_ci_ip_switch" sys_domain="global" view="c8644493de7fbd10af5b1b2cb2c51ef5">5c20b70b87d3c654f9f20f280cbb3525</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-07-14 19:02:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>cmdb_ci_ip_switch</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-07-14 19:02:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9c20b70b87d3c654f9f20f280cbb3521</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_ip_switch</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_form_sections_9c20b70b87d3c654f9f20f280cbb3521</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-07-14 19:02:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace NS Pro IMC 0" name="workspace-ns-pro-imc-0">c8644493de7fbd10af5b1b2cb2c51ef5</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

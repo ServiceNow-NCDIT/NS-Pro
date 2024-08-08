@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.canWrite() &amp;&amp; current.install_status=='1'</condition>
+        <condition>current.canWrite() &amp;&amp; (current.install_status=='1' || current.install_status=='103')</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -31,7 +31,6 @@
         <onclick/>
         <order>100</order>
         <script><![CDATA[current.install_status = '6';
-current.hardware_substatus = 'available';
 current.name = '';
 current.location = 'c45cc5c6dbf39f00f861e3f3ca961913'; // 3700 Wake Forest Dr, Raleigh
 current.x_g_sonc_ns_pro_site = '';
@@ -49,7 +48,7 @@ action.setRedirectURL(current);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8f2892004744c650f4af2ad2e16d4339</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Return to 3700 Stock</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -57,7 +56,7 @@ action.setRedirectURL(current);
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_8f2892004744c650f4af2ad2e16d4339</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-02-22 22:15:47</sys_updated_on>
+        <sys_updated_on>2024-06-05 18:56:09</sys_updated_on>
         <table>cmdb_ci_ip_router</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

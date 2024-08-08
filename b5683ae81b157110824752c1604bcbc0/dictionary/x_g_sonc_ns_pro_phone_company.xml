@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="4f4242eedb78461040eae46b1396191e" label="Phone Company" max_length="40" name="x_g_sonc_ns_pro_phone_company" type="collection">
-        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
-    </element>
-</database>

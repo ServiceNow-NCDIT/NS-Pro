@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity/>
+        <source_sys_rte_eb_field display_value="TomsDept">d71d610b47face1040fd43ff336d4375</source_sys_rte_eb_field>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-19 12:59:43</sys_created_on>
+        <sys_id>045de94b47face1040fd43ff336d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Port Proposed Data Mapping_etl_ihub">fa1dedc747face1040fd43ff336d4310</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="IHUB_SOURCE_TEMP_MAPPING">405da94b47face1040fd43ff336d43c0</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_045de94b47face1040fd43ff336d4343</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-19 12:59:43</sys_updated_on>
+        <target_sys_rte_eb_field display_value="TomsDept_sn_ihub_target_tomsdept">ef4d694b47face1040fd43ff336d436b</target_sys_rte_eb_field>
+    </sys_rte_eb_field_mapping>
+</record_update>

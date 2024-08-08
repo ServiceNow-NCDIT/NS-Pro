@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_set_operation">
+    <sys_rte_eb_set_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script/>
+        <is_conditional>false</is_conditional>
+        <name>SET_sn_ihub_target_totalmonthlycost</name>
+        <operation_group/>
+        <order>0</order>
+        <overwrite_existing_value>false</overwrite_existing_value>
+        <set_value/>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields/>
+        <sys_class_name>sys_rte_eb_set_operation</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-23 20:51:48</sys_created_on>
+        <sys_id>9ebf3fd84783ce5040fd43ff336d43a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SET_sn_ihub_target_totalmonthlycost</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Port Data Mapping_etl_ihub">108ff7984783ce5040fd43ff336d437e</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_g_sonc_ns_pro_nswan_port">edbf7bd84783ce5040fd43ff336d43ea</sys_rte_eb_entity>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_set_operation_9ebf3fd84783ce5040fd43ff336d43a7</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:51:48</sys_updated_on>
+        <target_sys_rte_eb_field display_value="sn_ihub_target_totalmonthlycost">8abffbd84783ce5040fd43ff336d4372</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Set">c588011e730000102b6265a751ab9e4a</type>
+    </sys_rte_eb_set_operation>
+</record_update>
