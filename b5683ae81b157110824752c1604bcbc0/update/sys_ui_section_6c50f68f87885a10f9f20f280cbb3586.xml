@@ -1,0 +1,2101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="x_g_sonc_ns_pro_port" section_id="6c50f68f87885a10f9f20f280cbb3586" sys_domain="global" table="x_g_sonc_ns_pro_port" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>19227a8387c85a10f9f20f280cbb35ed</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>operational_status</element>
+            <position>1</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>55227a8387c85a10f9f20f280cbb35ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attested_date</element>
+            <position>2</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>d9227a8387c85a10f9f20f280cbb35ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_number</element>
+            <position>3</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>51227a8387c85a10f9f20f280cbb35ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_unit</element>
+            <position>4</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>d5227a8387c85a10f9f20f280cbb35ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_center</element>
+            <position>5</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>5d227a8387c85a10f9f20f280cbb35ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>d1227a8387c85a10f9f20f280cbb35f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_itag</element>
+            <position>7</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>59227a8387c85a10f9f20f280cbb35f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned</element>
+            <position>8</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>dd227a8387c85a10f9f20f280cbb35f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_nspro_future_status</element>
+            <position>9</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>55227a8387c85a10f9f20f280cbb35f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_commodity_code</element>
+            <position>10</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>d9227a8387c85a10f9f20f280cbb35f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>checked_out</element>
+            <position>11</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>51227a8387c85a10f9f20f280cbb35f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>d5227a8387c85a10f9f20f280cbb35f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dns_domain</element>
+            <position>13</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>5d227a8387c85a10f9f20f280cbb35f2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>14</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:56</sys_created_on>
+            <sys_id>d1227a8387c85a10f9f20f280cbb35f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:56</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gl_account</element>
+            <position>15</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>59227a8387c85a10f9f20f280cbb35f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>owned_by</element>
+            <position>16</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>dd227a8387c85a10f9f20f280cbb35f3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>maintenance_schedule</element>
+            <position>17</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>55227a8387c85a10f9f20f280cbb35f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attested_by</element>
+            <position>18</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d9227a8387c85a10f9f20f280cbb35f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_acquisition_method</element>
+            <position>19</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>51227a8387c85a10f9f20f280cbb35f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>20</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d5227a8387c85a10f9f20f280cbb35f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ariba_pol_number</element>
+            <position>21</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5d227a8387c85a10f9f20f280cbb35f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_reserved_for</element>
+            <position>22</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d1227a8387c85a10f9f20f280cbb35f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_unit</element>
+            <position>23</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>59227a8387c85a10f9f20f280cbb35f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>purchase_date</element>
+            <position>24</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>dd227a8387c85a10f9f20f280cbb35f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>25</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>55227a8387c85a10f9f20f280cbb35f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>26</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d9227a8387c85a10f9f20f280cbb35f7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due_in</element>
+            <position>27</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>51227a8387c85a10f9f20f280cbb35f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ncdatacenter</element>
+            <position>28</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d5227a8387c85a10f9f20f280cbb35f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>29</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5d227a8387c85a10f9f20f280cbb35f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_discovered</element>
+            <position>30</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d1227a8387c85a10f9f20f280cbb35f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_area</element>
+            <position>31</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>59227a8387c85a10f9f20f280cbb35f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>32</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>dd227a8387c85a10f9f20f280cbb35f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>warranty_expiration</element>
+            <position>33</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>55227a8387c85a10f9f20f280cbb35fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>34</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d9227a8387c85a10f9f20f280cbb35fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_billing_description</element>
+            <position>35</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>51227a8387c85a10f9f20f280cbb35fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>discovery_source</element>
+            <position>36</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d5227a8387c85a10f9f20f280cbb35fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>life_cycle_stage</element>
+            <position>37</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5d227a8387c85a10f9f20f280cbb35fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>38</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d1227a8387c85a10f9f20f280cbb35fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manufacturer</element>
+            <position>39</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>59227a8387c85a10f9f20f280cbb35fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>subcategory</element>
+            <position>40</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>dd227a8387c85a10f9f20f280cbb35fc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>po_number</element>
+            <position>41</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>55227a8387c85a10f9f20f280cbb35fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>42</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d9227a8387c85a10f9f20f280cbb35fd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>43</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>51227a8387c85a10f9f20f280cbb35fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attestation_score</element>
+            <position>44</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d5227a8387c85a10f9f20f280cbb35fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_nspro_future_location</element>
+            <position>45</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5d227a8387c85a10f9f20f280cbb35fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>managed_by_group</element>
+            <position>46</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d1227a8387c85a10f9f20f280cbb35ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mac_address</element>
+            <position>47</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>59227a8387c85a10f9f20f280cbb35ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>48</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>dd227a8387c85a10f9f20f280cbb35ff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_agencies_impacted</element>
+            <position>49</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5522ba8387c85a10f9f20f280cbb3500</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>50</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d922ba8387c85a10f9f20f280cbb3500</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_nspro_future_site</element>
+            <position>51</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5122ba8387c85a10f9f20f280cbb3501</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>52</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d522ba8387c85a10f9f20f280cbb3501</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_home_address</element>
+            <position>53</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5d22ba8387c85a10f9f20f280cbb3501</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>54</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d122ba8387c85a10f9f20f280cbb3502</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serial_number</element>
+            <position>55</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5922ba8387c85a10f9f20f280cbb3502</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>56</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>dd22ba8387c85a10f9f20f280cbb3502</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_tag</element>
+            <position>57</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5522ba8387c85a10f9f20f280cbb3503</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_comp_code</element>
+            <position>58</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d922ba8387c85a10f9f20f280cbb3503</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>checked_in</element>
+            <position>59</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5122ba8387c85a10f9f20f280cbb3504</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>60</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d522ba8387c85a10f9f20f280cbb3504</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_section</element>
+            <position>61</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5d22ba8387c85a10f9f20f280cbb3504</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost</element>
+            <position>62</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>d122ba8387c85a10f9f20f280cbb3505</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>63</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>5922ba8387c85a10f9f20f280cbb3505</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_number</element>
+            <position>64</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>dd22ba8387c85a10f9f20f280cbb3505</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>65</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb3506</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset</element>
+            <position>66</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb3506</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>67</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb3507</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>68</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb3507</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>69</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb3507</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>life_cycle_stage_status</element>
+            <position>70</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb3508</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attributes</element>
+            <position>71</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb3508</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>72</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb3508</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_retired_date</element>
+            <position>73</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb3509</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_ot_entity</element>
+            <position>74</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb3509</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>75</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb350a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor</element>
+            <position>76</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb350a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>77</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb350a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>justification</element>
+            <position>78</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb350b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>79</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb350b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>80</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb350b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>skip_sync</element>
+            <position>81</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb350c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>supported_by</element>
+            <position>82</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb350c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>83</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb350d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>84</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb350d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_accounting_code</element>
+            <position>85</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb350d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>86</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb350e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>correlation_id</element>
+            <position>87</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb350e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>88</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb350e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_billing_code</element>
+            <position>89</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb350f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>install_status</element>
+            <position>90</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb350f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <position>91</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb3510</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>unverified</element>
+            <position>92</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb3510</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>install_date</element>
+            <position>93</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb3510</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>change_control</element>
+            <position>94</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb3511</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>delivery_date</element>
+            <position>95</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb3511</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>96</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb3511</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ariba_po_number</element>
+            <position>97</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb3512</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lease_id</element>
+            <position>98</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb3512</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>99</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>support_group</element>
+            <position>100</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_division</element>
+            <position>101</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb3513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_domain</element>
+            <position>102</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb3514</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>103</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb3514</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fqdn</element>
+            <position>104</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb3514</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>105</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb3515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>106</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb3515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_asset_configuration</element>
+            <position>107</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb3516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>fault_count</element>
+            <position>108</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb3516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>109</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb3516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attestation_status</element>
+            <position>110</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb3517</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>111</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb3517</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ip_address</element>
+            <position>112</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb3517</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>113</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb3518</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order_date</element>
+            <position>114</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb3518</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>attested</element>
+            <position>115</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb3519</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>can_print</element>
+            <position>116</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb3519</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_id</element>
+            <position>117</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb3519</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>due</element>
+            <position>118</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb351a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_discovered</element>
+            <position>119</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb351a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>monitor</element>
+            <position>120</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb351a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_cc</element>
+            <position>121</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb351b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>environment</element>
+            <position>122</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb351b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>123</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb351c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>managed_by</element>
+            <position>124</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb351c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_vendor_part_number</element>
+            <position>125</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb351c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>126</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb351d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>duplicate_of</element>
+            <position>127</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb351d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>schedule</element>
+            <position>128</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb351d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>129</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb351e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site</element>
+            <position>130</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb351e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>network_gear</element>
+            <position>131</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb351f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>132</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb351f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pe_host_circuit_id</element>
+            <position>133</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb351f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>local_circuit_id</element>
+            <position>134</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb3520</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>interface_subnet_mask</element>
+            <position>135</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb3520</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>client_id</element>
+            <position>136</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb3520</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>host_ckt_type</element>
+            <position>137</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb3521</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>port_status</element>
+            <position>138</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb3521</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>139</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb3522</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>uplink_connection_description</element>
+            <position>140</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e522ba8387c85a10f9f20f280cbb3522</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product_instance_id</element>
+            <position>141</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6d22ba8387c85a10f9f20f280cbb3522</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>142</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e122ba8387c85a10f9f20f280cbb3523</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>remote_site_circuit_vlan</element>
+            <position>143</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6922ba8387c85a10f9f20f280cbb3523</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>nswan_port</element>
+            <position>144</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>ed22ba8387c85a10f9f20f280cbb3523</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>145</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6522ba8387c85a10f9f20f280cbb3524</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vrf</element>
+            <position>146</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>e922ba8387c85a10f9f20f280cbb3524</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>147</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:18:57</sys_created_on>
+            <sys_id>6122ba8387c85a10f9f20f280cbb3525</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="x_g_sonc_ns_pro_port" display_value="x_g_sonc_ns_pro_port" name="x_g_sonc_ns_pro_port" sys_domain="global" view="ec50f68f87885a10f9f20f280cbb351d">6c50f68f87885a10f9f20f280cbb3586</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:18:57</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>x_g_sonc_ns_pro_port</caption>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_port</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-20 21:10:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c50f68f87885a10f9f20f280cbb3586</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_port</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_6c50f68f87885a10f9f20f280cbb3586</sys_update_name>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-20 21:10:58</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="">ec50f68f87885a10f9f20f280cbb351d</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -76,14 +76,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-07-24 12:49:29</sys_created_on>
         <sys_id>9c5ab5524763ca1040fd43ff336d43ad</sys_id>
-        <sys_mod_count>93</sys_mod_count>
+        <sys_mod_count>94</sys_mod_count>
         <sys_name>Billing Update</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_producer_9c5ab5524763ca1040fd43ff336d43ad</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-07 15:02:14</sys_updated_on>
+        <sys_updated_on>2024-08-08 12:46:32</sys_updated_on>
         <table_name>x_g_sonc_ns_pro_billing_changes</table_name>
         <taxonomy_topic/>
         <template/>
@@ -93,7 +93,7 @@
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>93</version>
+        <version>94</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
