@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Build New Host Circuit Ports">3da3bda687330210f9f20f280cbb3584</catalog_item>
+        <catalog_variable>IO:6392ef0d478c521040fd43ff336d43e9</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>400</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-14 20:13:56</sys_created_on>
+        <sys_id>16a927414700921040fd43ff336d437c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>ending_vlan</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_16a927414700921040fd43ff336d437c</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-14 20:14:05</sys_updated_on>
+        <table/>
+        <ui_policy display_value="SelectEndingMethod">8649e3cd47cc521040fd43ff336d43d5</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>ending_vlan</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_ui_policy_action_16a927414700921040fd43ff336d437c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Build New Host Circuit Ports">3da3bda687330210f9f20f280cbb3584</catalog_item><catalog_variable>IO:6392ef0d478c521040fd43ff336d43e9</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>false</mandatory><order>400</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-08-14 20:13:56</sys_created_on><sys_id>16a927414700921040fd43ff336d437c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>ending_vlan</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>catalog_ui_policy_action_16a927414700921040fd43ff336d437c</sys_update_name><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-08-14 20:14:05</sys_updated_on><table/><ui_policy display_value="SelectEndingMethod">8649e3cd47cc521040fd43ff336d43d5</ui_policy><value/><value_action>ignore</value_action><variable>ending_vlan</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1762854460</payload_hash>
+        <record_name>ending_vlan</record_name>
+        <reverted_from/>
+        <source>1253eb4347fb461040fd43ff336d4378</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-14 20:14:05</sys_created_on>
+        <sys_id>41c9ef414700921040fd43ff336d4315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1915286b6530000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-14 20:14:05</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>85c92741aa0092109cbba911504c5d89</update_guid>
+        <update_guid_history>85c92741aa0092109cbba911504c5d89:1762854460,66b96b417c0092109a8a0f4df4e71bd9:-361224353</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 08/15/2024 09:17:37">4e049f1d47ccd21040fd43ff336d4396</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-15 13:17:37</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>1e792773d1704e1a8738eb19eb1e3364</sys_id>
+        <sys_metadata>16a927414700921040fd43ff336d437c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ending_vlan</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_16a927414700921040fd43ff336d437c</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_16a927414700921040fd43ff336d437c">41c9ef414700921040fd43ff336d4315</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-15 13:17:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

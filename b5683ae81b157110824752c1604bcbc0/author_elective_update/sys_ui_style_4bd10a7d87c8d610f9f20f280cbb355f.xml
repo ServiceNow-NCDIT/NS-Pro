@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="DELETE">
+        <alt/>
+        <element>name</element>
+        <name>x_g_sonc_ns_pro_port</name>
+        <style>background-color: red;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-16 20:41:11</sys_created_on>
+        <sys_id>4bd10a7d87c8d610f9f20f280cbb355f</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_port</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_style_4bd10a7d87c8d610f9f20f280cbb355f</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-16 20:51:48</sys_updated_on>
+        <themed_style/>
+        <value>javascript: current.name== NULL</value>
+    </sys_ui_style>
+    <sys_translated_text action="DELETE" query="documentkey=4bd10a7d87c8d610f9f20f280cbb355f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_style_4bd10a7d87c8d610f9f20f280cbb355f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style"><sys_ui_style action="INSERT_OR_UPDATE"><alt/><element>name</element><name>x_g_sonc_ns_pro_port</name><style>background-color: red;</style><sys_class_name>sys_ui_style</sys_class_name><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-08-16 20:41:11</sys_created_on><sys_id>4bd10a7d87c8d610f9f20f280cbb355f</sys_id><sys_mod_count>10</sys_mod_count><sys_name>x_g_sonc_ns_pro_port</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_ui_style_4bd10a7d87c8d610f9f20f280cbb355f</sys_update_name><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-08-16 20:51:48</sys_updated_on><themed_style/><value>javascript: current.name== NULL</value></sys_ui_style><sys_translated_text action="delete_multiple" query="documentkey=4bd10a7d87c8d610f9f20f280cbb355f"/></record_update>]]></payload>
+        <payload_hash>-2137394766</payload_hash>
+        <record_name>x_g_sonc_ns_pro_port</record_name>
+        <reverted_from/>
+        <source>1253eb4347fb461040fd43ff336d4378</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-16 20:51:48</sys_created_on>
+        <sys_id>7895ce75870cd610f9f20f280cbb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1915cf5f34b0000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-16 20:51:48</sys_updated_on>
+        <type>Style</type>
+        <update_guid>7c95ce75e00cd610a01efb7a5aee74e1</update_guid>
+        <update_guid_history>7c95ce75e00cd610a01efb7a5aee74e1:-2137394766,dc85c2b5dd0cd6101bd29bb550ea6b69:534749469,057582b5c30cd610b3d5317402ecd72b:1922881497,661542f19b0cd61021b79bff7f6e7533:837345567,fff442f1790cd6100d7d92ca7fda0f2e:-1660370568,2ec44ef1550cd6109d276329e6e59071:-2012515212,1b744ef14a0cd610150410ba47091550:-814288871,ed344af993c8d6108096d025d9d7e26e:1110276985,6ea34a312c0cd61005ecf0d44f614c5c:-109726471,c0938a31a90cd61090f9af52aaffba6b:-1184201180,95238a3941c8d610365ea4aea97a7712:-1535863537</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-16 21:05:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_style">sys_ui_style</sys_db_object>
+        <sys_id>024587d198bc4722809212dd15d22fc4</sys_id>
+        <sys_metadata>4bd10a7d87c8d610f9f20f280cbb355f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_port</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Port">db74620647c10610f4af2ad2e16d433d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_style_4bd10a7d87c8d610f9f20f280cbb355f</sys_update_name>
+        <sys_update_version display_value="sys_ui_style_4bd10a7d87c8d610f9f20f280cbb355f">7895ce75870cd610f9f20f280cbb35e2</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-16 21:05:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

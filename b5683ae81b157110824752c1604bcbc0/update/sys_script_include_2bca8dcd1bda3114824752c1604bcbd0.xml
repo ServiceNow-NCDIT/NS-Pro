@@ -105,6 +105,19 @@ core_nspro_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
         return JSON.stringify(returnObj);
     },
+	validateVLanInput: function(){
+		var returnObj = {};
+
+		var startingVLan;
+		var endingVLan;
+		var startingIPAddress;
+		
+		startingVLan = this.getParameter('sysparm_startingVLan');
+		endingVLan = this.getParameter('sysparm_endingVLan');
+		startingIPAddress = this.getParameter('sysparm_startingIP');
+		
+
+	},
     getIPsForRange: function() {
         var startingIP;
         var endingIP;
@@ -130,13 +143,13 @@ core_nspro_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 12:39:06</sys_created_on>
         <sys_id>2bca8dcd1bda3114824752c1604bcbd0</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>core_nspro_ajax</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_2bca8dcd1bda3114824752c1604bcbd0</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-06 16:58:34</sys_updated_on>
+        <sys_updated_on>2024-08-15 20:00:44</sys_updated_on>
     </sys_script_include>
 </record_update>

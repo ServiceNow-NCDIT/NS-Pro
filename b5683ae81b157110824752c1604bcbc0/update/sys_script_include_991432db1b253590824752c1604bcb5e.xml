@@ -9,203 +9,293 @@
         <name>cmdb_ci_site</name>
         <script><![CDATA[var cmdb_ci_site = Class.create();
 cmdb_ci_site.prototype = {
-	initialize: function() {},
 
-	getNextSiteNum: function(site_type) {
+    initialize: function() {},
 
-		// gs.info('cmdb_ci_site.getNextSiteNum searching for site type ' + site_type);
-		
-		var index;
-		var gr = new GlideRecord('cmdb_ci_site');
-		if (site_type == 'pop') {
-			index = 9943302;
-		} else {
-			index = 7001;
-		}
-		// find the first available site id in the range from index to index + 14000 records
-		for (i = index; i < index + 14000; i++) {
-			// gs.info('Checking site ' + i);
-			if (!gr.get('site_identifier', i.toString())) {
+    getNextSiteNum: function(site_type) {
 
-				// found free site id
-				return i;
-			}
-		}
-		// if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
-		return;		
+        // gs.info('cmdb_ci_site.getNextSiteNum searching for site type ' + site_type);
 
-	},
+        var index;
+        var gr = new GlideRecord('cmdb_ci_site');
+        if (site_type == 'pop') {
+            index = 9943302;
+        } else {
+            index = 7001;
+        }
+        // find the first available site id in the range from index to index + 14000 records
+        for (i = index; i < index + 14000; i++) {
+            // gs.info('Checking site ' + i);
+            if (!gr.get('site_identifier', i.toString())) {
 
-	getSiteId: function(site) {
+                // found free site id
+                return i;
+            }
+        }
+        // if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
+        return;
 
-		var site_id;
-		var gr = new GlideRecord('cmdb_ci_site');
-		if (gr.get(site.toString())) {
-			site_id = gr.site_identifier.toString();
-		}
-		// if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
-		return site_id;
+    },
 
-	},
+    getSiteId: function(site) {
 
-	getLocation: function(site_sys_id) {
+        var site_id;
+        var gr = new GlideRecord('cmdb_ci_site');
+        if (gr.get(site.toString())) {
+            site_id = gr.site_identifier.toString();
+        }
+        // if nothing is available, return nothing. user needs to validate the value to ensure it's a valid return
+        return site_id;
 
-		// gs.info('cmdb_ci_site.getLocation searching for site ' + site_sys_id);
+    },
 
-		var loc = {};
-		var locGr = new GlideRecord('cmn_location');
-		var siteGr = new GlideRecord('cmdb_ci_site');
+    getLocation: function(site_sys_id) {
 
-		if (siteGr.get(site_sys_id)) {
+        // gs.info('cmdb_ci_site.getLocation searching for site ' + site_sys_id);
 
-			// gs.info('cmdb_ci_site.getLocation found site ' + siteGr.name);
+        var loc = {};
+        var locGr = new GlideRecord('cmn_location');
+        var siteGr = new GlideRecord('cmdb_ci_site');
 
-			if (locGr.get(siteGr.location.toString())) {
+        if (siteGr.get(site_sys_id)) {
 
-				// gs.info('cmdb_ci_site.getLocation found loc ' + locGr.name);
+            // gs.info('cmdb_ci_site.getLocation found site ' + siteGr.name);
 
-				loc.sysId = locGr.sys_id.toString();
-				loc.name = locGr.name.toString();
-				loc.county = locGr.u_county.toString();
-				loc.street = locGr.street.toString();
-				loc.city = locGr.city.toString();
-				loc.state = locGr.state.toString();
-				loc.zip = locGr.zip.toString();
-				loc.latitude = locGr.latitude.toString();
-				loc.longitude = locGr.longitude.toString();
-			} else {
-				gs.info('location not found');
-			}
-		}
-		else {
-			gs.error('site not found');
-		}
-		return global.JSON.stringify(loc);
+            if (locGr.get(siteGr.location.toString())) {
 
-	},
+                // gs.info('cmdb_ci_site.getLocation found loc ' + locGr.name);
 
-	getSite: function(site_sys_id) {
+                loc.sysId = locGr.sys_id.toString();
+                loc.name = locGr.name.toString();
+                loc.county = locGr.u_county.toString();
+                loc.street = locGr.street.toString();
+                loc.city = locGr.city.toString();
+                loc.state = locGr.state.toString();
+                loc.zip = locGr.zip.toString();
+                loc.latitude = locGr.latitude.toString();
+                loc.longitude = locGr.longitude.toString();
+            } else {
+                gs.info('location not found');
+            }
+        } else {
+            gs.error('site not found');
+        }
+        return global.JSON.stringify(loc);
 
-		// gs.info('cmdb_ci_site.getSite searching for site sys_id ' + site_sys_id);
+    },
 
-		var site = {};
-		var siteGr = new GlideRecord('cmdb_ci_site');
+    getSite: function(site_sys_id) {
 
-		if (siteGr.get(site_sys_id)) {
+        // gs.info('cmdb_ci_site.getSite searching for site sys_id ' + site_sys_id);
 
-			// gs.info('cmdb_ci_site.getSite found site ' + siteGr.name);
+        var site = {};
+        var siteGr = new GlideRecord('cmdb_ci_site');
 
-			site.sys_id = siteGr.getUniqueValue();
-			site.name = siteGr.name.getDisplayValue();
-			site.site_identifier = siteGr.site_identifier.getDisplayValue();
-			site.comments = siteGr.comments.getDisplayValue();
-			site.decommission_date = siteGr.x_g_sonc_ns_pro_decommission_date.getDisplayValue();
-			//site.active = siteGr.x_g_sonc_ns_pro_active.getDisplayValue();
-			site.demarc_location = siteGr.x_g_sonc_ns_pro_demarc_location.getDisplayValue();
-			site.type = siteGr.x_g_sonc_ns_pro_type.getDisplayValue();
-			site.location = siteGr.location.toString();
-			site.latitude = siteGr.location.latitude.getDisplayValue();
-			site.longitude = siteGr.location.longitude.getDisplayValue();
-			site.install_status = siteGr.install_status.getDisplayValue();
-			site.county = siteGr.location.u_county.getDisplayValue();
-			site.city = siteGr.location.city.getDisplayValue();
-			site.street = siteGr.location.street.getDisplayValue();
-			site.state = siteGr.location.state.getDisplayValue();
-			site.zip = siteGr.location.zip.getDisplayValue();
-			site.primary_poc = siteGr.x_g_sonc_ns_pro_primary_poc.toString();
-			site.primary_poc_phone = siteGr.x_g_sonc_ns_pro_primary_poc.phone.getDisplayValue();
-			site.primary_poc_email = siteGr.x_g_sonc_ns_pro_primary_poc.email.getDisplayValue();
-			site.alternate_poc = siteGr.x_g_sonc_ns_pro_alternate_poc.toString();
-			site.alternate_poc_phone = siteGr.x_g_sonc_ns_pro_alternate_poc.phone.getDisplayValue();
-			site.alternate_poc_email = siteGr.x_g_sonc_ns_pro_alternate_poc.email.getDisplayValue();
+        if (siteGr.get(site_sys_id)) {
 
-			// gs.warn('cmdb_ci_site.getSite constructed site ' + global.JSON.stringify(site));
+            // gs.info('cmdb_ci_site.getSite found site ' + siteGr.name);
 
-		}
+            site.sys_id = siteGr.getUniqueValue();
+            site.name = siteGr.name.getDisplayValue();
+            site.site_identifier = siteGr.site_identifier.getDisplayValue();
+            site.comments = siteGr.comments.getDisplayValue();
+            site.decommission_date = siteGr.x_g_sonc_ns_pro_decommission_date.getDisplayValue();
+            //site.active = siteGr.x_g_sonc_ns_pro_active.getDisplayValue();
+            site.demarc_location = siteGr.x_g_sonc_ns_pro_demarc_location.getDisplayValue();
+            site.type = siteGr.x_g_sonc_ns_pro_type.getDisplayValue();
+            site.location = siteGr.location.toString();
+            site.latitude = siteGr.location.latitude.getDisplayValue();
+            site.longitude = siteGr.location.longitude.getDisplayValue();
+            site.install_status = siteGr.install_status.getDisplayValue();
+            site.county = siteGr.location.u_county.getDisplayValue();
+            site.city = siteGr.location.city.getDisplayValue();
+            site.street = siteGr.location.street.getDisplayValue();
+            site.state = siteGr.location.state.getDisplayValue();
+            site.zip = siteGr.location.zip.getDisplayValue();
+            site.primary_poc = siteGr.x_g_sonc_ns_pro_primary_poc.toString();
+            site.primary_poc_phone = siteGr.x_g_sonc_ns_pro_primary_poc.phone.getDisplayValue();
+            site.primary_poc_email = siteGr.x_g_sonc_ns_pro_primary_poc.email.getDisplayValue();
+            site.alternate_poc = siteGr.x_g_sonc_ns_pro_alternate_poc.toString();
+            site.alternate_poc_phone = siteGr.x_g_sonc_ns_pro_alternate_poc.phone.getDisplayValue();
+            site.alternate_poc_email = siteGr.x_g_sonc_ns_pro_alternate_poc.email.getDisplayValue();
 
-		// gs.warn('cmdb_ci_site.getSite returning ' + global.JSON.stringify(site));
+            // gs.warn('cmdb_ci_site.getSite constructed site ' + global.JSON.stringify(site));
 
-		return global.JSON.stringify(site);
+        }
 
-	},
+        // gs.warn('cmdb_ci_site.getSite returning ' + global.JSON.stringify(site));
 
-	getServices: function(site_id) {
+        return global.JSON.stringify(site);
 
-		// gs.info('cmdb_ci_site.getServices searching for site ' + site_id);
+    },
 
-		var svcs = []; // array of all services
-		var siteGr = new GlideRecord('cmdb_ci_site');
+    getServices: function(site_id) {
 
-		if (siteGr.get(site_id)) {
-			
-			var svcGr = new GlideRecord('x_g_sonc_ns_pro_service');
-			svcGr.addQuery('site', site_id);
-			svcGr.query();
-			while (svcGr.next()) {				
-				var svc = {}; // service instance
-				svc.sys_id = svcGr.getUniqueValue();
-				svc.svc_title = svcGr.service_code.svc_title.getDisplayValue();
-				svc.start_date = svcGr.getDisplayValue('start_date');
-				svc.end_date = svcGr.getDisplayValue('end_date');
-				svc.agency = svcGr.getDisplayValue('agency');
-				svc.ap_count = svcGr.getValue('ap_count');
-				svc.comments = svcGr.getValue('comments');
-				svc.site = svcGr.getDisplayValue('site');
-				svcs.push(svc);				
-			}
-		}
-		else {
-			gs.error('site not found');
-		}
-		return global.JSON.stringify(svcs);
+        // gs.info('cmdb_ci_site.getServices searching for site ' + site_id);
 
-	},
+        var svcs = []; // array of all services
+        var siteGr = new GlideRecord('cmdb_ci_site');
 
-		getBilling: function(site_id) {
+        if (siteGr.get(site_id)) {
 
-		// gs.info('cmdb_ci_site.getBilling searching for site ' + site_id);
+            var svcGr = new GlideRecord('x_g_sonc_ns_pro_service');
+            svcGr.addQuery('site', site_id);
+            svcGr.query();
+            while (svcGr.next()) {
+                var svc = {}; // service instance
+                svc.sys_id = svcGr.getUniqueValue();
+                svc.svc_title = svcGr.service_code.svc_title.getDisplayValue();
+                svc.start_date = svcGr.getDisplayValue('start_date');
+                svc.end_date = svcGr.getDisplayValue('end_date');
+                svc.agency = svcGr.getDisplayValue('agency');
+                svc.ap_count = svcGr.getValue('ap_count');
+                svc.comments = svcGr.getValue('comments');
+                svc.site = svcGr.getDisplayValue('site');
+                svcs.push(svc);
+            }
+        } else {
+            gs.error('site not found');
+        }
+        return global.JSON.stringify(svcs);
 
-		var bills = []; // array of all billing history
-		var siteGr = new GlideRecord('cmdb_ci_site');
+    },
 
-		if (siteGr.get(site_id)) {
-			
-			var billGr = new GlideRecord('x_g_sonc_ns_pro_billing_changes');
-			billGr.addQuery('site', site_id);
-			billGr.query();
-			while (billGr.next()) {				
-				var bill = {}; // service instance
-				bill.sys_id = billGr.getUniqueValue();
-				bill.billing_code = billGr.getValue('billing_code');
-				bill.billing_type = billGr.getDisplayValue('billing_type');
-				bill.effective_date = billGr.getDisplayValue('effective_date');
-				bill.end_date = billGr.getDisplayValue('end_date');
-				bill.agency = billGr.getDisplayValue('network_request');
-				bill.ap_count = billGr.getValue('network_task');
-				bill.site = billGr.getDisplayValue('site');
-				bills.push(bill);				
-			}
-		}
-		else {
-			gs.error('site not found');
-		}
-		return global.JSON.stringify(bills);
+    getBilling: function(site_id) {
 
-	},
+        // gs.info('cmdb_ci_site.getBilling searching for site ' + site_id);
 
-	type: 'cmdb_ci_site'
+        var bills = []; // array of all billing history
+        var siteGr = new GlideRecord('cmdb_ci_site');
+
+        if (siteGr.get(site_id)) {
+
+            var billGr = new GlideRecord('x_g_sonc_ns_pro_billing_changes');
+            billGr.addQuery('site', site_id);
+            billGr.query();
+            while (billGr.next()) {
+                var bill = {}; // service instance
+                bill.sys_id = billGr.getUniqueValue();
+                bill.billing_code = billGr.getValue('billing_code');
+                bill.billing_type = billGr.getDisplayValue('billing_type');
+                bill.effective_date = billGr.getDisplayValue('effective_date');
+                bill.end_date = billGr.getDisplayValue('end_date');
+                bill.agency = billGr.getDisplayValue('network_request');
+                bill.ap_count = billGr.getValue('network_task');
+                bill.site = billGr.getDisplayValue('site');
+                bills.push(bill);
+            }
+        } else {
+            gs.error('site not found');
+        }
+        return global.JSON.stringify(bills);
+
+    },
+    removePortsFromSite(site, ports) {
+        var errorString;
+        try {
+            if (!site) {
+                throw new IllegalArgumentException("site is a required parameter");
+            }
+            if (!ports) {
+                throw new IllegalArgumentException("ports is a required parameter");
+            }
+
+            var portsArray = ports.split(",");
+
+            if (portsArray.length < 1) {
+                throw new GenericException("one or more ports must be selected");
+            }
+
+            var siteRS = new GlideRecord('cmdb_ci_site');
+            if (!siteRS.get(site)) {
+                throw new IllegalArgumentException("Site Passed: " + site + " is not found");
+            }
+
+
+            for (var i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
+					portRecord.setValue('local_circuit_id',null);
+					portRecord.setValue('network_gear',null);
+					portRecord.setValue('name','');
+					portRecord.setValue('vrf','');
+					portRecord.setValue('site',null);
+                    portRecord.update();
+                }
+
+            }
+
+        } catch (Ex) {
+            errorString = "Error Occured in cmdb_ci_site.removePortsFromSite - " + Ex.toString();
+            gs.info(errorString);
+        }
+
+        if (errorString) {
+            return errorString;
+        } else {
+            return NSPROConstants.AJAX_RETURNCODES.SUCCESS;;
+        }
+
+    },
+    assignPortsToSite(site, ports) {
+        //gs.info('assignPortsToSite site: ' + site + " ports " + ports);
+        var errorString;
+        try {
+            if (!site) {
+                throw new IllegalArgumentException("site is a required parameter");
+            }
+            if (!ports) {
+                throw new IllegalArgumentException("ports is a required parameter");
+            }
+
+            var portsArray = ports.split(",");
+
+            if (portsArray.length < 1) {
+                throw new GenericException("one or more ports must be selected");
+            }
+
+            var siteRS = new GlideRecord('cmdb_ci_site');
+            if (!siteRS.get(site)) {
+                throw new IllegalArgumentException("Site Passed: " + site + " is not found");
+            }
+
+
+            for (var i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    portRecord.setValue('site', site);
+                    portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.ASSIGNED);
+                    portRecord.update();
+                }
+
+            }
+
+        } catch (Ex) {
+            errorString = "Error Occured in cmdb_ci_site.assignPortsToSite - " + Ex.toString();
+            gs.info(errorString);
+        }
+
+        if (errorString) {
+            return errorString;
+        } else {
+            return NSPROConstants.AJAX_RETURNCODES.SUCCESS;
+        }
+
+    },
+    type: 'cmdb_ci_site'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>106</sys_mod_count>
+        <sys_mod_count>119</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-07-25 16:19:34</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-20 16:45:41</sys_updated_on>
     </sys_script_include>
 </record_update>

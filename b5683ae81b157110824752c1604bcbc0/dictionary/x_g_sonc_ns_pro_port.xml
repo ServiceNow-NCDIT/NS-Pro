@@ -10,8 +10,9 @@
             </choice>
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Remote Site Circuit VLAN" max_length="40" name="remote_site_circuit_vlan" type="string"/>
-        <element label="Local Circuit ID" max_length="32" name="local_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
-        <element choice="1" label="Host Ckt Type" max_length="40" name="host_ckt_type" type="choice">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="VRF" max_length="32" name="vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="Local Circuit ID" max_length="32" name="local_circuit_id" reference="cmdb_ci_network_circuit" reference_qual="javascript:&quot;x_g_sonc_ns_pro_site=&quot; + current.site" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="1" label="Host Ckt Type" max_length="40" name="host_ckt_type" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="non-QinQ" sequence="20" value="non_qinq"/>
                 <element inactive_on_update="false" label="QinQ" sequence="10" value="qinq"/>
@@ -27,7 +28,6 @@
                 <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
             </choice>
         </element>
-        <element label="VRF" max_length="40" name="vrf" type="string"/>
         <element label="PE Host Circuit ID" max_length="32" name="pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Interface Subnet Mask" max_length="40" name="interface_subnet_mask" type="string"/>
         <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>

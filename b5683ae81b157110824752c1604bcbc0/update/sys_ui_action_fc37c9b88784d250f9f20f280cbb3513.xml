@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>RP.getParameterValue('sysparm_view') ==  'selectavailableportsremove'</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages>Un-Assign Checked Ports to Site</messages>
+        <name>Un-Assign Ports from Site</name>
+        <onclick>confirmUnAssignPortsFromSite()</onclick>
+        <order>200</order>
+        <script><![CDATA[function confirmUnAssignPortsFromSite() {
+    var siteInformation = g_scratchpad.siteInformation;
+    var selectedSiteID = siteInformation.selectedSiteID;
+    var selectedSite = siteInformation.selectedSite;
+    //alert(siteInformation.selectedSiteSysId);
+    g_scratchpad.checkedPorts = g_list.getChecked();
+
+    var gm = new GlideModal("glide_confirm_standard", true, 600);
+    gm.setTitle("Remove Ports from Site " + selectedSiteID + " - " + selectedSite);
+    gm.setPreference("title", "Are you sure you want to remove the selected ports from the site " + selectedSiteID + " - " + selectedSite + "? \nThis action will remove remote site specific data such as remote circuit association, Network Gear, Serial Number, etc..");
+    gm.setPreference("warning", "false");
+    gm.setPreference("onPromptComplete", removePortsFromSite);
+    gm.setPreference("onPromptCancel", cancelRemovePorts);
+    gm.render();
+
+}
+
+function cancelRemovePorts() {
+    return false;
+}
+
+function removePortsFromSite() {
+    var siteInformation = g_scratchpad.siteInformation;
+    var checkedPorts = g_scratchpad.checkedPorts;
+    var site = siteInformation.selectedSiteSysId;
+    var cmdbCISite = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
+    cmdbCISite.addParam('sysparm_name', 'removePortsFromSite');
+    cmdbCISite.addParam('sysparm_checkedPorts', checkedPorts);
+    cmdbCISite.addParam('sysparm_site', site);
+    cmdbCISite.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+		//alert(response);
+        if (response == "success") {
+            location.reload();
+        } else {
+             return false;
+        }
+    }
+
+
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-13 13:49:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc37c9b88784d250f9f20f280cbb3513</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Un-Assign Ports from Site</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_action_fc37c9b88784d250f9f20f280cbb3513</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-17 15:38:46</sys_updated_on>
+        <table>x_g_sonc_ns_pro_port</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="cfcf21c24708121040fd43ff336d438c" sys_domain="global" table="x_g_sonc_ns_pro_vrf_definition" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>07cf21c24708121040fd43ff336d4394</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vrf_name</element>
+            <position>1</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>83cf21c24708121040fd43ff336d4395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vrf_number</element>
+            <position>2</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>8bcf21c24708121040fd43ff336d4395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>83cf21c24708121040fd43ff336d4396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vrf_usage</element>
+            <position>4</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>8bcf21c24708121040fd43ff336d4396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>83cf21c24708121040fd43ff336d4397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>6</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>8bcf21c24708121040fd43ff336d4397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vrf_prefix</element>
+            <position>7</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:09</sys_created_on>
+            <sys_id>83cf21c24708121040fd43ff336d4398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_vrf_definition" sys_domain="global" view="Default view">cfcf21c24708121040fd43ff336d438c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_vrf_definition</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-08-17 13:55:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cfcf21c24708121040fd43ff336d438c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_vrf_definition</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_cfcf21c24708121040fd43ff336d438c</sys_update_name>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-08-17 13:55:08</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

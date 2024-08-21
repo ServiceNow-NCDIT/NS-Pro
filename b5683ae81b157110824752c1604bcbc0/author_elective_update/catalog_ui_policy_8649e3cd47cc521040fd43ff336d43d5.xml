@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_ui_policy">
+    <catalog_ui_policy action="DELETE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <catalog_conditions>IO:a3dcb9ea4773021040fd43ff336d43b7ISNOTEMPTY^EQ</catalog_conditions>
+        <catalog_item display_value="Build New Host Circuit Ports">3da3bda687330210f9f20f280cbb3584</catalog_item>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>300</order>
+        <published_ref/>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>SelectEndingMethod</short_description>
+        <sys_class_name>catalog_ui_policy</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-14 20:13:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8649e3cd47cc521040fd43ff336d43d5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SelectEndingMethod</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_ui_policy_8649e3cd47cc521040fd43ff336d43d5</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-14 20:19:24</sys_updated_on>
+        <table/>
+        <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>catalog_ui_policy_8649e3cd47cc521040fd43ff336d43d5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_ui_policy"&gt;&lt;catalog_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;catalog_conditions&gt;IO:a3dcb9ea4773021040fd43ff336d43b7ISNOTEMPTY^EQ&lt;/catalog_conditions&gt;&lt;catalog_item display_value="Build New Host Circuit Ports"&gt;3da3bda687330210f9f20f280cbb3584&lt;/catalog_item&gt;&lt;conditions/&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;300&lt;/order&gt;&lt;published_ref/&gt;&lt;reverse_if_false&gt;false&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;SelectEndingMethod&lt;/short_description&gt;&lt;sys_class_name&gt;catalog_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admglfry&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-14 20:13:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8649e3cd47cc521040fd43ff336d43d5&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;SelectEndingMethod&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_ui_policy_8649e3cd47cc521040fd43ff336d43d5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admglfry&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-14 20:19:24&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;va_supported&gt;true&lt;/va_supported&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1129108124</payload_hash>
+        <record_name>SelectEndingMethod</record_name>
+        <reverted_from/>
+        <source>1253eb4347fb461040fd43ff336d4378</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-14 20:19:24</sys_created_on>
+        <sys_id>f2faa3454700921040fd43ff336d4344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191528b926b0000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-14 20:19:24</sys_updated_on>
+        <type>Catalog UI Policy</type>
+        <update_guid>f6faa34521009210884d90ba61f4f943</update_guid>
+        <update_guid_history>f6faa34521009210884d90ba61f4f943:-1129108124,157a6fc15f009210c5d03628bb20a24e:-424566401,e90a6381930092103c52e831b2568f12:-2114753678,3e99ef010d009210e0872a988246a44e:1497215028</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 08/15/2024 09:17:51">9514db5947ccd21040fd43ff336d43c6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-15 13:17:51</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy">catalog_ui_policy</sys_db_object>
+        <sys_id>0f418e50e7984cf88cd06fa8e8a1d821</sys_id>
+        <sys_metadata>8649e3cd47cc521040fd43ff336d43d5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SelectEndingMethod</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_8649e3cd47cc521040fd43ff336d43d5</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_8649e3cd47cc521040fd43ff336d43d5">f2faa3454700921040fd43ff336d4344</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-15 13:17:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
