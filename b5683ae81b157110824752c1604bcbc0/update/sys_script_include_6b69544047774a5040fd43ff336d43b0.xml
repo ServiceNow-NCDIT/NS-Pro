@@ -12,21 +12,21 @@ billing_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 	getNetplusCodes: function() {
 
-        var codes = new x_g_sonc_ns_pro.x_g_sonc_ns_pro.billing();
+        var codes = new x_g_sonc_ns_pro.billing();
         return codes.getNetplusCodes();
 
     },
 
 	getNetplusCircuitCodes: function() {
 
-        var codes = new x_g_sonc_ns_pro.x_g_sonc_ns_pro.billing();
+        var codes = new x_g_sonc_ns_pro.billing();
         return codes.getNetplusCircuitCodes();
 
     },
 
 	getCPEModelCodes: function() {
 
-        var codes = new x_g_sonc_ns_pro.x_g_sonc_ns_pro.billing();
+        var codes = new x_g_sonc_ns_pro.billing();
         return codes.getCPEModelCodes();
 
     },
@@ -37,13 +37,13 @@ billing_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-07-29 16:21:05</sys_created_on>
         <sys_id>6b69544047774a5040fd43ff336d43b0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>billing_ajax</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_6b69544047774a5040fd43ff336d43b0</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-07-30 19:29:34</sys_updated_on>
+        <sys_updated_on>2024-08-09 17:51:22</sys_updated_on>
     </sys_script_include>
 </record_update>

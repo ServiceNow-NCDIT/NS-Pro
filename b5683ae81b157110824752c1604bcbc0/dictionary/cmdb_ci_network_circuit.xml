@@ -20,7 +20,6 @@
             </choice>
         </element>
         <element label="Circuit Order Num" max_length="40" name="x_g_sonc_ns_pro_circuit_order_num" type="string"/>
-        <element label="PE Router" max_length="32" name="x_g_sonc_ns_pro_pe_router" reference="cmdb_ci_netgear" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Subnet Mask" max_length="40" name="x_g_sonc_ns_pro_subnet_mask" type="string"/>
         <element label="Host Ckt" max_length="40" name="x_g_sonc_ns_pro_host_ckt" type="boolean"/>
         <element choice="1" label="Circuit Type" mandatory="true" max_length="40" name="x_g_sonc_ns_pro_circuit_type" type="choice">

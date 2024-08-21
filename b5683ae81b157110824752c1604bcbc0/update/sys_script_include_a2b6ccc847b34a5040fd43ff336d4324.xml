@@ -59,7 +59,10 @@ getCPEModelCodes: function() {
 	var codes = []; // array of all codes
 	var codeGr = new GlideRecord('x_g_sonc_ns_pro_cpe_model');
 	codeGr.addNotNullQuery('cpe_level');
-	codeGr.orderBy('cpe_level');
+	codeGr.orderBy('cpe_model_1');
+	codeGr.orderBy('cpe_model_2');
+	codeGr.orderBy('cpe_model_3');
+	codeGr.orderBy('cpe_model_4');
 	codeGr.query();
 	while (codeGr.next()) {				
 		var code = {};
@@ -118,13 +121,13 @@ type: 'billing'
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-07-29 14:53:51</sys_created_on>
         <sys_id>a2b6ccc847b34a5040fd43ff336d4324</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>billing</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_a2b6ccc847b34a5040fd43ff336d4324</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-08-06 14:41:46</sys_updated_on>
+        <sys_updated_on>2024-08-08 12:39:29</sys_updated_on>
     </sys_script_include>
 </record_update>

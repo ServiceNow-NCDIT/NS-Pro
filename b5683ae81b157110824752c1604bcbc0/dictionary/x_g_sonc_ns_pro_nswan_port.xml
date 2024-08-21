@@ -38,7 +38,7 @@
         <element attributes="edge_encryption_enabled=true" label="GatewayIp" max_length="40" name="gatewayip" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Model" max_length="60" name="model" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="IpAddressRange" max_length="100" name="ipaddressrange" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Port Name" max_length="40" name="port_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Port Name" max_length="40" name="port_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Circuit Number" max_length="40" name="circuit_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Router Serial Number" max_length="40" name="router_serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="ConnectToPort" max_length="40" name="connecttoport" type="string"/>

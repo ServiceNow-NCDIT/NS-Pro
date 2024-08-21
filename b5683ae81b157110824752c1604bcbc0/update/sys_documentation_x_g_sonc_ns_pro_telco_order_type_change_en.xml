@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="x_g_sonc_ns_pro_pe_router" label="PE Router" language="en" table="cmdb_ci_network_circuit">
+    <sys_documentation element="type_change" label="Type Change" language="en" table="x_g_sonc_ns_pro_telco_order">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>x_g_sonc_ns_pro_pe_router</element>
+            <element>type_change</element>
             <help/>
             <hint/>
-            <label>PE Router</label>
+            <label>Type Change</label>
             <language>en</language>
-            <name>cmdb_ci_network_circuit</name>
-            <plural>PE Routers</plural>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <plural>Type Changes</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2023-09-22 12:23:36</sys_created_on>
+            <sys_created_on>2024-08-13 18:53:34</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>PE Router</sys_name>
+            <sys_name>Type Change</sys_name>
             <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
             <sys_policy/>
             <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-            <sys_update_name>sys_documentation_cmdb_ci_network_circuit_x_g_sonc_ns_pro_pe_router_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_g_sonc_ns_pro_telco_order_type_change_en</sys_update_name>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2023-09-22 12:23:36</sys_updated_on>
+            <sys_updated_on>2024-08-13 18:53:34</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

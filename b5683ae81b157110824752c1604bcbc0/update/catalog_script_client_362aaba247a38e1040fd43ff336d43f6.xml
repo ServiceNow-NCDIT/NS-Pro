@@ -55,17 +55,15 @@
 	
     function getBills(response) {
 		
-		// alert('getBills response = ' + response);
+		alert('getBills response = ' + response);
 
         var bills_response = JSON.parse(response);
 		var bills = '';
 		for (i=0; i < bills_response.length; i++) {
-			if (bills_response[i].end_date == "") {
 				
-				// alert('adding bill ' + bills_response[i].billing_code);
+			alert('adding bill ' + bills_response[i].billing_code);
 
-				bills = bills + bills_response[i].billing_code + '\n';
-			}
+			bills = bills + bills_response[i].billing_code + '\n';
 		}
         g_form.setValue('current_billing', bills);
 
@@ -78,7 +76,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>362aaba247a38e1040fd43ff336d43f6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>onChange Site - Get Services</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -86,7 +84,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_362aaba247a38e1040fd43ff336d43f6</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-07-25 17:16:51</sys_updated_on>
+        <sys_updated_on>2024-08-09 18:08:50</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
