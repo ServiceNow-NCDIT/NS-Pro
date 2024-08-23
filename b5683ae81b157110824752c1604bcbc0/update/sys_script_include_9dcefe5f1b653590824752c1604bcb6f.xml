@@ -76,19 +76,36 @@ cmdb_ci_site_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor,
         return response;
 
     },
+	getSiteCircuitInformation: function() {
+		var cmdbCISite = new x_g_sonc_ns_pro.cmdb_ci_site();
+		var siteCircuitSysId = this.getParameter('sysparm_siteCircuitSysId');
+		var response = cmdbCISite.getSiteCircuitInformation(siteCircuitSysId);
+
+		return JSON.stringify(response);
+	},
+	initiateSiteCircuitDecomm: function(){
+		var cmdbCISite = new x_g_sonc_ns_pro.cmdb_ci_site();
+		var siteSysId = this.getParameter('sysparm_siteSysId');
+		var siteCircuitSysId = this.getParameter('sysparm_siteCircuitSysId');
+		var telcoSysId = this.getParameter('sysparm_telcoSysId');
+		var response = cmdbCISite.initiateSiteCircuitDecomm(siteSysId,siteCircuitSysId,telcoSysId);
+
+		return response;
+
+	},
     type: 'cmdb_ci_site_ajax'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 14:09:55</sys_created_on>
         <sys_id>9dcefe5f1b653590824752c1604bcb6f</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>cmdb_ci_site_ajax</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_9dcefe5f1b653590824752c1604bcb6f</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-13 13:58:30</sys_updated_on>
+        <sys_updated_on>2024-08-23 03:46:54</sys_updated_on>
     </sys_script_include>
 </record_update>

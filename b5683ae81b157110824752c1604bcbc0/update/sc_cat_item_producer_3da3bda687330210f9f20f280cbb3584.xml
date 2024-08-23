@@ -6,14 +6,14 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category/>
+        <category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</category>
         <checked_out/>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description/>
+        <description><![CDATA[<p><span style="font-size: 14pt;">Use this to Provision/Create Ports for a new or existing circuit.</span></p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <flow_designer_flow/>
@@ -31,7 +31,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Build New Host Circuit Ports</name>
+        <name>MetroBuilder - Provision Host Circuit Ports</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -48,7 +48,7 @@
         <order>0</order>
         <ordered_item_link/>
         <owner display_value="Gary Fry - Admin">07e95c6e47d3065440fd43ff336d43cf</owner>
-        <picture/>
+        <picture>89e9bb2b874c9e10f9f20f280cbb3515</picture>
         <post_insert_script/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=3da3bda687330210f9f20f280cbb3584&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
@@ -59,13 +59,13 @@
         <roles/>
         <save_options/>
         <save_script/>
-        <sc_catalogs/>
+        <sc_catalogs>8e1bef5bdb072f007ea9d2e3ca96192c</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
         <script><![CDATA[producer.redirect = '/nspro';
 producer.portal_redirect = '/nspro';]]></script>
-        <short_description>Generate Port Records New Host Circuit</short_description>
+        <short_description>Provision/Create Ports for a new or existing host circuit</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state/>
@@ -73,14 +73,14 @@ producer.portal_redirect = '/nspro';]]></script>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-08-06 17:16:48</sys_created_on>
         <sys_id>3da3bda687330210f9f20f280cbb3584</sys_id>
-        <sys_mod_count>76</sys_mod_count>
-        <sys_name>Build New Host Circuit Ports</sys_name>
+        <sys_mod_count>88</sys_mod_count>
+        <sys_name>MetroBuilder - Provision Host Circuit Ports</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_producer_3da3bda687330210f9f20f280cbb3584</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-16 10:40:15</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-22 15:49:22</sys_updated_on>
         <table_name>x_g_sonc_ns_pro_newcircuitports</table_name>
         <taxonomy_topic/>
         <template/>
@@ -90,7 +90,7 @@ producer.portal_redirect = '/nspro';]]></script>
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>76</version>
+        <version>88</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
@@ -116,4 +116,43 @@ producer.portal_redirect = '/nspro';]]></script>
         <table>sc_cat_item_producer</table>
         <type>calculated</type>
     </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#99ccff</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>7f6e56d3d7524e728f178a8aef162d8a936caa76686997fd12644a09454d6eea</hash>
+        <image_height>67</image_height>
+        <image_width>67</image_width>
+        <size_bytes>2099</size_bytes>
+        <size_compressed>1938</size_compressed>
+        <state>available</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-22 15:49:22</sys_created_on>
+        <sys_id>89e9bb2b874c9e10f9f20f280cbb3515</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-22 15:49:22</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>3da3bda687330210f9f20f280cbb3584</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="89e9bb2b874c9e10f9f20f280cbb3515">89e9bb2b874c9e10f9f20f280cbb3515</sys_attachment>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-22 15:49:22</sys_created_on>
+        <sys_id>c9e9bb2b874c9e10f9f20f280cbb3515</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2572</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="89e9bb2b874c9e10f9f20f280cbb3515">89e9bb2b874c9e10f9f20f280cbb3515</sys_attachment>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-22 15:49:22</sys_created_on>
+        <sys_id>4de9bb2b874c9e10f9f20f280cbb3515</sys_id>
+    </sys_attachment_doc>
 </record_update>

@@ -216,11 +216,11 @@ cmdb_ci_site.prototype = {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
                     portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
-					portRecord.setValue('local_circuit_id',null);
-					portRecord.setValue('network_gear',null);
-					portRecord.setValue('name','');
-					portRecord.setValue('vrf','');
-					portRecord.setValue('site',null);
+                    portRecord.setValue('local_circuit_id', null);
+                    portRecord.setValue('network_gear', null);
+                    portRecord.setValue('name', '');
+                    portRecord.setValue('vrf', '');
+                    portRecord.setValue('site', null);
                     portRecord.update();
                 }
 
@@ -265,11 +265,62 @@ cmdb_ci_site.prototype = {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
                     portRecord.setValue('site', site);
-                    portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.ASSIGNED);
+                    //portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.ASSIGNED);
                     portRecord.update();
                 }
 
             }
+
+        } catch (Ex) {
+            errorString = "Error Occured in cmdb_ci_site.assignPortsToSite - " + Ex.toString();
+            gs.info(errorString);
+        }
+
+        if (errorString) {
+            return errorString;
+        } else {
+            return NSPROConstants.AJAX_RETURNCODES.SUCCESS;
+        }
+
+    },
+    getSiteCircuitInformation: function(siteCircuitSysId) {
+        var errorString;
+        var siteCircuitInformation = {};
+        var returnObj = {};
+        try {
+            var siteCircuit = new GlideRecord('cmdb_ci_network_circuit');
+            if (siteCircuit.get(siteCircuitSysId)) {
+                siteCircuitInformation.circuitId = siteCircuit.getValue('name');
+                siteCircuitInformation.circuitSpeed = siteCircuit.getDisplayValue('x_g_sonc_ns_pro_circuit_speed');
+                siteCircuitInformation.circuitType = siteCircuit.getDisplayValue('x_g_sonc_ns_pro_circuit_type');
+                siteCircuitInformation.hostCircuit = siteCircuit.getValue('x_g_sonc_ns_pro_host_ckt');
+                //siteCircuitInformation.hostCircuit = siteCircuit.getValue('x_g_sonc_ns_pro_host_ckt');
+                siteCircuitInformation.telco = siteCircuit.getElement('x_g_sonc_ns_pro_telco_provider.name').toString();
+                siteCircuitInformation.telcoSysId = siteCircuit.getValue('x_g_sonc_ns_pro_telco_provider');
+				siteCircuitInformation.installStatus = siteCircuit.getValue('install_status');
+                returnObj.resultCode = NSPROConstants.AJAX_RETURNCODES.SUCCESS;
+                returnObj.errorMessage = "";
+                returnObj.result = siteCircuitInformation;
+
+            }
+        } catch (Ex) {
+            errorString = "Error Occured in cmdb_ci_site.assignPortsToSite - " + Ex.toString();
+            gs.info(errorString);
+            returnObj.resultCode = NSPROConstants.AJAX_RETURNCODES.FAILED;
+            returnObj.errorMessage = errorString;
+            returnObj.result = "";
+        }
+        return returnObj;
+    },
+    initiateSiteCircuitDecomm: function(siteSysId, siteCircuitSysId, telcoSysId) {
+        var errorString;
+        try {
+			var initDecommRecord = new GlideRecord("x_g_sonc_ns_pro_initiatesitecircuitdecom");
+			initDecommRecord.initialize();
+			initDecommRecord.setValue('site', siteSysId);
+			initDecommRecord.setValue('circuit', siteCircuitSysId);
+			initDecommRecord.setValue('telco_provider', telcoSysId);
+			initDecommRecord.insert();
 
         } catch (Ex) {
             errorString = "Error Occured in cmdb_ci_site.assignPortsToSite - " + Ex.toString();
@@ -289,13 +340,13 @@ cmdb_ci_site.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>119</sys_mod_count>
+        <sys_mod_count>128</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-20 16:45:41</sys_updated_on>
+        <sys_updated_on>2024-08-23 05:30:37</sys_updated_on>
     </sys_script_include>
 </record_update>

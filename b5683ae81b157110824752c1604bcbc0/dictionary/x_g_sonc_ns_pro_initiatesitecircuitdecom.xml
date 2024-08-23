@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3d74127f87801250f9f20f280cbb352e" extends="sys_import_set_row" label="InitiateSiteCircuitDecom" max_length="40" name="x_g_sonc_ns_pro_initiatesitecircuitdecom" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site" max_length="32" name="site" reference="cmdb_ci_site" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="circuit" max_length="32" name="circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <index name="index">
+            <element name="circuit"/>
+        </index>
+        <index name="index2">
+            <element name="site"/>
+        </index>
+        <index name="index3">
+            <element name="telco_provider"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,1588 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2581000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>initiate_site_circuit_decommission</internal_name>
+        <label_cache>[{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_type","label":"1 - Update Record➛Network Circuit Record➛Circuit Type","reference":"","reference_display":"Circuit Type","type":"choice","base_type":"choice","parent_table_name":"cmdb_ci_network_circuit","column_name":"x_g_sonc_ns_pro_circuit_type","choices":[{"label":"-- None --","used":false,"image":"","missing":false,"rawLabel":"-- None --","selected":false,"reference":false,"value":""},{"used":false,"label":"ASE","image":"","missing":false,"rawLabel":"ASE","selected":false,"reference":false,"value":"ase","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Point to Point ASE","image":"","missing":false,"rawLabel":"Point to Point ASE","selected":false,"reference":false,"value":"p2p_ase","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"BCE Cable","image":"","missing":false,"rawLabel":"BCE Cable","selected":false,"reference":false,"value":"bce_cable","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Cable BB","image":"","missing":false,"rawLabel":"Cable BB","selected":false,"reference":false,"value":"cable_bb","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"CORE Ring","image":"","missing":false,"rawLabel":"CORE Ring","selected":false,"reference":false,"value":"core_ring","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"DSL BB","image":"","missing":false,"rawLabel":"DSL BB","selected":false,"reference":false,"value":"dsl_bb","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"MAN","image":"","missing":false,"rawLabel":"MAN","selected":false,"reference":false,"value":"man","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"MM","image":"","missing":false,"rawLabel":"MM","selected":false,"reference":false,"value":"mm","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"MAN SM","image":"","missing":false,"rawLabel":"MAN SM","selected":false,"reference":false,"value":"man_sm","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"ME","image":"","missing":false,"rawLabel":"ME","selected":false,"reference":false,"value":"me","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Point to Point ME","image":"","missing":false,"rawLabel":"Point to Point ME","selected":false,"reference":false,"value":"p2p_me","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Wireless","image":"","missing":false,"rawLabel":"Wireless","selected":false,"reference":false,"value":"wireless","parameters":{"name":"cmdb_ci_network_circuit"}}],"usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_speed","label":"1 - Update Record➛Network Circuit Record➛Circuit Speed","reference":"","reference_display":"Circuit Speed","type":"choice","base_type":"choice","parent_table_name":"cmdb_ci_network_circuit","column_name":"x_g_sonc_ns_pro_circuit_speed","choices":[{"label":"-- None --","used":false,"image":"","missing":false,"rawLabel":"-- None --","selected":false,"reference":false,"value":""},{"used":false,"label":"2M","image":"","missing":false,"rawLabel":"2M","selected":false,"reference":false,"value":"2","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"5M","image":"","missing":false,"rawLabel":"5M","selected":false,"reference":false,"value":"5","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"10M","image":"","missing":false,"rawLabel":"10M","selected":false,"reference":false,"value":"10","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"20M","image":"","missing":false,"rawLabel":"20M","selected":false,"reference":false,"value":"20","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"50M","image":"","missing":false,"rawLabel":"50M","selected":false,"reference":false,"value":"50","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"60M","image":"","missing":false,"rawLabel":"60M","selected":false,"reference":false,"value":"60","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"100M","image":"","missing":false,"rawLabel":"100M","selected":false,"reference":false,"value":"100","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"200M","image":"","missing":false,"rawLabel":"200M","selected":false,"reference":false,"value":"200","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"250M","image":"","missing":false,"rawLabel":"250M","selected":false,"reference":false,"value":"250","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"500M","image":"","missing":false,"rawLabel":"500M","selected":false,"reference":false,"value":"500","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"1G","image":"","missing":false,"rawLabel":"1G","selected":false,"reference":false,"value":"1000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"2G","image":"","missing":false,"rawLabel":"2G","selected":false,"reference":false,"value":"2000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"3G","image":"","missing":false,"rawLabel":"3G","selected":false,"reference":false,"value":"3000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"4G","image":"","missing":false,"rawLabel":"4G","selected":false,"reference":false,"value":"4000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"5G","image":"","missing":false,"rawLabel":"5G","selected":false,"reference":false,"value":"5000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"6G","image":"","missing":false,"rawLabel":"6G","selected":false,"reference":false,"value":"6000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"7G","image":"","missing":false,"rawLabel":"7G","selected":false,"reference":false,"value":"7000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"8G","image":"","missing":false,"rawLabel":"8G","selected":false,"reference":false,"value":"8000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"9G","image":"","missing":false,"rawLabel":"9G","selected":false,"reference":false,"value":"9000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"10G","image":"","missing":false,"rawLabel":"10G","selected":false,"reference":false,"value":"10000","parameters":{"name":"cmdb_ci_network_circuit"}}],"usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.name","label":"1 - Update Record➛Network Circuit Record➛Circuit ID","reference":"","reference_display":"Circuit ID","type":"string","base_type":"string","parent_table_name":"cmdb_ci_network_circuit","column_name":"name","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name","label":"1 - Update Record➛Network Circuit Record➛Telco Provider➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_provider","column_name":"name","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.name","label":"1 - Update Record➛Network Circuit Record➛Site➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"name","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["ah_subject",null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.site_identifier","label":"1 - Update Record➛Network Circuit Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["ah_subject"]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.poc_primary_email","label":"1 - Update Record➛Network Circuit Record➛Telco Provider➛POC Primary Email","reference":"","reference_display":"POC Primary Email","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_provider","column_name":"poc_primary_email","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["ah_to"]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record","label":"1 - Update Record➛Network Circuit Record","reference":"cmdb_ci_network_circuit","reference_display":"Network Circuit","type":"reference","base_type":"reference","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["record",null]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.circuit","label":"Trigger - Record Created➛InitiateSiteCircuitDecom Record➛Circuit","reference":"cmdb_ci_network_circuit","reference_display":"Network Circuit","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_initiatesitecircuitdecom","column_name":"circuit","usedInstances":{"57f10918-105e-4c95-b353-46bb10979e7b":["record"]}}]</label_cache>
+        <master_snapshot>c3746e7787441250f9f20f280cbb35b5</master_snapshot>
+        <name>Initiate Site Circuit Decommission</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>e374ae7787441250f9f20f280cbb3506</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 03:52:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>816f5e7787041250f9f20f280cbb3525</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Initiate Site Circuit Decommission</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_hub_flow_816f5e7787041250f9f20f280cbb3525</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:30</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=816f5e7787041250f9f20f280cbb3525"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_g_sonc_ns_pro_initiatesitecircuitdecom">circuitISNOTEMPTY^siteISNOTEMPTY^telco_providerISNOTEMPTY<item endquery="false" field="circuit" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="site" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="telco_provider" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e374ae7787441250f9f20f280cbb3506</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:44</sys_updated_on>
+        <table>x_g_sonc_ns_pro_initiatesitecircuitdecom</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>816f5e7787041250f9f20f280cbb3525</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:35:30</sys_created_on>
+        <sys_id>2f39267387841250f9f20f280cbb3551</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:30</sys_updated_on>
+        <trigger display_value="">e374ae7787441250f9f20f280cbb3506</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=816f5e7787041250f9f20f280cbb3525^sys_idNOT IN2f39267387841250f9f20f280cbb3551"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=816f5e7787041250f9f20f280cbb3525^sys_idNOT INec742e7787441250f9f20f280cbb3510"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Initiate Site Circuit Decommission">816f5e7787041250f9f20f280cbb3525</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>ec742e7787441250f9f20f280cbb3510</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:30</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ec742e7787441250f9f20f280cbb3510"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ec742e7787441250f9f20f280cbb3510</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>64742e7787441250f9f20f280cbb3513</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <value>x_g_sonc_ns_pro_initiatesitecircuitdecom</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>ec742e7787441250f9f20f280cbb3510</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>6c742e7787441250f9f20f280cbb3512</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <value>circuitISNOTEMPTY^siteISNOTEMPTY^telco_providerISNOTEMPTY</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=816f5e7787041250f9f20f280cbb3525"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=816f5e7787041250f9f20f280cbb3525^sys_idNOT IN0d6f96f787041250f9f20f280cbb359c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>816f5e7787041250f9f20f280cbb3525</id>
+        <name>Initiate Site Circuit Decommission</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 03:52:26</sys_created_on>
+        <sys_id>0d6f96f787041250f9f20f280cbb359c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 03:52:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0d6f96f787041250f9f20f280cbb359c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=816f5e7787041250f9f20f280cbb3525^sys_idNOT IN6874ea7787441250f9f20f280cbb35e1,ec74ea7787441250f9f20f280cbb35e5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Initiate Site Circuit Decommission">816f5e7787041250f9f20f280cbb3525</model>
+        <model_id>816f5e7787041250f9f20f280cbb3525</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_816f5e7787041250f9f20f280cbb3525</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>6874ea7787441250f9f20f280cbb35e1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6874ea7787441250f9f20f280cbb35e1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Initiate Site Circuit Decommission">816f5e7787041250f9f20f280cbb3525</model>
+        <model_id>816f5e7787041250f9f20f280cbb3525</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_816f5e7787041250f9f20f280cbb3525</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>ec74ea7787441250f9f20f280cbb35e5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec74ea7787441250f9f20f280cbb35e5"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=816f5e7787041250f9f20f280cbb3525"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=816f5e7787041250f9f20f280cbb3525"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=816f5e7787041250f9f20f280cbb3525^sys_idNOT IN28742e7787441250f9f20f280cbb3519,30742e7787441250f9f20f280cbb3525"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Initiate Site Circuit Decommission">816f5e7787041250f9f20f280cbb3525</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>28742e7787441250f9f20f280cbb3519</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:46:51</sys_updated_on>
+        <ui_id>57f10918-105e-4c95-b353-46bb10979e7b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28742e7787441250f9f20f280cbb3519"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28742e7787441250f9f20f280cbb3519</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>68742e7787441250f9f20f280cbb351c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <value>cmdb_ci_network_circuit</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28742e7787441250f9f20f280cbb3519</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>a4742e7787441250f9f20f280cbb351c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <value>install_status=101</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=28742e7787441250f9f20f280cbb3519"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>28742e7787441250f9f20f280cbb3519</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>24742e7787441250f9f20f280cbb351c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current.circuit}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>28742e7787441250f9f20f280cbb3519</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>a8742e7787441250f9f20f280cbb351b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>28742e7787441250f9f20f280cbb3519</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>60742e7787441250f9f20f280cbb351c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28742e7787441250f9f20f280cbb3519"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28742e7787441250f9f20f280cbb3519"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Initiate Site Circuit Decommission">816f5e7787041250f9f20f280cbb3525</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>30742e7787441250f9f20f280cbb3525</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:46:51</sys_updated_on>
+        <ui_id>73aa2cc8-1b07-4907-9121-1402f4fe9da3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=30742e7787441250f9f20f280cbb3525"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>30742e7787441250f9f20f280cbb3525</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>70742e7787441250f9f20f280cbb3528</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <value>cmdb_ci_network_circuit</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>30742e7787441250f9f20f280cbb3525</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>bc742e7787441250f9f20f280cbb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=30742e7787441250f9f20f280cbb3525"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>30742e7787441250f9f20f280cbb3525</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>b4742e7787441250f9f20f280cbb3527</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:195a4d88-294f-4bf5-8842-ad9964336b37}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:195a4d88-294f-4bf5-8842-ad9964336b37}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Telco Provider &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_195a4d88-294f-4bf5-8842-ad9964336b37" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;strong&gt;Please Decommission the following port and stop billing for the circuit:&lt;/strong&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;strong&gt;Site&lt;/strong&gt;:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:35ba33c2-2d46-42f4-8eed-cafa628627ce}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:35ba33c2-2d46-42f4-8eed-cafa628627ce}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Site &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_35ba33c2-2d46-42f4-8eed-cafa628627ce" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="border-color: black; background-color: #fafafa; height: 10px; float: left;" border="1px" width="800" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th style="border-color: #030303; background-color: #baddf5; width: 300px; height: 25px; text-align: center;"&gt;&lt;strong&gt;Circuit ID&lt;/strong&gt;&lt;/th&gt;
+&lt;th style="border-color: #030303; background-color: #baddf5; width: 300px; height: 25px; text-align: center;"&gt;&lt;strong&gt;Circuit Speed&lt;/strong&gt;&lt;/th&gt;
+&lt;th style="border-color: #030303; background-color: #baddf5; width: 300px; height: 25px; text-align: center;"&gt;
+&lt;p&gt;&lt;strong&gt;Circuit Type&lt;/strong&gt;&lt;/p&gt;
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:b03424b1-9c93-4f0b-a878-06876fd13eea}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:b03424b1-9c93-4f0b-a878-06876fd13eea}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Circuit ID"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Circuit ID&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_b03424b1-9c93-4f0b-a878-06876fd13eea" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:27b5c6d4-8b48-4c75-855d-468eeb3776c3}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:27b5c6d4-8b48-4c75-855d-468eeb3776c3}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Circuit Speed"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Circuit Speed&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_27b5c6d4-8b48-4c75-855d-468eeb3776c3" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;
+&lt;p&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Circuit Type"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Circuit Type&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="font-family: Aptos, sans-serif;"&gt;N.C. Department of Information Technology&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;&lt;span style="font-size: 12.0pt; font-family: 'Aptos',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Aptos; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="data:image/png;base64,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" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>30742e7787441250f9f20f280cbb3525</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>3c742e7787441250f9f20f280cbb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Decomission Circuit for Site:  + {{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.site_identifier}} + " - " + {{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>30742e7787441250f9f20f280cbb3525</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>30742e7787441250f9f20f280cbb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.poc_primary_email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>30742e7787441250f9f20f280cbb3525</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>f0742e7787441250f9f20f280cbb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{57f10918-105e-4c95-b353-46bb10979e7b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>30742e7787441250f9f20f280cbb3525</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>78742e7787441250f9f20f280cbb3527</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=30742e7787441250f9f20f280cbb3525"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=30742e7787441250f9f20f280cbb3525"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=816f5e7787041250f9f20f280cbb3525"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=816f5e7787041250f9f20f280cbb3525"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=816f5e7787041250f9f20f280cbb3525^sys_idNOT IN30742e7787441250f9f20f280cbb352b,3c742e7787441250f9f20f280cbb352b,74742e7787441250f9f20f280cbb352c,78742e7787441250f9f20f280cbb352b,7c742e7787441250f9f20f280cbb352a,b0742e7787441250f9f20f280cbb352c,b4742e7787441250f9f20f280cbb352a,b4742e7787441250f9f20f280cbb352b,f0742e7787441250f9f20f280cbb352b,fc742e7787441250f9f20f280cbb352b"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>30742e7787441250f9f20f280cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7bf0bb6c-43da-4e3f-8b95-01eeece1012a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_speed}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>3c742e7787441250f9f20f280cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>27b5c6d4-8b48-4c75-855d-468eeb3776c3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>74742e7787441250f9f20f280cbb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>35ba33c2-2d46-42f4-8eed-cafa628627ce</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>78742e7787441250f9f20f280cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b03424b1-9c93-4f0b-a878-06876fd13eea</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>7c742e7787441250f9f20f280cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>92d37439-53bb-4eea-85ff-a3942a90c675</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>b0742e7787441250f9f20f280cbb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>b4742e7787441250f9f20f280cbb352a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8f958f69-9024-4268-b12e-4e6e09ce5316</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>b4742e7787441250f9f20f280cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>195a4d88-294f-4bf5-8842-ad9964336b37</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>f0742e7787441250f9f20f280cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>caa92b88-e6fc-4693-8219-98f302a5cdc3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>816f5e7787041250f9f20f280cbb3525</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>fc742e7787441250f9f20f280cbb352b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4516c46a-a2a4-47e8-ba03-41535794fc3a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=816f5e7787041250f9f20f280cbb3525"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_816f5e7787041250f9f20f280cbb3525^sys_idNOT INe074ea7787441250f9f20f280cbb35e8,ec74ea7787441250f9f20f280cbb35e4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_816f5e7787041250f9f20f280cbb3525</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>e074ea7787441250f9f20f280cbb35e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_816f5e7787041250f9f20f280cbb3525</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:32</sys_created_on>
+        <sys_id>ec74ea7787441250f9f20f280cbb35e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_816f5e7787041250f9f20f280cbb3525"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_816f5e7787041250f9f20f280cbb3525"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_816f5e7787041250f9f20f280cbb3525"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>initiate_site_circuit_decommission</internal_name>
+        <label_cache>[{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_type","label":"1 - Update Record➛Network Circuit Record➛Circuit Type","reference":"","reference_display":"Circuit Type","type":"choice","base_type":"choice","parent_table_name":"cmdb_ci_network_circuit","column_name":"x_g_sonc_ns_pro_circuit_type","choices":[{"label":"-- None --","used":false,"image":"","missing":false,"rawLabel":"-- None --","selected":false,"reference":false,"value":""},{"used":false,"label":"ASE","image":"","missing":false,"rawLabel":"ASE","selected":false,"reference":false,"value":"ase","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Point to Point ASE","image":"","missing":false,"rawLabel":"Point to Point ASE","selected":false,"reference":false,"value":"p2p_ase","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"BCE Cable","image":"","missing":false,"rawLabel":"BCE Cable","selected":false,"reference":false,"value":"bce_cable","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Cable BB","image":"","missing":false,"rawLabel":"Cable BB","selected":false,"reference":false,"value":"cable_bb","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"CORE Ring","image":"","missing":false,"rawLabel":"CORE Ring","selected":false,"reference":false,"value":"core_ring","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"DSL BB","image":"","missing":false,"rawLabel":"DSL BB","selected":false,"reference":false,"value":"dsl_bb","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"MAN","image":"","missing":false,"rawLabel":"MAN","selected":false,"reference":false,"value":"man","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"MM","image":"","missing":false,"rawLabel":"MM","selected":false,"reference":false,"value":"mm","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"MAN SM","image":"","missing":false,"rawLabel":"MAN SM","selected":false,"reference":false,"value":"man_sm","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"ME","image":"","missing":false,"rawLabel":"ME","selected":false,"reference":false,"value":"me","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Point to Point ME","image":"","missing":false,"rawLabel":"Point to Point ME","selected":false,"reference":false,"value":"p2p_me","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"Wireless","image":"","missing":false,"rawLabel":"Wireless","selected":false,"reference":false,"value":"wireless","parameters":{"name":"cmdb_ci_network_circuit"}}],"usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_speed","label":"1 - Update Record➛Network Circuit Record➛Circuit Speed","reference":"","reference_display":"Circuit Speed","type":"choice","base_type":"choice","parent_table_name":"cmdb_ci_network_circuit","column_name":"x_g_sonc_ns_pro_circuit_speed","choices":[{"label":"-- None --","used":false,"image":"","missing":false,"rawLabel":"-- None --","selected":false,"reference":false,"value":""},{"used":false,"label":"2M","image":"","missing":false,"rawLabel":"2M","selected":false,"reference":false,"value":"2","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"5M","image":"","missing":false,"rawLabel":"5M","selected":false,"reference":false,"value":"5","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"10M","image":"","missing":false,"rawLabel":"10M","selected":false,"reference":false,"value":"10","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"20M","image":"","missing":false,"rawLabel":"20M","selected":false,"reference":false,"value":"20","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"50M","image":"","missing":false,"rawLabel":"50M","selected":false,"reference":false,"value":"50","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"60M","image":"","missing":false,"rawLabel":"60M","selected":false,"reference":false,"value":"60","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"100M","image":"","missing":false,"rawLabel":"100M","selected":false,"reference":false,"value":"100","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"200M","image":"","missing":false,"rawLabel":"200M","selected":false,"reference":false,"value":"200","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"250M","image":"","missing":false,"rawLabel":"250M","selected":false,"reference":false,"value":"250","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"500M","image":"","missing":false,"rawLabel":"500M","selected":false,"reference":false,"value":"500","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"1G","image":"","missing":false,"rawLabel":"1G","selected":false,"reference":false,"value":"1000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"2G","image":"","missing":false,"rawLabel":"2G","selected":false,"reference":false,"value":"2000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"3G","image":"","missing":false,"rawLabel":"3G","selected":false,"reference":false,"value":"3000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"4G","image":"","missing":false,"rawLabel":"4G","selected":false,"reference":false,"value":"4000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"5G","image":"","missing":false,"rawLabel":"5G","selected":false,"reference":false,"value":"5000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"6G","image":"","missing":false,"rawLabel":"6G","selected":false,"reference":false,"value":"6000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"7G","image":"","missing":false,"rawLabel":"7G","selected":false,"reference":false,"value":"7000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"8G","image":"","missing":false,"rawLabel":"8G","selected":false,"reference":false,"value":"8000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"9G","image":"","missing":false,"rawLabel":"9G","selected":false,"reference":false,"value":"9000","parameters":{"name":"cmdb_ci_network_circuit"}},{"used":false,"label":"10G","image":"","missing":false,"rawLabel":"10G","selected":false,"reference":false,"value":"10000","parameters":{"name":"cmdb_ci_network_circuit"}}],"usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.name","label":"1 - Update Record➛Network Circuit Record➛Circuit ID","reference":"","reference_display":"Circuit ID","type":"string","base_type":"string","parent_table_name":"cmdb_ci_network_circuit","column_name":"name","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name","label":"1 - Update Record➛Network Circuit Record➛Telco Provider➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_provider","column_name":"name","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":[null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.name","label":"1 - Update Record➛Network Circuit Record➛Site➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"name","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["ah_subject",null]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.site_identifier","label":"1 - Update Record➛Network Circuit Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["ah_subject"]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.poc_primary_email","label":"1 - Update Record➛Network Circuit Record➛Telco Provider➛POC Primary Email","reference":"","reference_display":"POC Primary Email","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_provider","column_name":"poc_primary_email","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["ah_to"]}},{"name":"57f10918-105e-4c95-b353-46bb10979e7b.record","label":"1 - Update Record➛Network Circuit Record","reference":"cmdb_ci_network_circuit","reference_display":"Network Circuit","type":"reference","base_type":"reference","usedInstances":{"73aa2cc8-1b07-4907-9121-1402f4fe9da3":["record",null]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.circuit","label":"Trigger - Record Created➛InitiateSiteCircuitDecom Record➛Circuit","reference":"cmdb_ci_network_circuit","reference_display":"Network Circuit","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_initiatesitecircuitdecom","column_name":"circuit","usedInstances":{"57f10918-105e-4c95-b353-46bb10979e7b":["record"]}}]</label_cache>
+        <master>true</master>
+        <name>Initiate Site Circuit Decommission</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Initiate Site Circuit Decommission">816f5e7787041250f9f20f280cbb3525</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c3746e7787441250f9f20f280cbb35b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:29</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c3746e7787441250f9f20f280cbb35b5^sys_idNOT IN9f746e7787441250f9f20f280cbb35ef"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Initiate Site Circuit Decommission">c3746e7787441250f9f20f280cbb35b5</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>9f746e7787441250f9f20f280cbb35ef</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:30</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9f746e7787441250f9f20f280cbb35ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9f746e7787441250f9f20f280cbb35ef</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>97746e7787441250f9f20f280cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <value>x_g_sonc_ns_pro_initiatesitecircuitdecom</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9f746e7787441250f9f20f280cbb35ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>d3746e7787441250f9f20f280cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <value>circuitISNOTEMPTY^siteISNOTEMPTY^telco_providerISNOTEMPTY</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c3746e7787441250f9f20f280cbb35b5^sys_idNOT IN97746e7787441250f9f20f280cbb35b6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c3746e7787441250f9f20f280cbb35b5</id>
+        <name>Initiate Site Circuit Decommission</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:42</sys_created_on>
+        <sys_id>97746e7787441250f9f20f280cbb35b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=97746e7787441250f9f20f280cbb35b6"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c3746e7787441250f9f20f280cbb35b5^sys_idNOT IN1f746e7787441250f9f20f280cbb35b7,9b746e7787441250f9f20f280cbb35d1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Initiate Site Circuit Decommission">c3746e7787441250f9f20f280cbb35b5</model>
+        <model_id>c3746e7787441250f9f20f280cbb35b5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c3746e7787441250f9f20f280cbb35b5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:42</sys_created_on>
+        <sys_id>1f746e7787441250f9f20f280cbb35b7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1f746e7787441250f9f20f280cbb35b7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Initiate Site Circuit Decommission">c3746e7787441250f9f20f280cbb35b5</model>
+        <model_id>c3746e7787441250f9f20f280cbb35b5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c3746e7787441250f9f20f280cbb35b5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>9b746e7787441250f9f20f280cbb35d1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9b746e7787441250f9f20f280cbb35d1"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c3746e7787441250f9f20f280cbb35b5^sys_idNOT IN13746e7787441250f9f20f280cbb35e2,9f746e7787441250f9f20f280cbb35ec"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Initiate Site Circuit Decommission">c3746e7787441250f9f20f280cbb35b5</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>13746e7787441250f9f20f280cbb35e2</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:29</sys_updated_on>
+        <ui_id>57f10918-105e-4c95-b353-46bb10979e7b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=13746e7787441250f9f20f280cbb35e2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>13746e7787441250f9f20f280cbb35e2</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>1f746e7787441250f9f20f280cbb35e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <value>cmdb_ci_network_circuit</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>13746e7787441250f9f20f280cbb35e2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>5b746e7787441250f9f20f280cbb35e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <value>install_status=101</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=13746e7787441250f9f20f280cbb35e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>13746e7787441250f9f20f280cbb35e2</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>d7746e7787441250f9f20f280cbb35e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current.circuit}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>13746e7787441250f9f20f280cbb35e2</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>53746e7787441250f9f20f280cbb35e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>13746e7787441250f9f20f280cbb35e2</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>17746e7787441250f9f20f280cbb35e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=13746e7787441250f9f20f280cbb35e2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=13746e7787441250f9f20f280cbb35e2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Initiate Site Circuit Decommission">c3746e7787441250f9f20f280cbb35b5</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>9f746e7787441250f9f20f280cbb35ec</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:29</sys_updated_on>
+        <ui_id>73aa2cc8-1b07-4907-9121-1402f4fe9da3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9f746e7787441250f9f20f280cbb35ec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9f746e7787441250f9f20f280cbb35ec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>9b746e7787441250f9f20f280cbb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <value>cmdb_ci_network_circuit</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9f746e7787441250f9f20f280cbb35ec</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>d7746e7787441250f9f20f280cbb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9f746e7787441250f9f20f280cbb35ec"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>9f746e7787441250f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>df746e7787441250f9f20f280cbb35ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:195a4d88-294f-4bf5-8842-ad9964336b37}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:195a4d88-294f-4bf5-8842-ad9964336b37}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Telco Provider &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_195a4d88-294f-4bf5-8842-ad9964336b37" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;strong&gt;Please Decommission the following port and stop billing for the circuit:&lt;/strong&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;strong&gt;Site&lt;/strong&gt;:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:35ba33c2-2d46-42f4-8eed-cafa628627ce}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:35ba33c2-2d46-42f4-8eed-cafa628627ce}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Site &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_35ba33c2-2d46-42f4-8eed-cafa628627ce" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="border-color: black; background-color: #fafafa; height: 10px; float: left;" border="1px" width="800" cellspacing="0" cellpadding="0"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th style="border-color: #030303; background-color: #baddf5; width: 300px; height: 25px; text-align: center;"&gt;&lt;strong&gt;Circuit ID&lt;/strong&gt;&lt;/th&gt;
+&lt;th style="border-color: #030303; background-color: #baddf5; width: 300px; height: 25px; text-align: center;"&gt;&lt;strong&gt;Circuit Speed&lt;/strong&gt;&lt;/th&gt;
+&lt;th style="border-color: #030303; background-color: #baddf5; width: 300px; height: 25px; text-align: center;"&gt;
+&lt;p&gt;&lt;strong&gt;Circuit Type&lt;/strong&gt;&lt;/p&gt;
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:b03424b1-9c93-4f0b-a878-06876fd13eea}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:b03424b1-9c93-4f0b-a878-06876fd13eea}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Circuit ID"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Circuit ID&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_b03424b1-9c93-4f0b-a878-06876fd13eea" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:27b5c6d4-8b48-4c75-855d-468eeb3776c3}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:27b5c6d4-8b48-4c75-855d-468eeb3776c3}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Circuit Speed"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Circuit Speed&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_27b5c6d4-8b48-4c75-855d-468eeb3776c3" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td style="text-align: center;"&gt;
+&lt;p&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="1 - Update Record &amp;gt; Network Circuit Record &amp;gt; Circuit Type"&gt;&lt;span class="pill-start"&gt;1 - Update Record&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Circuit Type&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;&lt;span style="font-size: 10pt;"&gt;&lt;strong&gt;&lt;span style="font-family: Aptos, sans-serif;"&gt;N.C. Department of Information Technology&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;strong&gt;&lt;span style="font-size: 12.0pt; font-family: 'Aptos',sans-serif; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: Aptos; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"&gt;&lt;br /&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="data:image/png;base64,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" alt="" /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>9f746e7787441250f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>57746e7787441250f9f20f280cbb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>Decomission Circuit for Site:  + {{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.site_identifier}} + " - " + {{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>9f746e7787441250f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>5b746e7787441250f9f20f280cbb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.poc_primary_email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9f746e7787441250f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>1f746e7787441250f9f20f280cbb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{57f10918-105e-4c95-b353-46bb10979e7b.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9f746e7787441250f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>93746e7787441250f9f20f280cbb35ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9f746e7787441250f9f20f280cbb35ec"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9f746e7787441250f9f20f280cbb35ec"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c3746e7787441250f9f20f280cbb35b5^sys_idNOT IN53746e7787441250f9f20f280cbb35f2,57746e7787441250f9f20f280cbb35f2,5b746e7787441250f9f20f280cbb35f1,5b746e7787441250f9f20f280cbb35f2,5f746e7787441250f9f20f280cbb35f1,d3746e7787441250f9f20f280cbb35f2,d7746e7787441250f9f20f280cbb35f2,db746e7787441250f9f20f280cbb35f1,db746e7787441250f9f20f280cbb35f2,df746e7787441250f9f20f280cbb35f1"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_speed}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>53746e7787441250f9f20f280cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>27b5c6d4-8b48-4c75-855d-468eeb3776c3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>57746e7787441250f9f20f280cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8f958f69-9024-4268-b12e-4e6e09ce5316</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>5b746e7787441250f9f20f280cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>b03424b1-9c93-4f0b-a878-06876fd13eea</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>5b746e7787441250f9f20f280cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>92d37439-53bb-4eea-85ff-a3942a90c675</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>5f746e7787441250f9f20f280cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>7bf0bb6c-43da-4e3f-8b95-01eeece1012a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_site.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>d3746e7787441250f9f20f280cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>35ba33c2-2d46-42f4-8eed-cafa628627ce</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>d7746e7787441250f9f20f280cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4516c46a-a2a4-47e8-ba03-41535794fc3a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>db746e7787441250f9f20f280cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>caa92b88-e6fc-4693-8219-98f302a5cdc3</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_circuit_type}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>db746e7787441250f9f20f280cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3bf6ccb0-7db3-4d5d-a06b-c5e0e01edc96</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>c3746e7787441250f9f20f280cbb35b5</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{57f10918-105e-4c95-b353-46bb10979e7b.record.x_g_sonc_ns_pro_telco_provider.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>df746e7787441250f9f20f280cbb35f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>195a4d88-294f-4bf5-8842-ad9964336b37</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c3746e7787441250f9f20f280cbb35b5^sys_idNOT IN5b746e7787441250f9f20f280cbb35c1,9f746e7787441250f9f20f280cbb35d5"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c3746e7787441250f9f20f280cbb35b5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>5b746e7787441250f9f20f280cbb35c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c3746e7787441250f9f20f280cbb35b5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:43</sys_created_on>
+        <sys_id>9f746e7787441250f9f20f280cbb35d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:14:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c3746e7787441250f9f20f280cbb35b5"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>816f5e7787041250f9f20f280cbb3525</sys_id>
+        <latest_snapshot>c3746e7787441250f9f20f280cbb35b5</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1a-07-01-2024_07-12-2024_0853.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=816f5e7787041250f9f20f280cbb3525^sys_idNOT INa774ae7787441250f9f20f280cbb3508"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a774ae7787441250f9f20f280cbb3508","name":"plan","plan_signature":null}}</plan>
+        <plan_id>816f5e7787041250f9f20f280cbb3525</plan_id>
+        <snapshot>42db22f787841250f9f20f280cbb350d</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-23 04:14:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a774ae7787441250f9f20f280cbb3508</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-23 04:35:30</sys_updated_on>
+        <trigger display_value="">e374ae7787441250f9f20f280cbb3506</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=816f5e7787041250f9f20f280cbb3525"/>
+</record_update>
