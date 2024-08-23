@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_g_sonc_ns_pro_pending_status" table="cmdb_ci_site" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <name>cmdb_ci_site</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:19:31</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_pending_status</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_cmdb_ci_site_x_g_sonc_ns_pro_pending_status</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:19:31</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Absent</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:19:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:19:47</sys_updated_on>
+            <value>100</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Maintenance</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:19:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:20:06</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Stock</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:20:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:20:28</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Installed</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:20:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:20:45</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On Order</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:20:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:21:03</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Install</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:21:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:22:14</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Repair</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:22:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:22:33</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retired</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>80</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:22:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:22:56</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Retire</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>90</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:23:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:23:18</sys_updated_on>
+            <value>101</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defective</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:23:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:23:33</sys_updated_on>
+            <value>102</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Pickup</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>110</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:23:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:23:56</sys_updated_on>
+            <value>103</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reserved</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>120</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:24:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:24:14</sys_updated_on>
+            <value>104</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unknown</label>
+            <language>en</language>
+            <name>cmdb_ci_site</name>
+            <sequence>130</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-08-22 20:24:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-08-22 20:24:30</sys_updated_on>
+            <value>105</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

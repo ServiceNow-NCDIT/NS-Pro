@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_set_operation">
+    <sys_rte_eb_set_operation action="INSERT_OR_UPDATE">
+        <conditional_fields/>
+        <conditional_script/>
+        <is_conditional>false</is_conditional>
+        <name>SET_sn_ihub_target_nat</name>
+        <operation_group/>
+        <order>0</order>
+        <overwrite_existing_value>false</overwrite_existing_value>
+        <set_value/>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields/>
+        <sys_class_name>sys_rte_eb_set_operation</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-21 20:26:10</sys_created_on>
+        <sys_id>0eaf6b9b87081e10f9f20f280cbb35cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SET_sn_ihub_target_nat</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Hardware Data Mapping_etl_ihub">383fa79787081e10f9f20f280cbb35b8</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_g_sonc_ns_pro_nswan_hardware">09afe79b87081e10f9f20f280cbb351c</sys_rte_eb_entity>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_set_operation_0eaf6b9b87081e10f9f20f280cbb35cc</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-21 20:26:10</sys_updated_on>
+        <target_sys_rte_eb_field display_value="sn_ihub_target_nat">ddaf2b9b87081e10f9f20f280cbb352e</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Set">c588011e730000102b6265a751ab9e4a</type>
+    </sys_rte_eb_set_operation>
+</record_update>

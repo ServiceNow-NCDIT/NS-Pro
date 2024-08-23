@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>false</active>
         <attributes/>
-        <cat_item display_value="Build New Host Circuit Ports">3da3bda687330210f9f20f280cbb3584</cat_item>
+        <cat_item display_value="MetroBuilder - Provision Host Circuit Ports">3da3bda687330210f9f20f280cbb3584</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>

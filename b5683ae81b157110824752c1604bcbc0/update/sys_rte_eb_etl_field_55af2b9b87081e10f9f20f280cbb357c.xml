@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>sn_ihub_target_serial_number</field>
+        <name>sn_ihub_target_serial_number</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-21 20:26:07</sys_created_on>
+        <sys_id>55af2b9b87081e10f9f20f280cbb357c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_ihub_target_serial_number</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Hardware Data Mapping_etl_ihub">383fa79787081e10f9f20f280cbb35b8</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_g_sonc_ns_pro_nswan_hardware">09afe79b87081e10f9f20f280cbb351c</sys_rte_eb_entity>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_55af2b9b87081e10f9f20f280cbb357c</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-21 20:26:07</sys_updated_on>
+    </sys_rte_eb_etl_field>
+</record_update>

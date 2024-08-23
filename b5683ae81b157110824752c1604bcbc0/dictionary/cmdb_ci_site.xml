@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="8b5561621b72211090990f6fe54bcb12" extends="cmdb_ci" label="Sitio" max_length="40" name="cmdb_ci_site" text_index="true" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Demarc Location" max_length="100" name="x_g_sonc_ns_pro_pending_demarc_location" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="HA Site" max_length="40" name="x_g_sonc_ns_pro_ha_site" type="boolean"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Last Upgrade" max_length="40" name="x_g_sonc_ns_pro_last_upgrade" type="glide_date"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="NSWAN Site" max_length="32" name="x_g_sonc_ns_pro_nswan_site" read_only="true" reference="x_g_sonc_ns_pro_nswan_service" type="reference"/>
@@ -13,18 +14,46 @@
                 <element inactive_on_update="false" label="PoP" sequence="30" value="pop"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Alternate POC" max_length="32" name="x_g_sonc_ns_pro_pending_alternate_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Office Hours" max_length="40" name="x_g_sonc_ns_pro_office_hours" type="string"/>
         <element label="VIP Site" max_length="40" name="x_g_sonc_ns_pro_vip_site" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Location" max_length="32" name="x_g_sonc_ns_pro_pending_location" reference="cmn_location" type="reference"/>
         <element label="Security LastUpgrade Date" max_length="40" name="x_g_sonc_ns_pro_security_lastupgrade_date" type="glide_date"/>
         <element label="Uplink VRF" max_length="40" name="x_g_sonc_ns_pro_uplink_vrf" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Room" max_length="100" name="x_g_sonc_ns_pro_pending_telco_room" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Status" max_length="40" name="x_g_sonc_ns_pro_pending_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Unknown" sequence="130" value="105"/>
+                <element inactive_on_update="false" label="On Order" sequence="50" value="2"/>
+                <element inactive_on_update="false" label="In Maintenance" sequence="20" value="3"/>
+                <element inactive_on_update="false" label="Pending Repair" sequence="70" value="5"/>
+                <element inactive_on_update="false" label="Installed" sequence="40" value="1"/>
+                <element inactive_on_update="false" label="Pending Retire" sequence="90" value="101"/>
+                <element inactive_on_update="false" label="Absent" sequence="10" value="100"/>
+                <element inactive_on_update="false" label="Defective" sequence="100" value="102"/>
+                <element inactive_on_update="false" label="In Stock" sequence="30" value="6"/>
+                <element inactive_on_update="false" label="Reserved" sequence="120" value="104"/>
+                <element inactive_on_update="false" label="Pending Pickup" sequence="110" value="103"/>
+                <element inactive_on_update="false" label="Pending Install" sequence="60" value="4"/>
+                <element inactive_on_update="false" label="Retired" sequence="80" value="7"/>
+            </choice>
+        </element>
         <element label="Point of Presence" max_length="32" name="x_g_sonc_ns_pro_point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Sonc ns pro pending decommission date" max_length="40" name="x_g_sonc_ns_pro_pending_decommission_date" type="glide_date_time"/>
         <element label="Telco Room" max_length="100" name="x_g_sonc_ns_pro_telco_room" type="string"/>
         <element label="Decommission Date" max_length="40" name="x_g_sonc_ns_pro_decommission_date" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Floor/Suite" max_length="100" name="x_g_sonc_ns_pro_pending_floor_suite" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Office Hours" max_length="40" name="x_g_sonc_ns_pro_pending_office_hours" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Floor/Suite" max_length="40" name="x_g_sonc_ns_pro_floor_suite" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Start Date" max_length="40" name="x_g_sonc_ns_pro_pending_start_date" type="glide_date_time"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Name" max_length="100" name="x_g_sonc_ns_pro_pending_name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Last Upgrade" max_length="40" name="x_g_sonc_ns_pro_pending_last_upgrade" type="glide_date"/>
         <element label="Alternate POC" max_length="32" name="x_g_sonc_ns_pro_alternate_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Primary POC" max_length="32" name="x_g_sonc_ns_pro_primary_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Request Type" max_length="32" name="x_g_sonc_ns_pro_request_type" reference="x_g_sonc_ns_pro_request_type" type="reference"/>
         <element label="Demarc Location" max_length="100" name="x_g_sonc_ns_pro_demarc_location" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Agency" max_length="32" name="x_g_sonc_ns_pro_pending_agency" reference="x_g_sonc_ns_pro_agency" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Primary POC" max_length="32" name="x_g_sonc_ns_pro_pending_primary_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Security Start Date" max_length="40" name="x_g_sonc_ns_pro_security_start_date" type="glide_date"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Agency" max_length="32" name="x_g_sonc_ns_pro_agency" reference="x_g_sonc_ns_pro_agency" type="reference"/>
     </element>

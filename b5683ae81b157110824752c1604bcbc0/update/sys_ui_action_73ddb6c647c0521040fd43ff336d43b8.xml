@@ -7,14 +7,14 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>!gs.nil(current.x_g_sonc_ns_pro_nspro_future_location) || !gs.nil(current.x_g_sonc_ns_pro_nspro_future_status)</condition>
+        <condition>!gs.nil(current.x_g_sonc_ns_pro_pending_location) || !gs.nil(current.x_g_sonc_ns_pro_pending_status)</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
-        <form_style/>
+        <form_style>primary</form_style>
         <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
         <isolate_script>false</isolate_script>
@@ -34,19 +34,48 @@
 // action.setRedirectURL(current);
 
 function onClick() {
+	
 	// alert('onClick running');
-	// save future values
-	var fLoc = g_form.getValue('x_g_sonc_ns_pro_nspro_future_location');
-	var fStatus = g_form.getValue('x_g_sonc_ns_pro_nspro_future_status');
-	// update form when pending changes (future values)
-	if (fLoc != '') {
-		g_form.setValue('location', fLoc);
-		g_form.setValue('x_g_sonc_ns_pro_nspro_future_location', '');
-	} 
-	if (fStatus != '') {
-		g_form.setValue('install_status', fStatus);
-		g_form.setValue('x_g_sonc_ns_pro_nspro_future_status', '');
-	}
+
+	// update form with pending changes (future values)
+	g_form.setValue('install_status', g_form.getValue('x_g_sonc_ns_pro_pending_status'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_status', '');
+
+	g_form.setValue('location', g_form.getValue('x_g_sonc_ns_pro_pending_location'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_location', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_floor_suite', g_form.getValue('x_g_sonc_ns_pro_pending_floor_suite'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_floor_suite', '');
+
+	g_form.setValue('start_date', g_form.getValue('x_g_sonc_ns_pro_pending_start_date'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_start_date', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_last_upgrade', g_form.getValue('x_g_sonc_ns_pro_pending_last_upgrade'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_last_upgrade', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_decommission_date', g_form.getValue('x_g_sonc_ns_pro_pending_decommission_date'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_decommission_date', '');
+
+	g_form.setValue('name', g_form.getValue('x_g_sonc_ns_pro_pending_name'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_name', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_primary_poc', g_form.getValue('x_g_sonc_ns_pro_pending_primary_poc'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_primary_poc', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_alternate_poc', g_form.getValue('x_g_sonc_ns_pro_pending_alternate_poc'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_alternate_poc', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_office_hours', g_form.getValue('x_g_sonc_ns_pro_pending_office_hours'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_office_hours', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_telco_room', g_form.getValue('x_g_sonc_ns_pro_pending_telco_room'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_telco_room', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_demarc_location', g_form.getValue('x_g_sonc_ns_pro_pending_demarc_location'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_demarc_location', '');
+
+	g_form.setValue('x_g_sonc_ns_pro_agency', g_form.getValue('x_g_sonc_ns_pro_pending_agency'));
+	g_form.setValue('x_g_sonc_ns_pro_pending_agency', '');
 	
 }
 
@@ -63,7 +92,7 @@ function onClick() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>73ddb6c647c0521040fd43ff336d43b8</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>Move Pending to Current</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -71,7 +100,7 @@ function onClick() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_73ddb6c647c0521040fd43ff336d43b8</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-08-18 00:19:11</sys_updated_on>
+        <sys_updated_on>2024-08-23 12:22:45</sys_updated_on>
         <table>cmdb_ci_site</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

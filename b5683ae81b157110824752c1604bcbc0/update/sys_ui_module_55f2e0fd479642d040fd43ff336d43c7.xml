@@ -3,7 +3,7 @@
         <active>true</active>
         <application display_value="NSPro">20056d25db19791040eae46b139619e3</application>
         <filter/>
-        <name>Billing Changes</name>
+        <name>Edit Billing Changes</name>
         <order/>
         <path/>
         <path_relative_to_root>false</path_relative_to_root>
@@ -14,14 +14,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>55f2e0fd479642d040fd43ff336d43c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Billing Changes</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Edit Billing Changes</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_module_55f2e0fd479642d040fd43ff336d43c7</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-21 13:51:03</sys_updated_on>
+        <sys_updated_on>2024-08-23 03:08:42</sys_updated_on>
         <table>x_g_sonc_ns_pro_billing_changes</table>
         <uncancelable>false</uncancelable>
         <view_name/>

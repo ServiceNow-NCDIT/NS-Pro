@@ -7,7 +7,7 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <catalog_conditions>IO:52345b5d47ccd21040fd43ff336d439b=endingIPAddress^IO:c56c352a4773021040fd43ff336d43a6ISNOTEMPTY^EQ</catalog_conditions>
-        <catalog_item display_value="Build New Host Circuit Ports">3da3bda687330210f9f20f280cbb3584</catalog_item>
+        <catalog_item display_value="MetroBuilder - Provision Host Circuit Ports">3da3bda687330210f9f20f280cbb3584</catalog_item>
         <conditions/>
         <description/>
         <global>true</global>
