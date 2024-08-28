@@ -49,6 +49,7 @@
             <choice>
                 <element inactive_on_update="false" label="3G" sequence="130" value="3000"/>
                 <element inactive_on_update="false" label="250M" sequence="90" value="250"/>
+                <element inactive_on_update="false" label="6M" sequence="25" value="6"/>
                 <element inactive_on_update="false" label="10G" sequence="200" value="10000"/>
                 <element inactive_on_update="false" label="2M" sequence="10" value="2"/>
                 <element inactive_on_update="false" label="50M" sequence="50" value="50"/>
@@ -57,6 +58,7 @@
                 <element inactive_on_update="false" label="60M" sequence="60" value="60"/>
                 <element inactive_on_update="false" label="20M" sequence="40" value="20"/>
                 <element inactive_on_update="false" label="5G" sequence="150" value="5000"/>
+                <element inactive_on_update="false" label="3M" sequence="15" value="3"/>
                 <element inactive_on_update="false" label="500M" sequence="100" value="500"/>
                 <element inactive_on_update="false" label="4G" sequence="140" value="4000"/>
                 <element inactive_on_update="false" label="6G" sequence="160" value="6000"/>
@@ -90,6 +92,7 @@
                 <element inactive_on_update="false" label="10M" sequence="30" value="10"/>
                 <element inactive_on_update="false" label="500M" sequence="100" value="500"/>
                 <element inactive_on_update="false" label="9G" sequence="190" value="9000"/>
+                <element inactive_on_update="false" label="6M" sequence="25" value="6"/>
                 <element inactive_on_update="false" label="20M" sequence="40" value="20"/>
                 <element inactive_on_update="false" label="5G" sequence="150" value="5000"/>
                 <element inactive_on_update="false" label="250M" sequence="90" value="250"/>
