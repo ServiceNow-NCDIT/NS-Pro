@@ -2,17 +2,17 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-09-26 12:30:52</sys_created_on>
-        <sys_id>9e36e60d1b2d3150824752c1604bcb56</sys_id>
+        <sys_created_on>2024-08-28 09:14:07</sys_created_on>
+        <sys_id>fce85de187d4de50f9f20f280cbb35e2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>cmdb_ci_site.snc_internal</sys_name>
+        <sys_name>.x_g_sonc_ns_pro.config</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_security_acl display_value="cmdb_ci_site">dd26224d1b2d3150824752c1604bcbee</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_9e36e60d1b2d3150824752c1604bcb56</sys_update_name>
+        <sys_security_acl display_value="cmdb_ci_netgear">2fc8d56587d4de50f9f20f280cbb3541</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fce85de187d4de50f9f20f280cbb35e2</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-09-26 12:30:52</sys_updated_on>
-        <sys_user_role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</sys_user_role>
+        <sys_updated_on>2024-08-28 09:14:07</sys_updated_on>
+        <sys_user_role display_value="x_g_sonc_ns_pro.config" name="x_g_sonc_ns_pro.config">ea13ae4cdb99825040eae46b139619d3</sys_user_role>
     </sys_security_acl_role>
 </record_update>

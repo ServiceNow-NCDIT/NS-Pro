@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-28 09:42:44</sys_created_on>
+        <sys_id>c95fdda587d4de50f9f20f280cbb35ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_site.x_g_sonc_ns_pro.config</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_security_acl display_value="cmdb_ci_site">0d46e64d1b2d3150824752c1604bcb6c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c95fdda587d4de50f9f20f280cbb35ab</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-28 09:42:44</sys_updated_on>
+        <sys_user_role display_value="x_g_sonc_ns_pro.config" name="x_g_sonc_ns_pro.config">ea13ae4cdb99825040eae46b139619d3</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
