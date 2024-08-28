@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>NS Pro Read Only Role</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_g_sonc_ns_pro.x_g_sonc_ns_pro.review</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>x_g_sonc_ns_pro.review</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 16:52:29</sys_created_on>
+        <sys_id>c618b9d947109e5040fd43ff336d43c6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro.x_g_sonc_ns_pro.review</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_user_role_c618b9d947109e5040fd43ff336d43c6</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 16:56:47</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_user_role_c618b9d947109e5040fd43ff336d43c6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>NS Pro Read Only Role</description><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_g_sonc_ns_pro.x_g_sonc_ns_pro.review</name><scoped_admin>false</scoped_admin><suffix>x_g_sonc_ns_pro.review</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-08-27 16:52:29</sys_created_on><sys_id>c618b9d947109e5040fd43ff336d43c6</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_g_sonc_ns_pro.x_g_sonc_ns_pro.review</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_user_role_c618b9d947109e5040fd43ff336d43c6</sys_update_name><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-08-27 16:56:47</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-940944846</payload_hash>
+        <record_name>x_g_sonc_ns_pro.x_g_sonc_ns_pro.review</record_name>
+        <reverted_from/>
+        <source>3454e0cc87d45250f9f20f280cbb3513</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 16:56:47</sys_created_on>
+        <sys_id>1d49f1dd47109e5040fd43ff336d43bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19194c4bf800000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 16:56:47</sys_updated_on>
+        <type>Role</type>
+        <update_guid>1149f1ddf6109e504b359ead29acf7bf</update_guid>
+        <update_guid_history>1149f1ddf6109e504b359ead29acf7bf:-940944846,1e483d1d39109e505853492aa77ae434:1340902332</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 08/27/2024 12:57:12">8f59b9dd47109e5040fd43ff336d4360</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 16:57:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>22e9918ba66b4abf9bd3a28655ec5d49</sys_id>
+        <sys_metadata>c618b9d947109e5040fd43ff336d43c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro.x_g_sonc_ns_pro.review</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_user_role_c618b9d947109e5040fd43ff336d43c6</sys_update_name>
+        <sys_update_version display_value="sys_user_role_c618b9d947109e5040fd43ff336d43c6">1d49f1dd47109e5040fd43ff336d43bf</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 16:57:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

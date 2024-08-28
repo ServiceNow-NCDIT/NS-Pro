@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="INSERT_OR_UPDATE">
+        <action_script><![CDATA[/**
+ * Script executed on the Client for this menu action
+ *
+ * The following variables are available to the script:
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
+ */
+ //alert("Decomm Clicked");
+ 
+decomissionCircuit();
+ function decomissionCircuit() {
+    var selectedSite = g_form.getValue('name');
+    var selectedSiteID = g_form.getValue('site_identifier');
+    var site_sysid = g_form.getUniqueValue();
+    var selectedRecord = rowSysId;
+    var siteCircuitInformation = {};
+    siteCircuitInformation.selectedSite = selectedSite;
+    siteCircuitInformation.selectedSiteID = selectedSiteID;
+    siteCircuitInformation.site_sysid = site_sysid;
+    siteCircuitInformation.selectedRecord = selectedRecord;
+
+
+    var cmdbCISite = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
+    cmdbCISite.addParam('sysparm_name', 'getSiteCircuitInformation');
+    cmdbCISite.addParam('sysparm_siteCircuitSysId', selectedRecord);
+    cmdbCISite.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+        //alert(response);
+        var responseObj = JSON.parse(response);
+        //alert(responseObj);
+        if (responseObj.resultCode == "success") {
+            var circuitInfo = responseObj.result;
+	
+            siteCircuitInformation.circuitId = circuitInfo.circuitId;
+            siteCircuitInformation.circuitSpeed = circuitInfo.circuitSpeed;
+            siteCircuitInformation.circuitType = circuitInfo.circuitType;
+            siteCircuitInformation.hostCircuit = circuitInfo.hostCircuit;
+            siteCircuitInformation.telco = circuitInfo.telco;
+            siteCircuitInformation.telcoSysId = circuitInfo.telcoSysId;
+            g_scratchpad.siteCircuitInformation = siteCircuitInformation;
+
+            var gm = new GlideModal("glide_confirm_standard", true, 800);
+            gm.setTitle("Initiate Circuit Decommission Site: " + selectedSiteID + " - " + selectedSite);
+            gm.setPreference("title", "Are you sure you want to initiate decommissioning the circuit for site: " + selectedSiteID + " - " + selectedSite + "\n Circuit ID: " + siteCircuitInformation.circuitId + " Circuit Speed: " + siteCircuitInformation.circuitSpeed + "\n Telco: " + siteCircuitInformation.telco);
+            gm.setPreference("warning", "false");
+            gm.setPreference("onPromptComplete", initiateDecommission);
+            gm.setPreference("onPromptCancel", cancelDecommission);
+            gm.render();
+
+
+        } else {
+            alert(responseObj.errorMessage);
+            return false;
+        }
+    }
+
+    function cancelDecommission() {
+        return false;
+    }
+
+    function initiateDecommission() {
+        siteCircuitInformation = g_scratchpad.siteCircuitInformation;
+        var cmdbCISite = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
+        cmdbCISite.addParam('sysparm_name', 'initiateSiteCircuitDecomm');
+        cmdbCISite.addParam('sysparm_siteSysId', siteCircuitInformation.site_sysid);
+        cmdbCISite.addParam('sysparm_siteCircuitSysId', siteCircuitInformation.selectedRecord);
+        cmdbCISite.addParam('sysparm_telcoSysId', siteCircuitInformation.telcoSysId);
+
+
+        cmdbCISite.getXMLAnswer(getInitiateResponse);
+
+        function getInitiateResponse(response) {
+            if (response == "success") {
+				var initDone = new GlideModal("glide_info", false, 600);
+				initDone.setTitle("Decomission Initiation Completed");
+				initDone.setPreference("title", "Circuit: " + siteCircuitInformation.circuitId + " for site: " + siteCircuitInformation.selectedSiteID + " - " + siteCircuitInformation.selectedSite + " has been submitted for decommissioning to telco provider: " + siteCircuitInformation.telco);
+				initDone.setPreference('focusTrap',true);
+				initDone.setPreference("onPromptClose", function() {alert("You clicked on 'Close'")});
+				initDone.setPreference("onPromptComplete", function(){location.reload();return true;});
+				initDone.setPreference("onPromptCancel", function(){location.reload();return true;});
+				initDone.setPreference("warning", "false");
+				initDone.setPreference("alignment","center");
+				initDone.render();
+
+                
+            } else {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+]]></action_script>
+        <active>true</active>
+        <comments/>
+        <condition/>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Decommission Circuit</name>
+        <on_show_script><![CDATA[/**
+ * This client-side script is used to dynamically change the context menu before it is displayed.
+ * It is called before showing the context menu if the Run onShow script flag is checked.
+ *
+ * The following variables are available to the script:
+ *    'g_menu' the context menu that is about to be shown
+ *    'g_item' the current context menu item
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ */
+canBeDeCommissioned();
+
+function canBeDeCommissioned() {
+    var isInstalled = false;
+    var selectedRecord = g_sysId;
+    var siteCircuit = new GlideRecord('cmdb_ci_network_circuit');
+    if (siteCircuit.get(selectedRecord)) {
+        if (siteCircuit.getValue('install_status') == "1") {
+            isInstalled = true;
+        }
+    }
+    if (isInstalled) {
+        g_menu.setEnabled(g_item);
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>10</order>
+        <parent/>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-26 22:00:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9405f989475cda5040fd43ff336d43b6</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Decommission Circuit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_9405f989475cda5040fd43ff336d43b6</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 16:06:52</sys_updated_on>
+        <table>cmdb_ci_network_circuit</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+</record_update>

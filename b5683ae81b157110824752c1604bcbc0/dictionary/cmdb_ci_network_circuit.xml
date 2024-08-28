@@ -77,6 +77,7 @@
                 <element inactive_on_update="false" label="100M" sequence="70" value="100"/>
                 <element inactive_on_update="false" label="2G" sequence="120" value="2000"/>
                 <element inactive_on_update="false" label="8G" sequence="180" value="8000"/>
+                <element inactive_on_update="false" label="3M" sequence="10" value="3"/>
                 <element inactive_on_update="false" label="7G" sequence="170" value="7000"/>
                 <element inactive_on_update="false" label="60M" sequence="60" value="60"/>
                 <element inactive_on_update="false" label="3G" sequence="130" value="3000"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name/>
-        <active>true</active>
+        <active>false</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
 
@@ -94,9 +94,11 @@
 
         function getInitiateResponse(response) {
             if (response == "success") {
-				var initDone = new GlideModal("glide_confirm_standard", false, 600);
+				var initDone = new GlideModal("glide_info", false, 600);
 				initDone.setTitle("Decomission Initiation Completed");
 				initDone.setPreference("title", "Circuit: " + siteCircuitInformation.circuitId + " for site: " + siteCircuitInformation.selectedSiteID + " - " + siteCircuitInformation.selectedSite + " has been submitted for decommissioning to telco provider: " + siteCircuitInformation.telco);
+				initDone.setPreference('focusTrap',true);
+				initDone.setPreference("onPromptClose", function() {alert("You clicked on 'Close'")});
 				initDone.setPreference("onPromptComplete", function(){location.reload();return true;});
 				initDone.setPreference("onPromptCancel", function(){location.reload();return true;});
 				initDone.setPreference("warning", "false");
@@ -122,7 +124,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fb68c5fb8708de10f9f20f280cbb3562</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_name>Decommission Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -130,7 +132,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_fb68c5fb8708de10f9f20f280cbb3562</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-23 05:54:57</sys_updated_on>
+        <sys_updated_on>2024-08-27 16:07:58</sys_updated_on>
         <table>cmdb_ci_network_circuit</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

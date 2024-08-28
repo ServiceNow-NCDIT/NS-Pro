@@ -1,0 +1,1768 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=11644000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>ns_pro_task_assigned_wan_service_change</internal_name>
+        <label_cache>[{"name":"6734adf8-3f09-464f-918f-e1fa28e853d8.item","label":"4 - For Each➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"d2324e49-32e7-4b4d-8257-c7739c498f70":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"af4dbf22-cb24-426c-a3da-1f3af5fb37be.Records","label":"3 - Look Up Records➛NSPro Tasks Records","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"records","base_type":"records","usedInstances":{"6734adf8-3f09-464f-918f-e1fa28e853d8":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a.record.request_ha","label":"2 - Update Record➛Network Request Record➛Request Circuit Redundancy (HA - GoldService)","reference":"","reference_display":"Request Circuit Redundancy (HA - GoldService)","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_ha","usedInstances":{}},{"name":"Updated_1.current.assigned_wan_service","label":"Trigger - Record Updated➛NSPro Tasks Record➛Assigned WAN Service","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"assigned_wan_service","usedInstances":{"44812d91-0f24-4738-a39e-c305974f2196":["conditions"],"d2324e49-32e7-4b4d-8257-c7739c498f70":["assigned_wan_service"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"0f1e004b-bd4f-443d-be6a-e78631dabcb7":["record"]},"attributes":{}},{"name":"44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code","label":"1 - Look Up Record➛Service Definition Record➛Svc Code","reference":"","reference_display":"Svc Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"svc_code","usedInstances":{"0f1e004b-bd4f-443d-be6a-e78631dabcb7":["service_code","quoted_service_code"],"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a":["service_code","quoted_svc_code"],"d2324e49-32e7-4b4d-8257-c7739c498f70":["assigned_wan_service_code","service_code","quoted_service_code"]}},{"name":"44812d91-0f24-4738-a39e-c305974f2196.Record.speed_egress","label":"1 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"speed_egress","usedInstances":{"0f1e004b-bd4f-443d-be6a-e78631dabcb7":["speed"],"d2324e49-32e7-4b4d-8257-c7739c498f70":["speed"]}},{"name":"Updated_1.table_name","label":"Trigger - Record Updated➛NSPro Tasks Table","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"table_name","base_type":"table_name","usedInstances":{"e6c34a1c-dee0-4136-8c13-d8ee1969d920":["table"],"af4dbf22-cb24-426c-a3da-1f3af5fb37be":["table"]},"attributes":{"test_input_hidden":"true"}},{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Network Request","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order","usedInstances":{"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a":["record"]}},{"name":"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a.record.sys_id","label":"2 - Update Record➛Network Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"sys_id","usedInstances":{"e6c34a1c-dee0-4136-8c13-d8ee1969d920":["conditions"],"af4dbf22-cb24-426c-a3da-1f3af5fb37be":["conditions"]}}]</label_cache>
+        <master_snapshot>2cd04fd587509e50f9f20f280cbb359c</master_snapshot>
+        <name>NS Pro Task Assigned Wan Service Change</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>3cd08fd587509e50f9f20f280cbb3516</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:31:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>053832d187109e50f9f20f280cbb3505</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>NS Pro Task Assigned Wan Service Change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_hub_flow_053832d187109e50f9f20f280cbb3505</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:52</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=053832d187109e50f9f20f280cbb3505"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_g_sonc_ns_pro_nspro_tasks">assigned_wan_serviceISNOTEMPTY^assigned_wan_serviceVALCHANGES^stateNOT IN3,4,7<item endquery="false" field="assigned_wan_service" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="assigned_wan_service" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item display_value="3,4,7" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="3,4,7"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3cd08fd587509e50f9f20f280cbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <table>x_g_sonc_ns_pro_nspro_tasks</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>053832d187109e50f9f20f280cbb3505</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:51</sys_created_on>
+        <sys_id>64a4eb1987949e50f9f20f280cbb358b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:51</sys_updated_on>
+        <trigger display_value="">3cd08fd587509e50f9f20f280cbb3516</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=053832d187109e50f9f20f280cbb3505^sys_idNOT IN64a4eb1987949e50f9f20f280cbb358b"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=053832d187109e50f9f20f280cbb3505^sys_idNOT IN590972d587109e50f9f20f280cbb35b1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>590972d587109e50f9f20f280cbb35b1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:52</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=590972d587109e50f9f20f280cbb35b1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>590972d587109e50f9f20f280cbb35b1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>950972d587109e50f9f20f280cbb35b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:35:18</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>590972d587109e50f9f20f280cbb35b1</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>990972d587109e50f9f20f280cbb35b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:35:18</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>590972d587109e50f9f20f280cbb35b1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>d10972d587109e50f9f20f280cbb35b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:35:18</sys_updated_on>
+        <value>assigned_wan_serviceISNOTEMPTY^assigned_wan_serviceVALCHANGES^stateNOT IN3,4,7</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=590972d587109e50f9f20f280cbb35b1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=053832d187109e50f9f20f280cbb3505"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=053832d187109e50f9f20f280cbb3505^sys_idNOT IN8538725587109e50f9f20f280cbb35b1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>053832d187109e50f9f20f280cbb3505</id>
+        <name>NS Pro Task Assigned Wan Service Change</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:31:44</sys_created_on>
+        <sys_id>8538725587109e50f9f20f280cbb35b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:31:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8538725587109e50f9f20f280cbb35b1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=053832d187109e50f9f20f280cbb3505^sys_idNOT IN1509b25587109e50f9f20f280cbb35f3,550972d587109e50f9f20f280cbb35ab,5d09b25587109e50f9f20f280cbb35ee"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>FDCollection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">fc9ab9bddba21300a27757c5ca961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</model>
+        <model_id>053832d187109e50f9f20f280cbb3505</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>1509b25587109e50f9f20f280cbb35f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:35:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1509b25587109e50f9f20f280cbb35f3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</model>
+        <model_id>053832d187109e50f9f20f280cbb3505</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>550972d587109e50f9f20f280cbb35ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=550972d587109e50f9f20f280cbb35ab"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</model>
+        <model_id>053832d187109e50f9f20f280cbb3505</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>5d09b25587109e50f9f20f280cbb35ee</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5d09b25587109e50f9f20f280cbb35ee"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=053832d187109e50f9f20f280cbb3505"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=053832d187109e50f9f20f280cbb3505"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=053832d187109e50f9f20f280cbb3505^sys_idNOT IN11942b1987949e50f9f20f280cbb3583,64a047d587509e50f9f20f280cbb3515,98a047d587509e50f9f20f280cbb3505,cd942b1987949e50f9f20f280cbb3576"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>6734adf8-3f09-464f-918f-e1fa28e853d8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>11942b1987949e50f9f20f280cbb3583</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:47:05</sys_updated_on>
+        <ui_id>d2324e49-32e7-4b4d-8257-c7739c498f70</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11942b1987949e50f9f20f280cbb3583"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11942b1987949e50f9f20f280cbb3583</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>5d942b1987949e50f9f20f280cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:37</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=11942b1987949e50f9f20f280cbb3583"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>11942b1987949e50f9f20f280cbb3583</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>d9942b1987949e50f9f20f280cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{6734adf8-3f09-464f-918f-e1fa28e853d8.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>11942b1987949e50f9f20f280cbb3583</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>55942b1987949e50f9f20f280cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>11942b1987949e50f9f20f280cbb3583</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>19942b1987949e50f9f20f280cbb3584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>assigned_wan_service={{Updated_1.current.assigned_wan_service}}^assigned_wan_service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^quoted_service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^speed={{44812d91-0f24-4738-a39e-c305974f2196.Record.speed_egress}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=11942b1987949e50f9f20f280cbb3583"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=11942b1987949e50f9f20f280cbb3583"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:34</sys_created_on>
+        <sys_id>64a047d587509e50f9f20f280cbb3515</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:47:05</sys_updated_on>
+        <ui_id>4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=64a047d587509e50f9f20f280cbb3515"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64a047d587509e50f9f20f280cbb3515</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:34</sys_created_on>
+        <sys_id>aca047d587509e50f9f20f280cbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:08:34</sys_updated_on>
+        <value>x_g_sonc_ns_pro_telco_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=64a047d587509e50f9f20f280cbb3515"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>64a047d587509e50f9f20f280cbb3515</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:34</sys_created_on>
+        <sys_id>2ca047d587509e50f9f20f280cbb3516</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:28:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.telco_order}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>64a047d587509e50f9f20f280cbb3515</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:34</sys_created_on>
+        <sys_id>a4a047d587509e50f9f20f280cbb3516</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:08:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>64a047d587509e50f9f20f280cbb3515</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:34</sys_created_on>
+        <sys_id>68a047d587509e50f9f20f280cbb3516</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:28:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>quoted_svc_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^=</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64a047d587509e50f9f20f280cbb3515"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64a047d587509e50f9f20f280cbb3515"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:33</sys_created_on>
+        <sys_id>98a047d587509e50f9f20f280cbb3505</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:47:05</sys_updated_on>
+        <ui_id>44812d91-0f24-4738-a39e-c305974f2196</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=98a047d587509e50f9f20f280cbb3505"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>98a047d587509e50f9f20f280cbb3505</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:33</sys_created_on>
+        <sys_id>d4a047d587509e50f9f20f280cbb3509</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:08:33</sys_updated_on>
+        <value>x_g_sonc_ns_pro_service_definition</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>98a047d587509e50f9f20f280cbb3505</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:33</sys_created_on>
+        <sys_id>dca047d587509e50f9f20f280cbb3508</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:08:33</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=98a047d587509e50f9f20f280cbb3505"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>98a047d587509e50f9f20f280cbb3505</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:33</sys_created_on>
+        <sys_id>98a047d587509e50f9f20f280cbb3508</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:08:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Updated_1.current.assigned_wan_service}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>98a047d587509e50f9f20f280cbb3505</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:33</sys_created_on>
+        <sys_id>5ca047d587509e50f9f20f280cbb3508</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:08:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>98a047d587509e50f9f20f280cbb3505</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:08:33</sys_created_on>
+        <sys_id>d0a047d587509e50f9f20f280cbb3508</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:08:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=98a047d587509e50f9f20f280cbb3505"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=98a047d587509e50f9f20f280cbb3505"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>cd942b1987949e50f9f20f280cbb3576</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:47:05</sys_updated_on>
+        <ui_id>af4dbf22-cb24-426c-a3da-1f3af5fb37be</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cd942b1987949e50f9f20f280cbb3576"/>
+    <sys_element_mapping action="delete_multiple" query="id=cd942b1987949e50f9f20f280cbb3576"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>cd942b1987949e50f9f20f280cbb3576</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>8d942b1987949e50f9f20f280cbb3578</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>telco_order={{4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a.record.sys_id}}^assigned_wan_serviceISNOTEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>cd942b1987949e50f9f20f280cbb3576</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>45942b1987949e50f9f20f280cbb3579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{Updated_1.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cd942b1987949e50f9f20f280cbb3576"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cd942b1987949e50f9f20f280cbb3576"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=053832d187109e50f9f20f280cbb3505"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=053832d187109e50f9f20f280cbb3505^sys_idNOT INc5942b1987949e50f9f20f280cbb357a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">89942b1987949e50f9f20f280cbb3579</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>c5942b1987949e50f9f20f280cbb357a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:52</sys_updated_on>
+        <ui_id>6734adf8-3f09-464f-918f-e1fa28e853d8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c5942b1987949e50f9f20f280cbb357a"/>
+    <sys_element_mapping action="delete_multiple" query="id=c5942b1987949e50f9f20f280cbb357a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>c5942b1987949e50f9f20f280cbb357a</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:37</sys_created_on>
+        <sys_id>c9942b1987949e50f9f20f280cbb357d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{af4dbf22-cb24-426c-a3da-1f3af5fb37be.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c5942b1987949e50f9f20f280cbb357a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c5942b1987949e50f9f20f280cbb357a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=053832d187109e50f9f20f280cbb3505"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=053832d187109e50f9f20f280cbb3505"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505^sys_idNOT IN1509b25587109e50f9f20f280cbb35f2,550972d587109e50f9f20f280cbb35aa,590972d587109e50f9f20f280cbb35ad"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>1509b25587109e50f9f20f280cbb35f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:35:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>550972d587109e50f9f20f280cbb35aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:35:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 21:35:18</sys_created_on>
+        <sys_id>590972d587109e50f9f20f280cbb35ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 21:35:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_053832d187109e50f9f20f280cbb3505"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_053832d187109e50f9f20f280cbb3505"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_053832d187109e50f9f20f280cbb3505"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>ns_pro_task_assigned_wan_service_change</internal_name>
+        <label_cache>[{"name":"6734adf8-3f09-464f-918f-e1fa28e853d8.item","label":"4 - For Each➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"d2324e49-32e7-4b4d-8257-c7739c498f70":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"af4dbf22-cb24-426c-a3da-1f3af5fb37be.Records","label":"3 - Look Up Records➛NSPro Tasks Records","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"records","base_type":"records","usedInstances":{"6734adf8-3f09-464f-918f-e1fa28e853d8":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a.record.request_ha","label":"2 - Update Record➛Network Request Record➛Request Circuit Redundancy (HA - GoldService)","reference":"","reference_display":"Request Circuit Redundancy (HA - GoldService)","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_ha","usedInstances":{}},{"name":"Updated_1.current.assigned_wan_service","label":"Trigger - Record Updated➛NSPro Tasks Record➛Assigned WAN Service","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"assigned_wan_service","usedInstances":{"44812d91-0f24-4738-a39e-c305974f2196":["conditions"],"d2324e49-32e7-4b4d-8257-c7739c498f70":["assigned_wan_service"]}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"0f1e004b-bd4f-443d-be6a-e78631dabcb7":["record"]},"attributes":{}},{"name":"44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code","label":"1 - Look Up Record➛Service Definition Record➛Svc Code","reference":"","reference_display":"Svc Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"svc_code","usedInstances":{"0f1e004b-bd4f-443d-be6a-e78631dabcb7":["service_code","quoted_service_code"],"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a":["service_code","quoted_svc_code"],"d2324e49-32e7-4b4d-8257-c7739c498f70":["assigned_wan_service_code","service_code","quoted_service_code"]}},{"name":"44812d91-0f24-4738-a39e-c305974f2196.Record.speed_egress","label":"1 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"speed_egress","usedInstances":{"0f1e004b-bd4f-443d-be6a-e78631dabcb7":["speed"],"d2324e49-32e7-4b4d-8257-c7739c498f70":["speed"]}},{"name":"Updated_1.table_name","label":"Trigger - Record Updated➛NSPro Tasks Table","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"table_name","base_type":"table_name","usedInstances":{"e6c34a1c-dee0-4136-8c13-d8ee1969d920":["table"],"af4dbf22-cb24-426c-a3da-1f3af5fb37be":["table"]},"attributes":{"test_input_hidden":"true"}},{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Network Request","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order","usedInstances":{"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a":["record"]}},{"name":"4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a.record.sys_id","label":"2 - Update Record➛Network Request Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"sys_id","usedInstances":{"e6c34a1c-dee0-4136-8c13-d8ee1969d920":["conditions"],"af4dbf22-cb24-426c-a3da-1f3af5fb37be":["conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>NS Pro Task Assigned Wan Service Change</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="NS Pro Task Assigned Wan Service Change">053832d187109e50f9f20f280cbb3505</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2cd04fd587509e50f9f20f280cbb359c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=2cd04fd587509e50f9f20f280cbb359c^sys_idNOT IN7cd04fd587509e50f9f20f280cbb35fc"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>7cd04fd587509e50f9f20f280cbb35fc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:52</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7cd04fd587509e50f9f20f280cbb35fc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7cd04fd587509e50f9f20f280cbb35fc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>7cd04fd587509e50f9f20f280cbb35fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7cd04fd587509e50f9f20f280cbb35fc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>b8d04fd587509e50f9f20f280cbb35fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <value>assigned_wan_serviceISNOTEMPTY^assigned_wan_serviceVALCHANGES^stateNOT IN3,4,7</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>7cd04fd587509e50f9f20f280cbb35fc</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>f4d04fd587509e50f9f20f280cbb35fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=7cd04fd587509e50f9f20f280cbb35fc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2cd04fd587509e50f9f20f280cbb359c^sys_idNOT IN6cd04fd587509e50f9f20f280cbb359d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2cd04fd587509e50f9f20f280cbb359c</id>
+        <name>NS Pro Task Assigned Wan Service Change</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_id>6cd04fd587509e50f9f20f280cbb359d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6cd04fd587509e50f9f20f280cbb359d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2cd04fd587509e50f9f20f280cbb359c^sys_idNOT IN2cd04fd587509e50f9f20f280cbb35cf,6cd04fd587509e50f9f20f280cbb35d7,e0d04fd587509e50f9f20f280cbb359f"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>FDCollection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">fc9ab9bddba21300a27757c5ca961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</model>
+        <model_id>2cd04fd587509e50f9f20f280cbb359c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_id>2cd04fd587509e50f9f20f280cbb35cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2cd04fd587509e50f9f20f280cbb35cf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</model>
+        <model_id>2cd04fd587509e50f9f20f280cbb359c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_id>6cd04fd587509e50f9f20f280cbb35d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6cd04fd587509e50f9f20f280cbb35d7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</model>
+        <model_id>2cd04fd587509e50f9f20f280cbb359c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_id>e0d04fd587509e50f9f20f280cbb359f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e0d04fd587509e50f9f20f280cbb359f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=2cd04fd587509e50f9f20f280cbb359c^sys_idNOT IN30d04fd587509e50f9f20f280cbb35fb,44a4ab1987949e50f9f20f280cbb35f5,48a4ab1987949e50f9f20f280cbb35e1,e0d04fd587509e50f9f20f280cbb35ec"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>30d04fd587509e50f9f20f280cbb35fb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <ui_id>4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=30d04fd587509e50f9f20f280cbb35fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>30d04fd587509e50f9f20f280cbb35fb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>78d04fd587509e50f9f20f280cbb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <value>x_g_sonc_ns_pro_telco_order</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=30d04fd587509e50f9f20f280cbb35fb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>30d04fd587509e50f9f20f280cbb35fb</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>f4d04fd587509e50f9f20f280cbb35fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current.telco_order}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>30d04fd587509e50f9f20f280cbb35fb</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>70d04fd587509e50f9f20f280cbb35fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>30d04fd587509e50f9f20f280cbb35fb</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>34d04fd587509e50f9f20f280cbb35fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>quoted_svc_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^=</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=30d04fd587509e50f9f20f280cbb35fb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=30d04fd587509e50f9f20f280cbb35fb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>6734adf8-3f09-464f-918f-e1fa28e853d8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:50</sys_created_on>
+        <sys_id>44a4ab1987949e50f9f20f280cbb35f5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <ui_id>d2324e49-32e7-4b4d-8257-c7739c498f70</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=44a4ab1987949e50f9f20f280cbb35f5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>44a4ab1987949e50f9f20f280cbb35f5</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:50</sys_created_on>
+        <sys_id>8ca4ab1987949e50f9f20f280cbb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=44a4ab1987949e50f9f20f280cbb35f5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>44a4ab1987949e50f9f20f280cbb35f5</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:50</sys_created_on>
+        <sys_id>0ca4ab1987949e50f9f20f280cbb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{6734adf8-3f09-464f-918f-e1fa28e853d8.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>44a4ab1987949e50f9f20f280cbb35f5</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:50</sys_created_on>
+        <sys_id>84a4ab1987949e50f9f20f280cbb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>44a4ab1987949e50f9f20f280cbb35f5</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:50</sys_created_on>
+        <sys_id>48a4ab1987949e50f9f20f280cbb35f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>assigned_wan_service={{Updated_1.current.assigned_wan_service}}^assigned_wan_service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^quoted_service_code={{44812d91-0f24-4738-a39e-c305974f2196.Record.svc_code}}^speed={{44812d91-0f24-4738-a39e-c305974f2196.Record.speed_egress}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=44a4ab1987949e50f9f20f280cbb35f5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=44a4ab1987949e50f9f20f280cbb35f5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:49</sys_created_on>
+        <sys_id>48a4ab1987949e50f9f20f280cbb35e1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <ui_id>af4dbf22-cb24-426c-a3da-1f3af5fb37be</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=48a4ab1987949e50f9f20f280cbb35e1"/>
+    <sys_element_mapping action="delete_multiple" query="id=48a4ab1987949e50f9f20f280cbb35e1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>48a4ab1987949e50f9f20f280cbb35e1</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:49</sys_created_on>
+        <sys_id>8ca4ab1987949e50f9f20f280cbb35e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>telco_order={{4b42f5e6-d63b-4ea0-a1c8-ed2bd3d1380a.record.sys_id}}^assigned_wan_serviceISNOTEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>48a4ab1987949e50f9f20f280cbb35e1</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:49</sys_created_on>
+        <sys_id>40a4ab1987949e50f9f20f280cbb35e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>{{Updated_1.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=48a4ab1987949e50f9f20f280cbb35e1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=48a4ab1987949e50f9f20f280cbb35e1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>e0d04fd587509e50f9f20f280cbb35ec</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <ui_id>44812d91-0f24-4738-a39e-c305974f2196</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e0d04fd587509e50f9f20f280cbb35ec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0d04fd587509e50f9f20f280cbb35ec</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>64d04fd587509e50f9f20f280cbb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <value>x_g_sonc_ns_pro_service_definition</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e0d04fd587509e50f9f20f280cbb35ec</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>a0d04fd587509e50f9f20f280cbb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e0d04fd587509e50f9f20f280cbb35ec"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e0d04fd587509e50f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>6cd04fd587509e50f9f20f280cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Updated_1.current.assigned_wan_service}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e0d04fd587509e50f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>20d04fd587509e50f9f20f280cbb35ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>e0d04fd587509e50f9f20f280cbb35ec</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:24</sys_created_on>
+        <sys_id>a8d04fd587509e50f9f20f280cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:24</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e0d04fd587509e50f9f20f280cbb35ec"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0d04fd587509e50f9f20f280cbb35ec"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=2cd04fd587509e50f9f20f280cbb359c^sys_idNOT IN0ca4ab1987949e50f9f20f280cbb35f7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">89942b1987949e50f9f20f280cbb3579</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="NS Pro Task Assigned Wan Service Change">2cd04fd587509e50f9f20f280cbb359c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:50</sys_created_on>
+        <sys_id>0ca4ab1987949e50f9f20f280cbb35f7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <ui_id>6734adf8-3f09-464f-918f-e1fa28e853d8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0ca4ab1987949e50f9f20f280cbb35f7"/>
+    <sys_element_mapping action="delete_multiple" query="id=0ca4ab1987949e50f9f20f280cbb35f7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>0ca4ab1987949e50f9f20f280cbb35f7</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-28 00:45:50</sys_created_on>
+        <sys_id>c8a4ab1987949e50f9f20f280cbb35fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:50</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{af4dbf22-cb24-426c-a3da-1f3af5fb37be.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0ca4ab1987949e50f9f20f280cbb35f7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0ca4ab1987949e50f9f20f280cbb35f7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c^sys_idNOT INa0d04fd587509e50f9f20f280cbb35cc,e0d04fd587509e50f9f20f280cbb35d4,e0d04fd587509e50f9f20f280cbb35dc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_id>a0d04fd587509e50f9f20f280cbb35cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_id>e0d04fd587509e50f9f20f280cbb35d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:23</sys_created_on>
+        <sys_id>e0d04fd587509e50f9f20f280cbb35dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-27 22:09:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2cd04fd587509e50f9f20f280cbb359c"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>053832d187109e50f9f20f280cbb3505</sys_id>
+        <latest_snapshot>2cd04fd587509e50f9f20f280cbb359c</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1a-07-01-2024_07-12-2024_0853.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=053832d187109e50f9f20f280cbb3505^sys_idNOT IN3cd08fd587509e50f9f20f280cbb3518"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"3cd08fd587509e50f9f20f280cbb3518","name":"plan","plan_signature":null}}</plan>
+        <plan_id>053832d187109e50f9f20f280cbb3505</plan_id>
+        <snapshot>eee4e75987949e50f9f20f280cbb3538</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-08-27 22:09:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3cd08fd587509e50f9f20f280cbb3518</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:45:51</sys_updated_on>
+        <trigger display_value="">3cd08fd587509e50f9f20f280cbb3516</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=053832d187109e50f9f20f280cbb3505"/>
+</record_update>
