@@ -10,20 +10,13 @@
  *    'g_sysId' the sys_id of the row or form that the script is running against
  *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
  */
- //alert("Decomm Clicked");
- 
-decomissionCircuit();
- function decomissionCircuit() {
-    var selectedSite = g_form.getValue('name');
-    var selectedSiteID = g_form.getValue('site_identifier');
-    var site_sysid = g_form.getUniqueValue();
-    var selectedRecord = rowSysId;
-    var siteCircuitInformation = {};
-    siteCircuitInformation.selectedSite = selectedSite;
-    siteCircuitInformation.selectedSiteID = selectedSiteID;
-    siteCircuitInformation.site_sysid = site_sysid;
-    siteCircuitInformation.selectedRecord = selectedRecord;
+//alert("Decomm Clicked");
 
+decomissionCircuit();
+
+function decomissionCircuit() {
+    var selectedRecord = g_sysId;
+	var siteCircuitInformation = {};
 
     var cmdbCISite = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
     cmdbCISite.addParam('sysparm_name', 'getSiteCircuitInformation');
@@ -31,19 +24,30 @@ decomissionCircuit();
     cmdbCISite.getXMLAnswer(getResponse);
 
     function getResponse(response) {
-        //alert(response);
+       // alert(response);
         var responseObj = JSON.parse(response);
         //alert(responseObj);
         if (responseObj.resultCode == "success") {
             var circuitInfo = responseObj.result;
-	
+			
+			
+            var selectedSite = circuitInfo.siteName;
+            var selectedSiteID = circuitInfo.siteID;
+            var site_sysid = circuitInfo.siteSysId;
+            
+			
+            siteCircuitInformation.selectedSite = selectedSite;
+            siteCircuitInformation.selectedSiteID = selectedSiteID;
+            siteCircuitInformation.site_sysid = site_sysid;
+            siteCircuitInformation.selectedRecord = selectedRecord;
+
             siteCircuitInformation.circuitId = circuitInfo.circuitId;
             siteCircuitInformation.circuitSpeed = circuitInfo.circuitSpeed;
             siteCircuitInformation.circuitType = circuitInfo.circuitType;
             siteCircuitInformation.hostCircuit = circuitInfo.hostCircuit;
             siteCircuitInformation.telco = circuitInfo.telco;
             siteCircuitInformation.telcoSysId = circuitInfo.telcoSysId;
-            g_scratchpad.siteCircuitInformation = siteCircuitInformation;
+			
 
             var gm = new GlideModal("glide_confirm_standard", true, 800);
             gm.setTitle("Initiate Circuit Decommission Site: " + selectedSiteID + " - " + selectedSite);
@@ -65,7 +69,6 @@ decomissionCircuit();
     }
 
     function initiateDecommission() {
-        siteCircuitInformation = g_scratchpad.siteCircuitInformation;
         var cmdbCISite = new GlideAjax('x_g_sonc_ns_pro.cmdb_ci_site_ajax');
         cmdbCISite.addParam('sysparm_name', 'initiateSiteCircuitDecomm');
         cmdbCISite.addParam('sysparm_siteSysId', siteCircuitInformation.site_sysid);
@@ -77,18 +80,26 @@ decomissionCircuit();
 
         function getInitiateResponse(response) {
             if (response == "success") {
-				var initDone = new GlideModal("glide_info", false, 600);
-				initDone.setTitle("Decomission Initiation Completed");
-				initDone.setPreference("title", "Circuit: " + siteCircuitInformation.circuitId + " for site: " + siteCircuitInformation.selectedSiteID + " - " + siteCircuitInformation.selectedSite + " has been submitted for decommissioning to telco provider: " + siteCircuitInformation.telco);
-				initDone.setPreference('focusTrap',true);
-				initDone.setPreference("onPromptClose", function() {alert("You clicked on 'Close'")});
-				initDone.setPreference("onPromptComplete", function(){location.reload();return true;});
-				initDone.setPreference("onPromptCancel", function(){location.reload();return true;});
-				initDone.setPreference("warning", "false");
-				initDone.setPreference("alignment","center");
-				initDone.render();
+                var initDone = new GlideModal("glide_info", false, 600);
+                initDone.setTitle("Decomission Initiation Completed");
+                initDone.setPreference("title", "Circuit: " + siteCircuitInformation.circuitId + " for site: " + siteCircuitInformation.selectedSiteID + " - " + siteCircuitInformation.selectedSite + " has been submitted for decommissioning to telco provider: " + siteCircuitInformation.telco);
+                initDone.setPreference('focusTrap', true);
+                initDone.setPreference("onPromptClose", function() {
+                    alert("You clicked on 'Close'")
+                });
+                initDone.setPreference("onPromptComplete", function() {
+                    location.reload();
+                    return true;
+                });
+                initDone.setPreference("onPromptCancel", function() {
+                    location.reload();
+                    return true;
+                });
+                initDone.setPreference("warning", "false");
+                initDone.setPreference("alignment", "center");
+                initDone.render();
 
-                
+
             } else {
                 return false;
             }
@@ -96,8 +107,7 @@ decomissionCircuit();
 
         return true;
     }
-}
-]]></action_script>
+}]]></action_script>
         <active>true</active>
         <comments/>
         <condition/>
@@ -156,7 +166,7 @@ function canBeDeCommissioned() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9405f989475cda5040fd43ff336d43b6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Decommission Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -164,7 +174,7 @@ function canBeDeCommissioned() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_9405f989475cda5040fd43ff336d43b6</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-27 16:06:52</sys_updated_on>
+        <sys_updated_on>2024-08-28 16:34:10</sys_updated_on>
         <table>cmdb_ci_network_circuit</table>
         <track_selected>false</track_selected>
         <type>action</type>
