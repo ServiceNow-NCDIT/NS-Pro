@@ -30,7 +30,7 @@
 
     function getSvcs(response) {
 		
-		alert('getSvcs response = ' + response);
+		// alert('getSvcs response = ' + response);
 
         var svc_response = JSON.parse(response);
 		var svcs = '';
@@ -54,7 +54,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b891634547924e9040fd43ff336d4319</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>onChange Site - Get Services</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -62,7 +62,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>catalog_script_client_b891634547924e9040fd43ff336d4319</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-08-22 07:24:51</sys_updated_on>
+        <sys_updated_on>2024-08-29 01:40:19</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -47,7 +47,7 @@
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>What is the Staring IP Address</question_text>
+        <question_text>What is the Starting IP Address</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -77,14 +77,14 @@
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-08-06 17:47:53</sys_created_on>
         <sys_id>3f1b7da64773021040fd43ff336d43e4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>What is the Staring IP Address</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>What is the Starting IP Address</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_3f1b7da64773021040fd43ff336d43e4</sys_update_name>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-06 17:47:53</sys_updated_on>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-29 02:42:57</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
