@@ -171,7 +171,7 @@
         <update_guid_history>36a9b78b85fbbd103394faf5f1b7638e:860991185,54b8b34719fbbd10af14ce78d838e9ac:924686713,1d077b4348fbbd10a639b628b8c4d80f:-246595712</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 06/18/2024 10:54:04">dded7cfa47720e1040fd43ff336d430b</sys_audit_delete>
+        <sys_audit_delete display_value="Record deleted 06/18/2024 09:54:04">dded7cfa47720e1040fd43ff336d430b</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-06-18 14:54:04</sys_created_on>
