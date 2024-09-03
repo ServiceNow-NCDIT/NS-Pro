@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Pending Changes" section_id="f4d53153475cd61040fd43ff336d4308" sys_domain="global" table="cmdb_ci_network_circuit" version="3" view="nspro">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_cir</element>
+            <position>0</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>7e76f593475cd61040fd43ff336d4385</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_local_circuit</element>
+            <position>1</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d4386</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_circuit_speed</element>
+            <position>2</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>b276f593475cd61040fd43ff336d4387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_circuit_type</element>
+            <position>3</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d4387</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_rmtdlci</element>
+            <position>4</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>b276f593475cd61040fd43ff336d4388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_subnet_mask</element>
+            <position>5</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d4388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_point_of_presence</element>
+            <position>6</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>b276f593475cd61040fd43ff336d4389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d4389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_circuit_contract_num</element>
+            <position>8</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>b276f593475cd61040fd43ff336d438a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_circuit_order_num</element>
+            <position>9</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d438a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_pe_host_circuit_id</element>
+            <position>10</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>b276f593475cd61040fd43ff336d438b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_host_ckt</element>
+            <position>11</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d438b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_host_ckt_type</element>
+            <position>12</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>b276f593475cd61040fd43ff336d438c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_telco_provider</element>
+            <position>13</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d438c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_telco_provider_order_number</element>
+            <position>14</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>b276f593475cd61040fd43ff336d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_telco_service_priority</element>
+            <position>15</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:52:26</sys_created_on>
+            <sys_id>ba76f593475cd61040fd43ff336d438d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f4d53153475cd61040fd43ff336d4308</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:52:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Pending Changes</caption>
+            <header>false</header>
+            <name>cmdb_ci_network_circuit</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-02 21:49:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f4d53153475cd61040fd43ff336d4308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_network_circuit</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_f4d53153475cd61040fd43ff336d4308</sys_update_name>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-02 21:49:33</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

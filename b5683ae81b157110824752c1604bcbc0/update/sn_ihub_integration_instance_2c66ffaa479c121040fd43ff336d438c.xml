@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ihub_integration_instance">
+    <sn_ihub_integration_instance action="INSERT_OR_UPDATE">
+        <description>Data mapping instance for table NSWAN Port</description>
+        <integration_table>sys_data_source</integration_table>
+        <integration_type/>
+        <internal_name/>
+        <name>NSWAN Port Data Mapping</name>
+        <record_id>e066ffaa479c121040fd43ff336d438e</record_id>
+        <sys_class_name>sn_ihub_integration_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:15:48</sys_created_on>
+        <sys_id>2c66ffaa479c121040fd43ff336d438c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>NSWAN Port Data Mapping</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sn_ihub_integration_instance_2c66ffaa479c121040fd43ff336d438c</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:15:48</sys_updated_on>
+    </sn_ihub_integration_instance>
+</record_update>

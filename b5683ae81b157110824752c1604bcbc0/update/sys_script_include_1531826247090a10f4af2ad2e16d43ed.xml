@@ -15,88 +15,92 @@ telco.prototype = {
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     timestamp: function() {
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         return new GlideDateTime().getNumericValue();
     },
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    getProvider : function (NSProTask, pri, ignoreTelco = '') {
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    
+    getProvider: function(NSProTask, pri, ignoreTelco = '') {
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         var LogPrefix = " telco().getProvider --> ";
 
-		var response = {};
-		response.success = false;
-		response.message = 'No provider found in x_g_sonc_ns_pro_telco_selection_by_zip';
-		response.sys_id = '';
-		response.poc = '';
-		response.email = '';
+        var response = {};
+        response.success = false;
+        response.message = 'No provider found in x_g_sonc_ns_pro_telco_selection_by_zip';
+        response.sys_id = '';
+        response.poc = '';
+        response.email = '';
 
-		gs.info(this.timestamp() + LogPrefix + 'started');
+        gs.info(this.timestamp() + LogPrefix + 'started');
 
-		if (NSProTask.location.nil()) {
-			response.message = 'No location found in x_g_sonc_ns_pro_telco_selection_by_zip - check/update site and location then try again';
-			return JSON.stringify(response);
-		}
-		gs.info(this.timestamp() + LogPrefix + 'zip = ' + NSProTask.location.zip);
+        if (NSProTask.location.nil()) {
+            response.message = 'No location found in x_g_sonc_ns_pro_telco_selection_by_zip - check/update site and location then try again';
+            return JSON.stringify(response);
+        }
+        gs.info(this.timestamp() + LogPrefix + 'zip = ' + NSProTask.location.zip);
 
-        var zip = NSProTask.location.zip.substring(0,5); // if zip is longer than 5, trim it to 5 chars so we can use it for looking up in table
+        var zip = NSProTask.location.zip.substring(0, 5); // if zip is longer than 5, trim it to 5 chars so we can use it for looking up in table
 
-		var cat = NSProTask.network_service_category;
+        var cat = NSProTask.network_service_category;
 
-		gs.info(this.timestamp() + LogPrefix + ' network_service_category = ' + NSProTask.network_service_category);
+        gs.info(this.timestamp() + LogPrefix + ' network_service_category = ' + NSProTask.network_service_category);
 
-		if (this.debug) gs.info(this.timestamp() + LogPrefix + ' executing');
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + ' executing');
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' trimmed zip is ' + zip);
-		if (this.debug) gs.info(this.timestamp() + LogPrefix + ' cat is ' + cat);
-		
-		
-		// var provider = {};
-		// provider.success = false;
-		// provider.message = 'No provider found in x_g_sonc_ns_pro_telco_selection_by_zip';
-		// provider.sys_id = '';
-		// provider.poc = '';
-		// provider.email = '';
-		var gr = new GlideRecord('x_g_sonc_ns_pro_telco_selection_by_zip');
-		gr.addQuery('zip', zip);
-		gr.addQuery('priority', pri);
-		gr.addQuery('service_category', cat);
-// 		if (ignoreTelco != '') {
-// 			gr.addQuery('telco_provider', "!=", ignoreTelco);
-// 		}
-		gr.setLimit(1);
-		gr.query();
-		while (gr.next()) {
-			// if (this.debug) gs.info(this.timestamp() + LogPrefix + 'found x_g_sonc_ns_pro_telco_selection_by_zip');
-			var grProvider = new GlideRecord('x_g_sonc_ns_pro_telco_provider');
-			grProvider.get(gr.telco_provider.toString());
-			response.success = true;
-			response.sys_id = grProvider.getUniqueValue();
-			response.poc = grProvider.getValue('poc_primary_name');
-			response.email = grProvider.getValue('order_email');
-			response.message = 'Provider = ' + grProvider.name;
-		}
-		if (this.debug) gs.info(this.timestamp() + LogPrefix + 'provider = ' + JSON.stringify(response));
-		return JSON.stringify(response);
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + ' cat is ' + cat);
+
+
+        // var provider = {};
+        // provider.success = false;
+        // provider.message = 'No provider found in x_g_sonc_ns_pro_telco_selection_by_zip';
+        // provider.sys_id = '';
+        // provider.poc = '';
+        // provider.email = '';
+        var gr = new GlideRecord('x_g_sonc_ns_pro_telco_selection_by_zip');
+        gr.addQuery('zip', zip);
+        gr.addQuery('priority', pri);
+        gr.addQuery('service_category', cat);
+        // 		if (ignoreTelco != '') {
+        // 			gr.addQuery('telco_provider', "!=", ignoreTelco);
+        // 		}
+        gr.setLimit(1);
+        gr.query();
+        while (gr.next()) {
+            // if (this.debug) gs.info(this.timestamp() + LogPrefix + 'found x_g_sonc_ns_pro_telco_selection_by_zip');
+            var grProvider = new GlideRecord('x_g_sonc_ns_pro_telco_provider');
+            if (grProvider.get(gr.telco_provider.toString())) {
+                response.success = true;
+                response.sys_id = grProvider.getUniqueValue();
+                response.poc = grProvider.getValue('poc_primary_name');
+                response.email = grProvider.getValue('order_email');
+                response.message = 'Provider = ' + grProvider.name;
+            } else {
+                response.success = false;
+                response.message = 'x_g_sonc_ns_pro_telco_selection_by_zip - Zip Code found but no provider for selection';
+                response.sys_id = '';
+                response.poc = '';
+                response.email = '';
+            }
+        }
+        if (this.debug) gs.info(this.timestamp() + LogPrefix + 'provider = ' + JSON.stringify(response));
+        return JSON.stringify(response);
 
     },
 
     type: 'telco'
-};
-
-
-]]></script>
+};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 01:20:56</sys_created_on>
         <sys_id>1531826247090a10f4af2ad2e16d43ed</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name>telco</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_1531826247090a10f4af2ad2e16d43ed</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-29 11:24:51</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-08-30 18:01:44</sys_updated_on>
     </sys_script_include>
 </record_update>

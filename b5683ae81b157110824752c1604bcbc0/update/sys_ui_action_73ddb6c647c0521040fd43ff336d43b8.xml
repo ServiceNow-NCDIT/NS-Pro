@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>!gs.nil(current.x_g_sonc_ns_pro_pending_location) || !gs.nil(current.x_g_sonc_ns_pro_pending_status)</condition>
+        <condition>!gs.nil(current.x_g_sonc_ns_pro_pending_status)</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -76,6 +76,8 @@ function onClick() {
 
 	g_form.setValue('x_g_sonc_ns_pro_agency', g_form.getValue('x_g_sonc_ns_pro_pending_agency'));
 	g_form.setValue('x_g_sonc_ns_pro_pending_agency', '');
+
+	g_form.save();
 	
 }
 
@@ -92,7 +94,7 @@ function onClick() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>73ddb6c647c0521040fd43ff336d43b8</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Move Pending to Current</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -100,7 +102,7 @@ function onClick() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_73ddb6c647c0521040fd43ff336d43b8</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-08-23 12:22:45</sys_updated_on>
+        <sys_updated_on>2024-08-30 23:12:33</sys_updated_on>
         <table>cmdb_ci_site</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

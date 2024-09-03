@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="DELETE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity/>
+        <source_sys_rte_eb_field/>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-13 14:16:52</sys_created_on>
+        <sys_id>2b65c74d47f60a1440fd43ff336d43dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="">8c91478d47b60a1440fd43ff336d43b3</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="IHUB_SOURCE_TEMP_MAPPING">6365c74d47f60a1440fd43ff336d4353</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_2b65c74d47f60a1440fd43ff336d43dd</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-13 14:16:52</sys_updated_on>
+        <target_sys_rte_eb_field/>
+    </sys_rte_eb_field_mapping>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_rte_eb_field_mapping_2b65c74d47f60a1440fd43ff336d43dd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping"><sys_rte_eb_field_mapping action="INSERT_OR_UPDATE"><order>100</order><referenced_sys_rte_eb_entity/><source_sys_rte_eb_field/><sys_class_name>sys_rte_eb_field_mapping</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-06-13 14:16:52</sys_created_on><sys_id>2b65c74d47f60a1440fd43ff336d43dd</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_rte_eb_definition display_value="">8c91478d47b60a1440fd43ff336d43b3</sys_rte_eb_definition><sys_rte_eb_entity_mapping display_value="IHUB_SOURCE_TEMP_MAPPING">6365c74d47f60a1440fd43ff336d4353</sys_rte_eb_entity_mapping><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_rte_eb_field_mapping_2b65c74d47f60a1440fd43ff336d43dd</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-06-13 14:16:52</sys_updated_on><target_sys_rte_eb_field/></sys_rte_eb_field_mapping></record_update>]]></payload>
+        <payload_hash>1004427153</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>f59b5308db50f34065fbf482ba961903</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-08-31 23:46:27</sys_created_on>
+        <sys_id>2d6d73ee47dc121040fd43ff336d4331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191aad53db80000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:46:27</sys_updated_on>
+        <type>Robust Transform Engine Entity Field Map</type>
+        <update_guid>296d73ee09dc121087b2b5668d436731</update_guid>
+        <update_guid_history>296d73ee09dc121087b2b5668d436731:0,c16d33ee50dc121093c4d4099db10627:0,6b65c74d10f60a14b8f65e70c9bd5dde:124912017</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:46:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_field_mapping">sys_rte_eb_field_mapping</sys_db_object>
+        <sys_id>b5bc2bb113ba41eda7c227a288d23171</sys_id>
+        <sys_metadata>2b65c74d47f60a1440fd43ff336d43dd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_field_mapping_2b65c74d47f60a1440fd43ff336d43dd</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_field_mapping_2b65c74d47f60a1440fd43ff336d43dd">2d6d73ee47dc121040fd43ff336d4331</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:46:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

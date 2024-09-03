@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_etl_field">
+    <sys_rte_eb_etl_field action="INSERT_OR_UPDATE">
+        <coalesce>false</coalesce>
+        <coercion_action>create</coercion_action>
+        <field>u_localcircuit_sn_ihub_pill_uid_1111830873601</field>
+        <name>LocalCircuit_sn_ihub_target_localcircuit</name>
+        <sys_class_name>sys_rte_eb_etl_field</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:23:07</sys_created_on>
+        <sys_id>3b08b3a247dc121040fd43ff336d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LocalCircuit_sn_ihub_target_localcircuit</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Port Data Mapping_etl_ihub">c966ff2a479c121040fd43ff336d43d7</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_g_sonc_ns_pro_nswan_port">3308b3a247dc121040fd43ff336d434f</sys_rte_eb_entity>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_etl_field_3b08b3a247dc121040fd43ff336d437a</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:23:07</sys_updated_on>
+    </sys_rte_eb_etl_field>
+</record_update>

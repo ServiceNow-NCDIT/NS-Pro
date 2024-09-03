@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
+    <scheduled_import_set action="DELETE">
+        <active>true</active>
+        <business_calendar/>
+        <concurrent_import>false</concurrent_import>
+        <condition/>
+        <conditional>false</conditional>
+        <connection_override/>
+        <data_source display_value="NSWAN Port Data Mapping">d27fb7984783ce5040fd43ff336d436d</data_source>
+        <entered_time/>
+        <map/>
+        <max_drift/>
+        <name>Scheduled Run Once</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <order/>
+        <parent/>
+        <partition_method>roundRobin</partition_method>
+        <partition_script><![CDATA[(function partitionHash(import_set_row) {
+
+	// Add your code here
+	
+	// eg:
+	// return import_set_row.u_important_category;
+	// This would ensure all rows with the same 'u_important_category' value will be in the same Import Set.
+
+	 return import_set_row.sys_import_row;
+
+})(import_set_row);]]></partition_script>
+        <partition_size/>
+        <post_script/>
+        <post_script_bool>false</post_script_bool>
+        <pre_script/>
+        <pre_script_bool>false</pre_script_bool>
+        <record_source>ihimport</record_source>
+        <run_as display_value="William Busby">dd8816f31b3cf5906e32eaccac4bcb62</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2024-06-23 20:51:52</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <show_connection_override>false</show_connection_override>
+        <synchronize_inserts>true</synchronize_inserts>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-23 20:51:52</sys_created_on>
+        <sys_id>93bfb7984783ce5040fd43ff336d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled Run Once</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>scheduled_import_set_93bfb7984783ce5040fd43ff336d4380</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:51:52</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <use_child_connection>false</use_child_connection>
+    </scheduled_import_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>scheduled_import_set_93bfb7984783ce5040fd43ff336d4380</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="scheduled_import_set"&gt;&lt;scheduled_import_set action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_calendar/&gt;&lt;concurrent_import&gt;false&lt;/concurrent_import&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;connection_override/&gt;&lt;data_source display_value="NSWAN Port Data Mapping"&gt;d27fb7984783ce5040fd43ff336d436d&lt;/data_source&gt;&lt;entered_time/&gt;&lt;map/&gt;&lt;max_drift/&gt;&lt;name&gt;Scheduled Run Once&lt;/name&gt;&lt;offset/&gt;&lt;offset_type&gt;0&lt;/offset_type&gt;&lt;order/&gt;&lt;parent/&gt;&lt;partition_method&gt;roundRobin&lt;/partition_method&gt;&lt;partition_script&gt;&lt;![CDATA[(function partitionHash(import_set_row) {
+
+	// Add your code here
+	
+	// eg:
+	// return import_set_row.u_important_category;
+	// This would ensure all rows with the same 'u_important_category' value will be in the same Import Set.
+
+	 return import_set_row.sys_import_row;
+
+})(import_set_row);]]&gt;&lt;/partition_script&gt;&lt;partition_size/&gt;&lt;post_script/&gt;&lt;post_script_bool&gt;false&lt;/post_script_bool&gt;&lt;pre_script/&gt;&lt;pre_script_bool&gt;false&lt;/pre_script_bool&gt;&lt;record_source&gt;ihimport&lt;/record_source&gt;&lt;run_as display_value="William Busby"&gt;dd8816f31b3cf5906e32eaccac4bcb62&lt;/run_as&gt;&lt;run_as_tz/&gt;&lt;run_dayofmonth&gt;1&lt;/run_dayofmonth&gt;&lt;run_dayofweek/&gt;&lt;run_period/&gt;&lt;run_start&gt;2024-06-23 20:51:52&lt;/run_start&gt;&lt;run_time/&gt;&lt;run_type&gt;once&lt;/run_type&gt;&lt;show_connection_override&gt;false&lt;/show_connection_override&gt;&lt;synchronize_inserts&gt;true&lt;/synchronize_inserts&gt;&lt;sys_class_name&gt;scheduled_import_set&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wbbusby&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-06-23 20:51:52&lt;/sys_created_on&gt;&lt;sys_id&gt;93bfb7984783ce5040fd43ff336d4380&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Scheduled Run Once&lt;/sys_name&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;scheduled_import_set_93bfb7984783ce5040fd43ff336d4380&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wbbusby&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-06-23 20:51:52&lt;/sys_updated_on&gt;&lt;time_zone/&gt;&lt;upgrade_safe&gt;false&lt;/upgrade_safe&gt;&lt;use_child_connection&gt;false&lt;/use_child_connection&gt;&lt;/scheduled_import_set&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1793461668</payload_hash>
+        <record_name>Scheduled Run Once</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-23 20:51:52</sys_created_on>
+        <sys_id>9fbfb7984783ce5040fd43ff336d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19046de9e1f0000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-23 20:51:52</sys_updated_on>
+        <type>Scheduled Data Import</type>
+        <update_guid>13bfb798f183ce50e42951adf10db782</update_guid>
+        <update_guid_history>13bfb798f183ce50e42951adf10db782:-1793461668</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 08/31/2024 19:03:25">c3837ba2875c1210f9f20f280cbb3543</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:03:25</sys_created_on>
+        <sys_db_object display_value="" name="scheduled_import_set">scheduled_import_set</sys_db_object>
+        <sys_id>a1411d7d1f5049d99974a0e0d1b32471</sys_id>
+        <sys_metadata>93bfb7984783ce5040fd43ff336d4380</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled Run Once</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>scheduled_import_set_93bfb7984783ce5040fd43ff336d4380</sys_update_name>
+        <sys_update_version display_value="scheduled_import_set_93bfb7984783ce5040fd43ff336d4380">9fbfb7984783ce5040fd43ff336d4382</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:03:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

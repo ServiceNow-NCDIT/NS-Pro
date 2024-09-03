@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 17:07:44</sys_created_on>
+        <sys_id>2d8126e24790121040fd43ff336d4383</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>cmdb_ci_site</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_db_view_table_2d8126e24790121040fd43ff336d4383</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-01 08:47:05</sys_updated_on>
+        <table>cmdb_ci_site</table>
+        <variable_prefix>service</variable_prefix>
+        <view display_value="x_g_sonc_ns_pro_nswan_service_to_nspro_site">0801e2664750121040fd43ff336d4329</view>
+        <where_clause/>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_db_view_table_2d8126e24790121040fd43ff336d4383</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-08-31 17:07:44</sys_created_on><sys_id>2d8126e24790121040fd43ff336d4383</sys_id><sys_mod_count>9</sys_mod_count><sys_name>cmdb_ci_site</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_db_view_table_2d8126e24790121040fd43ff336d4383</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-09-01 08:47:05</sys_updated_on><table>cmdb_ci_site</table><variable_prefix>service</variable_prefix><view display_value="x_g_sonc_ns_pro_nswan_service_to_nspro_site">0801e2664750121040fd43ff336d4329</view><where_clause/></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>570762033</payload_hash>
+        <record_name>cmdb_ci_site</record_name>
+        <reverted_from/>
+        <source>dc65030b47f7461040fd43ff336d4351</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-01 08:47:05</sys_created_on>
+        <sys_id>f02939fe4758921040fd43ff336d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191acc434a40000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-01 08:47:05</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>f42939fe48589210bb9e96275f6b793f</update_guid>
+        <update_guid_history>f42939fe48589210bb9e96275f6b793f:570762033,79e831fe635892106d3a292b8c237e53:-696480445,bd7775bad65892100eaeee3a2ccb64d3:-912028649,b0f48c725b5052101eb16e1abddca85b:895260832,46d44872a7505210cb06493aa3e7a51b:475120010,3084c7621ed41210dfd227be645b92a1:895260832,8e9347ee86941210dfbb6765b2044bd6:-927402444,d9503ae23a14121066881e7cee0805b3:895260832,d792aa6645901210e67c389544a0502d:574426760,f0222a268d90121053645a94bd80aad6:-927402444</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-01 08:52:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>0040f77aea2743ac8000aac3fc22e590</sys_id>
+        <sys_metadata>2d8126e24790121040fd43ff336d4383</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_site</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_2d8126e24790121040fd43ff336d4383</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_2d8126e24790121040fd43ff336d4383">f02939fe4758921040fd43ff336d4340</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-01 08:52:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

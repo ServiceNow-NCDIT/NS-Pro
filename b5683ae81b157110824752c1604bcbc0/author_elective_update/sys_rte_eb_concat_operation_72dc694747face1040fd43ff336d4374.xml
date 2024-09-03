@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_concat_operation">
+    <sys_rte_eb_concat_operation action="DELETE">
+        <conditional_fields/>
+        <conditional_script/>
+        <is_conditional>false</is_conditional>
+        <joining_string/>
+        <name>CONCAT_sn_ihub_target_usernrc</name>
+        <operation_group/>
+        <order>9999</order>
+        <source_sys_rte_eb_field/>
+        <source_sys_rte_eb_fields>26dc294747face1040fd43ff336d43c0,2adc294747face1040fd43ff336d43c2</source_sys_rte_eb_fields>
+        <sys_class_name>sys_rte_eb_concat_operation</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-19 12:57:43</sys_created_on>
+        <sys_id>72dc694747face1040fd43ff336d4374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CONCAT_sn_ihub_target_usernrc</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Port Data Mapping_etl_ihub">b0ace98347face1040fd43ff336d439b</sys_rte_eb_definition>
+        <sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_g_sonc_ns_pro_nswan_port">5adce54747face1040fd43ff336d438e</sys_rte_eb_entity>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_concat_operation_72dc694747face1040fd43ff336d4374</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-19 12:57:43</sys_updated_on>
+        <target_sys_rte_eb_field display_value="sn_ihub_target_usernrc">26dc294747face1040fd43ff336d43c0</target_sys_rte_eb_field>
+        <target_sys_rte_eb_fields/>
+        <type display_value="Concatenation">4e38102a73b333002b6265a751ab9e1f</type>
+    </sys_rte_eb_concat_operation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_rte_eb_concat_operation_72dc694747face1040fd43ff336d4374</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_concat_operation"><sys_rte_eb_concat_operation action="INSERT_OR_UPDATE"><conditional_fields/><conditional_script/><is_conditional>false</is_conditional><joining_string/><name>CONCAT_sn_ihub_target_usernrc</name><operation_group/><order>9999</order><source_sys_rte_eb_field/><source_sys_rte_eb_fields>26dc294747face1040fd43ff336d43c0,2adc294747face1040fd43ff336d43c2</source_sys_rte_eb_fields><sys_class_name>sys_rte_eb_concat_operation</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-06-19 12:57:43</sys_created_on><sys_id>72dc694747face1040fd43ff336d4374</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CONCAT_sn_ihub_target_usernrc</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_rte_eb_definition display_value="NSWAN Port Data Mapping_etl_ihub">b0ace98347face1040fd43ff336d439b</sys_rte_eb_definition><sys_rte_eb_entity display_value="IHUB_TARGET_TEMP_x_g_sonc_ns_pro_nswan_port">5adce54747face1040fd43ff336d438e</sys_rte_eb_entity><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_rte_eb_concat_operation_72dc694747face1040fd43ff336d4374</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-06-19 12:57:43</sys_updated_on><target_sys_rte_eb_field display_value="sn_ihub_target_usernrc">26dc294747face1040fd43ff336d43c0</target_sys_rte_eb_field><target_sys_rte_eb_fields/><type display_value="Concatenation">4e38102a73b333002b6265a751ab9e1f</type></sys_rte_eb_concat_operation></record_update>]]></payload>
+        <payload_hash>-68103503</payload_hash>
+        <record_name>CONCAT_sn_ihub_target_usernrc</record_name>
+        <reverted_from/>
+        <source>ef793e2c1b157110824752c1604bcbc8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-06-19 12:57:43</sys_created_on>
+        <sys_id>fedc694747face1040fd43ff336d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190309313940000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-06-19 12:57:43</sys_updated_on>
+        <type>Robust Transform Engine Entity Concatena</type>
+        <update_guid>b2dc69474eface10e9ad70e782802675</update_guid>
+        <update_guid_history>b2dc69474eface10e9ad70e782802675:-68103503</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:13:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_rte_eb_concat_operation">sys_rte_eb_concat_operation</sys_db_object>
+        <sys_id>81ae0c65f2e545719fe27656b1f85d29</sys_id>
+        <sys_metadata>72dc694747face1040fd43ff336d4374</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CONCAT_sn_ihub_target_usernrc</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_rte_eb_concat_operation_72dc694747face1040fd43ff336d4374</sys_update_name>
+        <sys_update_version display_value="sys_rte_eb_concat_operation_72dc694747face1040fd43ff336d4374">fedc694747face1040fd43ff336d4375</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:13:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

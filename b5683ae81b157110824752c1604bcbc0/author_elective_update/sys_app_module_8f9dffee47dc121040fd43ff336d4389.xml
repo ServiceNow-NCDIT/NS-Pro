@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Sonc Ns Pro 1725148019940</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_ns_pro_1725148019940</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:47:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8f9dffee47dc121040fd43ff336d4389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sonc Ns Pro 1725148019940</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_8f9dffee47dc121040fd43ff336d4389</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:47:23</sys_updated_on>
+        <timeline_page/>
+        <title>Sonc Ns Pro 1725148019940</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_8f9dffee47dc121040fd43ff336d4389</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Sonc Ns Pro 1725148019940</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_ns_pro_1725148019940</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-08-31 23:47:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8f9dffee47dc121040fd43ff336d4389</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Sonc Ns Pro 1725148019940</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_app_module_8f9dffee47dc121040fd43ff336d4389</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-08-31 23:47:23</sys_updated_on><timeline_page/><title>Sonc Ns Pro 1725148019940</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>2112130056</payload_hash>
+        <record_name>Sonc Ns Pro 1725148019940</record_name>
+        <reverted_from/>
+        <source>dc65030b47f7461040fd43ff336d4351</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:47:23</sys_created_on>
+        <sys_id>4b9dffee47dc121040fd43ff336d438c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191aad617790000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:47:23</sys_updated_on>
+        <type>Module</type>
+        <update_guid>0f9dffee6adc1210e52ff0c458ef058b</update_guid>
+        <update_guid_history>0f9dffee6adc1210e52ff0c458ef058b:2112130056</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 08/31/2024 19:50:28">585e3fa24710521040fd43ff336d43ae</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-31 23:50:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>5c62e148989c4a4085e2b2f295a6dca1</sys_id>
+        <sys_metadata>8f9dffee47dc121040fd43ff336d4389</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sonc Ns Pro 1725148019940</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_app_module_8f9dffee47dc121040fd43ff336d4389</sys_update_name>
+        <sys_update_version display_value="sys_app_module_8f9dffee47dc121040fd43ff336d4389">4b9dffee47dc121040fd43ff336d438c</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-31 23:50:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
