@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="hasLabels=true" db_object_id="db74620647c10610f4af2ad2e16d433d" extends="cmdb_ci" label="Port" max_length="40" name="x_g_sonc_ns_pro_port" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Port Name" max_length="255" name="pending_name" type="string"/>
         <element choice="1" label="Port Status" max_length="40" name="port_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Installed" sequence="10" value="installed"/>
@@ -10,15 +11,33 @@
             </choice>
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Remote Site Circuit VLAN" max_length="40" name="remote_site_circuit_vlan" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending IP Address" max_length="40" name="pending_ip_address" type="ip_addr"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Network Gear" max_length="32" name="pending_network_gear" reference="cmdb_ci_netgear" reference_qual="install_statusIN3,6,1,4^EQ" reference_qual_condition="install_statusIN3,6,1,4^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Uplink Connection Description" max_length="100" name="pending_uplink_connection_description" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="VRF" max_length="32" name="vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
         <element label="Local Circuit ID" max_length="32" name="local_circuit_id" reference="cmdb_ci_network_circuit" reference_qual="javascript:&quot;x_g_sonc_ns_pro_site=&quot; + current.site" type="reference" use_reference_qualifier="advanced"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending VRF" max_length="32" name="pending_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Description" max_length="1000" name="pending_description" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Remote Site Circuit VLAN" max_length="40" name="pending_remote_site_circuit_vlan" type="string"/>
         <element choice="1" label="Host Ckt Type" max_length="40" name="host_ckt_type" read_only="true" type="choice">
             <choice>
                 <element inactive_on_update="false" label="non-QinQ" sequence="20" value="non_qinq"/>
                 <element inactive_on_update="false" label="QinQ" sequence="10" value="qinq"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Master Device Interface" max_length="100" name="master_device_interface" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Local Circuit ID" max_length="32" name="pending_local_circuit_id" reference="cmdb_ci_network_circuit" reference_qual="javascript:&quot;x_g_sonc_ns_pro_site=&quot; + current.site" type="reference" use_reference_qualifier="advanced"/>
         <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending PE Host Circuit ID" max_length="32" name="pending_pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Type" max_length="40" name="pending_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
+                <element inactive_on_update="false" label="ME PoP" sequence="20" value="me_pop"/>
+                <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Interface Subnet Mask" max_length="40" name="pending_interface_subnet_mask" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Client Id" max_length="40" name="pending_client_id" type="string"/>
         <element label="Uplink Connection Description" max_length="100" name="uplink_connection_description" type="string"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
@@ -30,6 +49,7 @@
         <element label="PE Host Circuit ID" max_length="32" name="pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Interface Subnet Mask" max_length="40" name="interface_subnet_mask" type="string"/>
         <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Master Device Interface" max_length="100" name="pending_master_device_interface" type="string"/>
         <element label="Client Id" max_length="40" name="client_id" type="string"/>
     </element>
 </database>
