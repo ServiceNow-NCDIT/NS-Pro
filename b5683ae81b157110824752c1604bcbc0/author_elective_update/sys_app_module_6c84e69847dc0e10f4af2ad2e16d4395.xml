@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Network Generals</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_ns_pro_network_general</name>
+        <order>360</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_g_sonc_ns_pro.config,x_g_sonc_ns_pro.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-07 21:20:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c84e69847dc0e10f4af2ad2e16d4395</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Network Generals</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_6c84e69847dc0e10f4af2ad2e16d4395</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:57:17</sys_updated_on>
+        <timeline_page/>
+        <title>Network Generals</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_6c84e69847dc0e10f4af2ad2e16d4395</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Network Generals</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_ns_pro_network_general</name><order>360</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_g_sonc_ns_pro.config,x_g_sonc_ns_pro.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-07 21:20:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6c84e69847dc0e10f4af2ad2e16d4395</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Network Generals</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_app_module_6c84e69847dc0e10f4af2ad2e16d4395</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-08-28 00:57:17</sys_updated_on><timeline_page/><title>Network Generals</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-570440632</payload_hash>
+        <record_name>Network Generals</record_name>
+        <reverted_from/>
+        <source>dc65030b47f7461040fd43ff336d4351</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-28 00:57:18</sys_created_on>
+        <sys_id>c4476fdd87949e50f9f20f280cbb3562</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191967ca9b00000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:57:18</sys_updated_on>
+        <type>Module</type>
+        <update_guid>0c476fddfe949e50135ebd920d860361</update_guid>
+        <update_guid_history>0c476fddfe949e50135ebd920d860361:-570440632,ff47486bf9ce8e5000e23bcfe520e708:474097858,6484e698dedc0e10a856599532d65b97:103926692</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 09/05/2024 13:02:17">f49e985847a4d25040fd43ff336d4381</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-05 18:02:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>08a53cf79bff4feab75fa4c57e27f564</sys_id>
+        <sys_metadata>6c84e69847dc0e10f4af2ad2e16d4395</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Network Generals</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_app_module_6c84e69847dc0e10f4af2ad2e16d4395</sys_update_name>
+        <sys_update_version display_value="sys_app_module_6c84e69847dc0e10f4af2ad2e16d4395">c4476fdd87949e50f9f20f280cbb3562</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-05 18:02:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

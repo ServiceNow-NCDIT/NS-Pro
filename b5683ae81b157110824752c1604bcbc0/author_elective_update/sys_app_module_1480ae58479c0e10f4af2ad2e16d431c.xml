@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Ciscos</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_g_sonc_ns_pro_cisco</name>
+        <order>330</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_g_sonc_ns_pro.config,x_g_sonc_ns_pro.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-02-07 21:03:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1480ae58479c0e10f4af2ad2e16d431c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Ciscos</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_app_module_1480ae58479c0e10f4af2ad2e16d431c</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:55:43</sys_updated_on>
+        <timeline_page/>
+        <title>Ciscos</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_app_module_1480ae58479c0e10f4af2ad2e16d431c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="NSPro">2c01a37cdb9df11040eae46b13961916</application><assessment/><content_page/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Ciscos</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_g_sonc_ns_pro_cisco</name><order>330</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_g_sonc_ns_pro.config,x_g_sonc_ns_pro.admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wbbusby</sys_created_by><sys_created_on>2024-02-07 21:03:07</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1480ae58479c0e10f4af2ad2e16d431c</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Ciscos</sys_name><sys_overrides/><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name>sys_app_module_1480ae58479c0e10f4af2ad2e16d431c</sys_update_name><sys_updated_by>wbbusby</sys_updated_by><sys_updated_on>2024-08-28 00:55:43</sys_updated_on><timeline_page/><title>Ciscos</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>562592362</payload_hash>
+        <record_name>Ciscos</record_name>
+        <reverted_from/>
+        <source>dc65030b47f7461040fd43ff336d4351</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-08-28 00:55:43</sys_created_on>
+        <sys_id>01e6e79d87949e50f9f20f280cbb3536</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191967b39d70000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-08-28 00:55:43</sys_updated_on>
+        <type>Module</type>
+        <update_guid>45e6e79d54949e509df0687c30787835</update_guid>
+        <update_guid_history>45e6e79d54949e509df0687c30787835:562592362,89664cabddce8e50cac410864952f766:-706734270,5c80ae585e9c0e105a58cd5bb9a68737:-270997763</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 09/05/2024 13:00:50">6f3ed49447a4d25040fd43ff336d4382</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-05 18:00:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>aed1035854c94d1cbefd3a247d3b8cf9</sys_id>
+        <sys_metadata>1480ae58479c0e10f4af2ad2e16d431c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ciscos</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_app_module_1480ae58479c0e10f4af2ad2e16d431c</sys_update_name>
+        <sys_update_version display_value="sys_app_module_1480ae58479c0e10f4af2ad2e16d431c">01e6e79d87949e50f9f20f280cbb3536</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-05 18:00:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

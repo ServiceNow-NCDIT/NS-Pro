@@ -21,14 +21,14 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_g_sonc_ns_pro.admin,x_g_sonc_ns_pro.config</roles>
+        <roles>x_g_sonc_ns_pro.admin,x_g_sonc_ns_pro.config,x_g_sonc_ns_pro.user</roles>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-09-21 06:14:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4bcf1bd31bd1f110824752c1604bcbee</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Sites</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_app_module_4bcf1bd31bd1f110824752c1604bcbee</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-08-28 00:49:36</sys_updated_on>
+        <sys_updated_on>2024-09-05 17:58:02</sys_updated_on>
         <timeline_page/>
         <title>Sites</title>
         <uncancelable>false</uncancelable>

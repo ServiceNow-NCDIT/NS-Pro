@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="7a45bfaa479c121040fd43ff336d4308" label="NSWAN Port" max_length="40" name="x_g_sonc_ns_pro_nswan_port" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Client Id" max_length="40" name="client_id" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Status" max_length="40" name="status" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="MasterDeviceInterface" max_length="100" name="masterdeviceinterface" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="VrfName" max_length="40" name="vrfname" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Subnet Mask" max_length="40" name="subnet_mask" type="string"/>
@@ -12,6 +14,65 @@
         <element attributes="edge_encryption_enabled=true" label="Port Name" max_length="40" name="port_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Circuit Number" max_length="40" name="circuit_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="LocDlci" max_length="40" name="locdlci" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Remarks" max_length="1000" name="remarks" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Site" max_length="40" name="site" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Port Type" max_length="40" name="port_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="VLAN805" sequence="0" value="VLAN805"/>
+                <element inactive_on_update="false" label="ge/mgmt" sequence="0" value="ge/mgmt"/>
+                <element inactive_on_update="false" label="Outside" sequence="0" value="Outside"/>
+                <element inactive_on_update="false" label="VLAN201" sequence="0" value="VLAN201"/>
+                <element inactive_on_update="false" label="MAN" sequence="0" value="MAN"/>
+                <element inactive_on_update="false" label="VLAN 510" sequence="0" value="VLAN 510"/>
+                <element inactive_on_update="false" label="vlan910" sequence="0" value="vlan910"/>
+                <element inactive_on_update="false" label="Output" sequence="0" value="Output"/>
+                <element inactive_on_update="false" label="VLAN250" sequence="0" value="VLAN250"/>
+                <element inactive_on_update="false" label="VLAN510" sequence="0" value="VLAN510"/>
+                <element inactive_on_update="false" label="Vlan291" sequence="0" value="Vlan291"/>
+                <element inactive_on_update="false" label="BDI50" sequence="0" value="BDI50"/>
+                <element inactive_on_update="false" label="VLAN710" sequence="0" value="VLAN710"/>
+                <element inactive_on_update="false" label="DSL BB" sequence="0" value="DSL BB"/>
+                <element inactive_on_update="false" label="e1/3" sequence="0" value="e1/3"/>
+                <element inactive_on_update="false" label="ME Pop" sequence="0" value="ME Pop"/>
+                <element inactive_on_update="false" label="VLAN5" sequence="0" value="VLAN5"/>
+                <element inactive_on_update="false" label="LAN" sequence="0" value="LAN"/>
+                <element inactive_on_update="false" label="MGMT" sequence="0" value="MGMT"/>
+                <element inactive_on_update="false" label="Vlan990" sequence="0" value="Vlan990"/>
+                <element inactive_on_update="false" label="BDI69" sequence="0" value="BDI69"/>
+                <element inactive_on_update="false" label="DMZ" sequence="0" value="DMZ"/>
+                <element inactive_on_update="false" label="ATM" sequence="0" value="ATM"/>
+                <element inactive_on_update="false" label="VLAN30" sequence="0" value="VLAN30"/>
+                <element inactive_on_update="false" label="WLAN" sequence="0" value="WLAN"/>
+                <element inactive_on_update="false" label="Ethernet" sequence="0" value="Ethernet"/>
+                <element inactive_on_update="false" label="VLAN310" sequence="0" value="VLAN310"/>
+                <element inactive_on_update="false" label="VLAN401" sequence="0" value="VLAN401"/>
+                <element inactive_on_update="false" label="VoIP" sequence="0" value="VoIP"/>
+                <element inactive_on_update="false" label="XNET" sequence="0" value="XNET"/>
+                <element inactive_on_update="false" label="VLAN211" sequence="0" value="VLAN211"/>
+                <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
+                <element inactive_on_update="false" label="VLAN50" sequence="0" value="VLAN50"/>
+                <element inactive_on_update="false" label="e1/2" sequence="0" value="e1/2"/>
+                <element inactive_on_update="false" label="VLAN200" sequence="0" value="VLAN200"/>
+                <element inactive_on_update="false" label="VLAN51" sequence="0" value="VLAN51"/>
+                <element inactive_on_update="false" label="Vlan292" sequence="0" value="Vlan292"/>
+                <element inactive_on_update="false" label="WIRELESS" sequence="0" value="WIRELESS"/>
+                <element inactive_on_update="false" label="BDI10" sequence="0" value="BDI10"/>
+                <element inactive_on_update="false" label="Input" sequence="0" value="Input"/>
+                <element inactive_on_update="false" label="VLAN455" sequence="0" value="VLAN455"/>
+                <element inactive_on_update="false" label="VLAN915" sequence="0" value="VLAN915"/>
+                <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
+                <element inactive_on_update="false" label="VLAN410" sequence="0" value="VLAN410"/>
+                <element inactive_on_update="false" label="VLAN69" sequence="0" value="VLAN69"/>
+                <element inactive_on_update="false" label="e0/1" sequence="0" value="e0/1"/>
+                <element inactive_on_update="false" label="Vlan290" sequence="0" value="Vlan290"/>
+                <element inactive_on_update="false" label="EIPT" sequence="0" value="EIPT"/>
+                <element inactive_on_update="false" label="BDI300" sequence="0" value="BDI300"/>
+                <element inactive_on_update="false" label="DDS" sequence="0" value="DDS"/>
+                <element inactive_on_update="false" label="Vlan75" sequence="0" value="Vlan75"/>
+                <element inactive_on_update="false" label="ME POP" sequence="20" value="me_pop"/>
+                <element inactive_on_update="false" label="VLAN610" sequence="0" value="VLAN610"/>
+                <element inactive_on_update="false" label="VLAN300" sequence="0" value="VLAN300"/>
+            </choice>
+        </element>
     </element>
 </database>

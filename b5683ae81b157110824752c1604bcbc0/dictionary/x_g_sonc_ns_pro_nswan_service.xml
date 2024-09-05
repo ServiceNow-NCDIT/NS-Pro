@@ -17,7 +17,7 @@
         <element attributes="edge_encryption_enabled=true" label="Dept. Code" max_length="40" name="dept_code" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Serv_Type" max_length="40" name="serv_type" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Requested Service Date" max_length="40" name="requested_service_date" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Site ID" max_length="40" name="site_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Site ID" max_length="40" name="site_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Order" max_length="40" name="order" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Scope" max_length="40" name="scope" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Video Site ID" max_length="40" name="video_site_id" type="string"/>

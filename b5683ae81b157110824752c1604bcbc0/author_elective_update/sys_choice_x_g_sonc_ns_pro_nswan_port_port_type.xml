@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="port_type" table="x_g_sonc_ns_pro_nswan_port" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>port_type</element>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 02:55:19</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>port_type</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_x_g_sonc_ns_pro_nswan_port_port_type</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 02:55:19</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ATM</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:29</sys_updated_on>
+            <value>ATM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI10</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:02</sys_updated_on>
+            <value>BDI10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI300</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:02</sys_updated_on>
+            <value>BDI300</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI50</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:03</sys_updated_on>
+            <value>BDI50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI69</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:03</sys_updated_on>
+            <value>BDI69</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DDS</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:06</sys_updated_on>
+            <value>DDS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DMZ</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:53</sys_updated_on>
+            <value>DMZ</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DSL BB</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:27</sys_updated_on>
+            <value>DSL BB</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>e0/1</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:32</sys_updated_on>
+            <value>e0/1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>e1/2</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:32</sys_updated_on>
+            <value>e1/2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>e1/3</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:33</sys_updated_on>
+            <value>e1/3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EIPT</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:50</sys_updated_on>
+            <value>EIPT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ethernet</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:58</sys_updated_on>
+            <value>Ethernet</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ge/mgmt</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:32</sys_updated_on>
+            <value>ge/mgmt</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Input</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:50</sys_updated_on>
+            <value>Input</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>LAN</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:49</sys_updated_on>
+            <value>LAN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MAN</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:52</sys_updated_on>
+            <value>MAN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME Pop</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:05</sys_updated_on>
+            <value>ME Pop</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MGMT</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:05</sys_updated_on>
+            <value>MGMT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Output</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:50</sys_updated_on>
+            <value>Output</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Outside</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:33</sys_updated_on>
+            <value>Outside</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN 510</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:02</sys_updated_on>
+            <value>VLAN 510</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN200</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:45</sys_updated_on>
+            <value>VLAN200</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN201</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:53</sys_updated_on>
+            <value>VLAN201</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN211</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:59</sys_updated_on>
+            <value>VLAN211</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN250</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:01</sys_updated_on>
+            <value>VLAN250</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vlan290</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:34</sys_updated_on>
+            <value>Vlan290</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vlan291</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:34</sys_updated_on>
+            <value>Vlan291</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vlan292</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:34</sys_updated_on>
+            <value>Vlan292</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN30</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:04</sys_updated_on>
+            <value>VLAN30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN300</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:59</sys_updated_on>
+            <value>VLAN300</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN310</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:39</sys_updated_on>
+            <value>VLAN310</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN401</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:58</sys_updated_on>
+            <value>VLAN401</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN410</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:58</sys_updated_on>
+            <value>VLAN410</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN455</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:22</sys_updated_on>
+            <value>VLAN455</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN5</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:55</sys_updated_on>
+            <value>VLAN5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN50</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:55</sys_updated_on>
+            <value>VLAN50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN51</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:04</sys_updated_on>
+            <value>VLAN51</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN510</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:58</sys_updated_on>
+            <value>VLAN510</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN610</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:58</sys_updated_on>
+            <value>VLAN610</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN69</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:55</sys_updated_on>
+            <value>VLAN69</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN710</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:58</sys_updated_on>
+            <value>VLAN710</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vlan75</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:21</sys_updated_on>
+            <value>Vlan75</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN805</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:55</sys_updated_on>
+            <value>VLAN805</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>vlan910</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:09:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:09:57</sys_updated_on>
+            <value>vlan910</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VLAN915</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:11:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:11:03</sys_updated_on>
+            <value>VLAN915</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vlan990</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:34</sys_updated_on>
+            <value>Vlan990</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>VoIP</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:40</sys_updated_on>
+            <value>VoIP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>WIRELESS</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:49</sys_updated_on>
+            <value>WIRELESS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>WLAN</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:55</sys_updated_on>
+            <value>WLAN</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>XNET</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 06:10:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 06:10:28</sys_updated_on>
+            <value>XNET</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 02:55:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 02:55:26</sys_updated_on>
+            <value>me</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME POP</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 02:55:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 02:55:49</sys_updated_on>
+            <value>me_pop</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DSL</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-04 02:55:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-04 02:56:03</sys_updated_on>
+            <value>dsl</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -16,6 +16,7 @@
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Alternate POC" max_length="32" name="x_g_sonc_ns_pro_pending_alternate_poc" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Office Hours" max_length="40" name="x_g_sonc_ns_pro_office_hours" type="string"/>
         <element label="VIP Site" max_length="40" name="x_g_sonc_ns_pro_vip_site" type="boolean"/>
+        <element label="NSWAN Site" max_length="32" name="x_g_sonc_ns_pro_nswan_site" read_only="true" reference="x_g_sonc_ns_pro_nswan_service" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Location" max_length="32" name="x_g_sonc_ns_pro_pending_location" reference="cmn_location" type="reference"/>
         <element label="Security LastUpgrade Date" max_length="40" name="x_g_sonc_ns_pro_security_lastupgrade_date" type="glide_date"/>
         <element label="Uplink VRF" max_length="40" name="x_g_sonc_ns_pro_uplink_vrf" type="string"/>
