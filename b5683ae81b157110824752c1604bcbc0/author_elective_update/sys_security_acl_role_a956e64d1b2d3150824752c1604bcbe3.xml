@@ -41,7 +41,7 @@
         <update_guid_history>0d62e1a99c18de50420d37b1a0305f19:-2136956777</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 08/28/2024 04:55:18">0562e1a98718de50f9f20f280cbb351a</sys_audit_delete>
+        <sys_audit_delete display_value="Record deleted 08/28/2024 05:55:18">0562e1a98718de50f9f20f280cbb351a</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-28 09:55:18</sys_created_on>

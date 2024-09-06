@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Amount to Multiply circuit speed value to determine circuit availability.&#13;
+Example if Circuit availability is expressed in kilobytes on the host curcuit and circuit speed is requested in megabytes then the multiplier is 1000</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_g_sonc_ns_pro.circuit_speed_multiplier</name>
+        <read_roles/>
+        <suffix>circuit_speed_multiplier</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-06 16:08:24</sys_created_on>
+        <sys_id>d6fc01208768d250f9f20f280cbb3540</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro.circuit_speed_multiplier</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_properties_d6fc01208768d250f9f20f280cbb3540</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-06 16:08:24</sys_updated_on>
+        <type>integer</type>
+        <value>1000</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=d6fc01208768d250f9f20f280cbb3540"/>
+</record_update>

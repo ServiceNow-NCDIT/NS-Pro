@@ -42,6 +42,9 @@ circuit.prototype = {
 
         var LogPrefix = " circuit().getHostPort --> ";
 
+		var localCircuitMultiplier = gs.getProperty('x_g_sonc_ns_pro.circuit_speed_multiplier');
+
+
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' executing for task ' + NSProTask.number);
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' executing for network_service_category ' + NSProTask.network_service_category);
         // is this best effort?
@@ -78,7 +81,7 @@ circuit.prototype = {
             if (this.debug) gs.info(this.timestamp() + LogPrefix + 'getHostCircuitsForProvider returned ' + hostCircuits.length + ' circuits');
             for (i = 0; i < hostCircuits.length; i++) {
                 if (this.debug) gs.info(this.timestamp() + LogPrefix + 'Checking capacity of ' + hostCircuits[i].circuit_id + ' with avail capacity of ' + hostCircuits[i].available_capacity + ' and site_count ' + hostCircuits[i].site_count);
-                if (hostCircuits[i].available_capacity - parseInt(NSProTask.speed) > 0 && hostCircuits[i].site_count < 100) {
+                if (parseInt(hostCircuits[i].available_capacity) - parseInt(NSProTask.speed * localCircuitMultiplier) > 0 && hostCircuits[i].site_count < 100) {
                     if (this.debug) gs.info(this.timestamp() + LogPrefix + 'pushing ' + hostCircuits[i].circuit_id + ' to hostsWithCapacity');
                     hostsWithCapacity.push(hostCircuits[i]);
                 }
@@ -139,9 +142,9 @@ circuit.prototype = {
             }
             //if site count is empty assume 100
             if (gs.nil(gr.getValue('x_g_sonc_ns_pro_site_count'))) {
-                hostCircuit.available_capacity = 100;
+                hostCircuit.site_count = 100;
             } else {
-                hostCircuit.available_capacity = gr.getValue('x_g_sonc_ns_pro_site_count');
+                hostCircuit.site_count = gr.getValue('x_g_sonc_ns_pro_site_count');
             }
             hostCircuit.pe_host_circuit_id = gr.getValue('x_g_sonc_ns_pro_pe_host_circuit_id');
             hostCircuit.circuit_type = gr.getValue('x_g_sonc_ns_pro_circuit_type');
@@ -211,13 +214,13 @@ circuit.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 22:52:58</sys_created_on>
         <sys_id>160966fa478d8a10f4af2ad2e16d43fb</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>circuit</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_160966fa478d8a10f4af2ad2e16d43fb</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-30 17:33:10</sys_updated_on>
+        <sys_updated_on>2024-09-06 16:40:39</sys_updated_on>
     </sys_script_include>
 </record_update>
