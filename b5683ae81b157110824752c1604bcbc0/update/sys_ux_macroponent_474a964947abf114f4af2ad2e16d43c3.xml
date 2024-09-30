@@ -328,7 +328,7 @@
                     "propertyValues": {
                         "size": {
                             "type": "JSON_LITERAL",
-                            "value": "md"
+                            "value": "lg"
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
@@ -346,7 +346,7 @@
                             "type": "TRANSLATION_LITERAL",
                             "value": {
                                 "code": null,
-                                "message": "Relocate Site Request",
+                                "message": "Relocate Site",
                                 "comment": ""
                             }
                         },
@@ -465,7 +465,7 @@
                     "propertyValues": {
                         "size": {
                             "type": "JSON_LITERAL",
-                            "value": "md"
+                            "value": "lg"
                         },
                         "variant": {
                             "type": "JSON_LITERAL",
@@ -483,7 +483,7 @@
                             "type": "TRANSLATION_LITERAL",
                             "value": {
                                 "code": null,
-                                "message": "Decommission Site Request",
+                                "message": "Decommission Site  Services",
                                 "comment": ""
                             }
                         },
@@ -491,7 +491,7 @@
                             "type": "TRANSLATION_LITERAL",
                             "value": {
                                 "code": null,
-                                "message": "Decommission Site",
+                                "message": "Decommission Site Services",
                                 "comment": ""
                             }
                         },
@@ -610,7 +610,7 @@
                                 "border-width": "var(--now-static-space--xxs)",
                                 "border-style": "solid",
                                 "border-radius": "var(--now-static-border-radius--lg)",
-                                "width": ""
+                                "width": "250px"
                             }
                         },
                         {
@@ -620,7 +620,8 @@
                                 "border-color": "RGB(var(--now-color--neutral-5))",
                                 "border-width": "var(--now-static-space--xxs)",
                                 "border-style": "id",
-                                "border-radius": "var(--now-static-border-radius--lg)"
+                                "border-radius": "var(--now-static-border-radius--lg)",
+                                "width": "250px"
                             }
                         },
                         {
@@ -631,7 +632,7 @@
                                 "border-width": "var(--now-static-space--xxs)",
                                 "border-style": "id",
                                 "border-radius": "var(--now-static-border-radius--lg)",
-                                "width": "200px"
+                                "width": "250px"
                             }
                         },
                         {
@@ -640,9 +641,9 @@
                                 "margin": "var(--now-static-space--xxl)",
                                 "border-color": "RGB(var(--now-color--neutral-5))",
                                 "border-width": "var(--now-static-space--xxs)",
-                                "border-style": "id",
+                                "border-style": "solid",
                                 "border-radius": "var(--now-static-border-radius--lg)",
-                                "width": "200px",
+                                "width": "250px",
                                 "height": "",
                                 "padding": "var(--now-static-space--lg)"
                             }
@@ -2686,6 +2687,491 @@
         "styles": null
     },
     {
+        "definition": {
+            "id": "d356d14b6e293a3020a244b63d278d8f",
+            "type": "MACROPONENT"
+        },
+        "elementLabel": "Column layout 1",
+        "elementId": "column_layout_1",
+        "eventMappings": [
+            
+        ],
+        "propertyValues": {
+            "slotWrapperBehavior": {
+                "type": "JSON_LITERAL",
+                "value": "contents"
+            },
+            "hideEmptyStateUi": {
+                "type": "JSON_LITERAL",
+                "value": true
+            }
+        },
+        "isHidden": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "preset": null,
+        "slot": null,
+        "styles": null,
+        "overrides": {
+            "composition": [
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementLabel": "Column 1",
+                    "elementId": "__cmbbccccgknbbaabbbboddffhhsiijggqsriih__column_1",
+                    "eventMappings": [
+                        
+                    ],
+                    "propertyValues": {
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    },
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "slot": null,
+                    "styles": null,
+                    "overrides": {
+                        "composition": [
+                            {
+                                "elementId": "stylized_text_6",
+                                "elementLabel": "Stylized text 6",
+                                "propertyValues": {
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "text": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "message": "Local Area Network (LAN) Quick Quote",
+                                            "comment": ""
+                                        }
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    }
+                                },
+                                "eventMappings": [
+                                    
+                                ],
+                                "slot": "",
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "overrides": null,
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "isHero": false,
+                                "extensionPoints": [
+                                    
+                                ],
+                                "isNonDestructive": false,
+                                "items": [
+                                    
+                                ],
+                                "styles": null
+                            },
+                            {
+                                "elementId": "rich_text_1",
+                                "elementLabel": "Rich text 1",
+                                "propertyValues": {
+                                    "html": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "message": "&lt;p&gt;You can get an estimate of LAN services costs by entering the information here. The estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment. The monthly LAN service recurring charges is based on the total switch port capacity and the service level. Two service levels are offered, Basic or Premium.&lt;/p&gt;\n&lt;table style=\"border-collapse: collapse; width: 99.9511%;\" border=\"1\"&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 4-port basic service&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$&amp;nbsp; &amp;nbsp;66.84&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 8-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 138.33&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 24-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 201.03&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 24-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 258.23&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 48-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 314.27&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 48-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 391.70&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;br /&gt;&lt;span style=\"font-size: 12pt;\"&gt;&lt;strong&gt;Because actual cost will depend on several factors, please request a consultation and someone will reach out to you.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;",
+                                            "comment": ""
+                                        }
+                                    }
+                                },
+                                "eventMappings": [
+                                    
+                                ],
+                                "slot": "",
+                                "definition": {
+                                    "id": "2d56f06d55f46bbd4e79b5e624beb940",
+                                    "type": "MACROPONENT"
+                                },
+                                "overrides": null,
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "isHero": false,
+                                "extensionPoints": [
+                                    
+                                ],
+                                "isNonDestructive": false,
+                                "items": [
+                                    
+                                ],
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "type": "flex",
+                                "root": null,
+                                "children": null,
+                                "styles": {
+                                    "flex-direction": "column",
+                                    "align-items": "stretch",
+                                    "justify-content": "flex-start",
+                                    "height": "100%",
+                                    "overflow": "auto",
+                                    "box-sizing": "border-box"
+                                },
+                                "rules": {
+                                    "flex-direction": "row"
+                                },
+                                "items": [
+                                    {
+                                        "element_id": "stylized_text_6",
+                                        "styles": {
+                                            "text-align": "center"
+                                        }
+                                    },
+                                    {
+                                        "element_id": "rich_text_1",
+                                        "styles": {
+                                            "padding": "var(--now-static-space--lg)"
+                                        }
+                                    }
+                                ]
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "version": "1.0.0",
+                            "layout": {
+                                "type": "column",
+                                "column": {
+                                    "id": "default",
+                                    "columnNumber": 0,
+                                    "styleConfig": {
+                                        "internal": {
+                                            "flex-direction": "column",
+                                            "align-items": "stretch",
+                                            "justify-content": "flex-start",
+                                            "height": "100%",
+                                            "overflow": "auto",
+                                            "box-sizing": "border-box"
+                                        },
+                                        "external": {
+                                            "display": "contents",
+                                            "width": "100%"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "definition": {
+                        "id": "d356d14b6e293a3020a244b63d278d8f",
+                        "type": "MACROPONENT"
+                    },
+                    "elementLabel": "Column 2",
+                    "elementId": "__cmbbccccgknbbaabbbbpddffhhszcggzxoeeii__column_2",
+                    "eventMappings": [
+                        
+                    ],
+                    "propertyValues": {
+                        "slotWrapperBehavior": {
+                            "type": "JSON_LITERAL",
+                            "value": "contents"
+                        },
+                        "hideEmptyStateUi": {
+                            "type": "JSON_LITERAL",
+                            "value": true
+                        }
+                    },
+                    "isHidden": {
+                        "type": "JSON_LITERAL",
+                        "value": null
+                    },
+                    "preset": null,
+                    "slot": null,
+                    "styles": null,
+                    "overrides": {
+                        "composition": [
+                            {
+                                "elementId": "stylized_text_13",
+                                "elementLabel": "Stylized text 13",
+                                "propertyValues": {
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* {\r\n    text-align: center;\r\n }"
+                                    },
+                                    "text": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "message": "Wireless LAN (WLAN) Quick Quote",
+                                            "comment": ""
+                                        }
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "h1"
+                                    }
+                                },
+                                "eventMappings": [
+                                    
+                                ],
+                                "slot": "",
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "overrides": null,
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "isHero": false,
+                                "extensionPoints": [
+                                    
+                                ],
+                                "isNonDestructive": false,
+                                "items": [
+                                    
+                                ],
+                                "styles": null
+                            },
+                            {
+                                "elementId": "stylized_text_14",
+                                "elementLabel": "Stylized text 14",
+                                "propertyValues": {
+                                    "css": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "* { }"
+                                    },
+                                    "text": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "message": "You can get an estimate of WLAN services costs by entering the information here. Again, the estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment when a survey is performed. The monthly WLAN service recurring charges is based on the total number of wireless access points that are used.",
+                                            "comment": ""
+                                        }
+                                    },
+                                    "tag": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "p"
+                                    }
+                                },
+                                "eventMappings": [
+                                    
+                                ],
+                                "slot": "",
+                                "definition": {
+                                    "id": "4335ba6dca80378f7ba7a67cd6667bec",
+                                    "type": "MACROPONENT"
+                                },
+                                "overrides": null,
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "isHero": false,
+                                "extensionPoints": [
+                                    
+                                ],
+                                "isNonDestructive": false,
+                                "items": [
+                                    
+                                ],
+                                "styles": null
+                            }
+                        ],
+                        "layout": {
+                            "default": {
+                                "type": "flex",
+                                "root": null,
+                                "children": null,
+                                "styles": {
+                                    "flex-direction": "column",
+                                    "align-items": "stretch",
+                                    "justify-content": "flex-start",
+                                    "height": "100%",
+                                    "overflow": "auto",
+                                    "box-sizing": "border-box"
+                                },
+                                "rules": {
+                                    "flex-direction": "row"
+                                },
+                                "items": [
+                                    {
+                                        "element_id": "stylized_text_13",
+                                        "styles": {}
+                                    },
+                                    {
+                                        "element_id": "stylized_text_14",
+                                        "styles": {}
+                                    }
+                                ]
+                            },
+                            "version": "3.0.0"
+                        }
+                    },
+                    "scratchPad": {
+                        "uib": {
+                            "version": "1.0.0",
+                            "layout": {
+                                "type": "column",
+                                "column": {
+                                    "id": "default",
+                                    "columnNumber": 0,
+                                    "styleConfig": {
+                                        "internal": {
+                                            "flex-direction": "column",
+                                            "align-items": "stretch",
+                                            "justify-content": "flex-start",
+                                            "height": "100%",
+                                            "overflow": "auto",
+                                            "box-sizing": "border-box"
+                                        },
+                                        "external": {
+                                            "display": "contents",
+                                            "width": "100%"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "layout": {
+                "default": {
+                    "children": null,
+                    "isInline": null,
+                    "items": [
+                        {
+                            "element_id": "__cmbbccccgknbbaabbbboddffhhsiijggqsriih__column_1",
+                            "styles": {
+                                "display": "contents",
+                                "width": "100%"
+                            }
+                        },
+                        {
+                            "element_id": "__cmbbccccgknbbaabbbbpddffhhszcggzxoeeii__column_2",
+                            "styles": {
+                                "display": "contents",
+                                "width": "100%"
+                            }
+                        }
+                    ],
+                    "root": null,
+                    "rules": null,
+                    "styles": {
+                        "width": "auto",
+                        "grid-template-rows": "1fr",
+                        "box-sizing": "border-box",
+                        "grid-template-columns": "50fr 50fr"
+                    },
+                    "type": "grid"
+                },
+                "version": "3.0.0",
+                "queries": [
+                    {
+                        "query": {
+                            "max-width": 640
+                        },
+                        "layout": {
+                            "children": null,
+                            "isInline": null,
+                            "items": [
+                                
+                            ],
+                            "root": null,
+                            "rules": null,
+                            "styles": {
+                                "width": "auto",
+                                "grid-template-rows": "1fr",
+                                "box-sizing": "border-box",
+                                "grid-template-columns": "1fr",
+                                "height": "fit-content",
+                                "min-height": "min-content",
+                                "max-height": "max-content"
+                            },
+                            "type": "grid"
+                        }
+                    }
+                ]
+            }
+        },
+        "scratchPad": {
+            "uib": {
+                "version": "1.0.0",
+                "layout": {
+                    "type": "columnSection",
+                    "columnSection": {
+                        "id": "UIB_COLUMN_SECTION_SINGLE_COLUMN_SECTION",
+                        "breakpoints": [
+                            {
+                                "max-width": 640,
+                                "behavior": "stack",
+                                "styles": {
+                                    "width": "auto",
+                                    "grid-template-rows": "1fr",
+                                    "box-sizing": "border-box",
+                                    "grid-template-columns": "1fr",
+                                    "height": "fit-content",
+                                    "min-height": "min-content",
+                                    "max-height": "max-content"
+                                }
+                            }
+                        ],
+                        "children": [
+                            {
+                                "width": 50,
+                                "unit": "%",
+                                "columnNumber": 1
+                            },
+                            {
+                                "width": 50,
+                                "unit": "%",
+                                "columnNumber": 2
+                            }
+                        ],
+                        "styleConfig": {
+                            "internal": {
+                                "width": "auto",
+                                "grid-template-rows": "1fr",
+                                "box-sizing": "border-box"
+                            },
+                            "external": {
+                                "display": "contents",
+                                "width": "100%"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
         "elementId": "container_4",
         "elementLabel": "Container 4",
         "propertyValues": {
@@ -2728,200 +3214,14 @@
         },
         "overrides": {
             "composition": [
-                {
-                    "elementId": "stylized_text_6",
-                    "elementLabel": "Stylized text 6",
-                    "propertyValues": {
-                        "css": {
-                            "type": "JSON_LITERAL",
-                            "value": "* { }"
-                        },
-                        "text": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "message": "Local Area Network (LAN) Quick Quote",
-                                "comment": ""
-                            }
-                        },
-                        "tag": {
-                            "type": "JSON_LITERAL",
-                            "value": "h1"
-                        }
-                    },
-                    "eventMappings": [
-                        
-                    ],
-                    "slot": "",
-                    "definition": {
-                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                        "type": "MACROPONENT"
-                    },
-                    "overrides": null,
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": null
-                    },
-                    "isHero": false,
-                    "extensionPoints": [
-                        
-                    ],
-                    "isNonDestructive": false,
-                    "items": [
-                        
-                    ],
-                    "styles": null
-                },
-                {
-                    "elementId": "rich_text_1",
-                    "elementLabel": "Rich text 1",
-                    "propertyValues": {
-                        "html": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "message": "&lt;p&gt;You can get an estimate of LAN services costs by entering the information here. The estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment. The monthly LAN service recurring charges is based on the total switch port capacity and the service level. Two service levels are offered, Basic or Premium.&lt;/p&gt;\n&lt;table style=\"border-collapse: collapse; width: 99.9511%;\" border=\"1\"&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 4-port basic service&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$&amp;nbsp; &amp;nbsp;66.84&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 8-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 138.33&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 24-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 201.03&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 24-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 258.23&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\"width: 32.5686%;\"&gt;Cost per 48-port basic switch&lt;/td&gt;\n&lt;td style=\"width: 17.3604%; text-align: center;\"&gt;$ 314.27&lt;/td&gt;\n&lt;td style=\"width: 35.4342%;\"&gt;Cost per 48-port premium switch&lt;/td&gt;\n&lt;td style=\"width: 14.4948%; text-align: center;\"&gt;$ 391.70&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;br /&gt;&lt;span style=\"font-size: 12pt;\"&gt;&lt;strong&gt;Because actual cost will depend on several factors, please request a consultation and someone will reach out to you.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;",
-                                "comment": ""
-                            }
-                        }
-                    },
-                    "eventMappings": [
-                        
-                    ],
-                    "slot": "",
-                    "definition": {
-                        "id": "2d56f06d55f46bbd4e79b5e624beb940",
-                        "type": "MACROPONENT"
-                    },
-                    "overrides": null,
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": null
-                    },
-                    "isHero": false,
-                    "extensionPoints": [
-                        
-                    ],
-                    "isNonDestructive": false,
-                    "items": [
-                        
-                    ],
-                    "styles": null
-                },
-                {
-                    "elementId": "stylized_text_13",
-                    "elementLabel": "Stylized text 13",
-                    "propertyValues": {
-                        "css": {
-                            "type": "JSON_LITERAL",
-                            "value": "* {\r\n    text-align: center;\r\n }"
-                        },
-                        "text": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "message": "Wireless LAN (WLAN) Quick Quote",
-                                "comment": ""
-                            }
-                        },
-                        "tag": {
-                            "type": "JSON_LITERAL",
-                            "value": "h1"
-                        }
-                    },
-                    "eventMappings": [
-                        
-                    ],
-                    "slot": "",
-                    "definition": {
-                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                        "type": "MACROPONENT"
-                    },
-                    "overrides": null,
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": null
-                    },
-                    "isHero": false,
-                    "extensionPoints": [
-                        
-                    ],
-                    "isNonDestructive": false,
-                    "items": [
-                        
-                    ],
-                    "styles": null
-                },
-                {
-                    "elementId": "stylized_text_14",
-                    "elementLabel": "Stylized text 14",
-                    "propertyValues": {
-                        "css": {
-                            "type": "JSON_LITERAL",
-                            "value": "* { }"
-                        },
-                        "text": {
-                            "type": "TRANSLATION_LITERAL",
-                            "value": {
-                                "code": null,
-                                "message": "You can get an estimate of WLAN services costs by entering the information here. Again, the estimate is based on approved rates for this service that are published in the NCDIT Rate Schedule. There is a one-time charge for the installation of the required customer premise equipment when a survey is performed. The monthly WLAN service recurring charges is based on the total number of wireless access points that are used.",
-                                "comment": ""
-                            }
-                        },
-                        "tag": {
-                            "type": "JSON_LITERAL",
-                            "value": "p"
-                        }
-                    },
-                    "eventMappings": [
-                        
-                    ],
-                    "slot": "",
-                    "definition": {
-                        "id": "4335ba6dca80378f7ba7a67cd6667bec",
-                        "type": "MACROPONENT"
-                    },
-                    "overrides": null,
-                    "isHidden": {
-                        "type": "JSON_LITERAL",
-                        "value": null
-                    },
-                    "isHero": false,
-                    "extensionPoints": [
-                        
-                    ],
-                    "isNonDestructive": false,
-                    "items": [
-                        
-                    ],
-                    "styles": null
-                }
+                
             ],
             "layout": {
                 "default": {
                     "children": null,
                     "isInline": null,
                     "items": [
-                        {
-                            "element_id": "stylized_text_6",
-                            "styles": {
-                                "text-align": "center"
-                            }
-                        },
-                        {
-                            "element_id": "rich_text_1",
-                            "styles": {
-                                "padding": "var(--now-static-space--lg)"
-                            }
-                        },
-                        {
-                            "element_id": "stylized_text_13",
-                            "styles": {}
-                        },
-                        {
-                            "element_id": "stylized_text_14",
-                            "styles": {}
-                        }
+                        
                     ],
                     "root": null,
                     "rules": null,
@@ -3561,6 +3861,13 @@
                 }
             },
             {
+                "element_id": "column_layout_1",
+                "styles": {
+                    "display": "contents",
+                    "width": "100%"
+                }
+            },
+            {
                 "element_id": "container_4",
                 "styles": {
                     "width": "100%"
@@ -3609,10 +3916,10 @@
   "message" : "DIT does not currently have an established a telco service contract for the zip code you requested. If you are sure you need service for a location at this zip code, please refer to the knowledge article about \"network service contracts\" for instructions.",
   "comment" : ""
 }, {
-  "message" : "Decommission Site",
+  "message" : "Decommission Site  Services",
   "comment" : ""
 }, {
-  "message" : "Decommission Site Request",
+  "message" : "Decommission Site Services",
   "comment" : ""
 }, {
   "message" : "Delete",
@@ -3652,9 +3959,6 @@
   "comment" : ""
 }, {
   "message" : "Relocate Site",
-  "comment" : ""
-}, {
-  "message" : "Relocate Site Request",
   "comment" : ""
 }, {
   "message" : "Service Definitions",
@@ -3915,13 +4219,13 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-01-03 21:44:21</sys_created_on>
         <sys_id>474a964947abf114f4af2ad2e16d43c3</sys_id>
-        <sys_mod_count>142</sys_mod_count>
+        <sys_mod_count>143</sys_mod_count>
         <sys_name>Default</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ux_macroponent_474a964947abf114f4af2ad2e16d43c3</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-09-05 14:45:57</sys_updated_on>
+        <sys_updated_on>2024-09-14 11:36:20</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

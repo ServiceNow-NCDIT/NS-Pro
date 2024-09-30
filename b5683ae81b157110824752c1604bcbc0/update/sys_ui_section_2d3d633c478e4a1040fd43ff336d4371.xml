@@ -4,13 +4,13 @@
             <element>lan_service_assignment</element>
             <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>6d1b7d9d47424e1040fd43ff336d439a</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>18d88b6487f45610f9f20f280cbb35a9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>wlan_service_assignment</element>
             <position>1</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>a91b7d9d47424e1040fd43ff336d439b</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>9cd88b6487f45610f9f20f280cbb35a9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>requested_speed</element>
             <position>2</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>a11b7d9d47424e1040fd43ff336d439c</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>14d88b6487f45610f9f20f280cbb35aa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>network_service_category</element>
             <position>3</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43a9</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>98d88b6487f45610f9f20f280cbb35aa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>network_service_subcategory</element>
             <position>4</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43a9</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>10d88b6487f45610f9f20f280cbb35ab</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>request_ha</element>
             <position>5</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43aa</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>94d88b6487f45610f9f20f280cbb35ab</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,181 +88,153 @@
             <element>request_managed_wan</element>
             <position>6</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43aa</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>1cd88b6487f45610f9f20f280cbb35ab</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>request_managed_lan</element>
-            <position>7</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43ab</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>request_managed_wlan</element>
-            <position>8</position>
+            <position>7</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43ab</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>90d88b6487f45610f9f20f280cbb35ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>request_managed_voip</element>
-            <position>9</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43ac</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>10</position>
+            <position>8</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43ac</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>18d88b6487f45610f9f20f280cbb35ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dest_location</element>
-            <position>11</position>
+            <position>9</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43ad</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>9cd88b6487f45610f9f20f280cbb35ac</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>dest_site</element>
-            <position>12</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43ad</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>site_name</element>
-            <position>13</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43ae</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dest_street</element>
-            <position>14</position>
+            <position>10</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43ae</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>14d88b6487f45610f9f20f280cbb35ad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dest_county</element>
-            <position>15</position>
+            <position>11</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43af</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>98d88b6487f45610f9f20f280cbb35ad</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dest_city</element>
-            <position>16</position>
+            <position>12</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43af</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>10d88b6487f45610f9f20f280cbb35ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dest_state</element>
-            <position>17</position>
+            <position>13</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>611b7d9d47424e1040fd43ff336d43b0</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>94d88b6487f45610f9f20f280cbb35ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>dest_zip</element>
-            <position>18</position>
+            <position>14</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-05-07 20:43:27</sys_created_on>
-            <sys_id>691b7d9d47424e1040fd43ff336d43b0</sys_id>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>1cd88b6487f45610f9f20f280cbb35ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-05-07 20:43:27</sys_updated_on>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_lan</element>
+            <position>15</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>90d88b6487f45610f9f20f280cbb35af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_managed_voip</element>
+            <position>16</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-09-19 11:20:16</sys_created_on>
+            <sys_id>18d88b6487f45610f9f20f280cbb35af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Request Info" display_value="Request Info" name="x_g_sonc_ns_pro_telco_order" sys_domain="global" view="e93d633c478e4a1040fd43ff336d432d">2d3d633c478e4a1040fd43ff336d4371</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-09-19 11:20:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

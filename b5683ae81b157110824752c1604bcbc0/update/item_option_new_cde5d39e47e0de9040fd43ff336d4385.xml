@@ -21,7 +21,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>acct_billing_code</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -38,16 +38,16 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>account_billing_code</name>
-        <order>2200</order>
+        <name>alternate_poc_name</name>
+        <order>900</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>NetPlus Acct Code (25 digits, no spaces or seperators)</question_text>
+        <question_text>Alternate POC Name</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -75,18 +75,18 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-03-18 20:52:00</sys_created_on>
-        <sys_id>dfd06d1e1b713510824752c1604bcb70</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>NetPlus Acct Code (25 digits, no spaces or seperators)</sys_name>
+        <sys_created_on>2024-09-12 12:31:35</sys_created_on>
+        <sys_id>cde5d39e47e0de9040fd43ff336d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Alternate POC Name</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name>item_option_new_dfd06d1e1b713510824752c1604bcb70</sys_update_name>
+        <sys_update_name>item_option_new_cde5d39e47e0de9040fd43ff336d4385</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-09-12 13:48:53</sys_updated_on>
+        <sys_updated_on>2024-09-12 12:31:35</sys_updated_on>
         <table/>
-        <tooltip>Enter the 25 char NetPlus dept code</tooltip>
+        <tooltip/>
         <type>6</type>
         <ui_page/>
         <unique>false</unique>
@@ -103,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=dfd06d1e1b713510824752c1604bcb70"/>
-    <fx_price action="delete_multiple" query="id=dfd06d1e1b713510824752c1604bcb70"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=cde5d39e47e0de9040fd43ff336d4385"/>
+    <fx_price action="delete_multiple" query="id=cde5d39e47e0de9040fd43ff336d4385"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>dfd06d1e1b713510824752c1604bcb70</id>
+        <id>cde5d39e47e0de9040fd43ff336d4385</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-10-12 14:56:16</sys_created_on>
-        <sys_id>ccf06d5e1b713510824752c1604bcba8</sys_id>
+        <sys_created_on>2024-09-12 12:31:35</sys_created_on>
+        <sys_id>780617924724de9040fd43ff336d43ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-12 14:56:16</sys_updated_on>
+        <sys_updated_on>2024-09-12 12:31:35</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -126,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>dfd06d1e1b713510824752c1604bcb70</id>
+        <id>cde5d39e47e0de9040fd43ff336d4385</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-10-12 14:56:16</sys_created_on>
-        <sys_id>40f06d5e1b713510824752c1604bcba8</sys_id>
+        <sys_created_on>2024-09-12 12:31:35</sys_created_on>
+        <sys_id>300617924724de9040fd43ff336d43ca</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-12 14:56:16</sys_updated_on>
+        <sys_updated_on>2024-09-12 12:31:35</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

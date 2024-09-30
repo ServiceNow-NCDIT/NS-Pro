@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=20417836000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=27843311000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>process_dit_service_request</internal_name>
-        <label_cache>[{"name":"Created_1.current.acct_billing_code","label":"Trigger - Record Created➛Network Request Record➛Acct Billing Code","reference":"","reference_display":"Acct Billing Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"acct_billing_code","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["description","short_description"]}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Network Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{}},{"name":"Created_1.current.dest_zip","label":"Trigger - Record Created➛Network Request Record➛Dest Zip","reference":"","reference_display":"Dest Zip","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_state","label":"Trigger - Record Created➛Network Request Record➛Dest State","reference":"","reference_display":"Dest State","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_city","label":"Trigger - Record Created➛Network Request Record➛Dest City","reference":"","reference_display":"Dest City","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_street","label":"Trigger - Record Created➛Network Request Record➛Dest Street Address","reference":"","reference_display":"Dest Street Address","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Network Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"number","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":[null]}},{"name":"Created_1.current.new_or_existing_site","label":"Trigger - Record Created➛Network Request Record➛New or Existing Site","reference":"","reference_display":"New or Existing Site","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.speed_egress","label":"6 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","usedInstances":{}},{"name":"Created_1.current.service_code","label":"Trigger - Record Created➛Network Request Record➛Service Code","reference":"","reference_display":"Service Code","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.network_service_category","label":"Trigger - Record Created➛Network Request Record➛Network Service Category","reference":"x_g_sonc_ns_pro_network_service_category","reference_display":"label","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.circuit_due_date","label":"Trigger - Record Created➛Network Request Record➛Circuit Due Date","reference":"","reference_display":"Circuit Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"Created_1.current.location","label":"Trigger - Record Created➛Telco Order Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.special_instructions","label":"Trigger - Record Created➛Network Request Record➛Special Instructions","reference":"","reference_display":"Special Instructions","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.demarc_location","label":"Trigger - Record Created➛Telco Order Record➛DEMARC Location","reference":"","reference_display":"DEMARC Location","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_site","label":"Trigger - Record Created➛Network Request Record➛Dest Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.request_managed_wan","label":"Trigger - Record Created➛Telco Order Record➛Request Managed WAN","reference":"","reference_display":"Request Managed WAN","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["telco_order"],"3573622d-6260-4be4-8864-3b797857d8f3":["record",null]},"attributes":{}},{"name":"Created_1.current.request_ha","label":"Trigger - Record Created➛Telco Order Record➛Request HA","reference":"","reference_display":"Request HA","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record","label":"6 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["site"],"6bb9cfa6-9173-4cf7-a54c-484e86d87a09":["conditions"],"44991132-fed1-4034-84be-d5f0023b4cae":["site"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["site"]}},{"name":"flow_variable.billing_desc","label":"Flow Variables➛Billing Desc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"],"6819907e-abfe-4e96-a7cb-e4d128a2cbcd":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"950dbd15-dfbb-4714-8af9-2684c67fd5ab"}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"abfa3bf1-084b-4209-bf7a-b47c568ec395":["billing_changes-0"]}},{"name":"flow_variable.billing_changes","label":"Flow Variables➛Billing Changes","type":"string","base_type":"string","usedInstances":{"6020e9ad-69ed-4e5d-b84b-41602e07d6f6":["log_message"],"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0c0c8c5-8c41-44dc-b18f-68126327deb1"}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":["ah_to"]}},{"name":"Created_1.current.assigned_to","label":"Trigger - Record Created➛Network Request Record➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"assigned_to","usedInstances":{"44991132-fed1-4034-84be-d5f0023b4cae":["assigned_to"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["assigned_to"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_to"]}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.acct_billing_code","label":"Trigger - Record Created➛Network Request Record➛Acct Billing Code","reference":"","reference_display":"Acct Billing Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"acct_billing_code","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["description","short_description"]}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Network Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{}},{"name":"Created_1.current.dest_zip","label":"Trigger - Record Created➛Network Request Record➛Dest Zip","reference":"","reference_display":"Dest Zip","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_state","label":"Trigger - Record Created➛Network Request Record➛Dest State","reference":"","reference_display":"Dest State","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_city","label":"Trigger - Record Created➛Network Request Record➛Dest City","reference":"","reference_display":"Dest City","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_street","label":"Trigger - Record Created➛Network Request Record➛Dest Street Address","reference":"","reference_display":"Dest Street Address","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Network Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"number","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":[null]}},{"name":"Created_1.current.new_or_existing_site","label":"Trigger - Record Created➛Network Request Record➛New or Existing Site","reference":"","reference_display":"New or Existing Site","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.speed_egress","label":"6 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","usedInstances":{}},{"name":"Created_1.current.service_code","label":"Trigger - Record Created➛Network Request Record➛Service Code","reference":"","reference_display":"Service Code","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.network_service_category","label":"Trigger - Record Created➛Network Request Record➛Network Service Category","reference":"x_g_sonc_ns_pro_network_service_category","reference_display":"label","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.circuit_due_date","label":"Trigger - Record Created➛Network Request Record➛Circuit Due Date","reference":"","reference_display":"Circuit Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"circuit_due_date","usedInstances":{"8a503de8-b074-44eb-ba63-a5eefbf623e9":["due_date"]}},{"name":"Created_1.current.location","label":"Trigger - Record Created➛Telco Order Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.special_instructions","label":"Trigger - Record Created➛Network Request Record➛Special Instructions","reference":"","reference_display":"Special Instructions","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.demarc_location","label":"Trigger - Record Created➛Telco Order Record➛DEMARC Location","reference":"","reference_display":"DEMARC Location","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_site","label":"Trigger - Record Created➛Network Request Record➛Dest Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.request_managed_wan","label":"Trigger - Record Created➛Telco Order Record➛Request Managed WAN","reference":"","reference_display":"Request Managed WAN","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["telco_order"],"3573622d-6260-4be4-8864-3b797857d8f3":["record",null],"8a503de8-b074-44eb-ba63-a5eefbf623e9":["telco_order"],"7bd5af29-af67-42f9-a2ae-f09ee1e47ead":["telco_order"],"385280d6-cca0-4a9c-9df0-c59fa10f74d5":["telco_order"],"c64b15e8-b246-446c-b341-ee1ef47bb350":["telco_order"]},"attributes":{}},{"name":"Created_1.current.request_ha","label":"Trigger - Record Created➛Telco Order Record➛Request HA","reference":"","reference_display":"Request HA","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record","label":"6 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["site"],"6bb9cfa6-9173-4cf7-a54c-484e86d87a09":["conditions"],"44991132-fed1-4034-84be-d5f0023b4cae":["site"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["site"],"8a503de8-b074-44eb-ba63-a5eefbf623e9":["site"],"385280d6-cca0-4a9c-9df0-c59fa10f74d5":["field_values"],"6dac5c64-aaa7-4878-a696-0018e145f9ab":["field_values"],"7bd5af29-af67-42f9-a2ae-f09ee1e47ead":["field_values"],"c64b15e8-b246-446c-b341-ee1ef47bb350":["field_values"],"76785071-e264-494c-b732-d6d55adcbc08":["field_values"]}},{"name":"flow_variable.billing_desc","label":"Flow Variables➛Billing Desc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"],"6819907e-abfe-4e96-a7cb-e4d128a2cbcd":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"950dbd15-dfbb-4714-8af9-2684c67fd5ab"}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"abfa3bf1-084b-4209-bf7a-b47c568ec395":["billing_changes-0"]}},{"name":"flow_variable.billing_changes","label":"Flow Variables➛Billing Changes","type":"string","base_type":"string","usedInstances":{"6020e9ad-69ed-4e5d-b84b-41602e07d6f6":["log_message"],"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0c0c8c5-8c41-44dc-b18f-68126327deb1"}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":["ah_to"]}},{"name":"Created_1.current.assigned_to","label":"Trigger - Record Created➛Network Request Record➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"assigned_to","usedInstances":{"44991132-fed1-4034-84be-d5f0023b4cae":["assigned_to"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["assigned_to"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_to"]}}]</label_cache>
         <master_snapshot>05dae7b01bdefdd0824752c1604bcbc8</master_snapshot>
         <name>NSPro New Site Request</name>
         <natlang/>
@@ -34,7 +34,7 @@
         <sys_created_on>2023-11-02 05:20:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>1296a7781b9efdd0824752c1604bcbb2</sys_id>
-        <sys_mod_count>207</sys_mod_count>
+        <sys_mod_count>213</sys_mod_count>
         <sys_name>NSPro New Site Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -42,7 +42,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_hub_flow_1296a7781b9efdd0824752c1604bcbb2</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:01</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=1296a7781b9efdd0824752c1604bcbb2"/>
@@ -81,14 +81,14 @@
         <identifier>1296a7781b9efdd0824752c1604bcbb2</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-06-25 12:58:07</sys_created_on>
-        <sys_id>8b76e845870bce50f9f20f280cbb355a</sys_id>
+        <sys_created_on>2024-09-19 11:36:00</sys_created_on>
+        <sys_id>366c836087385610f9f20f280cbb35b7</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:00</sys_updated_on>
         <trigger display_value="">838f95d347b9c61440fd43ff336d439f</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT IN8b76e845870bce50f9f20f280cbb355a"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT IN366c836087385610f9f20f280cbb35b7"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT INc2ca67b01bdefdd0824752c1604bcb97"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -100,14 +100,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 05:39:01</sys_created_on>
         <sys_id>c2ca67b01bdefdd0824752c1604bcb97</sys_id>
-        <sys_mod_count>201</sys_mod_count>
+        <sys_mod_count>207</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:01</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -142,7 +142,175 @@
         <value>x_g_sonc_ns_pro_telco_order</value>
         <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
     </sys_variable_value>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=1296a7781b9efdd0824752c1604bcbb2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT IN45f00fe887745610f9f20f280cbb3543,49f00fe887745610f9f20f280cbb3543,c1f00fe887745610f9f20f280cbb3543,c5f00fe887745610f9f20f280cbb3543,c9f00fe887745610f9f20f280cbb3542,c9f00fe887745610f9f20f280cbb3543"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <label>Waiting for Approval</label>
+        <order>3</order>
+        <stage_id>f5c48f96-91c4-4e6a-bae5-8b41efaef175</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 10:45:56</sys_created_on>
+        <sys_id>45f00fe887745610f9f20f280cbb3543</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 10:45:56</sys_updated_on>
+        <type>standard</type>
+        <value>waiting_for_approval</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <label>Request Cancelled</label>
+        <order>0</order>
+        <stage_id>b7ac5c43-77f3-43fb-b6eb-7cbf505c2ee3</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 10:45:56</sys_created_on>
+        <sys_id>49f00fe887745610f9f20f280cbb3543</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 10:45:56</sys_updated_on>
+        <type>standard</type>
+        <value>Request Cancelled</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>12</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <label>Completed</label>
+        <order>1</order>
+        <stage_id>0d3f47bf-af15-4e23-a678-a36ef0acd5f0</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 10:45:56</sys_created_on>
+        <sys_id>c1f00fe887745610f9f20f280cbb3543</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <type>standard</type>
+        <value>complete</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>0</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <label>Request Approved</label>
+        <order>2</order>
+        <stage_id>5d48d877-84c3-49ef-82ed-5cf777649460</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 10:45:56</sys_created_on>
+        <sys_id>c5f00fe887745610f9f20f280cbb3543</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 10:52:49</sys_updated_on>
+        <type>standard</type>
+        <value>request_approved</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-03 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <label>Delivery</label>
+        <order>5</order>
+        <stage_id>194acdff-9c59-4e99-85dc-476a57cdf848</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 10:45:56</sys_created_on>
+        <sys_id>c9f00fe887745610f9f20f280cbb3542</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 10:45:56</sys_updated_on>
+        <type>standard</type>
+        <value>delivery</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration>1970-04-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <label>Fulfillment</label>
+        <order>4</order>
+        <stage_id>1c2838af-2b53-4d86-b1cc-5515b1fe313c</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 10:45:56</sys_created_on>
+        <sys_id>c9f00fe887745610f9f20f280cbb3543</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 10:52:49</sys_updated_on>
+        <type>standard</type>
+        <value>fulfillment</value>
+    </sys_hub_flow_stage>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT INda96a7781b9efdd0824752c1604bcbb2"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>1296a7781b9efdd0824752c1604bcbb2</id>
@@ -225,14 +393,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 05:39:01</sys_created_on>
         <sys_id>46ca27b01bdefdd0824752c1604bcbf1</sys_id>
-        <sys_mod_count>109</sys_mod_count>
+        <sys_mod_count>113</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -309,14 +477,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 05:39:01</sys_created_on>
         <sys_id>4eca27b01bdefdd0824752c1604bcbec</sys_id>
-        <sys_mod_count>109</sys_mod_count>
+        <sys_mod_count>113</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -332,7 +500,237 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4eca27b01bdefdd0824752c1604bcbec"/>
     <sys_hub_flow_output action="delete_multiple" query="model=1296a7781b9efdd0824752c1604bcbb2"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=1296a7781b9efdd0824752c1604bcbb2"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT IN7d57921b47310a1440fd43ff336d43d0,899a9771dbd6b11040eae46b13961953,a2b36e9f47710a1440fd43ff336d43eb,bdbfd69d1b5ef114824752c1604bcb65,cb70c9d8db11065040eae46b139619e9,e0d783ec47e60a5040fd43ff336d43fc"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT IN37d6c7ec87b45610f9f20f280cbb35c3,77d6c7ec87b45610f9f20f280cbb35d7,7bd6c7ec87b45610f9f20f280cbb35ca,7d57921b47310a1440fd43ff336d43d0,899a9771dbd6b11040eae46b13961953,a2b36e9f47710a1440fd43ff336d43eb,bdbfd69d1b5ef114824752c1604bcb65,cb70c9d8db11065040eae46b139619e9,e0d783ec47e60a5040fd43ff336d43fc,ffd6c7ec87b45610f9f20f280cbb35d0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>to create provision circuit</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>37d6c7ec87b45610f9f20f280cbb35c3</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
+        <ui_id>8a503de8-b074-44eb-ba63-a5eefbf623e9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=37d6c7ec87b45610f9f20f280cbb35c3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>37d6c7ec87b45610f9f20f280cbb35c3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>f3d6c7ec87b45610f9f20f280cbb35c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=37d6c7ec87b45610f9f20f280cbb35c3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>37d6c7ec87b45610f9f20f280cbb35c3</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>73d6c7ec87b45610f9f20f280cbb35c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Provision Circuit^site={{Created_1.current.site}}^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}^due_date={{Created_1.current.circuit_due_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>37d6c7ec87b45610f9f20f280cbb35c3</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>bbd6c7ec87b45610f9f20f280cbb35c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=37d6c7ec87b45610f9f20f280cbb35c3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=37d6c7ec87b45610f9f20f280cbb35c3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>to create billing request</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>77d6c7ec87b45610f9f20f280cbb35d7</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
+        <ui_id>c64b15e8-b246-446c-b341-ee1ef47bb350</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=77d6c7ec87b45610f9f20f280cbb35d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>77d6c7ec87b45610f9f20f280cbb35d7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>73d6c7ec87b45610f9f20f280cbb35d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>77d6c7ec87b45610f9f20f280cbb35d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>bfd6c7ec87b45610f9f20f280cbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=77d6c7ec87b45610f9f20f280cbb35d7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>77d6c7ec87b45610f9f20f280cbb35d7</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>3fd6c7ec87b45610f9f20f280cbb35d8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Create Billing Request^site={{Created_1.current.site}}^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>77d6c7ec87b45610f9f20f280cbb35d7</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>7bd6c7ec87b45610f9f20f280cbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>77d6c7ec87b45610f9f20f280cbb35d7</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>b7d6c7ec87b45610f9f20f280cbb35d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=77d6c7ec87b45610f9f20f280cbb35d7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=77d6c7ec87b45610f9f20f280cbb35d7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>Field Services does something (deploy hardware?)</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>7bd6c7ec87b45610f9f20f280cbb35ca</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
+        <ui_id>7bd5af29-af67-42f9-a2ae-f09ee1e47ead</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7bd6c7ec87b45610f9f20f280cbb35ca"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7bd6c7ec87b45610f9f20f280cbb35ca</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>ffd6c7ec87b45610f9f20f280cbb35cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7bd6c7ec87b45610f9f20f280cbb35ca"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>7bd6c7ec87b45610f9f20f280cbb35ca</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>7fd6c7ec87b45610f9f20f280cbb35cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Field Services Does Something (Deploy Hardware?)^site={{Created_1.current.site}}^assignment_group={"display":"Network Field Support","value":"5755cd0ddb98630065fbf482ba9619d5","sys_id":"5755cd0ddb98630065fbf482ba9619d5"}^telco_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>7bd6c7ec87b45610f9f20f280cbb35ca</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>bbd6c7ec87b45610f9f20f280cbb35cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7bd6c7ec87b45610f9f20f280cbb35ca"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7bd6c7ec87b45610f9f20f280cbb35ca"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -349,14 +747,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 17:39:02</sys_created_on>
         <sys_id>7d57921b47310a1440fd43ff336d43d0</sys_id>
-        <sys_mod_count>252</sys_mod_count>
+        <sys_mod_count>270</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-26 16:27:56</sys_updated_on>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
         <ui_id>44991132-fed1-4034-84be-d5f0023b4cae</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7d57921b47310a1440fd43ff336d43d0"/>
@@ -395,11 +793,11 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 17:39:02</sys_created_on>
         <sys_id>7557921b47310a1440fd43ff336d43d3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-31 17:40:33</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:11:46</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>assignment_group={"display":"Monitoring &amp; Control","value":"df55cd0ddb98630065fbf482ba9619d0","sys_id":"df55cd0ddb98630065fbf482ba9619d0"}^assigned_to={{Created_1.current.assigned_to}}^short_description=Create location for request {{Created_1.current.number}}^description=Destination Address:
+        <value>assignment_group={"display":"ServiceNow Support","value":"ba55cd0ddb98630065fbf482ba961910","sys_id":"ba55cd0ddb98630065fbf482ba961910"}^assigned_to={{Created_1.current.assigned_to}}^short_description=Create location for request {{Created_1.current.number}}^description=Destination Address:
 {{Created_1.current.dest_street}}
 {{Created_1.current.dest_city}}
 {{Created_1.current.dest_state}}
@@ -448,14 +846,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-05 07:02:09</sys_created_on>
         <sys_id>899a9771dbd6b11040eae46b13961953</sys_id>
-        <sys_mod_count>434</sys_mod_count>
+        <sys_mod_count>452</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-26 16:27:56</sys_updated_on>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
         <ui_id>285dae8e-ccb5-40c4-8045-10550a56c859</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=899a9771dbd6b11040eae46b13961953"/>
@@ -516,14 +914,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 18:33:09</sys_created_on>
         <sys_id>a2b36e9f47710a1440fd43ff336d43eb</sys_id>
-        <sys_mod_count>248</sys_mod_count>
+        <sys_mod_count>266</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-26 16:27:56</sys_updated_on>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
         <ui_id>e888a47c-96f8-489f-8e0b-3b8a60d032e5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a2b36e9f47710a1440fd43ff336d43eb"/>
@@ -562,9 +960,9 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 18:33:09</sys_created_on>
         <sys_id>a2b36e9f47710a1440fd43ff336d43ed</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-31 17:40:33</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:11:46</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
         <value>assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^short_description=Create site for request {{Created_1.current.number}} and associate location to site^description=New Site Name:
 {{Created_1.current.site_name}}
@@ -575,7 +973,7 @@ Location Address:
 {{Created_1.current.dest_state}}
 {{Created_1.current.dest_zip}}
 
-Remember to include the location latitude and longitude in the location record.
+Remember to validate the location latitude and longitude are in the location record.
 ^telco_order={{Created_1.current}}^due_date={{Created_1.current.sys_created_on}}^provisioning_state=1^state=2^assigned_to={{Created_1.current.assigned_to}}^site={{Created_1.current.site}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -620,14 +1018,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-03 13:28:01</sys_created_on>
         <sys_id>bdbfd69d1b5ef114824752c1604bcb65</sys_id>
-        <sys_mod_count>442</sys_mod_count>
+        <sys_mod_count>460</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-26 16:27:56</sys_updated_on>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
         <ui_id>cc50ad3c-1e69-4053-9862-bfc914de3a38</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bdbfd69d1b5ef114824752c1604bcb65"/>
@@ -688,14 +1086,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-28 07:06:23</sys_created_on>
         <sys_id>cb70c9d8db11065040eae46b139619e9</sys_id>
-        <sys_mod_count>326</sys_mod_count>
+        <sys_mod_count>344</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-26 16:27:56</sys_updated_on>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
         <ui_id>d67fabe0-0287-486a-bb7e-bec88db44ad6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cb70c9d8db11065040eae46b139619e9"/>
@@ -782,14 +1180,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-30 14:54:39</sys_created_on>
         <sys_id>e0d783ec47e60a5040fd43ff336d43fc</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-08-26 16:27:56</sys_updated_on>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
         <ui_id>3573622d-6260-4be4-8864-3b797857d8f3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e0d783ec47e60a5040fd43ff336d43fc"/>
@@ -898,6 +1296,74 @@ Remember to include the location latitude and longitude in the location record.
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e0d783ec47e60a5040fd43ff336d43fc"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0d783ec47e60a5040fd43ff336d43fc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>to create monitoring request</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">1296a7781b9efdd0824752c1604bcbb2</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>ffd6c7ec87b45610f9f20f280cbb35d0</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-23 17:19:00</sys_updated_on>
+        <ui_id>385280d6-cca0-4a9c-9df0-c59fa10f74d5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ffd6c7ec87b45610f9f20f280cbb35d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ffd6c7ec87b45610f9f20f280cbb35d0</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>77d6c7ec87b45610f9f20f280cbb35d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffd6c7ec87b45610f9f20f280cbb35d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>ffd6c7ec87b45610f9f20f280cbb35d0</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>f3d6c7ec87b45610f9f20f280cbb35d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Create Monitoring Request^site={{Created_1.current.site}}^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>ffd6c7ec87b45610f9f20f280cbb35d0</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:47</sys_created_on>
+        <sys_id>33d6c7ec87b45610f9f20f280cbb35d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ffd6c7ec87b45610f9f20f280cbb35d0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ffd6c7ec87b45610f9f20f280cbb35d0"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1296a7781b9efdd0824752c1604bcbb2"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT IN31bfd69d1b5ef114824752c1604bcb69,6965f1db473dc61440fd43ff336d4396,f9bfd69d1b5ef114824752c1604bcb5d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
@@ -924,14 +1390,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-03 13:28:01</sys_created_on>
         <sys_id>31bfd69d1b5ef114824752c1604bcb69</sys_id>
-        <sys_mod_count>203</sys_mod_count>
+        <sys_mod_count>209</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:01</sys_updated_on>
         <ui_id>0f452826-b079-4f5d-88ea-27a3b5ce34dc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1002,14 +1468,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 15:10:45</sys_created_on>
         <sys_id>6965f1db473dc61440fd43ff336d4396</sys_id>
-        <sys_mod_count>119</sys_mod_count>
+        <sys_mod_count>125</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:01</sys_updated_on>
         <ui_id>262a21c2-31ed-41cd-b46d-235dfe32874a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1080,14 +1546,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-03 13:28:01</sys_created_on>
         <sys_id>f9bfd69d1b5ef114824752c1604bcb5d</sys_id>
-        <sys_mod_count>203</sys_mod_count>
+        <sys_mod_count>209</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:01</sys_updated_on>
         <ui_id>7611d76c-9f74-43a3-aa0f-8bfefbd88651</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1251,7 +1717,7 @@ Remember to include the location latitude and longitude in the location record.
         <description/>
         <flow_priority/>
         <internal_name>process_dit_service_request</internal_name>
-        <label_cache>[{"name":"Created_1.current.acct_billing_code","label":"Trigger - Record Created➛Network Request Record➛Acct Billing Code","reference":"","reference_display":"Acct Billing Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"acct_billing_code","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["description","short_description"]}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Network Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{}},{"name":"Created_1.current.dest_zip","label":"Trigger - Record Created➛Network Request Record➛Dest Zip","reference":"","reference_display":"Dest Zip","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_state","label":"Trigger - Record Created➛Network Request Record➛Dest State","reference":"","reference_display":"Dest State","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_city","label":"Trigger - Record Created➛Network Request Record➛Dest City","reference":"","reference_display":"Dest City","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_street","label":"Trigger - Record Created➛Network Request Record➛Dest Street Address","reference":"","reference_display":"Dest Street Address","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Network Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"number","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":[null]}},{"name":"Created_1.current.new_or_existing_site","label":"Trigger - Record Created➛Network Request Record➛New or Existing Site","reference":"","reference_display":"New or Existing Site","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.speed_egress","label":"6 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","usedInstances":{}},{"name":"Created_1.current.service_code","label":"Trigger - Record Created➛Network Request Record➛Service Code","reference":"","reference_display":"Service Code","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.network_service_category","label":"Trigger - Record Created➛Network Request Record➛Network Service Category","reference":"x_g_sonc_ns_pro_network_service_category","reference_display":"label","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.circuit_due_date","label":"Trigger - Record Created➛Network Request Record➛Circuit Due Date","reference":"","reference_display":"Circuit Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"Created_1.current.location","label":"Trigger - Record Created➛Telco Order Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.special_instructions","label":"Trigger - Record Created➛Network Request Record➛Special Instructions","reference":"","reference_display":"Special Instructions","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.demarc_location","label":"Trigger - Record Created➛Telco Order Record➛DEMARC Location","reference":"","reference_display":"DEMARC Location","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_site","label":"Trigger - Record Created➛Network Request Record➛Dest Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.request_managed_wan","label":"Trigger - Record Created➛Telco Order Record➛Request Managed WAN","reference":"","reference_display":"Request Managed WAN","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["telco_order"],"3573622d-6260-4be4-8864-3b797857d8f3":["record",null]},"attributes":{}},{"name":"Created_1.current.request_ha","label":"Trigger - Record Created➛Telco Order Record➛Request HA","reference":"","reference_display":"Request HA","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record","label":"6 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["site"],"6bb9cfa6-9173-4cf7-a54c-484e86d87a09":["conditions"],"44991132-fed1-4034-84be-d5f0023b4cae":["site"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["site"]}},{"name":"flow_variable.billing_desc","label":"Flow Variables➛Billing Desc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"],"6819907e-abfe-4e96-a7cb-e4d128a2cbcd":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"950dbd15-dfbb-4714-8af9-2684c67fd5ab"}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"abfa3bf1-084b-4209-bf7a-b47c568ec395":["billing_changes-0"]}},{"name":"flow_variable.billing_changes","label":"Flow Variables➛Billing Changes","type":"string","base_type":"string","usedInstances":{"6020e9ad-69ed-4e5d-b84b-41602e07d6f6":["log_message"],"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0c0c8c5-8c41-44dc-b18f-68126327deb1"}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":["ah_to"]}},{"name":"Created_1.current.assigned_to","label":"Trigger - Record Created➛Network Request Record➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"assigned_to","usedInstances":{"44991132-fed1-4034-84be-d5f0023b4cae":["assigned_to"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["assigned_to"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_to"]}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.acct_billing_code","label":"Trigger - Record Created➛Network Request Record➛Acct Billing Code","reference":"","reference_display":"Acct Billing Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"acct_billing_code","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["description","short_description"]}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Network Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{}},{"name":"Created_1.current.dest_zip","label":"Trigger - Record Created➛Network Request Record➛Dest Zip","reference":"","reference_display":"Dest Zip","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_state","label":"Trigger - Record Created➛Network Request Record➛Dest State","reference":"","reference_display":"Dest State","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_city","label":"Trigger - Record Created➛Network Request Record➛Dest City","reference":"","reference_display":"Dest City","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_street","label":"Trigger - Record Created➛Network Request Record➛Dest Street Address","reference":"","reference_display":"Dest Street Address","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Network Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"number","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":[null]}},{"name":"Created_1.current.new_or_existing_site","label":"Trigger - Record Created➛Network Request Record➛New or Existing Site","reference":"","reference_display":"New or Existing Site","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.speed_egress","label":"6 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","usedInstances":{}},{"name":"Created_1.current.service_code","label":"Trigger - Record Created➛Network Request Record➛Service Code","reference":"","reference_display":"Service Code","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.network_service_category","label":"Trigger - Record Created➛Network Request Record➛Network Service Category","reference":"x_g_sonc_ns_pro_network_service_category","reference_display":"label","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.circuit_due_date","label":"Trigger - Record Created➛Network Request Record➛Circuit Due Date","reference":"","reference_display":"Circuit Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"circuit_due_date","usedInstances":{"8a503de8-b074-44eb-ba63-a5eefbf623e9":["due_date"]}},{"name":"Created_1.current.location","label":"Trigger - Record Created➛Telco Order Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.special_instructions","label":"Trigger - Record Created➛Network Request Record➛Special Instructions","reference":"","reference_display":"Special Instructions","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.demarc_location","label":"Trigger - Record Created➛Telco Order Record➛DEMARC Location","reference":"","reference_display":"DEMARC Location","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_site","label":"Trigger - Record Created➛Network Request Record➛Dest Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.request_managed_wan","label":"Trigger - Record Created➛Telco Order Record➛Request Managed WAN","reference":"","reference_display":"Request Managed WAN","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["telco_order"],"3573622d-6260-4be4-8864-3b797857d8f3":["record",null],"8a503de8-b074-44eb-ba63-a5eefbf623e9":["telco_order"],"7bd5af29-af67-42f9-a2ae-f09ee1e47ead":["telco_order"],"385280d6-cca0-4a9c-9df0-c59fa10f74d5":["telco_order"],"c64b15e8-b246-446c-b341-ee1ef47bb350":["telco_order"]},"attributes":{}},{"name":"Created_1.current.request_ha","label":"Trigger - Record Created➛Telco Order Record➛Request HA","reference":"","reference_display":"Request HA","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record","label":"6 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["site"],"6bb9cfa6-9173-4cf7-a54c-484e86d87a09":["conditions"],"44991132-fed1-4034-84be-d5f0023b4cae":["site"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["site"],"8a503de8-b074-44eb-ba63-a5eefbf623e9":["site"],"385280d6-cca0-4a9c-9df0-c59fa10f74d5":["field_values"],"6dac5c64-aaa7-4878-a696-0018e145f9ab":["field_values"],"7bd5af29-af67-42f9-a2ae-f09ee1e47ead":["field_values"],"c64b15e8-b246-446c-b341-ee1ef47bb350":["field_values"],"76785071-e264-494c-b732-d6d55adcbc08":["field_values"]}},{"name":"flow_variable.billing_desc","label":"Flow Variables➛Billing Desc","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"],"6819907e-abfe-4e96-a7cb-e4d128a2cbcd":["log_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"950dbd15-dfbb-4714-8af9-2684c67fd5ab"}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"abfa3bf1-084b-4209-bf7a-b47c568ec395":["billing_changes-0"]}},{"name":"flow_variable.billing_changes","label":"Flow Variables➛Billing Changes","type":"string","base_type":"string","usedInstances":{"6020e9ad-69ed-4e5d-b84b-41602e07d6f6":["log_message"],"02abb970-b730-4e9b-b6aa-e0423567ae34":["description"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d0c0c8c5-8c41-44dc-b18f-68126327deb1"}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"3573622d-6260-4be4-8864-3b797857d8f3":["ah_to"]}},{"name":"Created_1.current.assigned_to","label":"Trigger - Record Created➛Network Request Record➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"assigned_to","usedInstances":{"44991132-fed1-4034-84be-d5f0023b4cae":["assigned_to"],"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["assigned_to"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_to"]}}]</label_cache>
         <master>true</master>
         <name>NSPro New Site Request</name>
         <natlang/>
@@ -1267,7 +1733,7 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_on>2023-11-02 05:39:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>05dae7b01bdefdd0824752c1604bcbc8</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1275,7 +1741,7 @@ Remember to include the location latitude and longitude in the location record.
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:05</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:59</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=05dae7b01bdefdd0824752c1604bcbc8"/>
@@ -1290,14 +1756,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 05:39:14</sys_created_on>
         <sys_id>55da6bb01bdefdd0824752c1604bcb06</sys_id>
-        <sys_mod_count>176</sys_mod_count>
+        <sys_mod_count>182</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:00</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1332,7 +1798,175 @@ Remember to include the location latitude and longitude in the location record.
         <value>type_request=new</value>
         <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
     </sys_variable_value>
-    <sys_hub_flow_stage action="delete_multiple" query="flow=05dae7b01bdefdd0824752c1604bcbc8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=05dae7b01bdefdd0824752c1604bcbc8^sys_idNOT IN66e6cbec87b45610f9f20f280cbb35ed,6ae6cbec87b45610f9f20f280cbb35ed,6ee6cbec87b45610f9f20f280cbb35ec,e2e6cbec87b45610f9f20f280cbb35ed,e6e6cbec87b45610f9f20f280cbb35ed,eae6cbec87b45610f9f20f280cbb35ed"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <label>Waiting for Approval</label>
+        <order>3</order>
+        <stage_id>f5c48f96-91c4-4e6a-bae5-8b41efaef175</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>66e6cbec87b45610f9f20f280cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <type>standard</type>
+        <value>waiting_for_approval</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <label>Request Cancelled</label>
+        <order>0</order>
+        <stage_id>b7ac5c43-77f3-43fb-b6eb-7cbf505c2ee3</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>6ae6cbec87b45610f9f20f280cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <type>standard</type>
+        <value>Request Cancelled</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-03 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <label>Delivery</label>
+        <order>5</order>
+        <stage_id>194acdff-9c59-4e99-85dc-476a57cdf848</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>6ee6cbec87b45610f9f20f280cbb35ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <type>standard</type>
+        <value>delivery</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>12</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <label>Completed</label>
+        <order>1</order>
+        <stage_id>0d3f47bf-af15-4e23-a678-a36ef0acd5f0</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>e2e6cbec87b45610f9f20f280cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <type>standard</type>
+        <value>complete</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>0</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <label>Request Approved</label>
+        <order>2</order>
+        <stage_id>5d48d877-84c3-49ef-82ed-5cf777649460</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>e6e6cbec87b45610f9f20f280cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <type>standard</type>
+        <value>request_approved</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>1</component_indexes>
+        <duration>1970-04-01 00:00:00</duration>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <label>Fulfillment</label>
+        <order>4</order>
+        <stage_id>1c2838af-2b53-4d86-b1cc-5515b1fe313c</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>eae6cbec87b45610f9f20f280cbb35ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <type>standard</type>
+        <value>fulfillment</value>
+    </sys_hub_flow_stage>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=05dae7b01bdefdd0824752c1604bcbc8^sys_idNOT IN41dae7b01bdefdd0824752c1604bcbc9"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>05dae7b01bdefdd0824752c1604bcbc8</id>
@@ -1415,14 +2049,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 05:39:13</sys_created_on>
         <sys_id>49dae7b01bdefdd0824752c1604bcbca</sys_id>
-        <sys_mod_count>119</sys_mod_count>
+        <sys_mod_count>123</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1499,14 +2133,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 05:39:14</sys_created_on>
         <sys_id>89da2bb01bdefdd0824752c1604bcbe0</sys_id>
-        <sys_mod_count>119</sys_mod_count>
+        <sys_mod_count>123</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1522,7 +2156,7 @@ Remember to include the location latitude and longitude in the location record.
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=89da2bb01bdefdd0824752c1604bcbe0"/>
     <sys_hub_flow_output action="delete_multiple" query="model=05dae7b01bdefdd0824752c1604bcbc8"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=05dae7b01bdefdd0824752c1604bcbc8"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=05dae7b01bdefdd0824752c1604bcbc8^sys_idNOT IN1fd787ec47e60a5040fd43ff336d4317,5521f2151b123514824752c1604bcb03,75d326df47710a1440fd43ff336d4302,b1b20d54db51065040eae46b13961968,b9d3e2df47710a1440fd43ff336d43fb,c4aadb71dbd6b11040eae46b1396196d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=05dae7b01bdefdd0824752c1604bcbc8^sys_idNOT IN1fd787ec47e60a5040fd43ff336d4317,5521f2151b123514824752c1604bcb03,75d326df47710a1440fd43ff336d4302,a6e6cbec87b45610f9f20f280cbb35cb,a6e6cbec87b45610f9f20f280cbb35d8,aee6cbec87b45610f9f20f280cbb35c4,aee6cbec87b45610f9f20f280cbb35d1,b1b20d54db51065040eae46b13961968,b9d3e2df47710a1440fd43ff336d43fb,c4aadb71dbd6b11040eae46b1396196d"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1539,14 +2173,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-30 14:54:50</sys_created_on>
         <sys_id>1fd787ec47e60a5040fd43ff336d4317</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>3573622d-6260-4be4-8864-3b797857d8f3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1fd787ec47e60a5040fd43ff336d4317"/>
@@ -1671,14 +2305,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-03 14:44:10</sys_created_on>
         <sys_id>5521f2151b123514824752c1604bcb03</sys_id>
-        <sys_mod_count>236</sys_mod_count>
+        <sys_mod_count>244</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>cc50ad3c-1e69-4053-9862-bfc914de3a38</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5521f2151b123514824752c1604bcb03"/>
@@ -1739,14 +2373,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 18:33:39</sys_created_on>
         <sys_id>75d326df47710a1440fd43ff336d4302</sys_id>
-        <sys_mod_count>148</sys_mod_count>
+        <sys_mod_count>156</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>e888a47c-96f8-489f-8e0b-3b8a60d032e5</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=75d326df47710a1440fd43ff336d4302"/>
@@ -1785,9 +2419,9 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 18:33:39</sys_created_on>
         <sys_id>3dd326df47710a1440fd43ff336d4303</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-31 17:40:59</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
         <value>assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^short_description=Create site for request {{Created_1.current.number}} and associate location to site^description=New Site Name:
 {{Created_1.current.site_name}}
@@ -1798,7 +2432,7 @@ Location Address:
 {{Created_1.current.dest_state}}
 {{Created_1.current.dest_zip}}
 
-Remember to include the location latitude and longitude in the location record.
+Remember to validate the location latitude and longitude are in the location record.
 ^telco_order={{Created_1.current}}^due_date={{Created_1.current.sys_created_on}}^provisioning_state=1^state=2^assigned_to={{Created_1.current.assigned_to}}^site={{Created_1.current.site}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -1830,6 +2464,304 @@ Remember to include the location latitude and longitude in the location record.
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>Field Services does something (deploy hardware?)</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>a6e6cbec87b45610f9f20f280cbb35cb</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
+        <ui_id>7bd5af29-af67-42f9-a2ae-f09ee1e47ead</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a6e6cbec87b45610f9f20f280cbb35cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6e6cbec87b45610f9f20f280cbb35cb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>2ee6cbec87b45610f9f20f280cbb35cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a6e6cbec87b45610f9f20f280cbb35cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>a6e6cbec87b45610f9f20f280cbb35cb</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>aae6cbec87b45610f9f20f280cbb35cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Field Services Does Something (Deploy Hardware?)^site={{Created_1.current.site}}^assignment_group={"display":"Network Field Support","value":"5755cd0ddb98630065fbf482ba9619d5","sys_id":"5755cd0ddb98630065fbf482ba9619d5"}^telco_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>a6e6cbec87b45610f9f20f280cbb35cb</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>e6e6cbec87b45610f9f20f280cbb35cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a6e6cbec87b45610f9f20f280cbb35cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a6e6cbec87b45610f9f20f280cbb35cb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>to create billing request</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>a6e6cbec87b45610f9f20f280cbb35d8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:59</sys_updated_on>
+        <ui_id>c64b15e8-b246-446c-b341-ee1ef47bb350</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a6e6cbec87b45610f9f20f280cbb35d8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6e6cbec87b45610f9f20f280cbb35d8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>a2e6cbec87b45610f9f20f280cbb35da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a6e6cbec87b45610f9f20f280cbb35d8</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>eee6cbec87b45610f9f20f280cbb35d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a6e6cbec87b45610f9f20f280cbb35d8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>a6e6cbec87b45610f9f20f280cbb35d8</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>6ee6cbec87b45610f9f20f280cbb35d9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Create Billing Request^site={{Created_1.current.site}}^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>a6e6cbec87b45610f9f20f280cbb35d8</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>aae6cbec87b45610f9f20f280cbb35d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>a6e6cbec87b45610f9f20f280cbb35d8</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>e6e6cbec87b45610f9f20f280cbb35d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a6e6cbec87b45610f9f20f280cbb35d8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a6e6cbec87b45610f9f20f280cbb35d8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>to create provision circuit</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>aee6cbec87b45610f9f20f280cbb35c4</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
+        <ui_id>8a503de8-b074-44eb-ba63-a5eefbf623e9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aee6cbec87b45610f9f20f280cbb35c4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aee6cbec87b45610f9f20f280cbb35c4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>26e6cbec87b45610f9f20f280cbb35c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aee6cbec87b45610f9f20f280cbb35c4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>aee6cbec87b45610f9f20f280cbb35c4</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>a2e6cbec87b45610f9f20f280cbb35c6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Provision Circuit^site={{Created_1.current.site}}^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}^due_date={{Created_1.current.circuit_due_date}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>aee6cbec87b45610f9f20f280cbb35c4</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>eee6cbec87b45610f9f20f280cbb35c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aee6cbec87b45610f9f20f280cbb35c4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aee6cbec87b45610f9f20f280cbb35c4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment>to create monitoring request</comment>
+        <display_text/>
+        <flow display_value="NSPro New Site Request">05dae7b01bdefdd0824752c1604bcbc8</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>aee6cbec87b45610f9f20f280cbb35d1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
+        <ui_id>385280d6-cca0-4a9c-9df0-c59fa10f74d5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aee6cbec87b45610f9f20f280cbb35d1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aee6cbec87b45610f9f20f280cbb35d1</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>26e6cbec87b45610f9f20f280cbb35d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <value>x_g_sonc_ns_pro_nspro_tasks</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aee6cbec87b45610f9f20f280cbb35d1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>aee6cbec87b45610f9f20f280cbb35d1</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>a2e6cbec87b45610f9f20f280cbb35d3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Create Monitoring Request^site={{Created_1.current.site}}^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>aee6cbec87b45610f9f20f280cbb35d1</id>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-09-19 11:11:58</sys_created_on>
+        <sys_id>eee6cbec87b45610f9f20f280cbb35d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aee6cbec87b45610f9f20f280cbb35d1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aee6cbec87b45610f9f20f280cbb35d1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
@@ -1843,14 +2775,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-28 07:16:08</sys_created_on>
         <sys_id>b1b20d54db51065040eae46b13961968</sys_id>
-        <sys_mod_count>176</sys_mod_count>
+        <sys_mod_count>184</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>d67fabe0-0287-486a-bb7e-bec88db44ad6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b1b20d54db51065040eae46b13961968"/>
@@ -1937,14 +2869,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 18:33:39</sys_created_on>
         <sys_id>b9d3e2df47710a1440fd43ff336d43fb</sys_id>
-        <sys_mod_count>148</sys_mod_count>
+        <sys_mod_count>156</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>44991132-fed1-4034-84be-d5f0023b4cae</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b9d3e2df47710a1440fd43ff336d43fb"/>
@@ -1983,11 +2915,11 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 18:33:39</sys_created_on>
         <sys_id>71d3e2df47710a1440fd43ff336d43fd</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-31 17:40:59</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:11:58</sys_updated_on>
         <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
-        <value>assignment_group={"display":"Monitoring &amp; Control","value":"df55cd0ddb98630065fbf482ba9619d0","sys_id":"df55cd0ddb98630065fbf482ba9619d0"}^assigned_to={{Created_1.current.assigned_to}}^short_description=Create location for request {{Created_1.current.number}}^description=Destination Address:
+        <value>assignment_group={"display":"ServiceNow Support","value":"ba55cd0ddb98630065fbf482ba961910","sys_id":"ba55cd0ddb98630065fbf482ba961910"}^assigned_to={{Created_1.current.assigned_to}}^short_description=Create location for request {{Created_1.current.number}}^description=Destination Address:
 {{Created_1.current.dest_street}}
 {{Created_1.current.dest_city}}
 {{Created_1.current.dest_state}}
@@ -2036,14 +2968,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-05 07:02:21</sys_created_on>
         <sys_id>c4aadb71dbd6b11040eae46b1396196d</sys_id>
-        <sys_mod_count>232</sys_mod_count>
+        <sys_mod_count>240</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:05</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>285dae8e-ccb5-40c4-8045-10550a56c859</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c4aadb71dbd6b11040eae46b1396196d"/>
@@ -2114,14 +3046,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-03 14:44:10</sys_created_on>
         <sys_id>6921f2151b123514824752c1604bcb1a</sys_id>
-        <sys_mod_count>125</sys_mod_count>
+        <sys_mod_count>129</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:05</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>0f452826-b079-4f5d-88ea-27a3b5ce34dc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2192,14 +3124,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-01 18:33:39</sys_created_on>
         <sys_id>75d326df47710a1440fd43ff336d431c</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>80</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>262a21c2-31ed-41cd-b46d-235dfe32874a</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2270,14 +3202,14 @@ Remember to include the location latitude and longitude in the location record.
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-03 14:44:10</sys_created_on>
         <sys_id>e121f2151b123514824752c1604bcb16</sys_id>
-        <sys_mod_count>125</sys_mod_count>
+        <sys_mod_count>129</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:04</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:35:58</sys_updated_on>
         <ui_id>7611d76c-9f74-43a3-aa0f-8bfefbd88651</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2430,20 +3362,20 @@ Remember to include the location latitude and longitude in the location record.
     <sys_hub_flow action="UPDATE">
         <sys_id>1296a7781b9efdd0824752c1604bcbb2</sys_id>
         <latest_snapshot>05dae7b01bdefdd0824752c1604bcbc8</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1a-07-01-2024_07-12-2024_0853.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1b-08-05-2024_08-19-2024_0842.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1296a7781b9efdd0824752c1604bcbb2^sys_idNOT IN19da6bb01bdefdd0824752c1604bcb31"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"19da6bb01bdefdd0824752c1604bcb31","name":"plan","plan_signature":null}}</plan>
         <plan_id>1296a7781b9efdd0824752c1604bcbb2</plan_id>
-        <snapshot>7419684187949a50f9f20f280cbb3575</snapshot>
+        <snapshot>0e41098e47bc1a1040fd43ff336d4393</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-02 05:39:15</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>19da6bb01bdefdd0824752c1604bcb31</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2451,7 +3383,7 @@ Remember to include the location latitude and longitude in the location record.
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-25 12:58:07</sys_updated_on>
+        <sys_updated_on>2024-09-19 11:36:00</sys_updated_on>
         <trigger display_value="">838f95d347b9c61440fd43ff336d439f</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1296a7781b9efdd0824752c1604bcbb2"/>
