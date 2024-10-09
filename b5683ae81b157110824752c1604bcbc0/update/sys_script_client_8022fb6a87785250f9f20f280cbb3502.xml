@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onLoad Is New Site</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    var siteSysID = g_form.getUniqueValue();
+	var fieldName = 'site_identifier';
+	
+    if (siteSysID) {
+        var newSite_ga = new GlideAjax('x_g_sonc_ns_pro.fieldStyleHelper_ajax');
+        newSite_ga.addParam('sysparm_name', 'isNewSite');
+        newSite_ga.addParam('sysparm_siteSysID', siteSysID);
+		newSite_ga.getXML(_getAnswer);
+    }
+
+	function _getAnswer(response){
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		answer = JSON.parse(answer);
+		if(answer.status == 'success'){
+			if(answer.message == true){
+				var site = g_form.getControl(fieldName);
+				site.style.background = 'PaleGreen';
+				var siteLabel = g_form.getLabel(fieldName);
+				siteLabel.style.color = 'green';
+				siteLabel.style.fontWeight = 'bold';	
+			}
+		}
+
+	}
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-25 19:45:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8022fb6a87785250f9f20f280cbb3502</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>onLoad Is New Site</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_client_8022fb6a87785250f9f20f280cbb3502</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-26 09:30:52</sys_updated_on>
+        <table>cmdb_ci_site</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.port</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>port</name>
+        <script><![CDATA[var port = Class.create();
+port.prototype = {
+    initialize: function() {},
+    removePortsFromLocalCircuit: function(localCircuitSysID, ports) {
+        var errorString;
+        var response = {};
+        try {
+            if (!localCircuitSysID) {
+                throw new IllegalArgumentException("local circuit id  is a required parameter");
+            }
+            if (!ports) {
+                throw new IllegalArgumentException("ports is a required parameter");
+            }
+            var portsArray = ports.split(",");
+
+            if (portsArray.length < 1) {
+                throw new GenericException("one or more ports must be selected");
+            }
+			// gs.info('local circuit ' + localCircuitSysID);
+			// gs.info('ports ' +  portsArray);
+			// gs.info('ports Array ' + portsArray.length);
+            for (var i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
+                    portRecord.setValue('local_circuit_id', gs.nil());
+                    portRecord.setValue('network_gear', gs.nil());
+                    portRecord.setValue('name', '');
+                    portRecord.setValue('vrf', '');
+                    portRecord.setValue('site', gs.nil());
+                    portRecord.update();
+                }
+            }
+            response.message = portsArray.length + " ports were removed from local circuit";
+        } catch (ex) {
+            errorString = "Error Occured in x_g_sonc_ns_pro.port.removePortsFromLocalCircuit " + ex.toString();
+            response.message = errorString
+        }
+
+		return response;
+    },
+    canBeAssigned: function(portSysID) {
+        var response = {};
+        var errorString;
+        var canBeAssigned = false;
+        try {
+            var portRecord = new GlideRecord('x_g_sonc_ns_pro_port');
+            if (portRecord.get()) {
+                var site = portRecord.getValue('site');
+                var localCircuit = portRecord.getValue('local_circuit_id');
+                if (site.nil() && localCircuit.nil()) {
+                    canBeAssigned = true;
+                }
+            }
+            response.message = canBeAssigned;
+        } catch (ex) {
+            errorString = 'ErrorOccured in x_g_sonc_ns_pro.port.canBeAssigned - ' + ex.toString();
+            response.message = errorString;
+        }
+
+        return response;
+
+    },
+    type: 'port'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-07 14:19:14</sys_created_on>
+        <sys_id>7e4e906a87015a10f9f20f280cbb35b6</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>port</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_7e4e906a87015a10f9f20f280cbb35b6</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-07 21:20:12</sys_updated_on>
+    </sys_script_include>
+</record_update>

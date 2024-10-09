@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="Insert">3c86d36753111010ac9bddeeff7b1277</action>
+        <active>true</active>
+        <color>secondary</color>
+        <description/>
+        <icon/>
+        <item_type>action</item_type>
+        <label>Save</label>
+        <layout_group/>
+        <name>Save</name>
+        <order>-100</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-30 17:37:12</sys_created_on>
+        <sys_id>4d98899487495690f9f20f280cbb3514</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_4d98899487495690f9f20f280cbb3514</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-30 17:37:12</sys_updated_on>
+        <table>global</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

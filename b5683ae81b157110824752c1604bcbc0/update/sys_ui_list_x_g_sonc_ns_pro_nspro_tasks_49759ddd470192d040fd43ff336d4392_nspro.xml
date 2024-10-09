@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" table="cmdb_ci_network_circuit" version="2" view="nspro">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>9b6a55dd474192d040fd43ff336d4370</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_circuit_speed</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>9f6a55dd474192d040fd43ff336d4370</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>install_status</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>936a55dd474192d040fd43ff336d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_telco_provider</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>976a55dd474192d040fd43ff336d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_pe_host_circuit_id</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>9b6a55dd474192d040fd43ff336d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_circuit_type</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>9f6a55dd474192d040fd43ff336d4371</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_gap</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>936a55dd474192d040fd43ff336d4372</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_gap_circuit_end_term_date</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>976a55dd474192d040fd43ff336d4372</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_host_ckt</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>9b6a55dd474192d040fd43ff336d4372</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_g_sonc_ns_pro_host_ckt_type</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>9f6a55dd474192d040fd43ff336d4372</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>model_number</element>
+            <list_id display_value="cmdb_ci_network_circuit" element="NULL" name="cmdb_ci_network_circuit" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="49759ddd470192d040fd43ff336d4392" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">576a5d1d474192d040fd43ff336d4367</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_id>936a55dd474192d040fd43ff336d4373</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_network_circuit</name>
+            <parent>x_g_sonc_ns_pro_nspro_tasks</parent>
+            <position/>
+            <relationship display_value="Site Local Circuits">49759ddd470192d040fd43ff336d4392</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 21:29:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>576a5d1d474192d040fd43ff336d4367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_network_circuit</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_nspro_tasks_49759ddd470192d040fd43ff336d4392_nspro</sys_update_name>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 21:29:05</sys_updated_on>
+            <sys_user/>
+            <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

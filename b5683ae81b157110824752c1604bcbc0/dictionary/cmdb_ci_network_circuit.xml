@@ -177,6 +177,7 @@
                 <element inactive_on_update="false" label="9G" sequence="190" value="9000"/>
                 <element inactive_on_update="false" label="6M" sequence="25" value="6"/>
                 <element inactive_on_update="false" label="20M" sequence="40" value="20"/>
+                <element inactive_on_update="false" label="4M" sequence="12" value="4"/>
                 <element inactive_on_update="false" label="5G" sequence="150" value="5000"/>
                 <element inactive_on_update="false" label="250M" sequence="90" value="250"/>
             </choice>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_g_sonc_ns_pro.port_user" name="x_g_sonc_ns_pro.port_user">c0d6969247844e90f4af2ad2e16d4340</contains>
+        <role display_value="x_g_sonc_ns_pro.host_circuit_selection_user" name="x_g_sonc_ns_pro.host_circuit_selection_user">1f4c88e187e0de50f9f20f280cbb3587</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-08 13:23:10</sys_created_on>
+        <sys_id>712b5d7a87815e10f9f20f280cbb35c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro.port_user.x_g_sonc_ns_pro.host_circuit_selection_user</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_user_role_contains_712b5d7a87815e10f9f20f280cbb35c5</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-08 13:23:10</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

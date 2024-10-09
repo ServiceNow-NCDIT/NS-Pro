@@ -2,7 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="" extends="task" table="x_g_sonc_ns_pro_nspro_tasks">
         <active>true</active>
         <array>false</array>
-        <attributes/>
+        <attributes>hasLabels=true</attributes>
         <audit>true</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 

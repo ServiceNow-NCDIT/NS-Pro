@@ -20,6 +20,25 @@
             <element>task_type</element>
             <hint/>
             <inactive>false</inactive>
+            <label>ServiceNow Support</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-30 16:52:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-30 16:53:09</sys_updated_on>
+            <value>servicenow_support</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_type</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Provisioning</label>
             <language>en</language>
             <name>x_g_sonc_ns_pro_nspro_tasks</name>
@@ -52,6 +71,82 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2023-09-17 07:49:08</sys_updated_on>
             <value>field_services</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Enterprise Monitoring</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-02 18:27:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-02 18:27:24</sys_updated_on>
+            <value>enterprise_monitoring</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fulfillment</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-02 18:40:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 15:10:20</sys_updated_on>
+            <value>fulfillment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Billing</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 15:09:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 15:10:27</sys_updated_on>
+            <value>billing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Generic</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-03 15:10:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-03 15:10:32</sys_updated_on>
+            <value>generic</value>
         </sys_choice>
     </sys_choice>
 </record_update>

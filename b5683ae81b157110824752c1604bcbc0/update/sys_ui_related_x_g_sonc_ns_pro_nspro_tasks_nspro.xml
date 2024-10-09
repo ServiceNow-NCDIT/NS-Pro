@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_g_sonc_ns_pro_nspro_tasks" version="2" view="nspro">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="NSPro Tasks - Nspro" name="x_g_sonc_ns_pro_nspro_tasks" related_list="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">b278b43e87891e10f9f20f280cbb3553</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:99067d2487455a90f9f20f280cbb35dd</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-08 10:51:41</sys_created_on>
+            <sys_id>7678b43e87891e10f9f20f280cbb3554</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-08 10:51:41</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="NSPro Tasks - Nspro" name="x_g_sonc_ns_pro_nspro_tasks" related_list="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">b278b43e87891e10f9f20f280cbb3553</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:49759ddd470192d040fd43ff336d4392</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-08 10:51:41</sys_created_on>
+            <sys_id>7e78b43e87891e10f9f20f280cbb3554</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-08 10:51:41</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="NSPro Tasks - Nspro" name="x_g_sonc_ns_pro_nspro_tasks" related_list="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">b278b43e87891e10f9f20f280cbb3553</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>REL:f677d2e247895a1040fd43ff336d4391</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-08 10:51:41</sys_created_on>
+            <sys_id>7278b43e87891e10f9f20f280cbb3555</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-08 10:51:41</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="NSPro Tasks - Nspro" name="x_g_sonc_ns_pro_nspro_tasks" related_list="NULL" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">b278b43e87891e10f9f20f280cbb3553</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:a217747e4709da1040fd43ff336d4303</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-08 10:51:41</sys_created_on>
+            <sys_id>7678b43e87891e10f9f20f280cbb3555</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-08 10:51:41</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>NSPro Tasks - Nspro</calculated_name>
+            <filter/>
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-08 10:51:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b278b43e87891e10f9f20f280cbb3553</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>NSPro Tasks - Nspro</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_related_x_g_sonc_ns_pro_nspro_tasks_nspro</sys_update_name>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-08 10:51:41</sys_updated_on>
+            <sys_user/>
+            <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

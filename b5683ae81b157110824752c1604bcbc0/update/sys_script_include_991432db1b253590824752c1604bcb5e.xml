@@ -297,10 +297,10 @@ cmdb_ci_site.prototype = {
                 //siteCircuitInformation.hostCircuit = siteCircuit.getValue('x_g_sonc_ns_pro_host_ckt');
                 siteCircuitInformation.telco = siteCircuit.getElement('x_g_sonc_ns_pro_telco_provider.name').toString();
                 siteCircuitInformation.telcoSysId = siteCircuit.getValue('x_g_sonc_ns_pro_telco_provider');
-				siteCircuitInformation.installStatus = siteCircuit.getValue('install_status');
-				siteCircuitInformation.siteSysId = siteCircuit.getValue('x_g_sonc_ns_pro_site');
-				siteCircuitInformation.siteID = siteCircuit.getElement('x_g_sonc_ns_pro_site.site_identifier').toString();
-				siteCircuitInformation.siteID = siteCircuit.getElement('x_g_sonc_ns_pro_site.name').toString();
+                siteCircuitInformation.installStatus = siteCircuit.getValue('install_status');
+                siteCircuitInformation.siteSysId = siteCircuit.getValue('x_g_sonc_ns_pro_site');
+                siteCircuitInformation.siteID = siteCircuit.getElement('x_g_sonc_ns_pro_site.site_identifier').toString();
+                siteCircuitInformation.siteID = siteCircuit.getElement('x_g_sonc_ns_pro_site.name').toString();
 
                 returnObj.resultCode = NSPROConstants.AJAX_RETURNCODES.SUCCESS;
                 returnObj.errorMessage = "";
@@ -319,12 +319,12 @@ cmdb_ci_site.prototype = {
     initiateSiteCircuitDecomm: function(siteSysId, siteCircuitSysId, telcoSysId) {
         var errorString;
         try {
-			var initDecommRecord = new GlideRecord("x_g_sonc_ns_pro_initiatesitecircuitdecom");
-			initDecommRecord.initialize();
-			initDecommRecord.setValue('site', siteSysId);
-			initDecommRecord.setValue('circuit', siteCircuitSysId);
-			initDecommRecord.setValue('telco_provider', telcoSysId);
-			initDecommRecord.insert();
+            var initDecommRecord = new GlideRecord("x_g_sonc_ns_pro_initiatesitecircuitdecom");
+            initDecommRecord.initialize();
+            initDecommRecord.setValue('site', siteSysId);
+            initDecommRecord.setValue('circuit', siteCircuitSysId);
+            initDecommRecord.setValue('telco_provider', telcoSysId);
+            initDecommRecord.insert();
 
         } catch (Ex) {
             errorString = "Error Occured in cmdb_ci_site.assignPortsToSite - " + Ex.toString();
@@ -338,19 +338,33 @@ cmdb_ci_site.prototype = {
         }
 
     },
+    _getSiteLocationInfo: function(siteSysId) {
+        var siteLocation;
+
+        var siteRecord = new GlideRecord(NSPROConstants.TABLES.SITE);
+        if (siteRecord.get(siteSysId)) {
+            siteLocation = {};
+            siteLocation.siteSysID = siteSysId;
+            siteLocation.siteIdentifier = siteRecord.getValue('site_identifier');
+            siteLocation.siteName = siteRecord.getValue('name');
+            siteLocation.locationLatitude = parseFloat(siteRecord.getElement('location.latitude'));
+            siteLocation.locationLongitude = parseFloat(siteRecord.getElement('location.longitude'));
+        }
+        return siteLocation;
+    },
     type: 'cmdb_ci_site'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>129</sys_mod_count>
+        <sys_mod_count>130</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-28 16:10:07</sys_updated_on>
+        <sys_updated_on>2024-09-09 16:48:43</sys_updated_on>
     </sys_script_include>
 </record_update>

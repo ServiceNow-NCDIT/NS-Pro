@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.core_nspro_modals</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>core_nspro_modals</name>
+        <script><![CDATA[var core_nspro_modals = Class.create();
+core_nspro_modals.prototype = {
+    initialize: function() {
+    },
+	multiSelectContent: function(contentObj){
+		var errorString;
+		var content;
+		try {
+			if(!contentObj){
+				throw new IllegalArgumentException("Parameter contentObj cannot be empty or null");
+			}
+			var id = contentObj.id;
+			var title = contentObj.title;
+			var options = contentObj.options;
+
+			content = NSPROConstants.MODALS.MULTISELECT_HEADER;
+			for (option in options){
+				var selectOption = options[option];
+				var optionContent = '<option value="' + selectOption.optionValue + '" role="option">' + selectOption.optionText + '</option>';
+				content = content + optionContent;
+			}
+			content = content + NSPROConstants.MODALS.MULTISELECT_FOOTER;
+
+			content = content.replaceAll('|ID|',id);
+			content = content.replaceAll('|TITLE|',title);
+		} catch(Ex){
+            errorString = "Error Occured in core_nspro_modals.multiSelectContent - " + Ex.toString();
+            gs.info(errorString);
+		}
+        if (errorString) {
+            return errorString;
+        } else {
+            return content;
+        }
+	},
+
+    type: 'core_nspro_modals'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-27 12:24:59</sys_created_on>
+        <sys_id>0f246c9387f81a50f9f20f280cbb3595</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>core_nspro_modals</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_0f246c9387f81a50f9f20f280cbb3595</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-27 14:34:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

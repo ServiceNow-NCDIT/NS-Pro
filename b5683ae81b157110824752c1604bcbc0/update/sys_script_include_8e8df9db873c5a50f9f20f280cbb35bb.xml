@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.core_nspro_modals_ajax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>core_nspro_modals_ajax</name>
+        <script><![CDATA[var core_nspro_modals_ajax = Class.create();
+core_nspro_modals_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	constructMultiSelectContent: function(){
+		var answer = {};
+		var nsProModals = new core_nspro_modals();
+		contentObjString = this.getParameter('sysparm_contentObjString');
+		contentObj = JSON.parse(contentObjString);
+
+		content = nsProModals.multiSelectContent(contentObj);
+
+		if(content.startsWith("Error")){
+			answer.status = NSPROConstants.AJAX_RETURNCODES.FAILED;
+			answer.message = content;
+		} else {
+			answer.status = NSPROConstants.AJAX_RETURNCODES.SUCCESS;
+			answer.message = content;
+		}
+		return JSON.stringify(answer);
+	},
+    type: 'core_nspro_modals_ajax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-27 18:55:51</sys_created_on>
+        <sys_id>8e8df9db873c5a50f9f20f280cbb35bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>core_nspro_modals_ajax</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_8e8df9db873c5a50f9f20f280cbb35bb</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-27 18:55:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

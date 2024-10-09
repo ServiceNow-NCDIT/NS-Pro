@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_vtable">
+    <sys_script_vtable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <cache_isolation_level>USER</cache_isolation_level>
+        <cache_strategy>CACHE_BY_QUERY</cache_strategy>
+        <cache_ttl>0</cache_ttl>
+        <enhanced_capacity>false</enhanced_capacity>
+        <flow/>
+        <name>v_host_circuits_with_ capacity</name>
+        <script><![CDATA[(function executeQuery(v_table, v_query) {
+    var encodedQuery = v_query.getEncodedQuery();
+    var telcoSysID = '';
+    var hostCircuitSysID = '';
+	var popSysID = '';
+
+    //	gs.info('the encodedQuery ' + encodedQuery);
+    if (!gs.nil(encodedQuery)) {
+        var filterObj = _decodeQueryFilter(encodedQuery);
+        telcoSysID = filterObj.telco_provider;
+        hostCircuitSysID = filterObj.host_circuit;
+		popSysID = filterObj.point_of_presence;
+	}
+	
+	_loadData(telcoSysID, hostCircuitSysID,popSysID );
+
+
+    function _decodeQueryFilter(encodedFilter) {
+        var filterParts = encodedQuery.split("^");
+        var result = {
+            telco_provider: '',
+            host_circuit: ''
+        };
+
+        filterParts.forEach(function(filter) {
+            if (_filterContains(filter, "javascript:")) {
+                var evaluator = new GlideEvaluator();
+                var jsResult = evaluator.evaluateString(filter.split('javascript:')[1]);
+                filter = filter.replace(/javascript:.*/i, jsResult);
+            }
+            if (_filterContains(filter, "telco_provider=")) {
+                result.telco_provider = filter.split('=')[1];
+            } else if (_filterContains(filter, "host_circuit=")) {
+                result.site = filter.split('=')[1];
+            }
+        });
+
+        return result;
+    }
+
+    function _filterContains(filter, element) {
+        return filter.indexOf(element) >= 0;
+    }
+
+    function _loadData(telco, hostCircuit, pop) {
+        var hostCiruit = new x_g_sonc_ns_pro.circuit();
+
+        var hostObj = hostCiruit.loadHostCircuitWithCapacity(telco,hostCircuit,pop);
+
+        for (var row in hostObj) {
+            v_table.addRow(hostObj[row]);
+        }
+
+    }
+
+})(v_table, v_query);]]></script>
+        <sys_class_name>sys_script_vtable</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-13 20:22:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>703b0eb2472c16d040fd43ff336d43eb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>v_host_circuits_with_ capacity</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_vtable_703b0eb2472c16d040fd43ff336d43eb</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-13 21:31:16</sys_updated_on>
+        <table>x_g_sonc_ns_pro_st_host_circuits_with_capacity</table>
+    </sys_script_vtable>
+</record_update>

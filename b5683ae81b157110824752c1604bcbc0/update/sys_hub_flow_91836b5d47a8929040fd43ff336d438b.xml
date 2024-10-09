@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=27095000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>nspro_update_host_circuit_availability</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.x_g_sonc_ns_pro_pe_host_circuit_id.sys_id","label":"Trigger - Record Created or Updated➛Network Circuit Record➛PE Host Circuit ID➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_network_circuit","column_name":"sys_id","usedInstances":{"48691044-c15e-454e-978f-ecc404e7a577":["host_circuit_sys_id"]}},{"name":"Created_1.current.x_g_sonc_ns_pro_pe_host_circuit_id","label":"Trigger - Record Created➛Network Circuit Record➛PE Host Circuit ID","reference":"cmdb_ci_network_circuit","reference_display":"Network Circuit","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_network_circuit","column_name":"x_g_sonc_ns_pro_pe_host_circuit_id","usedInstances":{"15661b12-07fa-49aa-a53d-5eea3fcf5a45":["conditions"]}}]</label_cache>
+        <master_snapshot>4341bf1147ac929040fd43ff336d43c5</master_snapshot>
+        <name>NSPRO -Update Host Circuit Availability</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>e4ea45a947ecd29040fd43ff336d4356</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 10:56:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>91836b5d47a8929040fd43ff336d438b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>NSPRO -Update Host Circuit Availability</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_hub_flow_91836b5d47a8929040fd43ff336d438b</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:17</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="cmdb_ci_network_circuit">x_g_sonc_ns_pro_host_ckt=false^x_g_sonc_ns_pro_circuit_speedVALCHANGES^ORinstall_statusVALCHANGES^x_g_sonc_ns_pro_pe_circuit_idISNOTEMPTY<item endquery="false" field="x_g_sonc_ns_pro_host_ckt" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item display_value="-- None --" endquery="false" field="x_g_sonc_ns_pro_circuit_speed" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item display_value="-- None --" endquery="false" field="install_status" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="x_g_sonc_ns_pro_pe_circuit_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 18:28:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e4ea45a947ecd29040fd43ff336d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <table>cmdb_ci_network_circuit</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>91836b5d47a8929040fd43ff336d438b</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 18:28:16</sys_created_on>
+        <sys_id>a0ea45a947ecd29040fd43ff336d4357</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <trigger display_value="">e4ea45a947ecd29040fd43ff336d4356</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=91836b5d47a8929040fd43ff336d438b^sys_idNOT INa0ea45a947ecd29040fd43ff336d4357"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=91836b5d47a8929040fd43ff336d438b^sys_idNOT INc5413f1147ac929040fd43ff336d436f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="NSPRO -Update Host Circuit Availability">91836b5d47a8929040fd43ff336d438b</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>c5413f1147ac929040fd43ff336d436f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:17</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c5413f1147ac929040fd43ff336d436f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c5413f1147ac929040fd43ff336d436f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>01413f1147ac929040fd43ff336d4371</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:09</sys_updated_on>
+        <value>x_g_sonc_ns_pro_host_ckt=false^x_g_sonc_ns_pro_circuit_speedVALCHANGES^ORinstall_statusVALCHANGES^x_g_sonc_ns_pro_pe_circuit_idISNOTEMPTY</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c5413f1147ac929040fd43ff336d436f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>09413f1147ac929040fd43ff336d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:44</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c5413f1147ac929040fd43ff336d436f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>c1413f1147ac929040fd43ff336d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:44</sys_updated_on>
+        <value>cmdb_ci_network_circuit</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=c5413f1147ac929040fd43ff336d436f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=91836b5d47a8929040fd43ff336d438b^sys_idNOT IN1583275547e8929040fd43ff336d435e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>91836b5d47a8929040fd43ff336d438b</id>
+        <name>NSPRO -Update Host Circuit Availability</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 10:56:40</sys_created_on>
+        <sys_id>1583275547e8929040fd43ff336d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 10:56:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1583275547e8929040fd43ff336d435e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=91836b5d47a8929040fd43ff336d438b^sys_idNOT IN4d413f1147ac929040fd43ff336d4365,85413f1147ac929040fd43ff336d4369,c5413f1147ac929040fd43ff336d4361"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>FDCollection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">fc9ab9bddba21300a27757c5ca961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="NSPRO -Update Host Circuit Availability">91836b5d47a8929040fd43ff336d438b</model>
+        <model_id>91836b5d47a8929040fd43ff336d438b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>4d413f1147ac929040fd43ff336d4365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d413f1147ac929040fd43ff336d4365"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NSPRO -Update Host Circuit Availability">91836b5d47a8929040fd43ff336d438b</model>
+        <model_id>91836b5d47a8929040fd43ff336d438b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>85413f1147ac929040fd43ff336d4369</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=85413f1147ac929040fd43ff336d4369"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NSPRO -Update Host Circuit Availability">91836b5d47a8929040fd43ff336d438b</model>
+        <model_id>91836b5d47a8929040fd43ff336d438b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>c5413f1147ac929040fd43ff336d4361</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c5413f1147ac929040fd43ff336d4361"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=91836b5d47a8929040fd43ff336d438b^sys_idNOT IN09413f1147ac929040fd43ff336d4395"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Host Circuit Availability and Site Count">55e03bdd476c929040fd43ff336d4343</action_type>
+        <action_type_parent display_value="Update Host Circuit Availability and Site Count">8faeab95476c929040fd43ff336d43f3</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NSPRO -Update Host Circuit Availability">91836b5d47a8929040fd43ff336d438b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>09413f1147ac929040fd43ff336d4395</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:17</sys_updated_on>
+        <ui_id>48691044-c15e-454e-978f-ecc404e7a577</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=09413f1147ac929040fd43ff336d4395"/>
+    <sys_element_mapping action="delete_multiple" query="id=09413f1147ac929040fd43ff336d4395"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>host_circuit_sys_id</field>
+        <id>09413f1147ac929040fd43ff336d4395</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>c5413f1147ac929040fd43ff336d4397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:44</sys_updated_on>
+        <table>var__m_sys_hub_action_input_55e03bdd476c929040fd43ff336d4343</table>
+        <value>{{Created or Updated_1.current.x_g_sonc_ns_pro_pe_host_circuit_id.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=09413f1147ac929040fd43ff336d4395"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09413f1147ac929040fd43ff336d4395"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=91836b5d47a8929040fd43ff336d438b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b^sys_idNOT IN4d413f1147ac929040fd43ff336d4364,85413f1147ac929040fd43ff336d4368,89413f1147ac929040fd43ff336d436b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>4d413f1147ac929040fd43ff336d4364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>85413f1147ac929040fd43ff336d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:44</sys_created_on>
+        <sys_id>89413f1147ac929040fd43ff336d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_91836b5d47a8929040fd43ff336d438b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_91836b5d47a8929040fd43ff336d438b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_91836b5d47a8929040fd43ff336d438b"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>nspro_update_host_circuit_availability</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.x_g_sonc_ns_pro_pe_host_circuit_id.sys_id","label":"Trigger - Record Created or Updated➛Network Circuit Record➛PE Host Circuit ID➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"cmdb_ci_network_circuit","column_name":"sys_id","usedInstances":{"48691044-c15e-454e-978f-ecc404e7a577":["host_circuit_sys_id"]}},{"name":"Created_1.current.x_g_sonc_ns_pro_pe_host_circuit_id","label":"Trigger - Record Created➛Network Circuit Record➛PE Host Circuit ID","reference":"cmdb_ci_network_circuit","reference_display":"Network Circuit","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_network_circuit","column_name":"x_g_sonc_ns_pro_pe_host_circuit_id","usedInstances":{"15661b12-07fa-49aa-a53d-5eea3fcf5a45":["conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>NSPRO -Update Host Circuit Availability</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="NSPRO -Update Host Circuit Availability">91836b5d47a8929040fd43ff336d438b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4341bf1147ac929040fd43ff336d43c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=4341bf1147ac929040fd43ff336d43c5^sys_idNOT INdb41ff1147ac929040fd43ff336d4383"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="NSPRO -Update Host Circuit Availability">4341bf1147ac929040fd43ff336d43c5</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>db41ff1147ac929040fd43ff336d4383</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:17</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=db41ff1147ac929040fd43ff336d4383"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>db41ff1147ac929040fd43ff336d4383</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>1741ff1147ac929040fd43ff336d4385</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <value>x_g_sonc_ns_pro_host_ckt=false^x_g_sonc_ns_pro_circuit_speedVALCHANGES^ORinstall_statusVALCHANGES^x_g_sonc_ns_pro_pe_circuit_idISNOTEMPTY</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>db41ff1147ac929040fd43ff336d4383</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>5341ff1147ac929040fd43ff336d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:53</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>db41ff1147ac929040fd43ff336d4383</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>d741ff1147ac929040fd43ff336d4385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:53</sys_updated_on>
+        <value>cmdb_ci_network_circuit</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=db41ff1147ac929040fd43ff336d4383"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4341bf1147ac929040fd43ff336d43c5^sys_idNOT IN8741bf1147ac929040fd43ff336d43c6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4341bf1147ac929040fd43ff336d43c5</id>
+        <name>NSPRO -Update Host Circuit Availability</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>8741bf1147ac929040fd43ff336d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:53</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8741bf1147ac929040fd43ff336d43c6"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4341bf1147ac929040fd43ff336d43c5^sys_idNOT IN0f41bf1147ac929040fd43ff336d43c7,5741ff1147ac929040fd43ff336d431d,d741ff1147ac929040fd43ff336d4325"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NSPRO -Update Host Circuit Availability">4341bf1147ac929040fd43ff336d43c5</model>
+        <model_id>4341bf1147ac929040fd43ff336d43c5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>0f41bf1147ac929040fd43ff336d43c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0f41bf1147ac929040fd43ff336d43c7"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>FDCollection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">fc9ab9bddba21300a27757c5ca961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="NSPRO -Update Host Circuit Availability">4341bf1147ac929040fd43ff336d43c5</model>
+        <model_id>4341bf1147ac929040fd43ff336d43c5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>5741ff1147ac929040fd43ff336d431d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5741ff1147ac929040fd43ff336d431d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="NSPRO -Update Host Circuit Availability">4341bf1147ac929040fd43ff336d43c5</model>
+        <model_id>4341bf1147ac929040fd43ff336d43c5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>d741ff1147ac929040fd43ff336d4325</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d741ff1147ac929040fd43ff336d4325"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4341bf1147ac929040fd43ff336d43c5^sys_idNOT INdb41ff1147ac929040fd43ff336d4382"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Host Circuit Availability and Site Count">55e03bdd476c929040fd43ff336d4343</action_type>
+        <action_type_parent display_value="Update Host Circuit Availability and Site Count">8faeab95476c929040fd43ff336d43f3</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="NSPRO -Update Host Circuit Availability">4341bf1147ac929040fd43ff336d43c5</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>db41ff1147ac929040fd43ff336d4382</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <ui_id>48691044-c15e-454e-978f-ecc404e7a577</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=db41ff1147ac929040fd43ff336d4382"/>
+    <sys_element_mapping action="delete_multiple" query="id=db41ff1147ac929040fd43ff336d4382"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>host_circuit_sys_id</field>
+        <id>db41ff1147ac929040fd43ff336d4382</id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>1b41ff1147ac929040fd43ff336d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_55e03bdd476c929040fd43ff336d4343</table>
+        <value>{{Created or Updated_1.current.x_g_sonc_ns_pro_pe_host_circuit_id.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=db41ff1147ac929040fd43ff336d4382"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=db41ff1147ac929040fd43ff336d4382"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5^sys_idNOT IN1741ff1147ac929040fd43ff336d430d,5341ff1147ac929040fd43ff336d434f,5f41ff1147ac929040fd43ff336d4321"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>1741ff1147ac929040fd43ff336d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>5341ff1147ac929040fd43ff336d434f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:53</sys_created_on>
+        <sys_id>5f41ff1147ac929040fd43ff336d4321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 11:56:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4341bf1147ac929040fd43ff336d43c5"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>91836b5d47a8929040fd43ff336d438b</sys_id>
+        <latest_snapshot>4341bf1147ac929040fd43ff336d43c5</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=91836b5d47a8929040fd43ff336d438b^sys_idNOT INdb41ff1147ac929040fd43ff336d43fa"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan/>
+        <plan_id>91836b5d47a8929040fd43ff336d438b</plan_id>
+        <snapshot>4341bf1147ac929040fd43ff336d43c5</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-09 11:56:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>db41ff1147ac929040fd43ff336d43fa</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:28:16</sys_updated_on>
+        <trigger display_value="">e4ea45a947ecd29040fd43ff336d4356</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=91836b5d47a8929040fd43ff336d438b"/>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_g_sonc_ns_pro.host_circuits_with_capacity_user" name="x_g_sonc_ns_pro.host_circuits_with_capacity_user">66320a3247a816d040fd43ff336d430e</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-13 19:42:29</sys_created_on>
+        <sys_id>aa320a3247a816d040fd43ff336d4311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>66320a3247a816d040fd43ff336d430e</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_embedded_help_role_aa320a3247a816d040fd43ff336d4311</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-13 19:42:29</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

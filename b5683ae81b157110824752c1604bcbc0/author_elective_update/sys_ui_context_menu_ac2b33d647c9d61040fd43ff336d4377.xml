@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="DELETE">
+        <action_script><![CDATA[/**
+ * Script executed on the Client for this menu action
+ *
+ * The following variables are available to the script:
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
+ */
+ 
+]]></action_script>
+        <active>true</active>
+        <comments/>
+        <condition>RP.getReferringURL().indexOf("cmdb_ci_network_circuit .do")!= -1 &amp;&amp; RP.isRelatedList() </condition>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Assign Ports to Circuit</name>
+        <on_show_script><![CDATA[/**
+ * This client-side script is used to dynamically change the context menu before it is displayed.
+ * It is called before showing the context menu if the Run onShow script flag is checked.
+ *
+ * The following variables are available to the script:
+ *    'g_menu' the context menu that is about to be shown
+ *    'g_item' the current context menu item
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ */
+canBeAssigned();
+
+function canBeAssigned() {
+    var assignable = false;
+    var selectedRecord = g_sysId;
+    var hostCircuitPort = new GlideRecord('x_g_sonc_ns_pro_port');
+    if (hostCircuitPort.get(selectedRecord)) {
+        if (hostCircuitPort.getValue('x_g_sonc_ns_pro_host_ckt') == true){ 
+            assignable = false;
+        }
+    }
+    if (assignable) {
+        g_menu.setEnabled(g_item);
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>1000</order>
+        <parent/>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-07 11:50:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac2b33d647c9d61040fd43ff336d4377</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Assign Ports to Circuit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_ac2b33d647c9d61040fd43ff336d4377</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-07 11:56:13</sys_updated_on>
+        <table>cmdb_ci_network_circuit</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_context_menu_ac2b33d647c9d61040fd43ff336d4377</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_context_menu"&gt;&lt;sys_ui_context_menu action="INSERT_OR_UPDATE"&gt;&lt;action_script&gt;&lt;![CDATA[/**
+ * Script executed on the Client for this menu action
+ *
+ * The following variables are available to the script:
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
+ */
+ 
+]]&gt;&lt;/action_script&gt;&lt;active&gt;true&lt;/active&gt;&lt;comments/&gt;&lt;condition&gt;RP.getReferringURL().indexOf("cmdb_ci_network_circuit .do")!= -1 &amp;amp;&amp;amp; RP.isRelatedList() &lt;/condition&gt;&lt;do_not_cache&gt;false&lt;/do_not_cache&gt;&lt;dynamic_actions_script&gt;&lt;![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]&gt;&lt;/dynamic_actions_script&gt;&lt;menu&gt;list_row&lt;/menu&gt;&lt;name&gt;Assign Ports to Circuit&lt;/name&gt;&lt;on_show_script&gt;&lt;![CDATA[/**
+ * This client-side script is used to dynamically change the context menu before it is displayed.
+ * It is called before showing the context menu if the Run onShow script flag is checked.
+ *
+ * The following variables are available to the script:
+ *    'g_menu' the context menu that is about to be shown
+ *    'g_item' the current context menu item
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ */
+canBeAssigned();
+
+function canBeAssigned() {
+    var assignable = false;
+    var selectedRecord = g_sysId;
+    var hostCircuitPort = new GlideRecord('x_g_sonc_ns_pro_port');
+    if (hostCircuitPort.get(selectedRecord)) {
+        if (hostCircuitPort.getValue('x_g_sonc_ns_pro_host_ckt') == true){ 
+            assignable = false;
+        }
+    }
+    if (assignable) {
+        g_menu.setEnabled(g_item);
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]&gt;&lt;/on_show_script&gt;&lt;order&gt;1000&lt;/order&gt;&lt;parent/&gt;&lt;run_on_show_script&gt;true&lt;/run_on_show_script&gt;&lt;sys_class_name&gt;sys_ui_context_menu&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admglfry&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-07 11:50:07&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ac2b33d647c9d61040fd43ff336d4377&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Assign Ports to Circuit&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_context_menu_ac2b33d647c9d61040fd43ff336d4377&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admglfry&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-07 11:56:13&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_network_circuit&lt;/table&gt;&lt;track_selected&gt;false&lt;/track_selected&gt;&lt;type&gt;action&lt;/type&gt;&lt;/sys_ui_context_menu&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>735315358</payload_hash>
+        <record_name>Assign Ports to Circuit</record_name>
+        <reverted_from/>
+        <source>2d5cd65887a45250f9f20f280cbb3595</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-07 11:56:13</sys_created_on>
+        <sys_id>5aadff96470dd61040fd43ff336d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19266d64ef20000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-07 11:56:13</sys_updated_on>
+        <type>Context Menu</type>
+        <update_guid>5eadff96620dd6105e48f150fa6de63a</update_guid>
+        <update_guid_history>5eadff96620dd6105e48f150fa6de63a:735315358,892d7b9a6d0dd610c38a55e9828791f8:693972078,014c3f961d0dd610c636112b10e01d9c:2033935325</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-07 11:57:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_context_menu">sys_ui_context_menu</sys_db_object>
+        <sys_id>08299457e6944e709c090c98cbfe71e4</sys_id>
+        <sys_metadata>ac2b33d647c9d61040fd43ff336d4377</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign Ports to Circuit</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_context_menu_ac2b33d647c9d61040fd43ff336d4377</sys_update_name>
+        <sys_update_version display_value="sys_ui_context_menu_ac2b33d647c9d61040fd43ff336d4377">5aadff96470dd61040fd43ff336d433b</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-07 11:57:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

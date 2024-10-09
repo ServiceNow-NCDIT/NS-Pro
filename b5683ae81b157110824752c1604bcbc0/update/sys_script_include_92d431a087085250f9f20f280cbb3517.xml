@@ -10,43 +10,71 @@
         <script><![CDATA[var NSPROConstants = Class.create();
 
 NSPROConstants.AJAX_RETURNCODES = {
-	SUCCESS: "success",
-	FAILED: "failed"
+    SUCCESS: "success",
+    FAILED: "failed"
 };
 
 NSPROConstants.TABLES = {
-	PORT: "x_g_sonc_ns_pro_port",
-	TASK: "x_g_sonc_ns_pro_nspro_tasks"	,
-	BILLING: "x_g_sonc_ns_pro_billing_changes"
+    PORT: "x_g_sonc_ns_pro_port",
+    TASK: "x_g_sonc_ns_pro_nspro_tasks",
+    BILLING: "x_g_sonc_ns_pro_billing_changes",
+    CIRCUITS: "cmdb_ci_network_circuit",
+    SITE: "cmdb_ci_site"
 };
 
 NSPROConstants.TABLE_LISTS = {
-	PORT: "x_g_sonc_ns_pro_port_list"
+    PORT: "x_g_sonc_ns_pro_port_list"
 };
 
 NSPROConstants.TABLE_VIEWS = {
-	PORT: {
-		ASSIGNPORTS: "selectavailableports",
-		UNASSIGNPORTS: "selectavailableportsremove"
-	}
-}
+    PORT: {
+        ASSIGNPORTS: "selectavailableports",
+        UNASSIGNPORTS: "selectavailableportsremove"
+    }
+};
 
 NSPROConstants.PORT_STATUS = {
-	ASSIGNED: 1,
-	UNASSIGNED: 4
-}
-]]></script>
+    ASSIGNED: 1,
+    UNASSIGNED: 4
+};
+
+NSPROConstants.MODALS = {
+    MULTISELECT_HEADER: '<div style="padding:15px"><p>|TITLE|</p><p><select name="selections" id="|ID|" class="form-control">',
+    MULTISELECT_FOOTER: '</select></p><div style="padding:5px;float:right"><button style="padding:5px;margin-right:10px" onclick="top.window.multiActionCancel()" class="btn btn-default">Cancel</button><button  style="padding:5px" class="btn btn-primary" onclick="top.window.multiActionSubmit(this.innerHTML,jQuery(\'#|ID|\').val())">OK</button></div></div>'
+};
+
+NSPROConstants.TASK_BANNERMESSAGES = {
+    NEWFIELDSERVICES: "Create Field Services Task - Remember to add any addtional information needed to the Short Description, Description, Instructions, etc. prior to submitting or saving the Task.",
+    NEWENTERPRISEMONITORING: "Create Enterprise Monitoring Request Task - Remember to add any addtional information needed to the Short Description, Description, Instructions, etc. prior to submitting or saving the Task.",
+    NEWBILLINGREQUEST: "Create Billing Task - Remember to add relevant data needed to fullfill this reques to the Short Description, Description, Instructions, etc. prior to submitting or saving the Task.",
+    NEWPROVISIONINGREQUEST: "Create Provisioning Task - Remember to add any addtional information needed to the Short Description, Description, Instructions, etc. prior to submitting or saving the Task.",
+    NEWGENERICREQUEST: "Create Generic Task - Remember to add any addtional information needed to fulfill this request to Short Description, Description, Instructions, etc. prior to submitting or saving the Task.  Also Remember to select the Assignment Group for this Task",
+    BEGINBANNER: "<b style='text-align:center;font-size: 150%'>",
+    ENDBANNER: "</b>"
+};
+
+NSPROConstants.TASK_TYPES = {
+    FIELDSERVICES: "field_services",
+    ENTERPRISEMONITORING: "enterprise_monitoring",
+    FULFILLMENT: "fulfillment",
+    BILLING: "billing",
+    SERVICENOWSUPPORT: "servicenow_support",
+    PROVISIONING: "provisioning",
+    GENERIC: "generic"
+
+
+}]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-08-12 22:30:07</sys_created_on>
         <sys_id>92d431a087085250f9f20f280cbb3517</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>NSPROConstants</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_92d431a087085250f9f20f280cbb3517</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-13 17:23:24</sys_updated_on>
+        <sys_updated_on>2024-10-03 15:20:30</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -84,6 +84,20 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-04-07 14:22:19</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-09-26 20:16:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dea605474774565040fd43ff336d4397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_sonc_ns_pro_nspro_tasks" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">ce24422f47d1c21040fd43ff336d435c</sys_ui_form>
+            <sys_ui_section caption="NetOps CheckList" display_value="NetOps CheckList" name="x_g_sonc_ns_pro_nspro_tasks" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">d6a641474774565040fd43ff336d43c2</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-09-26 20:16:25</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_g_sonc_ns_pro_nspro_tasks</name>
             <roles/>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="76fbc02587e0de50f9f20f280cbb35bc" label="Host Circuit Selection" max_length="40" name="x_g_sonc_ns_pro_st_host_circuit_selection" type="collection">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Total Capacity" max_length="40" name="total_capacity" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Total Subscribed Capacity" max_length="40" name="total_subscribed_capacity" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Telco Provider" max_length="32" name="telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site" max_length="32" name="site" reference="cmdb_ci_site" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site Count" max_length="40" name="site_count" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Host Circuit" max_length="32" name="host_circuit" reference="cmdb_ci_network_circuit" reference_qual="x_g_sonc_ns_pro_host_ckt=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_host_ckt=true^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Distance" max_length="40" name="distance" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Point of Presence" max_length="32" name="point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" reference_qual="install_status!=7^EQ" reference_qual_condition="install_status!=7^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Available Capacity" max_length="40" name="available_capacity" type="integer"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Host Circuit Port" max_length="32" name="host_circuit_port" reference="x_g_sonc_ns_pro_port" reference_qual="pe_host_circuit_idSAMEASlocal_circuit_id^EQ" reference_qual_condition="pe_host_circuit_idSAMEASlocal_circuit_id^EQ" type="reference"/>
+        <index name="index">
+            <element name="host_circuit"/>
+        </index>
+        <index name="index2">
+            <element name="host_circuit_port"/>
+        </index>
+        <index name="index3">
+            <element name="point_of_presence"/>
+        </index>
+        <index name="index4">
+            <element name="site"/>
+        </index>
+        <index name="index5">
+            <element name="telco_provider"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="INSERT_OR_UPDATE">
+        <action_script><![CDATA[/**
+ * Script executed on the Client for this menu action
+ *
+ * The following variables are available to the script:
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
+ */
+//alert("Decomm Clicked");
+
+assignHostPortToSite();
+
+function assignHostPortToSite() {
+    var taskInformation;
+	var site;
+    if (g_scratchpad.taskInformation) {
+        taskInformation = g_scratchpad.taskInformation;
+		site = taskInformation.site;
+    }
+
+    var formTitle = "Assign Port";
+
+    var gmf = new GlideModalForm(formTitle, 'x_g_sonc_ns_pro_port');
+    gmf.addParm('sys_id', g_sysId);
+    if (taskInformation) {
+        gmf.setOnloadCallback(populateDefaults);
+    }
+    gmf.render();
+
+    function populateDefaults(modalForm) {
+        var iframe = modalForm.$window.find("#dialog_frame")[0];
+        var iframeWindow = iframe.contentWindow ? iframe.contentWindow : iframe.contentDocument.defaultView;
+        var d_form = iframeWindow.g_form;
+        d_form.setValue('site', site);
+    }
+    // var selectedHostCircuitName = g_form.getValue('name');
+    // var selectedHostCircuitSysId = g_form.getUniqueValue();
+    // var selectedHostPortSysId = g_sysId;
+    // var selectHostPort = g_fieldName;
+
+    //alert(selectHostPort);
+    location.reload;
+}]]></action_script>
+        <active>true</active>
+        <comments/>
+        <condition> RP.isRelatedList() == false </condition>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Assign Host Port</name>
+        <on_show_script><![CDATA[/**
+ * This client-side script is used to dynamically change the context menu before it is displayed.
+ * It is called before showing the context menu if the Run onShow script flag is checked.
+ *
+ * The following variables are available to the script:
+ *    'g_menu' the context menu that is about to be shown
+ *    'g_item' the current context menu item
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ */
+canBeAssigned();
+
+function canBeAssigned() {
+	//alert(g_list.getView());
+    var assignable = false;
+    var selectedRecord = g_sysId;
+    var hostCircuitPort = new GlideRecord('x_g_sonc_ns_pro_port');
+    if (hostCircuitPort.get(selectedRecord)) {
+        if ((hostCircuitPort.getValue('install_status') == "4" || hostCircuitPort.getValue('install_status') == "1" ) && hostCircuit.getValue('pe_host_circuit_id') != null) {
+            if (g_list.getView() == 'selectavailableportshost') {
+                assignable = true;
+            } else {
+				assignable = false;
+			}
+
+        }
+    }
+    if (assignable) {
+        g_menu.setEnabled(g_item);
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>1000</order>
+        <parent/>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-20 21:00:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d727d2cd8730da10f9f20f280cbb350a</sys_id>
+        <sys_mod_count>59</sys_mod_count>
+        <sys_name>Assign Host Port</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_d727d2cd8730da10f9f20f280cbb350a</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-09 09:54:15</sys_updated_on>
+        <table>x_g_sonc_ns_pro_port</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+</record_update>

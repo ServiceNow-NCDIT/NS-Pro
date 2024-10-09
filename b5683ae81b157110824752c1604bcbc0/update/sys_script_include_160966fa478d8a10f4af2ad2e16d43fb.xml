@@ -9,8 +9,12 @@
         <name>circuit</name>
         <script><![CDATA[var circuit = Class.create();
 circuit.prototype = {
+    circuitSpeedMultiplier: 0,
+
     initialize: function() {
         this.debug = true;
+        this.circuitSpeedMultiplier = gs.getProperty('x_g_sonc_ns_pro.circuit_speed_multiplier');
+
     },
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42,7 +46,7 @@ circuit.prototype = {
 
         var LogPrefix = " circuit().getHostPort --> ";
 
-		var localCircuitMultiplier = gs.getProperty('x_g_sonc_ns_pro.circuit_speed_multiplier');
+        var localCircuitMultiplier = gs.getProperty('x_g_sonc_ns_pro.circuit_speed_multiplier');
 
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + ' executing for task ' + NSProTask.number);
@@ -110,8 +114,14 @@ circuit.prototype = {
         if (portRecord.next()) {
             hostPort = {};
             hostPort.AssignedPEPort = portRecord.getValue('name');
+            hostPort.assignedPort = portRecord.sys_id;
             hostPort.AssingedPEDevice = portRecord.getValue('network_gear');
             hostPort.AssingedPEHost = portRecord.getElement('network_gear.name').toString();
+        } else {
+            hostPort = {};
+            hostPort.AssignedPEPort = "";
+            hostPort.AssingedPEDevice = "";
+            hostPort.AssingedPEHost = "";
         }
         return hostPort;
 
@@ -198,29 +208,293 @@ circuit.prototype = {
                     closestDist = dist;
                 }
             } else {
-				if (this.debug) gs.info(this.timestamp() + LogPrefix + 'hostsWithCapacity[' + i + ']  Missing pop Property or Pop Query returned null');
-			}
+                if (this.debug) gs.info(this.timestamp() + LogPrefix + 'hostsWithCapacity[' + i + ']  Missing pop Property or Pop Query returned null');
+            }
         }
 
         if (this.debug) gs.info(this.timestamp() + LogPrefix + 'returning closestCircuit ' + JSON.stringify(closestCircuit));
         return closestCircuit;
 
     },
+    _getSubscribedSiteCount: function(hostCirSysID) {
+        var siteCountTotal = 0;
+        var queryString = 'x_g_sonc_ns_pro_pe_host_circuit_id=' + hostCirSysID + '^x_g_sonc_ns_pro_host_ckt=false^install_statusIN1,4';
+        var localCircuits = new GlideRecord('cmdb_ci_network_circuit');
+        localCircuits.addEncodedQuery(queryString);
+        localCircuits.query();
+
+        while (localCircuits.next()) {
+            siteCountTotal += 1;
+        }
+
+        return siteCountTotal;
+    },
+    _getSubscribedCapacity: function(hostCirSysID) {
+        var subscribedTotal = 0;
+        var queryString = 'x_g_sonc_ns_pro_pe_host_circuit_id=' + hostCirSysID + '^x_g_sonc_ns_pro_host_ckt=false^install_statusIN1,4';
+        var localCircuits = new GlideRecord('cmdb_ci_network_circuit');
+        localCircuits.addEncodedQuery(queryString);
+        localCircuits.query();
+
+        while (localCircuits.next()) {
+            var cirSpeed = localCircuits.getValue('x_g_sonc_ns_pro_circuit_speed');
+            if (!gs.nil(cirSpeed)) {
+                subscribedTotal = subscribedTotal + parseInt(cirSpeed);
+            }
+        }
+
+        return subscribedTotal;
+    },
+    updateHostCircuitAvailableCapacity: function(hostCircuitSysID) {
+        var circuitSpeedMultiplier = gs.getProperty('x_g_sonc_ns_pro.circuit_speed_multiplier');
+        var hostCir = new GlideRecord('cmdb_ci_network_circuit');
+        if (hostCir.get(hostCircuitSysID)) {
+            var hostCircuitCapacity = 0;
+            var hostSiteCount = 0;
+            var hstCirCap = hostCir.getValue('x_g_sonc_ns_pro_circuit_speed');
+            var hstSiteCount = hostCir.getValue('x_g_sonc_ns_pro_site_count');
+            var hstCir_sysID = hostCir.getValue('sys_id');
+            if (!gs.nil(hstCirCap)) {
+                hostCircuitCapacity = parseInt(hstCirCap) * circuitSpeedMultiplier;
+            }
+            if (!gs.nil(hstSiteCount)) {
+                hostSiteCount = parseInt(hstSiteCount);
+            }
+            var subscribedCapacity = this._getSubscribedCapacity(hostCircuitSysID);
+            var subscribedSites = this._getSubscribedSiteCount(hostCircuitSysID);
+
+            if (!gs.nil(subscribedCapacity)) {
+                var availableCapacity = hostCircuitCapacity - (subscribedCapacity * circuitSpeedMultiplier);
+                hostCir.setValue('x_g_sonc_ns_pro_available_capacity', availableCapacity);
+            }
+            if (!gs.nil(subscribedSites)) {
+                hostCir.setValue('x_g_sonc_ns_pro_site_count', subscribedSites);
+            }
+            hostCir.update();
+        }
+
+    },
+    loadCircuitSiteSelection: function(telco, site) {
+        var siteLocation;
+        var queryString = 'x_g_sonc_ns_pro_host_ckt=true^install_status=1';
+        var hostCirArray = [];
+        var hostCir = new GlideRecord('cmdb_ci_network_circuit');
+        if (!gs.nil(site)) {
+            var siteObj = new x_g_sonc_ns_pro.cmdb_ci_site();
+            siteLocation = siteObj._getSiteLocationInfo(site);
+        }
+        if (!gs.nil(telco)) {
+            queryString = queryString + '^x_g_sonc_ns_pro_telco_provider=' + telco;
+        }
+        hostCir.addEncodedQuery(queryString);
+        hostCir.query();
+
+        while (hostCir.next()) {
+            var hostObj = {};
+            var hostCircuitCapacity = 0;
+            var hostSiteCount = 0;
+            var hstCirCap = hostCir.getValue('x_g_sonc_ns_pro_circuit_speed');
+            var hstSiteCount = hostCir.getValue('x_g_sonc_ns_pro_site_count');
+            var hstCir_sysID = hostCir.getValue('sys_id');
+            if (!gs.nil(hstCirCap)) {
+                hostCircuitCapacity = parseInt(hstCirCap) * this.circuitSpeedMultiplier;
+            }
+            if (!gs.nil(hstSiteCount)) {
+                hostSiteCount = parseInt(hstSiteCount);
+            }
+            hostObj.sys_id = hstCir_sysID;
+            hostObj.host_circuit = hstCir_sysID;
+            hostObj.total_capacity = hostCircuitCapacity;
+            hostObj.site = siteLocation.siteSysID;
+            hostObj.telco_provider = hostCir.getValue('x_g_sonc_ns_pro_telco_provider');
+            hostObj.point_of_presence = hostCir.getValue('x_g_sonc_ns_pro_point_of_presence');
+
+            var subscribedCapacity = this._getSubscribedCapacity(hstCir_sysID);
+            var subscribedSites = this._getSubscribedSiteCount(hstCir_sysID);
+
+            hostObj.site_count = subscribedSites;
+            hostObj.total_subscribed_capacity = subscribedCapacity * this.circuitSpeedMultiplier;
+            hostObj.available_capacity = hostObj.total_capacity - hostObj.total_subscribed_capacity;
+
+            var hostCirPort = this._getHostPortInformation(hstCir_sysID);
+            //hostObj.host_circuit_port = hostCirPort.AssignedPEPort;
+            //gs.info(hstCir_sysID);
+            hostObj.host_circuit_port = hostCirPort.assignedPort;
+
+            var popLocationLatitude = parseFloat(hostCir.getElement('x_g_sonc_ns_pro_point_of_presence.location.latitude'));
+            var popLocationLongitude = parseFloat(hostCir.getElement('x_g_sonc_ns_pro_point_of_presence.location.longitude'));
 
 
+
+            if (!gs.nil(siteLocation)) {
+                var distance = this.getDistance2Point(siteLocation.locationLatitude, siteLocation.locationLongitude, popLocationLatitude, popLocationLongitude);
+                //convert kilometers into miles
+                distance = distance / 1.609;
+                hostObj.distance = distance.toFixed(4);
+            }
+
+            hostCirArray.push(hostObj);
+        }
+        return hostCirArray;
+    },
+    loadHostCircuitWithCapacity: function(telco, hostCircuit, pop) {
+        var siteLocation;
+        var queryString = 'x_g_sonc_ns_pro_host_ckt=true^install_status=1';
+        var hostCirArray = [];
+        var hostCir = new GlideRecord('cmdb_ci_network_circuit');
+        if (!gs.nil(hostCircuit)) {
+            queryString = queryString + '^sys_id=' + hostCircuit;
+        }
+        if (!gs.nil(telco)) {
+            queryString = queryString + '^x_g_sonc_ns_pro_telco_provider=' + telco;
+        }
+        if (!gs.nil(pop)) {
+            queryString = queryString + '^x_g_sonc_ns_pro_point_of_presence=' + pop;
+        }
+
+        hostCir.addEncodedQuery(queryString);
+        hostCir.query();
+
+        while (hostCir.next()) {
+            var hostObj = {};
+            var hostCircuitCapacity = 0;
+            var hostSiteCount = 0;
+            var hstCirCap = hostCir.getValue('x_g_sonc_ns_pro_circuit_speed');
+            var hstSiteCount = hostCir.getValue('x_g_sonc_ns_pro_site_count');
+            var hstCir_sysID = hostCir.getValue('sys_id');
+            if (!gs.nil(hstCirCap)) {
+                hostCircuitCapacity = parseInt(hstCirCap) * this.circuitSpeedMultiplier;
+            }
+            if (!gs.nil(hstSiteCount)) {
+                hostSiteCount = parseInt(hstSiteCount);
+            }
+            hostObj.sys_id = hstCir_sysID;
+            hostObj.host_circuit = hstCir_sysID;
+            hostObj.total_capacity = hostCircuitCapacity;
+            hostObj.telco_provider = hostCir.getValue('x_g_sonc_ns_pro_telco_provider');
+            hostObj.point_of_presence = hostCir.getValue('x_g_sonc_ns_pro_point_of_presence');
+
+            var subscribedCapacity = this._getSubscribedCapacity(hstCir_sysID);
+            var subscribedSites = this._getSubscribedSiteCount(hstCir_sysID);
+
+            hostObj.site_count = subscribedSites;
+            hostObj.total_subscribed_capacity = subscribedCapacity * this.circuitSpeedMultiplier;
+            hostObj.available_capacity = hostObj.total_capacity - hostObj.total_subscribed_capacity;
+
+            var hostCirPort = this._getHostPortInformation(hstCir_sysID);
+            //hostObj.host_circuit_port = hostCirPort.AssignedPEPort;
+            //gs.info(hstCir_sysID);
+            hostObj.host_circuit_port = hostCirPort.assignedPort;
+
+            var popLocationLatitude = parseFloat(hostCir.getElement('x_g_sonc_ns_pro_point_of_presence.location.latitude'));
+            var popLocationLongitude = parseFloat(hostCir.getElement('x_g_sonc_ns_pro_point_of_presence.location.longitude'));
+
+            hostCirArray.push(hostObj);
+        }
+        return hostCirArray;
+    },
+    getHostCircuitInformation: function(hostCircuitSysID) {
+        var response = {};
+        var errorString;
+
+        try {
+            var hostCircuit = new GlideRecord('cmdb_ci_network_circuit');
+            if (hostCircuit.get(hostCircuitSysID)) {
+                hostCircuitPort = this._getHostPortInformation(hostCircuitSysID);
+                response.hostCirSysID = hostCircuitSysID;
+                response.pop = hostCircuit.getValue('x_g_sonc_ns_pro_point_of_presence');
+                response.pe_router = hostCircuitPort.AssingedPEDevice;
+                response.pe_router_dv = hostCircuitPort.AssingedPEHost;
+                response.x_g_sonc_ns_pro_pop_pe_interface = hostCircuitPort.AssignedPEPort;
+                response.message = "Host Circuit = " + hostCircuit.getValue('name');
+            }
+        } catch (ex) {
+            response.message = "Error Occured in x_g_sonc_ns_pro.circuit.getHostCircuitInformation() " + ex.toString();
+        }
+        return response;
+    },
+    createTemporaryCircuit: function(taskSysID) {
+        var errorstring;
+        response = {};
+
+        try {
+            var lastNumber = 0;
+            var NSPROTask = new GlideRecord(NSPROConstants.TABLES.TASK);
+            if (NSPROTask.get(taskSysID)) {
+                var circuitSite = NSPROTask.getValue('site');
+                var taskNumber = NSPROTask.getValue('number');
+                var hostCircuit = NSPROTask.getValue('circuit');
+                var netWorkCircuit = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+                netWorkCircuit.addQuery('name', 'STARTSWITH', taskNumber);
+                netWorkCircuit.addQuery('x_g_sonc_ns_pro_site', circuitSite);
+                netWorkCircuit.addQuery('x_g_sonc_ns_pro_pe_host_circuit_id', hostCircuit);
+                netWorkCircuit.orderByDesc('name');
+                netWorkCircuit.setLimit(1);
+                netWorkCircuit.query();
+
+                if (netWorkCircuit.next()) {
+                    var lastCircuitName = netWorkCircuit.getValue('name');
+                    gs.info(lastCircuitName);
+                    var circuitNumberArray = lastCircuitName.split('-');
+                    if (circuitNumberArray.length > 1) {
+                        gs.info(circuitNumberArray[1]);
+                        lastNumber = parseInt(circuitNumberArray[1]);
+                        lastNumber += 1;
+                    } else {
+                        lastNumber = 1;
+                    }
+
+
+                }
+                var newCircuitNumber = taskNumber;
+                if (lastNumber > 0) {
+                    newCircuitNumber = newCircuitNumber + '-' + lastNumber;
+                }
+
+                var newCircuit = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+                newCircuit.initialize();
+                newCircuit.setValue('name', newCircuitNumber);
+                newCircuit.setValue('x_g_sonc_ns_pro_pe_host_circuit_id', NSPROTask.getValue('circuit'));
+                newCircuit.setValue('x_g_sonc_ns_pro_telco_provider', NSPROTask.getValue('telco_provider'));
+                newCircuit.setValue('access_type', NSPROTask.getValue('assigned_pe_port'));
+                newCircuit.setValue('correlation_id', NSPROTask.getValue('assigned_pe_port'));
+                newCircuit.setValue('serial_number', NSPROTask.getValue('assigned_pe_port'));
+                newCircuit.setValue('x_g_sonc_ns_pro_site', NSPROTask.getValue('site'));
+                newCircuit.setValue('bandwidth_downstream', NSPROTask.getValue('speed')); // to CE from telco
+                newCircuit.setValue('bandwidth_upstream', NSPROTask.getValue('speed')); // from CE to telco
+                newCircuit.setValue('x_g_sonc_ns_pro_circuit_speed', NSPROTask.getValue('speed'));
+                newCircuit.setValue('x_g_sonc_ns_pro_cir', NSPROTask.getValue('speed'));
+                newCircuit.setValue('x_g_sonc_ns_pro_point_of_presence', NSPROTask.getValue('assigned_pop'));
+                newCircuit.setValue('x_g_sonc_ns_pro_host_ckt_type', NSPROTask.getElement('circuit.x_g_sonc_ns_pro_host_ckt_type').toString());
+                newCircuit.setValue('x_g_sonc_ns_pro_network_request', NSPROTask.getValue('telco_order'));
+                newCircuit.setValue('x_g_sonc_ns_pro_status', 'pending'); // pending install
+				newCircuit.setValue('install_status',4);
+                var newRcdId = newCircuit.insert();
+                response.circuitSysID = newRcdId;
+                response.circuitID = newCircuitNumber;
+                response.message = "Temporary Circuit Created: " + newCircuitNumber;
+            } else {
+                response.message = "Error Occured in x_g_sonc_ns_pro.circuit.createTemporaryCiruit() the Task ID " + taskSysID + " was not found";
+            }
+
+        } catch (ex) {
+            response.message = "Error Occured in x_g_sonc_ns_pro.circuit.createTemporaryCiruit() " + ex.toString();
+        }
+        return response;
+    },
     type: 'circuit'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 22:52:58</sys_created_on>
         <sys_id>160966fa478d8a10f4af2ad2e16d43fb</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>101</sys_mod_count>
         <sys_name>circuit</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_160966fa478d8a10f4af2ad2e16d43fb</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-06 16:40:39</sys_updated_on>
+        <sys_updated_on>2024-10-04 17:37:47</sys_updated_on>
     </sys_script_include>
 </record_update>

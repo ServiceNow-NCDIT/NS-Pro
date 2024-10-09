@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_g_sonc_ns_pro_telco_order">type_request=new^EQ<item display_value="New Service" endquery="false" field="type_request" goto="false" newquery="false" operator="=" or="false" value="new"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	g_form.setMandatory('site',true);
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	var hasProvisioningTasks = g_scratchpad.hasProvisioningTasks;
+	if(hasProvisioningTasks){
+		g_form.setMandatory('site',true);
+	} else {
+		g_form.setMandatory('site',false);
+	}
+
+}]]></script_true>
+        <set_values/>
+        <short_description>New Site Request</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-30 16:46:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>93bcf09087c55690f9f20f280cbb35aa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>New Site Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_policy_93bcf09087c55690f9f20f280cbb35aa</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-09-30 19:34:02</sys_updated_on>
+        <table>x_g_sonc_ns_pro_telco_order</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

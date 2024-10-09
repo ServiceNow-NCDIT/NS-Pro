@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="INSERT_OR_UPDATE">
+        <action_script><![CDATA[/**
+ * Script executed on the Client for this menu action
+ *
+ * The following variables are available to the script:
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
+ */
+unAssignPortFromLocalCircuit();
+
+function unAssignPortFromLocalCircuit() {
+	var localCircuitInformation = {};
+	var checkedPorts = [];
+    var localCircuitName = g_form.getValue('name');
+    var formTitle = "Un-Assign Port From Local Circuit - " + localCircuitName;
+  //var site = g_form.getValue('x_g_sonc_ns_pro_site');
+    var localCircuitID = g_form.getUniqueValue();
+    var portSysID = g_sysId;
+	//alert(portSysID);
+	checkedPorts.push(portSysID);
+	localCircuitInformation.localCircuitName = localCircuitName;
+	localCircuitInformation.localCircuitID = localCircuitID;
+	localCircuitInformation.checkedPorts = checkedPorts;
+	g_scratchpad.localCircuitInformation = localCircuitInformation;
+
+    var gm = new GlideModal("glide_confirm_standard", true, 600);
+    gm.setTitle(formTitle);
+    gm.setPreference("title", "Are you sure you want to remove the selected ports from the Local Circuit " + localCircuitName + "? \nThis action will remove remote site specific data such as remote circuit association, Network Gear, Serial Number, etc..");
+    gm.setPreference("warning", "false");
+    gm.setPreference("onPromptComplete", removePortsFromLocalCircuit);
+    gm.setPreference("onPromptCancel", cancelRemovePorts);
+    gm.render();
+
+}
+
+function cancelRemovePorts() {
+    return false;
+}
+
+function removePortsFromLocalCircuit() {
+    var localCircuitInformation = g_scratchpad.localCircuitInformation
+    //var site = siteInformation.selectedSiteSysId;
+	
+    var cmdbCISite = new GlideAjax('x_g_sonc_ns_pro.port_ajax');
+    cmdbCISite.addParam('sysparm_name', 'removePortsFromLocalCircuit');
+    cmdbCISite.addParam('sysparm_checkedPorts', localCircuitInformation.checkedPorts);
+    cmdbCISite.addParam('sysparm_rowSysID', localCircuitInformation.localCircuitID);
+    cmdbCISite.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+		
+		response = JSON.parse(response);
+		//alert(response.resultCode);
+        if (response.resultCode == "success") {
+            location.reload();
+        } else {
+             return false;
+        }
+    }
+
+
+}]]></action_script>
+        <active>true</active>
+        <comments/>
+        <condition>RP.getReferringURL().indexOf("cmdb_ci_network_circuit.do")!=-1</condition>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Un-Assign Port from Local Circuit</name>
+        <on_show_script><![CDATA[/**
+ * This client-side script is used to dynamically change the context menu before it is displayed.
+ * It is called before showing the context menu if the Run onShow script flag is checked.
+ *
+ * The following variables are available to the script:
+ *    'g_menu' the context menu that is about to be shown
+ *    'g_item' the current context menu item
+ *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
+ *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
+ *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
+ *    'g_sysId' the sys_id of the row or form that the script is running against
+ */
+canBeUnAssigned();
+
+function canBeUnAssigned() {
+    var unassignable = false;
+    var selectedRecord = g_sysId;
+    //alert('sysid ' + selectedRecord);
+    var hostCircuitPort = new GlideRecord('x_g_sonc_ns_pro_port');
+    if (hostCircuitPort.get(selectedRecord)) {
+        if ((hostCircuitPort.getValue('install_status') == "4" || hostCircuitPort.getValue('install_status') == "1") && hostCircuitPort.getValue('site') != '' && hostCircuitPort.getValue('local_circuit_id') != '') {
+
+            unassignable = true;
+
+
+        }
+    }
+    if (unassignable) {
+        g_menu.setEnabled(g_item);
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>1000</order>
+        <parent/>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-07 18:47:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>58db552647cd1a1040fd43ff336d43dc</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Un-Assign Port from Local Circuit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_58db552647cd1a1040fd43ff336d43dc</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-08 10:38:49</sys_updated_on>
+        <table>x_g_sonc_ns_pro_port</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+</record_update>
