@@ -33,14 +33,29 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-	var grTask = new GlideRecord('x_g_sonc_ns_pro_task');
-	grTask.addQuery('request', current.request);
+	gs.info('br fired');
+
+	var grTask = new GlideRecord('x_g_sonc_ns_pro_nspro_tasks');
+	grTask.addQuery('telco_order', current.telco_order);
 	grTask.addQuery('sys_id', '!=', current.sys_id);
-	grTask.addQuery(state, '<', 3);
+	grTask.addQuery('state', '<', '3');
 	grTask.query();
-	if (!grTask.hasRows()) {
+	if (!grTask.next()) {
+		// gs.info('closing request ' + current.telco_order.number);
 		grTask.setWorkflow(false);
-		current.request.provisioning_state = 3;
+		var grReq = new GlideRecord('x_g_sonc_ns_pro_telco_order');
+		if (grReq.get(current.telco_order)) {
+			grReq.provisioning_state = '3';
+			grReq.update();
+		}
+	}
+	else {
+		// gs.info('not closing request ' + current.telco_order.number);
+		var grReq = new GlideRecord('x_g_sonc_ns_pro_telco_order');
+		if (grReq.get(current.telco_order)) {
+			grReq.provisioning_state = '2';
+			grReq.update();
+		}
 	}
 
 
@@ -51,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>388113fe47bcd25040fd43ff336d4367</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>Close Network Services Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -59,9 +74,9 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_388113fe47bcd25040fd43ff336d4367</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-09-26 13:23:15</sys_updated_on>
+        <sys_updated_on>2024-10-02 21:04:07</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=388113fe47bcd25040fd43ff336d4367"/>
 </record_update>

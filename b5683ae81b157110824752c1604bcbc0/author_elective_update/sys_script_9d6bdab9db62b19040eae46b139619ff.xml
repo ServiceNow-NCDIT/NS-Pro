@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_sonc_ns_pro_nspro_tasks</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_sonc_ns_pro_nspro_tasks">provisioning_stateIN11,12^EQ<item display_value="11,12" endquery="false" field="provisioning_state" goto="false" newquery="false" operator="IN" or="false" value="11,12"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Complete Telco Order State</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// if all tasks for this Telco Order are closed, close the Telco Order
+	gr = new GlideRecord('x_g_sonc_ns_pro_nspro_tasks');
+	gr.addQuery('telco_order', current.telco_order);
+	gr.addQuery('provisioning_state', '<', 11); // check to see if any are not completed
+	gr.query();
+	if (!gr.hasNext()) {
+		// everything is closed/canceled so close the telco order
+		var telcoGr = new GlideRecord('x_g_sonc_ns_pro_telco_order');
+		if (telcoGr.get(current.telco_order)) {
+			telcoGr.provisioning_state = '3';
+			telcoGr.update();
+		}
+		else {
+			gs.error('Unable to close Telco Order for task ' + current.number + ' even though all tasks seem to be closed');
+		}
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2023-11-17 12:44:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9d6bdab9db62b19040eae46b139619ff</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Complete Telco Order State</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_9d6bdab9db62b19040eae46b139619ff</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-10-02 17:33:43</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=9d6bdab9db62b19040eae46b139619ff"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_script_9d6bdab9db62b19040eae46b139619ff</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_g_sonc_ns_pro_nspro_tasks&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_g_sonc_ns_pro_nspro_tasks"&gt;provisioning_stateIN11,12^EQ&lt;item display_value="11,12" endquery="false" field="provisioning_state" goto="false" newquery="false" operator="IN" or="false" value="11,12"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Complete Telco Order State&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// if all tasks for this Telco Order are closed, close the Telco Order
+	gr = new GlideRecord('x_g_sonc_ns_pro_nspro_tasks');
+	gr.addQuery('telco_order', current.telco_order);
+	gr.addQuery('provisioning_state', '&lt;', 11); // check to see if any are not completed
+	gr.query();
+	if (!gr.hasNext()) {
+		// everything is closed/canceled so close the telco order
+		var telcoGr = new GlideRecord('x_g_sonc_ns_pro_telco_order');
+		if (telcoGr.get(current.telco_order)) {
+			telcoGr.provisioning_state = '3';
+			telcoGr.update();
+		}
+		else {
+			gs.error('Unable to close Telco Order for task ' + current.number + ' even though all tasks seem to be closed');
+		}
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;wbbusby&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-11-17 12:44:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9d6bdab9db62b19040eae46b139619ff&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Complete Telco Order State&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_9d6bdab9db62b19040eae46b139619ff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;wbbusby&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-02 17:33:43&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=9d6bdab9db62b19040eae46b139619ff"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>103076822</payload_hash>
+        <record_name>Complete Telco Order State</record_name>
+        <reverted_from/>
+        <source>16aecd27475c5a1040fd43ff336d43c5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-10-02 17:33:43</sys_created_on>
+        <sys_id>2dfa9bfc47455e9040fd43ff336d43da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1924e4b7fc40000001</sys_recorded_at>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-10-02 17:33:43</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>21fa9bfc6c455e90429bacebe7b918da</update_guid>
+        <update_guid_history>21fa9bfc6c455e90429bacebe7b918da:103076822,9833a2b92fa2b190c77d6060de449996:436069469,9de022f1f0a2b190493d4f6821899403:-1035973447,497f1a3d5d62b1908d60fe4265e959f6:769344944,ab0c9e75c862b190f9a375da69a4393d:-833089792</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-10-02 17:36:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>082483aa8f1a4fa780627558bca70aa1</sys_id>
+        <sys_metadata>9d6bdab9db62b19040eae46b139619ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Complete Telco Order State</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="NSPro Tasks">0a5d8bc2db1dbd1040eae46b139619f0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_script_9d6bdab9db62b19040eae46b139619ff</sys_update_name>
+        <sys_update_version display_value="sys_script_9d6bdab9db62b19040eae46b139619ff">2dfa9bfc47455e9040fd43ff336d43da</sys_update_version>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-10-02 17:36:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
