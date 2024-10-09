@@ -171,7 +171,7 @@
         <update_guid_history>a5052bc184cc5210cbbb9730e1d96af1:-649828379,3774e381ffcc5210b159cfdbcdc568e6:-1916209858</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 08/15/2024 09:53:05">252c53514740161040fd43ff336d43c4</sys_audit_delete>
+        <sys_audit_delete display_value="Record deleted 08/15/2024 08:53:05">252c53514740161040fd43ff336d43c4</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-08-15 13:53:05</sys_created_on>
