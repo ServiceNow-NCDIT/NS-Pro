@@ -46,6 +46,7 @@
                 <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Gateway IP Address" max_length="15" name="gateway_ip_address" type="ip_addr"/>
         <element label="PE Host Circuit ID" max_length="32" name="pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element label="Interface Subnet Mask" max_length="40" name="interface_subnet_mask" type="string"/>
         <element label="Network Gear" max_length="32" name="network_gear" reference="cmdb_ci_netgear" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>

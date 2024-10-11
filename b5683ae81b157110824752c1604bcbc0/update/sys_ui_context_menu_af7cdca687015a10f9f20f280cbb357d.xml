@@ -10,16 +10,24 @@
  *    'g_sysId' the sys_id of the row or form that the script is running against
  *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
  */
+
+var nsProTaskMain;
+
+nsProTaskMain = parent.top.window.gsft_main;
+
 assignPortToLocalCircuit();
 
 function assignPortToLocalCircuit() {
-    var formTitle = "Assign Port to Local Circuit " + g_form.getValue('name');
-    var site = g_form.getValue('x_g_sonc_ns_pro_site');
-    var localCircuitID = g_form.getUniqueValue();
+    var formTitle = "Assign Port to Local Circuit " + nsProTaskMain.g_form.getValue('name');
+    var site = nsProTaskMain.g_form.getValue('x_g_sonc_ns_pro_site');
+    var localCircuitID = nsProTaskMain.g_form.getUniqueValue();
 
     var gmf = new GlideModalForm(formTitle, 'x_g_sonc_ns_pro_port', formCompleted);
     gmf.addParm('sys_id', g_sysId);
+	gmf.addParm("sysparm_view", "assignporttocircuit");
+	gmf.addParm("sysparm_view_forced", true);
     gmf.setOnloadCallback(populateDefaults);
+	
  
     gmf.render();
 
@@ -29,7 +37,9 @@ function assignPortToLocalCircuit() {
         var d_form = iframeWindow.g_form;
         d_form.setValue('site', site);
         d_form.setValue('local_circuit_id', localCircuitID);
-
+		//jQuery("#dialog_frame")[0].contentWindow.jQuery("#page_timing_div").hide();
+		//jQuery(".modal-content").css("width", "100%").css("margin", "0 auto");
+		
     }
 
 
@@ -40,7 +50,7 @@ function assignPortToLocalCircuit() {
     }]]></action_script>
         <active>true</active>
         <comments/>
-        <condition>RP.getReferringURL().indexOf("cmdb_ci_network_circuit.do") !=-1 </condition>
+        <condition/>
         <do_not_cache>false</do_not_cache>
         <dynamic_actions_script><![CDATA[/** 
  * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
@@ -87,6 +97,8 @@ function canBeAssigned() {
     }
     if (assignable) {
         g_menu.setEnabled(g_item);
+        g_menu.setLabel(g_item, "<b>• Assign Port to Local Circuit •</b>");
+
     } else {
         g_menu.setDisabled(g_item);
     }
@@ -101,7 +113,7 @@ function canBeAssigned() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>af7cdca687015a10f9f20f280cbb357d</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>Assign Port to Local Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -109,7 +121,7 @@ function canBeAssigned() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_af7cdca687015a10f9f20f280cbb357d</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-09 09:51:14</sys_updated_on>
+        <sys_updated_on>2024-10-11 11:07:46</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <track_selected>false</track_selected>
         <type>action</type>

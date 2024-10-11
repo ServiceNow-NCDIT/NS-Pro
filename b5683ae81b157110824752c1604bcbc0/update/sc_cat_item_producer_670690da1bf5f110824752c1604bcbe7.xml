@@ -3,7 +3,7 @@
         <access_type>restricted</access_type>
         <active>true</active>
         <allow_edit>false</allow_edit>
-        <availability>on_desktop</availability>
+        <availability>on_both</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
         <category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</category>
@@ -13,7 +13,7 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description><![CDATA[<p><span style="font-size: 14pt;">Use this form to request DIT Sites from Network Operations. You will need to enter a site name, point of contact and location for a new site.</span></p>]]></description>
+        <description><![CDATA[<p><span style="font-size: 14pt;">Use this form to request DIT Sites from Network Operations. You will need to enter a site name, point of contacts (primary and secondary) and location for a new site.</span></p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
         <flow_designer_flow/>
@@ -67,7 +67,7 @@
 current.special_instructions = producer.comments_instructions;
 current.assignment_group = '0355cd0ddb98630065fbf482ba96196f'; // Network Operations
 //current.requested_for = producer.requested_for;
-
+//Comments to force a change to re-publish
 // redirects - https://docs.servicenow.com/bundle/sandiego-servicenow-platform/page/product/service-catalog-management/concept/c_PopulatingRecordData.html
 producer.redirect = '/nspro';
 producer.portal_redirect = '/nspro';]]></script>
@@ -79,14 +79,14 @@ producer.portal_redirect = '/nspro';]]></script>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-12 09:29:06</sys_created_on>
         <sys_id>670690da1bf5f110824752c1604bcbe7</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>71</sys_mod_count>
         <sys_name>Request New Site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_producer_670690da1bf5f110824752c1604bcbe7</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-09-12 13:50:33</sys_updated_on>
+        <sys_updated_on>2024-10-10 19:53:29</sys_updated_on>
         <table_name>x_g_sonc_ns_pro_telco_order</table_name>
         <taxonomy_topic/>
         <template/>
@@ -96,7 +96,7 @@ producer.portal_redirect = '/nspro';]]></script>
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>58</version>
+        <version>62</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

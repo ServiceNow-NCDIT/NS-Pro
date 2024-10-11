@@ -10,25 +10,27 @@
  *    'g_sysId' the sys_id of the row or form that the script is running against
  *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
  */
-//alert("Decomm Clicked");
+var nsProTaskMain;
 
+nsProTaskMain = parent.top.window.gsft_main;
 assignHostPortToSite();
 
 function assignHostPortToSite() {
-    var taskInformation;
+    // var taskInformation;
 	var site;
-    if (g_scratchpad.taskInformation) {
-        taskInformation = g_scratchpad.taskInformation;
-		site = taskInformation.site;
-    }
+    // if (g_scratchpad.taskInformation) {
+    //     taskInformation = g_scratchpad.taskInformation;
+	// 	site = taskInformation.site;
+    // }
+	site = nsProTaskMain.g_form.getValue('site');
 
+	//alert(site);
     var formTitle = "Assign Port";
 
     var gmf = new GlideModalForm(formTitle, 'x_g_sonc_ns_pro_port');
     gmf.addParm('sys_id', g_sysId);
-    if (taskInformation) {
-        gmf.setOnloadCallback(populateDefaults);
-    }
+    gmf.setOnloadCallback(populateDefaults);
+
     gmf.render();
 
     function populateDefaults(modalForm) {
@@ -36,6 +38,7 @@ function assignHostPortToSite() {
         var iframeWindow = iframe.contentWindow ? iframe.contentWindow : iframe.contentDocument.defaultView;
         var d_form = iframeWindow.g_form;
         d_form.setValue('site', site);
+//		jQuery(".modal-content").css("width", "95%").css("margin", "0 auto");
     }
     // var selectedHostCircuitName = g_form.getValue('name');
     // var selectedHostCircuitSysId = g_form.getUniqueValue();
@@ -47,7 +50,7 @@ function assignHostPortToSite() {
 }]]></action_script>
         <active>true</active>
         <comments/>
-        <condition> RP.isRelatedList() == false </condition>
+        <condition/>
         <do_not_cache>false</do_not_cache>
         <dynamic_actions_script><![CDATA[/** 
  * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
@@ -79,22 +82,31 @@ function assignHostPortToSite() {
 canBeAssigned();
 
 function canBeAssigned() {
-	//alert(g_list.getView());
+    //alert(g_list.getView());
     var assignable = false;
     var selectedRecord = g_sysId;
-    var hostCircuitPort = new GlideRecord('x_g_sonc_ns_pro_port');
-    if (hostCircuitPort.get(selectedRecord)) {
-        if ((hostCircuitPort.getValue('install_status') == "4" || hostCircuitPort.getValue('install_status') == "1" ) && hostCircuit.getValue('pe_host_circuit_id') != null) {
-            if (g_list.getView() == 'selectavailableportshost') {
-                assignable = true;
-            } else {
-				assignable = false;
-			}
+    //var hostCircuitPort = new GlideRecord('x_g_sonc_ns_pro_port');
+    // if (hostCircuitPort.get(selectedRecord)) {
+    //     if ((hostCircuitPort.getValue('install_status') == "4" || hostCircuitPort.getValue('install_status') == "1" ) && hostCircuit.getValue('pe_host_circuit_id') != null) {
+    //         if (g_list.getView() == 'selectavailableportshost' && g_list.getView() != 'selectavailableportscircuit') {
+    //             assignable = true;
+    //         } else {
+    // 			assignable = false;
+    // 		}
 
-        }
+    //     }
+    // }
+
+    if (g_list.getView() == 'selectavailableportshost' && g_list.getView() != 'selectavailableportscircuit') {
+        assignable = true;
+    } else {
+        assignable = false;
     }
+
+    //alert(assignable);
     if (assignable) {
         g_menu.setEnabled(g_item);
+		g_menu.setLabel(g_item, "<b>• Assign Host Port •</b>");
     } else {
         g_menu.setDisabled(g_item);
     }
@@ -109,7 +121,7 @@ function canBeAssigned() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d727d2cd8730da10f9f20f280cbb350a</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name>Assign Host Port</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -117,7 +129,7 @@ function canBeAssigned() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_d727d2cd8730da10f9f20f280cbb350a</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-09 09:54:15</sys_updated_on>
+        <sys_updated_on>2024-10-11 12:03:18</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <track_selected>false</track_selected>
         <type>action</type>

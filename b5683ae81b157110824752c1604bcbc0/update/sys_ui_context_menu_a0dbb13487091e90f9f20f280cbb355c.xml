@@ -10,31 +10,36 @@
  *    'g_sysId' the sys_id of the row or form that the script is running against
  *    'rowSysId' is also set to the sys_id of the row to support legacy actions, but g_sysId is preferred
  */
+var nsProTaskMain;
+
+nsProTaskMain = parent.top.window.gsft_main;
+
+
 getSelectedHostCircuit();
 
 function getSelectedHostCircuit() {
     var rowSysID = g_sysId;
-	//alert(rowSysID);
+    //alert(rowSysID);
     var hostCircuit = new GlideAjax('x_g_sonc_ns_pro.circuit_ajax');
     hostCircuit.addParam('sysparm_name', 'getHostCircuitInformation');
     hostCircuit.addParam('sysparm_rowSysID', rowSysID);
     hostCircuit.getXMLAnswer(getResponse);
 
     function getResponse(response) {
-		//alert(response);
+        //alert(response);
         var responseObj = JSON.parse(response);
         if (responseObj.resultCode == 'success') {
-            var telcoTab = g_tabs2Sections.findTabIndex('telco_provider');
-            g_tabs2Sections.setActive(telcoTab);
-            g_form.setValue('assigned_pop', responseObj.pop);
-            g_form.setValue('assigned_pe', responseObj.pe_router_dv);
-            g_form.setValue('assigned_pe_port', responseObj.x_g_sonc_ns_pro_pop_pe_interface);
-			g_form.setValue('circuit',responseObj.hostCirSysID);
-			g_form.setValue('provisioning_state',2);
+            var telcoTab = nsProTaskMain.g_tabs2Sections.findTabIndex('telco_provider');
+            nsProTaskMain.g_tabs2Sections.setActive(telcoTab);
+            nsProTaskMain.g_form.setValue('assigned_pop', responseObj.pop);
+            nsProTaskMain.g_form.setValue('assigned_pe', responseObj.pe_router_dv);
+            nsProTaskMain.g_form.setValue('assigned_pe_port', responseObj.x_g_sonc_ns_pro_pop_pe_interface);
+            nsProTaskMain.g_form.setValue('circuit', responseObj.hostCirSysID);
+            nsProTaskMain.g_form.setValue('provisioning_state', 2);
         } else {
             gs.addErrorMessage(response.message);
         }
-        gsftSubmit(null, g_form.getFormElement(), 'sysverb_update_and_stay');
+        gsftSubmit(null, nsProTaskMain.g_form.getFormElement(), 'sysverb_update_and_stay');
     }
 
 
@@ -43,7 +48,7 @@ function getSelectedHostCircuit() {
 }]]></action_script>
         <active>true</active>
         <comments/>
-        <condition>RP.getReferringURL().indexOf("x_g_sonc_ns_pro_nspro_tasks.do")!= -1</condition>
+        <condition/>
         <do_not_cache>false</do_not_cache>
         <dynamic_actions_script><![CDATA[/** 
  * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
@@ -60,23 +65,21 @@ function getSelectedHostCircuit() {
 ]]></dynamic_actions_script>
         <menu>list_row</menu>
         <name>Select Host Circuit</name>
-        <on_show_script><![CDATA[/**
- * This client-side script is used to dynamically change the context menu before it is displayed.
- * It is called before showing the context menu if the Run onShow script flag is checked.
- *
- * The following variables are available to the script:
- *    'g_menu' the context menu that is about to be shown
- *    'g_item' the current context menu item
- *    'g_list' the GlideList2 that the script is running against (only valid for List context menus)
- *    'g_fieldName' the name of the field that the context menu is running against (only valid for List context menus)
- *    'g_fieldLabel' the label of the field that the context menu is running against (only valid for List context menus)
- *    'g_sysId' the sys_id of the row or form that the script is running against
- */
- canBeAssinged();
- function canBeAssinged(){
-	answer = true;
- }
-]]></on_show_script>
+        <on_show_script><![CDATA[canBeAssinged();
+function canBeAssinged() {
+    var answer = false;
+	//alert(g_list.getView());
+    if (g_list.getView() == 'selecthostcircuit') {
+        answer = true;
+    }
+	
+    if (answer) {
+        g_menu.setEnabled(g_item);
+        g_menu.setLabel(g_item, "<b>• Select Host Circuit •</b>");
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+}]]></on_show_script>
         <order>10</order>
         <parent/>
         <run_on_show_script>true</run_on_show_script>
@@ -86,7 +89,7 @@ function getSelectedHostCircuit() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a0dbb13487091e90f9f20f280cbb355c</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Select Host Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -94,7 +97,7 @@ function getSelectedHostCircuit() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_a0dbb13487091e90f9f20f280cbb355c</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-02 13:20:57</sys_updated_on>
+        <sys_updated_on>2024-10-11 11:10:31</sys_updated_on>
         <table>x_g_sonc_ns_pro_st_host_circuit_selection</table>
         <track_selected>false</track_selected>
         <type>action</type>

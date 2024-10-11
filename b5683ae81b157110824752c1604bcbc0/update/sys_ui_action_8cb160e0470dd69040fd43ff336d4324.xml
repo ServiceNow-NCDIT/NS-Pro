@@ -81,34 +81,69 @@
 
                 //Submit to the back-end
                 if (thisButton == 'OK') {
+					var url;
                     if (thisAction == "suggestedTelcoList") {
                         
+						var parmSysID = g_form.getUniqueValue()
                         var zip = g_scratchpad.taskInformation.siteZipCode;
+						
                         var serviceCategory = g_form.getValue('network_service_category');
                         var parmFixedQuery = 'zipSTARTSWITH' + zip + '^service_category=' + serviceCategory + '^telco_provider!=NULL^ORDERBYpriority';
-                        var telcoZipW = new GlideModal('show_list');
-                        telcoZipW.setTitle("Right Click to Select Desired Telco");
-                        telcoZipW.setPreference('table', 'x_g_sonc_ns_pro_telco_selection_by_zip_list');
-                        telcoZipW.setPreference('sysparm_fixed_query', parmFixedQuery);
-                        telcoZipW.setPreference('focusTrap', true);
-                        telcoZipW.setSize(2000, 600);
-						telcoZipW.setPreference('sysparm_view_forced', true);
-                        telcoZipW.setPreference('sysparm_view', 'nspro_selecttelco');
-                        telcoZipW.setPreference('sysparm_sys_id', g_form.getUniqueValue());
+
+
+                        url = new GlideURL("x_g_sonc_ns_pro_telco_selection_by_zip_list.do");
+                        url.addParam("sysparm_fixed_query", parmFixedQuery);
+                        url.addParam("sysparm_view", "nspro_selecttelco");
+                        url.addParam("sysparm_view_forced", true);
+
+						//alert(url.getURL());
+                        var telcoZipW = new GlideOverlay({
+                            title: getMessage("Right Click to Select Desired Telco"),
+                            iframe: url.getURL(),
+                            draggable: true,
+                            allowOverflowX: true,
+                            scroll: true,
+                            height: "70%",
+                            width: "90%",
+                            closeOnEscape: true,
+                            //onAfterLoad: resizeIframe,
+                            onAfterClose: function() {
+                                location.reload();
+
+                            }
+                        });
+
+                        telcoZipW.setPreference('sysparm_sys_id', parmSysID);
 
                         telcoZipW.render();
 
                     } else if (thisAction == "selectManualFromAllActive") {
+
+						var taskSysID = g_form.getUniqueValue();
                         var telcoAllparmFixedQuery = 'install_status=1^ORDERBYname';
-                        var telcoAllW = new GlideModal('show_list');
-                        telcoAllW.setTitle("Right Click to Select Desired Telco");
-                        telcoAllW.setPreference('table', 'x_g_sonc_ns_pro_telco_provider_list');
-						telcoAllW.setPreference('sysparm_view_forced',true);
-						telcoAllW.setPreference('sysparm_view','assigntelcoprovider');
-                        telcoAllW.setPreference('sysparm_query', telcoAllparmFixedQuery);
-                        telcoAllW.setPreference('focusTrap', true);
-                        telcoAllW.setSize(2000, 600);
-                        telcoAllW.setPreference('sysparm_taskSysID', g_form.getUniqueValue())
+
+                        url = new GlideURL("x_g_sonc_ns_pro_telco_provider_list.do");
+                        url.addParam("sysparm_fixed_query", telcoAllparmFixedQuery);
+                        url.addParam("sysparm_view", "assigntelcoprovider");
+                        url.addParam("sysparm_view_forced", true);
+
+                        var telcoAllW = new GlideOverlay({
+                            title: getMessage("Right Click to Select Desired Telco"),
+                            iframe: url.getURL(),
+                            draggable: true,
+                            allowOverflowX: true,
+                            scroll: true,
+                            height: "70%",
+                            width: "90%",
+                            closeOnEscape: true,
+                            //onAfterLoad: resizeIframe,
+                            onAfterClose: function() {
+                                location.reload();
+
+                            }
+                        });
+
+                        telcoAllW.setPreference('sysparm_taskSysID', taskSysID);
 						telcoAllW.render();
 
                     } else {
@@ -141,7 +176,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8cb160e0470dd69040fd43ff336d4324</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>Select Telco</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -149,7 +184,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_8cb160e0470dd69040fd43ff336d4324</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-08 22:32:42</sys_updated_on>
+        <sys_updated_on>2024-10-10 17:37:03</sys_updated_on>
         <table>x_g_sonc_ns_pro_telco_provider</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -19,14 +19,31 @@
     g_form.setSectionDisplay('telco_info', true);
     g_form.setSectionDisplay('telco_response', true);
     g_form.setSectionDisplay('cpe_info', true);
-
+	g_form.setVisible('network_service_category',true);
+	g_form.setVisible('network_service_subcategory',true);
+	g_form.setVisible('pri_sec_circuit',true);
+	g_form.setVisible('field_services_message',true);
+	g_form.showRelatedList("REL:99067d2487455a90f9f20f280cbb35dd");
+	g_form.showRelatedList("REL:8f576281c3100200e280dccdf3d3aed8");
+	g_form.showRelatedList("REL:49759ddd470192d040fd43ff336d4392");
+	g_form.showRelatedList("REL:f677d2e247895a1040fd43ff336d4391");
+	g_form.showRelatedList("REL:a217747e4709da1040fd43ff336d4303");
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
     g_form.setSectionDisplay('request_info', false);
     g_form.setSectionDisplay('telco_info', false);
     g_form.setSectionDisplay('telco_response', false);
     g_form.setSectionDisplay('cpe_info', false);
-}]]></script_true>
+	g_form.setVisible('network_service_category',false);
+	g_form.setVisible('network_service_subcategory',false);
+	g_form.setVisible('pri_sec_circuit',false);
+	g_form.setVisible('field_services_message',false);
+	g_form.hideRelatedList("REL:99067d2487455a90f9f20f280cbb35dd");
+	g_form.hideRelatedList("REL:8f576281c3100200e280dccdf3d3aed8");
+	g_form.hideRelatedList("REL:49759ddd470192d040fd43ff336d4392");
+	g_form.hideRelatedList("REL:f677d2e247895a1040fd43ff336d4391");
+	g_form.hideRelatedList("REL:a217747e4709da1040fd43ff336d4303");
+}	]]></script_true>
         <set_values/>
         <short_description>Hide NetOps Sections when other than provisioning tasks</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
@@ -35,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1ad049dc87c55690f9f20f280cbb353a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Hide NetOps Sections when other than provisioning tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -43,7 +60,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_policy_1ad049dc87c55690f9f20f280cbb353a</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-02 18:50:30</sys_updated_on>
+        <sys_updated_on>2024-10-10 18:24:57</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ui_type>0</ui_type>
         <view/>

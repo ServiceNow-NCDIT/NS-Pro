@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>sys_verb_update_and_stay</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Assign Host Ports</comments>
+        <condition>RP.isRelatedList() &amp;&amp; RP.getReferringURL().indexOf("cmdb_ci_network_circuit.do")!= -1</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style>destructive</list_style>
+        <messages/>
+        <name>Assign Host Ports</name>
+        <onclick>openPortsList()</onclick>
+        <order>100</order>
+        <script><![CDATA[function openPortsList() {
+
+    var selectedHostCircuit = g_form.getValue('x_g_sonc_ns_pro_pe_host_circuit_id');
+    var selectedTelcoProvider = g_form.getValue('x_g_sonc_ns_pro_telco_provider', );
+    var selectedHostCircuitName = g_form.getValue('x_g_sonc_ns_pro_pe_host_circuit_id');
+    var selectedLocalCircuitName = g_form.getValue('name');
+    var selectedLocalCircuitSysID = g_form.getUniqueValue();
+    var localCircuitInfo = {};
+    localCircuitInfo.selectedLocalCircuitName = selectedLocalCircuitName;
+    localCircuitInfo.selectedTelcoProvider = selectedTelcoProvider;
+    localCircuitInfo.selectedHostCircuitSysId = selectedHostCircuit;
+    g_scratchpad.localCircuitInfo = localCircuitInfo;
+    var parmFixedQuery = "siteISEMPTY^install_statusIN1,4^pe_host_circuit_id=" + selectedHostCircuit;
+
+    var url;
+    url = new GlideURL("x_g_sonc_ns_pro_port_list.do");
+    url.addParam("sysparm_fixed_query", parmFixedQuery);
+    url.addParam("sysparm_view", "selectavailableportscircuit");
+    url.addParam("sysparm_view_forced", true);
+
+
+    var portListW = new GlideOverlay({
+        title: getMessage('Select Ports to Assign to Local Circuit ' + selectedLocalCircuitName),
+        iframe: url.getURL(),
+        draggable: true,
+        allowOverflowX: true,
+        scroll: true,
+        height: "70%",
+        width: "90%",
+        closeOnEscape: true,
+        //onAfterLoad: resizeIframe,
+        onAfterClose: function() {
+            location.reload();
+
+        }
+    });
+
+
+//     var w = new GlideModal('show_list');
+//    w.setTitle('Select Ports to Assign to Local Circuit ' + selectedLocalCircuitName);
+//    w.setPreference('table', 'x_g_sonc_ns_pro_port_list');
+//    w.setWidth(750);
+//    w.setPreference('sysparm_sys_id', selectedHostCircuit);
+//    w.setPreference('sysparm_view_forced', true);
+//    w.setPreference('sysparm_view', 'selectavailableportscircuit');
+//    // //w.setPreference('sysparm_force_row_count',20);
+//    w.setPreference('sysparm_fixed_query', parmFixedQuery);
+//    // //w.setPreference('onTableLoad',function(){g_list.setRowsPerPage(20);g_list.refresh();});
+//    // //w.setPreference('onRefresh',function(){g_list.setRowsPerPage(20);});
+//    //w.setPreference.setPreference('onPromptCancel', onPromptCancel);
+//    w.setPreference('focusTrap', true);
+	portListW.setPreference('sysparm_sys_id', selectedHostCircuit);
+    portListW.render();
+    g_list.refresh(1);
+    //w.destroy();
+
+
+
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-10 20:06:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7ba856f870d9610f9f20f280cbb350d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Assign Host Ports</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_action_d7ba856f870d9610f9f20f280cbb350d</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-11 10:55:51</sys_updated_on>
+        <table>x_g_sonc_ns_pro_port</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

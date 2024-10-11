@@ -44,21 +44,50 @@
 	taskInformation.selectedTaskID = selectedTaskID;
 	g_scratchpad.taskInformation = taskInformation;
 	var parmFixedQuery = "siteISEMPTY^install_statusIN1,4^pe_host_circuit_id=" + selectedHostCircuit;
-    var w = new GlideModal('show_list');
-    w.setTitle('Select Host Ports to Assign to Site: ' + selectedSiteIdentifier);
-    w.setPreference('table', 'x_g_sonc_ns_pro_port_list');
-    w.setWidth(750);
-    w.setPreference('sysparm_sys_id', selectedHostCircuit);
-	w.setPreference('sysparm_view_forced', true);
-    w.setPreference('sysparm_view', 'selectavailableportshost');
-    // //w.setPreference('sysparm_force_row_count',20);
-    w.setPreference('sysparm_fixed_query', parmFixedQuery);
-    // //w.setPreference('onTableLoad',function(){g_list.setRowsPerPage(20);g_list.refresh();});
-    // //w.setPreference('onRefresh',function(){g_list.setRowsPerPage(20);});
-	//w.setPreference.setPreference('onPromptCancel', onPromptCancel);
-    w.setPreference('focusTrap', true);
 
-    w.render();
+
+    var url;
+    url = new GlideURL("x_g_sonc_ns_pro_port_list.do");
+    url.addParam("sysparm_fixed_query", parmFixedQuery);
+    url.addParam("sysparm_view", "selectavailableportshost");
+    url.addParam("sysparm_view_forced", true);
+
+
+    var portListW = new GlideOverlay({
+        title: getMessage('Select Host Ports to Assign to Site: ' + selectedSiteIdentifier),
+        iframe: url.getURL(),
+        draggable: true,
+        allowOverflowX: true,
+        scroll: true,
+        height: "70%",
+        width: "90%",
+        closeOnEscape: true,
+        //onAfterLoad: resizeIframe,
+        onAfterClose: function() {
+            location.reload();
+
+        }
+    });
+
+	portListW.setPreference('sysparm_sys_id', selectedHostCircuit);
+
+
+
+    // var w = new GlideModal('show_list');
+    // w.setTitle('Select Host Ports to Assign to Site: ' + selectedSiteIdentifier);
+    // w.setPreference('table', 'x_g_sonc_ns_pro_port_list');
+    // w.setWidth(750);
+    // w.setPreference('sysparm_sys_id', selectedHostCircuit);
+	// w.setPreference('sysparm_view_forced', true);
+    // w.setPreference('sysparm_view', 'selectavailableportshost');
+    // // //w.setPreference('sysparm_force_row_count',20);
+    // w.setPreference('sysparm_fixed_query', parmFixedQuery);
+    // // //w.setPreference('onTableLoad',function(){g_list.setRowsPerPage(20);g_list.refresh();});
+    // // //w.setPreference('onRefresh',function(){g_list.setRowsPerPage(20);});
+	// //w.setPreference.setPreference('onPromptCancel', onPromptCancel);
+    // w.setPreference('focusTrap', true);
+
+    portListW.render();
 	g_list.refresh(1);
 	//w.destroy();
 
@@ -75,7 +104,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5fbad6e687899a10f9f20f280cbb3552</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Assign Available Host Ports</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -83,7 +112,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_5fbad6e687899a10f9f20f280cbb3552</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-09 09:43:01</sys_updated_on>
+        <sys_updated_on>2024-10-11 11:53:06</sys_updated_on>
         <table>x_g_sonc_ns_pro_st_host_circuits_with_capacity</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
