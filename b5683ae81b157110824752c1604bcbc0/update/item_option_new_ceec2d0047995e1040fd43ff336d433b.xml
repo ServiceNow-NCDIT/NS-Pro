@@ -21,11 +21,11 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>relocate_site</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
-        <hidden>true</hidden>
+        <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -38,16 +38,16 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>relocate_site</name>
-        <order>1600</order>
+        <name>formatter10</name>
+        <order>3200</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Relocation Site</question_text>
+        <question_text/>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -55,8 +55,8 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_g_sonc_ns_pro_telco_order</record_producer_table>
-        <reference>cmdb_ci_site</reference>
-        <reference_qual>javascript:'x_g_sonc_ns_pro_active=true^location='+current.variables.relocate_location</reference_qual>
+        <reference/>
+        <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -75,23 +75,23 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-03-18 20:51:55</sys_created_on>
-        <sys_id>27827a131bf17d10824752c1604bcb3d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Relocation Site</sys_name>
-        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_created_on>2024-10-12 11:53:08</sys_created_on>
+        <sys_id>ceec2d0047995e1040fd43ff336d433b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>formatter10</sys_name>
+        <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name>item_option_new_27827a131bf17d10824752c1604bcb3d</sys_update_name>
+        <sys_update_name>item_option_new_ceec2d0047995e1040fd43ff336d433b</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-10-12 11:59:10</sys_updated_on>
+        <sys_updated_on>2024-10-12 11:59:15</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>8</type>
+        <type>24</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
@@ -103,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=27827a131bf17d10824752c1604bcb3d"/>
-    <fx_price action="delete_multiple" query="id=27827a131bf17d10824752c1604bcb3d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=ceec2d0047995e1040fd43ff336d433b"/>
+    <fx_price action="delete_multiple" query="id=ceec2d0047995e1040fd43ff336d433b"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>27827a131bf17d10824752c1604bcb3d</id>
+        <id>ceec2d0047995e1040fd43ff336d433b</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-10-15 23:28:00</sys_created_on>
-        <sys_id>95d272571b357d10824752c1604bcbd2</sys_id>
+        <sys_created_on>2024-10-12 11:53:08</sys_created_on>
+        <sys_id>caec2d0047995e1040fd43ff336d433e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-15 23:28:00</sys_updated_on>
+        <sys_updated_on>2024-10-12 11:53:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -126,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>27827a131bf17d10824752c1604bcb3d</id>
+        <id>ceec2d0047995e1040fd43ff336d433b</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-10-15 23:28:00</sys_created_on>
-        <sys_id>99d272571b357d10824752c1604bcbc4</sys_id>
+        <sys_created_on>2024-10-12 11:53:08</sys_created_on>
+        <sys_id>82ec2d0047995e1040fd43ff336d433e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-15 23:28:00</sys_updated_on>
+        <sys_updated_on>2024-10-12 11:53:08</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
