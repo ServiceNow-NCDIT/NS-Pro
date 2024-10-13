@@ -7,7 +7,7 @@
         <applies_target_record>true</applies_target_record>
         <applies_to>item</applies_to>
         <catalog_conditions>IO:0fefdd5a1b713510824752c1604bcbea=true^EQ</catalog_conditions>
-        <catalog_item display_value="Request New Site">670690da1bf5f110824752c1604bcbe7</catalog_item>
+        <catalog_item/>
         <conditions/>
         <description/>
         <global>true</global>
