@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_g_sonc_ns_pro_telco_order">request_type=b4cd7d941bb57d90824752c1604bcbd4^EQ<item display_table="x_g_sonc_ns_pro_request_type" display_value="Relocate" endquery="false" field="request_type" goto="false" newquery="false" operator="=" or="false" value="b4cd7d941bb57d90824752c1604bcbd4"/>
+        <conditions table="x_g_sonc_ns_pro_nspro_tasks">telco_order.request_ha=true^EQ<item endquery="false" field="telco_order.request_ha" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -13,39 +13,31 @@
         <on_load>true</on_load>
         <order>100</order>
         <reverse_if_false>true</reverse_if_false>
-        <run_scripts>true</run_scripts>
+        <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {
-
-	g_form.setMandatory('relocate site', false);
-	g_form.setMandatory('relocate location', false);
-	g_form.setMandatory('acct_billing_code',false);
 
 }]]></script_false>
         <script_true><![CDATA[function onCondition() {
 
-	g_form.setMandatory('relocate site', true);
-	g_form.setMandatory('relocate location', true);
-	g_form.setMandatory('acct_billing_code',false);
-
 }]]></script_true>
         <set_values/>
-        <short_description>on Request Type == Relocate set new site, new location to mandatory</short_description>
+        <short_description>Hide Pri circuit is not ha</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-10-15 03:57:46</sys_created_on>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-14 22:17:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>0836a20b1b3db910824752c1604bcb49</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>on Request Type == Relocate set new site, new location to mandatory</sys_name>
+        <sys_id>39be0230871dd650f9f20f280cbb3517</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Pri circuit is not ha</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name>sys_ui_policy_0836a20b1b3db910824752c1604bcb49</sys_update_name>
+        <sys_update_name>sys_ui_policy_39be0230871dd650f9f20f280cbb3517</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-14 21:46:55</sys_updated_on>
-        <table>x_g_sonc_ns_pro_telco_order</table>
+        <sys_updated_on>2024-10-14 22:17:32</sys_updated_on>
+        <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ui_type>0</ui_type>
         <view/>
     </sys_ui_policy>

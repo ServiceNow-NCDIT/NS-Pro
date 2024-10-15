@@ -12,7 +12,7 @@
         <order/>
         <script><![CDATA[function onLoad() {
     var taskInformation = g_scratchpad.taskInformation;
-
+	
     var setSession = new GlideAjax('global.setSession');
     setSession.addParam('sysparm_name', 'setSessionVar');
     setSession.addParam('sysparm_json', JSON.stringify(taskInformation)); //Pass the object as a JSON string
@@ -23,6 +23,8 @@
             //This doesn't need to "do" anything but, to test, you could pass back a value
             return;
         });
+
+
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
@@ -30,7 +32,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ad94fd5a47f81e1040fd43ff336d436d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>onLoad loadTaskInformationToSession</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -38,7 +40,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_client_ad94fd5a47f81e1040fd43ff336d436d</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-26 09:43:40</sys_updated_on>
+        <sys_updated_on>2024-10-14 22:19:00</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

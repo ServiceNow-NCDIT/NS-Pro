@@ -68,7 +68,7 @@ function removePortsFromSite() {
 }]]></action_script>
         <active>true</active>
         <comments/>
-        <condition>RP.getReferringURL().indexOf("cmdb_ci_network_circuit.do")==-1</condition>
+        <condition>RP.getReferringURL().indexOf("cmdb_ci_network_circuit.do")==-1 </condition>
         <do_not_cache>false</do_not_cache>
         <dynamic_actions_script><![CDATA[/** 
  * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
@@ -105,7 +105,7 @@ function canBeUnAssigned() {
     //alert('sysid ' + selectedRecord);
     var hostCircuitPort = new GlideRecord('x_g_sonc_ns_pro_port');
     if (hostCircuitPort.get(selectedRecord)) {
-        if ((hostCircuitPort.getValue('install_status') == "4" || hostCircuitPort.getValue('install_status') == "1") && hostCircuitPort.getValue('site') != '' && hostCircuitPort.getValue('local_circuit_id') != '') {
+        if ((hostCircuitPort.getValue('install_status') == "4" || hostCircuitPort.getValue('install_status') == "1") && hostCircuitPort.getValue('site') != '' ) {
 
             unassignable = true;
 
@@ -129,7 +129,7 @@ function canBeUnAssigned() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c936a8b747895a1040fd43ff336d4385</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Un-Assign Port From Site</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -137,7 +137,7 @@ function canBeUnAssigned() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_c936a8b747895a1040fd43ff336d4385</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-11 12:47:44</sys_updated_on>
+        <sys_updated_on>2024-10-15 12:56:21</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <track_selected>false</track_selected>
         <type>action</type>
