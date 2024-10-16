@@ -19,12 +19,13 @@
 	
 	if (type_req == 'New Service') {
 		// set mandatory fields for new service request
-		g_form.setMandatory('wan_cpe_ports_required', true);
-		g_form.setMandatory('wan_circuit_type_jack', true);
+		//***Phase I */
+		//g_form.setMandatory('wan_cpe_ports_required', true);
+		//g_form.setMandatory('wan_circuit_type_jack', true);
 		g_form.setMandatory('assigned_wan_service', true);
 		g_form.setMandatory('network_service_category', true);
-		g_form.setMandatory('network_service_subcategory', true);
-		g_form.setMandatory('required_wan_cpe_count', true);
+		//g_form.setMandatory('network_service_subcategory', true);
+		//g_form.setMandatory('required_wan_cpe_count', true);
 	}
 
    var svc_def = g_form.getValue('assigned_wan_service');
@@ -63,15 +64,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d5a6c4c3db56b91040eae46b139619b1</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Load Form Defaults</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_client_d5a6c4c3db56b91040eae46b139619b1</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-01 12:09:01</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-16 12:43:20</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
