@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>telco_provider</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>onChangeTelcoProvider</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading) {
+        return;
+    }
+
+    if (oldValue != newValue) {
+		g_form.setValue('assigned_pop','');
+		g_form.setValue('assigned_pe','');
+		g_form.setValue('assigned_pe_port','');
+		g_form.setValue('circuit','');
+
+        var taskInformation = g_scratchpad.taskInformation;
+        var taskTelcoChange = new GlideAjax('x_g_sonc_ns_pro.nspro_task_ajax');
+        taskTelcoChange.addParam('sysparm_name', 'taskTelcoProviderChanged');
+        taskTelcoChange.addParam('sysparm_taskInformation', JSON.stringify(taskInformation));
+        taskTelcoChange.getXMLAnswer(getResponse);
+
+
+    }
+
+    function getResponse(response) {
+		//alert(response);
+        var responseObj = JSON.parse(response);
+		//alert(responseObj.resultCode);
+        if (responseObj.resultCode != 'success') {
+            g_form.addErrorMessage(response.message);
+			alert(response.message);
+        }
+		
+        GlideList2.get(g_form.getTableName() + '.REL:99067d2487455a90f9f20f280cbb35dd').setFilterAndRefresh('');
+        GlideList2.get(g_form.getTableName() + '.REL:8f576281c3100200e280dccdf3d3aed8').setFilterAndRefresh('');
+        GlideList2.get(g_form.getTableName() + '.REL:49759ddd470192d040fd43ff336d4392').setFilterAndRefresh('');
+        GlideList2.get(g_form.getTableName() + '.REL:f677d2e247895a1040fd43ff336d4391').setFilterAndRefresh('');
+        GlideList2.get(g_form.getTableName() + '.REL:a217747e4709da1040fd43ff336d4303').setFilterAndRefresh('');
+		location.reload();
+
+
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-18 17:47:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc3d65024751d69040fd43ff336d4359</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>onChangeTelcoProvider</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_client_fc3d65024751d69040fd43ff336d4359</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-18 19:32:27</sys_updated_on>
+        <table>x_g_sonc_ns_pro_nspro_tasks</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

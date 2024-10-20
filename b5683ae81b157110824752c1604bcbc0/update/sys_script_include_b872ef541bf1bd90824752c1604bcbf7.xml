@@ -33,7 +33,7 @@ core_nspro.prototype = {
 
     requiresJustification: function(need_by_date, created_on, request_type, change_type) {
 
-      //  gs.info('core_nspro().requiresJustification() \nneed_by_date = ' + need_by_date + '\ncreated_on = ' + created_on + '\nrequest_type = ' + request_type + '\nchange_type = ' + change_type);
+        //  gs.info('core_nspro().requiresJustification() \nneed_by_date = ' + need_by_date + '\ncreated_on = ' + created_on + '\nrequest_type = ' + request_type + '\nchange_type = ' + change_type);
 
         var lead_time = 120; // default to 120 days for new services, 45 for changes
         if (request_type == 'change') {
@@ -76,31 +76,43 @@ core_nspro.prototype = {
             return false;
         }
     },
-	requestHasProvisioningTasks(requestSysID){
-		hasProvisioning = false;
-		var nsTasks = new GlideRecord('x_g_sonc_ns_pro_nspro_tasks');
-		nsTasks.addQuery('telco_order',requestSysID);
-		nsTasks.addQuery('task_type','provisioning');
-		nsTasks.query();
-		if(nsTasks.next()){
-			hasProvisioning = true;
+    requestHasProvisioningTasks(requestSysID) {
+        hasProvisioning = false;
+        var nsTasks = new GlideRecord('x_g_sonc_ns_pro_nspro_tasks');
+        nsTasks.addQuery('telco_order', requestSysID);
+        nsTasks.addQuery('task_type', 'provisioning');
+        nsTasks.query();
+        if (nsTasks.next()) {
+            hasProvisioning = true;
+        }
+        return hasProvisioning;
+    },
+    getFunctionName: function(argumentsStr) {
+        var functionName = argumentsStr.substr('function '.length);
+        functionName = functionName.substr(0, functionName.indexOf('('));
+        return functionName;
+    },
+	getClassName: function(currentScopeID,callingType){
+		var className;
+		var grScope = new GlideRecord('sys_app');
+		if(grScope.get(currentScopeID)){
+			className = grScope.getValue('scope') + '.' + callingType;
 		}
-		return hasProvisioning;
+		return className;
 	},
-
     type: 'core_nspro'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-06 19:14:59</sys_created_on>
         <sys_id>b872ef541bf1bd90824752c1604bcbf7</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>127</sys_mod_count>
         <sys_name>core_nspro</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_b872ef541bf1bd90824752c1604bcbf7</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-30 19:07:29</sys_updated_on>
+        <sys_updated_on>2024-10-16 20:58:20</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -30,142 +30,187 @@
         <name>Select Telco</name>
         <onclick>selectionTelcoDialog()</onclick>
         <order>100</order>
-        <script><![CDATA[function selectionTelcoDialog() {
-    var modalName = "multiSelectAction";
-    var modalTitle = 'Select Telco';
-    var modalContent;
+        <script><![CDATA[ function selectionTelcoDialog() {
+     var taskInformation = g_scratchpad.taskInformation;
 
-    var contentObj = {};
-    contentObj.id = "selectTelcoMethod";
-    contentObj.title = "Select Telco From Selection List:";
+     var message = "Site has the following assignments: ";
+     var detailMessage = "";
+     var assignmentsMessage = "";
+     if (taskInformation.telco_provider) {
 
-    var options = [];
-    var option = {};
-    option.optionValue = "suggestedTelcoList";
-    option.optionText = "Select Suggested Telcos by Zip and Service Category";
-    options.push(option);
-    option = {};
-    option.optionValue = "selectManualFromAllActive";
-    option.optionText = "Select Telco from All Active";
-    options.push(option);
+         if (taskInformation.hasLocalCircuits) {
+             assignmentsMessage = "Local Circuits";
+             detailMessage = detailMessage + " Host Circuit Associations to Local Circuits will be removed and you will need to re-associate the local circuits to the newly selected host circuit. ";
+         }
+         if (taskInformation.hasPortAssignments) {
+             if (assignmentsMessage.length > 0) {
+                 assignmentsMessage = assignmentsMessage + ", Ports";
+                 detailMessage = detailMessage + " Assigned Host ports will be un-assigned from the site and removed from any local circuit associations."
+             } else {
+                 assignmentsMessage = assignmentsMessage + " Ports";
+             }
 
-    contentObj.options = options;
-
-    var modals = new GlideAjax('x_g_sonc_ns_pro.core_nspro_modals_ajax');
-    modals.addParam('sysparm_name', 'constructMultiSelectContent');
-    modals.addParam('sysparm_contentObjString', JSON.stringify(contentObj));
-    modals.getXMLAnswer(getResponse);
-
-    function getResponse(response) {
-        var answer = JSON.parse(response);
-        if (answer.status != 'success') {
-            alert("Error Occured " + answer.message);
-
-        } else {
-            modalContent = answer.message;
-            //alert(modalContent);
-            var gm = new GlideModal(modalName);
-            gm.setTitle(modalTitle);
-            gm.renderWithContent(modalContent);
-
-            top.window.multiActionCancel = function() {
-                gm.destroy();
-                return;
-            };
-
-            //We'll use the windows object to ensure our code is accessible from the modal dialog
-            top.window.multiActionSubmit = function(thisButton, thisAction) {
-
-                //Close the glide modal dialog window
-                gm.destroy();
-
-                //Submit to the back-end
-                if (thisButton == 'OK') {
-					var url;
-                    if (thisAction == "suggestedTelcoList") {
-                        
-						var parmSysID = g_form.getUniqueValue()
-                        var zip = g_scratchpad.taskInformation.siteZipCode;
-						
-                        var serviceCategory = g_form.getValue('network_service_category');
-                        var parmFixedQuery = 'zipSTARTSWITH' + zip + '^service_category=' + serviceCategory + '^telco_provider!=NULL^ORDERBYpriority';
+         }
 
 
-                        url = new GlideURL("x_g_sonc_ns_pro_telco_selection_by_zip_list.do");
-                        url.addParam("sysparm_fixed_query", parmFixedQuery);
-                        url.addParam("sysparm_view", "nspro_selecttelco");
-                        url.addParam("sysparm_view_forced", true);
+         message = message + assignmentsMessage;
+         message = message + ". If you select a new Telco the Host Circuit will be removed." + detailMessage;
+         var confGM = new GlideModal("glide_ask_standard", true, 600);
+         confGM.setTitle("Do You Want to Proceed?");
+         confGM.setPreference("title", message);
+         confGM.setPreference("warning", "true");
+         confGM.setPreference("onPromptComplete", function() {
+             continueSelection();
+         });
+         confGM.setPreference("onPromptCancel", function() {
+             return false;
+         });
+         confGM.render();
 
-						//alert(url.getURL());
-                        var telcoZipW = new GlideOverlay({
-                            title: getMessage("Right Click to Select Desired Telco"),
-                            iframe: url.getURL(),
-                            draggable: true,
-                            allowOverflowX: true,
-                            scroll: true,
-                            height: "70%",
-                            width: "90%",
-                            closeOnEscape: true,
-                            //onAfterLoad: resizeIframe,
-                            onAfterClose: function() {
-                                location.reload();
-
-                            }
-                        });
-
-                        telcoZipW.setPreference('sysparm_sys_id', parmSysID);
-
-                        telcoZipW.render();
-
-                    } else if (thisAction == "selectManualFromAllActive") {
-
-						var taskSysID = g_form.getUniqueValue();
-                        var telcoAllparmFixedQuery = 'install_status=1^ORDERBYname';
-
-                        url = new GlideURL("x_g_sonc_ns_pro_telco_provider_list.do");
-                        url.addParam("sysparm_fixed_query", telcoAllparmFixedQuery);
-                        url.addParam("sysparm_view", "assigntelcoprovider");
-                        url.addParam("sysparm_view_forced", true);
-
-                        var telcoAllW = new GlideOverlay({
-                            title: getMessage("Right Click to Select Desired Telco"),
-                            iframe: url.getURL(),
-                            draggable: true,
-                            allowOverflowX: true,
-                            scroll: true,
-                            height: "70%",
-                            width: "90%",
-                            closeOnEscape: true,
-                            //onAfterLoad: resizeIframe,
-                            onAfterClose: function() {
-                                location.reload();
-
-                            }
-                        });
-
-                        telcoAllW.setPreference('sysparm_taskSysID', taskSysID);
-						telcoAllW.render();
-
-                    } else {
-                        alert("You Chose " + thisAction);
-                        //g_form.setValue('state',7);//Closed Skipped -- will only close this task
-                    }
-                    //Regular ServiceNow form submission
-                    //gsftSubmit(null, g_form.getFormElement(), 'sysverb_update_and_stay');
-                }
-            };
+     } else {
+         continueSelection();
+     }
 
 
+     function continueSelection() {
+         var modalName = "multiSelectAction";
+         var modalTitle = 'Select Telco';
+         var modalContent;
+
+         var contentObj = {};
+         contentObj.id = "selectTelcoMethod";
+         contentObj.title = "Select Telco From Selection List:";
+
+         var options = [];
+         var option = {};
+         option.optionValue = "suggestedTelcoList";
+         option.optionText = "Select Suggested Telcos by Zip and Service Category";
+         options.push(option);
+         option = {};
+         option.optionValue = "selectManualFromAllActive";
+         option.optionText = "Select Telco from All Active";
+         options.push(option);
+
+         contentObj.options = options;
+
+         var modals = new GlideAjax('x_g_sonc_ns_pro.core_nspro_modals_ajax');
+         modals.addParam('sysparm_name', 'constructMultiSelectContent');
+         modals.addParam('sysparm_contentObjString', JSON.stringify(contentObj));
+         modals.getXMLAnswer(getResponse);
+
+         function getResponse(response) {
+             var answer = JSON.parse(response);
+             if (answer.status != 'success') {
+                 alert("Error Occured " + answer.message);
+
+             } else {
+                 modalContent = answer.message;
+                 //alert(modalContent);
+                 var gm = new GlideModal(modalName);
+                 gm.setTitle(modalTitle);
+                 gm.renderWithContent(modalContent);
+
+                 top.window.multiActionCancel = function() {
+                     gm.destroy();
+                     return;
+                 };
+
+                 //We'll use the windows object to ensure our code is accessible from the modal dialog
+                 top.window.multiActionSubmit = function(thisButton, thisAction) {
+
+                     //Close the glide modal dialog window
+                     gm.destroy();
+
+                     //Submit to the back-end
+                     if (thisButton == 'OK') {
+                         var url;
+                         if (thisAction == "suggestedTelcoList") {
+
+                             var parmSysID = g_form.getUniqueValue()
+                             var zip = g_scratchpad.taskInformation.siteZipCode;
+
+                             var serviceCategory = g_form.getValue('network_service_category');
+                             var parmFixedQuery = 'zipSTARTSWITH' + zip + '^service_category=' + serviceCategory + '^telco_provider!=NULL^ORDERBYpriority';
+
+
+                             url = new GlideURL("x_g_sonc_ns_pro_telco_selection_by_zip_list.do");
+                             url.addParam("sysparm_fixed_query", parmFixedQuery);
+                             url.addParam("sysparm_view", "nspro_selecttelco");
+                             url.addParam("sysparm_view_forced", true);
+
+                             //alert(url.getURL());
+                             var telcoZipW = new GlideOverlay({
+                                 title: getMessage("Right Click to Select Desired Telco"),
+                                 iframe: url.getURL(),
+                                 draggable: true,
+                                 allowOverflowX: true,
+                                 scroll: true,
+                                 height: "70%",
+                                 width: "90%",
+                                 closeOnEscape: true,
+                                 //onAfterLoad: resizeIframe,
+                                 onAfterClose: function() {
+                                     location.reload();
+
+                                 }
+                             });
+
+                             telcoZipW.setPreference('sysparm_sys_id', parmSysID);
+
+                             telcoZipW.render();
+
+                         } else if (thisAction == "selectManualFromAllActive") {
+
+                             var taskSysID = g_form.getUniqueValue();
+                             var telcoAllparmFixedQuery = 'install_status=1^ORDERBYname';
+
+                             url = new GlideURL("x_g_sonc_ns_pro_telco_provider_list.do");
+                             url.addParam("sysparm_fixed_query", telcoAllparmFixedQuery);
+                             url.addParam("sysparm_view", "assigntelcoprovider");
+                             url.addParam("sysparm_view_forced", true);
+
+                             var telcoAllW = new GlideOverlay({
+                                 title: getMessage("Right Click to Select Desired Telco"),
+                                 iframe: url.getURL(),
+                                 draggable: true,
+                                 allowOverflowX: true,
+                                 scroll: true,
+                                 height: "70%",
+                                 width: "90%",
+                                 closeOnEscape: true,
+                                 //onAfterLoad: resizeIframe,
+                                 onAfterClose: function() {
+                                     location.reload();
+
+
+                                 }
+                             });
+
+                             telcoAllW.setPreference('sysparm_taskSysID', taskSysID);
+                             telcoAllW.render();
+
+                         } else {
+                             alert("You Chose " + thisAction);
+                             //g_form.setValue('state',7);//Closed Skipped -- will only close this task
+                         }
+                         //Regular ServiceNow form submission
+                         //gsftSubmit(null, g_form.getFormElement(), 'sysverb_update_and_stay');
+                     }
+                 };
 
 
 
 
-            return false; //prevents the form from submitting when the dialog first loads
-        } // end of else response
-    }
 
 
-} //end selectionTelcoDialog()]]></script>
+                 return false; //prevents the form from submitting when the dialog first loads
+             } // end of else response
+         }
+
+
+     } //end selectionTelcoDialog()
+
+ }]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -176,7 +221,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8cb160e0470dd69040fd43ff336d4324</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>79</sys_mod_count>
         <sys_name>Select Telco</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -184,7 +229,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_8cb160e0470dd69040fd43ff336d4324</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-16 12:44:29</sys_updated_on>
+        <sys_updated_on>2024-10-18 18:42:27</sys_updated_on>
         <table>x_g_sonc_ns_pro_telco_provider</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

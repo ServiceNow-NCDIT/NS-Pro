@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.nspro_task</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>nspro_task</name>
+        <script><![CDATA[var nspro_task = Class.create();
+nspro_task.prototype = {
+    initialize: function() {
+        this.nsProCore = new x_g_sonc_ns_pro.core_nspro();
+        var currentScopeID = gs.getCurrentApplicationId();
+        var grScope = new GlideRecord('sys_app');
+        this.CLASSNAME = this.nsProCore.getClassName(currentScopeID, this.type);
+
+    },
+    _hasLocalCircuitAssignments(hostCirSysID, siteSysID) {
+        var hasLocalCircuits = false;
+        var localCircuits = new GlideRecord('cmdb_ci_network_circuit');
+        localCircuits.addQuery('x_g_sonc_ns_pro_host_ckt', false);
+        localCircuits.addQuery('x_g_sonc_ns_pro_pe_host_circuit_id', hostCirSysID);
+        localCircuits.addQuery('x_g_sonc_ns_pro_site', siteSysID);
+        localCircuits.setLimit(1);
+        localCircuits.query();
+
+        if (localCircuits.next()) {
+            hasLocalCircuits = true;
+        }
+        return hasLocalCircuits;
+
+    },
+    _hasPortAssignments: function(site, hostCir, localCir) {
+        var hasPortsAssigned = false;
+        var queryString = 'site=' + site;
+
+		if(hostCir){
+			queryString = queryString + '^pe_host_circuit_id=' + hostCir;
+		}
+		if(localCir){
+			queryString = queryString + '^local_circuit_id=' + localCir;
+		}
+
+		var portRecord = new GlideRecord('x_g_sonc_ns_pro_port');
+		portRecord.addEncodedQuery(queryString);
+		portRecord.setLimit(1);
+		portRecord.query();
+
+		if(portRecord.next()){
+			hasPortsAssigned = true;
+		}
+
+        return hasPortsAssigned;
+
+    },
+	_getLocalCircuitsList: function(site,hostCir){
+		var localCircuitArray = [];
+        var queryString = 'x_g_sonc_ns_pro_site=' + site + '^x_g_sonc_ns_pro_host_ckt=false';
+
+		if(hostCir){
+			queryString = queryString + '^x_g_sonc_ns_pro_pe_host_circuit_id=' + hostCir;
+		}
+
+        var localCircuits = new GlideRecord('cmdb_ci_network_circuit');
+		localCircuits.addEncodedQuery(queryString);
+		localCircuits.query();
+
+		while(localCircuits.next()){
+			localCircuitArray.push(localCircuits.getValue('sys_id')+'');
+		}
+
+		return localCircuitArray.join(',');
+
+	},
+	_getAssignedPortList: function(site, hostCir, localCir) {
+		var portsArray = [];
+        var queryString = 'site=' + site;
+
+		if(hostCir){
+			queryString = queryString + '^pe_host_circuit_id=' + hostCir;
+		}
+		if(localCir){
+			queryString = queryString + '^local_circuit_id=' + localCir;
+		}
+
+		var portRecord = new GlideRecord('x_g_sonc_ns_pro_port');
+		portRecord.addEncodedQuery(queryString);
+		portRecord.query();
+
+		while(portRecord.next()){
+			portsArray.push(portRecord.getValue('sys_id')+'');
+		}
+
+		return portsArray.join(',');
+	},
+    getTaskInformation: function(taskSysID) {
+        var errorString = '';
+        var response = {};
+
+        try {
+            var taskRecord = new GlideRecord('x_g_sonc_ns_pro_nspro_tasks');
+            if (taskRecord.get(taskSysID)) {
+                var circuit = taskRecord.getValue('circuit');
+                var site = taskRecord.getValue('site');
+				var requestedHA = false;
+				if(taskRecord.getElement('telco_order.request_ha').toString() == "true"){
+					requestedHA = true;
+				}
+                response.sys_id = taskRecord.getValue('sys_id');
+                response.number = taskRecord.getValue('number');
+                response.site = site;
+                response.telco_provider = taskRecord.getValue('telco_provider');
+                response.circuit = circuit;
+                response.hasLocalCircuits = this._hasLocalCircuitAssignments(circuit, site);
+                response.hasPortAssignments = this._hasPortAssignments(site,circuit);
+                response.requestedHA = requestedHA;
+				response.siteZipCode = taskRecord.getElement('location.zip').toString();
+
+
+            }
+			response.message = 'success';
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+			response.message = errorString;
+        }
+
+        return response;
+    },
+	taskTelcoProviderChanged: function(taskInformation){
+		var errorString = '';
+		var response = {};
+
+		try {
+			if(taskInformation.hasPortAssignments){
+				var ports = this._getAssignedPortList(taskInformation.site,taskInformation.circuit);
+				var nsProPort = new x_g_sonc_ns_pro.port();
+
+				var removePortResponse = nsProPort.removePortsFromSite(taskInformation.site,ports);
+				if(removePortResponse.message.startsWith('Error Occured ')){
+					throw new GenericException(removePortResponse.message);
+				}
+			}
+
+			if(taskInformation.hasLocalCircuits){
+				var localCircuits = this._getLocalCircuitsList(taskInformation.site,taskInformation.circuit);
+				gs.info("local circuits found " + localCircuits);
+				var nsProCircuit = new x_g_sonc_ns_pro.circuit();
+
+				var removeCircuitResponse = nsProCircuit.removeLocalCircuits(localCircuits);
+				if(removeCircuitResponse.message.startsWith('Error Occured ')){
+					throw new GenericException(removeCircuitResponse.message);
+				}
+			}
+			response.message = "Successfully removed associated items";
+
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+			response.message = errorString;
+        }
+
+        return response;
+
+
+
+	},	
+    type: 'nspro_task'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-16 20:07:20</sys_created_on>
+        <sys_id>9290cca187d5de50f9f20f280cbb35d4</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>nspro_task</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_9290cca187d5de50f9f20f280cbb35d4</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-18 19:19:12</sys_updated_on>
+    </sys_script_include>
+</record_update>

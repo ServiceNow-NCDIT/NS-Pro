@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_sonc_ns_pro.nspro_task_ajax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>nspro_task_ajax</name>
+        <script><![CDATA[var nspro_task_ajax = Class.create();
+nspro_task_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	taskTelcoProviderChanged: function(){
+		var taskInformation = this.getParameter('sysparm_taskInformation');
+		taskInformation = JSON.parse(taskInformation);
+		var nsProTask = new x_g_sonc_ns_pro.nspro_task();
+		var response = nsProTask.taskTelcoProviderChanged(taskInformation);
+
+        if (response.message.startsWith('Error Occured ')) {
+            response.resultCode = NSPROConstants.AJAX_RETURNCODES.FAILED;
+        } else {
+            response.resultCode = NSPROConstants.AJAX_RETURNCODES.SUCCESS;
+        }
+        return JSON.stringify(response);
+
+	},
+    type: 'nspro_task_ajax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-18 18:18:59</sys_created_on>
+        <sys_id>f8ae79868791d690f9f20f280cbb35b3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>nspro_task_ajax</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_include_f8ae79868791d690f9f20f280cbb35b3</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-18 18:31:22</sys_updated_on>
+    </sys_script_include>
+</record_update>

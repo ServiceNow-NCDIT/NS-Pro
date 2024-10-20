@@ -11,24 +11,25 @@
         <name>onLoadPopulateScratchPadFromSession</name>
         <order/>
         <script><![CDATA[function onLoad() {
+	// alert('loading');
     if (!g_scratchpad.taskInformation) {
-        if (g_user.getClientData('json')) {
-            //Take the string and convert it back to an object
-            var taskInformation = JSON.parse(g_user.getClientData('json'));
-            g_scratchpad.taskInformation = taskInformation;
-            var clearSession = new GlideAjax('global.setSession');
-            clearSession.addParam('sysparm_name', 'clearSessionVar');
-            clearSession.getXML(
+      if (g_user.getClientData('json')) {
+          //Take the string and convert it back to an object
+          var taskInformation = JSON.parse(g_user.getClientData('json'));
+          g_scratchpad.taskInformation = taskInformation;
+          var clearSession = new GlideAjax('global.setSession');
+          clearSession.addParam('sysparm_name', 'clearSessionVar');
+          clearSession.getXML(
 
-                function(response) {
-                    //no need for response
-                    return;
-                });
+              function(response) {
+                  //no need for response
+                  return;
+              });
 
-				
 
-        }
-    } 
+
+      }
+  }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
@@ -36,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>089eb15a477c1e1040fd43ff336d43d3</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>onLoadPopulateScratchPadFromSession</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -44,7 +45,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_client_089eb15a477c1e1040fd43ff336d43d3</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-24 19:55:02</sys_updated_on>
+        <sys_updated_on>2024-10-16 19:47:24</sys_updated_on>
         <table>cmdb_ci_network_circuit</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>
