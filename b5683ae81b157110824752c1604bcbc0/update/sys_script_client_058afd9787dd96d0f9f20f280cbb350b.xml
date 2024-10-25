@@ -28,12 +28,12 @@
     }
 
     function getResponse(response) {
-        alert(response);
+        //alert(response);
         var responseObj = JSON.parse(response);
         //alert(responseObj.resultCode);
         if (responseObj.resultCode != 'success') {
             g_form.addErrorMessage(response.message);
-            alert(response.message);
+           // alert(response.message);
         }
 
         GlideList2.get(g_form.getTableName() + '.REL:99067d2487455a90f9f20f280cbb35dd').setFilterAndRefresh('');
@@ -53,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>058afd9787dd96d0f9f20f280cbb350b</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>onChange Host Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_client_058afd9787dd96d0f9f20f280cbb350b</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-24 18:25:51</sys_updated_on>
+        <sys_updated_on>2024-10-25 17:15:36</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
