@@ -3,322 +3,336 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>0</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>cb84ef0787809a10f9f20f280cbb35d8</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>1477dcd047e5921440fd43ff336d4367</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_telco_provider</element>
             <position>1</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8784ef0787809a10f9f20f280cbb35d9</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>dc77dcd047e5921440fd43ff336d4367</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_telco_provider_order_number</element>
             <position>2</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0f84ef0787809a10f9f20f280cbb35d9</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5477dcd047e5921440fd43ff336d4368</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_telco_service_priority</element>
             <position>3</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8384ef0787809a10f9f20f280cbb35da</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d877dcd047e5921440fd43ff336d4368</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_circuit_speed</element>
             <position>4</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0b84ef0787809a10f9f20f280cbb35da</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5077dcd047e5921440fd43ff336d4369</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_cir</element>
             <position>5</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8f84ef0787809a10f9f20f280cbb35da</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d477dcd047e5921440fd43ff336d4369</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>ip_address</element>
             <position>6</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0784ef0787809a10f9f20f280cbb35db</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5c77dcd047e5921440fd43ff336d4369</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_subnet_mask</element>
             <position>7</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8b84ef0787809a10f9f20f280cbb35db</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d077dcd047e5921440fd43ff336d436a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_exip_address</element>
             <position>8</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0384ef0787809a10f9f20f280cbb35dc</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5877dcd047e5921440fd43ff336d436a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_host_ckt</element>
             <position>9</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8784ef0787809a10f9f20f280cbb35dc</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>dc77dcd047e5921440fd43ff336d436a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>vlan_id</element>
             <position>10</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0f84ef0787809a10f9f20f280cbb35dc</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5477dcd047e5921440fd43ff336d436b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>11</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8384ef0787809a10f9f20f280cbb35dd</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d877dcd047e5921440fd43ff336d436b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_site</element>
             <position>12</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0b84ef0787809a10f9f20f280cbb35dd</sys_id>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5077dcd047e5921440fd43ff336d436c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_network_request</element>
+            <position>13</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d477dcd047e5921440fd43ff336d436c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_circuit_type</element>
-            <position>13</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8f84ef0787809a10f9f20f280cbb35dd</sys_id>
+            <position>14</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5c77dcd047e5921440fd43ff336d436c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_pe_host_circuit_id</element>
-            <position>14</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0784ef0787809a10f9f20f280cbb35de</sys_id>
+            <position>15</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d077dcd047e5921440fd43ff336d436d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pe_host_circuit_id.x_g_sonc_ns_pro_host_ckt_type</element>
+            <position>16</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5877dcd047e5921440fd43ff336d436d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_dit_nsw22_pe_interface</element>
-            <position>15</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8b84ef0787809a10f9f20f280cbb35de</sys_id>
+            <position>17</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>dc77dcd047e5921440fd43ff336d436d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>install_status</element>
-            <position>16</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0384ef0787809a10f9f20f280cbb35df</sys_id>
+            <position>18</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5477dcd047e5921440fd43ff336d436e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>x_g_sonc_ns_pro_local_circuit</element>
-            <position>17</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8784ef0787809a10f9f20f280cbb35df</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_rmtdlci</element>
-            <position>18</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0f84ef0787809a10f9f20f280cbb35df</sys_id>
+            <position>19</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d877dcd047e5921440fd43ff336d436e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_host_ckt_type</element>
-            <position>19</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8384ef0787809a10f9f20f280cbb35e0</sys_id>
+            <position>20</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5077dcd047e5921440fd43ff336d436f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>inner_vlan</element>
-            <position>20</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0b84ef0787809a10f9f20f280cbb35e0</sys_id>
+            <position>21</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d477dcd047e5921440fd43ff336d436f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>outer_vlan</element>
-            <position>21</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>8f84ef0787809a10f9f20f280cbb35e0</sys_id>
+            <position>22</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>5c77dcd047e5921440fd43ff336d436f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_point_of_presence</element>
-            <position>22</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-08-21 00:59:09</sys_created_on>
-            <sys_id>0784ef0787809a10f9f20f280cbb35e1</sys_id>
+            <position>23</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 10:33:55</sys_created_on>
+            <sys_id>d077dcd047e5921440fd43ff336d4370</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">538b1f0287210e10f9f20f280cbb35cf</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-08-21 00:59:09</sys_updated_on>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 10:33:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

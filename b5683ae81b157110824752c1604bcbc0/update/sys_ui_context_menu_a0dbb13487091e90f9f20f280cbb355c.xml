@@ -31,10 +31,10 @@ function getSelectedHostCircuit() {
         if (responseObj.resultCode == 'success') {
             var telcoTab = nsProTaskMain.g_tabs2Sections.findTabIndex('telco_provider');
             nsProTaskMain.g_tabs2Sections.setActive(telcoTab);
+            nsProTaskMain.g_form.setValue('circuit', responseObj.hostCirSysID);
             nsProTaskMain.g_form.setValue('assigned_pop', responseObj.pop);
             nsProTaskMain.g_form.setValue('assigned_pe', responseObj.pe_router_dv);
             nsProTaskMain.g_form.setValue('assigned_pe_port', responseObj.x_g_sonc_ns_pro_pop_pe_interface);
-            nsProTaskMain.g_form.setValue('circuit', responseObj.hostCirSysID);
             nsProTaskMain.g_form.setValue('provisioning_state', 2);
         } else {
             gs.addErrorMessage(response.message);
@@ -75,7 +75,7 @@ function canBeAssinged() {
 	
     if (answer) {
         g_menu.setEnabled(g_item);
-        g_menu.setLabel(g_item, "<b>• Select Host Circuit •</b>");
+        g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Select Host Circuit •</b>");
     } else {
         g_menu.setDisabled(g_item);
     }
@@ -89,7 +89,7 @@ function canBeAssinged() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a0dbb13487091e90f9f20f280cbb355c</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Select Host Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -97,7 +97,7 @@ function canBeAssinged() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_a0dbb13487091e90f9f20f280cbb355c</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-11 11:10:31</sys_updated_on>
+        <sys_updated_on>2024-10-24 17:34:00</sys_updated_on>
         <table>x_g_sonc_ns_pro_st_host_circuit_selection</table>
         <track_selected>false</track_selected>
         <type>action</type>

@@ -30,25 +30,28 @@
         <name>Create Temporary Circuit</name>
         <onclick>createTemporaryCircuit()</onclick>
         <order>100</order>
-        <script><![CDATA[function createTemporaryCircuit(){
-	
-	var taskSysID = g_form.getUniqueValue();
-	
-	var localCircuit = new GlideAjax('x_g_sonc_ns_pro.circuit_ajax');
-	localCircuit.addParam('sysparm_name', 'createTemporaryCircuit');
-	localCircuit.addParam('sysparm_taskSysID', taskSysID);
-	localCircuit.getXMLAnswer(getResponse);
+        <script><![CDATA[function createTemporaryCircuit() {
 
-	function getResponse(response){
-		//alert(response);
-		response = JSON.parse(response);
+    var taskSysID = g_form.getUniqueValue();
+
+    var localCircuit = new GlideAjax('x_g_sonc_ns_pro.circuit_ajax');
+    localCircuit.addParam('sysparm_name', 'createTemporaryCircuit');
+    localCircuit.addParam('sysparm_taskSysID', taskSysID);
+    localCircuit.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+        //alert(response);
+        response = JSON.parse(response);
         if (response.resultCode == "success") {
-			alert(response.message);
-            location.reload();
+            //alert(response.message);
+            g_form.addInfoMessage(response.message);
+            GlideList2.get(g_form.getTableName() + '.REL:49759ddd470192d040fd43ff336d4392').setFilterAndRefresh('');
+
         } else {
-             return alert(response.message);
-        }		
-	}
+            g_form.addErrorMessage(response.message)
+            return alert(response.message);
+        }
+    }
 
 
 }]]></script>
@@ -62,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>adfadd11478192d040fd43ff336d4353</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>Create Temporary Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -70,7 +73,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_adfadd11478192d040fd43ff336d4353</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-04 17:35:05</sys_updated_on>
+        <sys_updated_on>2024-10-24 15:23:59</sys_updated_on>
         <table>cmdb_ci_network_circuit</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

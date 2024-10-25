@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-22 20:12:41</sys_created_on>
+        <sys_id>391ff6df47ddd6d040fd43ff336d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_network_circuit.config</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_security_acl display_value="cmdb_ci_network_circuit">848eb69b47ddd6d040fd43ff336d4365</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_391ff6df47ddd6d040fd43ff336d4353</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-22 20:12:41</sys_updated_on>
+        <sys_user_role display_value="config" name="config">9f78f62c1b157110824752c1604bcb0a</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_security_acl_role_391ff6df47ddd6d040fd43ff336d4353</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-22 20:12:41</sys_created_on><sys_id>391ff6df47ddd6d040fd43ff336d4353</sys_id><sys_mod_count>0</sys_mod_count><sys_name>cmdb_ci_network_circuit.config</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_security_acl display_value="cmdb_ci_network_circuit">848eb69b47ddd6d040fd43ff336d4365</sys_security_acl><sys_update_name>sys_security_acl_role_391ff6df47ddd6d040fd43ff336d4353</sys_update_name><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-22 20:12:41</sys_updated_on><sys_user_role display_value="config" name="config">9f78f62c1b157110824752c1604bcb0a</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-2106113942</payload_hash>
+        <record_name>cmdb_ci_network_circuit.config</record_name>
+        <reverted_from/>
+        <source>e38b004b479992d040fd43ff336d43a0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-22 20:12:41</sys_created_on>
+        <sys_id>492f3a1347111ad040fd43ff336d4372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192b5dc38930000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-22 20:12:41</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>0d2f3a13de111ad0a0a14d2c3d8ecd71</update_guid>
+        <update_guid_history>0d2f3a13de111ad0a0a14d2c3d8ecd71:-2106113942</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 10/22/2024 16:20:27">fee00fd747111ad040fd43ff336d43b3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-22 20:20:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>505664200b3d49f5ae92582ef7d8d1d9</sys_id>
+        <sys_metadata>391ff6df47ddd6d040fd43ff336d4353</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>cmdb_ci_network_circuit.config</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_391ff6df47ddd6d040fd43ff336d4353</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_391ff6df47ddd6d040fd43ff336d4353">492f3a1347111ad040fd43ff336d4372</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-22 20:20:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

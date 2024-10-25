@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>True = When provisioning new site requests if a host port change is made reassign the local circuits already configured with the new host port selection;&#13;
+False= When provisioning new site requests if a host port change is made remove the host circuit from the local circuits.  The user will need to manually assign the local ports to the  new host circuit</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_g_sonc_ns_pro.reassign.local.circuits</name>
+        <read_roles/>
+        <suffix>reassign.local.circuits</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-23 16:50:57</sys_created_on>
+        <sys_id>53b997af4795dad040fd43ff336d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro.reassign.local.circuits</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_properties_53b997af4795dad040fd43ff336d4329</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-23 16:50:57</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=53b997af4795dad040fd43ff336d4329"/>
+</record_update>

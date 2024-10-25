@@ -25,6 +25,7 @@
                 <element inactive_on_update="false" label="QinQ" sequence="10" value="qinq"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Proposed Host Name" max_length="100" name="u_proposed_host_name" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Master Device Interface" max_length="100" name="master_device_interface" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Local Circuit ID" max_length="32" name="pending_local_circuit_id" reference="cmdb_ci_network_circuit" reference_qual="javascript:&quot;x_g_sonc_ns_pro_site=&quot; + current.site" type="reference" use_reference_qualifier="advanced"/>
         <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>

@@ -31,132 +31,173 @@
         <onclick>selectionHostCircuitDialog()</onclick>
         <order>100</order>
         <script><![CDATA[function selectionHostCircuitDialog() {
-    var modalName = "multiSelectAction";
-    var modalTitle = 'Select Host Circuit Method';
-    var modalContent;
+    var taskInformation = g_scratchpad.taskInformation;
 
-    var contentObj = {};
-    contentObj.id = "selectHostCircuitMethod";
-    contentObj.title = "Select Host Circuit From Selection List:";
+    var message = "Site has the following assignments:  ";
+    var detailMessage = "";
+    var assignmentsMessage = "";
+    if (taskInformation.circuit) {
+        if (taskInformation.hasLocalCircuits) {
+            assignmentsMessage = "Local Circuits";
+            detailMessage = detailMessage + " Host Circuit Associations to Local Circuits will be re-associated with the newly selected host circuit. ";
+        }
+        if (taskInformation.hasPortAssignments) {
+            if (assignmentsMessage.length > 0) {
+                assignmentsMessage = assignmentsMessage + ", Ports";
+                detailMessage = detailMessage + " Assigned Host ports will be un-assigned from the site and removed from any local circuit associations.";
+            } else {
+                assignmentsMessage = assignmentsMessage + " Ports";
+            }
 
-    var options = [];
-    var option = {};
-    option.optionValue = "suggestedHostCircuitList";
-    option.optionText = "Select Suggested Host Circuit";
-    options.push(option);
-    option = {};
-    option.optionValue = "selectHostCircuitFromAll";
-    option.optionText = "Manual Select Host Circuit From All";
-    options.push(option);
-
-    contentObj.options = options;
-
-    var modals = new GlideAjax('x_g_sonc_ns_pro.core_nspro_modals_ajax');
-    modals.addParam('sysparm_name', 'constructMultiSelectContent');
-    modals.addParam('sysparm_contentObjString', JSON.stringify(contentObj));
-    modals.getXMLAnswer(getResponse);
-
-    function getResponse(response) {
-        var answer = JSON.parse(response);
-        if (answer.status != 'success') {
-            alert("Error Occured " + answer.message);
-
-        } else {
-            modalContent = answer.message;
-            //alert(modalContent);
-            var gm = new GlideModal(modalName);
-            gm.setTitle(modalTitle);
-            gm.renderWithContent(modalContent);
-
-            top.window.multiActionCancel = function() {
-                gm.destroy();
-                return;
-            };
-
-            //We'll use the windows object to ensure our code is accessible from the modal dialog
-            top.window.multiActionSubmit = function(thisButton, thisAction) {
-
-                //Close the glide modal dialog window
-                gm.destroy();
-
-                //Submit to the back-end
-                if (thisButton == 'OK') {
-                    var url;
-                    if (thisAction == "suggestedHostCircuitList") {
-                        var site = g_form.getValue('site');
-                        var telcoProvider = g_form.getValue('telco_provider');
-
-                        var queryStringZip = 'telco_provider=' + telcoProvider + '^site=' + site + '^ORDERBYdistance';
-                        url = new GlideURL("x_g_sonc_ns_pro_st_host_circuit_selection_list.do");
-                        url.addParam("sysparm_fixed_query", queryStringZip);
-                        url.addParam("sysparm_view", "selecthostcircuit");
-                        url.addParam("sysparm_view_forced", true);
-
-                        var hostCirSugW = new GlideOverlay({
-                            title: getMessage("Right Click to Select Desired Host Circuit"),
-                            iframe: url.getURL(),
-                            draggable: true,
-                            allowOverflowX: true,
-                            scroll: true,
-                            height: "70%",
-                            width: "90%",
-                            closeOnEscape: true,
-                            //onAfterLoad: resizeIframe,
-                            onAfterClose: function() {
-                                location.reload();
-
-                            }
-                        });
-                        hostCirSugW.setPreference('sysparm_sys_id', g_form.getUniqueValue());
-                        hostCirSugW.render();
-                        hostCirSugW.showFooterResizeGrips(true);
+        }
 
 
-                    } else if (thisAction == "selectHostCircuitFromAll") {
-                        var queryStringAll = 'ORDERBYDESCavailable_capacity';
-                        url = new GlideURL("x_g_sonc_ns_pro_st_host_circuits_with_capacity_list.do");
-                        url.addParam("sysparm_query", queryStringAll);
-                        //url.addParam("sysparm_table","x_g_sonc_ns_pro_st_host_circuits_with_capacity_list");
-                        url.addParam("sysparm_view", "nspro");
-                        url.addParam("sysparm_view_forced", true);
-                        //alert(url.getURL());
-                        var hostCirSugAll = new GlideOverlay({
-                            title: getMessage("Right Click to Select Desired Host Circuit"),
-                            iframe: url.getURL(),
-                            draggable: true,
-                            allowOverflowX: true,
-                            scroll: true,
-                            height: "70%",
-                            width: "90%",
-                            closeOnEscape: true,
-                            //onAfterLoad: resizeIframe,
-                            onAfterClose: function() {
-                                location.reload();
+        message = message + assignmentsMessage;
+        message = message + ".  If you select a new Host Circuit the following Assignments will Change: \n  " + detailMessage;
+        var confGM = new GlideModal("glide_ask_standard", true, 600);
+        confGM.setTitle("Do You Want to Proceed?");
+        confGM.setPreference("title", message);
+        confGM.setPreference("warning", "true");
+        confGM.setPreference("onPromptComplete", function() {
+            continueSelection();
+        });
+        confGM.setPreference("onPromptCancel", function() {
+            return false;
+        });
+        confGM.render();
 
-                            }
-                        });
-
-                        hostCirSugAll.render();
-                        hostCirSugAll.showFooterResizeGrips(true);
-
-                    } else {
-                        alert('no choice');
-
-                    }
-                }
-            };
-
-
-
-
-
-
-            return false; //prevents the form from submitting when the dialog first loads
-        } // end of else response
+    } else {
+        continueSelection();
     }
 
 
-} //end selectionTelcoDialog()]]></script>
+    function continueSelection() {
+        var modalName = "multiSelectAction";
+        var modalTitle = 'Select Host Circuit Method';
+        var modalContent;
+
+        var contentObj = {};
+        contentObj.id = "selectHostCircuitMethod";
+        contentObj.title = "Select Host Circuit From Selection List:";
+
+        var options = [];
+        var option = {};
+        option.optionValue = "suggestedHostCircuitList";
+        option.optionText = "Select Suggested Host Circuit";
+        options.push(option);
+        option = {};
+        option.optionValue = "selectHostCircuitFromAll";
+        option.optionText = "Manual Select Host Circuit From All";
+        options.push(option);
+
+        contentObj.options = options;
+
+        var modals = new GlideAjax('x_g_sonc_ns_pro.core_nspro_modals_ajax');
+        modals.addParam('sysparm_name', 'constructMultiSelectContent');
+        modals.addParam('sysparm_contentObjString', JSON.stringify(contentObj));
+        modals.getXMLAnswer(getResponse);
+
+        function getResponse(response) {
+            var answer = JSON.parse(response);
+            if (answer.status != 'success') {
+                alert("Error Occured " + answer.message);
+
+            } else {
+                modalContent = answer.message;
+                //alert(modalContent);
+                var gm = new GlideModal(modalName);
+                gm.setTitle(modalTitle);
+                gm.renderWithContent(modalContent);
+
+                top.window.multiActionCancel = function() {
+                    gm.destroy();
+                    return;
+                };
+
+                //We'll use the windows object to ensure our code is accessible from the modal dialog
+                top.window.multiActionSubmit = function(thisButton, thisAction) {
+
+                    //Close the glide modal dialog window
+                    gm.destroy();
+
+                    //Submit to the back-end
+                    if (thisButton == 'OK') {
+                        var url;
+                        if (thisAction == "suggestedHostCircuitList") {
+                            var site = g_form.getValue('site');
+                            var telcoProvider = g_form.getValue('telco_provider');
+
+                            var queryStringZip = 'telco_provider=' + telcoProvider + '^site=' + site + '^ORDERBYdistance';
+                            url = new GlideURL("x_g_sonc_ns_pro_st_host_circuit_selection_list.do");
+                            url.addParam("sysparm_fixed_query", queryStringZip);
+                            url.addParam("sysparm_view", "selecthostcircuit");
+                            url.addParam("sysparm_view_forced", true);
+
+                            var hostCirSugW = new GlideOverlay({
+                                title: getMessage("Right Click to Select Desired Host Circuit"),
+                                iframe: url.getURL(),
+                                draggable: true,
+                                allowOverflowX: true,
+                                scroll: true,
+                                height: "70%",
+                                width: "90%",
+                                closeOnEscape: true,
+                                //onAfterLoad: resizeIframe,
+                                onAfterClose: function() {
+                                    location.reload();
+
+                                }
+                            });
+                            hostCirSugW.setPreference('sysparm_sys_id', g_form.getUniqueValue());
+                            hostCirSugW.render();
+                            hostCirSugW.showFooterResizeGrips(true);
+
+
+                        } else if (thisAction == "selectHostCircuitFromAll") {
+                            var queryStringAll = 'ORDERBYDESCavailable_capacity';
+                            url = new GlideURL("x_g_sonc_ns_pro_st_host_circuits_with_capacity_list.do");
+                            url.addParam("sysparm_query", queryStringAll);
+                            //url.addParam("sysparm_table","x_g_sonc_ns_pro_st_host_circuits_with_capacity_list");
+                            url.addParam("sysparm_view", "nspro");
+                            url.addParam("sysparm_view_forced", true);
+                            //alert(url.getURL());
+                            var hostCirSugAll = new GlideOverlay({
+                                title: getMessage("Right Click to Select Desired Host Circuit"),
+                                iframe: url.getURL(),
+                                draggable: true,
+                                allowOverflowX: true,
+                                scroll: true,
+                                height: "70%",
+                                width: "90%",
+                                closeOnEscape: true,
+                                //onAfterLoad: resizeIframe,
+                                onAfterClose: function() {
+                                    location.reload();
+
+                                }
+                            });
+
+                            hostCirSugAll.render();
+                            hostCirSugAll.showFooterResizeGrips(true);
+
+                        } else {
+                            alert('no choice');
+
+                        }
+                    }
+                };
+
+
+
+
+
+
+                return false; //prevents the form from submitting when the dialog first loads
+            } // end of else response
+        }
+    } //end continueSelection()
+
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -167,7 +208,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>df70dba447019a9040fd43ff336d4308</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>51</sys_mod_count>
         <sys_name>Select Host Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -175,7 +216,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_df70dba447019a9040fd43ff336d4308</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-10 17:11:32</sys_updated_on>
+        <sys_updated_on>2024-10-24 13:28:32</sys_updated_on>
         <table>x_g_sonc_ns_pro_telco_provider</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

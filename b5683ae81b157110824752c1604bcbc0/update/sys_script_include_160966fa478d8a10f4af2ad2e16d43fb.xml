@@ -12,7 +12,7 @@ circuit.prototype = {
     circuitSpeedMultiplier: 0,
 
     initialize: function() {
-        this.debug = true;
+        this.debug = false;
         this.circuitSpeedMultiplier = gs.getProperty('x_g_sonc_ns_pro.circuit_speed_multiplier');
 
     },
@@ -482,20 +482,90 @@ circuit.prototype = {
         }
         return response;
     },
+    reAssignLocalCircuitHostAssociations: function(localCircuits, hostCircuit) {
+        var errorString;
+        var response = {};
+        try {
+            if (!localCircuits) {
+                throw new Error("localCircuits is a required parameter");
+            }
+            if (!hostCircuit) {
+                throw new Error("hostCircuit is a required parameter");
+            }
+            var circuitsArray = localCircuits.split(",");
+
+            if (circuitsArray.length < 1) {
+                throw new Error("one or more circuits must be selected");
+            }
+             for (var i = 0; i < circuitsArray.length; i++) {
+                var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+                circuitRecord.addQuery('sys_id', circuitsArray[i]);
+                circuitRecord.query();
+                if (circuitRecord.next()) {
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pe_host_circuit_id', hostCircuit);
+                    circuitRecord.update();
+                }
+
+            }
+
+            response.message = circuitsArray.length + " Host Circuit Associations were reAssinged on the  Local Circuit";
+
+        } catch (ex) {
+            errorString = "Error Occured in x_g_sonc_ns_pro.circuit.reAssignLocalCircuitHostAssociations " + ex.toString();
+            gs.info(errorString);
+            response.message = errorString;
+        }
+
+        return response;
+    },
+    removeLocalCircuitHostAssociations: function(localCircuits) {
+        var errorString;
+        var response = {};
+
+        try {
+            if (!localCircuits) {
+                throw new Error("localCircuits is a required parameter");
+            }
+            var circuitsArray = localCircuits.split(",");
+
+            if (circuitsArray.length < 1) {
+                throw new Error("one or more circuits must be selected");
+            }
+             for (var i = 0; i < circuitsArray.length; i++) {
+                var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+                circuitRecord.addQuery('sys_id', circuitsArray[i]);
+                circuitRecord.query();
+                if (circuitRecord.next()) {
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pe_host_circuit_id', gs.nil());
+                    circuitRecord.update();
+                }
+
+            }
+
+            response.message = circuitsArray.length + " Host Circuit Associations were removed from Local Circuit";
+
+        } catch (ex) {
+            errorString = "Error Occured in x_g_sonc_ns_pro.circuit.removeLocalCircuitHostAssociations " + ex.toString();
+            gs.info(errorString);
+            response.message = errorString;
+        }
+
+        return response;
+    },
     removeLocalCircuits: function(localCircuits) {
         var errorString;
         var response = {};
 
         try {
             if (!localCircuits) {
-                throw new IllegalArgumentException("localCircuits is a required parameter");
+                throw new Error("localCircuits is a required parameter");
             }
             var circuitsArray = localCircuits.split(",");
 
             if (circuitsArray.length < 1) {
-                throw new GenericException("one or more circuits must be selected");
+                throw new Error("one or more circuits must be selected");
             }
-            gs.info('circuit array length is: ' + circuitsArray.length);
+            gs.info('removeLocalCircuits circuit array length is: ' + circuitsArray.length);
             for (var i = 0; i < circuitsArray.length; i++) {
                 var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
                 circuitRecord.addQuery('sys_id', circuitsArray[i]);
@@ -516,19 +586,28 @@ circuit.prototype = {
 
         return response;
     },
+    allowDeleteOnCircuit: function(current) {
+        answer = false;
+
+        if (current.getValue('x_g_sonc_ns_pro_host_ckt') == true) {
+            answer = true;
+        }
+
+        return answer;
+    },
     type: 'circuit'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 22:52:58</sys_created_on>
         <sys_id>160966fa478d8a10f4af2ad2e16d43fb</sys_id>
-        <sys_mod_count>105</sys_mod_count>
+        <sys_mod_count>121</sys_mod_count>
         <sys_name>circuit</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_160966fa478d8a10f4af2ad2e16d43fb</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-18 19:40:55</sys_updated_on>
+        <sys_updated_on>2024-10-24 16:38:32</sys_updated_on>
     </sys_script_include>
 </record_update>

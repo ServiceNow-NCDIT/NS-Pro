@@ -2,8 +2,8 @@
     <element audit="true" db_object_id="8b5561621b72211090990f6fe54bcb12" extends="cmdb_ci" label="Sitio" max_length="40" name="cmdb_ci_site" text_index="true" type="collection">
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Demarc Location" max_length="100" name="x_g_sonc_ns_pro_pending_demarc_location" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="HA Site" max_length="40" name="x_g_sonc_ns_pro_ha_site" type="boolean"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Last Upgrade" max_length="40" name="x_g_sonc_ns_pro_last_upgrade" type="glide_date"/>
-        <element choice="1" label="Type" max_length="40" name="x_g_sonc_ns_pro_type" type="choice">
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Last Change Date" max_length="40" name="x_g_sonc_ns_pro_last_upgrade" type="glide_date"/>
+        <element choice="1" label="Site Type" max_length="40" name="x_g_sonc_ns_pro_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="VideoSurv" sequence="60" value="videosurv"/>
                 <element inactive_on_update="false" label="Vendor" sequence="50" value="vendor"/>
