@@ -58,6 +58,25 @@
             <element>task_type</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Terminate</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nspro_tasks</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-25 20:13:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-25 20:13:38</sys_updated_on>
+            <value>terminate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task_type</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Field Services</label>
             <language>en</language>
             <name>x_g_sonc_ns_pro_nspro_tasks</name>

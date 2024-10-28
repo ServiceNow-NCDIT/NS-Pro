@@ -145,6 +145,7 @@ cmdb_ci_site.prototype = {
                 var svc = {}; // service instance
                 svc.sys_id = svcGr.getUniqueValue();
                 svc.svc_title = svcGr.service_code.svc_title.getDisplayValue();
+				svc.svc_code = svcGr.service_code.svc_code.getDisplayValue();
                 svc.start_date = svcGr.getDisplayValue('start_date');
                 svc.end_date = svcGr.getDisplayValue('end_date');
                 svc.agency = svcGr.getDisplayValue('agency');
@@ -358,13 +359,13 @@ cmdb_ci_site.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-03 13:18:16</sys_created_on>
         <sys_id>991432db1b253590824752c1604bcb5e</sys_id>
-        <sys_mod_count>130</sys_mod_count>
+        <sys_mod_count>131</sys_mod_count>
         <sys_name>cmdb_ci_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_991432db1b253590824752c1604bcb5e</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-09 16:48:43</sys_updated_on>
+        <sys_updated_on>2024-10-25 19:48:33</sys_updated_on>
     </sys_script_include>
 </record_update>

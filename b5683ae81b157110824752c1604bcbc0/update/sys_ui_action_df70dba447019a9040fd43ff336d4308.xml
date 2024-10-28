@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>RP.isRelatedList() &amp;&amp; RP.getReferringURL().indexOf("x_g_sonc_ns_pro_nspro_tasks.do") == 0  &amp;&amp; current.name != ''</condition>
+        <condition>RP.isRelatedList() &amp;&amp; RP.getReferringURL().indexOf("x_g_sonc_ns_pro_nspro_tasks.do") == 0  &amp;&amp; current.name != '' &amp;&amp; new x_g_sonc_ns_pro.core_nspro_conditions().provisionTaskType(RP.getParameterValue('sys_id'))</condition>
         <form_action>false</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -208,7 +208,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>df70dba447019a9040fd43ff336d4308</sys_id>
-        <sys_mod_count>51</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name>Select Host Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -216,7 +216,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_df70dba447019a9040fd43ff336d4308</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-24 13:28:32</sys_updated_on>
+        <sys_updated_on>2024-10-26 17:03:36</sys_updated_on>
         <table>x_g_sonc_ns_pro_telco_provider</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
