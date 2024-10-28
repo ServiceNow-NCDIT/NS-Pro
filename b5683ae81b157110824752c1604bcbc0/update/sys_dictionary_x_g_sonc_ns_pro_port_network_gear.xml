@@ -44,9 +44,11 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>install_status=1^ORinstall_status=4^EQ</reference_qual>
-        <reference_qual_condition table="cmdb_ci_netgear">install_status=1^ORinstall_status=4^EQ<item display_value="Installed" endquery="false" field="install_status" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        <reference_qual>install_status=6^ORinstall_status=4^sys_class_name!=cmdb_ci_interface_card^sys_class_name!=cmdb_ci_wap_network^EQ</reference_qual>
+        <reference_qual_condition table="cmdb_ci_netgear">install_status=6^ORinstall_status=4^sys_class_name!=cmdb_ci_interface_card^sys_class_name!=cmdb_ci_wap_network^EQ<item display_value="In Stock" endquery="false" field="install_status" goto="false" newquery="false" operator="=" or="false" value="6"/>
             <item display_value="Pending Install" endquery="false" field="install_status" goto="false" newquery="false" operator="=" or="true" value="4"/>
+            <item display_value="Interface Card" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="!=" or="false" value="cmdb_ci_interface_card"/>
+            <item display_value="Wireless Access Point" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="!=" or="false" value="cmdb_ci_wap_network"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </reference_qual_condition>
         <reference_type/>
@@ -60,8 +62,8 @@
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_dictionary_x_g_sonc_ns_pro_port_network_gear</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-05-15 20:28:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-28 16:10:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
