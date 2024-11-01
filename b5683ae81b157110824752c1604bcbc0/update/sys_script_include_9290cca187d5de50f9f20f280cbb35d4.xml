@@ -239,6 +239,7 @@ nspro_task.prototype = {
         try {
             //set site to installed.
             var site = task.getValue('site');
+			var priSecCircuit = task.getValue('pri_sec_circuit');
             var siteRecord = new GlideRecord('cmdb_ci_site');
             if (siteRecord.get(site)) {
                 siteRecord.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.INSTALLED);
@@ -255,6 +256,7 @@ nspro_task.prototype = {
             netCircuit.addQuery('x_g_sonc_ns_pro_pe_host_circuit_id', hostCircuit);
             netCircuit.addQuery('x_g_sonc_ns_pro_site', site);
             netCircuit.addQuery('x_g_sonc_ns_pro_network_request', networkRequest);
+			netCircuit.addQuery('x_g_sonc_ns_pro_pri_sec_circuit',priSecCircuit);
             netCircuit.query();
 
             while (netCircuit.next()) {
@@ -304,8 +306,9 @@ nspro_task.prototype = {
         var response = {};
 
         try {
-            //set site to pending retire.
+            //set site to  retire.
             var site = task.getValue('site');
+			var priSecCircuit = task.getValue('pri_sec_circuit');
             var siteRecord = new GlideRecord('cmdb_ci_site');
             if (siteRecord.get(site)) {
                 siteRecord.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);
@@ -319,6 +322,7 @@ nspro_task.prototype = {
             var netCircuit = new GlideRecord('cmdb_ci_network_circuit');
             netCircuit.addQuery('x_g_sonc_ns_pro_host_ckt', false);
             netCircuit.addQuery('x_g_sonc_ns_pro_site', site);
+			//netCircuit.addQuery('x_g_sonc_ns_pro_pri_sec_circuit',priSecCircuit);
             netCircuit.query();
 
             while (netCircuit.next()) {
@@ -335,23 +339,22 @@ nspro_task.prototype = {
             portRecord.query();
 
             while (portRecord.next()) {
+				if (portRecord.getValue('network_gear') != '') {
+                    netGearArray.push(portRecord.getValue('network_gear') + '');
+                }
                 var portVLan = portRecord.getValue('remote_site_circuit_vlan');
                 var portIPAddress = portRecord.getValue('ip_address');
                 if (portIPAddress.startsWith('172.22.')) {
                     portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
-                    portRecord.setValue('local_circuit_id', gs.nil());
-                    portRecord.setValue('network_gear', gs.nil());
-                    portRecord.setValue('name', '');
-                    portRecord.setValue('vrf', '');
-                    portRecord.setValue('site', gs.nil());
+                    portRecord.setValue('local_circuit_id','');
+                    portRecord.setValue('network_gear','');
+                    portRecord.setValue('name','');
+                    portRecord.setValue('vrf','');
+                    portRecord.setValue('site','');
                 } else {
                     portRecord.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);
                 }
                 portRecord.update();
-
-                if (portRecord.getValue('network_gear') != '') {
-                    netGearArray.push(portRecord.getValue('network_gear') + '');
-                }
             }
 
             //set all netgear to pending retire.
@@ -360,7 +363,7 @@ nspro_task.prototype = {
             netGearRecords.query();
 
             while (netGearRecords.next()) {
-                netGearRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);
+                netGearRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.PENDING_PICKUP);
                 //gs.info('WOULD UPDATE: ' + netGearRecords.getValue('name'));
                 netGearRecords.update();
             }
@@ -380,13 +383,13 @@ nspro_task.prototype = {
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-16 20:07:20</sys_created_on>
         <sys_id>9290cca187d5de50f9f20f280cbb35d4</sys_id>
-        <sys_mod_count>97</sys_mod_count>
+        <sys_mod_count>100</sys_mod_count>
         <sys_name>nspro_task</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_9290cca187d5de50f9f20f280cbb35d4</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-28 16:00:21</sys_updated_on>
+        <sys_updated_on>2024-11-01 20:32:54</sys_updated_on>
     </sys_script_include>
 </record_update>

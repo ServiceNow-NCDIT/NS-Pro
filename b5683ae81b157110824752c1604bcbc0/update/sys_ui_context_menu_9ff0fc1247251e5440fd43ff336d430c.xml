@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="INSERT_OR_UPDATE">
+        <action_script><![CDATA[var nsProTaskMain;
+
+nsProTaskMain = parent.top.window.gsft_main;
+
+moveCurrentToProposed();
+
+function moveCurrentToProposed(){
+	var selected;
+	selected = g_list.getChecked();
+	if(selected.length == 0)
+	{
+		selected = g_sysId;
+	}
+	//alert(selected);
+	var port = new GlideAjax('x_g_sonc_ns_pro.port_ajax');
+	port.addParam('sysparm_name', 'moveSelectedPortsToProposed');
+	port.addParam('sysparm_selectedPorts', selected);
+	port.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+		//alert(response);
+        var responseObj = JSON.parse(response);
+        if (responseObj.resultCode == 'success') {
+			nsProTaskMain.g_form.addInfoMessage(response.message);
+        } else {
+            nsProTaskMain.g_form.addErrorMessage(response.message);
+        }
+        gsftSubmit(null, nsProTaskMain.g_form.getFormElement(), 'sysverb_update_and_stay');
+    }
+
+}]]></action_script>
+        <active>true</active>
+        <comments/>
+        <condition/>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Move Selected to Proposed</name>
+        <on_show_script><![CDATA[var nsProTaskMain;
+
+nsProTaskMain = parent.top.window.gsft_main;
+
+canBeConfigured();
+
+function canBeConfigured() {
+
+    var proposed = false;
+
+    var taskType = nsProTaskMain.g_form.getValue('task_type');
+
+    if (taskType == 'provision_change') {
+        proposed = true;
+    }
+
+    if (proposed) {
+		g_menu.setVisible(g_item);
+        g_menu.setEnabled(g_item);
+        g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Move Selected to Proposed •</b>");
+
+    } else {
+		g_menu.setHidden(g_item);
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>1000</order>
+        <parent/>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-31 17:39:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9ff0fc1247251e5440fd43ff336d430c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Move Selected to Proposed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_9ff0fc1247251e5440fd43ff336d430c</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-31 18:54:45</sys_updated_on>
+        <table>x_g_sonc_ns_pro_port</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+</record_update>

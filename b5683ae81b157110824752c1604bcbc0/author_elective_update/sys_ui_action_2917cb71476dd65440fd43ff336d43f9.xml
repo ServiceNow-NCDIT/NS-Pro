@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>move_selected_ports_proposed</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style>destructive</list_style>
+        <messages/>
+        <name>Move Selected to Pending</name>
+        <onclick>confirmPortsMove()</onclick>
+        <order>100</order>
+        <script><![CDATA[function confirmPortsMove() {
+    var answer = confirm("Move Selected Ports to Proposed?")
+    if (!answer) {
+        return false;
+    }
+    var selected = g_list.getChecked();
+	
+	var ports = new GlideAjax('x_g_sonc_ns_pro.port_ajax');
+	ports.addParam('sysparm_name', 'moveSelectedPortsToProposed');
+	ports.addParam('sysparm_selectedPorts', selected);
+	ports.getXMLAnswer(getResponse);
+
+
+	function getResponse(response){
+		var responseObj = JSON.parse(response);
+		if (responseObj.resultCode == 'success') {
+			g_form.addInfoMessage(responseObj.message);
+		} else {
+			
+			g_form.addErrorMessage(responseObj.message);
+			
+		}
+		location.reload();
+	}
+
+
+
+ 
+}
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-30 15:36:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2917cb71476dd65440fd43ff336d43f9</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Move Selected to Pending</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_action_2917cb71476dd65440fd43ff336d43f9</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-30 18:55:48</sys_updated_on>
+        <table>x_g_sonc_ns_pro_port</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_action_2917cb71476dd65440fd43ff336d43f9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;move_selected_ports_proposed&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style&gt;destructive&lt;/list_style&gt;&lt;messages/&gt;&lt;name&gt;Move Selected to Pending&lt;/name&gt;&lt;onclick&gt;confirmPortsMove()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function confirmPortsMove() {
+    var answer = confirm("Move Selected Ports to Proposed?")
+    if (!answer) {
+        return false;
+    }
+    var selected = g_list.getChecked();
+	
+	var ports = new GlideAjax('x_g_sonc_ns_pro.port_ajax');
+	ports.addParam('sysparm_name', 'moveSelectedPortsToProposed');
+	ports.addParam('sysparm_selectedPorts', selected);
+	ports.getXMLAnswer(getResponse);
+
+
+	function getResponse(response){
+		var responseObj = JSON.parse(response);
+		if (responseObj.resultCode == 'success') {
+			g_form.addInfoMessage(responseObj.message);
+		} else {
+			
+			g_form.addErrorMessage(responseObj.message);
+			
+		}
+		location.reload();
+	}
+
+
+
+ 
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admglfry&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-10-30 15:36:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2917cb71476dd65440fd43ff336d43f9&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;Move Selected to Pending&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_2917cb71476dd65440fd43ff336d43f9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admglfry&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-30 18:55:48&lt;/sys_updated_on&gt;&lt;table&gt;x_g_sonc_ns_pro_port&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-42096469</payload_hash>
+        <record_name>Move Selected to Pending</record_name>
+        <reverted_from/>
+        <source>e38b004b479992d040fd43ff336d43a0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-30 18:55:48</sys_created_on>
+        <sys_id>fc4afff947a51a5440fd43ff336d4390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192dec8b3ca0000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-30 18:55:48</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>f04afff912a51a54e9658cc768d05790</update_guid>
+        <update_guid_history>f04afff912a51a54e9658cc768d05790:-42096469,fd1af3f98fa51a54df3e373e38512ec4:28906267,dbd9bbb983a51a54fe80b1f195925270:-372610982,b399b7b906a51a54eeaad2a8dcbf7705:2111680169,9639f3b92ea51a547f7a5bf2b844b9e3:-2031786178,1a5873f1f8a51a54734fe9ad60bfb239:587128586,dc76bb31eea51a5463f234ae5fde6913:-994819285,93e3bb7903651a54bf7a07e8827a250c:815154060,695cefb1f1251a54e34b31dea8c3d676:-759889868,811c23b146251a54d0c609dfec343148:-11479273,1bfb2b7d15e11a54959dc982ab2c4d63:-1818277472,399b67fd07e11a54fb9eb1d6d947eec0:-541505301,0e5b2bbdcae11a5493782a51e746e39c:1743079279,341ba7bd11e11a5457f13346c7040140:1123886106,83ca6bf56ee11a5469839516df4ea6e0:1398022255,559a23bd1fe11a547b19dd418557b006:-653042423,d56a2bf19fe11a5409842efa7ec84526:-420325427,66f9633d46e11a54aa9a508942351907:771759127,ee8923f5c5e11a54a8d3a8281551c095:-743540698,4179e3b9afe11a5401e5442b96b10e0d:538756034,1482ab7147a11a5463d1ce0721a524c3:1579876875,cbb493b996edd654a381d40cc66ec6cf:-541505301,2a64dff5ecedd6542bcb7ae915bafe03:266487447,0cc3dbb57cedd654ab0c1da2fd521aa0:-1364598993,5b239775fbedd65495bbadd577866481:-2047023786,d8c2d73516edd654ed5638248c0fe346:674031286,e99fcfb960add6543428f4ca143d41d4:-1050622255,a02f4f354dadd6549117a5e5101c7bd3:-684433831,c9ac03fd2b6dd654f41dc2ed21330c3f:2082300216</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-31 18:15:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>0029979fd9fc437880230a1cb827a544</sys_id>
+        <sys_metadata>2917cb71476dd65440fd43ff336d43f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Move Selected to Pending</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Port">db74620647c10610f4af2ad2e16d433d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_action_2917cb71476dd65440fd43ff336d43f9</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_2917cb71476dd65440fd43ff336d43f9">fc4afff947a51a5440fd43ff336d4390</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-31 18:15:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

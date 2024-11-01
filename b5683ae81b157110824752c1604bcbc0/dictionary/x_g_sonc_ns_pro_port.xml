@@ -11,6 +11,23 @@
             </choice>
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Remote Site Circuit VLAN" max_length="40" name="remote_site_circuit_vlan" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Status" max_length="40" name="pending_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Pickup" value="103"/>
+                <element inactive_on_update="false" label="In Stock" value="6"/>
+                <element inactive_on_update="false" label="Pending Retire" value="101"/>
+                <element inactive_on_update="false" label="Reserved" value="104"/>
+                <element inactive_on_update="false" label="Pending Repair" value="5"/>
+                <element inactive_on_update="false" label="Pending Install" value="4"/>
+                <element inactive_on_update="false" label="Absent" value="100"/>
+                <element inactive_on_update="false" label="Unknown" value="105"/>
+                <element inactive_on_update="false" label="On Order" value="2"/>
+                <element inactive_on_update="false" label="Installed" value="1"/>
+                <element inactive_on_update="false" label="Defective" value="102"/>
+                <element inactive_on_update="false" label="In Maintenance" value="3"/>
+                <element inactive_on_update="false" label="Retired" value="7"/>
+            </choice>
+        </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending IP Address" max_length="40" name="pending_ip_address" type="ip_addr"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Network Gear" max_length="32" name="pending_network_gear" reference="cmdb_ci_netgear" reference_qual="install_statusIN3,6,1,4^EQ" reference_qual_condition="install_statusIN3,6,1,4^EQ" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Uplink Connection Description" max_length="100" name="pending_uplink_connection_description" type="string"/>

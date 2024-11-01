@@ -13,11 +13,13 @@
 	var hostCiruit = parent.getValue('circuit');
 	var telcoProvider = parent.getValue('telco_provider');
 	var telcoOrder = parent.getValue('telco_order');
+	var priSecCiruit = parent.getValue('pri_sec_circuit');
 
 	current.addQuery('x_g_sonc_ns_pro_host_ckt',false);
 	//current.addQuery('x_g_sonc_ns_pro_pe_host_circuit_id',hostCiruit);
 	current.addQuery('x_g_sonc_ns_pro_site',site);
 	current.addQuery('x_g_sonc_ns_pro_network_request',telcoOrder);
+	current.addQuery('x_g_sonc_ns_pro_pri_sec_circuit',priSecCiruit)
 	//current.addQuery('x_g_sonc_ns_pro_telco_provider',telcoProvider);
 	
 })(current, parent);]]></query_with>
@@ -28,14 +30,14 @@
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-03 21:24:56</sys_created_on>
         <sys_id>49759ddd470192d040fd43ff336d4392</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Site Local Circuits</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_relationship_49759ddd470192d040fd43ff336d4392</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-23 14:10:28</sys_updated_on>
+        <sys_updated_on>2024-11-01 16:16:17</sys_updated_on>
     </sys_relationship>
     <sys_translated_text action="delete_multiple" query="documentkey=49759ddd470192d040fd43ff336d4392"/>
 </record_update>

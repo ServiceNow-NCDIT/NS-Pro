@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="pending_status" table="x_g_sonc_ns_pro_port" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>pending_status</element>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:37:26</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>pending_status</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_choice_x_g_sonc_ns_pro_port_pending_status</sys_update_name>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:37:26</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Installed</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:37:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:37:49</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Absent</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:38:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:38:10</sys_updated_on>
+            <value>100</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Retire</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:38:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:38:27</sys_updated_on>
+            <value>101</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Defective</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:38:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:38:41</sys_updated_on>
+            <value>102</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Pickup</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:38:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:38:54</sys_updated_on>
+            <value>103</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reserved</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:39:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:39:14</sys_updated_on>
+            <value>104</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unknown</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:39:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:39:28</sys_updated_on>
+            <value>105</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On Order</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:39:43</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Maintenance</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:39:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:39:56</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Install</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:40:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:40:09</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pending Repair</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:40:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:40:23</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Stock</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:40:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:40:35</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>pending_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retired</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_port</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-29 19:40:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-29 19:40:52</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

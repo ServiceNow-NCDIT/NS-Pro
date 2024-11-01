@@ -9,7 +9,13 @@
         <name>port</name>
         <script><![CDATA[var port = Class.create();
 port.prototype = {
-    initialize: function() {},
+    initialize: function() {
+        this.nsProCore = new x_g_sonc_ns_pro.core_nspro();
+        var currentScopeID = gs.getCurrentApplicationId();
+        var grScope = new GlideRecord('sys_app');
+        this.CLASSNAME = this.nsProCore.getClassName(currentScopeID, this.type);
+
+    },
     removePortsFromLocalCircuit: function(localCircuitSysID, ports) {
         var errorString;
         var response = {};
@@ -25,30 +31,30 @@ port.prototype = {
             if (portsArray.length < 1) {
                 throw new Error("one or more ports must be selected");
             }
-			// gs.info('local circuit ' + localCircuitSysID);
-			// gs.info('ports ' +  portsArray);
-			// gs.info('ports Array ' + portsArray.length);
+            // gs.info('local circuit ' + localCircuitSysID);
+            // gs.info('ports ' +  portsArray);
+            // gs.info('ports Array ' + portsArray.length);
             for (var i = 0; i < portsArray.length; i++) {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
                     portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
-                    portRecord.setValue('local_circuit_id', gs.nil());
-                    portRecord.setValue('network_gear', gs.nil());
+                    portRecord.setValue('local_circuit_id', '');
+                    portRecord.setValue('network_gear', '');
                     portRecord.setValue('name', '');
                     portRecord.setValue('vrf', '');
-                    portRecord.setValue('site', gs.nil());
+                    portRecord.setValue('site', '');
                     portRecord.update();
                 }
             }
             response.message = portsArray.length + " ports were removed from local circuit";
         } catch (ex) {
-            errorString = "Error Occured in x_g_sonc_ns_pro.port.removePortsFromLocalCircuit " + ex.toString();
-            response.message = errorString
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
         }
-
-		return response;
+        return response;
     },
-    removePortsFromSite: function(siteSysID,ports) {
+    removePortsFromSite: function(siteSysID, ports) {
         var errorString;
         var response = {};
         try {
@@ -63,9 +69,9 @@ port.prototype = {
             if (portsArray.length < 1) {
                 throw new Error("one or more ports must be selected");
             }
-			// gs.info('local circuit ' + localCircuitSysID);
-			// gs.info('ports ' +  portsArray);
-			// gs.info('ports Array ' + portsArray.length);
+            // gs.info('local circuit ' + localCircuitSysID);
+            // gs.info('ports ' +  portsArray);
+            // gs.info('ports Array ' + portsArray.length);
             for (var i = 0; i < portsArray.length; i++) {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
@@ -80,11 +86,11 @@ port.prototype = {
             }
             response.message = portsArray.length + " ports were removed from site";
         } catch (ex) {
-            errorString = "Error Occured in x_g_sonc_ns_pro.port.removePortsFromSite " + ex.toString();
-            response.message = errorString
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
         }
-
-		return response;
+        return response;
     },
     canBeAssigned: function(portSysID) {
         var response = {};
@@ -101,12 +107,155 @@ port.prototype = {
             }
             response.message = canBeAssigned;
         } catch (ex) {
-            errorString = 'ErrorOccured in x_g_sonc_ns_pro.port.canBeAssigned - ' + ex.toString();
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
             response.message = errorString;
         }
-
         return response;
 
+    },
+    moveSelectedPortsToProposed: function(selectedPorts) {
+        var response = {};
+        gs.info('Selected Ports: ' + selectedPorts);
+        portsArray = selectedPorts.split(",");
+        var errorString;
+        try {
+            for (i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    portRecord.setValue('pending_status', 4);
+                    portRecord.setValue('pending_name', portRecord.getValue('name'));
+                    portRecord.setValue('pending_client_id', portRecord.getValue('client_id'));
+                    portRecord.setValue('pending_local_circuit_id', portRecord.getValue('local_circuit_id'));
+                    portRecord.setValue('pending_ip_address', portRecord.getValue('ip_address'));
+                    portRecord.setValue('pending_pe_host_circuit_id', portRecord.getValue('pe_host_circuit_id'));
+                    portRecord.setValue('pending_vrf', portRecord.getValue('vrf'));
+                    portRecord.setValue('pending_master_device_interface', portRecord.getValue('master_device_interface'));
+                    portRecord.setValue('pending_description', portRecord.getValue('short_description'));
+                    portRecord.setValue('pending_type', portRecord.getValue('type'));
+                    portRecord.setValue('pending_remote_site_circuit_vlan', portRecord.getValue('remote_site_circuit_vlan'));
+                    portRecord.setValue('pending_interface_subnet_mask', portRecord.getValue('interface_subnet_mask'));
+                    portRecord.setValue('pending_network_gear', portRecord.getValue('network_gear'));
+                    portRecord.setValue('pending_uplink_connection_description', portRecord.getValue('uplink_connection_description'));
+                    portRecord.update();
+                }
+
+            }
+            response.message = "Successfully moved " + portsArray.length + " ports to proposed";
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
+        }
+        return response;
+    },
+    moveSelectedPortsToCurrent: function(selectedPorts) {
+        var response = {};
+        gs.info('Selected Ports: ' + selectedPorts);
+        portsArray = selectedPorts.split(",");
+        var errorString;
+        try {
+            for (i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    portRecord.setValue('pending_status', '');
+                    portRecord.setValue('name', portRecord.getValue('pending_name'));
+                    portRecord.setValue('pending_name', '');
+
+                    portRecord.setValue('client_id', portRecord.getValue('pending_client_id'));
+                    portRecord.setValue('pending_client_id', '');
+
+                    portRecord.setValue('local_circuit_id', portRecord.getValue('pending_local_circuit_id'));
+                    portRecord.setValue('pending_local_circuit_id', '');
+
+                    portRecord.setValue('ip_address', portRecord.getValue('pending_ip_address'));
+                    portRecord.setValue('pending_ip_address', '');
+
+                    portRecord.setValue('pe_host_circuit_id', portRecord.getValue('pending_pe_host_circuit_id'));
+                    portRecord.setValue('pending_pe_host_circuit_id', '');
+
+                    portRecord.setValue('vrf', portRecord.getValue('pending_vrf'));
+                    portRecord.setValue('pending_vrf','');
+
+                    portRecord.setValue('master_device_interface', portRecord.getValue('pending_master_device_interface'));
+                    portRecord.setValue('pending_master_device_interface','');
+
+                    portRecord.setValue('short_description', portRecord.getValue('pending_description'));
+                    portRecord.setValue('pending_description','');
+
+                    portRecord.setValue('type', portRecord.getValue('pending_type'));
+                    portRecord.setValue('pending_type','');
+
+                    portRecord.setValue('remote_site_circuit_vlan', portRecord.getValue('pending_remote_site_circuit_vlan'));
+                    portRecord.setValue('pending_remote_site_circuit_vlan','');
+
+                    portRecord.setValue('interface_subnet_mask', portRecord.getValue('pending_interface_subnet_mask'));
+                    portRecord.setValue('pending_interface_subnet_mask','');
+
+                    portRecord.setValue('network_gear', portRecord.getValue('pending_network_gear'));
+                    portRecord.setValue('pending_network_gear','');
+
+                    portRecord.setValue('uplink_connection_description', portRecord.getValue('pending_uplink_connection_description'));
+                    portRecord.setValue('pending_uplink_connection_description','');
+
+                    portRecord.update();
+                }
+
+            }
+            response.message = "Successfully moved " + portsArray.length + " ports to current";
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
+        }
+        return response;
+    },
+    loadProposedPortTable: function(site, hostCircuit, localCircuit) {
+        var portsArray = [];
+        var queryString = 'pending_status!=^site=';
+        queryString = queryString + site;
+        if (hostCircuit) {
+            queryString = queryString + '^pe_host_circuit_id=' + hostCircuit;
+        }
+        if (localCircuit) {
+            queryString = queryString + "^local_circuit_id=" + localCircuit;
+        }
+        portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+        portRecord.addEncodedQuery(queryString);
+        portRecord.query();
+
+        while (portRecord.next()) {
+            var portSysID = portRecord.getValue('sys_id');
+            var proposedName = portRecord.getValue('pending_name');
+            var portObj = {};
+            portObj.sys_id = portRecord.getValue('sys_id');
+            portObj.port = portRecord.getValue('sys_id');
+            portObj.site = portRecord.getValue('site');
+            portObj.pending_status = portRecord.getValue('pending_status');
+            portObj.pending_name = portRecord.getValue('pending_name');
+            portObj.pending_client_id = portRecord.getValue('pending_client_id');
+            portObj.pending_local_circuit_id = portRecord.getValue('pending_local_circuit_id');
+            portObj.pending_ip_address = portRecord.getValue('pending_ip_address');
+            portObj.pending_pe_host_circuit_id = portRecord.getValue('pending_pe_host_circuit_id');
+            portObj.pending_vrf = portRecord.getValue('pending_vrf');
+            portObj.pending_master_device_interface = portRecord.getValue('pending_master_device_interface');
+            portObj.pending_description = portRecord.getValue('pending_description');
+            portObj.pending_type = portRecord.getValue('pending_type');
+            portObj.pending_remote_site_circuit_vlan = portRecord.getValue('pending_remote_site_circuit_vlan');
+            portObj.pending_interface_subnet_mask = portRecord.getValue('pending_interface_subnet_mask');
+            portObj.pending_network_gear = portRecord.getValue('pending_network_gear');
+            portObj.pending_uplink_connection_description = portRecord.getValue('pending_uplink_connection_description');
+            //portObj.proposed_port_name = this._makeProposedPortNameLink(portSysID, proposedName);
+            portsArray.push(portObj);
+        }
+
+        return portsArray;
+    },
+    _makeProposedPortNameLink: function(portSysID, proposedPortName) {
+        var portLink = "[code]<a href='https://ncgovappdev.servicenowservices.com/now/nav/ui/classic/params/target/x_g_sonc_ns_pro_port.do?sys_id=" + portSysID + "&sysparm_view=proposedports' target='_blank'>" + proposedPortName + "</a>[/code]";
+        //var portLink = "< a href='/x_g_sonc_ns_pro_port.do?sys_id=" + portSysID + "&sysparm_view=proposedports' target='_blank'>" + proposedPortName + "</a>";
+
+        return portLink;
     },
     type: 'port'
 };]]></script>
@@ -114,13 +263,13 @@ port.prototype = {
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-07 14:19:14</sys_created_on>
         <sys_id>7e4e906a87015a10f9f20f280cbb35b6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>port</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_7e4e906a87015a10f9f20f280cbb35b6</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-24 17:35:25</sys_updated_on>
+        <sys_updated_on>2024-10-31 17:00:10</sys_updated_on>
     </sys_script_include>
 </record_update>

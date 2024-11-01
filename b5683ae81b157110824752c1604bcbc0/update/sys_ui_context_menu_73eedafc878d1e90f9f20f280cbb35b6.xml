@@ -51,7 +51,7 @@ function getSelectedHostCircuit() {
 }]]></action_script>
         <active>true</active>
         <comments/>
-        <condition/>
+        <condition>!RP.isRelatedList()</condition>
         <do_not_cache>false</do_not_cache>
         <dynamic_actions_script><![CDATA[/** 
  * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
@@ -73,7 +73,7 @@ function getSelectedHostCircuit() {
 function canBeAssinged() {
     var answer = false;
     //alert(g_list.getView());
-    if (g_list.getView() == 'nspro') {
+    if (g_list.getView() == 'selecthostcircuit') {
         answer = true;
     }
 
@@ -93,7 +93,7 @@ function canBeAssinged() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>73eedafc878d1e90f9f20f280cbb35b6</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Select Host Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -101,7 +101,7 @@ function canBeAssinged() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_73eedafc878d1e90f9f20f280cbb35b6</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-24 17:22:35</sys_updated_on>
+        <sys_updated_on>2024-11-01 19:54:38</sys_updated_on>
         <table>x_g_sonc_ns_pro_st_host_circuits_with_capacity</table>
         <track_selected>false</track_selected>
         <type>action</type>

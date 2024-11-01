@@ -54,7 +54,7 @@
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
-        <redirect_url>generated_record</redirect_url>
+        <redirect_url>catalog_home</redirect_url>
         <request_method/>
         <roles/>
         <save_options/>
@@ -67,10 +67,13 @@
 current.special_instructions = producer.comments_instructions;
 current.assignment_group = '0355cd0ddb98630065fbf482ba96196f'; // Network Operations
 //current.requested_for = producer.requested_for;
-//Comments to force a change to re-publish
-// redirects - https://docs.servicenow.com/bundle/sandiego-servicenow-platform/page/product/service-catalog-management/concept/c_PopulatingRecordData.html
-//producer.redirect = '/nspro';
-//producer.portal_redirect = '/nspro';]]></script>
+producer.redirect = '/nspro';
+producer.portal_redirect = '/nspro';
+var link = '<a href="x_g_sonc_ns_pro_telco_order.do?sys_id=' + current.sys_id + '" class="breadcrumb" >' + 'Click here to go to the Network Request.' + '</a>';
+var msg = '<body><center></br></br><p><font size="6"><b>Network Request: '+ current.number +' has been successfully created.</b></font></p></br><br/></center></body><body><center>'+ link + '</center></body>';
+gs.addInfoMessage(msg);
+// Prevent redirection
+producer.portal_redirect = 'javascript&colon;void(0)';      // &colon; should be replaced by only  :]]></script>
         <short_description>Request DIT Services for a Site or Location</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -79,14 +82,14 @@ current.assignment_group = '0355cd0ddb98630065fbf482ba96196f'; // Network Operat
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-12 09:29:06</sys_created_on>
         <sys_id>670690da1bf5f110824752c1604bcbe7</sys_id>
-        <sys_mod_count>166</sys_mod_count>
+        <sys_mod_count>190</sys_mod_count>
         <sys_name>Request New Site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_producer_670690da1bf5f110824752c1604bcbe7</sys_update_name>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-25 15:49:35</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-11-01 14:32:13</sys_updated_on>
         <table_name>x_g_sonc_ns_pro_telco_order</table_name>
         <taxonomy_topic/>
         <template/>
@@ -96,7 +99,7 @@ current.assignment_group = '0355cd0ddb98630065fbf482ba96196f'; // Network Operat
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>156</version>
+        <version>180</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

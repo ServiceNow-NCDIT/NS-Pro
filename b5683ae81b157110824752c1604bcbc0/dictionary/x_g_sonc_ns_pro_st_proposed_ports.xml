@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="26ce3ff987255a54f9f20f280cbb3575" label="Proposed Ports" max_length="40" name="x_g_sonc_ns_pro_st_proposed_ports" type="collection">
+        <element label="Pending Master Device Interface" max_length="100" name="pending_master_device_interface" type="string"/>
+        <element attributes="no_truncate=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;var link = '[code]&lt;a href=&quot;/x_g_sonc_ns_pro_port.do?sys_id='+ current.sys_id + '&amp;sysparm_view=proposedports&quot; target=&quot;_blank&quot;&gt;'+ current.pending_name +'&lt;/a&gt;[/code]';&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return link;&#13;&#10;&#13;&#10;})(current);" label="Proposed Port Name" max_length="1024" name="proposed_port_name" type="string" virtual="true"/>
+        <element label="Pending PE Host Circuit ID" max_length="32" name="pending_pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Pending Client Id" max_length="40" name="pending_client_id" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Port" max_length="32" name="port" reference="x_g_sonc_ns_pro_port" type="reference"/>
+        <element label="Pending Port Name" max_length="255" name="pending_name" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site" max_length="32" name="site" reference="cmdb_ci_site" type="reference"/>
+        <element choice="1" label="Pending Type" max_length="40" name="pending_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ME PoP" sequence="20" value="me_pop"/>
+                <element inactive_on_update="false" label="DSL" sequence="30" value="dsl"/>
+                <element inactive_on_update="false" label="ME" sequence="10" value="me"/>
+            </choice>
+        </element>
+        <element label="Pending Local Circuit ID" max_length="32" name="pending_local_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element label="Pending Remote Site Circuit VLAN" max_length="40" name="pending_remote_site_circuit_vlan" type="string"/>
+        <element label="Pending IP Address" max_length="40" name="pending_ip_address" type="ip_addr"/>
+        <element label="Pending Description" max_length="1000" name="pending_description" type="string"/>
+        <element label="Pending VRF" max_length="32" name="pending_vrf" reference="x_g_sonc_ns_pro_vrf_definition" type="reference"/>
+        <element label="Pending Interface Subnet Mask" max_length="40" name="pending_interface_subnet_mask" type="string"/>
+        <element label="Pending Network Gear" max_length="32" name="pending_network_gear" reference="cmdb_ci_netgear" type="reference"/>
+        <element choice="1" label="Pending Status" max_length="40" name="pending_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Defective" value="102"/>
+                <element inactive_on_update="false" label="Pending Pickup" value="103"/>
+                <element inactive_on_update="false" label="Pending Repair" value="5"/>
+                <element inactive_on_update="false" label="Absent" value="100"/>
+                <element inactive_on_update="false" label="Installed" value="1"/>
+                <element inactive_on_update="false" label="Retired" value="7"/>
+                <element inactive_on_update="false" label="Pending Retire" value="101"/>
+                <element inactive_on_update="false" label="Unknown" value="105"/>
+                <element inactive_on_update="false" label="On Order" value="2"/>
+                <element inactive_on_update="false" label="In Stock" value="6"/>
+                <element inactive_on_update="false" label="In Maintenance" value="3"/>
+                <element inactive_on_update="false" label="Pending Install" value="4"/>
+                <element inactive_on_update="false" label="Reserved" value="104"/>
+            </choice>
+        </element>
+        <element label="Pending Uplink Connection Description" max_length="100" name="pending_uplink_connection_description" type="string"/>
+        <index name="index">
+            <element name="pending_local_circuit_id"/>
+        </index>
+        <index name="index2">
+            <element name="pending_network_gear"/>
+        </index>
+        <index name="index3">
+            <element name="pending_pe_host_circuit_id"/>
+        </index>
+        <index name="index4">
+            <element name="pending_vrf"/>
+        </index>
+        <index name="index5">
+            <element name="port"/>
+        </index>
+        <index name="index6">
+            <element name="site"/>
+        </index>
+    </element>
+</database>

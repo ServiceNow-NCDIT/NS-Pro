@@ -15,7 +15,7 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>nspro_change_service_request</internal_name>
-        <label_cache>[{"name":"17bbeca9-61e1-401f-9f9c-6e3aa8216185.Record.sys_id","label":"1 - Look Up Record➛Service Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"sys_id","usedInstances":{"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["assigned_wan_service"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["assigned_wan_service"]}},{"name":"Created_1.current.type_change","label":"Trigger - Record Created➛Network Request Record➛Type Change","reference":"","reference_display":"Type Change","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_change","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"used":false,"label":"Add High Availability (HA)","image":"","rawLabel":"Add High Availability (HA)","selected":false,"missing":false,"reference":false,"value":"add_ha","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Service Change","image":"","rawLabel":"WAN Service Change","selected":false,"missing":false,"reference":false,"value":"wan_service_change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Routing Change (IP, subnet, VRF)","image":"","rawLabel":"WAN Routing Change (IP, subnet, VRF)","selected":false,"missing":false,"reference":false,"value":"wan_routing_change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Other (detail in instructions)","image":"","rawLabel":"Other (detail in instructions)","selected":false,"missing":false,"reference":false,"value":"other","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{"b5553ca8-c480-4823-9be4-dd4f53d2cad8":["condition"],"ead69c57-483a-49b4-88e9-b9dace708948":["condition"],"fb481b3f-8936-48c0-9b26-2b36e787581d":["condition"],"0f452826-b079-4f5d-88ea-27a3b5ce34dc":["condition"]}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"0845758c-82f4-4a1d-b545-c9974b0ec41c":["site"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["site"],"24ae257b-fe5a-4cac-9fba-a484cf3d0f88":["values"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["site"],"7048ccde-d44d-466d-9896-9dffef804b59":["site"],"3f40a7a7-34ed-4e5a-99b2-55ef17f57da8":["site"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.request_managed_wlan","label":"Trigger - Record Created➛Network Request Record➛Request Managed WLAN","reference":"","reference_display":"Request Managed WLAN","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_managed_wlan","usedInstances":{"5d43b6db-a93e-4133-bc37-c9bfb4740b89":["condition"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["description"]}},{"name":"Created_1.current.request_managed_voip","label":"Trigger - Record Created➛Network Request Record➛Request Managed VOIP","reference":"","reference_display":"Request Managed VOIP","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_managed_voip","usedInstances":{"5d43b6db-a93e-4133-bc37-c9bfb4740b89":["condition"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["description"]}},{"name":"Created_1.current.request_managed_lan","label":"Trigger - Record Created➛Network Request Record➛Request Managed LAN","reference":"","reference_display":"Request Managed LAN","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_managed_lan","usedInstances":{"5d43b6db-a93e-4133-bc37-c9bfb4740b89":["condition"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["description"]}},{"name":"Created_1.current.assigned_to","label":"Trigger - Record Created➛Network Request Record➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"assigned_to","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["assigned_to"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["field_values"],"65595e84-cfb7-4835-b5a7-2eaacb95f339":["assigned_to"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_fields"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_to"],"24ae257b-fe5a-4cac-9fba-a484cf3d0f88":["values"],"ae9decbe-dad8-4ef9-8822-f774203ec014":["assigned_to"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["values","assigned_to"],"7048ccde-d44d-466d-9896-9dffef804b59":["values"],"3f40a7a7-34ed-4e5a-99b2-55ef17f57da8":["values"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["description"]}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Network Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"0845758c-82f4-4a1d-b545-c9974b0ec41c":["field_values"]}},{"name":"Created_1.current.dest_zip","label":"Trigger - Record Created➛Network Request Record➛Dest Zip","reference":"","reference_display":"Dest Zip","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_state","label":"Trigger - Record Created➛Network Request Record➛Dest State","reference":"","reference_display":"Dest State","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_city","label":"Trigger - Record Created➛Network Request Record➛Dest City","reference":"","reference_display":"Dest City","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_street","label":"Trigger - Record Created➛Network Request Record➛Dest Street Address","reference":"","reference_display":"Dest Street Address","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Network Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.new_or_existing_site","label":"Trigger - Record Created➛Network Request Record➛New or Existing Site","reference":"","reference_display":"New or Existing Site","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_request","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"used":false,"label":"New Service","image":"","rawLabel":"New Service","selected":false,"missing":false,"reference":false,"value":"new","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Change Service","image":"","rawLabel":"Change Service","selected":false,"missing":false,"reference":false,"value":"change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Relocate Site","image":"","rawLabel":"Relocate Site","selected":false,"missing":false,"reference":false,"value":"relocate","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Terminate Site","image":"","rawLabel":"Terminate Site","selected":false,"missing":false,"reference":false,"value":"terminate_site","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Terminate Service","image":"","rawLabel":"Terminate Service","selected":false,"missing":false,"reference":false,"value":"terminate_service","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{"aa18cc12-3a8d-4a50-80b3-142fc1975893":["request_type"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["request_type"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["request_type"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["request_type"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["request_type"]}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.speed_egress","label":"9 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","usedInstances":{}},{"name":"Created_1.current.service_code","label":"Trigger - Record Created➛Network Request Record➛Service Code","reference":"","reference_display":"Service Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"service_code","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["service_code"],"7048ccde-d44d-466d-9896-9dffef804b59":["service_code"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["service_code"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"],"17bbeca9-61e1-401f-9f9c-6e3aa8216185":["conditions"],"dc024727-01dd-4075-bb8a-234471b4a02a":["conditions"]}},{"name":"Created_1.current.network_service_category","label":"Trigger - Record Created➛Network Request Record➛WAN Service","reference":"x_g_sonc_ns_pro_network_service_category","reference_display":"label","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"network_service_category","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["network_service_category"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["network_service_category"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.circuit_due_date","label":"Trigger - Record Created➛Network Request Record➛Circuit Due Date","reference":"","reference_display":"Circuit Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"Created_1.current.location","label":"Trigger - Record Created➛Network Request Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"location","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["location"]}},{"name":"Created_1.current.special_instructions","label":"Trigger - Record Created➛Network Request Record➛Special Instructions","reference":"","reference_display":"Special Instructions","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"special_instructions","usedInstances":{"65595e84-cfb7-4835-b5a7-2eaacb95f339":["description"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_fields"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["special_instructions"],"7048ccde-d44d-466d-9896-9dffef804b59":["special_instructions"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["special_instructions"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.demarc_location","label":"Trigger - Record Created➛Telco Order Record➛DEMARC Location","reference":"","reference_display":"DEMARC Location","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_site","label":"Trigger - Record Created➛Network Request Record➛Dest Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.request_managed_wan","label":"Trigger - Record Created➛Telco Order Record➛Request Managed WAN","reference":"","reference_display":"Request Managed WAN","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"0845758c-82f4-4a1d-b545-c9974b0ec41c":["field_values"],"65595e84-cfb7-4835-b5a7-2eaacb95f339":["ah_requested_item","request"],"1949afa0-b459-4f6c-8f3e-519987e0397e":["condition"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_requested_item","ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_requested_item","ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_requested_item","ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_requested_item","ah_fields"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["telco_order","service_code"],"7048ccde-d44d-466d-9896-9dffef804b59":["telco_order"],"3f40a7a7-34ed-4e5a-99b2-55ef17f57da8":["telco_order"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["telco_order"],"24ae257b-fe5a-4cac-9fba-a484cf3d0f88":["telco_order"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]},"attributes":{}},{"name":"Created_1.current.request_ha","label":"Trigger - Record Created➛Telco Order Record➛Request HA","reference":"","reference_display":"Request HA","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"due_date","usedInstances":{"65595e84-cfb7-4835-b5a7-2eaacb95f339":["due_date"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_fields"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["due_date"],"7048ccde-d44d-466d-9896-9dffef804b59":["due_date"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["due_date"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record","label":"9 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.service_definition","label":"Trigger - Record Created➛Network Request Record➛Assigned WAN Service","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"service_definition","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["assigned_wan_service"],"7048ccde-d44d-466d-9896-9dffef804b59":["assigned_wan_service"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_wan_service"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["assigned_wan_service"]}},{"name":"Created_1.current.site.location","label":"Trigger - Record Created➛Network Request Record➛Site➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_site","column_name":"location","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["location"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"7048ccde-d44d-466d-9896-9dffef804b59":["location"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["location"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.sys_id","label":"9 - Look Up Record➛Service Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"sys_id","usedInstances":{"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_wan_service"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["assigned_wan_service"]}},{"name":"Created_1.current.change_type","label":"Trigger - Record Created➛Network Request Record➛Change Type","reference":"","reference_display":"Change Type","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"change_type","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"used":false,"label":"Add New Service","image":"","rawLabel":"Add New Service","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Remove Service","image":"","rawLabel":"Remove Service","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Service Change","image":"","rawLabel":"WAN Service Change","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Routing Change (IP, Subnet, VRF)","image":"","rawLabel":"WAN Routing Change (IP, Subnet, VRF)","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Other Special Request","image":"","rawLabel":"Other Special Request","selected":false,"missing":false,"reference":false,"value":"5","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["request_type"]}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.change_type","label":"Trigger - Record Created➛Network Request Record➛Change Type","reference":"","reference_display":"Change Type","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"change_type","choices":[{"label":"-- None --","used":false,"image":"","missing":false,"reference":false,"rawLabel":"-- None --","selected":false,"value":""},{"used":false,"label":"Add New Service","image":"","missing":false,"reference":false,"rawLabel":"Add New Service","selected":false,"value":"1","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Remove Service","image":"","missing":false,"reference":false,"rawLabel":"Remove Service","selected":false,"value":"2","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Service Change","image":"","missing":false,"reference":false,"rawLabel":"WAN Service Change","selected":false,"value":"3","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Routing Change (IP, Subnet, VRF)","image":"","missing":false,"reference":false,"rawLabel":"WAN Routing Change (IP, Subnet, VRF)","selected":false,"value":"4","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Other Special Request","image":"","missing":false,"reference":false,"rawLabel":"Other Special Request","selected":false,"value":"5","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["request_type"]}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.sys_id","label":"9 - Look Up Record➛Service Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"sys_id","usedInstances":{"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_wan_service"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["assigned_wan_service"]}},{"name":"Created_1.current.site.location","label":"Trigger - Record Created➛Network Request Record➛Site➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_site","column_name":"location","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["location"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"7048ccde-d44d-466d-9896-9dffef804b59":["location"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["location"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.service_definition","label":"Trigger - Record Created➛Network Request Record➛Assigned WAN Service","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"service_definition","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["assigned_wan_service"],"7048ccde-d44d-466d-9896-9dffef804b59":["assigned_wan_service"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_wan_service"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["assigned_wan_service"]}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record","label":"9 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition Record","type":"reference","base_type":"reference","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"due_date","usedInstances":{"65595e84-cfb7-4835-b5a7-2eaacb95f339":["due_date"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_fields"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["due_date"],"7048ccde-d44d-466d-9896-9dffef804b59":["due_date"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["due_date"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.request_ha","label":"Trigger - Record Created➛Telco Order Record➛Request HA","reference":"","reference_display":"Request HA","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"0845758c-82f4-4a1d-b545-c9974b0ec41c":["field_values"],"65595e84-cfb7-4835-b5a7-2eaacb95f339":["ah_requested_item","request"],"1949afa0-b459-4f6c-8f3e-519987e0397e":["condition"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_requested_item","ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_requested_item","ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_requested_item","ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_requested_item","ah_fields"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["telco_order","service_code"],"7048ccde-d44d-466d-9896-9dffef804b59":["telco_order"],"3f40a7a7-34ed-4e5a-99b2-55ef17f57da8":["telco_order"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["telco_order"],"24ae257b-fe5a-4cac-9fba-a484cf3d0f88":["telco_order"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]},"attributes":{}},{"name":"Created_1.current.request_managed_wan","label":"Trigger - Record Created➛Telco Order Record➛Request Managed WAN","reference":"","reference_display":"Request Managed WAN","type":"boolean","base_type":"boolean","usedInstances":{}},{"name":"Created_1.current.dest_site","label":"Trigger - Record Created➛Network Request Record➛Dest Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","usedInstances":{}},{"name":"Created_1.current.demarc_location","label":"Trigger - Record Created➛Telco Order Record➛DEMARC Location","reference":"","reference_display":"DEMARC Location","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.special_instructions","label":"Trigger - Record Created➛Network Request Record➛Special Instructions","reference":"","reference_display":"Special Instructions","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"special_instructions","usedInstances":{"65595e84-cfb7-4835-b5a7-2eaacb95f339":["description"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_fields"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["special_instructions"],"7048ccde-d44d-466d-9896-9dffef804b59":["special_instructions"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["special_instructions"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.location","label":"Trigger - Record Created➛Network Request Record➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"location","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["location"]}},{"name":"Created_1.current.circuit_due_date","label":"Trigger - Record Created➛Network Request Record➛Circuit Due Date","reference":"","reference_display":"Circuit Due Date","type":"glide_date","base_type":"glide_date","usedInstances":{}},{"name":"Created_1.current.network_service_category","label":"Trigger - Record Created➛Network Request Record➛WAN Service","reference":"x_g_sonc_ns_pro_network_service_category","reference_display":"label","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"network_service_category","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["network_service_category"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["network_service_category"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.service_code","label":"Trigger - Record Created➛Network Request Record➛Service Code","reference":"","reference_display":"Service Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"service_code","usedInstances":{"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["service_code"],"7048ccde-d44d-466d-9896-9dffef804b59":["service_code"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["service_code"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"],"17bbeca9-61e1-401f-9f9c-6e3aa8216185":["conditions"],"dc024727-01dd-4075-bb8a-234471b4a02a":["conditions"]}},{"name":"d67fabe0-0287-486a-bb7e-bec88db44ad6.Record.speed_egress","label":"9 - Look Up Record➛Service Definition Record➛Speed Egress","reference":"","reference_display":"Speed Egress","type":"decimal","base_type":"decimal","usedInstances":{}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_request","choices":[{"label":"-- None --","used":false,"image":"","missing":false,"reference":false,"rawLabel":"-- None --","selected":false,"value":""},{"used":false,"label":"New Service","image":"","missing":false,"reference":false,"rawLabel":"New Service","selected":false,"value":"new","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Change Service","image":"","missing":false,"reference":false,"rawLabel":"Change Service","selected":false,"value":"change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Relocate Site","image":"","missing":false,"reference":false,"rawLabel":"Relocate Site","selected":false,"value":"relocate","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Terminate Site","image":"","missing":false,"reference":false,"rawLabel":"Terminate Site","selected":false,"value":"terminate_site","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Terminate Service","image":"","missing":false,"reference":false,"rawLabel":"Terminate Service","selected":false,"value":"terminate_service","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{"aa18cc12-3a8d-4a50-80b3-142fc1975893":["request_type"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["request_type"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["request_type"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["request_type"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["request_type"]}},{"name":"Created_1.current.new_or_existing_site","label":"Trigger - Record Created➛Network Request Record➛New or Existing Site","reference":"","reference_display":"New or Existing Site","type":"choice","base_type":"choice","usedInstances":{}},{"name":"Created_1.current.number","label":"Trigger - Record Created➛Network Request Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_street","label":"Trigger - Record Created➛Network Request Record➛Dest Street Address","reference":"","reference_display":"Dest Street Address","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_city","label":"Trigger - Record Created➛Network Request Record➛Dest City","reference":"","reference_display":"Dest City","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_state","label":"Trigger - Record Created➛Network Request Record➛Dest State","reference":"","reference_display":"Dest State","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.dest_zip","label":"Trigger - Record Created➛Network Request Record➛Dest Zip","reference":"","reference_display":"Dest Zip","type":"string","base_type":"string","usedInstances":{}},{"name":"Created_1.current.sys_created_on","label":"Trigger - Record Created➛Network Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"0845758c-82f4-4a1d-b545-c9974b0ec41c":["field_values"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["description"]}},{"name":"Created_1.current.assigned_to","label":"Trigger - Record Created➛Network Request Record➛Assigned To","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"assigned_to","usedInstances":{"e888a47c-96f8-489f-8e0b-3b8a60d032e5":["assigned_to"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["field_values"],"65595e84-cfb7-4835-b5a7-2eaacb95f339":["assigned_to"],"69831fd3-29b5-4835-b7e2-1cb1e204433e":["ah_fields"],"c6221443-c758-4ff4-877d-50b87463a383":["ah_fields"],"c432815f-ca8c-4cd4-9c82-e5f1f88e43e3":["ah_fields"],"757aa63f-1d73-494b-84e2-a559f579b242":["ah_fields"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["assigned_to"],"24ae257b-fe5a-4cac-9fba-a484cf3d0f88":["values"],"ae9decbe-dad8-4ef9-8822-f774203ec014":["assigned_to"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["values","assigned_to"],"7048ccde-d44d-466d-9896-9dffef804b59":["values"],"3f40a7a7-34ed-4e5a-99b2-55ef17f57da8":["values"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.request_managed_lan","label":"Trigger - Record Created➛Network Request Record➛Request Managed LAN","reference":"","reference_display":"Request Managed LAN","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_managed_lan","usedInstances":{"5d43b6db-a93e-4133-bc37-c9bfb4740b89":["condition"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["description"]}},{"name":"Created_1.current.request_managed_voip","label":"Trigger - Record Created➛Network Request Record➛Request Managed VOIP","reference":"","reference_display":"Request Managed VOIP","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_managed_voip","usedInstances":{"5d43b6db-a93e-4133-bc37-c9bfb4740b89":["condition"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["description"]}},{"name":"Created_1.current.request_managed_wlan","label":"Trigger - Record Created➛Network Request Record➛Request Managed WLAN","reference":"","reference_display":"Request Managed WLAN","type":"boolean","base_type":"boolean","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"request_managed_wlan","usedInstances":{"5d43b6db-a93e-4133-bc37-c9bfb4740b89":["condition"],"0845758c-82f4-4a1d-b545-c9974b0ec41c":["description"]}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"0845758c-82f4-4a1d-b545-c9974b0ec41c":["site"],"cc50ad3c-1e69-4053-9862-bfc914de3a38":["site"],"24ae257b-fe5a-4cac-9fba-a484cf3d0f88":["values"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["site"],"7048ccde-d44d-466d-9896-9dffef804b59":["site"],"3f40a7a7-34ed-4e5a-99b2-55ef17f57da8":["site"],"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["values"],"766d541a-cf3a-485a-9fd4-d8160702ab9f":["values"],"aa18cc12-3a8d-4a50-80b3-142fc1975893":["values"]}},{"name":"Created_1.current.type_change","label":"Trigger - Record Created➛Network Request Record➛Type Change","reference":"","reference_display":"Type Change","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_change","choices":[{"label":"-- None --","used":false,"image":"","missing":false,"reference":false,"rawLabel":"-- None --","selected":false,"value":""},{"used":false,"label":"Add High Availability (HA)","image":"","missing":false,"reference":false,"rawLabel":"Add High Availability (HA)","selected":false,"value":"add_ha","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Service Change","image":"","missing":false,"reference":false,"rawLabel":"WAN Service Change","selected":false,"value":"wan_service_change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"WAN Routing Change (IP, subnet, VRF)","image":"","missing":false,"reference":false,"rawLabel":"WAN Routing Change (IP, subnet, VRF)","selected":false,"value":"wan_routing_change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"used":false,"label":"Other (detail in instructions)","image":"","missing":false,"reference":false,"rawLabel":"Other (detail in instructions)","selected":false,"value":"other","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{"b5553ca8-c480-4823-9be4-dd4f53d2cad8":["condition"],"ead69c57-483a-49b4-88e9-b9dace708948":["condition"],"fb481b3f-8936-48c0-9b26-2b36e787581d":["condition"],"0f452826-b079-4f5d-88ea-27a3b5ce34dc":["condition"]}},{"name":"17bbeca9-61e1-401f-9f9c-6e3aa8216185.Record.sys_id","label":"1 - Look Up Record➛Service Definition Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_g_sonc_ns_pro_service_definition","column_name":"sys_id","usedInstances":{"4d4d75bb-9691-4b1c-bbf6-6a49f321d931":["assigned_wan_service"],"7b995fe6-40ff-4676-b157-4b5c1ebb280a":["assigned_wan_service"]}}]</label_cache>
         <master_snapshot>935362b1478a425040fd43ff336d430b</master_snapshot>
         <name>NSPro Change Service Request</name>
         <natlang/>
@@ -27,14 +27,14 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:46:59</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>7e739e3947c6425040fd43ff336d43e3</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>NSPro Change Service Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -42,7 +42,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_hub_flow_7e739e3947c6425040fd43ff336d43e3</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:52</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:21</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=7e739e3947c6425040fd43ff336d43e3"/>
@@ -100,14 +100,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:02</sys_created_on>
         <sys_id>6f73127947c6425040fd43ff336d4389</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:51</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -166,7 +166,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -225,14 +225,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:01</sys_created_on>
         <sys_id>5773de3947c6425040fd43ff336d43ef</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:51</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -250,7 +250,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -309,14 +309,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:01</sys_created_on>
         <sys_id>9b73de3947c6425040fd43ff336d43f3</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:51</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -349,14 +349,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-15 00:20:06</sys_created_on>
         <sys_id>2c12209d87049210f9f20f280cbb35f4</sys_id>
-        <sys_mod_count>78</sys_mod_count>
+        <sys_mod_count>82</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:59:32</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>7b995fe6-40ff-4676-b157-4b5c1ebb280a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2c12209d87049210f9f20f280cbb35f4"/>
@@ -417,14 +417,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-15 19:09:02</sys_created_on>
         <sys_id>3974686d4788161040fd43ff336d43b6</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:59:32</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>766d541a-cf3a-485a-9fd4-d8160702ab9f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3974686d4788161040fd43ff336d43b6"/>
@@ -485,14 +485,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-15 19:09:02</sys_created_on>
         <sys_id>6974686d4788161040fd43ff336d439a</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:59:32</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>4d4d75bb-9691-4b1c-bbf6-6a49f321d931</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6974686d4788161040fd43ff336d439a"/>
@@ -529,11 +529,11 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-15 19:09:02</sys_created_on>
         <sys_id>2174686d4788161040fd43ff336d439d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:21</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
-        <value>assigned_to={{Created_1.current.assigned_to}}^short_description=WAN Service Change^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}^site={{Created_1.current.site}}^due_date={{Created_1.current.due_date}}^service_code={{Created_1.current.service_code}}^network_service_category={{Created_1.current.network_service_category}}^description=Network Operations needs to define the description^special_instructions={{Created_1.current.special_instructions}}^assigned_wan_service={{17bbeca9-61e1-401f-9f9c-6e3aa8216185.Record.sys_id}}^location={{Created_1.current.site.location}}^request_type={{Created_1.current.type_request}}</value>
+        <value>assigned_to={{Created_1.current.assigned_to}}^short_description=WAN Service Change^assignment_group={"display":"Network Operations","value":"0355cd0ddb98630065fbf482ba96196f","sys_id":"0355cd0ddb98630065fbf482ba96196f"}^telco_order={{Created_1.current}}^site={{Created_1.current.site}}^due_date={{Created_1.current.due_date}}^service_code={{Created_1.current.service_code}}^network_service_category={{Created_1.current.network_service_category}}^description=Network Operations needs to define the description^special_instructions={{Created_1.current.special_instructions}}^assigned_wan_service={{17bbeca9-61e1-401f-9f9c-6e3aa8216185.Record.sys_id}}^location={{Created_1.current.site.location}}^request_type={{Created_1.current.type_request}}^type_request=change^task_type=provision_change</value>
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=6974686d4788161040fd43ff336d439a"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=6974686d4788161040fd43ff336d439a"/>
@@ -553,14 +553,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:02</sys_created_on>
         <sys_id>6b73127947c6425040fd43ff336d4375</sys_id>
-        <sys_mod_count>158</sys_mod_count>
+        <sys_mod_count>162</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:59:32</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:21</sys_updated_on>
         <ui_id>cc50ad3c-1e69-4053-9862-bfc914de3a38</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6b73127947c6425040fd43ff336d4375"/>
@@ -621,14 +621,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-15 19:09:02</sys_created_on>
         <sys_id>7174686d4788161040fd43ff336d43c5</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:59:32</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:21</sys_updated_on>
         <ui_id>aa18cc12-3a8d-4a50-80b3-142fc1975893</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7174686d4788161040fd43ff336d43c5"/>
@@ -689,14 +689,14 @@
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-08-28 22:21:06</sys_created_on>
         <sys_id>c21dcc7d87105290f9f20f280cbb353f</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:59:32</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>17bbeca9-61e1-401f-9f9c-6e3aa8216185</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c21dcc7d87105290f9f20f280cbb353f"/>
@@ -783,14 +783,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:02</sys_created_on>
         <sys_id>e773127947c6425040fd43ff336d436e</sys_id>
-        <sys_mod_count>158</sys_mod_count>
+        <sys_mod_count>162</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:59:32</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:21</sys_updated_on>
         <ui_id>d67fabe0-0287-486a-bb7e-bec88db44ad6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e773127947c6425040fd43ff336d436e"/>
@@ -887,14 +887,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-14 19:04:36</sys_created_on>
         <sys_id>03d9df8d87885210f9f20f280cbb35a6</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:51</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>fb481b3f-8936-48c0-9b26-2b36e787581d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -965,14 +965,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-14 19:04:36</sys_created_on>
         <sys_id>03d9df8d87885210f9f20f280cbb35b0</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:51</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>35d99459-4ec4-48d0-aa79-f9b4c17efb34</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1042,14 +1042,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:02</sys_created_on>
         <sys_id>2373127947c6425040fd43ff336d430a</sys_id>
-        <sys_mod_count>80</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:52</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:21</sys_updated_on>
         <ui_id>dd5c22d6-65a8-43c0-81f5-ec51dfd5c6f2</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1063,10 +1063,10 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:02</sys_created_on>
         <sys_id>2f73127947c6425040fd43ff336d4325</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-08-28 21:59:11</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2024-10-31 13:16:21</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Error Status">0f72a5a25b132010b61ea2013781c749</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1110,14 +1110,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:01</sys_created_on>
         <sys_id>2773127947c6425040fd43ff336d4306</sys_id>
-        <sys_mod_count>78</sys_mod_count>
+        <sys_mod_count>79</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:52</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:21</sys_updated_on>
         <ui_id>0f452826-b079-4f5d-88ea-27a3b5ce34dc</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1188,14 +1188,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-08-13 20:52:04</sys_created_on>
         <sys_id>afd822bc47c0565040fd43ff336d4338</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:51</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>b5553ca8-c480-4823-9be4-dd4f53d2cad8</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1265,14 +1265,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-05-09 11:47:01</sys_created_on>
         <sys_id>d373de3947c6425040fd43ff336d43fa</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>68</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-04 20:57:51</sys_updated_on>
+        <sys_updated_on>2024-10-31 13:16:20</sys_updated_on>
         <ui_id>76ae7d6f-81df-47c8-92ea-8a2170981b49</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2620,14 +2620,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>7e739e3947c6425040fd43ff336d43e3</sys_id>
         <latest_snapshot>935362b1478a425040fd43ff336d430b</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1a-07-01-2024_07-12-2024_0853.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch7-08-21-2024_08-31-2024_1809.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=7e739e3947c6425040fd43ff336d43e3^sys_idNOT IN605a780747af025040fd43ff336d437b"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"605a780747af025040fd43ff336d437b","name":"plan","plan_signature":null}}</plan>
         <plan_id>7e739e3947c6425040fd43ff336d43e3</plan_id>
-        <snapshot>df8d7fb787941e10f9f20f280cbb3519</snapshot>
+        <snapshot>6063396987251654f9f20f280cbb35c5</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-07-26 16:04:01</sys_created_on>

@@ -19,28 +19,32 @@
 	var currentView = g_form.getViewName();
 	if(currentView == 'assignporttocircuit'){
 		g_form.hideRelatedLists();
+		g_form.setMandatory('local_circuit_id',true);
+		g_form.setReadOnly('serial_number',true);
 	} else {
 		g_form.showRelatedLists();
+		g_form.setMandatory('local_circuit_id',false);
+		g_form.setReadOnly('serial_number',true);
 	}
 
 }]]></script_true>
         <set_values/>
-        <short_description>HideRelated On AssignPort</short_description>
+        <short_description>HideRelated and Set Mandatory  On AssignPort</short_description>
         <sys_class_name>sys_ui_policy</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-11 10:02:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>40d9483f87c15a10f9f20f280cbb3596</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>HideRelated On AssignPort</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>HideRelated and Set Mandatory  On AssignPort</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_policy_40d9483f87c15a10f9f20f280cbb3596</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-11 10:10:12</sys_updated_on>
+        <sys_updated_on>2024-11-01 16:48:11</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <ui_type>0</ui_type>
         <view/>
