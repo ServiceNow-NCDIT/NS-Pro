@@ -43,6 +43,7 @@ port.prototype = {
                     portRecord.setValue('name', '');
                     portRecord.setValue('vrf', '');
                     portRecord.setValue('site', '');
+					portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit','');
                     portRecord.update();
                 }
             }
@@ -81,6 +82,7 @@ port.prototype = {
                     portRecord.setValue('name', '');
                     portRecord.setValue('vrf', '');
                     portRecord.setValue('site', gs.nil());
+					portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit','');
                     portRecord.update();
                 }
             }
@@ -263,13 +265,13 @@ port.prototype = {
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-07 14:19:14</sys_created_on>
         <sys_id>7e4e906a87015a10f9f20f280cbb35b6</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>port</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_7e4e906a87015a10f9f20f280cbb35b6</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-31 17:00:10</sys_updated_on>
+        <sys_updated_on>2024-11-04 18:57:17</sys_updated_on>
     </sys_script_include>
 </record_update>

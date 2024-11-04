@@ -604,7 +604,7 @@ circuit.prototype = {
     },
     loadProposedCircuitTable: function(site, hostCircuit) {
         circuitsArray = [];
-        var queryString = 'pending_status!=^site=';
+        var queryString = 'x_g_sonc_ns_pro_pending_status!=^x_g_sonc_ns_pro_site=';
         queryString = queryString + site;
         if (hostCircuit) {
             queryString = queryString + '^pe_host_circuit_id=' + hostCircuit;
@@ -615,10 +615,11 @@ circuit.prototype = {
         circuitRecord.query();
 
         while (circuitRecord.next()) {
-            var circuitObj = {}
+            var circuitObj = {};
             var circuitSysID = circuitRecord.getValue('sys_id');
 
             circuitObj.sys_id = circuitSysID;
+			circuitObj.x_g_sonc_ns_pro_site = circuitRecord.getValue('x_g_sonc_ns_pro_site');
 			circuitObj.x_g_sonc_ns_pro_pending_cir = circuitRecord.getValue('x_g_sonc_ns_pro_pending_cir');
             circuitObj.x_g_sonc_ns_pro_pending_circuit_contract_num = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_contract_num');
             circuitObj.x_g_sonc_ns_pro_pending_circuit_order_num = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_order_num');
@@ -682,13 +683,13 @@ circuit.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 22:52:58</sys_created_on>
         <sys_id>160966fa478d8a10f4af2ad2e16d43fb</sys_id>
-        <sys_mod_count>131</sys_mod_count>
+        <sys_mod_count>135</sys_mod_count>
         <sys_name>circuit</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_160966fa478d8a10f4af2ad2e16d43fb</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-03 21:53:32</sys_updated_on>
+        <sys_updated_on>2024-11-04 17:51:29</sys_updated_on>
     </sys_script_include>
 </record_update>

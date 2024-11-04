@@ -19,11 +19,10 @@ function assignHostPortToSite() {
     // var taskInformation;
 
     var site;
-    // if (g_scratchpad.taskInformation) {
-    //     taskInformation = g_scratchpad.taskInformation;
-    // 	site = taskInformation.site;
-    // }
+	var priSec;
     site = nsProTaskMain.g_form.getValue('site');
+	priSec = nsProTaskMain.g_form.getValue('pri_sec_circuit');
+
 
     //alert(site);
     var formTitle = "Assign Port";
@@ -41,6 +40,7 @@ function assignHostPortToSite() {
         var iframeWindow = iframe.contentWindow ? iframe.contentWindow : iframe.contentDocument.defaultView;
         var d_form = iframeWindow.g_form;
         d_form.setValue('site', site);
+		d_form.setValue('x_g_sonc_ns_pro_pri_sec_circuit',priSec);
 			jQuery("#dialog_frame")[0].contentWindow.jQuery("#page_timing_div").hide();
             //Resize the modal window
             jQuery(".modal-content").css("width", "100%").css("margin", "0 auto");
@@ -132,7 +132,7 @@ function canBeAssigned() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d727d2cd8730da10f9f20f280cbb350a</sys_id>
-        <sys_mod_count>89</sys_mod_count>
+        <sys_mod_count>92</sys_mod_count>
         <sys_name>Assign Host Port</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -140,7 +140,7 @@ function canBeAssigned() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_d727d2cd8730da10f9f20f280cbb350a</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-01 16:41:37</sys_updated_on>
+        <sys_updated_on>2024-11-04 18:51:38</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <track_selected>false</track_selected>
         <type>action</type>

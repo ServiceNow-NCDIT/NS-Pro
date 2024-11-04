@@ -4,13 +4,13 @@
             <element>site</element>
             <position>0</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>c6dd58c247ad1a5440fd43ff336d439d</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>fc77ede3876d5a10f9f20f280cbb3571</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>pending_name</element>
             <position>1</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>82dd58c247ad1a5440fd43ff336d439e</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>b877ede3876d5a10f9f20f280cbb3572</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>pending_ip_address</element>
             <position>2</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>0add58c247ad1a5440fd43ff336d439e</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>3077ede3876d5a10f9f20f280cbb3573</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>pending_interface_subnet_mask</element>
             <position>3</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>8edd58c247ad1a5440fd43ff336d439e</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>b477ede3876d5a10f9f20f280cbb3573</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>pending_type</element>
             <position>4</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>06dd58c247ad1a5440fd43ff336d439f</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>3c77ede3876d5a10f9f20f280cbb3573</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,111 +74,125 @@
             <element>pending_network_gear</element>
             <position>5</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>8add58c247ad1a5440fd43ff336d439f</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>b077ede3876d5a10f9f20f280cbb3574</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pri_sec_circuit</element>
+            <position>6</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>3877ede3876d5a10f9f20f280cbb3574</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>02dd58c247ad1a5440fd43ff336d43a0</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>bc77ede3876d5a10f9f20f280cbb3574</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>pending_status</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>86dd58c247ad1a5440fd43ff336d43a0</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>3477ede3876d5a10f9f20f280cbb3575</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>pending_vrf</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>0edd58c247ad1a5440fd43ff336d43a0</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>b877ede3876d5a10f9f20f280cbb3575</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>pending_pe_host_circuit_id</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>82dd58c247ad1a5440fd43ff336d43a1</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>3077ede3876d5a10f9f20f280cbb3576</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>pending_local_circuit_id</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>0add58c247ad1a5440fd43ff336d43a1</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>b477ede3876d5a10f9f20f280cbb3576</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>remote_site_circuit_vlan</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>8edd58c247ad1a5440fd43ff336d43a1</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>3c77ede3876d5a10f9f20f280cbb3576</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>pending_uplink_connection_description</element>
-            <position>12</position>
+            <position>13</position>
             <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-10-30 21:31:15</sys_created_on>
-            <sys_id>06dd58c247ad1a5440fd43ff336d43a2</sys_id>
+            <sys_created_on>2024-11-04 18:43:43</sys_created_on>
+            <sys_id>b077ede3876d5a10f9f20f280cbb3577</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">74ccd00247ad1a5440fd43ff336d43d0</sys_ui_section>
             <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-10-30 21:31:15</sys_updated_on>
+            <sys_updated_on>2024-11-04 18:43:43</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

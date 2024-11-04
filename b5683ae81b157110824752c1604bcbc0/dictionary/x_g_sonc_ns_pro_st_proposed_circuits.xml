@@ -55,6 +55,7 @@
             </choice>
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending PE Host Circuit ID" max_length="32" name="x_g_sonc_ns_pro_pending_pe_host_circuit_id" reference="cmdb_ci_network_circuit" reference_qual="x_g_sonc_ns_pro_host_ckt=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_host_ckt=true^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site" max_length="32" name="x_g_sonc_ns_pro_site" reference="cmdb_ci_site" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Provider Order Number" max_length="40" name="x_g_sonc_ns_pro_pending_telco_provider_order_number" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Circuit Order Num" max_length="40" name="x_g_sonc_ns_pro_pending_circuit_order_num" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Circuit Speed" max_length="40" name="x_g_sonc_ns_pro_pending_circuit_speed" type="choice">
@@ -105,5 +106,8 @@
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Circuit Contract Num" max_length="100" name="x_g_sonc_ns_pro_pending_circuit_contract_num" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Host Ckt" max_length="40" name="x_g_sonc_ns_pro_pending_host_ckt" type="boolean"/>
+        <index name="index">
+            <element name="x_g_sonc_ns_pro_site"/>
+        </index>
     </element>
 </database>
