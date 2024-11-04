@@ -31,26 +31,49 @@
         <onclick>addNewPort()</onclick>
         <order>100</order>
         <script><![CDATA[function addNewPort() {
-    var priSecondary = g_form.getValue('pri_sec_circuit');
-    var site = g_form.getValue('site');
+    var callingTableName = g_form.getTableName();
+    var priSecondary;
+    var localCircuit;
+	var site;
+	//alert(callingTableName);
+    if (callingTableName == 'cmdb_ci_network_circuit') {
+        priSecondary = g_form.getValue('x_g_sonc_ns_pro_pri_sec_circuit');
+        site = g_form.getValue('x_g_sonc_ns_pro_site');
+        localCircuit = g_form.getUniqueValue();
+    } else if (callingTableName == 'x_g_sonc_ns_pro_nspro_tasks') {
+        priSecondary = g_form.getValue('pri_sec_circuit');
+        site = g_form.getValue('site');
+    }
+
+	
     var tableName = "x_g_sonc_ns_pro_port";
-    var sys_id = "-1";
 
     var portSite = 'site=' + site;
     var x_g_sonc_ns_pro_pri_sec_circuit = '^x_g_sonc_ns_pro_pri_sec_circuit=' + priSecondary;
 
+
+    var fullSysParmQuery = portSite + x_g_sonc_ns_pro_pri_sec_circuit;
+
+
+    if (localCircuit) {
+        fullSysParmQuery = fullSysParmQuery + '^local_circuit_id=' + localCircuit;
+    }
+
+	//alert(fullSysParmQuery);
+
+
     var formTitle = "Add New Port";
 
     var gmf = new GlideModalForm(formTitle, tableName, refreshCaller);
-	gmf.setPreference('sysparm_query', portSite + x_g_sonc_ns_pro_pri_sec_circuit);
-	gmf.setSysID("-1");
-	gmf.render();
+    gmf.setPreference('sysparm_query', fullSysParmQuery);
+    gmf.setSysID("-1");
+    gmf.render();
 
 
-	function refreshCaller(){
-		location.reload();
+    function refreshCaller() {
+        location.reload();
 
-	}
+    }
 
 
 }]]></script>
@@ -64,7 +87,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e316f92787219a10f9f20f280cbb3572</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>New Port</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -72,7 +95,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_e316f92787219a10f9f20f280cbb3572</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-04 20:11:33</sys_updated_on>
+        <sys_updated_on>2024-11-04 20:55:59</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
