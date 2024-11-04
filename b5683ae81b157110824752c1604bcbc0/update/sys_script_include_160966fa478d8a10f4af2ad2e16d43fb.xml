@@ -14,6 +14,10 @@ circuit.prototype = {
     initialize: function() {
         this.debug = false;
         this.circuitSpeedMultiplier = gs.getProperty('x_g_sonc_ns_pro.circuit_speed_multiplier');
+        this.nsProCore = new x_g_sonc_ns_pro.core_nspro();
+        var currentScopeID = gs.getCurrentApplicationId();
+        var grScope = new GlideRecord('sys_app');
+        this.CLASSNAME = this.nsProCore.getClassName(currentScopeID, this.type);
 
     },
 
@@ -424,12 +428,12 @@ circuit.prototype = {
                 var circuitSite = NSPROTask.getValue('site');
                 var taskNumber = NSPROTask.getValue('number');
                 var hostCircuit = NSPROTask.getValue('circuit');
-				var priSecCircuit = NSPROTask.getValue('pri_sec_circuit');
+                var priSecCircuit = NSPROTask.getValue('pri_sec_circuit');
                 var netWorkCircuit = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
                 netWorkCircuit.addQuery('name', 'STARTSWITH', taskNumber);
                 netWorkCircuit.addQuery('x_g_sonc_ns_pro_site', circuitSite);
                 netWorkCircuit.addQuery('x_g_sonc_ns_pro_pe_host_circuit_id', hostCircuit);
-				netWorkCircuit.addQuery('x_g_sonc_ns_pro_pri_sec_circuit', priSecCircuit);
+                netWorkCircuit.addQuery('x_g_sonc_ns_pro_pri_sec_circuit', priSecCircuit);
                 netWorkCircuit.orderByDesc('name');
                 netWorkCircuit.setLimit(1);
                 netWorkCircuit.query();
@@ -456,7 +460,7 @@ circuit.prototype = {
                 var newCircuit = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
                 newCircuit.initialize();
                 newCircuit.setValue('name', newCircuitNumber);
-				newCircuit.setValue('x_g_sonc_ns_pro_pri_sec_circuit',priSecCircuit);
+                newCircuit.setValue('x_g_sonc_ns_pro_pri_sec_circuit', priSecCircuit);
                 newCircuit.setValue('x_g_sonc_ns_pro_pe_host_circuit_id', NSPROTask.getValue('circuit'));
                 newCircuit.setValue('x_g_sonc_ns_pro_telco_provider', NSPROTask.getValue('telco_provider'));
                 newCircuit.setValue('access_type', NSPROTask.getValue('assigned_pe_port'));
@@ -500,7 +504,7 @@ circuit.prototype = {
             if (circuitsArray.length < 1) {
                 throw new Error("one or more circuits must be selected");
             }
-             for (var i = 0; i < circuitsArray.length; i++) {
+            for (var i = 0; i < circuitsArray.length; i++) {
                 var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
                 circuitRecord.addQuery('sys_id', circuitsArray[i]);
                 circuitRecord.query();
@@ -534,7 +538,7 @@ circuit.prototype = {
             if (circuitsArray.length < 1) {
                 throw new Error("one or more circuits must be selected");
             }
-             for (var i = 0; i < circuitsArray.length; i++) {
+            for (var i = 0; i < circuitsArray.length; i++) {
                 var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
                 circuitRecord.addQuery('sys_id', circuitsArray[i]);
                 circuitRecord.query();
@@ -598,19 +602,93 @@ circuit.prototype = {
 
         return answer;
     },
+    loadProposedCircuitTable: function(site, hostCircuit) {
+        circuitsArray = [];
+        var queryString = 'pending_status!=^site=';
+        queryString = queryString + site;
+        if (hostCircuit) {
+            queryString = queryString + '^pe_host_circuit_id=' + hostCircuit;
+        }
+
+        circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+        circuitRecord.addEncodedQuery(queryString);
+        circuitRecord.query();
+
+        while (circuitRecord.next()) {
+            var circuitObj = {}
+            var circuitSysID = circuitRecord.getValue('sys_id');
+
+            circuitObj.sys_id = circuitSysID;
+			circuitObj.x_g_sonc_ns_pro_pending_cir = circuitRecord.getValue('x_g_sonc_ns_pro_pending_cir');
+            circuitObj.x_g_sonc_ns_pro_pending_circuit_contract_num = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_contract_num');
+            circuitObj.x_g_sonc_ns_pro_pending_circuit_order_num = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_order_num');
+            circuitObj.x_g_sonc_ns_pro_pending_circuit_speed = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_speed');
+            circuitObj.x_g_sonc_ns_pro_pending_circuit_type = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_type');
+            circuitObj.x_g_sonc_ns_pro_pending_host_ckt = circuitRecord.getValue('x_g_sonc_ns_pro_pending_host_ckt');
+            circuitObj.x_g_sonc_ns_pro_pending_host_ckt_type = circuitRecord.getValue('x_g_sonc_ns_pro_pending_host_ckt_type');
+            circuitObj.x_g_sonc_ns_pro_pending_local_circuit = circuitRecord.getValue('x_g_sonc_ns_pro_pending_local_circuit');
+            circuitObj.x_g_sonc_ns_pro_pending_pe_host_circuit_id = circuitRecord.getValue('x_g_sonc_ns_pro_pending_pe_host_circuit_id');
+            circuitObj.x_g_sonc_ns_pro_pending_point_of_presence = circuitRecord.getValue('x_g_sonc_ns_pro_pending_point_of_presence');
+            circuitObj.x_g_sonc_ns_pro_pending_rmtdlci = circuitRecord.getValue('x_g_sonc_ns_pro_pending_rmtdlci');
+            circuitObj.x_g_sonc_ns_pro_pending_subnet_mask = circuitRecord.getValue('x_g_sonc_ns_pro_pending_subnet_mask');
+            circuitObj.x_g_sonc_ns_pro_pending_telco_provider_order_number = circuitRecord.getValue('x_g_sonc_ns_pro_pending_telco_provider_order_number');
+            circuitObj.x_g_sonc_ns_pro_pending_telco_service_priority = circuitRecord.getValue('x_g_sonc_ns_pro_pending_telco_service_priority');
+            circuitObj.x_g_sonc_ns_pro_pending_telco_provider = circuitRecord.getValue('x_g_sonc_ns_pro_pending_telco_provider');
+            circuitObj.x_g_sonc_ns_pro_pending_status = circuitRecord.getValue('x_g_sonc_ns_pro_pending_status');
+            circuitsArray.push(circuitObj);
+        }
+
+        return circuitsArray;
+
+    },
+    moveSelectedCircuitsToProposed: function(selectedCircuits) {
+        var response = {};
+        var errorString;
+        circuitsArray = selectedCircuits.split(",");
+        try {
+            for (i = 0; i < circuitsArray.length; i++) {
+                var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+				if(circuitRecord.get(circuitsArray[i])){
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_status',4);
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_cir',circuitRecord.getValue('x_g_sonc_ns_pro_cir'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_contract_num',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_contract_num'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_order_num',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_order_num'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_speed',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_speed'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_type',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_type'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_host_ckt',circuitRecord.getValue('x_g_sonc_ns_pro_host_ckt'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_host_ckt_type',circuitRecord.getValue('x_g_sonc_ns_pro_host_ckt_type'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_local_circuit',circuitRecord.getValue('x_g_sonc_ns_pro_local_circuit'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_pe_host_circuit_id',circuitRecord.getValue('x_g_sonc_ns_pro_pe_host_circuit_id'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_point_of_presence',circuitRecord.getValue('x_g_sonc_ns_pro_point_of_presence'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_rmtdlci',circuitRecord.getValue('x_g_sonc_ns_pro_rmtdlci'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_subnet_mask',circuitRecord.getValue('x_g_sonc_ns_pro_subnet_mask'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_provider_order_number',circuitRecord.getValue('x_g_sonc_ns_pro_telco_provider_order_number'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_service_priority',circuitRecord.getValue('x_g_sonc_ns_pro_telco_service_priority'));
+					circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_provider',circuitRecord.getValue('x_g_sonc_ns_pro_telco_provider'));
+					circuitRecord.update();
+				}
+            }
+			response.message = "Successfully moved " + circuitsArray.length + " circuits to proposed";
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
+        }
+        return response;
+    },
     type: 'circuit'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 22:52:58</sys_created_on>
         <sys_id>160966fa478d8a10f4af2ad2e16d43fb</sys_id>
-        <sys_mod_count>122</sys_mod_count>
+        <sys_mod_count>131</sys_mod_count>
         <sys_name>circuit</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_160966fa478d8a10f4af2ad2e16d43fb</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-01 16:12:03</sys_updated_on>
+        <sys_updated_on>2024-11-03 21:53:32</sys_updated_on>
     </sys_script_include>
 </record_update>

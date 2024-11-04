@@ -14,10 +14,10 @@ function moveCurrentToProposed(){
 		selected = g_sysId;
 	}
 	//alert(selected);
-	var port = new GlideAjax('x_g_sonc_ns_pro.port_ajax');
-	port.addParam('sysparm_name', 'moveSelectedPortsToProposed');
-	port.addParam('sysparm_selectedPorts', selected);
-	port.getXMLAnswer(getResponse);
+	var circuit = new GlideAjax('x_g_sonc_ns_pro.circuit_ajax');
+	circuit.addParam('sysparm_name', 'moveSelectedCircuitsToProposed');
+	circuit.addParam('sysparm_selectedCircuits', selected);
+	circuit.getXMLAnswer(getResponse);
 
     function getResponse(response) {
 		//alert(response);
@@ -49,7 +49,7 @@ function moveCurrentToProposed(){
  */ 
 ]]></dynamic_actions_script>
         <menu>list_row</menu>
-        <name>Move Selected Ports to Proposed</name>
+        <name>Move Selected Circuits To Proposed</name>
         <on_show_script><![CDATA[var nsProTaskMain;
 
 nsProTaskMain = parent.top.window.gsft_main;
@@ -69,7 +69,7 @@ function canBeConfigured() {
     if (proposed) {
 		g_menu.setVisible(g_item);
         g_menu.setEnabled(g_item);
-        g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Move Selected Ports to Proposed •</b>");
+        g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Move Selected Circuits to Proposed •</b>");
 
     } else {
 		g_menu.setHidden(g_item);
@@ -82,20 +82,20 @@ function canBeConfigured() {
         <run_on_show_script>true</run_on_show_script>
         <sys_class_name>sys_ui_context_menu</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-31 17:39:19</sys_created_on>
+        <sys_created_on>2024-11-03 21:32:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>9ff0fc1247251e5440fd43ff336d430c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Move Selected Ports to Proposed</sys_name>
+        <sys_id>ae5449df87219610f9f20f280cbb35f1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Move Selected Circuits To Proposed</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name>sys_ui_context_menu_9ff0fc1247251e5440fd43ff336d430c</sys_update_name>
+        <sys_update_name>sys_ui_context_menu_ae5449df87219610f9f20f280cbb35f1</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-03 21:33:18</sys_updated_on>
-        <table>x_g_sonc_ns_pro_port</table>
+        <sys_updated_on>2024-11-03 21:54:31</sys_updated_on>
+        <table>cmdb_ci_network_circuit</table>
         <track_selected>false</track_selected>
         <type>action</type>
     </sys_ui_context_menu>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7874ae3a872d1210f9f20f280cbb3515" label="Proposed Circuits" max_length="40" name="x_g_sonc_ns_pro_st_proposed_circuits" type="collection">
+        <element choice="1" label="Pending Cir" max_length="40" name="x_g_sonc_ns_pro_pending_cir" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1G" sequence="1500" value="1000"/>
+                <element inactive_on_update="false" label="7G" sequence="2100" value="7000"/>
+                <element inactive_on_update="false" label="60M" sequence="1000" value="60"/>
+                <element inactive_on_update="false" label="2M" sequence="100" value="2"/>
+                <element inactive_on_update="false" label="4G" sequence="1800" value="4000"/>
+                <element inactive_on_update="false" label="2G" sequence="1600" value="2000"/>
+                <element inactive_on_update="false" label="200M" sequence="1200" value="200"/>
+                <element inactive_on_update="false" label="100M" sequence="1100" value="100"/>
+                <element inactive_on_update="false" label="6G" sequence="2000" value="6000"/>
+                <element inactive_on_update="false" label="3M" sequence="200" value="3"/>
+                <element inactive_on_update="false" label="8G" sequence="2200" value="8000"/>
+                <element inactive_on_update="false" label="10G" sequence="2400" value="10000"/>
+                <element inactive_on_update="false" label="4M" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="9G" sequence="2300" value="9000"/>
+                <element inactive_on_update="false" label="250M" sequence="1300" value="250"/>
+                <element inactive_on_update="false" label="50M" sequence="900" value="50"/>
+                <element inactive_on_update="false" label="500M" sequence="1400" value="500"/>
+                <element inactive_on_update="false" label="3G" sequence="1700" value="3000"/>
+                <element inactive_on_update="false" label="10M" sequence="700" value="10"/>
+                <element inactive_on_update="false" label="6M" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="5G" sequence="1900" value="5000"/>
+                <element inactive_on_update="false" label="20M" sequence="800" value="20"/>
+                <element inactive_on_update="false" label="5M" sequence="500" value="5"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Subnet Mask" max_length="40" name="x_g_sonc_ns_pro_pending_subnet_mask" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Provider" max_length="32" name="x_g_sonc_ns_pro_pending_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Service Priority" max_length="100" name="x_g_sonc_ns_pro_pending_telco_service_priority" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Point of Presence" max_length="32" name="x_g_sonc_ns_pro_pending_point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Circuit Type" max_length="40" name="x_g_sonc_ns_pro_pending_circuit_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ME" sequence="90" value="me"/>
+                <element inactive_on_update="false" label="ASE" sequence="10" value="ase"/>
+                <element inactive_on_update="false" label="CORE Ring" sequence="40" value="core_ring"/>
+                <element inactive_on_update="false" label="Cable BB" sequence="30" value="cable_bb"/>
+                <element inactive_on_update="false" label="Wireless" sequence="100" value="wireless"/>
+                <element inactive_on_update="false" label="BCE Cable" sequence="20" value="bce_cable"/>
+                <element inactive_on_update="false" label="Point to Point ME" sequence="95" value="p2p_me"/>
+                <element inactive_on_update="false" label="Point to Point ASE" sequence="15" value="p2p_ase"/>
+                <element inactive_on_update="false" label="MM" sequence="70" value="mm"/>
+                <element inactive_on_update="false" label="MAN" sequence="60" value="man"/>
+                <element inactive_on_update="false" label="DSL BB" sequence="50" value="dsl_bb"/>
+                <element inactive_on_update="false" label="MAN SM" sequence="80" value="man_sm"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending RmtDLCI" max_length="40" name="x_g_sonc_ns_pro_pending_rmtdlci" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Host Ckt Type" max_length="40" name="x_g_sonc_ns_pro_pending_host_ckt_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="non-QinQ" sequence="200" value="non_qinq"/>
+                <element inactive_on_update="false" label="QinQ" sequence="100" value="qinq"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending PE Host Circuit ID" max_length="32" name="x_g_sonc_ns_pro_pending_pe_host_circuit_id" reference="cmdb_ci_network_circuit" reference_qual="x_g_sonc_ns_pro_host_ckt=true^EQ" reference_qual_condition="x_g_sonc_ns_pro_host_ckt=true^EQ" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Provider Order Number" max_length="40" name="x_g_sonc_ns_pro_pending_telco_provider_order_number" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Circuit Order Num" max_length="40" name="x_g_sonc_ns_pro_pending_circuit_order_num" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Circuit Speed" max_length="40" name="x_g_sonc_ns_pro_pending_circuit_speed" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2M" sequence="100" value="2"/>
+                <element inactive_on_update="false" label="100M" sequence="1100" value="100"/>
+                <element inactive_on_update="false" label="10G" sequence="2400" value="10000"/>
+                <element inactive_on_update="false" label="60M" sequence="1000" value="60"/>
+                <element inactive_on_update="false" label="200M" sequence="1200" value="200"/>
+                <element inactive_on_update="false" label="8G" sequence="2200" value="8000"/>
+                <element inactive_on_update="false" label="250M" sequence="1300" value="250"/>
+                <element inactive_on_update="false" label="2G" sequence="1600" value="2000"/>
+                <element inactive_on_update="false" label="3M" sequence="200" value="3"/>
+                <element inactive_on_update="false" label="9G" sequence="2300" value="9000"/>
+                <element inactive_on_update="false" label="4G" sequence="1800" value="4000"/>
+                <element inactive_on_update="false" label="6G" sequence="2000" value="6000"/>
+                <element inactive_on_update="false" label="4M" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="1G" sequence="1500" value="1000"/>
+                <element inactive_on_update="false" label="20M" sequence="800" value="20"/>
+                <element inactive_on_update="false" label="5G" sequence="1900" value="5000"/>
+                <element inactive_on_update="false" label="6M" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="5M" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="10M" sequence="700" value="10"/>
+                <element inactive_on_update="false" label="3G" sequence="1700" value="3000"/>
+                <element inactive_on_update="false" label="7G" sequence="2100" value="7000"/>
+                <element inactive_on_update="false" label="50M" sequence="900" value="50"/>
+                <element inactive_on_update="false" label="500M" sequence="1400" value="500"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Local Circuit" max_length="32" name="x_g_sonc_ns_pro_pending_local_circuit" reference="cmdb_ci_network_circuit" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Status" max_length="40" name="x_g_sonc_ns_pro_pending_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Defective" sequence="1100" value="102"/>
+                <element inactive_on_update="false" label="Installed" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Reserved" sequence="1300" value="104"/>
+                <element inactive_on_update="false" label="Pending Retire" sequence="1000" value="101"/>
+                <element inactive_on_update="false" label="Pending Pickup" sequence="1200" value="103"/>
+                <element inactive_on_update="false" label="Unknown" sequence="1400" value="105"/>
+                <element inactive_on_update="false" label="In Maintenance" sequence="300" value="3"/>
+                <element inactive_on_update="false" label="On Order" sequence="200" value="2"/>
+                <element inactive_on_update="false" label="Pending Install" sequence="400" value="4"/>
+                <element inactive_on_update="false" label="Pending Repair" sequence="500" value="5"/>
+                <element inactive_on_update="false" label="Retired" sequence="700" value="7"/>
+                <element inactive_on_update="false" label="Absent" sequence="900" value="100"/>
+                <element inactive_on_update="false" label="In Stock" sequence="600" value="6"/>
+                <element inactive_on_update="false" label="Stolen" sequence="800" value="8"/>
+            </choice>
+        </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Circuit Contract Num" max_length="100" name="x_g_sonc_ns_pro_pending_circuit_contract_num" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Host Ckt" max_length="40" name="x_g_sonc_ns_pro_pending_host_ckt" type="boolean"/>
+    </element>
+</database>
