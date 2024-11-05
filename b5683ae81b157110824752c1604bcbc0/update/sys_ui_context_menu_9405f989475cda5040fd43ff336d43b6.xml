@@ -108,7 +108,7 @@ function decomissionCircuit() {
         return true;
     }
 }]]></action_script>
-        <active>true</active>
+        <active>false</active>
         <comments/>
         <condition/>
         <do_not_cache>false</do_not_cache>
@@ -167,7 +167,7 @@ function canBeDeCommissioned() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9405f989475cda5040fd43ff336d43b6</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Decommission Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -175,7 +175,7 @@ function canBeDeCommissioned() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_9405f989475cda5040fd43ff336d43b6</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-24 14:42:33</sys_updated_on>
+        <sys_updated_on>2024-11-05 11:09:11</sys_updated_on>
         <table>cmdb_ci_network_circuit</table>
         <track_selected>false</track_selected>
         <type>action</type>

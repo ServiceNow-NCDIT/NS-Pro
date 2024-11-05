@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=30011811000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,13 +15,13 @@
         <flow_priority/>
         <generation_source/>
         <internal_name>complete_telco_order_work</internal_name>
-        <label_cache>[{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.Record.telco_order","label":"1 - Look Up Record➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Telco Order","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"},{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Telco Order","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"}]</label_cache>
+        <label_cache>[{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.Record.telco_order","label":"1 - Look Up Record➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"},{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"}]</label_cache>
         <master_snapshot>fb2b290c1b72f510824752c1604bcb91</master_snapshot>
         <name>Complete Telco Order Work</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>003b290c1b72f510824752c1604bcbfe</remote_trigger_id>
+        <remote_trigger_id>03f5d2bb87a99e10f9f20f280cbb35c1</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -34,21 +34,24 @@
         <sys_created_on>2023-11-24 08:49:12</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e249e1441b72f510824752c1604bcb81</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Complete Telco Order Work</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_hub_flow_e249e1441b72f510824752c1604bcb81</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:08</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=e249e1441b72f510824752c1604bcb81"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_g_sonc_ns_pro_nspro_tasks">provisioning_stateIN11,12<item display_value="11,12" endquery="false" field="provisioning_state" goto="false" newquery="false" operator="IN" or="false" value="11,12"/>
+        <condition table="x_g_sonc_ns_pro_nspro_tasks">provisioning_stateIN11,12^task_typeINprovisioning,field_services,enterprise_monitoring,fulfillment,billing,generic^NQtask_typeINterminate,provision_change^state=3<item display_value="11,12" endquery="false" field="provisioning_state" goto="false" newquery="false" operator="IN" or="false" value="11,12"/>
+            <item display_value="provisioning,field_services,enterprise_monitoring,fulfillment,billing,generic" endquery="false" field="task_type" goto="false" newquery="false" operator="IN" or="false" value="provisioning,field_services,enterprise_monitoring,fulfillment,billing,generic"/>
+            <item display_value="terminate,provision_change" endquery="false" field="task_type" goto="false" newquery="true" operator="IN" or="false" value="terminate,provision_change"/>
+            <item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -60,10 +63,10 @@
         <run_when_user_list/>
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-11-24 08:57:30</sys_created_on>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-05 16:45:31</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>003b290c1b72f510824752c1604bcbfe</sys_id>
+        <sys_id>03f5d2bb87a99e10f9f20f280cbb35c1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -71,8 +74,8 @@
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 16:45:31</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
@@ -80,15 +83,15 @@
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>e249e1441b72f510824752c1604bcb81</identifier>
         <runner>FDTriggerRunner</runner>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2023-11-24 08:57:30</sys_created_on>
-        <sys_id>c83b290c1b72f510824752c1604bcbfe</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
-        <trigger display_value="">003b290c1b72f510824752c1604bcbfe</trigger>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-05 17:26:07</sys_created_on>
+        <sys_id>714f523f872d9e10f9f20f280cbb35b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:07</sys_updated_on>
+        <trigger display_value="">03f5d2bb87a99e10f9f20f280cbb35c1</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e249e1441b72f510824752c1604bcb81^sys_idNOT INc83b290c1b72f510824752c1604bcbfe"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e249e1441b72f510824752c1604bcb81^sys_idNOT IN714f523f872d9e10f9f20f280cbb35b6"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=e249e1441b72f510824752c1604bcb81^sys_idNOT INe62be50c1b72f510824752c1604bcb52"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -100,14 +103,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:24</sys_created_on>
         <sys_id>e62be50c1b72f510824752c1604bcb52</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:08</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -122,10 +125,10 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:24</sys_created_on>
         <sys_id>a62be50c1b72f510824752c1604bcb53</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:24</sys_updated_on>
-        <value>provisioning_stateIN11,12</value>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 16:45:12</sys_updated_on>
+        <value>provisioning_stateIN11,12^task_typeINprovisioning,field_services,enterprise_monitoring,fulfillment,billing,generic^NQtask_typeINterminate,provision_change^state=3</value>
         <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -226,14 +229,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:24</sys_created_on>
         <sys_id>122be50c1b72f510824752c1604bcb41</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -310,14 +313,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:23</sys_created_on>
         <sys_id>562be50c1b72f510824752c1604bcb39</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:07</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -456,14 +459,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:24</sys_created_on>
         <sys_id>2e2be50c1b72f510824752c1604bcb69</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-08 15:36:15</sys_updated_on>
+        <sys_updated_on>2024-11-05 17:26:08</sys_updated_on>
         <ui_id>2bfa1a35-d67f-4076-bd1b-4a4de2be3a72</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2e2be50c1b72f510824752c1604bcb69"/>
@@ -550,14 +553,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:24</sys_created_on>
         <sys_id>e62be50c1b72f510824752c1604bcb5c</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-08 15:36:15</sys_updated_on>
+        <sys_updated_on>2024-11-05 17:26:08</sys_updated_on>
         <ui_id>af218ef2-74f5-4b42-bff9-e5ce23030b86</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e62be50c1b72f510824752c1604bcb5c"/>
@@ -582,11 +585,11 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:24</sys_created_on>
         <sys_id>622be50c1b72f510824752c1604bcb5f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:24</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:25:51</sys_updated_on>
         <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value>telco_order={{Updated_1.current.telco_order}}^provisioning_stateNOT IN11,12</value>
+        <value>telco_order={{Updated_1.current.telco_order}}^provisioning_stateNOT IN11,12^NQtask_typeINterminate,provision_change^stateIN3,4,7</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table</field>
@@ -628,14 +631,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:24</sys_created_on>
         <sys_id>2e2be50c1b72f510824752c1604bcb60</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:08</sys_updated_on>
         <ui_id>13283f36-baf3-40a0-8730-f076c75963d1</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -771,7 +774,7 @@
         <description>When all telco order subtasks are complete, mark the telco order complete</description>
         <flow_priority/>
         <internal_name>complete_telco_order_work</internal_name>
-        <label_cache>[{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.Record.telco_order","label":"1 - Look Up Record➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Telco Order","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"},{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Telco Order","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"}]</label_cache>
+        <label_cache>[{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.Record.telco_order","label":"1 - Look Up Record➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"},{"name":"af218ef2-74f5-4b42-bff9-e5ce23030b86.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Updated_1.current.telco_order","label":"Trigger - Record Updated➛NSPro Tasks Record➛Telco Order","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_nspro_tasks","column_name":"telco_order"}]</label_cache>
         <master>true</master>
         <name>Complete Telco Order Work</name>
         <natlang/>
@@ -787,15 +790,15 @@
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>fb2b290c1b72f510824752c1604bcb91</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:06</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=fb2b290c1b72f510824752c1604bcb91"/>
@@ -810,14 +813,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>fb2b290c1b72f510824752c1604bcbd7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:07</sys_updated_on>
         <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -846,10 +849,10 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>732b290c1b72f510824752c1604bcbd9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
-        <value>provisioning_stateIN11,12</value>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 16:45:28</sys_updated_on>
+        <value>provisioning_stateIN11,12^task_typeINprovisioning,field_services,enterprise_monitoring,fulfillment,billing,generic^NQtask_typeINterminate,provision_change^state=3</value>
         <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=fb2b290c1b72f510824752c1604bcbd7"/>
@@ -877,7 +880,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -936,14 +939,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>732b290c1b72f510824752c1604bcb94</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -961,7 +964,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1020,14 +1023,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>f32b290c1b72f510824752c1604bcbb4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1041,11 +1044,33 @@
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f32b290c1b72f510824752c1604bcbb4"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>FDCollection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">fc9ab9bddba21300a27757c5ca961964</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_complex_object_f4f014150f023300ecf0cc52ff767eed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1104,14 +1129,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>ff2b290c1b72f510824752c1604bcbab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 16:45:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1144,14 +1169,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>7b2b290c1b72f510824752c1604bcbcd</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:06</sys_updated_on>
         <ui_id>af218ef2-74f5-4b42-bff9-e5ce23030b86</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7b2b290c1b72f510824752c1604bcbcd"/>
@@ -1176,11 +1201,11 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>332b290c1b72f510824752c1604bcbcf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:05</sys_updated_on>
         <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
-        <value>telco_order={{Updated_1.current.telco_order}}^provisioning_stateNOT IN11,12</value>
+        <value>telco_order={{Updated_1.current.telco_order}}^provisioning_stateNOT IN11,12^NQtask_typeINterminate,provision_change^stateIN3,4,7</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table</field>
@@ -1212,14 +1237,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>fb2b290c1b72f510824752c1604bcbd5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:06</sys_updated_on>
         <ui_id>2bfa1a35-d67f-4076-bd1b-4a4de2be3a72</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fb2b290c1b72f510824752c1604bcbd5"/>
@@ -1316,14 +1341,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:29</sys_created_on>
         <sys_id>ff2b290c1b72f510824752c1604bcbbf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:29</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:06</sys_updated_on>
         <ui_id>13283f36-baf3-40a0-8730-f076c75963d1</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1448,29 +1473,29 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>e249e1441b72f510824752c1604bcb81</sys_id>
         <latest_snapshot>fb2b290c1b72f510824752c1604bcb91</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch7-08-21-2024_08-31-2024_1809.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch7a-09-23-2024_10-06-2024_0822.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e249e1441b72f510824752c1604bcb81^sys_idNOT IN403b690c1b72f510824752c1604bcb00"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"403b690c1b72f510824752c1604bcb00","name":"plan","plan_signature":null}}</plan>
         <plan_id>e249e1441b72f510824752c1604bcb81</plan_id>
-        <snapshot>9f993d7a87095e10f9f20f280cbb35cc</snapshot>
+        <snapshot>fb2b290c1b72f510824752c1604bcb91</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-11-24 08:57:30</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>403b690c1b72f510824752c1604bcb00</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-11-24 08:57:30</sys_updated_on>
-        <trigger display_value="">003b290c1b72f510824752c1604bcbfe</trigger>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-05 17:26:07</sys_updated_on>
+        <trigger display_value="">03f5d2bb87a99e10f9f20f280cbb35c1</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e249e1441b72f510824752c1604bcb81"/>
 </record_update>

@@ -269,14 +269,15 @@ nspro_task.prototype = {
             var netGearArray = [];
             var portRecords = new GlideRecord('x_g_sonc_ns_pro_port');
             portRecords.addQuery('site', site);
-            portRecords.addQuery('local_circuit_id', 'IN', circuitArray.join(','));
+            //portRecords.addQuery('local_circuit_id', 'IN', circuitArray.join(','));
+			portRecords.addQuery('x_g_sonc_ns_pro_pri_sec_circuit',priSecCircuit);
             portRecords.query();
 
             while (portRecords.next()) {
                 portRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.INSTALLED);
                 portRecords.update();
 
-                if (portRecords.getValue('network_gear') != '') {
+                if (!portRecords.network_gear.nil()) {
                     netGearArray.push(portRecords.getValue('network_gear') + '');
                 }
             }
@@ -333,28 +334,32 @@ nspro_task.prototype = {
 
             //set ports to pending retire
             var netGearArray = [];
-            var portRecord = new GlideRecord('x_g_sonc_ns_pro_port');
-            portRecord.addQuery('site', site);
-            portRecord.addQuery('local_circuit_id', 'IN', circuitArray.join(','));
-            portRecord.query();
+            var portRecords = new GlideRecord('x_g_sonc_ns_pro_port');
+            portRecords.addQuery('site', site);
+            //portRecord.addQuery('local_circuit_id', 'IN', circuitArray.join(','));
+            portRecords.query();
 
-            while (portRecord.next()) {
-				if (portRecord.getValue('network_gear') != '') {
-                    netGearArray.push(portRecord.getValue('network_gear') + '');
+            while (portRecords.next()) {
+				if (!portRecords.network_gear.nil()) {
+                    netGearArray.push(portRecords.getValue('network_gear') + '');
                 }
-                var portVLan = portRecord.getValue('remote_site_circuit_vlan');
-                var portIPAddress = portRecord.getValue('ip_address');
-                if (portIPAddress.startsWith('172.22.')) {
-                    portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
-                    portRecord.setValue('local_circuit_id','');
-                    portRecord.setValue('network_gear','');
-                    portRecord.setValue('name','');
-                    portRecord.setValue('vrf','');
-                    portRecord.setValue('site','');
+                var portVLan = portRecords.getValue('remote_site_circuit_vlan');
+				if(!portRecords.ip_address.nil()){
+					var portIPAddress = portRecords.getValue('ip_address');
+					if (portIPAddress.startsWith('172.22.')) {
+						portRecords.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
+						portRecords.setValue('local_circuit_id','');
+						portRecords.setValue('network_gear','');
+						portRecords.setValue('name','');
+						portRecords.setValue('vrf','');
+						portRecords.setValue('site','');
+					} else {
+						portRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);						
+					}
                 } else {
-                    portRecord.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);
+                    portRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);
                 }
-                portRecord.update();
+                portRecords.update();
             }
 
             //set all netgear to pending retire.
@@ -364,6 +369,7 @@ nspro_task.prototype = {
 
             while (netGearRecords.next()) {
                 netGearRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.PENDING_PICKUP);
+				netGearRecords.setValue('name','');
                 //gs.info('WOULD UPDATE: ' + netGearRecords.getValue('name'));
                 netGearRecords.update();
             }
@@ -383,13 +389,13 @@ nspro_task.prototype = {
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-16 20:07:20</sys_created_on>
         <sys_id>9290cca187d5de50f9f20f280cbb35d4</sys_id>
-        <sys_mod_count>100</sys_mod_count>
+        <sys_mod_count>109</sys_mod_count>
         <sys_name>nspro_task</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_9290cca187d5de50f9f20f280cbb35d4</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-01 20:32:54</sys_updated_on>
+        <sys_updated_on>2024-11-05 17:21:20</sys_updated_on>
     </sys_script_include>
 </record_update>

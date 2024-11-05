@@ -37,18 +37,21 @@
         g_form.showRelatedList("REL:a217747e4709da1040fd43ff336d4303");
         g_form.showRelatedList("REL:8bb836e847add61440fd43ff336d4330");
         g_form.hideRelatedList("REL:7036d84a472d1a5440fd43ff336d4325");
+		 g_form.hideRelatedList("REL:5ea9196387a95a10f9f20f280cbb358c");
     } else if (taskType == 'provision_change') {
         g_form.showRelatedList("REL:399362dc47a5161440fd43ff336d4364");
         g_form.showRelatedList("REL:6be2fea4476dd61440fd43ff336d43ec");
         g_form.showRelatedList("REL:a217747e4709da1040fd43ff336d4303");
         g_form.showRelatedList("REL:8bb836e847add61440fd43ff336d4330");
         g_form.showRelatedList("REL:7036d84a472d1a5440fd43ff336d4325");
+        g_form.showRelatedList("REL:5ea9196387a95a10f9f20f280cbb358c");
     } else {
         g_form.hideRelatedList("REL:399362dc47a5161440fd43ff336d4364");
         g_form.hideRelatedList("REL:6be2fea4476dd61440fd43ff336d43ec");
         g_form.hideRelatedList("REL:a217747e4709da1040fd43ff336d4303");
         g_form.hideRelatedList("REL:8bb836e847add61440fd43ff336d4330");
         g_form.hideRelatedList("REL:7036d84a472d1a5440fd43ff336d4325");
+        g_form.hideRelatedList("REL:5ea9196387a95a10f9f20f280cbb358c");
 
     }
 
@@ -73,7 +76,9 @@
     g_form.hideRelatedList("REL:6be2fea4476dd61440fd43ff336d43ec");
     g_form.hideRelatedList("REL:8bb836e847add61440fd43ff336d4330");
     g_form.hideRelatedList("REL:8bb836e847add61440fd43ff336d4330");
+    //the following are specific to provision_change
     g_form.hideRelatedList("REL:7036d84a472d1a5440fd43ff336d4325");
+    g_form.hideRelatedList("REL:5ea9196387a95a10f9f20f280cbb358c");
 }]]></script_true>
         <set_values/>
         <short_description>Hide NetOps Sections when other than provisioning tasks</short_description>
@@ -83,7 +88,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1ad049dc87c55690f9f20f280cbb353a</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Hide NetOps Sections when other than provisioning tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -91,7 +96,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_policy_1ad049dc87c55690f9f20f280cbb353a</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-01 20:16:07</sys_updated_on>
+        <sys_updated_on>2024-11-05 10:42:20</sys_updated_on>
         <table>x_g_sonc_ns_pro_nspro_tasks</table>
         <ui_type>0</ui_type>
         <view/>

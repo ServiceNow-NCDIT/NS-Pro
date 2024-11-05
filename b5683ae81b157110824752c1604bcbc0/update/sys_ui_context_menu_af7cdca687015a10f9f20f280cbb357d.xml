@@ -20,7 +20,7 @@ assignPortToLocalCircuit();
 function assignPortToLocalCircuit() {
     var formTitle = "Assign Port to Local Circuit " + nsProTaskMain.g_form.getValue('name');
     var site = nsProTaskMain.g_form.getValue('x_g_sonc_ns_pro_site');
-	var priSec = nsProTaskMain.g_form.getValue('pri_sec_circuit');
+	var priSec = nsProTaskMain.g_form.getValue('x_g_sonc_ns_pro_pri_sec_circuit');
     var localCircuitID = nsProTaskMain.g_form.getUniqueValue();
 
     var gmf = new GlideModalForm(formTitle, 'x_g_sonc_ns_pro_port', formCompleted);
@@ -116,7 +116,7 @@ function canBeAssigned() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>af7cdca687015a10f9f20f280cbb357d</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>56</sys_mod_count>
         <sys_name>Assign Port to Local Circuit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -124,7 +124,7 @@ function canBeAssigned() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_af7cdca687015a10f9f20f280cbb357d</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-04 18:51:26</sys_updated_on>
+        <sys_updated_on>2024-11-05 16:39:20</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <track_selected>false</track_selected>
         <type>action</type>

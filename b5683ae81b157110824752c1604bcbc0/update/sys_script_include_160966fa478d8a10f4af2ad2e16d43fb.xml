@@ -619,8 +619,8 @@ circuit.prototype = {
             var circuitSysID = circuitRecord.getValue('sys_id');
 
             circuitObj.sys_id = circuitSysID;
-			circuitObj.x_g_sonc_ns_pro_site = circuitRecord.getValue('x_g_sonc_ns_pro_site');
-			circuitObj.x_g_sonc_ns_pro_pending_cir = circuitRecord.getValue('x_g_sonc_ns_pro_pending_cir');
+            circuitObj.x_g_sonc_ns_pro_site = circuitRecord.getValue('x_g_sonc_ns_pro_site');
+            circuitObj.x_g_sonc_ns_pro_pending_cir = circuitRecord.getValue('x_g_sonc_ns_pro_pending_cir');
             circuitObj.x_g_sonc_ns_pro_pending_circuit_contract_num = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_contract_num');
             circuitObj.x_g_sonc_ns_pro_pending_circuit_order_num = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_order_num');
             circuitObj.x_g_sonc_ns_pro_pending_circuit_speed = circuitRecord.getValue('x_g_sonc_ns_pro_pending_circuit_speed');
@@ -649,27 +649,67 @@ circuit.prototype = {
         try {
             for (i = 0; i < circuitsArray.length; i++) {
                 var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
-				if(circuitRecord.get(circuitsArray[i])){
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_status',4);
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_cir',circuitRecord.getValue('x_g_sonc_ns_pro_cir'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_contract_num',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_contract_num'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_order_num',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_order_num'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_speed',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_speed'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_type',circuitRecord.getValue('x_g_sonc_ns_pro_circuit_type'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_host_ckt',circuitRecord.getValue('x_g_sonc_ns_pro_host_ckt'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_host_ckt_type',circuitRecord.getValue('x_g_sonc_ns_pro_host_ckt_type'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_local_circuit',circuitRecord.getValue('x_g_sonc_ns_pro_local_circuit'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_pe_host_circuit_id',circuitRecord.getValue('x_g_sonc_ns_pro_pe_host_circuit_id'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_point_of_presence',circuitRecord.getValue('x_g_sonc_ns_pro_point_of_presence'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_rmtdlci',circuitRecord.getValue('x_g_sonc_ns_pro_rmtdlci'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_subnet_mask',circuitRecord.getValue('x_g_sonc_ns_pro_subnet_mask'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_provider_order_number',circuitRecord.getValue('x_g_sonc_ns_pro_telco_provider_order_number'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_service_priority',circuitRecord.getValue('x_g_sonc_ns_pro_telco_service_priority'));
-					circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_provider',circuitRecord.getValue('x_g_sonc_ns_pro_telco_provider'));
-					circuitRecord.update();
-				}
+                if (circuitRecord.get(circuitsArray[i])) {
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_status', 4);
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_cir', circuitRecord.getValue('x_g_sonc_ns_pro_cir'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_contract_num', circuitRecord.getValue('x_g_sonc_ns_pro_circuit_contract_num'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_order_num', circuitRecord.getValue('x_g_sonc_ns_pro_circuit_order_num'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_speed', circuitRecord.getValue('x_g_sonc_ns_pro_circuit_speed'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_circuit_type', circuitRecord.getValue('x_g_sonc_ns_pro_circuit_type'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_host_ckt', circuitRecord.getValue('x_g_sonc_ns_pro_host_ckt'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_host_ckt_type', circuitRecord.getValue('x_g_sonc_ns_pro_host_ckt_type'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_local_circuit', circuitRecord.getValue('x_g_sonc_ns_pro_local_circuit'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_pe_host_circuit_id', circuitRecord.getValue('x_g_sonc_ns_pro_pe_host_circuit_id'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_point_of_presence', circuitRecord.getValue('x_g_sonc_ns_pro_point_of_presence'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_rmtdlci', circuitRecord.getValue('x_g_sonc_ns_pro_rmtdlci'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_subnet_mask', circuitRecord.getValue('x_g_sonc_ns_pro_subnet_mask'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_provider_order_number', circuitRecord.getValue('x_g_sonc_ns_pro_telco_provider_order_number'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_service_priority', circuitRecord.getValue('x_g_sonc_ns_pro_telco_service_priority'));
+                    circuitRecord.setValue('x_g_sonc_ns_pro_pending_telco_provider', circuitRecord.getValue('x_g_sonc_ns_pro_telco_provider'));
+                    circuitRecord.update();
+                }
             }
-			response.message = "Successfully moved " + circuitsArray.length + " circuits to proposed";
+            response.message = "Successfully moved " + circuitsArray.length + " circuits to proposed";
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
+        }
+        return response;
+    },
+    setSelectedCircuitsToRetired: function(selectedCircuits) {
+        var response = {};
+        var errorString;
+        circuitsArray = selectedCircuits.split(",");
+        try {
+            for (i = 0; i < circuitsArray.length; i++) {
+                var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+                if (circuitRecord.get(circuitsArray[i])) {
+                    circuitRecord.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);
+                    circuitRecord.update();
+                }
+            }
+            response.message = "Successfully set " + circuitsArray.length + " circuits to retired";
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
+        }
+        return response;
+    },
+    setSelectedCircuitsToInstalled: function(selectedCircuits) {
+        var response = {};
+        var errorString;
+        circuitsArray = selectedCircuits.split(",");
+        try {
+            for (i = 0; i < circuitsArray.length; i++) {
+                var circuitRecord = new GlideRecord(NSPROConstants.TABLES.CIRCUITS);
+                if (circuitRecord.get(circuitsArray[i])) {
+                    circuitRecord.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.INSTALLED);
+                    circuitRecord.update();
+                }
+            }
+            response.message = "Successfully set " + circuitsArray.length + " circuits to installed";
         } catch (ex) {
             var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
             errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
@@ -683,13 +723,13 @@ circuit.prototype = {
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-03-23 22:52:58</sys_created_on>
         <sys_id>160966fa478d8a10f4af2ad2e16d43fb</sys_id>
-        <sys_mod_count>135</sys_mod_count>
+        <sys_mod_count>137</sys_mod_count>
         <sys_name>circuit</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_160966fa478d8a10f4af2ad2e16d43fb</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-04 17:51:29</sys_updated_on>
+        <sys_updated_on>2024-11-05 15:55:50</sys_updated_on>
     </sys_script_include>
 </record_update>
