@@ -55,6 +55,7 @@
             </choice>
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Provider Order Number" max_length="40" name="x_g_sonc_ns_pro_pending_telco_provider_order_number" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Circuit Ref" max_length="40" name="x_g_sonc_ns_pro_circuit_ref" type="string"/>
         <element label="Circuit Order Num" max_length="40" name="x_g_sonc_ns_pro_circuit_order_num" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Subnet Mask" max_length="40" name="x_g_sonc_ns_pro_pending_subnet_mask" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="3" label="Pending Cir" max_length="40" name="x_g_sonc_ns_pro_pending_cir" type="choice">
@@ -125,6 +126,7 @@
                 <element inactive_on_update="false" label="CORE Ring" sequence="40" value="core_ring"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Circuit Ref" max_length="40" name="x_g_sonc_ns_pro_pending_circuit_ref" type="string"/>
         <element label="Host Ckt" max_length="40" name="x_g_sonc_ns_pro_host_ckt" type="boolean"/>
         <element choice="1" label="Circuit Type" mandatory="true" max_length="40" name="x_g_sonc_ns_pro_circuit_type" type="choice">
             <choice>
