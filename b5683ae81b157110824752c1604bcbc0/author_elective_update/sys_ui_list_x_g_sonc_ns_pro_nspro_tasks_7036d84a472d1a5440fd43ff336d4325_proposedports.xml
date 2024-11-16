@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" table="x_g_sonc_ns_pro_st_proposed_ports" version="2" view="proposedports">
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_name</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2629b70287291e54f9f20f280cbb3568</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>site</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2a29b70287291e54f9f20f280cbb3568</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_local_circuit_id</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2e29b70287291e54f9f20f280cbb3568</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_pe_host_circuit_id</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2229b70287291e54f9f20f280cbb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_network_gear</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2629b70287291e54f9f20f280cbb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_ip_address</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2a29b70287291e54f9f20f280cbb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_interface_subnet_mask</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2e29b70287291e54f9f20f280cbb3569</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_remote_site_circuit_vlan</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2229b70287291e54f9f20f280cbb356a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_vrf</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2629b70287291e54f9f20f280cbb356a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_status</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2a29b70287291e54f9f20f280cbb356a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_client_id</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2e29b70287291e54f9f20f280cbb356a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_description</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2229b70287291e54f9f20f280cbb356b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="DELETE">
+            <average_value>false</average_value>
+            <element>pending_master_device_interface</element>
+            <list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-10-31 13:29:29</sys_created_on>
+            <sys_id>2629b70287291e54f9f20f280cbb356b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-10-31 13:29:29</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="DELETE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_g_sonc_ns_pro_st_proposed_ports</name>
+            <parent>x_g_sonc_ns_pro_nspro_tasks</parent>
+            <position/>
+            <relationship display_value="Proposed Ports">7036d84a472d1a5440fd43ff336d4325</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by/>
+            <sys_created_on/>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path/>
+            <sys_id>c2c4bb0287e51e54f9f20f280cbb3592</sys_id>
+            <sys_mod_count/>
+            <sys_name>x_g_sonc_ns_pro_st_proposed_ports</sys_name>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by/>
+            <sys_updated_on>2024-11-01 20:39:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="ProposedPorts" name="proposedports">f37c100e476d1a5440fd43ff336d43e1</view>
+            <view_name>proposedports</view_name>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_ui_list_x_g_sonc_ns_pro_nspro_tasks_7036d84a472d1a5440fd43ff336d4325_proposedports</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" table="x_g_sonc_ns_pro_st_proposed_ports" version="2" view="proposedports"><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_name</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2629b70287291e54f9f20f280cbb3568</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>site</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2a29b70287291e54f9f20f280cbb3568</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_local_circuit_id</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2e29b70287291e54f9f20f280cbb3568</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_pe_host_circuit_id</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2229b70287291e54f9f20f280cbb3569</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_network_gear</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2629b70287291e54f9f20f280cbb3569</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_ip_address</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>5</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2a29b70287291e54f9f20f280cbb3569</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_interface_subnet_mask</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>6</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2e29b70287291e54f9f20f280cbb3569</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_remote_site_circuit_vlan</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>7</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2229b70287291e54f9f20f280cbb356a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_vrf</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>8</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2629b70287291e54f9f20f280cbb356a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_status</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>9</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2a29b70287291e54f9f20f280cbb356a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_client_id</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>10</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2e29b70287291e54f9f20f280cbb356a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_description</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>11</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2229b70287291e54f9f20f280cbb356b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="DELETE"><average_value>false</average_value><element>pending_master_device_interface</element><list_id display_value="x_g_sonc_ns_pro_st_proposed_ports" element="NULL" name="x_g_sonc_ns_pro_st_proposed_ports" parent="x_g_sonc_ns_pro_nspro_tasks" relationship="7036d84a472d1a5440fd43ff336d4325" sys_domain="global" view="f37c100e476d1a5440fd43ff336d43e1">aa29b70287291e54f9f20f280cbb3567</list_id><max_value>false</max_value><min_value>false</min_value><position>12</position><sum>false</sum><sys_created_by>admglfry</sys_created_by><sys_created_on>2024-10-31 13:29:29</sys_created_on><sys_id>2629b70287291e54f9f20f280cbb356b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admglfry</sys_updated_by><sys_updated_on>2024-10-31 13:29:29</sys_updated_on></sys_ui_list_element><sys_ui_list action="DELETE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_g_sonc_ns_pro_st_proposed_ports</name><parent>x_g_sonc_ns_pro_nspro_tasks</parent><position/><relationship display_value="Proposed Ports">7036d84a472d1a5440fd43ff336d4325</relationship><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by/><sys_created_on/><sys_domain>global</sys_domain><sys_domain_path/><sys_id>c2c4bb0287e51e54f9f20f280cbb3592</sys_id><sys_mod_count/><sys_name>x_g_sonc_ns_pro_st_proposed_ports</sys_name><sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package><sys_policy/><sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2024-11-01 20:39:15</sys_updated_on><sys_user/><view display_value="ProposedPorts" name="proposedports">f37c100e476d1a5440fd43ff336d43e1</view><view_name>proposedports</view_name></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>885328400</payload_hash>
+        <record_name>NSPro Tasks.Proposed Ports</record_name>
+        <reverted_from/>
+        <source>e38b004b479992d040fd43ff336d43a0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-01 20:39:15</sys_created_on>
+        <sys_id>f71566ea476d129440fd43ff336d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192e97423890000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-01 20:39:15</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>f71526ea8d6d1294f3ec1c4438fca4ff</update_guid>
+        <update_guid_history>f71526ea8d6d1294f3ec1c4438fca4ff:885328400,ea29b702b3291e54df119ffefc20496d:1297135250,c937730a67e51e5416688c5492925cde:-1647566726,1b757302d729da54574eed1a67bb8b48:-579842781,8905f78ec9e5da54ebace6c6b997e074:-1599557387,1d71634e05e1da543e574c67fc9837fe:-295457199,5a51eb0e46e1da542ddf88f9d69dc913:-209530582,8a31eb4e53a11e547460a2c2c2bb00c9:-2091875077,ebaf17c606e1da54102e5215f95d4835:-68130701,b83f1f4651e1da543065b14a1f022722:683794865,1a0fd346e5e1da5482289bf372cad0d3:-1307779605,7fc99f0280a1da54c450e0590d0b49ac:-1774297275,eea8130e3461da542aaafdd77ebe0995:-1158983285,7d8857ca9b61da54690417f5bf34bfe6:-419039245,518cd0ce0f6d1a5479a6b39af1645236:622646393,958c90ce5b6d1a54580ab635450bbaf4:-572822261</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-08 19:30:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>1a95a8f8aef64b24a4dc2868dbbc9690</sys_id>
+        <sys_metadata>aa29b70287291e54f9f20f280cbb3567</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_g_sonc_ns_pro_st_proposed_ports</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Proposed Ports">26ce3ff987255a54f9f20f280cbb3575</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_g_sonc_ns_pro_nspro_tasks_7036d84a472d1a5440fd43ff336d4325_proposedports</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_g_sonc_ns_pro_nspro_tasks_7036d84a472d1a5440fd43ff336d4325_proposedports">f71566ea476d129440fd43ff336d4300</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-08 19:30:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

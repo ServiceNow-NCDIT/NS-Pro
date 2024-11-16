@@ -61,11 +61,11 @@ function assignPortToLocalCircuit() {
 function canBeConfigured() {
 
     var proposed = false;
+	related = g_list.getRelated();
 
-            if (g_list.getView() == 'proposedports' || g_list.getView() == 'nspro') {
-                proposed = true;
-            }
-
+    if (related == "REL:7036d84a472d1a5440fd43ff336d4325") {
+        proposed = true;
+    }
     if (proposed) {
         g_menu.setEnabled(g_item);
         g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Configure Proposed Port •</b>");
@@ -84,7 +84,7 @@ function canBeConfigured() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b2969b824761da5440fd43ff336d43fd</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Configure Proposed Port</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -92,7 +92,7 @@ function canBeConfigured() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_b2969b824761da5440fd43ff336d43fd</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-31 13:48:39</sys_updated_on>
+        <sys_updated_on>2024-11-06 16:30:02</sys_updated_on>
         <table>x_g_sonc_ns_pro_st_proposed_ports</table>
         <track_selected>false</track_selected>
         <type>action</type>

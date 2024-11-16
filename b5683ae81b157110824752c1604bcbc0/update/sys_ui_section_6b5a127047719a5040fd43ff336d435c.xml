@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="6b5a127047719a5040fd43ff336d435c" sys_domain="global" table="x_g_sonc_ns_pro_port" version="3" view="proposedports">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>site</element>
+            <position>0</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>3facb2cb4731d2d040fd43ff336d4346</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d4353</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_ip_address</element>
+            <position>2</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d4354</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_interface_subnet_mask</element>
+            <position>3</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d4354</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_type</element>
+            <position>4</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d4355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_network_gear</element>
+            <position>5</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d4355</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_network_gear.serial_number</element>
+            <position>6</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>7</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d4356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_status</element>
+            <position>8</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_vrf</element>
+            <position>9</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d4357</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_pe_host_circuit_id</element>
+            <position>10</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_pe_host_circuit_id.x_g_sonc_ns_pro_host_ckt_type</element>
+            <position>11</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d4358</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_local_circuit_id</element>
+            <position>12</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d4359</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_remote_site_circuit_vlan</element>
+            <position>13</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d4359</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_uplink_connection_description</element>
+            <position>14</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d435a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_client_id</element>
+            <position>15</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d435a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d435b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pending_description</element>
+            <position>17</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d435b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pri_sec_circuit</element>
+            <position>18</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d435c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>network_gear</element>
+            <position>19</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d435c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>20</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d435d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pe_host_circuit_id</element>
+            <position>21</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d435d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ip_address</element>
+            <position>22</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d435e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>install_status</element>
+            <position>23</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d435e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>24</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d435f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>remote_site_circuit_vlan</element>
+            <position>25</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>fbacb2cb4731d2d040fd43ff336d435f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>interface_subnet_mask</element>
+            <position>26</position>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-15 21:54:51</sys_created_on>
+            <sys_id>f3acb2cb4731d2d040fd43ff336d4360</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_port" sys_domain="global" view="9e69d23c47319a5040fd43ff336d4330">6b5a127047719a5040fd43ff336d435c</sys_ui_section>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-15 21:54:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_g_sonc_ns_pro_port</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-08 19:38:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b5a127047719a5040fd43ff336d435c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_g_sonc_ns_pro_port</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_6b5a127047719a5040fd43ff336d435c</sys_update_name>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-08 19:38:36</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="ProposedPorts" name="proposedports">9e69d23c47319a5040fd43ff336d4330</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -700,6 +700,34 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rmtdlci</element>
+            <position>50</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-09 13:19:20</sys_created_on>
+            <sys_id>712d8e8947315e5040fd43ff336d4399</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_circuit" sys_domain="global" view="Default view">d89c2ef687068e50f9f20f280cbb3505</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-09 13:19:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>locdlci</element>
+            <position>51</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-09 13:19:52</sys_created_on>
+            <sys_id>a94d420d47315e5040fd43ff336d4366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_g_sonc_ns_pro_nswan_circuit" sys_domain="global" view="Default view">d89c2ef687068e50f9f20f280cbb3505</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-09 13:19:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

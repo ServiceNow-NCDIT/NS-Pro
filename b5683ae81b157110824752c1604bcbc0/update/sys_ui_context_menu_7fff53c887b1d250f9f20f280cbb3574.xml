@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="INSERT_OR_UPDATE">
+        <action_script><![CDATA[var nsProTaskMain;
+
+nsProTaskMain = parent.top.window.gsft_main;
+
+configureProposedCircuit();
+
+function configureProposedCircuit() {
+    var formTitle = "Configure Proposed Circuit " + nsProTaskMain.g_form.getValue('name');
+    var site = nsProTaskMain.g_form.getValue('x_g_sonc_ns_pro_site');
+	var networkRequest = nsProTaskMain.g_form.getValue('telco_order');
+	alert(g_sysId);
+    //var localCircuitID = nsProTaskMain.g_form.getUniqueValue();
+
+    var gmf = new GlideModalForm(formTitle, 'cmdb_ci_network_circuit', formCompleted);
+    gmf.addParm('sys_id', g_sysId);
+	gmf.addParm("sysparm_view", "proposedcircuits");
+	gmf.addParm("sysparm_view_forced", true);
+    gmf.setOnloadCallback(populateDefaults);
+	
+ 
+    gmf.render();
+
+    function populateDefaults(modalForm) {
+        var iframe = modalForm.$window.find("#dialog_frame")[0];
+        var iframeWindow = iframe.contentWindow ? iframe.contentWindow : iframe.contentDocument.defaultView;
+        var d_form = iframeWindow.g_form;
+        d_form.setValue('site', site);
+        d_form.setValue('x_g_sonc_ns_pro_pending_network_request', networkRequest);
+		//jQuery("#dialog_frame")[0].contentWindow.jQuery("#page_timing_div").hide();
+		//jQuery(".modal-content").css("width", "100%").css("margin", "0 auto");
+		
+    }
+
+
+
+}
+    function formCompleted() {
+        location.reload();
+    }]]></action_script>
+        <active>true</active>
+        <comments/>
+        <condition/>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Configure Proposed Circuit</name>
+        <on_show_script><![CDATA[canBeConfigured();
+
+function canBeConfigured() {
+
+    var proposed = false;
+	related = g_list.getRelated();
+
+    if (related == "REL:5ea9196387a95a10f9f20f280cbb358c") {
+        proposed = true;
+    }
+    if (proposed) {
+        g_menu.setEnabled(g_item);
+        g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Configure Proposed Circuit •</b>");
+
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>100</order>
+        <parent display_value="Circuit">fe59df888731d250f9f20f280cbb35a7</parent>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-06 16:47:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7fff53c887b1d250f9f20f280cbb3574</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Configure Proposed Circuit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_7fff53c887b1d250f9f20f280cbb3574</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-16 16:44:59</sys_updated_on>
+        <table>x_g_sonc_ns_pro_st_proposed_circuits</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+</record_update>

@@ -40,11 +40,11 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="cmdb_ci_network_circuit">cmdb_ci_network_circuit</reference>
+        <reference display_value="" name="x_g_sonc_ns_pro_st_host_circuits_with_capacity">x_g_sonc_ns_pro_st_host_circuits_with_capacity</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
+        <reference_qual>javascript: if(current.x_g_sonc_ns_pro_pending_telco_provider){"telco_provider=" + current.x_g_sonc_ns_pro_pending_telco_provider};</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <spell_check>false</spell_check>
@@ -58,13 +58,13 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_dictionary_cmdb_ci_network_circuit_x_g_sonc_ns_pro_pending_pe_host_circuit_id</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-09-02 21:02:10</sys_updated_on>
+        <sys_updated_on>2024-11-15 10:06:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <virtual_type>script</virtual_type>
         <widget/>

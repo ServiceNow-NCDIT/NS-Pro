@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onLoadPopulateScratchPadFromSession</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	// alert('loading');
+    if (!g_scratchpad.taskInformation) {
+      if (g_user.getClientData('json')) {
+          //Take the string and convert it back to an object
+          var taskInformation = JSON.parse(g_user.getClientData('json'));
+          g_scratchpad.taskInformation = taskInformation;
+          var clearSession = new GlideAjax('global.setSession');
+          clearSession.addParam('sysparm_name', 'clearSessionVar');
+          clearSession.getXML(
+
+              function(response) {
+                  //no need for response
+                  return;
+              });
+
+
+
+      }
+  }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-09-24 16:26:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>089eb15a477c1e1040fd43ff336d43d3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>onLoadPopulateScratchPadFromSession</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_client_089eb15a477c1e1040fd43ff336d43d3</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-16 19:47:24</sys_updated_on>
+        <table>cmdb_ci_network_circuit</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</application>
+        <file_path/>
+        <instance_id>efe2cdc7db351c10bc8b7f693296192d</instance_id>
+        <instance_name>ncgovappdev</instance_name>
+        <name>sys_script_client_089eb15a477c1e1040fd43ff336d43d3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onLoadPopulateScratchPadFromSession&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	// alert('loading');
+    if (!g_scratchpad.taskInformation) {
+      if (g_user.getClientData('json')) {
+          //Take the string and convert it back to an object
+          var taskInformation = JSON.parse(g_user.getClientData('json'));
+          g_scratchpad.taskInformation = taskInformation;
+          var clearSession = new GlideAjax('global.setSession');
+          clearSession.addParam('sysparm_name', 'clearSessionVar');
+          clearSession.getXML(
+
+              function(response) {
+                  //no need for response
+                  return;
+              });
+
+
+
+      }
+  }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admglfry&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-24 16:26:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;089eb15a477c1e1040fd43ff336d43d3&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;onLoadPopulateScratchPadFromSession&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NS Pro" source="x_g_sonc_ns_pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NS Pro"&gt;b5683ae81b157110824752c1604bcbc0&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_089eb15a477c1e1040fd43ff336d43d3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admglfry&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-10-16 19:47:24&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_network_circuit&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-449472138</payload_hash>
+        <record_name>onLoadPopulateScratchPadFromSession</record_name>
+        <reverted_from/>
+        <source>cfed0c3887519650f9f20f280cbb35ec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-10-16 19:47:24</sys_created_on>
+        <sys_id>10dff71187d5de50f9f20f280cbb355d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19296deec090000001</sys_recorded_at>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-10-16 19:47:24</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>90dff711ddd5de500f1e953dffef6d5c</update_guid>
+        <update_guid_history>90dff711ddd5de500f1e953dffef6d5c:-449472138,13bb77dd1055de50079b2cee8d520f14:1189094990,483b7f113f95de50fc10566015646fec:2124965148,259e665ea5b45e108ade4f8fab415e08:1890765355,6d0e2ada9db45e10c4f50631284ed34f:-1736980483,2df8aa5a11745e10088495912ff27437:725040500,ce09ceda45fc1e107bff77b06ddbd07b:-1924825798,32060e9276fc1e1064c387612a178bd2:-613481731,5152c65616bc1e10b8e74686d516b898:902469883,34a1ce1666bc1e107a26ae9fa433e15f:-1347573117,a2310a9ebd7c1e10758a536c0a8de45b:-618405796,e3f08e92e6bc1e10709d18f308b868b8:-1653421824,9aeeb55ace7c1e107fd60f6e3d5e90a9:572911921</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-15 22:49:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>43a6c45922eb4a6fa4b207041b1e6dd1</sys_id>
+        <sys_metadata>089eb15a477c1e1040fd43ff336d43d3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onLoadPopulateScratchPadFromSession</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_parent display_value="Network Circuit">20efb8a81b013010c0a9db1ee54bcbe6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_scope_delete display_value="">bd97b329774640a2bbe5a7af5f2552c9</sys_scope_delete>
+        <sys_update_name>sys_script_client_089eb15a477c1e1040fd43ff336d43d3</sys_update_name>
+        <sys_update_version display_value="sys_script_client_089eb15a477c1e1040fd43ff336d43d3">10dff71187d5de50f9f20f280cbb355d</sys_update_version>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-15 22:49:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

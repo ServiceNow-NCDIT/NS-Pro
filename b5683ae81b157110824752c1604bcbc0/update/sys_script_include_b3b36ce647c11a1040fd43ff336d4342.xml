@@ -77,6 +77,19 @@ port_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         return JSON.stringify(response);
 
     },
+    removeSelectedPorts: function() {
+        var selectedPorts = this.getParameter('sysparm_selectedPorts');
+        var port = new x_g_sonc_ns_pro.port();
+        var response = port.removeSelectedPorts(selectedPorts);
+
+        if (response.message.startsWith('Error Occured ')) {
+            response.resultCode = NSPROConstants.AJAX_RETURNCODES.FAILED;
+        } else {
+            response.resultCode = NSPROConstants.AJAX_RETURNCODES.SUCCESS;
+        }
+        return JSON.stringify(response);
+
+    },	
     setSelectedPortsToRetired: function() {
         var selectedPorts = this.getParameter('sysparm_selectedPorts');
         var port = new x_g_sonc_ns_pro.port();
@@ -90,7 +103,7 @@ port_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         return JSON.stringify(response);
 
     },
-     setSelectedPortsToInstalled: function() {
+    setSelectedPortsToInstalled: function() {
         var selectedPorts = this.getParameter('sysparm_selectedPorts');
         var port = new x_g_sonc_ns_pro.port();
         var response = port.setSelectedPortsToInstalled(selectedPorts);
@@ -103,19 +116,32 @@ port_ajax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         return JSON.stringify(response);
 
     },
-	   type: 'port_ajax'
+    removeSelectedProposedPorts: function() {
+        var selectedPorts = this.getParameter('sysparm_selectedPorts');
+        var port = new x_g_sonc_ns_pro.port();
+        var response = port.removeSelectedProposedPorts(selectedPorts);
+
+        if (response.message.startsWith('Error Occured ')) {
+            response.resultCode = NSPROConstants.AJAX_RETURNCODES.FAILED;
+        } else {
+            response.resultCode = NSPROConstants.AJAX_RETURNCODES.SUCCESS;
+        }
+        return JSON.stringify(response);
+
+    },	
+    type: 'port_ajax'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-07 14:46:16</sys_created_on>
         <sys_id>b3b36ce647c11a1040fd43ff336d4342</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>port_ajax</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_b3b36ce647c11a1040fd43ff336d4342</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 15:31:01</sys_updated_on>
+        <sys_updated_on>2024-11-15 17:49:20</sys_updated_on>
     </sys_script_include>
 </record_update>

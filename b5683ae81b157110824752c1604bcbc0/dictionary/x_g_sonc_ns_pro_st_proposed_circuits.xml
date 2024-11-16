@@ -31,6 +31,12 @@
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Provider" max_length="32" name="x_g_sonc_ns_pro_pending_telco_provider" reference="x_g_sonc_ns_pro_telco_provider" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Telco Service Priority" max_length="100" name="x_g_sonc_ns_pro_pending_telco_service_priority" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Point of Presence" max_length="32" name="x_g_sonc_ns_pro_pending_point_of_presence" reference="x_g_sonc_ns_pro_point_of_presence" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pri/Sec Circuit" max_length="40" name="x_g_sonc_ns_pro_pri_sec_circuit" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Secondary" sequence="200" value="sec"/>
+                <element inactive_on_update="false" label="Primary" sequence="100" value="pri"/>
+            </choice>
+        </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Circuit Type" max_length="40" name="x_g_sonc_ns_pro_pending_circuit_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="ME" sequence="90" value="me"/>
@@ -104,6 +110,7 @@
                 <element inactive_on_update="false" label="Stolen" sequence="800" value="8"/>
             </choice>
         </element>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" display="true" label="Circuit ID" max_length="255" name="name" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Circuit Contract Num" max_length="100" name="x_g_sonc_ns_pro_pending_circuit_contract_num" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Host Ckt" max_length="40" name="x_g_sonc_ns_pro_pending_host_ckt" type="boolean"/>
         <index name="index">

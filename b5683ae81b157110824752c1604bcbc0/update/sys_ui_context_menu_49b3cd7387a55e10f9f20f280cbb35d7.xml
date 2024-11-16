@@ -60,7 +60,13 @@ function canbeRetired() {
 
     var retire = false;
 
-    var taskType = nsProTaskMain.g_form.getValue('task_type');
+	var taskType;
+
+	if(nsProTaskMain.g_form){
+		
+		taskType = nsProTaskMain.g_form.getValue('task_type');
+	}
+    
 	var relatedListID = g_list.getRelated();
 
 	
@@ -89,7 +95,7 @@ function canbeRetired() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>49b3cd7387a55e10f9f20f280cbb35d7</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Set Circuits to Retired</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -97,7 +103,7 @@ function canbeRetired() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_49b3cd7387a55e10f9f20f280cbb35d7</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 11:13:03</sys_updated_on>
+        <sys_updated_on>2024-11-06 15:54:38</sys_updated_on>
         <table>cmdb_ci_network_circuit</table>
         <track_selected>false</track_selected>
         <type>action</type>

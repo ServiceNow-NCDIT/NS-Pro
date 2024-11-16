@@ -58,6 +58,44 @@
             <element>port_type</element>
             <hint/>
             <inactive>false</inactive>
+            <label>BDI210</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:23:10</sys_updated_on>
+            <value>BDI210</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI211</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:23:10</sys_updated_on>
+            <value>BDI211</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>BDI300</label>
             <language>en</language>
             <name>x_g_sonc_ns_pro_nswan_port</name>
@@ -71,6 +109,44 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-09-04 06:11:02</sys_updated_on>
             <value>BDI300</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI410</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:23:10</sys_updated_on>
+            <value>BDI410</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI411</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:23:10</sys_updated_on>
+            <value>BDI411</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -96,6 +172,63 @@
             <element>port_type</element>
             <hint/>
             <inactive>false</inactive>
+            <label>BDI510</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:23:10</sys_updated_on>
+            <value>BDI510</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI511</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:23:10</sys_updated_on>
+            <value>BDI511</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI55</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:22:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:22:57</sys_updated_on>
+            <value>BDI55</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>BDI69</label>
             <language>en</language>
             <name>x_g_sonc_ns_pro_nswan_port</name>
@@ -109,6 +242,25 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-09-04 06:11:03</sys_updated_on>
             <value>BDI69</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BDI75</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:22:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:22:42</sys_updated_on>
+            <value>BDI75</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -286,6 +438,44 @@
             <element>port_type</element>
             <hint/>
             <inactive>false</inactive>
+            <label>GE0/1/0</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:22:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:22:37</sys_updated_on>
+            <value>GE0/1/0</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GE0/1/1</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-16 02:00:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-16 02:00:29</sys_updated_on>
+            <value>GE0/1/1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Input</label>
             <language>en</language>
             <name>x_g_sonc_ns_pro_nswan_port</name>
@@ -299,6 +489,25 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-09-04 06:10:50</sys_updated_on>
             <value>Input</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Inside</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-16 02:00:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-16 02:00:49</sys_updated_on>
+            <value>Inside</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -413,6 +622,25 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-09-04 06:10:33</sys_updated_on>
             <value>Outside</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>TE0/0/2</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-12 06:22:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-12 06:22:39</sys_updated_on>
+            <value>TE0/0/2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -983,6 +1211,25 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-09-04 06:10:28</sys_updated_on>
             <value>XNET</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>port_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>z2</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_nswan_port</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-16 02:00:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-16 02:00:49</sys_updated_on>
+            <value>z2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

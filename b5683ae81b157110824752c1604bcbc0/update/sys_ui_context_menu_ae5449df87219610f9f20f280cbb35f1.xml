@@ -23,11 +23,12 @@ function moveCurrentToProposed(){
 		//alert(response);
         var responseObj = JSON.parse(response);
         if (responseObj.resultCode == 'success') {
-			nsProTaskMain.g_form.addInfoMessage(response.message);
+			nsProTaskMain.g_form.addInfoMessage(responseObj.message);
         } else {
-            nsProTaskMain.g_form.addErrorMessage(response.message);
+            nsProTaskMain.g_form.addErrorMessage(responseObj.message);
         }
         gsftSubmit(null, nsProTaskMain.g_form.getFormElement(), 'sysverb_update_and_stay');
+		nsProTaskMain.g_form.addInfoMessage(responseObj.message);
     }
 
 }]]></action_script>
@@ -60,19 +61,25 @@ function canBeConfigured() {
 
     var proposed = false;
 
-    var taskType = nsProTaskMain.g_form.getValue('task_type');
+    var taskType;
+
+    if (nsProTaskMain.g_form) {
+
+        taskType = nsProTaskMain.g_form.getValue('task_type');
+    }
+
 
     if (taskType == 'provision_change') {
         proposed = true;
     }
 
     if (proposed) {
-		g_menu.setVisible(g_item);
+        g_menu.setVisible(g_item);
         g_menu.setEnabled(g_item);
         g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Move Selected Circuits to Proposed •</b>");
 
     } else {
-		g_menu.setHidden(g_item);
+        g_menu.setHidden(g_item);
         g_menu.setDisabled(g_item);
     }
 
@@ -86,7 +93,7 @@ function canBeConfigured() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ae5449df87219610f9f20f280cbb35f1</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Move Selected Circuits To Proposed</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -94,7 +101,7 @@ function canBeConfigured() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_ae5449df87219610f9f20f280cbb35f1</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-03 21:54:31</sys_updated_on>
+        <sys_updated_on>2024-11-15 02:13:45</sys_updated_on>
         <table>cmdb_ci_network_circuit</table>
         <track_selected>false</track_selected>
         <type>action</type>

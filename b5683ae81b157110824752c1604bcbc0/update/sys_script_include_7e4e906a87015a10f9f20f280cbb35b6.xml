@@ -55,6 +55,118 @@ port.prototype = {
         }
         return response;
     },
+    removeSelectedProposedPorts: function(ports) {
+        var errorString;
+        var response = {};
+        try {
+            if (!ports) {
+                throw new Error("ports is a required parameter");
+            }
+            var portsArray = ports.split(",");
+
+            if (portsArray.length < 1) {
+                throw new Error("one or more ports must be selected");
+            }
+            for (var i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    var pendingStatus = portRecord.getValue('pending_status');
+                    var installStatus = portRecord.getValue('install_status');
+                    var pendingIPAddress = portRecord.getValue('pending_ip_address');
+                    //if proposed record was a inserted record and this is a host port 
+                    //Ip address starts wtih 172.22. then we need to remove the info from the proposed side
+                    //and clear the site ID so the port goes back to the pool
+                    if (gs.nil(installStatus) && pendingStatus == '4') {
+                        if (pendingIPAddress) {
+                            if (pendingIPAddress.startsWith('172.22.')) {
+                                portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
+                                portRecord.setValue('local_circuit_id', "NULL");
+                                portRecord.setValue('network_gear', "NULL");
+                                portRecord.setValue('name', "NULL");
+                                portRecord.setValue('vrf', "NULL");
+                                portRecord.setValue('site', "NULL");
+                                portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit', "NULL");
+                                portRecord.setValue('client_id', "NULL");
+                                portRecord.update();
+                            } else {
+                                portRecord.deleteRecord();
+                            }
+                        } else {
+                            portRecord.deleteRecord();
+                        }
+                    } else {
+                        portRecord.setValue('pending_status', "NULL");
+                        portRecord.setValue('pending_name', "NULL");
+                        portRecord.setValue('pending_client_id', "NULL");
+                        portRecord.setValue('pending_local_circuit_id', "NULL");
+                        portRecord.setValue('pending_ip_address', "NULL");
+                        portRecord.setValue('pending_pe_host_circuit_id', "NULL");
+                        portRecord.setValue('pending_vrf', "NULL");
+                        portRecord.setValue('pending_master_device_interface', "NULL");
+                        portRecord.setValue('pending_description', "NULL");
+                        portRecord.setValue('pending_type', "NULL");
+                        portRecord.setValue('pending_remote_site_circuit_vlan', "NULL");
+                        portRecord.setValue('pending_interface_subnet_mask', "NULL");
+                        portRecord.setValue('pending_network_gear', "NULL");
+                        portRecord.setValue('pending_uplink_connection_description', "NULL");
+                        portRecord.update();
+                    }
+                }
+            }
+            response.message = portsArray.length + " ports were removed from proposed";
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
+        }
+        return response;
+    },
+    removeSelectedPorts: function(ports) {
+        var errorString;
+        var response = {};
+        try {
+            if (!ports) {
+                throw new Error("ports is a required parameter");
+            }
+            var portsArray = ports.split(",");
+
+            if (portsArray.length < 1) {
+                throw new Error("one or more ports must be selected");
+            }
+            for (var i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    var IPAddress = portRecord.getValue('ip_address');
+                    //if proposed record was a inserted record and this is a host port 
+                    //Ip address starts wtih 172.22. then we need to remove the info from the proposed side
+                    //and clear the site ID so the port goes back to the pool
+                    if (IPAddress) {
+                        if (IPAddress.startsWith('172.22.')) {
+                            portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
+                            portRecord.setValue('local_circuit_id', "NULL");
+                            portRecord.setValue('network_gear', "NULL");
+                            portRecord.setValue('name', "NULL");
+                            portRecord.setValue('vrf', "NULL");
+                            portRecord.setValue('site', "NULL");
+                            portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit', "NULL");
+                            portRecord.setValue('client_id', "NULL");
+                            portRecord.update();
+                        } else {
+                            portRecord.deleteRecord();
+                        }
+                    } else {
+                        portRecord.deleteRecord();
+                    }
+                }
+            }
+            response.message = portsArray.length + " ports were removed from proposed";
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            response.message = errorString;
+        }
+        return response;
+    },
     removePortsFromSite: function(siteSysID, ports) {
         var errorString;
         var response = {};
@@ -77,12 +189,13 @@ port.prototype = {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
                     portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
-                    portRecord.setValue('local_circuit_id', gs.nil());
-                    portRecord.setValue('network_gear', gs.nil());
-                    portRecord.setValue('name', '');
-                    portRecord.setValue('vrf', '');
-                    portRecord.setValue('site', gs.nil());
-                    portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit', '');
+                    portRecord.setValue('local_circuit_id', "NULL");
+                    portRecord.setValue('network_gear', "NULL");
+                    portRecord.setValue('name', "NULL");
+                    portRecord.setValue('vrf', "NULL");
+                    portRecord.setValue('site', "NULL");
+                    portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit', "NULL");
+                    portRecord.setValue('client_id', "NULL");
                     portRecord.update();
                 }
             }
@@ -120,33 +233,61 @@ port.prototype = {
         var response = {};
         gs.info('Selected Ports: ' + selectedPorts);
         portsArray = selectedPorts.split(",");
+        var containedHostPorts = false;
+        var movedPorts = 0;
         var errorString;
         try {
             for (i = 0; i < portsArray.length; i++) {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
-                    portRecord.setValue('pending_status', 4);
-                    portRecord.setValue('pending_name', portRecord.getValue('name'));
-                    portRecord.setValue('pending_client_id', portRecord.getValue('client_id'));
-                    portRecord.setValue('pending_local_circuit_id', portRecord.getValue('local_circuit_id'));
-                    portRecord.setValue('pending_ip_address', portRecord.getValue('ip_address'));
-                    portRecord.setValue('pending_pe_host_circuit_id', portRecord.getValue('pe_host_circuit_id'));
-                    portRecord.setValue('pending_vrf', portRecord.getValue('vrf'));
-                    portRecord.setValue('pending_master_device_interface', portRecord.getValue('master_device_interface'));
-                    portRecord.setValue('pending_description', portRecord.getValue('short_description'));
-                    portRecord.setValue('pending_type', portRecord.getValue('type'));
-                    portRecord.setValue('pending_remote_site_circuit_vlan', portRecord.getValue('remote_site_circuit_vlan'));
-                    portRecord.setValue('pending_interface_subnet_mask', portRecord.getValue('interface_subnet_mask'));
-                    portRecord.setValue('pending_network_gear', portRecord.getValue('network_gear'));
-                    portRecord.setValue('pending_uplink_connection_description', portRecord.getValue('uplink_connection_description'));
-                    portRecord.update();
+                    var isHostPort = false;
+                    if (portRecord.getValue('ip_address')) {
+                        var ipAddress = portRecord.getValue('ip_address');
+                        if (ipAddress.startsWith('172.22.2')) {
+                            isHostPort = true;
+                            if (!containedHostPorts) {
+                                containedHostPorts = true;
+                            }
+                        }
+                    }
+
+                    if (!isHostPort) {
+                        var newPortRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                        newPortRecord.initialize();
+                        newPortRecord.setValue('pending_status', 4);
+                        newPortRecord.setValue('pending_replaces', portRecord.getValue('sys_id'));
+                        newPortRecord.setValue('site', portRecord.getValue('site'));
+                        newPortRecord.setValue('install_status', 'NULL');
+                        newPortRecord.setValue('pending_name', portRecord.getValue('name'));
+                        newPortRecord.setValue('name', portRecord.getValue('name'));
+                        newPortRecord.setValue('pending_client_id', portRecord.getValue('client_id'));
+                        newPortRecord.setValue('pending_local_circuit_id', portRecord.getValue('local_circuit_id'));
+                        newPortRecord.setValue('pending_ip_address', portRecord.getValue('ip_address'));
+                        newPortRecord.setValue('pending_pe_host_circuit_id', portRecord.getValue('pe_host_circuit_id'));
+                        newPortRecord.setValue('pending_vrf', portRecord.getValue('vrf'));
+                        newPortRecord.setValue('pending_master_device_interface', portRecord.getValue('master_device_interface'));
+                        newPortRecord.setValue('pending_description', portRecord.getValue('short_description'));
+                        newPortRecord.setValue('pending_type', portRecord.getValue('type'));
+                        newPortRecord.setValue('pending_remote_site_circuit_vlan', portRecord.getValue('remote_site_circuit_vlan'));
+                        newPortRecord.setValue('pending_interface_subnet_mask', portRecord.getValue('interface_subnet_mask'));
+                        newPortRecord.setValue('pending_network_gear', portRecord.getValue('network_gear'));
+                        newPortRecord.setValue('pending_uplink_connection_description', portRecord.getValue('uplink_connection_description'));
+                        newPortRecord.insert();
+                        movedPorts += 1;
+                    }
                 }
 
             }
-            response.message = "Successfully moved " + portsArray.length + " ports to proposed";
+            if (containedHostPorts) {
+                response.message = "One or more ports selected were host ports.  Host ports cannot be moved to proposed.  You must create new proposed ports and from selected Host Circuit. " + movedPorts + " Ports were moved to proposed.";
+            } else {
+                response.message = "Successfully moved " + movedPorts + " ports to proposed";
+            }
+
         } catch (ex) {
             var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
             errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            gs.info(errorString);
             response.message = errorString;
         }
         return response;
@@ -262,9 +403,12 @@ port.prototype = {
             for (i = 0; i < portsArray.length; i++) {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
+                    var pendingReplaces = portRecord.getValue('pending_replaces');
+
                     portRecord.setValue('pending_status', '');
-                    portRecord.setValue('name', portRecord.getValue('pending_name'));
-                    portRecord.setValue('pending_name', '');
+                    portRecord.setValue('install_status', 1);
+                    //portRecord.setValue('name', portRecord.getValue('pending_name'));
+                    //portRecord.setValue('pending_name', '');
 
                     portRecord.setValue('client_id', portRecord.getValue('pending_client_id'));
                     portRecord.setValue('pending_client_id', '');
@@ -303,6 +447,11 @@ port.prototype = {
                     portRecord.setValue('pending_uplink_connection_description', '');
 
                     portRecord.update();
+                    if (pendingReplaces) {
+                        var replacePortRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                        replacePortRecord.get(pendingReplaces);
+                        replacePortRecord.deleteRecord();
+                    }
                 }
 
             }
@@ -336,7 +485,7 @@ port.prototype = {
             portObj.port = portRecord.getValue('sys_id');
             portObj.site = portRecord.getValue('site');
             portObj.pending_status = portRecord.getValue('pending_status');
-            portObj.pending_name = portRecord.getValue('pending_name');
+            portObj.name = portRecord.getValue('name');
             portObj.pending_client_id = portRecord.getValue('pending_client_id');
             portObj.pending_local_circuit_id = portRecord.getValue('pending_local_circuit_id');
             portObj.pending_ip_address = portRecord.getValue('pending_ip_address');
@@ -349,6 +498,7 @@ port.prototype = {
             portObj.pending_interface_subnet_mask = portRecord.getValue('pending_interface_subnet_mask');
             portObj.pending_network_gear = portRecord.getValue('pending_network_gear');
             portObj.pending_uplink_connection_description = portRecord.getValue('pending_uplink_connection_description');
+            portObj.x_g_sonc_ns_pro_pri_sec_circuit = portRecord.getValue('x_g_sonc_ns_pro_pri_sec_circuit');
             //portObj.proposed_port_name = this._makeProposedPortNameLink(portSysID, proposedName);
             portsArray.push(portObj);
         }
@@ -367,13 +517,13 @@ port.prototype = {
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-07 14:19:14</sys_created_on>
         <sys_id>7e4e906a87015a10f9f20f280cbb35b6</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>port</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_7e4e906a87015a10f9f20f280cbb35b6</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 15:30:47</sys_updated_on>
+        <sys_updated_on>2024-11-15 17:56:02</sys_updated_on>
     </sys_script_include>
 </record_update>

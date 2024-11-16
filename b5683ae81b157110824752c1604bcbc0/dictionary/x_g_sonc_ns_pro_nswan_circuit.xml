@@ -8,14 +8,21 @@
         <element attributes="edge_encryption_enabled=true" label="Master-Flex_Serve_ID" max_length="40" name="master_flex_serve_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Remarks" max_length="2000" name="remarks" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="AltCircuitContact" max_length="40" name="altcircuitcontact" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="RmtDLCI" max_length="40" name="rmtdlci" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
+        <element label="LocDLCI" max_length="40" name="locdlc0" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Site ID" max_length="40" name="site_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Serial" max_length="40" name="serial" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Circuit_ID" max_length="40" name="circuit_id" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Cir" max_length="40" name="cir" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Scope" max_length="40" name="scope" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Phone Company" max_length="100" name="phone_company" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Lata" max_length="40" name="lata" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Ckt Type" max_length="40" name="ckt_type" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Gap" max_length="40" name="gap" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Non-StdBillingExpirationDate" max_length="40" name="non_stdbillingexpirationdate" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Circuit_Ref" max_length="40" name="circuit_ref" type="string"/>
+        <element label="RmtDLCI" max_length="40" name="rmtdlc0" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="LocDLCI" max_length="40" name="locdlci" type="string"/>
     </element>
 </database>

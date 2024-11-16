@@ -28,6 +28,12 @@
         g_form.setReadOnly('ip_address', true);
     }
 	g_form.setReadOnly('pe_host_circuit_id.x_g_sonc_ns_pro_host_ckt_type',true);
+
+	var currentView = g_form.getViewName();
+	if(currentView=="proposedports"){
+		g_form.setVisible('network_gear',false);
+		g_form.setMandatory('pending_name',true);
+	}
 	//g_form.setReadOnly('remote_site_circuit_vlan',true);
 
 	
@@ -42,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>622bbac7870c5a10f9f20f280cbb356a</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Port ReadOnly Fields on Edit</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -50,7 +56,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_policy_622bbac7870c5a10f9f20f280cbb356a</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-25 10:19:27</sys_updated_on>
+        <sys_updated_on>2024-11-11 18:16:00</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <ui_type>0</ui_type>
         <view/>

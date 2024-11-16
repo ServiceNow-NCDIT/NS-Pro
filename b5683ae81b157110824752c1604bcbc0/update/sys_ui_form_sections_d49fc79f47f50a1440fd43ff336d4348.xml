@@ -42,20 +42,6 @@
             <sys_updated_by>admglfry</sys_updated_by>
             <sys_updated_on>2024-09-02 21:49:33</sys_updated_on>
         </sys_ui_form_section>
-        <sys_ui_form_section action="INSERT_OR_UPDATE">
-            <position>3</position>
-            <sys_created_by>admglfry</sys_created_by>
-            <sys_created_on>2024-11-01 15:46:40</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>b122a1224721129440fd43ff336d4344</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_overrides/>
-            <sys_ui_form display_value="cmdb_ci_network_circuit" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">d49fc79f47f50a1440fd43ff336d4348</sys_ui_form>
-            <sys_ui_section caption="NSProPrimary" display_value="NSProPrimary" name="cmdb_ci_network_circuit" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f922a1224721129440fd43ff336d4340</sys_ui_section>
-            <sys_updated_by>admglfry</sys_updated_by>
-            <sys_updated_on>2024-11-01 15:46:40</sys_updated_on>
-        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>cmdb_ci_network_circuit</name>
             <roles/>

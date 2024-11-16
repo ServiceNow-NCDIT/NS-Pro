@@ -23,9 +23,9 @@ function moveCurrentToProposed(){
 		//alert(response);
         var responseObj = JSON.parse(response);
         if (responseObj.resultCode == 'success') {
-			nsProTaskMain.g_form.addInfoMessage(response.message);
+			alert(responseObj.message);
         } else {
-            nsProTaskMain.g_form.addErrorMessage(response.message);
+           alert(responseObj.message);
         }
         gsftSubmit(null, nsProTaskMain.g_form.getFormElement(), 'sysverb_update_and_stay');
     }
@@ -59,11 +59,21 @@ canBeConfigured();
 function canBeConfigured() {
 
     var proposed = false;
+    var viewName = g_list.getView();
 
-    var taskType = nsProTaskMain.g_form.getValue('task_type');
+	var taskType;
+
+	if(nsProTaskMain.g_form){
+		
+		taskType = nsProTaskMain.g_form.getValue('task_type');
+	}
+    
 
     if (taskType == 'provision_change') {
-        proposed = true;
+         if (viewName != "availproposedportcircuit") {
+            proposed = true;
+        }
+
     }
 
     if (proposed) {
@@ -86,7 +96,7 @@ function canBeConfigured() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9ff0fc1247251e5440fd43ff336d430c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Move Selected Ports to Proposed</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -94,7 +104,7 @@ function canBeConfigured() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_9ff0fc1247251e5440fd43ff336d430c</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-03 21:33:18</sys_updated_on>
+        <sys_updated_on>2024-11-15 21:40:15</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <track_selected>false</track_selected>
         <type>action</type>

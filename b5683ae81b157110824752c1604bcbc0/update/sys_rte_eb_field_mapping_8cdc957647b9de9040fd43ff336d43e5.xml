@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rte_eb_field_mapping">
+    <sys_rte_eb_field_mapping action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <referenced_sys_rte_eb_entity/>
+        <source_sys_rte_eb_field display_value="sn_ihub_target_addresstransrange">beccd17647b9de9040fd43ff336d4355</source_sys_rte_eb_field>
+        <sys_class_name>sys_rte_eb_field_mapping</sys_class_name>
+        <sys_created_by>wbbusby</sys_created_by>
+        <sys_created_on>2024-11-14 20:17:30</sys_created_on>
+        <sys_id>8cdc957647b9de9040fd43ff336d43e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_rte_eb_definition display_value="NSWAN Port Proposed Data Mapping_etl_ihub">e23c15b247b9de9040fd43ff336d433e</sys_rte_eb_definition>
+        <sys_rte_eb_entity_mapping display_value="IHUB_TEMP_TARGET_MAPPING">c0dc957647b9de9040fd43ff336d43e1</sys_rte_eb_entity_mapping>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_rte_eb_field_mapping_8cdc957647b9de9040fd43ff336d43e5</sys_update_name>
+        <sys_updated_by>wbbusby</sys_updated_by>
+        <sys_updated_on>2024-11-14 20:17:30</sys_updated_on>
+        <target_sys_rte_eb_field display_value="AddressTransRange">073c9df247b9de9040fd43ff336d4347</target_sys_rte_eb_field>
+    </sys_rte_eb_field_mapping>
+</record_update>
