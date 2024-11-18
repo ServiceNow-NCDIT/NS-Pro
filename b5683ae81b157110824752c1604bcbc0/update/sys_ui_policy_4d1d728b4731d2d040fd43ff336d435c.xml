@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4d1d728b4731d2d040fd43ff336d435c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Hide Proposed Ports</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_policy_4d1d728b4731d2d040fd43ff336d435c</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-15 21:57:21</sys_updated_on>
+        <sys_updated_on>2024-11-18 16:10:08</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <ui_type>0</ui_type>
         <view display_value="ProposedPorts" name="proposedports">proposedports</view>

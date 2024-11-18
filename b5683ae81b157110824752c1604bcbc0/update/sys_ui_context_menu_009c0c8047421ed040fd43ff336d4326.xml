@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="INSERT_OR_UPDATE">
+        <action_script><![CDATA[//var nsProTaskMain;
+
+//nsProTaskMain = parent.top.window.gsft_main;
+
+assignHostPortsToLocalCircuit();
+
+function assignHostPortsToLocalCircuit() {
+    var selectedLocalCircuit = g_sysId;
+
+    //alert(g_sysId);
+    var circuit = new GlideAjax('x_g_sonc_ns_pro.circuit_ajax');
+    circuit.addParam('sysparm_name', 'getPendingLocalCircuitInformation');
+    circuit.addParam('sysparm_selectedLocalCircuit', selectedLocalCircuit);
+    circuit.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+        alert(response);
+        response = JSON.parse(response);
+        //alert(response.resultCode);
+        if (response.resultCode == "success") {
+            var localCircuit = response.localCircuit;
+            var proposedHostCircuitId = response.proposedHostCircuitId;
+            var priSecCircuit = response.priSecCircuit;
+			var proposedCircuitID = response.proposedCircuitID;
+            var proposedTelco = response.proposedTelcoProvider;
+            if (!proposedHostCircuitId) {
+                alert('Pending PE Host Circuit ID must be populated on the circuit prior to assigning host ports');
+                return;
+            } else {
+                openPortsList(localCircuit,proposedHostCircuitId,priSecCircuit,proposedCircuitID,proposedTelco);
+
+            }
+            location.reload();
+        } else {
+            return false;
+        }
+
+    }
+                function openPortsList(localCircuit,proposedHostCircuitId,priSecCircuit,proposedCircuitID,proposedTelco) {
+
+                    var selectedHostCircuit = proposedHostCircuitId;
+                    var selectedTelcoProvider = proposedTelco;
+                    var selectedLocalCircuitName = proposedCircuitID
+                    var selectedLocalCircuitSysID = localCircuit;
+                    var localCircuitInfo = {};
+                    localCircuitInfo.selectedLocalCircuitName = selectedLocalCircuitName;
+                    localCircuitInfo.selectedTelcoProvider = selectedTelcoProvider;
+                    localCircuitInfo.selectedHostCircuitSysId = selectedHostCircuit;
+					localCircuitInfo.selectedLocalCircuitSysID = selectedLocalCircuitSysID;
+                    g_scratchpad.localCircuitInfo = localCircuitInfo;
+                    var parmFixedQuery = "siteISEMPTY^install_statusIN1,4^ip_addressSTARTSWITH172.^pe_host_circuit_id=" + selectedHostCircuit;
+
+                    var url;
+                    url = new GlideURL("x_g_sonc_ns_pro_port_list.do");
+                    url.addParam("sysparm_fixed_query", parmFixedQuery);
+                    url.addParam("sysparm_view", "availproposedportcircuit");
+                    url.addParam("sysparm_view_forced", true);
+
+
+                    var portListW = new GlideOverlay({
+                        title: getMessage('Select Ports to Assign to Local Circuit ' + selectedLocalCircuitName),
+                        iframe: url.getURL(),
+                        draggable: true,
+                        allowOverflowX: true,
+                        scroll: true,
+                        height: "100%",
+                        width: "100%",
+                        closeOnEscape: true,
+                        //onAfterLoad: resizeIframe,
+                        onAfterClose: function() {
+                            location.reload();
+
+                        }
+                    });
+
+
+                    portListW.setPreference('sysparm_sys_id', selectedHostCircuit);
+                    portListW.render();
+                    g_list.refresh(1);
+                    //w.destroy();
+
+
+
+                }
+
+
+}]]></action_script>
+        <active>false</active>
+        <comments/>
+        <condition/>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Assign Host Ports to Local Circuit</name>
+        <on_show_script><![CDATA[canBeConfigured();
+
+function canBeConfigured() {
+
+    var proposed = false;
+	related = g_list.getRelated();
+
+    if (related == "REL:5ea9196387a95a10f9f20f280cbb358c") {
+        proposed = true;
+    }
+    if (proposed) {
+        g_menu.setEnabled(g_item);
+        g_menu.setLabel(g_item, "<b style='color:DodgerBlue;'>• Assign Host Ports to Local Circuit •</b>");
+
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>1000</order>
+        <parent/>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-18 11:42:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>009c0c8047421ed040fd43ff336d4326</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Assign Host Ports to Local Circuit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_009c0c8047421ed040fd43ff336d4326</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-18 16:03:16</sys_updated_on>
+        <table>x_g_sonc_ns_pro_st_proposed_circuits</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+</record_update>

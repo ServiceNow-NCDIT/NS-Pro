@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>pending_local_circuit_id</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange pending local cir</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading) {
+      return;
+   }
+
+	if(oldValue != newValue){
+		if(newValue == ""){
+			g_form.setValue('pending_pe_host_circuit_id', "NULL");
+		} else{
+			var local = g_form.getReference('pending_local_circuit_id',getHostCircuit);
+		}
+
+	}
+   
+   function getHostCircuit(local){
+		alert(local.pending_pe_host_circuit_id);
+		//g_form.setValue('pending_pe_host_circuit_id',local.pending_pe_host_circuit_id);
+
+   }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-16 20:50:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>73f4bb9387351ed0f9f20f280cbb35f9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>OnChange pending local cir</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_script_client_73f4bb9387351ed0f9f20f280cbb35f9</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-18 15:43:16</sys_updated_on>
+        <table>x_g_sonc_ns_pro_port</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view>proposedports</view>
+    </sys_script_client>
+</record_update>
