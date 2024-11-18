@@ -10,7 +10,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="cmdb_ci_ip_router" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">c7a5aaffdb99461040eae46b139619e9</sys_ui_form>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-04-08 11:27:13</sys_updated_on>
         </sys_ui_form_section>
@@ -27,6 +27,20 @@
             <sys_ui_section caption="Activities" display_value="Activities" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">0ba5aaffdb99461040eae46b139619e8</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-04-08 11:28:14</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:10:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85514f7f87319214f9f20f280cbb3505</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_ip_router" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">c7a5aaffdb99461040eae46b139619e9</sys_ui_form>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">f8510f7f87319214f9f20f280cbb359e</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:10:35</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>cmdb_ci_ip_router</name>

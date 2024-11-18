@@ -32,7 +32,7 @@
         <element attributes="edge_encryption_enabled=true" label="O_S" max_length="40" name="o_s" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Config_file_Name" max_length="100" name="config_file_name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Surplus_Date" max_length="40" name="surplus_date" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="Serial_Number" max_length="40" name="serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Serial_Number" max_length="40" name="serial_number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Owner" max_length="40" name="owner" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Status" max_length="40" name="status" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Date_Sent-to_Maint" max_length="40" name="date_sent_to_maint" type="string"/>

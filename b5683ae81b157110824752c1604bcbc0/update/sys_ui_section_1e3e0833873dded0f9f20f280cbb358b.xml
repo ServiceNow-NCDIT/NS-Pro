@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Pending Changes" section_id="1e3e0833873dded0f9f20f280cbb358b" sys_domain="global" table="cmdb_ci_wap_network" version="3" view="nspro">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_status</element>
+            <position>0</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>a23e4833873dded0f9f20f280cbb357c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_device_type</element>
+            <position>1</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>ee3e4833873dded0f9f20f280cbb357c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_brand</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>663e4833873dded0f9f20f280cbb357d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_cost_center</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>ea3e4833873dded0f9f20f280cbb357d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_model</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>623e4833873dded0f9f20f280cbb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_owner</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>e63e4833873dded0f9f20f280cbb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_warranty</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>6e3e4833873dded0f9f20f280cbb357e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_lifecycle</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>e23e4833873dded0f9f20f280cbb357f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>6a3e4833873dded0f9f20f280cbb357f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_installation_date</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>ee3e4833873dded0f9f20f280cbb357f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_itag</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>663e4833873dded0f9f20f280cbb3580</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_internal_serial_number</element>
+            <position>11</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>ea3e4833873dded0f9f20f280cbb3580</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_po_number</element>
+            <position>12</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>623e4833873dded0f9f20f280cbb3581</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_unit_cost</element>
+            <position>13</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>e63e4833873dded0f9f20f280cbb3581</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_purchase_date</element>
+            <position>14</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>6e3e4833873dded0f9f20f280cbb3581</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_replacement_date</element>
+            <position>15</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>e23e4833873dded0f9f20f280cbb3582</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_pending_surplus_date</element>
+            <position>16</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_id>6a3e4833873dded0f9f20f280cbb3582</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_wap_network" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">1e3e0833873dded0f9f20f280cbb358b</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Pending Changes</caption>
+            <header>false</header>
+            <name>cmdb_ci_wap_network</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-17 17:08:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1e3e0833873dded0f9f20f280cbb358b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_wap_network</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+            <sys_update_name>sys_ui_section_1e3e0833873dded0f9f20f280cbb358b</sys_update_name>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-17 17:08:04</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

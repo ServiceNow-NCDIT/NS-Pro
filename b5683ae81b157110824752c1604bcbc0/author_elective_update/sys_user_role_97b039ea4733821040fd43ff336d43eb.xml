@@ -48,7 +48,7 @@
         <update_guid_history>d7b039eaf03382104d15b11d412f1bf0:-2034113927</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Record deleted 11/12/2024 07:42:34">fe3f298a47711a9040fd43ff336d4329</sys_audit_delete>
+        <sys_audit_delete display_value="Record deleted 11/12/2024 08:42:34">fe3f298a47711a9040fd43ff336d4329</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-11-12 13:42:35</sys_created_on>

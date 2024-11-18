@@ -28,6 +28,20 @@
             <sys_updated_by>wbbusby</sys_updated_by>
             <sys_updated_on>2024-07-13 22:18:42</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 08:11:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>281d93b387f59214f9f20f280cbb35d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="cmdb_ci_netgear" name="cmdb_ci_netgear" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">d263533a87db0654f9f20f280cbb35c7</sys_ui_form>
+            <sys_ui_section caption="Pending Changes" display_value="Pending Changes" name="cmdb_ci_netgear" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">681d53b387f59214f9f20f280cbb35b0</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 08:11:47</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>cmdb_ci_netgear</name>
             <roles/>

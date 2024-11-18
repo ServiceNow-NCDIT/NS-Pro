@@ -1,189 +1,427 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_ui_section caption="New Section" section_id="8474ae3fdb99461040eae46b139619b3" sys_domain="global" table="cmdb_ci_ip_router" version="3" view="nspro">
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>name</element>
-            <position>0</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>330a132a87f992d0f9f20f280cbb3502</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
+    <sys_ui_section caption="Hardware Info" section_id="8474ae3fdb99461040eae46b139619b3" sys_domain="global" table="cmdb_ci_ip_router" version="3" view="nspro">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>serial_number</element>
-            <position>1</position>
+            <position>0</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>fb0a132a87f992d0f9f20f280cbb3502</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>75c7c7b387b19214f9f20f280cbb353d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>model_id</element>
-            <position>2</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>730a132a87f992d0f9f20f280cbb3503</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>manufacturer</element>
-            <position>3</position>
-            <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>f70a132a87f992d0f9f20f280cbb3503</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
-            <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_site</element>
-            <position>4</position>
+            <position>1</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>7f0a132a87f992d0f9f20f280cbb3503</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>31c7c7b387b19214f9f20f280cbb353e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_brand</element>
+            <position>2</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b5c7c7b387b19214f9f20f280cbb353e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_internal_serial_number</element>
+            <position>3</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>3dc7c7b387b19214f9f20f280cbb353e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_type</element>
+            <position>4</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b1c7c7b387b19214f9f20f280cbb353f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_id</element>
+            <position>5</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>39c7c7b387b19214f9f20f280cbb353f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manufacturer</element>
+            <position>6</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>bdc7c7b387b19214f9f20f280cbb353f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>purchase_date</element>
+            <position>7</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>35c7c7b387b19214f9f20f280cbb3540</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>install_date</element>
+            <position>8</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b9c7c7b387b19214f9f20f280cbb3540</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_device_lifecycle</element>
+            <position>9</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>31c7c7b387b19214f9f20f280cbb3541</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_owner</element>
+            <position>10</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b5c7c7b387b19214f9f20f280cbb3541</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_replacement_date</element>
+            <position>11</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>3dc7c7b387b19214f9f20f280cbb3541</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_maintenance_type</element>
+            <position>12</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b1c7c7b387b19214f9f20f280cbb3542</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>13</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>f30a132a87f992d0f9f20f280cbb3504</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>39c7c7b387b19214f9f20f280cbb3542</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>install_status</element>
-            <position>6</position>
+            <position>14</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>7b0a132a87f992d0f9f20f280cbb3504</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>bdc7c7b387b19214f9f20f280cbb3542</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>15</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>35c7c7b387b19214f9f20f280cbb3543</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_center</element>
+            <position>16</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b9c7c7b387b19214f9f20f280cbb3543</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>asset</element>
-            <position>7</position>
+            <position>17</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>ff0a132a87f992d0f9f20f280cbb3504</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>31c7c7b387b19214f9f20f280cbb3544</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>company</element>
-            <position>8</position>
+            <element>asset_tag</element>
+            <position>18</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>770a132a87f992d0f9f20f280cbb3505</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b5c7c7b387b19214f9f20f280cbb3544</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_itag</element>
+            <position>19</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>3dc7c7b387b19214f9f20f280cbb3544</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>po_number</element>
+            <position>20</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b1c7c7b387b19214f9f20f280cbb3545</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost</element>
+            <position>21</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>39c7c7b387b19214f9f20f280cbb3545</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_device_type</element>
+            <position>22</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>bdc7c7b387b19214f9f20f280cbb3545</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>location</element>
-            <position>9</position>
+            <position>23</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>fb0a132a87f992d0f9f20f280cbb3505</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>35c7c7b387b19214f9f20f280cbb3546</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_warranty</element>
+            <position>24</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b9c7c7b387b19214f9f20f280cbb3546</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_g_sonc_ns_pro_nswan_hardware</element>
-            <position>10</position>
+            <position>25</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>730a132a87f992d0f9f20f280cbb3506</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>31c7c7b387b19214f9f20f280cbb3547</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_g_sonc_ns_pro_surplus_date</element>
+            <position>26</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b5c7c7b387b19214f9f20f280cbb3547</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>11</position>
+            <position>27</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>c41a132a87f992d0f9f20f280cbb3506</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>3dc7c7b387b19214f9f20f280cbb3547</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>12</position>
+            <position>28</position>
             <sys_created_by>wbbusby</sys_created_by>
-            <sys_created_on>2024-11-14 10:46:14</sys_created_on>
-            <sys_id>4c1a132a87f992d0f9f20f280cbb3506</sys_id>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>b1c7c7b387b19214f9f20f280cbb3548</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-11-14 10:46:14</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>29</position>
+            <sys_created_by>wbbusby</sys_created_by>
+            <sys_created_on>2024-11-18 06:38:46</sys_created_on>
+            <sys_id>39c7c7b387b19214f9f20f280cbb3548</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Hardware Info" display_value="Hardware Info" name="cmdb_ci_ip_router" sys_domain="global" view="20d302ab47d1c21040fd43ff336d43d0">8474ae3fdb99461040eae46b139619b3</sys_ui_section>
+            <sys_updated_by>wbbusby</sys_updated_by>
+            <sys_updated_on>2024-11-18 06:38:46</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption>New Section</caption>
+            <caption>Hardware Info</caption>
             <header>false</header>
             <name>cmdb_ci_ip_router</name>
             <roles/>
@@ -193,7 +431,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8474ae3fdb99461040eae46b139619b3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>cmdb_ci_ip_router</sys_name>
             <sys_overrides/>
             <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -201,7 +439,7 @@
             <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
             <sys_update_name>sys_ui_section_8474ae3fdb99461040eae46b139619b3</sys_update_name>
             <sys_updated_by>wbbusby</sys_updated_by>
-            <sys_updated_on>2024-04-08 11:21:49</sys_updated_on>
+            <sys_updated_on>2024-11-18 06:31:37</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Nspro" name="nspro">20d302ab47d1c21040fd43ff336d43d0</view>
