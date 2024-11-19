@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_context_menu">
+    <sys_ui_context_menu action="INSERT_OR_UPDATE">
+        <action_script><![CDATA[var nsProTaskMain;
+
+nsProTaskMain = parent.top.window.gsft_main;
+
+moveProposedToCurrent();
+
+function moveProposedToCurrent(){
+
+	var selected;
+	selected = g_list.getChecked();
+	if(selected.length == 0)
+	{
+		selected = g_sysId;
+	}
+	var circuit = new GlideAjax('x_g_sonc_ns_pro.circuit_ajax');
+	circuit.addParam('sysparm_name', 'removeProposedLocalCircuits');
+	circuit.addParam('sysparm_selectedCircuits', selected);
+	circuit.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+		alert(response);
+        var responseObj = JSON.parse(response);
+        if (responseObj.resultCode == 'success') {
+			nsProTaskMain.g_form.addInfoMessage(responseObj.message);
+        } else {
+            nsProTaskMain.g_form.addErrorMessage(responseObj.message);
+        }
+        gsftSubmit(null, nsProTaskMain.g_form.getFormElement(), 'sysverb_update_and_stay');
+    }
+
+}]]></action_script>
+        <active>true</active>
+        <comments/>
+        <condition/>
+        <do_not_cache>false</do_not_cache>
+        <dynamic_actions_script><![CDATA[/** 
+ * This server-side script is used to dynamically create actions for the context menu, such as the list of available templates 
+ * 
+ * The following variables are available to the script: 
+ *    'g_tableName' the name of the current table 
+ *    'g_listId' the id of the list we are building the context menu for 
+ *    'g_itemName' the name of the UI Context Menu item we are building 
+ *    'g_itemOrder' the order defined in the UI Context Menu item we are building 
+ * 
+ * Add items to the context menu by calling: 
+ *    g_contextMenu.addAction(item_id, label, script_string, order); 
+ */ 
+]]></dynamic_actions_script>
+        <menu>list_row</menu>
+        <name>Remove Proposed Circuit</name>
+        <on_show_script><![CDATA[canBeConfigured();
+
+function canBeConfigured() {
+
+    var proposed = false;
+	related = g_list.getRelated();
+
+    if (related == "REL:5ea9196387a95a10f9f20f280cbb358c" ) {
+        proposed = true;
+    }
+    if (proposed) {
+        g_menu.setEnabled(g_item);
+        g_menu.setLabel(g_item, "<b style='color:Tomato;'>• Remove Proposed Circuits •</b>");
+
+    } else {
+        g_menu.setDisabled(g_item);
+    }
+
+}]]></on_show_script>
+        <order>200</order>
+        <parent display_value="Circuit">fe59df888731d250f9f20f280cbb35a7</parent>
+        <run_on_show_script>true</run_on_show_script>
+        <sys_class_name>sys_ui_context_menu</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-19 11:10:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9c9f8554870e5210f9f20f280cbb3531</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Remove Proposed Circuit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>sys_ui_context_menu_9c9f8554870e5210f9f20f280cbb3531</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-19 11:53:46</sys_updated_on>
+        <table>x_g_sonc_ns_pro_st_proposed_circuits</table>
+        <track_selected>false</track_selected>
+        <type>action</type>
+    </sys_ui_context_menu>
+</record_update>

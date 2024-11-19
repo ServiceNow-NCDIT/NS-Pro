@@ -57,7 +57,7 @@ function canBeConfigured() {
     var proposed = false;
 	related = g_list.getRelated();
 
-    if (related == "REL:7036d84a472d1a5440fd43ff336d4325") {
+    if (related == "REL:7036d84a472d1a5440fd43ff336d4325" || related == "REL:dddfd6c347f992d040fd43ff336d4326") {
         proposed = true;
     }
     if (proposed) {
@@ -78,7 +78,7 @@ function canBeConfigured() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>201e331e4739da9040fd43ff336d4327</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Remove Proposed Port</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -86,7 +86,7 @@ function canBeConfigured() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_201e331e4739da9040fd43ff336d4327</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-13 20:37:25</sys_updated_on>
+        <sys_updated_on>2024-11-19 11:08:11</sys_updated_on>
         <table>x_g_sonc_ns_pro_st_proposed_ports</table>
         <track_selected>false</track_selected>
         <type>action</type>

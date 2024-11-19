@@ -38,12 +38,12 @@ port.prototype = {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
                     portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
-                    portRecord.setValue('local_circuit_id', '');
-                    portRecord.setValue('network_gear', '');
-                    portRecord.setValue('name', '');
-                    portRecord.setValue('vrf', '');
-                    portRecord.setValue('site', '');
-                    portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit', '');
+                    portRecord.setValue('local_circuit_id', "NULL");
+                    portRecord.setValue('network_gear', "NULL");
+                    portRecord.setValue('name', "NULL");
+                    portRecord.setValue('vrf', "NULL");
+                    portRecord.setValue('site', "NULL");
+                    portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit', "NULL");
                     portRecord.update();
                 }
             }
@@ -80,6 +80,7 @@ port.prototype = {
                         if (pendingIPAddress) {
                             if (pendingIPAddress.startsWith('172.22.')) {
                                 portRecord.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
+                                portRecord.setValue('pending_status', "NULL");
                                 portRecord.setValue('local_circuit_id', "NULL");
                                 portRecord.setValue('network_gear', "NULL");
                                 portRecord.setValue('name', "NULL");
@@ -87,6 +88,20 @@ port.prototype = {
                                 portRecord.setValue('site', "NULL");
                                 portRecord.setValue('x_g_sonc_ns_pro_pri_sec_circuit', "NULL");
                                 portRecord.setValue('client_id', "NULL");
+                                portRecord.setValue('pending_status', "NULL");
+                                portRecord.setValue('pending_name', "NULL");
+                                portRecord.setValue('pending_client_id', "NULL");
+                                portRecord.setValue('pending_local_circuit_id', "NULL");
+                                portRecord.setValue('pending_ip_address', "NULL");
+                                portRecord.setValue('pending_pe_host_circuit_id', "NULL");
+                                portRecord.setValue('pending_vrf', "NULL");
+                                portRecord.setValue('pending_master_device_interface', "NULL");
+                                portRecord.setValue('pending_description', "NULL");
+                                portRecord.setValue('pending_type', "NULL");
+                                portRecord.setValue('pending_remote_site_circuit_vlan', "NULL");
+                                portRecord.setValue('pending_interface_subnet_mask', "NULL");
+                                portRecord.setValue('pending_network_gear', "NULL");
+                                portRecord.setValue('pending_uplink_connection_description', "NULL");
                                 portRecord.update();
                             } else {
                                 portRecord.deleteRecord();
@@ -229,69 +244,6 @@ port.prototype = {
         return response;
 
     },
-    moveSelectedPortsToProposed: function(selectedPorts) {
-        var response = {};
-        gs.info('Selected Ports: ' + selectedPorts);
-        portsArray = selectedPorts.split(",");
-        var containedHostPorts = false;
-        var movedPorts = 0;
-        var errorString;
-        try {
-            for (i = 0; i < portsArray.length; i++) {
-                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
-                if (portRecord.get(portsArray[i])) {
-                    var isHostPort = false;
-                    if (portRecord.getValue('ip_address')) {
-                        var ipAddress = portRecord.getValue('ip_address');
-                        if (ipAddress.startsWith('172.22.2')) {
-                            isHostPort = true;
-                            if (!containedHostPorts) {
-                                containedHostPorts = true;
-                            }
-                        }
-                    }
-
-                    if (!isHostPort) {
-                        var newPortRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
-                        newPortRecord.initialize();
-                        newPortRecord.setValue('pending_status', 4);
-                        newPortRecord.setValue('pending_replaces', portRecord.getValue('sys_id'));
-                        newPortRecord.setValue('site', portRecord.getValue('site'));
-                        newPortRecord.setValue('install_status', 'NULL');
-                        newPortRecord.setValue('pending_name', portRecord.getValue('name'));
-                        newPortRecord.setValue('name', portRecord.getValue('name'));
-                        newPortRecord.setValue('pending_client_id', portRecord.getValue('client_id'));
-                        newPortRecord.setValue('pending_local_circuit_id', portRecord.getValue('local_circuit_id'));
-                        newPortRecord.setValue('pending_ip_address', portRecord.getValue('ip_address'));
-                        newPortRecord.setValue('pending_pe_host_circuit_id', portRecord.getValue('pe_host_circuit_id'));
-                        newPortRecord.setValue('pending_vrf', portRecord.getValue('vrf'));
-                        newPortRecord.setValue('pending_master_device_interface', portRecord.getValue('master_device_interface'));
-                        newPortRecord.setValue('pending_description', portRecord.getValue('short_description'));
-                        newPortRecord.setValue('pending_type', portRecord.getValue('type'));
-                        newPortRecord.setValue('pending_remote_site_circuit_vlan', portRecord.getValue('remote_site_circuit_vlan'));
-                        newPortRecord.setValue('pending_interface_subnet_mask', portRecord.getValue('interface_subnet_mask'));
-                        newPortRecord.setValue('pending_network_gear', portRecord.getValue('network_gear'));
-                        newPortRecord.setValue('pending_uplink_connection_description', portRecord.getValue('uplink_connection_description'));
-                        newPortRecord.insert();
-                        movedPorts += 1;
-                    }
-                }
-
-            }
-            if (containedHostPorts) {
-                response.message = "One or more ports selected were host ports.  Host ports cannot be moved to proposed.  You must create new proposed ports and from selected Host Circuit. " + movedPorts + " Ports were moved to proposed.";
-            } else {
-                response.message = "Successfully moved " + movedPorts + " ports to proposed";
-            }
-
-        } catch (ex) {
-            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
-            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
-            gs.info(errorString);
-            response.message = errorString;
-        }
-        return response;
-    },
     setSelectedPortsToRetired: function(selectedPorts) {
         var response = {};
         gs.info('Selected Ports: ' + selectedPorts);
@@ -310,12 +262,12 @@ port.prototype = {
                         var portIPAddress = portRecords.getValue('ip_address');
                         if (portIPAddress.startsWith('172.22.')) {
                             portRecords.setValue('install_status', NSPROConstants.PORT_STATUS.UNASSIGNED);
-                            portRecords.setValue('local_circuit_id', '');
-                            portRecords.setValue('network_gear', '');
-                            portRecords.setValue('name', '');
-                            portRecords.setValue('vrf', '');
-                            portRecords.setValue('site', '');
-                            portRecords.setValue('x_g_sonc_ns_pro_pri_sec_circuit', '');
+                            portRecords.setValue('local_circuit_id', "NULL");
+                            portRecords.setValue('network_gear', "NULL");
+                            portRecords.setValue('name', "NULL");
+                            portRecords.setValue('vrf', "NULL");
+                            portRecords.setValue('site', "NULL");
+                            portRecords.setValue('x_g_sonc_ns_pro_pri_sec_circuit', "NULL");
                         } else {
                             portRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.RETIRED);
                         }
@@ -332,7 +284,7 @@ port.prototype = {
 
                     while (netGearRecords.next()) {
                         netGearRecords.setValue('install_status', NSPROConstants.SITE_ITEM_STATUS.PENDING_PICKUP);
-                        netGearRecords.setValue('name', '');
+                        netGearRecords.setValue('name', "NULL");
                         netGearRecords.update();
                     }
                 }
@@ -394,6 +346,79 @@ port.prototype = {
         }
         return response;
     },
+    moveSelectedPortsToProposed: function(selectedPorts) {
+        var response = {};
+        gs.info('Selected Ports: ' + selectedPorts);
+        portsArray = selectedPorts.split(",");
+        var containedHostPorts = false;
+        var movedPorts = 0;
+        var errorString;
+        try {
+            for (i = 0; i < portsArray.length; i++) {
+                var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+                if (portRecord.get(portsArray[i])) {
+                    var isHostPort = false;
+                    if (portRecord.getValue('ip_address')) {
+                        var ipAddress = portRecord.getValue('ip_address');
+                        if (ipAddress.startsWith('172.22.2')) {
+                            isHostPort = true;
+                            if (!containedHostPorts) {
+                                containedHostPorts = true;
+                            }
+                        }
+                    }
+
+                    if (!isHostPort) {
+
+                        portRecord.setValue('pending_name', portRecord.getValue('name'));
+
+                        portRecord.setValue('pending_client_id', portRecord.getValue('client_id'));
+
+                        portRecord.setValue('pending_local_circuit_id', portRecord.getValue('local_circuit_id'));
+
+                        portRecord.setValue('pending_ip_address', portRecord.getValue('ip_address'));
+
+                        portRecord.setValue('pending_pe_host_circuit_id', portRecord.getValue('pe_host_circuit_id'));
+
+                        portRecord.setValue('pending_vrf', portRecord.getValue('vrf'));
+
+                        portRecord.setValue('pending_master_device_interface', portRecord.getValue('master_device_interface'));
+
+                        portRecord.setValue('pending_description', portRecord.getValue('short_description'));
+
+                        portRecord.setValue('pending_type', portRecord.getValue('type'));
+
+                        portRecord.setValue('pending_remote_site_circuit_vlan', portRecord.getValue('remote_site_circuit_vlan'));
+
+                        portRecord.setValue('pending_interface_subnet_mask', portRecord.getValue('interface_subnet_mask'));
+
+                        portRecord.setValue('pending_network_gear', portRecord.getValue('network_gear'));
+
+                        portRecord.setValue('pending_uplink_connection_description', portRecord.getValue('uplink_connection_description'));
+
+                        portRecord.setValue('pending_status', '4');
+
+                        portRecord.update();
+
+                        movedPorts += 1;
+                    }
+                }
+
+            }
+            if (containedHostPorts) {
+                response.message = "One or more ports selected were host ports.  Host ports cannot be moved to proposed.  You must create new proposed ports and from selected Host Circuit. " + movedPorts + " Ports were moved to proposed.";
+            } else {
+                response.message = "Successfully moved " + movedPorts + " ports to proposed";
+            }
+
+        } catch (ex) {
+            var funcName = this.nsProCore.getFunctionName(arguments.callee.toString());
+            errorString = "Error Occured in " + this.CLASSNAME + '.' + funcName + ' - ' + ex.toString();
+            gs.info(errorString);
+            response.message = errorString;
+        }
+        return response;
+    },
     moveSelectedPortsToCurrent: function(selectedPorts) {
         var response = {};
         gs.info('Selected Ports: ' + selectedPorts);
@@ -403,55 +428,51 @@ port.prototype = {
             for (i = 0; i < portsArray.length; i++) {
                 var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
                 if (portRecord.get(portsArray[i])) {
-                    var pendingReplaces = portRecord.getValue('pending_replaces');
 
-                    portRecord.setValue('pending_status', '');
-                    portRecord.setValue('install_status', 1);
-                    //portRecord.setValue('name', portRecord.getValue('pending_name'));
-                    //portRecord.setValue('pending_name', '');
+                    portRecord.setValue('name', portRecord.getValue('pending_name'));
+                    portRecord.setValue('pending_name', "NULL");
 
                     portRecord.setValue('client_id', portRecord.getValue('pending_client_id'));
-                    portRecord.setValue('pending_client_id', '');
+                    portRecord.setValue('pending_client_id', "NULL");
 
                     portRecord.setValue('local_circuit_id', portRecord.getValue('pending_local_circuit_id'));
-                    portRecord.setValue('pending_local_circuit_id', '');
+                    portRecord.setValue('pending_local_circuit_id', "NULL");
 
                     portRecord.setValue('ip_address', portRecord.getValue('pending_ip_address'));
-                    portRecord.setValue('pending_ip_address', '');
+                    portRecord.setValue('pending_ip_address', "NULL");
 
                     portRecord.setValue('pe_host_circuit_id', portRecord.getValue('pending_pe_host_circuit_id'));
-                    portRecord.setValue('pending_pe_host_circuit_id', '');
+                    portRecord.setValue('pending_pe_host_circuit_id', "NULL");
 
                     portRecord.setValue('vrf', portRecord.getValue('pending_vrf'));
-                    portRecord.setValue('pending_vrf', '');
+                    portRecord.setValue('pending_vrf', "NULL");
 
                     portRecord.setValue('master_device_interface', portRecord.getValue('pending_master_device_interface'));
-                    portRecord.setValue('pending_master_device_interface', '');
+                    portRecord.setValue('pending_master_device_interface', "NULL");
 
                     portRecord.setValue('short_description', portRecord.getValue('pending_description'));
-                    portRecord.setValue('pending_description', '');
+                    portRecord.setValue('pending_description', "NULL");
 
                     portRecord.setValue('type', portRecord.getValue('pending_type'));
-                    portRecord.setValue('pending_type', '');
+                    portRecord.setValue('pending_type', "NULL");
 
                     portRecord.setValue('remote_site_circuit_vlan', portRecord.getValue('pending_remote_site_circuit_vlan'));
-                    portRecord.setValue('pending_remote_site_circuit_vlan', '');
+                    portRecord.setValue('pending_remote_site_circuit_vlan', "NULL");
 
                     portRecord.setValue('interface_subnet_mask', portRecord.getValue('pending_interface_subnet_mask'));
-                    portRecord.setValue('pending_interface_subnet_mask', '');
+                    portRecord.setValue('pending_interface_subnet_mask', "NULL");
 
                     portRecord.setValue('network_gear', portRecord.getValue('pending_network_gear'));
-                    portRecord.setValue('pending_network_gear', '');
+                    portRecord.setValue('pending_network_gear', "NULL");
 
                     portRecord.setValue('uplink_connection_description', portRecord.getValue('pending_uplink_connection_description'));
-                    portRecord.setValue('pending_uplink_connection_description', '');
+                    portRecord.setValue('pending_uplink_connection_description', "NULL");
+
+                    portRecord.setValue('pending_status', "NULL");
+                    portRecord.setValue('install_status', 1);
 
                     portRecord.update();
-                    if (pendingReplaces) {
-                        var replacePortRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
-                        replacePortRecord.get(pendingReplaces);
-                        replacePortRecord.deleteRecord();
-                    }
+
                 }
 
             }
@@ -505,6 +526,20 @@ port.prototype = {
 
         return portsArray;
     },
+	getAssociatedPendingHostPorts: function(localCircuitID){
+		var pendingHostPorts = [];
+		var portRecord = new GlideRecord(NSPROConstants.TABLES.PORT);
+		var queryString = "pending_local_circuit_id=" + localCircuitID + "^install_status=^pending_status=4";
+		portRecord.addEncodedQuery(queryString);
+		portRecord.query();
+
+		while(portRecord.next()){
+			pendingHostPorts.push(portRecord.getValue('sys_id') + '');
+		}
+
+		return pendingHostPorts;
+
+	},
     _makeProposedPortNameLink: function(portSysID, proposedPortName) {
         var portLink = "[code]<a href='https://ncgovappdev.servicenowservices.com/now/nav/ui/classic/params/target/x_g_sonc_ns_pro_port.do?sys_id=" + portSysID + "&sysparm_view=proposedports' target='_blank'>" + proposedPortName + "</a>[/code]";
         //var portLink = "< a href='/x_g_sonc_ns_pro_port.do?sys_id=" + portSysID + "&sysparm_view=proposedports' target='_blank'>" + proposedPortName + "</a>";
@@ -517,13 +552,13 @@ port.prototype = {
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-07 14:19:14</sys_created_on>
         <sys_id>7e4e906a87015a10f9f20f280cbb35b6</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>port</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_script_include_7e4e906a87015a10f9f20f280cbb35b6</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-15 17:56:02</sys_updated_on>
+        <sys_updated_on>2024-11-19 11:34:52</sys_updated_on>
     </sys_script_include>
 </record_update>

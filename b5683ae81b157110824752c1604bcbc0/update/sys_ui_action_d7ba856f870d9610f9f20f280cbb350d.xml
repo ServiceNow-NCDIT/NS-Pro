@@ -68,19 +68,7 @@
     });
 
 
-//     var w = new GlideModal('show_list');
-//    w.setTitle('Select Ports to Assign to Local Circuit ' + selectedLocalCircuitName);
-//    w.setPreference('table', 'x_g_sonc_ns_pro_port_list');
-//    w.setWidth(750);
-//    w.setPreference('sysparm_sys_id', selectedHostCircuit);
-//    w.setPreference('sysparm_view_forced', true);
-//    w.setPreference('sysparm_view', 'selectavailableportscircuit');
-//    // //w.setPreference('sysparm_force_row_count',20);
-//    w.setPreference('sysparm_fixed_query', parmFixedQuery);
-//    // //w.setPreference('onTableLoad',function(){g_list.setRowsPerPage(20);g_list.refresh();});
-//    // //w.setPreference('onRefresh',function(){g_list.setRowsPerPage(20);});
-//    //w.setPreference.setPreference('onPromptCancel', onPromptCancel);
-//    w.setPreference('focusTrap', true);
+
 	portListW.setPreference('sysparm_sys_id', selectedHostCircuit);
     portListW.render();
     g_list.refresh(1);
@@ -99,7 +87,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d7ba856f870d9610f9f20f280cbb350d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Assign Host Ports</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -107,7 +95,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_action_d7ba856f870d9610f9f20f280cbb350d</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-11 10:55:51</sys_updated_on>
+        <sys_updated_on>2024-11-19 02:15:31</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

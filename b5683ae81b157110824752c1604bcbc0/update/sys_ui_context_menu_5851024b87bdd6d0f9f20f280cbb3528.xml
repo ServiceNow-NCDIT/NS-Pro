@@ -23,7 +23,8 @@ function moveCurrentToProposed(){
 		//alert(response);
         var responseObj = JSON.parse(response);
         if (responseObj.resultCode == 'success') {
-			alert(responseObj.message);
+			//alert(responseObj.message);
+			nsProTaskMain.g_form.addInfoMessage(responseObj.message)
         } else {
            alert(responseObj.message);
         }
@@ -97,7 +98,7 @@ function canBeConfigured() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5851024b87bdd6d0f9f20f280cbb3528</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Remove Selected Ports From Site</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -105,7 +106,7 @@ function canBeConfigured() {
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_ui_context_menu_5851024b87bdd6d0f9f20f280cbb3528</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-15 21:37:41</sys_updated_on>
+        <sys_updated_on>2024-11-19 11:04:18</sys_updated_on>
         <table>x_g_sonc_ns_pro_port</table>
         <track_selected>false</track_selected>
         <type>action</type>

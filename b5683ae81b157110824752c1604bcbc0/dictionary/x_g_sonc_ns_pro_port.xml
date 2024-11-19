@@ -59,7 +59,7 @@
                 <element inactive_on_update="false" label="Secondary" sequence="200" value="sec"/>
             </choice>
         </element>
-        <element label="Site" max_length="32" name="site" read_only="true" reference="cmdb_ci_site" reference_qual="install_status=1^ORinstall_status=4^EQ" reference_qual_condition="install_status=1^ORinstall_status=4^EQ" type="reference"/>
+        <element label="Site" max_length="32" name="site" reference="cmdb_ci_site" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending PE Host Circuit ID" max_length="32" name="pending_pe_host_circuit_id" reference="cmdb_ci_network_circuit" type="reference"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Pending Type" max_length="40" name="pending_type" type="choice">
             <choice>
@@ -70,7 +70,6 @@
         </element>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Interface Subnet Mask" max_length="40" name="pending_interface_subnet_mask" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Client Id" max_length="40" name="pending_client_id" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Pending Replaces" max_length="100" name="pending_replaces" type="string"/>
         <element label="Uplink Connection Description" max_length="100" name="uplink_connection_description" type="string"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
