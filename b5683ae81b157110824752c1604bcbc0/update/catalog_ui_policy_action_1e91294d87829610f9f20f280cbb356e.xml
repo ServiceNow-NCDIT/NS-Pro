@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Request Relocate Site">38d03043475b7d90f4af2ad2e16d433b</catalog_item>
+        <catalog_variable>IO:9f6e59c987829610f9f20f280cbb3535</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-21 20:25:04</sys_created_on>
+        <sys_id>1e91294d87829610f9f20f280cbb356e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>network_service_category</sys_name>
+        <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_1e91294d87829610f9f20f280cbb356e</sys_update_name>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-21 20:25:04</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Request WAN Services">846b918187829610f9f20f280cbb3557</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>network_service_category</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

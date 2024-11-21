@@ -21,7 +21,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>req_comments</field>
+        <field>service_code</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -30,24 +30,24 @@
         <instructions/>
         <layout>normal</layout>
         <list_table/>
-        <lookup_label/>
+        <lookup_label>svc_title,svc_code</lookup_label>
         <lookup_price/>
-        <lookup_table/>
+        <lookup_table>x_g_sonc_ns_pro_service_code</lookup_table>
         <lookup_unique>false</lookup_unique>
-        <lookup_value/>
+        <lookup_value>svc_code</lookup_value>
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>req_comments</name>
-        <order>4100</order>
+        <name>service_code</name>
+        <order>2730</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Comments</question_text>
+        <question_text>WAN Service</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -56,7 +56,7 @@
         <record/>
         <record_producer_table>x_g_sonc_ns_pro_telco_order</record_producer_table>
         <reference/>
-        <reference_qual/>
+        <reference_qual>svc_type!=LAN Basic^svc_type!=LAN Premium^svc_type!=WLAN Access^ORDERBYspeed_egress</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -74,24 +74,24 @@
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-06-19 13:13:43</sys_created_on>
-        <sys_id>6dffa943473ece1040fd43ff336d437e</sys_id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-21 20:16:58</sys_created_on>
+        <sys_id>026f954d87829610f9f20f280cbb35e1</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Comments</sys_name>
+        <sys_name>WAN Service</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name>item_option_new_6dffa943473ece1040fd43ff336d437e</sys_update_name>
+        <sys_update_name>item_option_new_026f954d87829610f9f20f280cbb35e1</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-21 19:49:36</sys_updated_on>
+        <sys_updated_on>2024-11-21 20:20:18</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>2</type>
+        <type>18</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>
@@ -103,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=6dffa943473ece1040fd43ff336d437e"/>
-    <fx_price action="delete_multiple" query="id=6dffa943473ece1040fd43ff336d437e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=026f954d87829610f9f20f280cbb35e1"/>
+    <fx_price action="delete_multiple" query="id=026f954d87829610f9f20f280cbb35e1"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>6dffa943473ece1040fd43ff336d437e</id>
+        <id>026f954d87829610f9f20f280cbb35e1</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-06-19 13:13:43</sys_created_on>
-        <sys_id>cd80f1c3473ece1040fd43ff336d433c</sys_id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-21 20:16:58</sys_created_on>
+        <sys_id>98df59cd87829610f9f20f280cbb35d0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:13:43</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-21 20:16:58</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -126,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>6dffa943473ece1040fd43ff336d437e</id>
+        <id>026f954d87829610f9f20f280cbb35e1</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-06-19 13:13:43</sys_created_on>
-        <sys_id>c980f1c3473ece1040fd43ff336d433b</sys_id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-21 20:16:58</sys_created_on>
+        <sys_id>98df59cd87829610f9f20f280cbb35cf</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-19 13:13:43</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-21 20:16:58</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

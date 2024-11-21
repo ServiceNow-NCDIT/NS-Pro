@@ -23,11 +23,11 @@
         <example_text/>
         <field>demarc_location</field>
         <global>false</global>
-        <help_tag>More information</help_tag>
+        <help_tag>Example</help_tag>
         <help_text/>
         <hidden>false</hidden>
         <include_none>false</include_none>
-        <instructions/>
+        <instructions><![CDATA[<p><span style="color: #000000; font-size: 10pt;"><strong>Telco Rm#, Suite #, etc.</strong></span></p>]]></instructions>
         <layout>normal</layout>
         <list_table/>
         <lookup_label/>
@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>demarc_location</name>
-        <order>530</order>
+        <order>2750</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -69,22 +69,22 @@
  */]]></save_script>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
-        <show_help>false</show_help>
-        <show_help_on_load>false</show_help_on_load>
+        <show_help>true</show_help>
+        <show_help_on_load>true</show_help_on_load>
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-11-21 12:02:06</sys_created_on>
         <sys_id>cf3e67b04782561040fd43ff336d43b3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Requested Circuit Location</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_cf3e67b04782561040fd43ff336d43b3</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-21 12:02:06</sys_updated_on>
+        <sys_updated_on>2024-11-21 20:21:01</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>

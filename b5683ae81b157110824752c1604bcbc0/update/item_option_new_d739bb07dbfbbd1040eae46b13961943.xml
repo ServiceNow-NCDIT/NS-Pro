@@ -41,8 +41,8 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>cs_address</name>
-        <order>200</order>
+        <name>cs_site</name>
+        <order>1300</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -77,14 +77,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-01-22 20:03:19</sys_created_on>
         <sys_id>d739bb07dbfbbd1040eae46b13961943</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>cs_address</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>cs_site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_d739bb07dbfbbd1040eae46b13961943</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-01-22 20:03:19</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-21 20:56:46</sys_updated_on>
         <table/>
         <tooltip/>
         <type>19</type>

@@ -7,7 +7,7 @@
         <billable>false</billable>
         <can_cancel>false</can_cancel>
         <category/>
-        <checked_out/>
+        <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
@@ -79,19 +79,19 @@ producer.portal_redirect = 'javascript&colon;void(0)';      // &colon; should be
         <short_description>NSPro Site Relocation Request</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state/>
+        <state>published</state>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-28 08:56:42</sys_created_on>
         <sys_id>38d03043475b7d90f4af2ad2e16d433b</sys_id>
-        <sys_mod_count>115</sys_mod_count>
+        <sys_mod_count>157</sys_mod_count>
         <sys_name>Request Relocate Site</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_producer_38d03043475b7d90f4af2ad2e16d433b</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-11-21 18:36:47</sys_updated_on>
+        <sys_updated_on>2024-11-21 21:12:00</sys_updated_on>
         <table_name>x_g_sonc_ns_pro_telco_order</table_name>
         <taxonomy_topic/>
         <template/>
@@ -101,7 +101,7 @@ producer.portal_redirect = 'javascript&colon;void(0)';      // &colon; should be
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>113</version>
+        <version>155</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
