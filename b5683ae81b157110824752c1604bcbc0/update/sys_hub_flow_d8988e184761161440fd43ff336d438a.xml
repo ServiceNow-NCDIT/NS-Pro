@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=947354000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2334907000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>nspro_terminate_site__services</internal_name>
-        <label_cache>[{"name":"flow_variable.skipforphase_1","label":"Flow Variables➛skipforphase_1","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f69c295b-e95c-4b85-9d55-ec9996e2ef2f"}},{"name":"flow_variable.bypassphase1","label":"Flow Variables➛bypassPhaseI","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f27ffdb5-95dc-47c9-90d7-7b0d36cb3c7d"}},{"name":"a3a0e6cc-9597-4dfc-bcde-19f03e60265f.Record","label":"4 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"],"fae02432-641d-49b1-8701-2da6dd1874cd":["assigned_wan_service"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_code","label":"3 - Look Up Record➛Service Record➛Service Code➛Svc Code","reference":"","reference_display":"Svc Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_code","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["service_code"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_code"],"a3a0e6cc-9597-4dfc-bcde-19f03e60265f":["conditions"]}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_title","label":"3 - Look Up Record➛Service Record➛Service Code➛Svc Title","reference":"","reference_display":"Svc Title","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_title","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"]}},{"name":"Created_1.current.terminate_service","label":"Trigger - Record Created➛Network Request Record➛Terminate Service","reference":"","reference_display":"Terminate Service","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"terminate_service","usedInstances":{"41b47804-91d6-4f05-80e0-f1c2a533fc04":["conditions"],"6dadc24a-08b4-4d20-bce5-b71b20c73c73":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["telco_order"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["record"]},"attributes":{}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["site","description"]}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["requested_for"]}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"due_date","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["due_date"]}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_request","choices":[{"label":"-- None --","missing":false,"rawLabel":"-- None --","selected":false,"image":"","used":false,"reference":false,"value":""},{"label":"New Service","missing":false,"rawLabel":"New Service","selected":false,"image":"","used":false,"reference":false,"value":"new","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Change Service","missing":false,"rawLabel":"Change Service","selected":false,"image":"","used":false,"reference":false,"value":"change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Relocate Site","missing":false,"rawLabel":"Relocate Site","selected":false,"image":"","used":false,"reference":false,"value":"relocate","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Terminate Site","missing":false,"rawLabel":"Terminate Site","selected":false,"image":"","used":false,"reference":false,"value":"terminate_site","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Terminate Service","missing":false,"rawLabel":"Terminate Service","selected":false,"image":"","used":false,"reference":false,"value":"terminate_service","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{}},{"name":"fae02432-641d-49b1-8701-2da6dd1874cd.Record","label":"6 - Create Task➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"42a00b00-6907-4379-b390-6f4fe159f55b":["task"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site.location","label":"Trigger - Record Created➛Network Request Record➛Site➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_site","column_name":"location","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["location"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["location"]}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.skipforphase_1","label":"Flow Variables➛skipforphase_1","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f69c295b-e95c-4b85-9d55-ec9996e2ef2f"}},{"name":"flow_variable.bypassphase1","label":"Flow Variables➛bypassPhaseI","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f27ffdb5-95dc-47c9-90d7-7b0d36cb3c7d"}},{"name":"a3a0e6cc-9597-4dfc-bcde-19f03e60265f.Record","label":"3 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"],"fae02432-641d-49b1-8701-2da6dd1874cd":["assigned_wan_service"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_code","label":"2 - Look Up Record➛Service Record➛Service Code➛Svc Code","reference":"","reference_display":"Svc Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_code","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["service_code"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_code"],"a3a0e6cc-9597-4dfc-bcde-19f03e60265f":["conditions"]}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_title","label":"2 - Look Up Record➛Service Record➛Service Code➛Svc Title","reference":"","reference_display":"Svc Title","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_title","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"]}},{"name":"Created_1.current.terminate_service","label":"Trigger - Record Created➛Network Request Record➛Terminate Service","reference":"","reference_display":"Terminate Service","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"terminate_service","usedInstances":{"41b47804-91d6-4f05-80e0-f1c2a533fc04":["conditions"],"6dadc24a-08b4-4d20-bce5-b71b20c73c73":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["telco_order"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["record"]},"attributes":{}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["site","description"]}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["requested_for"]}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"due_date","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["due_date"]}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_request","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","label":"New Service","used":false,"reference":false,"rawLabel":"New Service","selected":false,"missing":false,"value":"new","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Change Service","used":false,"reference":false,"rawLabel":"Change Service","selected":false,"missing":false,"value":"change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Relocate Site","used":false,"reference":false,"rawLabel":"Relocate Site","selected":false,"missing":false,"value":"relocate","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Terminate Site","used":false,"reference":false,"rawLabel":"Terminate Site","selected":false,"missing":false,"value":"terminate_site","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Terminate Service","used":false,"reference":false,"rawLabel":"Terminate Service","selected":false,"missing":false,"value":"terminate_service","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{}},{"name":"fae02432-641d-49b1-8701-2da6dd1874cd.Record","label":"5 - Create Task➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"42a00b00-6907-4379-b390-6f4fe159f55b":["task"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site.location","label":"Trigger - Record Created➛Network Request Record➛Site➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_site","column_name":"location","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["location"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["location"]}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}}]</label_cache>
         <master_snapshot>0cf833858729de14f9f20f280cbb354e</master_snapshot>
         <name>NSPro Terminate Site - Services</name>
         <natlang/>
@@ -34,7 +34,7 @@
         <sys_created_on>2024-10-25 18:48:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>d8988e184761161440fd43ff336d438a</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>NSPro Terminate Site - Services</sys_name>
         <sys_overrides/>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
@@ -42,7 +42,7 @@
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sys_hub_flow_d8988e184761161440fd43ff336d438a</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:31</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:21</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=d8988e184761161440fd43ff336d438a"/>
@@ -82,14 +82,14 @@
         <identifier>d8988e184761161440fd43ff336d438a</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-11-05 16:57:30</sys_created_on>
-        <sys_id>aab81af387e99e10f9f20f280cbb3512</sys_id>
+        <sys_created_on>2024-11-21 18:23:20</sys_created_on>
+        <sys_id>c0d58d8d47c2961040fd43ff336d437b</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:30</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:20</sys_updated_on>
         <trigger display_value="">ff81026387064690f9f20f280cbb3503</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=d8988e184761161440fd43ff336d438a^sys_idNOT INaab81af387e99e10f9f20f280cbb3512"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=d8988e184761161440fd43ff336d438a^sys_idNOT INc0d58d8d47c2961040fd43ff336d437b"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=d8988e184761161440fd43ff336d438a^sys_idNOT INb0bc92dc4765161440fd43ff336d4345"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -101,14 +101,14 @@
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 20:16:08</sys_created_on>
         <sys_id>b0bc92dc4765161440fd43ff336d4345</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:30</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:20</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -226,14 +226,14 @@
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 20:16:07</sys_created_on>
         <sys_id>78bc92dc4765161440fd43ff336d432e</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:30</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -310,14 +310,14 @@
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 20:16:07</sys_created_on>
         <sys_id>f4bc92dc4765161440fd43ff336d433f</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:30</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:20</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -344,20 +344,20 @@
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">d8988e184761161440fd43ff336d438a</flow>
         <generation_source/>
-        <order>5</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 22:33:14</sys_created_on>
         <sys_id>591cbe90472d161440fd43ff336d4384</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 17:06:47</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:21</sys_updated_on>
         <ui_id>78976e1b-f201-4d8c-8b44-00e488c0033b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=591cbe90472d161440fd43ff336d4384"/>
@@ -406,11 +406,11 @@
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 22:33:14</sys_created_on>
         <sys_id>1d1cbe90472d161440fd43ff336d4386</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:10</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:04</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>request_date=fd-scripted^network_service_subcategory=ethernet^location={{Created_1.current.site.location}}</value>
+        <value>request_date=fd-scripted^network_service_subcategory=ethernet^location={{Created_1.current.site.location}}^service_code={{41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_code}}^new_or_existing_site=existing</value>
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=591cbe90472d161440fd43ff336d4384^sys_idNOT INecbd3f058769de14f9f20f280cbb35c3"/>
     <sys_hub_input_scripts action="INSERT_OR_UPDATE">
@@ -437,20 +437,20 @@
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">d8988e184761161440fd43ff336d438a</flow>
         <generation_source/>
-        <order>4</order>
-        <parent_ui_id>78bea519-517d-40c9-9c95-64bb0a77a2d7</parent_ui_id>
+        <order>3</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 11:38:43</sys_created_on>
         <sys_id>7603c09587a9de14f9f20f280cbb3543</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 17:06:47</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:21</sys_updated_on>
         <ui_id>a3a0e6cc-9597-4dfc-bcde-19f03e60265f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7603c09587a9de14f9f20f280cbb3543"/>
@@ -557,20 +557,20 @@
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">d8988e184761161440fd43ff336d438a</flow>
         <generation_source/>
-        <order>7</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 22:33:15</sys_created_on>
         <sys_id>9d1cbe90472d161440fd43ff336d4392</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 17:06:47</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:21</sys_updated_on>
         <ui_id>42a00b00-6907-4379-b390-6f4fe159f55b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9d1cbe90472d161440fd43ff336d4392"/>
@@ -625,20 +625,20 @@
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">d8988e184761161440fd43ff336d438a</flow>
         <generation_source/>
-        <order>6</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 20:16:08</sys_created_on>
         <sys_id>b8bc92dc4765161440fd43ff336d43aa</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 17:06:47</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:21</sys_updated_on>
         <ui_id>fae02432-641d-49b1-8701-2da6dd1874cd</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b8bc92dc4765161440fd43ff336d43aa"/>
@@ -690,13 +690,13 @@ And Services:
         <input_name>field_values</input_name>
         <instance>b8bc92dc4765161440fd43ff336d43aa</instance>
         <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"network_service_category":{"scriptActive":true,"script":"var answer \u003d \"best_effort\"\n\nif(fd_data._2__look_up_record.record.service_code.svc_type \u003d\u003d \u0027Enterprise WAN\u0027){\n    answer \u003d \u0027guaranteed\u0027;\n}\nreturn answer;","savedValue":""}}</script>
+        <script>{"network_service_category":{"scriptActive":true,"script":"var answer \u003d \"best_effort\"\n\nif(fd_data._4__look_up_record.record.service_code.svc_type \u003d\u003d \u0027Enterprise WAN\u0027){\n    answer \u003d \u0027guaranteed\u0027;\n}\nreturn answer;","savedValue":""}}</script>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 14:11:53</sys_created_on>
         <sys_id>1216e05d87611254f9f20f280cbb35d4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:10</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:04</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=b8bc92dc4765161440fd43ff336d43aa"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -709,20 +709,20 @@ And Services:
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">d8988e184761161440fd43ff336d438a</flow>
         <generation_source/>
-        <order>3</order>
-        <parent_ui_id>78bea519-517d-40c9-9c95-64bb0a77a2d7</parent_ui_id>
+        <order>2</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-25 20:16:08</sys_created_on>
         <sys_id>bcbc92dc4765161440fd43ff336d439f</sys_id>
-        <sys_mod_count>58</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 17:06:47</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:21</sys_updated_on>
         <ui_id>41b47804-91d6-4f05-80e0-f1c2a533fc04</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bcbc92dc4765161440fd43ff336d439f"/>
@@ -794,7 +794,7 @@ And Services:
     <sys_hub_input_scripts action="delete_multiple" query="instance=bcbc92dc4765161440fd43ff336d439f"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=bcbc92dc4765161440fd43ff336d439f"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d8988e184761161440fd43ff336d438a"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=d8988e184761161440fd43ff336d438a^sys_idNOT INe1a892f387e99e10f9f20f280cbb3530,f0bc92dc4765161440fd43ff336d4356"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d8988e184761161440fd43ff336d438a^sys_idNOT INe1a892f387e99e10f9f20f280cbb3530"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">a5a892f387e99e10f9f20f280cbb352f</block>
@@ -818,14 +818,14 @@ And Services:
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-11-05 16:57:09</sys_created_on>
         <sys_id>e1a892f387e99e10f9f20f280cbb3530</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:31</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:21</sys_updated_on>
         <ui_id>b34a2ff3-9795-4424-9372-bd5a3bbadd67</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -848,85 +848,6 @@ And Services:
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_d8988e184761161440fd43ff336d438a^id=e1a892f387e99e10f9f20f280cbb3530"/>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e1a892f387e99e10f9f20f280cbb3530"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e1a892f387e99e10f9f20f280cbb3530"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">b4bc92dc4765161440fd43ff336d4355</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="NSPro Terminate Site - Services">d8988e184761161440fd43ff336d438a</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-25 20:16:08</sys_created_on>
-        <sys_id>f0bc92dc4765161440fd43ff336d4356</sys_id>
-        <sys_mod_count>25</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:31</sys_updated_on>
-        <ui_id>78bea519-517d-40c9-9c95-64bb0a77a2d7</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=f0bc92dc4765161440fd43ff336d4356"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>f0bc92dc4765161440fd43ff336d4356</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-25 20:16:08</sys_created_on>
-        <sys_id>74bc92dc4765161440fd43ff336d435a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:10</sys_updated_on>
-        <value>Skip For Phase One</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_d8988e184761161440fd43ff336d438a^id=f0bc92dc4765161440fd43ff336d4356"/>
-    <sys_element_mapping action="delete_multiple" query="id=f0bc92dc4765161440fd43ff336d4356"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>f0bc92dc4765161440fd43ff336d4356</id>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-25 20:16:08</sys_created_on>
-        <sys_id>f0bc92dc4765161440fd43ff336d435a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:10</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{flow_variable.skipforphase_1}}=true</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>f0bc92dc4765161440fd43ff336d4356</id>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-25 20:16:08</sys_created_on>
-        <sys_id>3cbc92dc4765161440fd43ff336d4359</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-25 20:16:08</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f0bc92dc4765161440fd43ff336d4356"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=f0bc92dc4765161440fd43ff336d4356"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=d8988e184761161440fd43ff336d438a"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=d8988e184761161440fd43ff336d438a^sys_idNOT IN29a892f387e99e10f9f20f280cbb351b"/>
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
@@ -947,7 +868,7 @@ And Services:
         <column_label/>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>false</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -992,14 +913,14 @@ And Services:
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-11-05 16:57:09</sys_created_on>
         <sys_id>29a892f387e99e10f9f20f280cbb351b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:30</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:24:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1076,7 +997,7 @@ And Services:
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>nspro_terminate_site__services</internal_name>
-        <label_cache>[{"name":"flow_variable.skipforphase_1","label":"Flow Variables➛skipforphase_1","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f69c295b-e95c-4b85-9d55-ec9996e2ef2f"}},{"name":"flow_variable.bypassphase1","label":"Flow Variables➛bypassPhaseI","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f27ffdb5-95dc-47c9-90d7-7b0d36cb3c7d"}},{"name":"a3a0e6cc-9597-4dfc-bcde-19f03e60265f.Record","label":"4 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"],"fae02432-641d-49b1-8701-2da6dd1874cd":["assigned_wan_service"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_code","label":"3 - Look Up Record➛Service Record➛Service Code➛Svc Code","reference":"","reference_display":"Svc Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_code","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["service_code"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_code"],"a3a0e6cc-9597-4dfc-bcde-19f03e60265f":["conditions"]}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_title","label":"3 - Look Up Record➛Service Record➛Service Code➛Svc Title","reference":"","reference_display":"Svc Title","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_title","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"]}},{"name":"Created_1.current.terminate_service","label":"Trigger - Record Created➛Network Request Record➛Terminate Service","reference":"","reference_display":"Terminate Service","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"terminate_service","usedInstances":{"41b47804-91d6-4f05-80e0-f1c2a533fc04":["conditions"],"6dadc24a-08b4-4d20-bce5-b71b20c73c73":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["telco_order"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["record"]},"attributes":{}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["site","description"]}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["requested_for"]}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"due_date","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["due_date"]}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_request","choices":[{"label":"-- None --","missing":false,"rawLabel":"-- None --","selected":false,"image":"","used":false,"reference":false,"value":""},{"label":"New Service","missing":false,"rawLabel":"New Service","selected":false,"image":"","used":false,"reference":false,"value":"new","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Change Service","missing":false,"rawLabel":"Change Service","selected":false,"image":"","used":false,"reference":false,"value":"change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Relocate Site","missing":false,"rawLabel":"Relocate Site","selected":false,"image":"","used":false,"reference":false,"value":"relocate","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Terminate Site","missing":false,"rawLabel":"Terminate Site","selected":false,"image":"","used":false,"reference":false,"value":"terminate_site","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"label":"Terminate Service","missing":false,"rawLabel":"Terminate Service","selected":false,"image":"","used":false,"reference":false,"value":"terminate_service","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{}},{"name":"fae02432-641d-49b1-8701-2da6dd1874cd.Record","label":"6 - Create Task➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"42a00b00-6907-4379-b390-6f4fe159f55b":["task"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site.location","label":"Trigger - Record Created➛Network Request Record➛Site➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_site","column_name":"location","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["location"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["location"]}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.skipforphase_1","label":"Flow Variables➛skipforphase_1","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f69c295b-e95c-4b85-9d55-ec9996e2ef2f"}},{"name":"flow_variable.bypassphase1","label":"Flow Variables➛bypassPhaseI","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"78bea519-517d-40c9-9c95-64bb0a77a2d7":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f27ffdb5-95dc-47c9-90d7-7b0d36cb3c7d"}},{"name":"a3a0e6cc-9597-4dfc-bcde-19f03e60265f.Record","label":"3 - Look Up Record➛Service Definition Record","reference":"x_g_sonc_ns_pro_service_definition","reference_display":"Service Definition","type":"reference","base_type":"reference","usedInstances":{"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"],"fae02432-641d-49b1-8701-2da6dd1874cd":["assigned_wan_service"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_code","label":"2 - Look Up Record➛Service Record➛Service Code➛Svc Code","reference":"","reference_display":"Svc Code","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_code","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["service_code"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_code"],"a3a0e6cc-9597-4dfc-bcde-19f03e60265f":["conditions"]}},{"name":"41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_title","label":"2 - Look Up Record➛Service Record➛Service Code➛Svc Title","reference":"","reference_display":"Svc Title","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_service_code","column_name":"svc_title","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["service_definition"]}},{"name":"Created_1.current.terminate_service","label":"Trigger - Record Created➛Network Request Record➛Terminate Service","reference":"","reference_display":"Terminate Service","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"terminate_service","usedInstances":{"41b47804-91d6-4f05-80e0-f1c2a533fc04":["conditions"],"6dadc24a-08b4-4d20-bce5-b71b20c73c73":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Network Request Record","reference":"x_g_sonc_ns_pro_telco_order","reference_display":"Network Request","type":"reference","base_type":"reference","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["telco_order"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["record"]},"attributes":{}},{"name":"Created_1.current.site","label":"Trigger - Record Created➛Network Request Record➛Site","reference":"cmdb_ci_site","reference_display":"Site","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["site","description"]}},{"name":"Created_1.current.requested_for","label":"Trigger - Record Created➛Network Request Record➛Requestor","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"requested_for","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["requested_for"]}},{"name":"Created_1.current.due_date","label":"Trigger - Record Created➛Network Request Record➛Requested Due Date","reference":"","reference_display":"Requested Due Date","type":"glide_date","base_type":"glide_date","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"due_date","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["due_date"]}},{"name":"Created_1.current.type_request","label":"Trigger - Record Created➛Network Request Record➛Type Request","reference":"","reference_display":"Type Request","type":"choice","base_type":"choice","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"type_request","choices":[{"label":"-- None --","image":"","used":false,"reference":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"image":"","label":"New Service","used":false,"reference":false,"rawLabel":"New Service","selected":false,"missing":false,"value":"new","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Change Service","used":false,"reference":false,"rawLabel":"Change Service","selected":false,"missing":false,"value":"change","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Relocate Site","used":false,"reference":false,"rawLabel":"Relocate Site","selected":false,"missing":false,"value":"relocate","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Terminate Site","used":false,"reference":false,"rawLabel":"Terminate Site","selected":false,"missing":false,"value":"terminate_site","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}},{"image":"","label":"Terminate Service","used":false,"reference":false,"rawLabel":"Terminate Service","selected":false,"missing":false,"value":"terminate_service","parameters":{"name":"x_g_sonc_ns_pro_telco_order"}}],"usedInstances":{}},{"name":"fae02432-641d-49b1-8701-2da6dd1874cd.Record","label":"5 - Create Task➛NSPro Tasks Record","reference":"x_g_sonc_ns_pro_nspro_tasks","reference_display":"NSPro Tasks","type":"reference","base_type":"reference","usedInstances":{"42a00b00-6907-4379-b390-6f4fe159f55b":["task"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.site.location","label":"Trigger - Record Created➛Network Request Record➛Site➛Location","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_site","column_name":"location","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["location"],"78976e1b-f201-4d8c-8b44-00e488c0033b":["location"]}},{"name":"Created_1.current.site.site_identifier","label":"Trigger - Record Created➛Network Request Record➛Site➛Site identifier","reference":"","reference_display":"Site identifier","type":"string","base_type":"string","parent_table_name":"cmdb_ci_site","column_name":"site_identifier","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}},{"name":"Created_1.current.site_name","label":"Trigger - Record Created➛Network Request Record➛Site Name","reference":"","reference_display":"Site Name","type":"string","base_type":"string","parent_table_name":"x_g_sonc_ns_pro_telco_order","column_name":"site_name","usedInstances":{"fae02432-641d-49b1-8701-2da6dd1874cd":["description"]}}]</label_cache>
         <master>true</master>
         <name>NSPro Terminate Site - Services</name>
         <natlang/>
@@ -1092,7 +1013,7 @@ And Services:
         <sys_created_on>2024-10-28 10:54:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>0cf833858729de14f9f20f280cbb354e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1100,7 +1021,7 @@ And Services:
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=0cf833858729de14f9f20f280cbb354e"/>
@@ -1115,14 +1036,14 @@ And Services:
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:35</sys_created_on>
         <sys_id>58f833858729de14f9f20f280cbb35e3</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:30</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:20</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1240,14 +1161,14 @@ And Services:
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:34</sys_created_on>
         <sys_id>44f833858729de14f9f20f280cbb3585</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:27</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1324,14 +1245,14 @@ And Services:
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:34</sys_created_on>
         <sys_id>88f833858729de14f9f20f280cbb3551</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:27</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1358,20 +1279,20 @@ And Services:
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">0cf833858729de14f9f20f280cbb354e</flow>
         <generation_source/>
-        <order>6</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:35</sys_created_on>
         <sys_id>94f833858729de14f9f20f280cbb35d5</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <ui_id>fae02432-641d-49b1-8701-2da6dd1874cd</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=94f833858729de14f9f20f280cbb35d5"/>
@@ -1423,13 +1344,13 @@ And Services:
         <input_name>field_values</input_name>
         <instance>94f833858729de14f9f20f280cbb35d5</instance>
         <referenced_table>sys_hub_action_instance</referenced_table>
-        <script>{"network_service_category":{"scriptActive":true,"script":"var answer \u003d \"best_effort\"\n\nif(fd_data._2__look_up_record.record.service_code.svc_type \u003d\u003d \u0027Enterprise WAN\u0027){\n    answer \u003d \u0027guaranteed\u0027;\n}\nreturn answer;","savedValue":""}}</script>
+        <script>{"network_service_category":{"scriptActive":true,"script":"var answer \u003d \"best_effort\"\n\nif(fd_data._4__look_up_record.record.service_code.svc_type \u003d\u003d \u0027Enterprise WAN\u0027){\n    answer \u003d \u0027guaranteed\u0027;\n}\nreturn answer;","savedValue":""}}</script>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 14:12:10</sys_created_on>
         <sys_id>ea26685d87611254f9f20f280cbb3503</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:27</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
     </sys_hub_input_scripts>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=94f833858729de14f9f20f280cbb35d5"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
@@ -1442,20 +1363,20 @@ And Services:
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">0cf833858729de14f9f20f280cbb354e</flow>
         <generation_source/>
-        <order>7</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:35</sys_created_on>
         <sys_id>98f833858729de14f9f20f280cbb35e1</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <ui_id>42a00b00-6907-4379-b390-6f4fe159f55b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=98f833858729de14f9f20f280cbb35e1"/>
@@ -1510,20 +1431,20 @@ And Services:
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">0cf833858729de14f9f20f280cbb354e</flow>
         <generation_source/>
-        <order>3</order>
-        <parent_ui_id>78bea519-517d-40c9-9c95-64bb0a77a2d7</parent_ui_id>
+        <order>2</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:35</sys_created_on>
         <sys_id>d0f833858729de14f9f20f280cbb35c3</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <ui_id>41b47804-91d6-4f05-80e0-f1c2a533fc04</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d0f833858729de14f9f20f280cbb35c3"/>
@@ -1604,20 +1525,20 @@ And Services:
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">0cf833858729de14f9f20f280cbb354e</flow>
         <generation_source/>
-        <order>5</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:35</sys_created_on>
         <sys_id>d4f833858729de14f9f20f280cbb35cc</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <ui_id>78976e1b-f201-4d8c-8b44-00e488c0033b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d4f833858729de14f9f20f280cbb35cc"/>
@@ -1666,11 +1587,11 @@ And Services:
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:35</sys_created_on>
         <sys_id>10f833858729de14f9f20f280cbb35ce</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:27</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
-        <value>request_date=fd-scripted^network_service_subcategory=ethernet^location={{Created_1.current.site.location}}</value>
+        <value>request_date=fd-scripted^network_service_subcategory=ethernet^location={{Created_1.current.site.location}}^service_code={{41b47804-91d6-4f05-80e0-f1c2a533fc04.Record.service_code.svc_code}}^new_or_existing_site=existing</value>
     </sys_element_mapping>
     <sys_hub_input_scripts action="delete_multiple" query="instance=d4f833858729de14f9f20f280cbb35cc^sys_idNOT IN59b8589187edde14f9f20f280cbb3558"/>
     <sys_hub_input_scripts action="INSERT_OR_UPDATE">
@@ -1697,20 +1618,20 @@ And Services:
         <display_text/>
         <flow display_value="NSPro Terminate Site - Services">0cf833858729de14f9f20f280cbb354e</flow>
         <generation_source/>
-        <order>4</order>
-        <parent_ui_id>78bea519-517d-40c9-9c95-64bb0a77a2d7</parent_ui_id>
+        <order>3</order>
+        <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 13:13:22</sys_created_on>
         <sys_id>d9b8589187edde14f9f20f280cbb3552</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <ui_id>a3a0e6cc-9597-4dfc-bcde-19f03e60265f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d9b8589187edde14f9f20f280cbb3552"/>
@@ -1808,86 +1729,7 @@ And Services:
     <sys_hub_input_scripts action="delete_multiple" query="instance=d9b8589187edde14f9f20f280cbb3552"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d9b8589187edde14f9f20f280cbb3552"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=0cf833858729de14f9f20f280cbb354e"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=0cf833858729de14f9f20f280cbb354e^sys_idNOT IN48f833858729de14f9f20f280cbb359c,f9b8d6f387e99e10f9f20f280cbb3543"/>
-    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">b4bc92dc4765161440fd43ff336d4355</block>
-        <comment/>
-        <connected_to/>
-        <decision_table/>
-        <decision_table_inputs/>
-        <display_text/>
-        <extended_inputs/>
-        <flow display_value="NSPro Terminate Site - Services">0cf833858729de14f9f20f280cbb354e</flow>
-        <flow_variable/>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <inputs/>
-        <inputs/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2</order>
-        <outputs_assigned/>
-        <outputs_to_assign/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic</sys_class_name>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-28 10:54:34</sys_created_on>
-        <sys_id>48f833858729de14f9f20f280cbb359c</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
-        <ui_id>78bea519-517d-40c9-9c95-64bb0a77a2d7</ui_id>
-        <workflow_inputs/>
-        <workflow_reference/>
-    </sys_hub_flow_logic>
-    <sys_variable_value action="delete_multiple" query="document_key=48f833858729de14f9f20f280cbb359c"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_flow_logic</document>
-        <document_key>48f833858729de14f9f20f280cbb359c</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-28 10:54:35</sys_created_on>
-        <sys_id>c8f833858729de14f9f20f280cbb35a0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:27</sys_updated_on>
-        <value>Skip For Phase One</value>
-        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_0cf833858729de14f9f20f280cbb354e^id=48f833858729de14f9f20f280cbb359c"/>
-    <sys_element_mapping action="delete_multiple" query="id=48f833858729de14f9f20f280cbb359c"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition</field>
-        <id>48f833858729de14f9f20f280cbb359c</id>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-28 10:54:35</sys_created_on>
-        <sys_id>48f833858729de14f9f20f280cbb35a0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:27</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{flow_variable.skipforphase_1}}=true</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>condition_name</field>
-        <id>48f833858729de14f9f20f280cbb359c</id>
-        <sys_created_by>admglfry</sys_created_by>
-        <sys_created_on>2024-10-28 10:54:35</sys_created_on>
-        <sys_id>40f833858729de14f9f20f280cbb35a0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-10-28 10:54:35</sys_updated_on>
-        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=48f833858729de14f9f20f280cbb359c"/>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=48f833858729de14f9f20f280cbb359c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=0cf833858729de14f9f20f280cbb354e^sys_idNOT INf9b8d6f387e99e10f9f20f280cbb3543"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">a5a892f387e99e10f9f20f280cbb352f</block>
@@ -1911,14 +1753,14 @@ And Services:
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-11-05 16:57:27</sys_created_on>
         <sys_id>f9b8d6f387e99e10f9f20f280cbb3543</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:28</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:19</sys_updated_on>
         <ui_id>b34a2ff3-9795-4424-9372-bd5a3bbadd67</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2086,13 +1928,13 @@ And Services:
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e8f873858729de14f9f20f280cbb352f","name":"plan","plan_signature":null}}</plan>
         <plan_id>d8988e184761161440fd43ff336d438a</plan_id>
-        <snapshot>5adadebb87e99e10f9f20f280cbb355f</snapshot>
+        <snapshot>0cf833858729de14f9f20f280cbb354e</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>admglfry</sys_created_by>
         <sys_created_on>2024-10-28 10:54:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e8f873858729de14f9f20f280cbb352f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2100,7 +1942,7 @@ And Services:
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-05 16:57:30</sys_updated_on>
+        <sys_updated_on>2024-11-21 18:23:20</sys_updated_on>
         <trigger display_value="">ff81026387064690f9f20f280cbb3503</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d8988e184761161440fd43ff336d438a"/>
