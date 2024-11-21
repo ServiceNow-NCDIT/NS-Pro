@@ -75,6 +75,7 @@ producer.redirect = '/nspro';
 producer.portal_redirect = '/nspro';
 var link = '<a href="x_g_sonc_ns_pro_telco_order.do?sys_id=' + current.sys_id + '" class="breadcrumb" >' + 'Click here to go to the Network Request.' + '</a>';
 var msg = '<body><center></br></br><p><font size="6"><b>Network Request: '+ current.number +' has been successfully created.</b></font></p></br><br/></center></body><body><center>'+ link + '</center></body>';
+//adding some comments to try and force an update
 gs.addInfoMessage(msg);
 // Prevent redirection
 producer.portal_redirect = 'javascript&colon;void(0)';      // &colon; should be replaced by only  :]]></script>
@@ -86,14 +87,14 @@ producer.portal_redirect = 'javascript&colon;void(0)';      // &colon; should be
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-28 08:50:09</sys_created_on>
         <sys_id>a78f64cb471b7d90f4af2ad2e16d439a</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>175</sys_mod_count>
         <sys_name>Request Change Service</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_producer_a78f64cb471b7d90f4af2ad2e16d439a</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-14 21:44:36</sys_updated_on>
+        <sys_updated_on>2024-11-21 15:03:26</sys_updated_on>
         <table_name>x_g_sonc_ns_pro_telco_order</table_name>
         <taxonomy_topic/>
         <template/>
@@ -103,7 +104,7 @@ producer.portal_redirect = 'javascript&colon;void(0)';      // &colon; should be
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>170</version>
+        <version>171</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
