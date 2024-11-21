@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>new_primary_poc</name>
-        <order>3400</order>
+        <order>3300</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -79,14 +79,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-06-18 16:45:55</sys_created_on>
         <sys_id>8d27593e47760e1040fd43ff336d433e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>New Primary POC</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_8d27593e47760e1040fd43ff336d433e</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-21 19:48:23</sys_updated_on>
+        <sys_updated_on>2024-11-21 21:43:40</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
