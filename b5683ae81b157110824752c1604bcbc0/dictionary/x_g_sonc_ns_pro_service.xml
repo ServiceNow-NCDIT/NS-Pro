@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="c437b87f1bf6b910824752c1604bcb16" label="Service" max_length="40" name="x_g_sonc_ns_pro_service" text_index="true" type="collection">
         <element display="true" label="Service Definition" mandatory="true" max_length="32" name="service_definition" reference="x_g_sonc_ns_pro_service_definition" type="reference"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="dddddd" max_length="40" name="dddddd" type="boolean"/>
         <element label="AP Count" max_length="40" name="ap_count" type="integer"/>
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
         <element label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
@@ -26,5 +25,6 @@
         <index name="index5">
             <element name="site"/>
         </index>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="dddddd" max_length="40" name="dddddd" type="boolean"/>
     </element>
 </database>

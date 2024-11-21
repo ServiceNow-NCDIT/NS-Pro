@@ -21,7 +21,7 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field/>
+        <field>demarc_location</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -38,16 +38,16 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>new_primary_poc</name>
-        <order>700</order>
+        <name>demarc_location</name>
+        <order>530</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>New Primary POC</question_text>
+        <question_text>Requested Circuit Location</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -55,11 +55,9 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_g_sonc_ns_pro_telco_order</record_producer_table>
-        <reference>sys_user</reference>
-        <reference_qual>active=true^EQ</reference_qual>
-        <reference_qual_condition table="sys_user">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference/>
+        <reference_qual/>
+        <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated 
@@ -76,17 +74,17 @@
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-06-18 16:45:55</sys_created_on>
-        <sys_id>8d27593e47760e1040fd43ff336d433e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>New Primary POC</sys_name>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-21 12:02:06</sys_created_on>
+        <sys_id>cf3e67b04782561040fd43ff336d43b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested Circuit Location</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
-        <sys_update_name>item_option_new_8d27593e47760e1040fd43ff336d433e</sys_update_name>
+        <sys_update_name>item_option_new_cf3e67b04782561040fd43ff336d43b3</sys_update_name>
         <sys_updated_by>admglfry</sys_updated_by>
-        <sys_updated_on>2024-11-20 22:08:58</sys_updated_on>
+        <sys_updated_on>2024-11-21 12:02:06</sys_updated_on>
         <table/>
         <tooltip/>
         <type>6</type>
@@ -105,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=8d27593e47760e1040fd43ff336d433e"/>
-    <fx_price action="delete_multiple" query="id=8d27593e47760e1040fd43ff336d433e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=cf3e67b04782561040fd43ff336d43b3"/>
+    <fx_price action="delete_multiple" query="id=cf3e67b04782561040fd43ff336d43b3"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>8d27593e47760e1040fd43ff336d433e</id>
+        <id>cf3e67b04782561040fd43ff336d43b3</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-06-18 16:45:55</sys_created_on>
-        <sys_id>ff77ddba47b60e1040fd43ff336d4368</sys_id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-21 12:02:07</sys_created_on>
+        <sys_id>ab8ee7b44782561040fd43ff336d43c3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-18 16:45:55</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-21 12:02:07</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -128,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>8d27593e47760e1040fd43ff336d433e</id>
+        <id>cf3e67b04782561040fd43ff336d43b3</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
-        <sys_created_by>wbbusby</sys_created_by>
-        <sys_created_on>2024-06-18 16:45:55</sys_created_on>
-        <sys_id>ff77ddba47b60e1040fd43ff336d4367</sys_id>
+        <sys_created_by>admglfry</sys_created_by>
+        <sys_created_on>2024-11-21 12:02:07</sys_created_on>
+        <sys_id>ab8ee7b44782561040fd43ff336d43c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-18 16:45:55</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-21 12:02:07</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

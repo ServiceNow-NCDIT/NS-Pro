@@ -110,5 +110,24 @@
             <sys_updated_on>2023-10-19 14:26:14</sys_updated_on>
             <value>5</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>change_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Relocate Site/Service</label>
+            <language>en</language>
+            <name>x_g_sonc_ns_pro_telco_order</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>admglfry</sys_created_by>
+            <sys_created_on>2024-11-21 11:37:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admglfry</sys_updated_by>
+            <sys_updated_on>2024-11-21 11:37:19</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

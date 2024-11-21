@@ -104,6 +104,7 @@
                 <element inactive_on_update="false" label="Other Special Request" sequence="50" value="5"/>
                 <element inactive_on_update="false" label="Add New Service" sequence="10" value="1"/>
                 <element inactive_on_update="false" label="WAN Service Change" sequence="30" value="3"/>
+                <element inactive_on_update="false" label="Relocate Site/Service" sequence="60" value="6"/>
                 <element inactive_on_update="false" label="WAN Routing Change (IP, Subnet, VRF)" sequence="40" value="4"/>
             </choice>
         </element>

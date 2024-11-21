@@ -28,7 +28,7 @@
         <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
-        <layout>2across</layout>
+        <layout>2down</layout>
         <list_table/>
         <lookup_label/>
         <lookup_price/>
@@ -42,12 +42,12 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>cs_poc</name>
-        <order>700</order>
+        <order>650</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text/>
+        <question_text>Point oF Contact Info</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -77,14 +77,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2024-06-18 16:20:05</sys_created_on>
         <sys_id>c941993a47760e1040fd43ff336d434b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>cs_poc</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Point oF Contact Info</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>item_option_new_c941993a47760e1040fd43ff336d434b</sys_update_name>
-        <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-06-18 16:20:05</sys_updated_on>
+        <sys_updated_by>admglfry</sys_updated_by>
+        <sys_updated_on>2024-11-20 22:08:02</sys_updated_on>
         <table/>
         <tooltip/>
         <type>19</type>
