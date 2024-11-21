@@ -87,14 +87,14 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-12-28 18:00:00</sys_created_on>
         <sys_id>d66de60fdb13f99040eae46b1396192a</sys_id>
-        <sys_mod_count>72</sys_mod_count>
+        <sys_mod_count>74</sys_mod_count>
         <sys_name>NSPro WAN Quote</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sp_widget_d66de60fdb13f99040eae46b1396192a</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2024-02-01 18:35:23</sys_updated_on>
+        <sys_updated_on>2024-11-20 15:30:20</sys_updated_on>
         <template><![CDATA[<div>
 	<h2>
     Wide Area Network (WAN) Quick Quote
@@ -110,6 +110,10 @@
   		When ready, order your service by submitting a New Service Request from this page.
 		</p>
   </h4>
+  
+  <strong><center>Quote Feature is Under Construction</center></strong>
+  
+ <!-- 
   <table width="100%">
     <tr>
     	<td>WAN Service one-time charge</td>
@@ -138,7 +142,7 @@
       <td>{{svc.code}}</td>
     </tr>
   </table>
-    
+  -->   
     
     <!--
     <tr ng-repeat="row in c.data.manLoc">

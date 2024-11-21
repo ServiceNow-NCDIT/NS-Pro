@@ -2,7 +2,7 @@
     <sc_cat_item action="INSERT_OR_UPDATE">
         <access_type>restricted</access_type>
         <active>true</active>
-        <availability>on_desktop</availability>
+        <availability>on_both</availability>
         <billable>false</billable>
         <category display_value="Enterprise WAN">3ca84518dbb0f300f9275ad3ca96197c</category>
         <checked_out/>
@@ -65,23 +65,23 @@
         <sys_created_by>wbbusby</sys_created_by>
         <sys_created_on>2023-10-18 18:18:57</sys_created_on>
         <sys_id>27d8cddcdb8eb15040eae46b139619b5</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Report NSPro Issue</sys_name>
         <sys_package display_value="NS Pro" source="x_g_sonc_ns_pro">b5683ae81b157110824752c1604bcbc0</sys_package>
         <sys_policy/>
         <sys_scope display_value="NS Pro">b5683ae81b157110824752c1604bcbc0</sys_scope>
         <sys_update_name>sc_cat_item_27d8cddcdb8eb15040eae46b139619b5</sys_update_name>
         <sys_updated_by>wbbusby</sys_updated_by>
-        <sys_updated_on>2023-10-18 18:32:31</sys_updated_on>
+        <sys_updated_on>2024-11-20 15:49:11</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
-        <u_company/>
+        <u_company display_value="DIT Dept of Information Technology">7957d510db806300f861e3f3ca9619bb</u_company>
         <u_hide_from_new_call>false</u_hide_from_new_call>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version/>
+        <version>1</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

@@ -25,6 +25,5 @@
         <index name="index5">
             <element name="site"/>
         </index>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="dddddd" max_length="40" name="dddddd" type="boolean"/>
     </element>
 </database>
